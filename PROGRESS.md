@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 3 complete and deployed: map, reveal, today, review queue, mistake journal, onboarding, interim landing. Next: Phase 4 (teacher dashboard). Keep this file true at every commit.
+Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 4 complete and deployed: teacher dashboard (heatmap, leaderboard, lesson plan, drill-down, override queue → few-shot, assignments + impact). CUT LINE A reached: all P0 ships. Next: Phase 5 (P1 polish). Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -56,8 +56,12 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [x] `/mistakes`: Mistake Journal (active / resolved, lifecycle chips, tangent-point line + explanation, clean-answer dots, red-pen tick, example)
 - [x] `/onboarding` (3 steps → `POST /api/profile` → /diagnostic); interim landing `/` with persona buttons (Riya, Prof. Mehta, new student)
 
-### Phase 4 — Teacher dashboard
-- [ ] Heatmap, leaderboard, lesson plan, drill-down, override queue → few-shot, assignments + impact
+### Phase 4 — Teacher dashboard ✅
+- [x] Server `src/lib/teacher.ts`: class data (heatmap + class-average row, KPIs, relative at-risk with reasons, leaderboard with 7-day trend, override queue of low-confidence diagnoses with work, assignments with lift), student drill-down, `relabelAttempt` (confirm/relabel → `feedback` + teacher `fewshot_examples` + lifecycle fix-up), `createAssignment` (≤10 bank questions, baseline = class avg now)
+- [x] Teacher Analyst `src/lib/agents/teacher-analyst.ts`: deterministic top-3 gaps, student groups by dominant gap (+ "ready to stretch"), 10-question set from bank traps; Gemini Pro (thinking LOW) writes why / worked example (wrong vs right) / teaching move; library fallback; ~17s
+- [x] APIs: `GET /api/teacher/class`, `GET /api/teacher/student/[id]`, `POST /api/teacher/relabel`, `POST /api/teacher/assign`, `POST /api/teacher/lesson-plan`
+- [x] `/teacher` UI (subagent; `src/app/(app)/teacher/`, `src/components/tangent/teacher/`): KPI row, sortable heatmap (scrolls inside card, % in cells), leaderboard, lesson plan as a marked-up notebook page + "Assign this set" + trace, override queue (confirm/relabel, badge increments), assignments impact, student drill-down sheet. Checked light/dark, desktop/375px.
+- [x] Seed fixes: assignment baseline from mastery history at assignment time (A3 lift now +13 pts); seeded override-queue work shows the problem it was written for (`diagnosis.workQuestion`)
 
 ──── CUT LINE A ────
 

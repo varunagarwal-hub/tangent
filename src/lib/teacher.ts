@@ -143,7 +143,8 @@ export async function getClassData(classId = CLASS_ID, now = new Date()): Promis
       studentName: nameById.get(a.studentId) ?? "Student",
       conceptId: a.conceptId,
       conceptName: getConcept(a.conceptId).name,
-      questionStem: (a.questionId && stemById.get(a.questionId)) || "",
+      // seeded work was written for its own example problem; show that problem so work and question match
+      questionStem: (a.diagnosis as { workQuestion?: string } | null)?.workQuestion || (a.questionId && stemById.get(a.questionId)) || "",
       studentAnswer: a.answer,
       workText: a.workText,
       errorLine: a.errorLine && a.errorLine !== "see work" ? a.errorLine : null,

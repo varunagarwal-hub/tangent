@@ -337,3 +337,117 @@
   transform-box: fill-box;
   transform-origin: center;
 }
+
+/* ── teacher ── */
+/* pencil-gray hatching for untested concepts */
+.tg-hatch {
+  background-color: color-mix(in oklch, var(--mastery-unknown) 22%, transparent);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    color-mix(in oklch, var(--mastery-unknown) 85%, transparent) 0 1px,
+    transparent 1px 5px
+  );
+}
+.tg-cell {
+  display: flex;
+  height: 1.6rem;
+  width: 2.15rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-family: var(--font-jetbrains);
+  font-size: 0.66rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  color: transparent;
+  cursor: default;
+  transition: box-shadow 120ms ease, color 120ms ease;
+}
+.tg-cell-low { background: var(--mastery-low); }
+.tg-cell-mid { background: var(--mastery-mid); }
+.tg-cell-high { background: var(--mastery-high); }
+.tg-cell-unknown {
+  background-color: color-mix(in oklch, var(--mastery-unknown) 22%, transparent);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    color-mix(in oklch, var(--mastery-unknown) 85%, transparent) 0 1px,
+    transparent 1px 5px
+  );
+}
+/* % is revealed on hover / focus, or always with the "show %" toggle */
+.tg-cell-show,
+.tg-cell:hover,
+.tg-cell:focus-visible {
+  color: #fff;
+}
+.tg-cell-mid.tg-cell-show,
+.tg-cell-mid:hover,
+.tg-cell-mid:focus-visible {
+  color: #1b2a4a;
+}
+.tg-cell-unknown.tg-cell-show,
+.tg-cell-unknown:hover,
+.tg-cell-unknown:focus-visible {
+  color: var(--ink-soft);
+}
+.dark .tg-cell-low.tg-cell-show,
+.dark .tg-cell-low:hover,
+.dark .tg-cell-low:focus-visible,
+.dark .tg-cell-mid.tg-cell-show,
+.dark .tg-cell-mid:hover,
+.dark .tg-cell-mid:focus-visible,
+.dark .tg-cell-high.tg-cell-show,
+.dark .tg-cell-high:hover,
+.dark .tg-cell-high:focus-visible {
+  color: #14201b;
+}
+.tg-cell:hover {
+  box-shadow: 0 0 0 2px var(--ink);
+}
+.tg-cell:focus-visible {
+  outline: 2px solid var(--redpen);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 1px var(--card);
+}
+.tg-heat-scroll {
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+/* red-pen strike-through for the "wrong way" in worked examples */
+.tg-strike {
+  text-decoration-line: line-through;
+  text-decoration-color: var(--redpen);
+  text-decoration-thickness: 2px;
+}
+/* wavy red-pen underline for the student's error line */
+.tg-error-line {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--redpen);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+/* ruled notebook page with a red margin line */
+.tg-notebook {
+  position: relative;
+  background-color: var(--card);
+  background-image: linear-gradient(color-mix(in oklch, #4a7bd0 16%, transparent) 1px, transparent 1px);
+  background-size: 100% 2rem;
+  background-position: 0 1.4rem;
+}
+.dark .tg-notebook {
+  background-image: linear-gradient(color-mix(in oklch, var(--ink) 9%, transparent) 1px, transparent 1px);
+}
+.tg-notebook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.25rem;
+  width: 1.5px;
+  background: color-mix(in oklch, var(--redpen) 45%, transparent);
+  pointer-events: none;
+}
+@media (max-width: 639px) {
+  .tg-notebook::before { left: 0.75rem; }
+}

@@ -78,9 +78,10 @@ async function main() {
     id: string; concept_id: string; type: "MCQ" | "TITA"; stem: string; options: string[] | null; answer: string; solution: string;
     difficulty_elo: number; targets_misconception_id: string | null; distractor_misconceptions: { option: string; misconception_id: string }[];
   }> = JSON.parse(readFileSync("data/questions.json", "utf8"));
-  const fewshot: { misconception_id: string; work_text: string }[] = existsSync("data/fewshot-seed.json")
+  const fewshot: { misconception_id: string; work_text: string; question?: string }[] = existsSync("data/fewshot-seed.json")
     ? JSON.parse(readFileSync("data/fewshot-seed.json", "utf8")) : [];
   const fewshotByMc = new Map(fewshot.map((f) => [f.misconception_id, f.work_text]));
+  const fewshotQuestionByMc = new Map(fewshot.map((f) => [f.misconception_id, f.question ?? null]));
   const qByConcept = new Map<string, typeof questions>();
   for (const q of questions) qByConcept.set(q.concept_id, [...(qByConcept.get(q.concept_id) ?? []), q]);
   const mcIds = new Set(MISCONCEPTIONS.map((m) => m.id));
@@ -235,7 +236,9 @@ async function main() {
           workText: withWork ? fewshotByMc.get(misconceptionId!)! : null,
           reasoningVerdict: verdict, misconceptionId,
           errorLine: withWork ? "see work" : null,
-          diagnosis: misconceptionId ? { misconception_id: misconceptionId, confidence: +between(0.42, 0.96).toFixed(2), source: "seed" } : null,
+          diagnosis: misconceptionId
+            ? { misconception_id: misconceptionId, confidence: +between(0.42, 0.96).toFixed(2), source: "seed", ...(withWork ? { workQuestion: fewshotQuestionByMc.get(misconceptionId!) } : {}) }
+            : null,
           mode: "practice", createdAt: when,
         });
         t += (timeSec + between(20, 90)) * 1000;
