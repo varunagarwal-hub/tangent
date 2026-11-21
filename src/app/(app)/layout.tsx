@@ -22,7 +22,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       <Suspense fallback={<HeaderFallback />}>
         <Header />
       </Suspense>
-      <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-24 pt-6 sm:pt-8">{children}</main>
+      <main className="mx-auto w-full max-w-6xl flex-1 overflow-x-clip px-4 pb-24 pt-6 sm:pt-8">{children}</main>
     </div>
   );
 }

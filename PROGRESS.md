@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 1 complete: content, learner model, verified bank (64), Neon seeded. Next: Phase 2 (core student loop). Keep this file true at every commit.
+Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 2 complete: diagnostic + practice loop with streamed detective and red-pen moment, planner, pool refill, trace. Next: Phase 3 (map, reveal, today, mistakes), then deploy. Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -35,12 +35,18 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 
 ## Next
 
-### Phase 2 — Core student loop
-- [ ] /diagnostic (adaptive 12 Q), work input tabs (scratchpad / type / upload / sample)
-- [ ] Detective agent + transcription confirm + red-pen annotation
-- [ ] Planner + "Why this?"; /practice
-- [ ] Pre-verified pool + background generator/verifier
-- [ ] Agent trace panel
+### Phase 2 — Core student loop ✅
+- [x] Project moved to `C:\Users\varun\hackathon tangent\tangent` (git re-linked to origin, `.env.local` re-pulled from Vercel development, packages reinstalled)
+- [x] UI kit `src/components/tangent/` (math-text, scratchpad, work-input, red-pen-work, trace-panel/TraceDock, pen-loader, timer, confidence-picker, question-card, app-header, mini-map) + `/kit` preview page
+- [x] Persona cookie: `src/lib/session.ts` (`getPersona`, defaults to Riya), `POST /api/persona` (riya | mehta | new → creates a student)
+- [x] Data layer `src/lib/repo.ts`: pickQuestion (Elo band, contrast targeting, recent-exclusion), recordAttempt (applyAttempt + parallel writes + question calibration/retire), applyDiagnosis (flawed-correct half credit, lifecycle), stepLifecycle, dueCards, fewshotFor (teacher first)
+- [x] `POST /api/attempt`: instant grading, no AI (~350–400ms warm in dev)
+- [x] Detective `src/lib/agents/detective.ts`: Gemini Pro vision transcription → numbered lines; Flash (thinking LOW) diagnosis with candidates + few-shot + distractor hint + confidently-wrong hint + student note; confidence < 0.5 → "I'm not sure, tell me your approach"
+- [x] `POST /api/detective`: NDJSON stream of trace steps; image → Blob upload + transcribe → pause for "Here's what I read" confirm (unless quick); deterministic fallback from tagged distractor if Gemini fails; "That's not why" logs `feedback`
+- [x] Eval `scripts/eval-detective.ts` → `data/evals/results.json`: 20/20 misconception + error line, avg 3.6s (clean typed cases; real handwriting will be harder)
+- [x] Planner `src/lib/agents/planner.ts`: deterministic scorer (contrast / prerequisite drill / review / practice / stretch + variety penalty) + Flash one-line "Why this?" (template fallback); `GET /api/next` + background pool refill via `after()` (`src/lib/pool.ts`, ≥3 per concept×band). Verified: a refill-generated question was served on the next call.
+- [x] Diagnostician `src/lib/agents/diagnostician.ts`: high-weight roots first, step down to a prerequisite after a miss, then max weight×uncertainty; `POST /api/diagnostic/next`, `POST /api/diagnostic/summary`; `GET /api/mastery`
+- [x] `/practice` and `/diagnostic` pages, checked in the browser (Riya: contrast question → trap option → line 2 circled "Adds successive percentage changes"; new student: diagnostic Q1 → mastery 30%→67%, mini map)
 
 ### Phase 3 — Map, reveal, today, review → DEPLOY
 - [ ] /map (React Flow, fade by due-ness, node drawer)
@@ -65,7 +71,8 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [ ] README, final deploy, live + mobile route check
 
 ## Known bugs
-- (none yet)
+- Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
+- Diagnostic finishes by pushing to `/reveal`, which Phase 3 builds.
 
 ## Decisions
 - Next.js 16.4 / React 19.3 / Tailwind v4 (latest stable from create-next-app).
@@ -82,6 +89,9 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - `grading.normalizeAnswer` strips option labels ("B. 48,000"): the verifier sometimes echoes them.
 - seed-db: Riya's skill profile is hand-tuned and her random misattribution is 8% (vs 35% for synthetic students) so her story stays clean; her review cards are post-processed to 4 due (rest spread over the next week).
 - Riya's seeded state: A1_ADD_SUCCESSIVE active ("fixing"); A4_ADD_DISCOUNTS deliberately absent so the demo detects it live.
+- Gemini Flash 3.8 rejects thinking level MINIMAL (400). Use LOW for fast calls.
+- `vercel.json` pins functions to `sin1` (Singapore) next to Neon; the default iad1 would add a trans-Pacific hop to every query.
+- After the folder move, the copied `.next` cache and a stale dev server from the old folder caused false 404s, and the preview tool kept launching from the old folder, so the dev server is run with `npx next dev -p 3001` from this folder.
 - `cacheComponents` is on in Next 16: use `await connection()` instead of `export const dynamic`.
 - `db` in `@/lib/db` is a lazy Proxy so `next build` works without DATABASE_URL.
 

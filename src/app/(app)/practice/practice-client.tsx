@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, BookOpen, CheckCircle2, MessageCircleQuestion, RotateCcw, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -73,7 +73,10 @@ export function PracticeClient() {
     [flow],
   );
 
+  const started = useRef(false);
   useEffect(() => {
+    if (started.current) return; // React dev double-invokes effects
+    started.current = true;
     void loadNext();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

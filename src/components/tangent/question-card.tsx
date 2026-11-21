@@ -117,7 +117,7 @@ export function QuestionCard({
                 type="button"
                 role="radio"
                 aria-checked={chosen}
-                aria-label={`Option ${String.fromCharCode(65 + i)}: ${opt.replace(/\$/g, "")}${isCorrect ? " (correct answer)" : isWrongPick ? " (your answer, incorrect)" : ""}`}
+                aria-label={`Option ${String.fromCharCode(65 + i)}: ${opt.replace(/[$\\]/g, "")}${isCorrect ? " (correct answer)" : isWrongPick ? " (your answer, incorrect)" : ""}`}
                 aria-disabled={locked || undefined}
                 tabIndex={i === focusIdx ? 0 : -1}
                 onClick={() => select(i, false)}
