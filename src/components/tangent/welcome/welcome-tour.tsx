@@ -21,7 +21,7 @@ import {
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { LogoMark } from "@/components/brand/logo";
 import { cn } from "@/lib/utils";
-import { LS, TOUR_OPEN_EVENT, lsGet, lsSet, openDemoGuide, setPersona } from "../demo-guide/events";
+import { LS, TOUR_OPEN_EVENT, lsSet, openDemoGuide, setPersona } from "../demo-guide/events";
 
 type Role = "student" | "teacher";
 
@@ -153,11 +153,16 @@ export function WelcomeTour({ autoOpen = false }: { autoOpen?: boolean }) {
   const [withDemo, setWithDemo] = useState(true);
   const [busy, setBusy] = useState<string | null>(null);
 
+  // Landing page only (autoOpen): show the tour on every visit and reload, so every
+  // newcomer (judges included) sees what to do first. App pages open it from Help only.
   useEffect(() => {
-    if (autoOpen && lsGet(LS.tourSeen) !== "1") {
-      const t = setTimeout(() => setOpen(true), 600);
-      return () => clearTimeout(t);
-    }
+    if (!autoOpen) return;
+    const t = setTimeout(() => {
+      setRole(null);
+      setStep(0);
+      setOpen(true);
+    }, 600);
+    return () => clearTimeout(t);
   }, [autoOpen]);
 
   useEffect(() => {

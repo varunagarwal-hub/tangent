@@ -75,7 +75,7 @@ Last updated: Phase 8 UX pass done (fonts, welcome tour + role picker, page intr
 ### Phase 8 — UX & clarity pass (approved by human, ~9 PM)
 - [x] Font/readability: Caveat only for short accents ≥ 20px; small labels + paragraphs (Skip Coach, "Why this?", agent notes) in Geist; `.margin-note` is now readable UI type with a red-pen rule; uppercase labels bigger; dark-mode soft ink lighter
 - [x] Math: plain numbers/%/₹/units in `$…$` render as text (no KaTeX serif mid-sentence); variables and real formulas stay KaTeX (`asPlainText` in math-text.tsx)
-- [x] Welcome tour with role picker (I'm a student / I'm a teacher), auto on first visit to /, reopen from Help menu (`src/components/tangent/welcome/`)
+- [x] Welcome tour with role picker (I'm a student / I'm a teacher): opens on EVERY visit/reload of the landing page (human's call, so newcomers always see what to do); app pages open it only from the Help menu (`src/components/tangent/welcome/`)
 - [x] Plain-language page intros (`PageIntro`, dismissable) on today, practice, map, mistakes, strategy, teacher; diagnostic subtitle
 - [x] Hover/tap explanations (`InfoTip` + `src/lib/glossary.ts`) on mastery, reviews, next move, confidence, lifecycle, clean answers, tangent point, Skip Coach, calibration, heatmap, at-risk, leaderboard, override queue, Detective learned
 - [x] Guided demo checklist for judges (compact pill, 8 steps, auto-ticks; `markDemoStep` events from practice/teacher) (`src/components/tangent/demo-guide/`)
