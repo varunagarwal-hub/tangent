@@ -1,18 +1,20 @@
 # Tangent — Progress
 
-Last updated: Phase 0 in progress. Keep this file true at every commit.
+Last updated: Phase 0 complete. Next: Phase 1. Keep this file true at every commit.
 
 ## Done
+### Phase 0 — Setup ✅
 - [x] P0.1 Scaffold Next.js 16 (App Router, TS, src/, Tailwind v4) + git init
 - [x] P0.2 shadcn/ui init + base components; Magic UI (number-ticker, animated-beam, bento-grid, border-beam, blur-fade)
 - [x] P0.3 Install stack deps (gsap, motion, lenis, rough-notation, roughjs, xyflow, recharts, katex, perfect-freehand, supabase, genai, zod, ts-fsrs, vitest, tsx)
 - [x] P0.4 CLAUDE.md, PROGRESS.md, .env.example
+- [x] P0.5 Fonts + design tokens (paper grid, ink, red pen, highlighter, mastery scale, chalkboard dark mode) + Logo SVG (`src/components/brand/logo.tsx`) + favicon (`src/app/icon.svg`) + theme toggle. Checked visually in both themes.
+- [x] P0.6 `supabase/schema.sql` (also creates the `rough-work` bucket)
+- [x] P0.7 Gemini wrapper `src/lib/ai/gemini.ts`: `generateStructured()` (Zod → JSON schema → `responseJsonSchema`, Zod validation, 1 retry with error feedback, 25s timeout, 10-min cache, `agent_runs` logging). Supabase client `src/lib/supabase/server.ts`. Trace type `src/lib/agents/trace.ts`.
+- [x] P0.8 `npm run build` passes; pushed to GitHub (private repo)
 
 ## In progress
-- [x] P0.5 Fonts + design tokens (paper grid, ink, red pen, highlighter, mastery scale, chalkboard dark mode) + Logo SVG + favicon
-- [x] P0.6 `supabase/schema.sql`
-- [ ] P0.7 Gemini wrapper (structured output + Zod + retry + timeout + agent_runs logging)
-- [ ] P0.8 Build passes, push to GitHub
+- (nothing)
 
 ## Next
 ### Phase 1 — Content & learner model
