@@ -29,7 +29,8 @@ let ai: GoogleGenAI | null = null;
 function client() {
   if (!ai) {
     if (!process.env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY missing");
-    ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    // v1beta: preview models (e.g. the Pro preview) aren't served on v1.
+    ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY, apiVersion: "v1beta" });
   }
   return ai;
 }
