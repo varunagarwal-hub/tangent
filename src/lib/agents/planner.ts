@@ -127,9 +127,17 @@ async function writeWhy(c: Candidate, studentId: string): Promise<{ why: string;
 }
 
 /** Picks the next best action for a student and a question for it. */
-export async function planNext(studentId: string, opts: { lastConceptId?: string | null; exclude?: string[] } = {}): Promise<NextAction | null> {
+export async function planNext(
+  studentId: string,
+  opts: { lastConceptId?: string | null; exclude?: string[]; mode?: "review" } = {},
+): Promise<NextAction | null> {
   const t0 = Date.now();
-  const cands = await scoreCandidates(studentId, opts.lastConceptId);
+  let cands = await scoreCandidates(studentId, opts.lastConceptId);
+  if (opts.mode === "review") {
+    // review queue: due concepts first, then active misconceptions (their cards are due by design)
+    const reviewOnly = cands.filter((c) => c.kind === "review" || c.kind === "contrast_question");
+    if (reviewOnly.length) cands = reviewOnly;
+  }
   const exclude = [...(opts.exclude ?? []), ...(await recentQuestionIds(studentId, 20))];
 
   for (const c of cands.slice(0, 8)) {

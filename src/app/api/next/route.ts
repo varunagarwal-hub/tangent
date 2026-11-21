@@ -14,7 +14,8 @@ export async function GET(req: Request) {
   const exclude = url.searchParams.getAll("exclude").slice(0, 20);
   const studentId = await getStudentId();
 
-  const action = await planNext(studentId, { lastConceptId, exclude });
+  const mode = url.searchParams.get("mode") === "review" ? ("review" as const) : undefined;
+  const action = await planNext(studentId, { lastConceptId, exclude, mode });
   if (!action) return Response.json({ error: "no question available" }, { status: 404 });
 
   after(async () => {

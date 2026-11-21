@@ -50,7 +50,10 @@ export function PracticeClient() {
       setLoading(true);
       setLoadError(null);
       try {
-        const res = await fetch(`/api/next${last ? `?last=${encodeURIComponent(last)}` : ""}`);
+        const qs = new URLSearchParams();
+        if (last) qs.set("last", last);
+        if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("mode") === "review") qs.set("mode", "review");
+        const res = await fetch(`/api/next${qs.size ? `?${qs}` : ""}`);
         if (!res.ok) throw new Error(String(res.status));
         const a: NextAction = await res.json();
         setAction(a);

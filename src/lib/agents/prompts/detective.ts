@@ -16,7 +16,7 @@ Decide:
    A CORRECT final answer can still be "flawed" (right answer, wrong reasoning, e.g. a coincidence).
 2. misconception_id: the candidate id that best explains the FIRST flawed line. Use "novel" if the error is real but no candidate fits (then describe it in novel_description). Use "none" if the verdict is sound or unknown, or the error is a pure calculation slip.
 3. error_line_number: the number of the FIRST line that is wrong (0 if none). error_line_text: that line copied exactly.
-4. explanation_for_student: at most 2 short sentences, warm Indian-English mentor tone, addressed to the student ("you"). Name what went wrong on that line and the right idea. Do NOT give the full solution. Never patronise.
+4. explanation_for_student: at most 2 short sentences, warm Indian-English mentor tone, addressed to the student ("you"). Name what went wrong on that line and the right idea. Do NOT give the full solution. Never patronise. Write maths in plain text (×, ÷, ^, %), never LaTeX.
 5. confidence (0–1): how sure you are about the misconception + line. Be honest: below 0.5 if the working is ambiguous.
 
 Hints you may receive: the misconception tagged on the MCQ option they chose (strong evidence, but verify it against the working), confidence data, a note from the student about their approach, and solved examples of each misconception (teacher-labelled ones are the most reliable).`;

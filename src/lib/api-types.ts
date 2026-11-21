@@ -115,3 +115,45 @@ export interface DiagnosticState {
   asked: { conceptId: string; correct: boolean }[];
   total: number; // 12
 }
+
+/* ── Phase 3: map, concept drawer, reveal ─────────────────────────────── */
+
+export interface MapNode extends MasteryNode {
+  weight: number;
+  /** ISO due date of the concept's review card, if any */
+  dueAt: string | null;
+  /** FSRS retrievability now (1 = fresh) */
+  retrievability: number;
+  /** concept has an active (detected/fixing) misconception */
+  hasActiveMisconception: boolean;
+}
+
+export interface MapData {
+  nodes: MapNode[];
+  edges: { from: string; to: string }[]; // prerequisite → dependent
+}
+
+export interface ConceptDetail {
+  conceptId: string;
+  name: string;
+  area: string;
+  weight: number;
+  targetTimeSec: number;
+  p: number | null;
+  attempts: number;
+  avgTimeRatio: number | null;
+  history: { t: string; p: number }[];
+  recentAttempts: { at: string; correct: boolean; timeSec: number | null; misconceptionName: string | null; verdict: string }[];
+  misconceptions: { id: string; name: string; status: "detected" | "fixing" | "resolved"; evidenceCount: number }[];
+  /** forgetting curve for the next 30 days from now: retrievability by day */
+  forgetting: { day: number; r: number }[];
+  dueAt: string | null;
+  prerequisites: { id: string; name: string; p: number | null }[];
+}
+
+/** Stored in sessionStorage under "tangent-reveal" by /diagnostic before navigating to /reveal. */
+export interface RevealPayload {
+  summary?: string;
+  misconceptions?: string[];
+  results?: { conceptId: string; correct: boolean }[];
+}
