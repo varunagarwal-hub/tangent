@@ -1,0 +1,232 @@
+{
+  "ran_at": "2026-11-21T11:14:23.617Z",
+  "model": "gemini-3.8-flash",
+  "cases": 20,
+  "misconception_accuracy": 1,
+  "error_line_accuracy": 1,
+  "both_accuracy": 1,
+  "avg_ms": 3560,
+  "confusions": [],
+  "results": [
+    {
+      "id": "E01",
+      "expected": "A1_ADD_SUCCESSIVE",
+      "got": "A1_ADD_SUCCESSIVE",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 4414
+    },
+    {
+      "id": "E02",
+      "expected": "A1_ADD_SUCCESSIVE",
+      "got": "A1_ADD_SUCCESSIVE",
+      "mcOk": true,
+      "expectedLine": 3,
+      "gotLine": 3,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 3369
+    },
+    {
+      "id": "E03",
+      "expected": "A1_ADD_SUCCESSIVE",
+      "got": "A1_ADD_SUCCESSIVE",
+      "mcOk": true,
+      "expectedLine": 3,
+      "gotLine": 3,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 3377
+    },
+    {
+      "id": "E04",
+      "expected": "A4_ADD_DISCOUNTS",
+      "got": "A4_ADD_DISCOUNTS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.99,
+      "ms": 3185
+    },
+    {
+      "id": "E05",
+      "expected": "A4_ADD_DISCOUNTS",
+      "got": "A4_ADD_DISCOUNTS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 3986
+    },
+    {
+      "id": "E06",
+      "expected": "A3_AVG_OF_AVGS",
+      "got": "A3_AVG_OF_AVGS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 3961
+    },
+    {
+      "id": "E07",
+      "expected": "A3_AVG_OF_AVGS",
+      "got": "A3_AVG_OF_AVGS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.99,
+      "ms": 2885
+    },
+    {
+      "id": "E08",
+      "expected": "A8_MEAN_OF_SPEEDS",
+      "got": "A8_MEAN_OF_SPEEDS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 3153
+    },
+    {
+      "id": "E09",
+      "expected": "A8_MEAN_OF_SPEEDS",
+      "got": "A8_MEAN_OF_SPEEDS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 3660
+    },
+    {
+      "id": "E10",
+      "expected": "L2_LOG_OF_SUM",
+      "got": "L2_LOG_OF_SUM",
+      "mcOk": true,
+      "expectedLine": 1,
+      "gotLine": 1,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 3799
+    },
+    {
+      "id": "E11",
+      "expected": "L4_DIVIDE_BY_VARIABLE",
+      "got": "L4_DIVIDE_BY_VARIABLE",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 4534
+    },
+    {
+      "id": "E12",
+      "expected": "A1_BASE_SWAP",
+      "got": "A1_BASE_SWAP",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 3276
+    },
+    {
+      "id": "E13",
+      "expected": "A4_PROFIT_ON_SP",
+      "got": "A4_PROFIT_ON_SP",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 2603
+    },
+    {
+      "id": "E14",
+      "expected": "A5_SI_FOR_CI",
+      "got": "A5_SI_FOR_CI",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 4863
+    },
+    {
+      "id": "E15",
+      "expected": "A7_ADD_DAYS",
+      "got": "A7_ADD_DAYS",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 2760
+    },
+    {
+      "id": "E16",
+      "expected": "A8_IGNORE_TRAIN_LENGTH",
+      "got": "A8_IGNORE_TRAIN_LENGTH",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 2628
+    },
+    {
+      "id": "E17",
+      "expected": "L5_NEG_NO_FLIP",
+      "got": "L5_NEG_NO_FLIP",
+      "mcOk": true,
+      "expectedLine": 3,
+      "gotLine": 3,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 4742
+    },
+    {
+      "id": "E18",
+      "expected": "M2_OVERCOUNT_IDENTICAL",
+      "got": "M2_OVERCOUNT_IDENTICAL",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 0.98,
+      "ms": 2795
+    },
+    {
+      "id": "E19",
+      "expected": "M3_DEPENDENT_AS_INDEPENDENT",
+      "got": "M3_DEPENDENT_AS_INDEPENDENT",
+      "mcOk": true,
+      "expectedLine": 2,
+      "gotLine": 2,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 2771
+    },
+    {
+      "id": "E20",
+      "expected": "G2_AREA_RATIO_NOT_SQUARED",
+      "got": "G2_AREA_RATIO_NOT_SQUARED",
+      "mcOk": true,
+      "expectedLine": 3,
+      "gotLine": 3,
+      "lineOk": true,
+      "confidence": 1,
+      "ms": 4439
+    }
+  ]
+}
