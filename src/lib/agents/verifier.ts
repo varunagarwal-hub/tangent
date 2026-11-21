@@ -58,7 +58,7 @@ export async function verifyQuestion(q: DraftQuestion, opts: { studentId?: strin
       studentId: opts.studentId,
       inputSummary: `verify: ${q.stem.slice(0, 120)}`,
       temperature: 0.1,
-      timeoutMs: 45_000,
+      timeoutMs: 90_000, // full thinking: accuracy matters more than speed here (runs in the background)
     });
     const ms = Date.now() - started;
     if (data.ambiguous) {

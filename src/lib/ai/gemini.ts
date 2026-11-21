@@ -1,4 +1,4 @@
-import { GoogleGenAI, type Part } from "@google/genai";
+import { GoogleGenAI, type Part, type ThinkingLevel } from "@google/genai";
 import { z } from "zod";
 import { createHash } from "node:crypto";
 import type { AgentName, TraceStatus } from "@/lib/agents/trace";
@@ -54,6 +54,8 @@ export interface StructuredCall<S extends z.ZodType> {
   timeoutMs?: number;
   temperature?: number;
   cache?: boolean;
+  /** Model "thinking" budget. Lower = much faster; keep higher only where accuracy needs it. */
+  thinking?: "MINIMAL" | "LOW" | "MEDIUM" | "HIGH";
 }
 
 export interface StructuredResult<T> {
@@ -128,6 +130,7 @@ export async function generateStructured<S extends z.ZodType>(call: StructuredCa
           responseMimeType: "application/json",
           responseJsonSchema,
           temperature: call.temperature ?? 0.4,
+          ...(call.thinking ? { thinkingConfig: { thinkingLevel: call.thinking as ThinkingLevel } } : {}),
           abortSignal: AbortSignal.timeout(call.timeoutMs ?? 25_000),
         },
       });

@@ -9,6 +9,11 @@ describe("grading", () => {
     expect(answersMatch("$\\frac{3}{4}$", "0.75")).toBe(true);
     expect(answersMatch("-4%", "-4")).toBe(true);
     expect(answersMatch("15", "14.4")).toBe(false);
+    // verifier sometimes echoes the option label
+    expect(answersMatch("B. 48,000", "48,000")).toBe(true);
+    expect(answersMatch("(c) 14.4", "14.4")).toBe(true);
+    expect(answersMatch("Option D: ₹1,500", "₹1,500")).toBe(true);
+    expect(answersMatch("A. 15", "14.4")).toBe(false);
   });
 
   it("parses fractions", () => {

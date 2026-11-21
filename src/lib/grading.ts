@@ -6,6 +6,8 @@
 /** Strip LaTeX wrappers, currency, units, commas and spaces; lowercase. */
 export function normalizeAnswer(s: string): string {
   return s
+    .trim()
+    .replace(/^(option\s*)?\(?[A-Da-d][.):]\s+/i, "") // "B. 48,000", "(b) 48,000", "Option C: 14.4"
     .replace(/\$/g, "")
     .replace(/\\(text|mathrm)\{([^}]*)\}/g, "$2")
     .replace(/\\%/g, "%")

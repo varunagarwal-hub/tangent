@@ -70,6 +70,8 @@ export async function draftQuestion(req: GenerateRequest, retryReason?: string):
     inputSummary: `generate ${concept.id} ${band}${target ? ` → ${target.id}` : ""}`,
     temperature: 0.9,
     cache: false,
+    timeoutMs: 45_000,
+    thinking: "LOW", // ~6s vs >45s at default; the verifier re-solves every draft anyway
   });
 
   const validIds = new Set(mcs.map((m) => m.id));
