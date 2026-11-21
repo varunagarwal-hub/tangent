@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 2 complete: diagnostic + practice loop with streamed detective and red-pen moment, planner, pool refill, trace. Next: Phase 3 (map, reveal, today, mistakes), then deploy. Keep this file true at every commit.
+Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 3 complete and deployed: map, reveal, today, review queue, mistake journal, onboarding, interim landing. Next: Phase 4 (teacher dashboard). Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -48,11 +48,13 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [x] Diagnostician `src/lib/agents/diagnostician.ts`: high-weight roots first, step down to a prerequisite after a miss, then max weight×uncertainty; `POST /api/diagnostic/next`, `POST /api/diagnostic/summary`; `GET /api/mastery`
 - [x] `/practice` and `/diagnostic` pages, checked in the browser (Riya: contrast question → trap option → line 2 circled "Adds successive percentage changes"; new student: diagnostic Q1 → mastery 30%→67%, mini map)
 
-### Phase 3 — Map, reveal, today, review → DEPLOY
-- [ ] /map (React Flow, fade by due-ness, node drawer)
-- [ ] /reveal (GSAP sequence)
-- [ ] /today, review queue, /mistakes journal lifecycle
-- [ ] Deploy to Vercel, test Riya path live
+### Phase 3 — Map, reveal, today, review ✅
+- [x] APIs: `GET /api/map` (MapData: nodes with p, opacity/retrievability, dueAt, active-misconception flag; prerequisite edges), `GET /api/concept/[id]` (history, attempts, misconceptions, 30-day forgetting curve, prerequisites). Server views in `src/lib/views.ts` (map, concept detail, today, journal).
+- [x] `/map` (subagent): React Flow, deterministic 5-column layout, paper-card nodes with mastery ring, fade by due-ness, due badge, red dot for active misconception, dashed red edges for weak foundations, Sheet drawer with mastery-over-time + forgetting-curve charts. Files in `src/app/(app)/map/`, `src/components/tangent/map/`.
+- [x] `/reveal` (subagent): GSAP SplitText headline → DrawSVG edges → nodes pop + fill → red-pen "Start here" circle → top-3 misconception cards → summary + CTA; Skip/Replay; reduced-motion path; works without sessionStorage (Riya). Timeline ≈ 8–9s at real speed (not watched at full speed: hidden pane throttles rAF).
+- [x] `/today`: next best move (deterministic planner reason), due reviews → `/practice?mode=review` (planner `mode: "review"`), streak / days to CAT / minutes, mastery by area bars, journal preview. 375px checked.
+- [x] `/mistakes`: Mistake Journal (active / resolved, lifecycle chips, tangent-point line + explanation, clean-answer dots, red-pen tick, example)
+- [x] `/onboarding` (3 steps → `POST /api/profile` → /diagnostic); interim landing `/` with persona buttons (Riya, Prof. Mehta, new student)
 
 ### Phase 4 — Teacher dashboard
 - [ ] Heatmap, leaderboard, lesson plan, drill-down, override queue → few-shot, assignments + impact
@@ -72,7 +74,8 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 
 ## Known bugs
 - Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
-- Diagnostic finishes by pushing to `/reveal`, which Phase 3 builds.
+- Testing pollutes Riya's demo state (extra attempts, A4_ADD_DISCOUNTS now detected). **Run `npx tsx scripts/seed-db.ts` before recording the demo / final submission** to restore the scripted state.
+- `/map` at 375px fits but is tiny (pan/zoom works).
 
 ## Decisions
 - Next.js 16.4 / React 19.3 / Tailwind v4 (latest stable from create-next-app).

@@ -285,3 +285,55 @@
     stroke-dashoffset: 0;
   }
 }
+
+/* ── map & reveal ── */
+.tg-flow {
+  --xy-background-color: transparent;
+  --xy-node-background-color: transparent;
+  --xy-node-border: none;
+  --xy-node-boxshadow-hover: none;
+  --xy-node-boxshadow-selected: none;
+  --xy-controls-button-background-color: var(--card);
+  --xy-controls-button-background-color-hover: var(--accent);
+  --xy-controls-button-color: var(--ink);
+  --xy-controls-button-color-hover: var(--ink);
+  --xy-controls-button-border-color: var(--border);
+  --xy-controls-box-shadow: var(--shadow-paper);
+  --xy-edge-stroke: var(--ink);
+  /* xyflow v13 themes itself with light-dark(); follow the app's .dark class, not the OS */
+  color-scheme: light;
+  background: transparent;
+}
+.dark .tg-flow {
+  color-scheme: dark;
+}
+.tg-flow .react-flow__node-concept,
+.tg-flow .react-flow__node-area {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.tg-flow .react-flow__node-concept:focus-visible {
+  outline: 2px solid var(--redpen);
+  outline-offset: 3px;
+  border-radius: 0.8rem;
+}
+.tg-flow .react-flow__controls {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.tg-flow .react-flow__controls-button svg {
+  fill: currentColor;
+}
+.tg-flow .react-flow__edges {
+  pointer-events: none;
+}
+
+/* reveal: the hand-drawn red-pen ring and nodes scale around their own centres */
+.rv-node,
+.rv-fill {
+  transform-box: fill-box;
+  transform-origin: center;
+}
