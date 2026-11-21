@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Gemini key works on both models (local + Vercel). Next: Phase 1. Keep this file true at every commit.
+Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 1 complete: content, learner model, verified bank (64), Neon seeded. Next: Phase 2 (core student loop). Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -15,7 +15,7 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [x] P0.10 Infra wired: Neon project `tangent` (id `falling-scene-06569260`, aws-ap-southeast-1, PG17); `npm run db:push` done, 13 tables confirmed. Vercel project `tangent` (team varun-s-workspace) linked and connected to GitHub `varunagarwal-hub/tangent` (pushes to main auto-deploy). Blob store `tangent-rough-work` (public, sin1) connected to all envs. Vercel env: DATABASE_URL, BLOB_READ_WRITE_TOKEN, GEMINI_MODEL_FAST/SMART set for production/preview/development. `/api/health` reports DB/blob/Gemini wiring.
 - [x] P0.9 Image storage: `src/lib/storage.ts` (`uploadRoughWork()` → Vercel Blob URL, or null when BLOB_READ_WRITE_TOKEN is missing/fails), `src/lib/compress-image.ts` (client-side, ≤1600px JPEG, <4MB).
 
-### Phase 1 — Content & learner model (in progress)
+### Phase 1 — Content & learner model ✅
 - [x] `data/concepts.json` (27 nodes, weights, target times)
 - [x] Learner model `src/lib/learner/` (bkt, elo, calibration, fsrs, index → `applyAttempt()` + `stepMisconception()` lifecycle). 21 vitest tests + 3 grading tests pass (`npm test`).
 - [x] `src/lib/grading.ts` deterministic answer matching (₹, commas, units, LaTeX fractions, option letters)
@@ -24,9 +24,14 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [x] `data/anchor-questions.json`: 5 hand-written demo questions (successive discounts, avg speed, time & work, similar-triangle area, successive %) with tagged distractors
 - [x] `scripts/seed-content.ts` (resumable, concurrency 4, logs rejections to `data/questions-rejections.json`) and `scripts/seed-db.ts` (wipe + load + simulate 30 synthetic students + Riya through `applyAttempt`)
 
+- [x] `data/misconceptions.json` (82: A1–A8 ≥4 each, every concept ≥2, all 23 demo-critical ids), `data/fewshot-seed.json` (23, one per demo-critical id), `data/evals/detective.json` (20 labeled cases, 15 misconceptions, 2 right-answer/wrong-reasoning; none for M1/N-series yet)
+- [x] `data/questions.json`: 64 verified questions (5 anchors + 59 generated; every concept ≥1, arithmetic 39). Verifier rejected 29 drafts (≈31% rejection rate, logged in `data/questions-rejections.json`, incl. a few generator timeouts/"verifier unavailable"): wrong keys, non-integer people counts, typos, no correct option.
+- [x] Neon seeded (`npx tsx scripts/seed-db.ts`): 32 people (Riya, Prof. Mehta, 30 synthetic), 1,959 attempts, 638 mastery rows, 1,002 review cards, 370 misconception events, 64 questions (Elo recalibrated from the simulated class: 1055–1450), A3 assignment (5 days ago) with baseline + post-assignment lift, 28 low-confidence diagnoses with work for the override queue. Class top gaps: A1_ADD_SUCCESSIVE (18 students), A3_AVG_OF_AVGS (17), A8_MEAN_OF_SPEEDS (15).
+- [x] Riya: A1 0.17 / A4 0.20 weak; A2, A3, algebra ≥0.9; A1_ADD_SUCCESSIVE "fixing" (4 evidence) + 2 minor detected; 48 attempts over 10 days; 6-day streak; 4 reviews due.
+- [x] `scripts/inspect-seed.ts` prints the seeded story (class gaps, area mastery, Riya's state).
+
 ## In progress
-- [ ] `data/misconceptions.json` (~75), `data/fewshot-seed.json`, `data/evals/detective.json`: being written by a subagent
-- [ ] Run seed-content (60 + 5 anchors), then seed-db; build; push
+- (nothing)
 
 ## Next
 
@@ -73,6 +78,9 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - Gemini client is pinned to `apiVersion: "v1beta"`: preview models (the Pro preview) 404 on v1. `npx tsx scripts/check-gemini.ts` smoke-tests both tiers (both pass).
 - Learner-model interpretations: "correct but slow → 70% toward the correct update" = p + 0.7·(p_correct − p). Calibration stored per concept as an EMA (α 0.2) of (confidence value − correctness); positive = overconfident. FSRS Easy = correct, ≤0.75× target time and "Certain". ts-fsrs v6 has no `get_retrievability`, so `retrievability()` uses the FSRS-6 curve directly (decay 0.1542).
 - Bank question Elo starts at band centre (easy 1050 / medium 1250 / hard 1450); seed-db then recalibrates it from the simulated class's attempts.
+- Gemini thinking level matters a lot: Flash at default thinking took >45s per question draft (timeouts); `thinking: "LOW"` → ~6s. Generator uses LOW (verifier re-solves everything). Verifier (Pro) keeps default thinking with a 90s timeout. Use LOW/MINIMAL for any latency-sensitive call (detective on typed text, coach).
+- `grading.normalizeAnswer` strips option labels ("B. 48,000"): the verifier sometimes echoes them.
+- seed-db: Riya's skill profile is hand-tuned and her random misattribution is 8% (vs 35% for synthetic students) so her story stays clean; her review cards are post-processed to 4 due (rest spread over the next week).
 - Riya's seeded state: A1_ADD_SUCCESSIVE active ("fixing"); A4_ADD_DISCOUNTS deliberately absent so the demo detects it live.
 - `cacheComponents` is on in Next 16: use `await connection()` instead of `export const dynamic`.
 - `db` in `@/lib/db` is a lazy Proxy so `next build` works without DATABASE_URL.

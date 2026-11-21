@@ -1,0 +1,118 @@
+[
+  {
+    "spec": "A2-2",
+    "reason": "ambiguous (The given values result in a negative income and expenditure, making the problem physically impossible/unrealistic.)"
+  },
+  {
+    "spec": "A2-1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A5-2",
+    "reason": "answer mismatch (key says 10000, independent solve got 12000)"
+  },
+  {
+    "spec": "A5-2",
+    "reason": "answer mismatch (key says 10000, independent solve got 12000)"
+  },
+  {
+    "spec": "A5-2",
+    "reason": "answer mismatch (key says 10000, independent solve got 12000)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total sum ₹1,440 is not divisible by the sum of the ratio parts (33), resulting in a non-integer answer (₹654.54) th)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total sum given (₹13,000) is a typo and should be ₹13,500. With ₹13,000, P's share is ₹5,777.77, which is not in the)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total sum provided in the question (₹13,500) is a typo and mathematically contradicts the options. It should be ₹13,)"
+  },
+  {
+    "spec": "A8-2",
+    "reason": "ambiguous (The meeting time evaluates to 9:16:40 AM, which does not result in an exact integer minute. The question asks for a form)"
+  },
+  {
+    "spec": "A8-2",
+    "reason": "answer mismatch (key says 190, independent solve got 530/3)"
+  },
+  {
+    "spec": "A7-3",
+    "reason": "answer mismatch (key says $8$ hours, independent solve got $9$ hours)"
+  },
+  {
+    "spec": "A7-3",
+    "reason": "ambiguous (The correct time is 2:00 AM the next day (11:00 AM + 15 hours). The option '2:00 PM' is provided likely due to an AM/PM )"
+  },
+  {
+    "spec": "A7-3",
+    "reason": "ambiguous (None of the options are correct. The exact time the tank will be completely filled is 3:50 PM, but the options only prov)"
+  },
+  {
+    "spec": "L4-2",
+    "reason": "answer mismatch (key says 17, independent solve got 154/9)"
+  },
+  {
+    "spec": "L3-2",
+    "reason": "answer mismatch (key says 70, independent solve got 72)"
+  },
+  {
+    "spec": "L3-2",
+    "reason": "ambiguous (The given numbers result in a non-integer value for the number of pens (a = 230/7), which is impossible.)"
+  },
+  {
+    "spec": "L3-1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N3-1",
+    "reason": "ambiguous (The actual remainder when divided by 37 is 31, which is not in the options. The question likely has a typo and meant 'di)"
+  },
+  {
+    "spec": "L2-1",
+    "reason": "ambiguous (The valid root x=5 yields \\log_{10}(104), which is missing from the options. Option D is obtained by using the extraneou)"
+  },
+  {
+    "spec": "L2-1",
+    "reason": "ambiguous (Typo in the question. The expression log_10(x^2 + y) evaluates to ~4.04, which is not in the options. The options sugges)"
+  },
+  {
+    "spec": "L2-1",
+    "reason": "ambiguous (Typo in the question: '999y' should be '999y^2' to yield an integer answer (9) that matches the options. As written, the)"
+  },
+  {
+    "spec": "M2-1",
+    "reason": "ambiguous (Zero options are correct. The mathematically correct answer is 210. Option A (250) is likely the intended answer, which )"
+  },
+  {
+    "spec": "M2-1",
+    "reason": "ambiguous (The correct answer for 'at least 3' is 546, which is missing from the options. Option D (350) only accounts for 'exactly)"
+  },
+  {
+    "spec": "L6-2",
+    "reason": "ambiguous (The value of k evaluates to 61/6, which is not an integer. Since k represents the position of a term in a progression, i)"
+  },
+  {
+    "spec": "L6-2",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-2",
+    "reason": "ambiguous (The value of k evaluates to 8.5, but k must be an integer since it represents the position of a term in an arithmetic pr)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total profit ₹2,48,000 is not divisible by 3, leading to an answer of ₹82,666.67. None of the options are correct. T)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Typo in the question: 'twice the share of P is equal to three times the share of Q' (2P=3Q) yields no matching options. )"
+  }
+]

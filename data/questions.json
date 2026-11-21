@@ -1,0 +1,1513 @@
+[
+  {
+    "id": "9ee0fbe0-c79e-4510-af15-ccedc540ef3d",
+    "spec": "A1-0",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The monthly salary of Raman is $25\\%$ more than that of Suresh. By what percentage is Suresh's monthly salary less than Raman's monthly salary?",
+    "options": [
+      "20%",
+      "25%",
+      "16.67%",
+      "33.33%"
+    ],
+    "answer": "20%",
+    "solution": "1. Let Suresh's monthly salary be ₹100.\n2. Since Raman's salary is $25\\%$ more than Suresh's, Raman's salary is $100 + 0.25 \\times 100 = ₹125$.\n3. The difference in their salaries is $125 - 100 = ₹25$.\n4. To find by what percentage Suresh's salary is less than Raman's, the base must be Raman's salary: $\\frac{25}{125} \\times 100\\% = \\frac{1}{5} \\times 100\\% = 20\\%$.\n5. Therefore, Suresh's monthly salary is $20\\%$ less than Raman's.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25%",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "4cd5f6ce-ce68-4554-ae1d-ea18875815ae",
+    "spec": "A1-1",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The market price of a laptop was increased by $25\\%$ ahead of a festive sale. During the sale, the store offered a discount of $20\\%$ on the increased price. If a customer bought the laptop during the sale for ₹$48,000$, what was its original market price before the increase?",
+    "options": [
+      "₹45,714",
+      "₹48,000",
+      "₹50,000",
+      "₹60,000"
+    ],
+    "answer": "₹48,000",
+    "solution": "1. Let the original price be $P$.\n2. After a $25\\%$ increase, the price becomes $P \\times \\left(1 + \\frac{25}{100}\\right) = 1.25P = \\frac{5}{4}P$.\n3. A discount of $20\\%$ on this new price gives a final price of $\\frac{5}{4}P \\times \\left(1 - \\frac{20}{100}\\right) = \\frac{5}{4}P \\times \\frac{4}{5} = P$.\n4. Since the final price is ₹$48,000$, the original price $P$ is also ₹$48,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "₹45,714",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "₹50,000",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      },
+      {
+        "option": "₹60,000",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "0b5f3948-c190-4ebf-90d9-7f3f3b0dc0ee",
+    "spec": "A1-2",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "A family spends ₹7200 every month on rice. In a certain month, the price of rice falls by $20\\%$, which allows the family to buy $6\\text{ kg}$ more rice while spending ₹480 less than their usual monthly budget. Find the original price of rice per kg (in ₹).",
+    "options": null,
+    "answer": "200",
+    "solution": "1. Let the original price per kg be ₹$P$ and the original quantity purchased be $Q\\text{ kg}$. Thus, $P \\times Q = 7200$.\n2. The new price is $0.80P$, the new quantity is $Q + 6$, and the new expenditure is $7200 - 480 = 6720$.\n3. Formulate the equation for new expenditure: $0.80P \\times (Q + 6) = 6720$.\n4. Divide by $0.80$: $P(Q + 6) = \\frac{6720}{0.80} = 8400$.\n5. Expand the expression: $PQ + 6P = 8400$.\n6. Substitute $PQ = 7200$: $7200 + 6P = 8400 \\implies 6P = 1200 \\implies P = 200$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ad41aca8-3b4a-403e-923d-e8f362238bdd",
+    "spec": "A1-3",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In an office, the monthly salary of Rohit is $60\\%$ more than that of Suresh, whose monthly salary is $20\\%$ less than that of Tarun. By what percentage is Tarun's monthly salary less than Rohit's monthly salary?",
+    "options": [
+      "$\frac{250}{11}\\%$",
+      "$21.875\\%$",
+      "$40\\%$",
+      "$28\\%$"
+    ],
+    "answer": "$21.875\\%$",
+    "solution": "1. Let Tarun's monthly salary be $T = 100$.\n2. Suresh's salary is $20\\%$ less than Tarun's, so $S = 100 \\times (1 - 0.20) = 80$.\n3. Rohit's salary is $60\\%$ more than Suresh's, so $R = 80 \\times (1 + 0.60) = 80 \\times 1.6 = 128$.\n4. We need to find by what percentage Tarun's salary ($100$) is less than Rohit's salary ($128$):\n   $$\\text{Required percentage} = \\frac{R - T}{R} \\times 100 = \\frac{128 - 100}{128} \\times 100 = \\frac{28}{128} \\times 100 = \\frac{7}{32} \\times 100 = 21.875\\%$$\n5. Hence, the correct answer is $21.875\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": [
+      {
+        "option": "$28\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "$\frac{250}{11}\\%$$\n",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "49d92f84-06ac-4167-bcaa-365b1f7800ec",
+    "spec": "A1-4",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In an election between two candidates, Candidate A received $40\\%$ of the total valid votes polled in 2019. In 2024, the total number of valid votes polled increased by $25\\%$, and Candidate A received $48\\%$ of the total valid votes polled in 2024. By what percentage did the number of votes received by Candidate A increase in 2024 compared to 2019?",
+    "options": null,
+    "answer": "50",
+    "solution": "1. Let the total number of valid votes polled in 2019 be $100$.\n2. Votes received by Candidate A in 2019 = $40\\% \\text{ of } 100 = 40$.\n3. In 2024, the total number of valid votes increased by $25\\%$, so total votes in 2024 = $100 \\times 1.25 = 125$.\n4. Candidate A received $48\\%$ of these votes, so votes received in 2024 = $0.48 \\times 125 = 60$.\n5. The percentage increase in Candidate A's votes is $\\frac{60 - 40}{40} \\times 100 = \\frac{20}{40} \\times 100 = 50\\%$.\n\nFinal Answer: 50",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "a991cd35-6fa2-472a-a7eb-03cbe4785429",
+    "spec": "A2-0",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "The ratio of the amounts with Amit and Bharat is $3 : 4$, and the ratio of the amounts with Bharat and Chetan is $5 : 6$. If Chetan has ₹$720$, find the amount with Amit.",
+    "options": [
+      "₹450",
+      "₹360",
+      "₹600",
+      "₹576"
+    ],
+    "answer": "₹450",
+    "solution": "1. We are given the ratios $A : B = 3 : 4$ and $B : C = 5 : 6$.\n2. To find the combined ratio $A : B : C$, multiply the first ratio by $5$ and the second by $4$ to make the term for $B$ equal: $A : B = 15 : 20$ and $B : C = 20 : 24$.\n3. Thus, $A : B : C = 15 : 20 : 24$, which simplifies to $A : C = 15 : 24 = 5 : 8$.\n4. Since Chetan has ₹$720$, the value of $8$ units is ₹$720$, meaning $1$ unit = ₹$90$.\n5. Therefore, Amit has $5 \\times 90 =$ ₹$450$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹360",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹576",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "088c87e5-929a-44b1-aa69-b535ac9ff1d5",
+    "spec": "A2-1",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In an office, the ratio of the number of analysts to consultants is $3 : 4$, and the ratio of the number of consultants to managers is $6 : 5$. If there are $30$ managers in the office, what is the number of analysts?",
+    "options": [
+      "18",
+      "27",
+      "24",
+      "36"
+    ],
+    "answer": "27",
+    "solution": "1. Let $A$, $C$, and $M$ denote the number of analysts, consultants, and managers, respectively.\n2. We are given $A : C = 3 : 4$ and $C : M = 6 : 5$.\n3. To combine the ratios, find the LCM of the common term $C$, which is $\\text{LCM}(4, 6) = 12$.\n4. Scale the ratios: $A : C = 9 : 12$ and $C : M = 12 : 10$. Thus, $A : C : M = 9 : 12 : 10$.\n5. We are given $M = 30$, which corresponds to $10$ units. Each unit is $\\frac{30}{10} = 3$.\n6. The number of analysts is $9 \\times 3 = 27$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_CHAIN_WITHOUT_LCM",
+    "distractor_misconceptions": [
+      {
+        "option": "18",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      }
+    ]
+  },
+  {
+    "id": "00a340dc-0339-442b-aa9b-6f58145761cd",
+    "spec": "A2-2",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "The ratio of the monthly incomes of Amit and Bharat is $4 : 3$, and the ratio of their monthly expenditures is $5 : 3$. If Amit saves ₹$7,000$ per month and Bharat saves ₹$9,000$ per month, find the monthly income of Amit (in ₹).",
+    "options": null,
+    "answer": "32000",
+    "solution": "1. Let the monthly incomes of Amit and Bharat be $4x$ and $3x$ respectively.\n2. Their expenditures are $(4x - 7000)$ and $(3x - 9000)$.\n3. The ratio of their expenditures is given as $5 : 3$, so:\n$$\\frac{4x - 7000}{3x - 9000} = \\frac{5}{3}$$\n4. Cross-multiplying gives:\n$$3(4x - 7000) = 5(3x - 9000)$$\n$$12x - 21000 = 15x - 45000$$\n$$3x = 24000 \\implies x = 8000$$\n5. Therefore, Amit's monthly income is $4x = 4 \\times 8000 = 32000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "1d8e0fbc-b772-4b76-ae5a-b9df4dc551d9",
+    "spec": "A3-0",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "The average weight of a group of 14 students is 52 kg. When a new student joins the group, the average weight increases by 1 kg. What is the weight of the new student?",
+    "options": [
+      "53 kg",
+      "66 kg",
+      "67 kg",
+      "68 kg"
+    ],
+    "answer": "67 kg",
+    "solution": "1. Let $n = 14$ be the initial number of students and $A = 52$ kg be their average weight.\n2. When 1 student joins, the new total number of students is $14 + 1 = 15$.\n3. The new average is $52 + 1 = 53$ kg.\n4. The weight of the new student is $\\text{New Total} - \\text{Old Total} = 15 \\times 53 - 14 \\times 52 = 795 - 728 = 67$ kg (or alternatively, $52 + 15 \\times 1 = 67$ kg).\n5. Hence, the correct answer is 67 kg.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "53 kg",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "66 kg",
+        "misconception_id": "A3_OLD_COUNT"
+      }
+    ]
+  },
+  {
+    "id": "8743805e-68aa-4ea2-9b42-bc3e8224948c",
+    "spec": "A3-1",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "In an aptitude test conducted at a college, the average score of a batch of $20$ students from the Science stream was $72$, while the average score of a batch of $30$ students from the Commerce stream was $82$. What was the combined average score of all $50$ students?",
+    "options": [
+      "76",
+      "77",
+      "78",
+      "80"
+    ],
+    "answer": "78",
+    "solution": "1. Find the total score of the Science batch: $20 \\times 72 = 1440$.\n2. Find the total score of the Commerce batch: $30 \\times 82 = 2460$.\n3. Compute the combined total score and divide by the total number of students: $\\frac{1440 + 2460}{20 + 30} = \\frac{3900}{50} = 78$.\n\nAlternatively, using weighted average with student ratio $2 : 3$:\n$\\text{Combined Average} = \\frac{2 \\times 72 + 3 \\times 82}{2 + 3} = \\frac{144 + 246}{5} = 78$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": [
+      {
+        "option": "77",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "82f9ed17-8446-49ee-bd27-6885aac23ee5",
+    "spec": "A3-2",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "The average score of a class of $36$ students in an examination is $68.5$. Later, it was discovered that the marks of three students were misread: a score of $54$ was recorded as $72$, $86$ was recorded as $68$, and $65$ was recorded as $83$. What is the correct average score of the class?",
+    "options": null,
+    "answer": "68",
+    "solution": "1. Find the net change in total marks by comparing the correct scores to the wrongly recorded scores.\n2. The recorded sum of the three scores is $72 + 68 + 83 = 223$.\n3. The actual sum of the three scores is $54 + 86 + 65 = 205$.\n4. Net difference in total marks $= 205 - 223 = -18$.\n5. Change in the average $= \\frac{-18}{36} = -0.5$.\n6. Correct average score $= 68.5 - 0.5 = 68$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "fbb5dfdd-b3bb-4dec-aff5-7cd6c93eb753",
+    "spec": "A3-3",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A corporate project team consists of $15$ consultants. During an internal reshuffle, two consultants aged $31$ years and $37$ years leave the team and are replaced by two senior consultants. As a result, the average age of the $15$-member team increases by $2.4$ years. If the older of the two senior consultants is $6$ years older than the other, what is the age (in years) of the older senior consultant?",
+    "options": [
+      "55",
+      "38.2",
+      "52",
+      "49"
+    ],
+    "answer": "55",
+    "solution": "1. The combined age of the two consultants who left is $31 + 37 = 68$ years.\n2. The number of consultants remains unchanged at $15$, while the average age increases by $2.4$ years. Thus, the total age of the team increases by $15 \\times 2.4 = 36$ years.\n3. The combined age of the two new senior consultants is $68 + 36 = 104$ years.\n4. Let the ages of the two senior consultants be $x$ and $x + 6$. Then, $x + (x + 6) = 104 \\implies 2x = 98 \\implies x = 49$.\n5. Therefore, the age of the older senior consultant is $49 + 6 = 55$ years.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": [
+      {
+        "option": "38.2",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "49f72db1-7ab9-4e80-a1ce-84e18cd8ffa0",
+    "spec": "A3-4",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "The average monthly savings of a family of $8$ members was ₹$14,500$. After a newly employed member joined the family, the average monthly savings of the family increased by ₹$1,500$. Find the monthly savings (in ₹) of the newly employed member.",
+    "options": null,
+    "answer": "28000",
+    "solution": "1. Initial number of members $n = 8$ and initial average $A_1 = 14500$.\n2. Total initial savings $= 8 \\times 14500 = 116000$.\n3. When a new member joins, the new number of members becomes $8 + 1 = 9$.\n4. The new average savings $A_2 = 14500 + 1500 = 16000$.\n5. Total new savings $= 9 \\times 16000 = 144000$.\n6. Monthly savings of the new member $= 144000 - 116000 = 28000$.\n(Note: If one mistakenly uses the old count $8$, one would compute $8 \\times 16000 - 116000 = 12000$.)",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "84e44935-be1c-4455-9b3e-211c29d5b46e",
+    "spec": "A4-0",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A merchant marks his goods $40\\%$ above the cost price and then allows a discount of $25\\%$ on the marked price. What is his overall profit or loss percentage?",
+    "options": [
+      "$15\\%$ profit",
+      "$5\\%$ profit",
+      "$5\\%$ loss",
+      "$10\\%$ profit"
+    ],
+    "answer": "$5\\%$ profit",
+    "solution": "1. Let the cost price ($CP$) be ₹$100$.\n2. The marked price ($MP$) at $40\\%$ above $CP$ is $100 + 40 = ₹140$.\n3. A discount of $25\\%$ on $MP$ gives a selling price ($SP$) of $140 \\times (1 - 0.25) = 140 \\times 0.75 = ₹105$.\n4. Overall profit percentage is $\\frac{105 - 100}{100} \\times 100 = 5\\%$.\n5. Hence, the overall profit is $5\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$15\\%$ profit",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      }
+    ]
+  },
+  {
+    "id": "ca635915-1714-4b45-bdae-d24faf60c597",
+    "spec": "A4-1",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A merchant buys an article for ₹600 and spends ₹150 on its transportation and packaging. He then sells the article for ₹1,000. What is his actual profit percentage?",
+    "options": [
+      "25%",
+      "33.33%",
+      "40%",
+      "66.67%"
+    ],
+    "answer": "33.33%",
+    "solution": "1. Find total cost price: $\\text{Total CP} = 600 + 150 = ₹750$.\n2. Find profit: $\\text{Profit} = \\text{SP} - \\text{Total CP} = 1000 - 750 = ₹250$.\n3. Calculate profit percentage on CP: $\\text{Profit \\%} = \\left(\\frac{250}{750}\\right) \\times 100\\% = 33.33\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": [
+      {
+        "option": "25%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "3670319d-d0cf-4c22-af42-5d6629e283b2",
+    "spec": "A4-2",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A trader marks his goods at $50\\%$ above the cost price. He sells $40\\%$ of the stock at the marked price, $30\\%$ of the stock at a discount of $20\\%$ on the marked price, and the remaining stock at a discount of $40\\%$ on the marked price. What is his overall profit percentage?",
+    "options": null,
+    "answer": "23",
+    "solution": "1. Assume the total cost price of $100$ units is ₹$100$, so the cost price per unit is ₹$1$.\n2. The marked price per unit is $1 + 0.50 = ₹1.50$.\n3. Revenue from the first $40$ units (sold at marked price): $40 \\times 1.50 = ₹60$.\n4. Revenue from the next $30$ units (sold at a $20\\%$ discount, i.e., $0.80 \\times 1.50 = ₹1.20$ per unit): $30 \\times 1.20 = ₹36$.\n5. Remaining units = $100 - (40 + 30) = 30$ units. Revenue from these (sold at a $40\\%$ discount, i.e., $0.60 \\times 1.50 = ₹0.90$ per unit): $30 \\times 0.90 = ₹27$.\n6. Total selling price = $60 + 36 + 27 = ₹123$.\n7. Overall profit percentage = $\\frac{123 - 100}{100} \\times 100 = 23\\%$.\nFinal answer: 23",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ac4f83f5-c2c6-4b0e-b698-8fd6275a4a6d",
+    "spec": "A4-3",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A retailer procures an electronic gadget at a cost price of ₹$4,000$. He marks up the gadget by $50\\%$ above its cost price. During an annual clearance sale, he offers two successive discounts of $20\\%$ and $10\\%$ on the marked price. However, a customer mistakenly believes the total discount offered is simply the sum of the two discount percentages. What is the absolute difference between the actual profit made by the retailer and the profit the customer believes the retailer made?",
+    "options": [
+      "₹$120$",
+      "₹$240$",
+      "₹$320$",
+      "₹$480$"
+    ],
+    "answer": "₹$120$",
+    "solution": "1. Marked price $MP = 4000 \\times 1.50 = ₹6,000$.\n2. The actual selling price after successive discounts of $20\\%$ and $10\\%$ is $SP_{\\text{actual}} = 6000 \\times (1 - 0.20) \\times (1 - 0.10) = 6000 \\times 0.80 \\times 0.90 = ₹4,320$.\n3. The actual profit made is $4320 - 4000 = ₹320$.\n4. The customer adds the successive discounts: $20\\% + 10\\% = 30\\%$. According to the customer, the selling price is $SP_{\\text{perceived}} = 6000 \\times (1 - 0.30) = ₹4,200$.\n5. The perceived profit is $4200 - 4000 = ₹200$.\n6. The difference between the actual profit and perceived profit is $320 - 200 = ₹120$ (which is also equivalent to $6000 \\times (0.30 - 0.28) = ₹120$).",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$200$",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      },
+      {
+        "option": "₹$320$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      }
+    ]
+  },
+  {
+    "id": "1f03663a-87d4-413a-88d5-929ad68820c7",
+    "spec": "A4-4",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A shopkeeper purchases a consignment of goods. He marks up the cost price by $m\\%$ and plans to offer a discount of $15\\%$ on the marked price. Incorrectly believing that a markup of $m\\%$ followed by a discount of $15\\%$ simply results in a profit percentage of $(m - 15)\\%$, he estimates his total profit to be ₹$70,000$. However, his actual profit upon selling the entire consignment at this $15\\%$ discount turns out to be ₹$55,000$. If he instead wishes to earn an actual total profit of ₹$40,000$, what percentage discount should he offer on the marked price?",
+    "options": null,
+    "answer": "20",
+    "solution": "1. Let the total cost price of the consignment be $C$.\n2. According to the shopkeeper's incorrect belief, profit percentage is $(m - 15)\\%$. Thus:\n$C \\times \\frac{m - 15}{100} = 70,000 \\implies \\frac{C \\cdot m}{100} - 0.15C = 70,000$\n3. The actual selling price with markup $m\\%$ and discount $15\\%$ is $C\\left(1 + \\frac{m}{100}\\right)(0.85) = C\\left(0.85 + \\frac{0.85m}{100}\\right)$.\nActual profit is Selling Price $- C = C\\left(\\frac{0.85m - 15}{100}\\right) = 55,000$.\n4. Subtracting the actual profit from the estimated profit:\n$\\frac{C(0.15m)}{100} = 70,000 - 55,000 = 15,000 \\implies \\frac{C \\cdot m}{100} = 100,000$.\n5. Substitute $\\frac{C \\cdot m}{100} = 100,000$ back into the first equation:\n$100,000 - 0.15C = 70,000 \\implies 0.15C = 30,000 \\implies C = 200,000$.\nThen, $m = \\frac{100,000 \\times 100}{200,000} = 50\\%$.\n6. The marked price is $MP = 200,000 \\times 1.50 = 300,000$.\nTo earn an actual profit of ₹$40,000$, the required selling price is $200,000 + 40,000 = 240,000$.\n7. Required discount percentage $= \\frac{300,000 - 240,000}{300,000} \\times 100 = 20\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_MARKUP_MINUS_DISCOUNT",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "13406ba4-195c-4ed8-b142-1dae4eac123c",
+    "spec": "A5-0",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A sum of ₹$16,000$ is invested for $1$ year at $20\\%$ per annum, with interest compounded semi-annually. What is the compound interest earned on this investment?",
+    "options": [
+      "₹$3,200$",
+      "₹$3,360$",
+      "₹$3,520$",
+      "₹$6,400$"
+    ],
+    "answer": "₹$3,360$",
+    "solution": "1. Since interest is compounded semi-annually, the effective interest rate per period is $r = \\frac{20\\%}{2} = 10\\%$, and the number of compounding periods in $1$ year is $n = 1 \\times 2 = 2$.\n2. The amount after $1$ year is $A = 16000 \\times \\left(1 + \\frac{10}{100}\\right)^2 = 16000 \\times 1.21 = ₹19,360$.\n3. The compound interest earned is $CI = A - P = 19360 - 16000 = ₹3,360$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$3,200$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$3,520$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      },
+      {
+        "option": "₹$6,400$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "95dc0c6f-7ad3-41fb-b371-15f4fc5ee50c",
+    "spec": "A5-1",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A sum of money invested at a certain rate of interest compounded annually doubles itself in $3$ years. An investor deposits ₹$25,000$ at this same rate and compounding frequency for $9$ years. What is the total interest earned by the investor at the end of the $9$ years?",
+    "options": [
+      "₹$1,75,000$",
+      "₹$75,000$",
+      "₹$1,50,000$",
+      "₹$2,00,000$"
+    ],
+    "answer": "₹$1,75,000$",
+    "solution": "1. Let the initial principal be $P$. Under compound interest, the money doubles in $3$ years, so the multiplying factor for every $3$-year period is $2$.\n2. The total duration is $9$ years, which consists of $\\frac{9}{3} = 3$ such compounding periods of $3$ years each.\n3. Therefore, the amount after $9$ years is $A = 25000 \\times 2^3 = 25000 \\times 8 = ₹2,00,000$.\n4. The total interest earned is the amount minus the principal: $A - P = 2,00,000 - 25,000 = ₹1,75,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_SI_FOR_CI",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$75,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$1,50,000$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "68be967c-f78d-43cf-9306-807769f0516d",
+    "spec": "A5-2",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "A person invested a certain sum of money at a fixed annual rate of compound interest, compounded annually. The interest earned during the third year was ₹$1,452$ and the interest earned during the second year was ₹$1,320$. Find the total compound interest (in ₹) earned on this sum over the first two years.",
+    "options": null,
+    "answer": "2520",
+    "solution": "1. Let the principal be $P$ and the annual rate of interest be $r\\%$, with multiplier $R = 1 + \\frac{r}{100}$.\n2. The interest earned in the $n$-th year is given by $I_n = P R^{n-1} (R - 1)$.\n3. Therefore, $\\frac{I_3}{I_2} = R = \\frac{1452}{1320} = 1.1$. Thus, $\\frac{r}{100} = 0.1$ or $r = 10\\%$.\n4. The interest earned in the second year is $I_2 = I_1 \\times R$, which gives $I_1 = \\frac{1320}{1.1} = 1200$.\n5. The total compound interest earned over the first two years is $I_1 + I_2 = 1200 + 1320 = 2520$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "98ba5613-f496-48a7-bb2b-97fcf4147134",
+    "spec": "A5-3",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A sum of ₹$40,000$ is invested for $1.5$ years at $20\\%$ per annum. In Scheme A, interest is compounded semi-annually, while in Scheme B, simple interest is offered at the same annual rate for the same tenure. What is the difference between the interest earned from Scheme A and Scheme B?",
+    "options": [
+      "₹$1,240$",
+      "₹$2,800$",
+      "₹$1,200$",
+      "₹$17,280$"
+    ],
+    "answer": "₹$1,240$",
+    "solution": "1. For Scheme B (Simple Interest):\n$\\text{SI} = \\frac{P \\times R \\times T}{100} = \\frac{40000 \\times 20 \\times 1.5}{100} = ₹12,000$.\n\n2. For Scheme A (Compounded Semi-annually):\nAnnual rate $R = 20\\%$, so the half-yearly rate $r = \\frac{20}{2} = 10\\%$.\nNumber of half-year periods $n = 1.5 \\times 2 = 3$.\nAmount $A = 40000 \\left(1 + \\frac{10}{100}\\right)^3 = 40000 \\times 1.331 = ₹53,240$.\nInterest earned in Scheme A: $\\text{CI} = 53,240 - 40,000 = ₹13,240$.\n\n3. Difference between Scheme A and Scheme B:\n$\\text{Difference} = 13,240 - 12,000 = ₹1,240$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_HALFYEARLY_RATE",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$17,280$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      },
+      {
+        "option": "₹$1,200$",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹$2,800$",
+        "misconception_id": "A5_SI_FOR_CI"
+      }
+    ]
+  },
+  {
+    "id": "d688a463-c28e-47ad-819a-61e7e11eb848",
+    "spec": "A6-0",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A merchant mixes two varieties of rice, one costing ₹$60$ per kg and the other costing ₹$85$ per kg. He sells the resulting mixture at ₹$84$ per kg, thereby making a profit of $20\\%$. In what ratio by weight did he mix the two varieties?",
+    "options": [
+      "$3 : 2$",
+      "$2 : 3$",
+      "$1 : 24$",
+      "$5 : 12$"
+    ],
+    "answer": "$3 : 2$",
+    "solution": "1. Find the cost price (mean price) of the mixture: Since the selling price is ₹$84$ with a $20\\%$ profit, $\\text{CP} = \\frac{84}{1 + 0.20} = \\frac{84}{1.2} = ₹70$ per kg.\n2. Apply the rule of alligation with prices ₹$60$ and ₹$85$ and mean price ₹$70$:\n   Ratio of cheaper to dearer rice $= (85 - 70) : (70 - 60) = 15 : 10 = 3 : 2$.\n3. Hence, the required ratio is $3 : 2$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$2 : 3$",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      },
+      {
+        "option": "$1 : 24$",
+        "misconception_id": "A6_SP_AS_MEAN"
+      }
+    ]
+  },
+  {
+    "id": "b830c650-cc77-476f-8a3d-736b52b5bb42",
+    "spec": "A6-1",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "Two containers $A$ and $B$ contain mixtures of milk and water. In container $A$, the ratio of milk to water is $4 : 1$, and in container $B$, the ratio of milk to water is $1 : 1$. In what ratio by volume should the mixtures from containers $A$ and $B$ be combined to obtain a mixture in which the ratio of milk to water is $3 : 2$?",
+    "options": [
+      "1 : 2",
+      "2 : 1",
+      "2 : 3",
+      "3 : 2"
+    ],
+    "answer": "1 : 2",
+    "solution": "1. Express the concentration of milk as a fraction of the total volume for each mixture:\n- Container $A$: Milk fraction = $\\frac{4}{4 + 1} = \\frac{4}{5}$\n- Container $B$: Milk fraction = $\\frac{1}{1 + 1} = \\frac{1}{2}$\n- Desired mixture: Milk fraction = $\\frac{3}{3 + 2} = \\frac{3}{5}$\n\n2. Apply the rule of alligation on milk fractions:\n- Difference for $A$: $\\frac{3}{5} - \\frac{1}{2} = \\frac{6 - 5}{10} = \\frac{1}{10}$\n- Difference for $B$: $\\frac{4}{5} - \\frac{3}{5} = \\frac{1}{5} = \\frac{2}{10}$\n\n3. The ratio of volumes $V_A : V_B = \\frac{1}{10} : \\frac{2}{10} = 1 : 2$.\n\nHence, the correct ratio is 1 : 2.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_ON_QUANTITIES",
+    "distractor_misconceptions": [
+      {
+        "option": "2 : 1",
+        "misconception_id": "A6_ALLIGATION_ON_QUANTITIES"
+      },
+      {
+        "option": "2 : 3",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "dca81bf2-e958-4bfc-8911-9fe5d30e36a2",
+    "spec": "A6-2",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "A container contains $80$ litres of pure milk. From this container, $16$ litres of milk is removed and replaced with water. Subsequently, $20$ litres of the mixture is removed and replaced with water. What is the final quantity of milk (in litres) remaining in the container?",
+    "options": null,
+    "answer": "48",
+    "solution": "1. Initially, quantity of pure milk = $80$ litres.\n2. In the first operation, $16$ litres of milk is removed, leaving $80 - 16 = 64$ litres of milk.\n3. The total volume remains $80$ litres after adding $16$ litres of water, so the fraction of milk is $\\frac{64}{80} = \\frac{4}{5}$.\n4. In the second operation, $20$ litres of mixture is removed. The fraction of liquid remaining is $\\frac{80 - 20}{80} = \\frac{60}{80} = \\frac{3}{4}$.\n5. The remaining quantity of milk is $64 \\times \\frac{3}{4} = 48$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "9272b873-4a45-4cc0-9aed-6875b0dc633c",
+    "spec": "A6-3",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A vessel contains $120$ litres of pure wine. A sommelier withdraws $24$ litres of wine and replaces it with water. He thoroughly mixes the liquid and then withdraws another $24$ litres of the mixture and replaces it with water. Finally, he repeats this process a third time by withdrawing $24$ litres of the resulting mixture and replacing it with water. What is the total volume of wine left in the vessel?",
+    "options": [
+      "61.44 litres",
+      "48.00 litres",
+      "76.80 litres",
+      "58.56 litres"
+    ],
+    "answer": "61.44 litres",
+    "solution": "1. Initially, the volume of pure wine is $V = 120$ litres.\n2. In each cycle, $x = 24$ litres of the mixture is removed and replaced with water. The fraction of liquid retained in each step is $1 - \\frac{x}{V} = 1 - \\frac{24}{120} = 1 - \\frac{1}{5} = \\frac{4}{5} = 0.8$.\n3. Since this operation is performed $n = 3$ times, the remaining quantity of wine is $V \\times \\left(1 - \\frac{x}{V}\\right)^n = 120 \\times (0.8)^3 = 120 \\times 0.512 = 61.44$ litres.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_REPLACEMENT_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "48.00 litres",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "f5cb17af-3ef6-402c-9d47-6fa5695e333f",
+    "spec": "A7-0",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "Ankit can paint a house alone in $15$ days, while Bobby can paint the same house alone in $30$ days. If both of them work together, in how many days will they finish painting the house?",
+    "options": [
+      "$10$ days",
+      "$45$ days",
+      "$22.5$ days",
+      "$12$ days"
+    ],
+    "answer": "$10$ days",
+    "solution": "1. Let total work be the LCM of $15$ and $30$, which is $30$ units.\n2. Work rate of Ankit = $\\frac{30}{15} = 2$ units/day.\n3. Work rate of Bobby = $\\frac{30}{30} = 1$ unit/day.\n4. Combined work rate = $2 + 1 = 3$ units/day.\n5. Time taken together = $\\frac{30}{3} = 10$ days.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$45$ days",
+        "misconception_id": "A7_ADD_DAYS"
+      }
+    ]
+  },
+  {
+    "id": "2ba31857-747d-4abb-aa08-b56e4e7957fa",
+    "spec": "A7-1",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "Working alone at their respective constant rates, Machine A takes $12$ hours to complete a batch of manufacturing orders, while Machine B takes $24$ hours to complete the same batch. If both machines are operated simultaneously, how many hours will they take to complete the batch?",
+    "options": [
+      "36 hours",
+      "18 hours",
+      "8 hours",
+      "6 hours"
+    ],
+    "answer": "8 hours",
+    "solution": "1. Let the total work to be done be $24$ units (LCM of $12$ and $24$).\n2. Work rate of Machine A = $\\frac{24}{12} = 2$ units per hour.\n3. Work rate of Machine B = $\\frac{24}{24} = 1$ unit per hour.\n4. Combined work rate when both operate simultaneously = $2 + 1 = 3$ units per hour.\n5. Time required together = $\\frac{24}{3} = 8$ hours.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A7_ADD_DAYS",
+    "distractor_misconceptions": [
+      {
+        "option": "36 hours",
+        "misconception_id": "A7_ADD_DAYS"
+      }
+    ]
+  },
+  {
+    "id": "e564ef00-e43f-4507-b6a7-99b3f3966ebf",
+    "spec": "A7-2",
+    "concept_id": "A7",
+    "type": "TITA",
+    "stem": "A and B working together can complete a piece of work in $24$ days. They start working together, but after $18$ days, A leaves. B continues and finishes the remaining work in another $10$ days. In how many days can A alone complete the entire work?",
+    "options": null,
+    "answer": "60",
+    "solution": "1. Let the total work be $1$ unit. Together, A and B complete $\\frac{1}{24}$ of the work per day.\n2. In the first $18$ days, the work completed by both is $18 \\times \\frac{1}{24} = \\frac{3}{4}$ of the work.\n3. The remaining work is $1 - \\frac{3}{4} = \\frac{1}{4}$.\n4. B finishes this remaining $\\frac{1}{4}$ of the work in $10$ days, so B's daily work rate is $\\frac{1/4}{10} = \\frac{1}{40}$.\n5. A's daily rate is the combined rate minus B's rate: $\\frac{1}{24} - \\frac{1}{40} = \\frac{5 - 3}{120} = \\frac{2}{120} = \\frac{1}{60}$.\n6. Therefore, A alone takes $60$ days to complete the work.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ff2763c8-8cdf-420b-9e71-f665edcf46c3",
+    "spec": "A7-3",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "An overhead water tank has two inlet pipes, A and B, and one outlet pipe, C. Pipe A alone can fill the empty tank in $12$ hours, while Pipe B alone can fill it in $15$ hours. Pipe C alone can empty the completely filled tank in $20$ hours. If all three pipes are opened simultaneously when the tank is empty, how many hours will it take to fill the tank to its full capacity?",
+    "options": [
+      "$5$",
+      "$10$",
+      "$3$",
+      "$47$"
+    ],
+    "answer": "$10$",
+    "solution": "1. Let the total capacity of the tank be $\\text{LCM}(12, 15, 20) = 60$ units.\n2. Work rate of Pipe A $= \\frac{60}{12} = +5$ units/hour.\n3. Work rate of Pipe B $= \\frac{60}{15} = +4$ units/hour.\n4. Work rate of Pipe C (outlet) $= -\\frac{60}{20} = -3$ units/hour.\n5. Net filling rate when all three pipes are open $= 5 + 4 - 3 = 6$ units/hour.\n6. Time taken to fill the tank $= \\frac{60}{6} = 10$ hours.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A7_EMPTY_PIPE_ADDS",
+    "distractor_misconceptions": [
+      {
+        "option": "$5$",
+        "misconception_id": "A7_EMPTY_PIPE_ADDS"
+      },
+      {
+        "option": "$47$",
+        "misconception_id": "A7_ADD_DAYS"
+      }
+    ]
+  },
+  {
+    "id": "97afaded-6897-4790-b77f-80ba8a387386",
+    "spec": "A8-0",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "A passenger train travels a certain distance from City X to City Y at a constant speed of $60\\text{ km/h}$ and then immediately returns along the same route at a constant speed of $90\\text{ km/h}$. What is the average speed of the train for the entire round trip?",
+    "options": [
+      "72 km/h",
+      "75 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "answer": "72 km/h",
+    "solution": "1. Let the one-way distance between City X and City Y be $d = 180\\text{ km}$ (the LCM of $60$ and $90$).\n2. Time taken for the onward journey = $\\frac{180}{60} = 3\\text{ hours}$.\n3. Time taken for the return journey = $\\frac{180}{90} = 2\\text{ hours}$.\n4. Total distance = $180 + 180 = 360\\text{ km}$, and total time = $3 + 2 = 5\\text{ hours}$.\n5. Average speed = $\\frac{\\text{Total distance}}{\\text{Total time}} = \\frac{360}{5} = 72\\text{ km/h}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "75 km/h",
+        "misconception_id": "A8_MEAN_OF_SPEEDS"
+      }
+    ]
+  },
+  {
+    "id": "22b502cd-a797-4678-bdf8-063b2b8c717a",
+    "spec": "A8-1",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "Rohan drove his car from town P to town Q along a highway at a uniform speed of $30\\text{ km/h}$. On his return journey along the exact same route, the road was clear, and he maintained a uniform speed of $70\\text{ km/h}$. What was his average speed, in $\\text{km/h}$, for the entire round trip?",
+    "options": [
+      "42",
+      "48",
+      "50",
+      "52.5"
+    ],
+    "answer": "42",
+    "solution": "1. Let the distance between town P and town Q be $D\\text{ km}$.\n2. Time taken for the forward journey $= \\frac{D}{30}\\text{ hours}$, and time taken for the return journey $= \\frac{D}{70}\\text{ hours}$.\n3. Total distance covered $= 2D\\text{ km}$.\n4. Total time taken $= \\frac{D}{30} + \\frac{D}{70} = D\\left(\\frac{7+3}{210}\\right) = \\frac{10D}{210} = \\frac{D}{21}\\text{ hours}$.\n5. Average speed $= \\frac{\\text{Total Distance}}{\\text{Total Time}} = \\frac{2D}{\\frac{D}{21}} = 2 \\times 21 = 42\\text{ km/h}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "distractor_misconceptions": [
+      {
+        "option": "50",
+        "misconception_id": "A8_MEAN_OF_SPEEDS"
+      }
+    ]
+  },
+  {
+    "id": "6436cb1a-14b5-4b20-af88-503f8b40c62a",
+    "spec": "A8-2",
+    "concept_id": "A8",
+    "type": "TITA",
+    "stem": "A car travels from town A to town B at a constant speed. If the speed of the car is increased by $10\\text{ km/h}$, the journey takes $1$ hour less. If the speed is further increased by another $10\\text{ km/h}$, the journey takes an additional $45$ minutes less. What is the distance (in km) between town A and town B?",
+    "options": null,
+    "answer": "420",
+    "solution": "1. Let the original speed be $v\\text{ km/h}$ and the distance be $D\\text{ km}$.\n2. From the first condition:\n$$\\frac{D}{v} - \\frac{D}{v+10} = 1 \\implies D = \\frac{v(v+10)}{10}$$\n3. From the second condition, increasing the speed from $(v+10)$ to $(v+20)\\text{ km/h}$ saves $45\\text{ minutes} = \\frac{3}{4}\\text{ hour}$:\n$$\\frac{D}{v+10} - \\frac{D}{v+20} = \\frac{3}{4} \\implies D = \\frac{3(v+10)(v+20)}{40}$$\n4. Equating the two expressions for $D$:\n$$\\frac{v(v+10)}{10} = \\frac{3(v+10)(v+20)}{40}$$\nSince $v + 10 \\neq 0$, divide both sides by $\\frac{v+10}{10}$:\n$$v = \\frac{3(v+20)}{4} \\implies 4v = 3v + 60 \\implies v = 60\\text{ km/h}$$\n5. Substitute $v = 60$ into the expression for $D$:\n$$D = \\frac{60 \\times 70}{10} = 420$$\nThe distance between town A and town B is 420 km.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "af2146e0-4097-4e15-a7d3-7730fdd26bda",
+    "spec": "A8-3",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "A security patrol car spots a speeding vehicle $450\\text{ m}$ ahead of it on a straight highway. Both vehicles are moving in the same direction. The speeding vehicle travels at a constant speed of $72\\text{ km/h}$, while the patrol car immediately accelerates to and maintains a constant speed of $90\\text{ km/h}$ to intercept it. How many seconds will the patrol car take to catch up with the speeding vehicle?",
+    "options": [
+      "10 seconds",
+      "90 seconds",
+      "45 seconds",
+      "18 seconds"
+    ],
+    "answer": "90 seconds",
+    "solution": "1. Convert the speeds from $\\text{km/h}$ to $\\text{m/s}$:\nSpeed of speeding vehicle = $72 \\times \\frac{5}{18} = 20\\text{ m/s}$.\nSpeed of patrol car = $90 \\times \\frac{5}{18} = 25\\text{ m/s}$.\n\n2. Since both vehicles are traveling in the same direction, the relative speed is the difference between their speeds:\nRelative speed = $25 - 20 = 5\\text{ m/s}$.\n\n3. The initial distance between them is $450\\text{ m}$.\nTime required to catch up = $\\frac{\\text{Distance}}{\\text{Relative speed}} = \\frac{450}{5} = 90\\text{ seconds}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_SAME_DIR_SUM",
+    "distractor_misconceptions": [
+      {
+        "option": "10 seconds",
+        "misconception_id": "A8_SAME_DIR_SUM"
+      }
+    ]
+  },
+  {
+    "id": "28da7e16-474d-4cdb-8c74-c6c2dcb56d2b",
+    "spec": "A8-4",
+    "concept_id": "A8",
+    "type": "TITA",
+    "stem": "A passenger train running at a constant speed completely passes a $180\\text{ m}$ long platform in $21$ seconds, and completely passes a $300\\text{ m}$ long bridge in $27$ seconds. How many seconds will this train take to completely cross a tunnel of length $500\\text{ m}$?",
+    "options": null,
+    "answer": "37",
+    "solution": "1. Let $L$ be the length of the train in metres and $v$ be its speed in $\\text{m/s}$.\n2. When crossing a platform of length $P$, the total distance covered is $L + P$. Thus:\n$L + 180 = 21v$\n$L + 300 = 27v$\n3. Subtracting the two equations gives:\n$(300 - 180) = (27 - 21)v \\implies 120 = 6v \\implies v = 20\\text{ m/s}$.\n4. Substitute $v = 20$ into the first equation to find $L$:\n$L + 180 = 21 \\times 20 = 420 \\implies L = 240\\text{ m}$.\n5. To completely cross a $500\\text{ m}$ long tunnel, the distance to be covered is $L + 500 = 240 + 500 = 740\\text{ m}$.\n6. The required time is $\\frac{740}{20} = 37\\text{ seconds}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_IGNORE_TRAIN_LENGTH",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "85f93965-73a2-47d9-8bef-3f8fd1bc6a39",
+    "spec": "anchor-demo-avg-speed",
+    "key": "demo-avg-speed",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "A cyclist rides from town A to town B at 12 km/h and returns along the same road at 18 km/h. What is her average speed for the whole journey, in km/h?",
+    "options": [
+      "14",
+      "14.4",
+      "15",
+      "16"
+    ],
+    "answer": "14.4",
+    "solution": "1. Let the distance one way be $d$.\n2. Total time $= \\frac{d}{12} + \\frac{d}{18} = \\frac{5d}{36}$\n3. Average speed $= \\frac{2d}{5d/36} = \\frac{72}{5} = 14.4$ km/h (the harmonic mean, not $\\frac{12+18}{2} = 15$).",
+    "difficulty_elo": 1150,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "distractor_misconceptions": [
+      {
+        "option": "15",
+        "misconception_id": "A8_MEAN_OF_SPEEDS"
+      }
+    ]
+  },
+  {
+    "id": "2e63ddac-665e-4bdd-ad23-8cf5e83a6d4b",
+    "spec": "anchor-demo-discounts",
+    "key": "demo-discounts",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A shopkeeper marks a jacket at ₹2,000 and offers two successive discounts of 20% and 10%. At what price does he sell the jacket?",
+    "options": [
+      "₹1,400",
+      "₹1,440",
+      "₹1,460",
+      "₹1,500"
+    ],
+    "answer": "₹1,440",
+    "solution": "1. After the 20% discount: $2000 \\times 0.8 = 1600$\n2. After a further 10% discount: $1600 \\times 0.9 = 1440$\n3. Successive discounts multiply: effective discount is $1 - 0.8 \\times 0.9 = 28\\%$, not 30%.\n4. Selling price = ₹1,440",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,400",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "61218a5e-d81c-4150-a37a-4773dd91ad09",
+    "spec": "anchor-demo-similar-area",
+    "key": "demo-similar-area",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "Two similar triangles have corresponding sides in the ratio $3:5$. If the area of the smaller triangle is 36 sq cm, what is the area of the larger triangle, in sq cm?",
+    "options": [
+      "60",
+      "90",
+      "100",
+      "150"
+    ],
+    "answer": "100",
+    "solution": "1. For similar triangles, the ratio of areas is the square of the ratio of sides: $\\left(\\frac{5}{3}\\right)^2 = \\frac{25}{9}$.\n2. Larger area $= 36 \\times \\frac{25}{9} = 100$ sq cm.",
+    "difficulty_elo": 1100,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G2_AREA_RATIO_NOT_SQUARED",
+    "distractor_misconceptions": [
+      {
+        "option": "60",
+        "misconception_id": "G2_AREA_RATIO_NOT_SQUARED"
+      }
+    ]
+  },
+  {
+    "id": "807db3c8-2604-447d-8dcc-c1b728c8e66c",
+    "spec": "anchor-demo-successive-pct",
+    "key": "demo-successive-pct",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The population of a town was 50,000 at the start of 2024. It rose by 20% during 2024 and then fell by 20% during 2025. What was the population at the end of 2025?",
+    "options": [
+      "46,000",
+      "48,000",
+      "50,000",
+      "52,000"
+    ],
+    "answer": "48,000",
+    "solution": "1. After a 20% rise: $50000 \\times 1.2 = 60000$\n2. After a 20% fall: $60000 \\times 0.8 = 48000$\n3. Successive changes multiply: $1.2 \\times 0.8 = 0.96$, a net 4% fall, not 0%.",
+    "difficulty_elo": 1000,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "50,000",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      }
+    ]
+  },
+  {
+    "id": "7bbeba99-7aa2-451f-a687-7712d65bb9b3",
+    "spec": "anchor-demo-time-work",
+    "key": "demo-time-work",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "Ravi can complete a piece of work in 12 days and Sunil can complete it in 6 days. If they work together, in how many days will they complete it?",
+    "options": [
+      "4",
+      "6",
+      "9",
+      "18"
+    ],
+    "answer": "4",
+    "solution": "1. Ravi's rate $= \\frac{1}{12}$ of the work per day; Sunil's rate $= \\frac{1}{6}$.\n2. Together: $\\frac{1}{12} + \\frac{1}{6} = \\frac{3}{12} = \\frac{1}{4}$ per day.\n3. Time $= 4$ days. Add the rates, never the days.",
+    "difficulty_elo": 1000,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A7_ADD_DAYS",
+    "distractor_misconceptions": [
+      {
+        "option": "18",
+        "misconception_id": "A7_ADD_DAYS"
+      }
+    ]
+  },
+  {
+    "id": "f8d90506-d3c3-4b38-9a80-ee9f746cbf5e",
+    "spec": "G1-1",
+    "concept_id": "G1",
+    "type": "MCQ",
+    "stem": "Two parallel lines $L_1$ and $L_2$ are intersected by a transversal $T$. A pair of consecutive interior (co-interior) angles formed on the same side of the transversal are given by $(2x + 10)^\\circ$ and $(3x)^\\circ$. What is the value of $x$?",
+    "options": [
+      "$10$",
+      "$16$",
+      "$34$",
+      "$38$"
+    ],
+    "answer": "$34$",
+    "solution": "1. For two parallel lines intersected by a transversal, the consecutive interior (co-interior) angles are supplementary, meaning their sum is $180^\\circ$.\n2. Set up the equation: $(2x + 10) + 3x = 180$.\n3. Simplify: $5x + 10 = 180 \\implies 5x = 170 \\implies x = 34$.\n4. Hence, the correct value of $x$ is $34$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G1_CO_INTERIOR_EQUAL",
+    "distractor_misconceptions": [
+      {
+        "option": "$10$",
+        "misconception_id": "G1_CO_INTERIOR_EQUAL"
+      },
+      {
+        "option": "$16$",
+        "misconception_id": "G1_COMPLEMENT_SUPPLEMENT_MIX"
+      }
+    ]
+  },
+  {
+    "id": "07a91cf5-1de3-4b49-afab-da23b2255593",
+    "spec": "G2-1",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "In $\\triangle ABC$, a line segment $DE$ is drawn parallel to base $BC$ such that $D$ lies on $AB$ and $E$ lies on $AC$. If $AD : DB = 2 : 3$ and the area of $\\triangle ADE$ is $24\\text{ sq cm}$, what is the area of quadrilateral $BDEC$ (in sq cm)?",
+    "options": [
+      "36",
+      "60",
+      "126",
+      "150"
+    ],
+    "answer": "126",
+    "solution": "1. Since $DE \\parallel BC$, $\\triangle ADE \\sim \\triangle ABC$.\n2. The ratio of the sides is $\\frac{AD}{AB} = \\frac{2}{2+3} = \\frac{2}{5}$.\n3. The ratio of their areas is $\\frac{\\text{Area}(\\triangle ADE)}{\\text{Area}(\\triangle ABC)} = \\left(\\frac{2}{5}\\right)^2 = \\frac{4}{25}$.\n4. Given $\\text{Area}(\\triangle ADE) = 24\\text{ sq cm}$, we have $\\text{Area}(\\triangle ABC) = 24 \\times \\frac{25}{4} = 150\\text{ sq cm}$.\n5. Therefore, the area of quadrilateral $BDEC = \\text{Area}(\\triangle ABC) - \\text{Area}(\\triangle ADE) = 150 - 24 = 126\\text{ sq cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G2_AREA_RATIO_NOT_SQUARED",
+    "distractor_misconceptions": [
+      {
+        "option": "36",
+        "misconception_id": "G2_AREA_RATIO_NOT_SQUARED"
+      }
+    ]
+  },
+  {
+    "id": "fd186fd1-4ee9-41de-a568-744ada95f22c",
+    "spec": "G2-2",
+    "concept_id": "G2",
+    "type": "TITA",
+    "stem": "In a right-angled triangle $ABC$, the right angle is at $B$. Point $D$ lies on side $BC$ such that $BD = 9\\text{ cm}$ and $DC = 7\\text{ cm}$. If $AD = 15\\text{ cm}$, find the length (in cm) of side $AC$.",
+    "options": null,
+    "answer": "20",
+    "solution": "1. In right-angled $\\triangle ABD$, the right angle is at $B$. By the Pythagorean theorem, $AB^2 + BD^2 = AD^2$.\n2. Substitute the given lengths: $AB^2 + 9^2 = 15^2 \\implies AB^2 + 81 = 225 \\implies AB^2 = 144 \\implies AB = 12\\text{ cm}$.\n3. The length of side $BC = BD + DC = 9 + 7 = 16\\text{ cm}$.\n4. In right-angled $\\triangle ABC$, by the Pythagorean theorem, $AC^2 = AB^2 + BC^2 = 12^2 + 16^2 = 144 + 256 = 400$.\n5. Therefore, $AC = \\sqrt{400} = 20\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c9a1b369-da5b-4fba-84ba-0eef102365a4",
+    "spec": "G3-1",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, points $A$, $B$, and $C$ lie on the circumference such that chord $AB$ equals chord $AC$. If $\\angle BAC = 50^\\circ$, and chord $BC$ subtends an angle $\\angle BOC$ at the centre, what is the measure of $\\angle OBC$?",
+    "options": [
+      "40°",
+      "50°",
+      "65°",
+      "80°"
+    ],
+    "answer": "40°",
+    "solution": "1. In $\\triangle ABC$, since $AB = AC$, we have $\\angle ABC = \\angle ACB = \\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$.\n2. The inscribed angle subtended by arc $BC$ at the circumference is $\\angle BAC = 50^\\circ$.\n3. The central angle subtended by the same arc $BC$ is $\\angle BOC = 2 \\times \\angle BAC = 2 \\times 50^\\circ = 100^\\circ$.\n4. In the isosceles triangle $OBC$ (where $OB = OC = \\text{radius}$), the base angles are equal: $\\angle OBC = \\angle OCB = \\frac{180^\\circ - 100^\\circ}{2} = \\frac{80^\\circ}{2} = 40^\\circ$.\n5. Therefore, the measure of $\\angle OBC$ is $40^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "distractor_misconceptions": [
+      {
+        "option": "65°",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "595cc2d4-520f-4a68-af1f-e56d619af980",
+    "spec": "G4-1",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "The interior angle of a regular polygon is $140^\\circ$. What is the total number of diagonals in this polygon?",
+    "options": [
+      "27",
+      "36",
+      "18",
+      "24"
+    ],
+    "answer": "27",
+    "solution": "1. Each exterior angle of the regular polygon is $180^\\circ - 140^\\circ = 40^\\circ$.\n2. The number of sides $n = \\frac{360^\\circ}{40^\\circ} = 9$.\n3. The number of diagonals in an $n$-sided polygon is given by $\\frac{n(n - 3)}{2}$.\n4. Substituting $n = 9$, we get $\\frac{9 \\times 6}{2} = 27$.\n5. Therefore, the total number of diagonals is 27.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "36",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "7ba9c357-0c27-45f5-b015-4f327a6b71d2",
+    "spec": "G5-1",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A closed cylindrical container made of thin tin sheet has a base radius of $7\\text{ cm}$ and a height of $14\\text{ cm}$. The entire outer surface of the container is to be painted. If the cost of painting is ₹$0.50$ per $\\text{cm}^2$, what is the total cost of painting the container? (Take $\\pi = \\frac{22}{7}$)",
+    "options": [
+      "₹308",
+      "₹462",
+      "₹616",
+      "₹924"
+    ],
+    "answer": "₹462",
+    "solution": "1. The container is closed, so the outer surface to be painted includes the curved surface and both circular flat ends (Total Surface Area).\n2. Total Surface Area (TSA) $= 2\\pi r(h + r) = 2 \\times \\frac{22}{7} \\times 7 \\times (14 + 7) = 44 \\times 21 = 924\\text{ cm}^2$.\n3. Cost of painting $= 924 \\times 0.50 = ₹462$.\n4. Therefore, the total cost of painting is ₹462.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_CSA_VS_TSA",
+    "distractor_misconceptions": [
+      {
+        "option": "₹308",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "37efe82e-4848-487f-bfd9-f69c91bbd203",
+    "spec": "G6-1",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line $L_1$ passes through the points $A(2, 1)$ and $B(5, 10)$. A second line $L_2$ passes through the origin $(0, 0)$ and is parallel to $L_1$. If a point $P(k, 15)$ lies on line $L_2$, what is the value of $k$?",
+    "options": [
+      "5",
+      "45",
+      "$\frac{5}{3}$",
+      "$\frac{1}{5}$"
+    ],
+    "answer": "5",
+    "solution": "1. Find the slope of line $L_1$ passing through $(2, 1)$ and $(5, 10)$: $m = \\frac{10 - 1}{5 - 2} = \\frac{9}{3} = 3$.\n2. Since line $L_2$ is parallel to $L_1$, its slope is also $m = 3$.\n3. Line $L_2$ passes through the origin $(0, 0)$, so its equation is $y = 3x$.\n4. Point $P(k, 15)$ lies on $L_2$, which gives $15 = 3k \\implies k = 5$.\n5. Therefore, the value of $k$ is 5.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "45",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "edf368e4-8532-43cc-a1ea-f07719cd65bd",
+    "spec": "L1-1",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "If $N = 2^4 \\times 5^2$, find the value of $\\sqrt{N}$.",
+    "options": [
+      "20",
+      "1000",
+      "100",
+      "40"
+    ],
+    "answer": "20",
+    "solution": "1. Express $N$ by evaluating or simplifying the powers: $N = 2^4 \\times 5^2 = 16 \\times 25 = 400$.\n2. Take the square root: $\\sqrt{N} = \\sqrt{400} = 20$.\n3. Alternatively, $\\sqrt{N} = (2^4 \\times 5^2)^{1/2} = 2^{4 \\times 1/2} \\times 5^{2 \\times 1/2} = 2^2 \\times 5^1 = 4 \\times 5 = 20$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L1_ADD_EXP_DIFF_BASES",
+    "distractor_misconceptions": [
+      {
+        "option": "1000",
+        "misconception_id": "L1_ADD_EXP_DIFF_BASES"
+      }
+    ]
+  },
+  {
+    "id": "e8349a78-2ead-4e78-a930-413fe76e0144",
+    "spec": "L2-1",
+    "concept_id": "L2",
+    "type": "MCQ",
+    "stem": "If $\\log_{10} 2 = a$ and $\\log_{10} 3 = b$, what is the value of $\\log_{10}(16 + 9)$ in terms of $a$ and $b$?",
+    "options": [
+      "$2 - 2a$",
+      "$4a + 2b$",
+      "$2 - a$",
+      "$2 + 2a$"
+    ],
+    "answer": "$2 - 2a$",
+    "solution": "1. Evaluate the argument inside the logarithm: $16 + 9 = 25$.\n2. Express $\\log_{10}(25)$ in terms of $\\log_{10} 2 = a$ using $\\log_{10}(25) = \\log_{10}\\left(\\frac{100}{4}\\right) = \\log_{10}(100) - \\log_{10}(4)$.\n3. Since $\\log_{10}(100) = 2$ and $\\log_{10}(4) = \\log_{10}(2^2) = 2\\log_{10} 2 = 2a$, we get $\\log_{10}(25) = 2 - 2a$.\n4. Thus, the value is $2 - 2a$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L2_LOG_OF_SUM",
+    "distractor_misconceptions": [
+      {
+        "option": "$4a + 2b$",
+        "misconception_id": "L2_LOG_OF_SUM"
+      }
+    ]
+  },
+  {
+    "id": "9c22be4c-7a5b-4667-8eea-b4e126e81fbf",
+    "spec": "L3-1",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "A shopkeeper bought a certain number of notebooks, each priced identically. If he had bought $6$ fewer notebooks, the total cost would have been ₹$480$. If he had bought $4$ more notebooks, the total cost would have been ₹$880$. Find the total cost (in ₹) of $15$ notebooks.",
+    "options": [
+      "₹600",
+      "₹420",
+      "₹750",
+      "₹900"
+    ],
+    "answer": "₹600",
+    "solution": "1. Let $n$ be the original number of notebooks and $p$ be the price of each notebook in ₹.\n2. From the given conditions:\n$(n - 6)p = 480 \\implies np - 6p = 480$ ...(i)\n$(n + 4)p = 880 \\implies np + 4p = 880$ ...(ii)\n3. Subtracting (i) from (ii):\n$10p = 400 \\implies p = 40$.\n4. We need to find the total cost of $15$ notebooks, which is $15 \\times p = 15 \\times 40 = 600$.\n5. Therefore, the total cost is ₹600.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_SIGN_ON_TRANSPOSE",
+    "distractor_misconceptions": [
+      {
+        "option": "₹420",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      }
+    ]
+  },
+  {
+    "id": "09848da9-2165-4a0d-8776-487fac5f34c2",
+    "spec": "L3-2",
+    "concept_id": "L3",
+    "type": "TITA",
+    "stem": "A person buys three types of items: pens, notebooks, and files. The total cost of 3 pens, 5 notebooks, and 7 files is ₹245, while the total cost of 4 pens, 7 notebooks, and 10 files is ₹345. Find the total cost (in ₹) of 1 pen, 1 notebook, and 1 file.",
+    "options": null,
+    "answer": "45",
+    "solution": "1. Let the cost of one pen, one notebook, and one file be $p$, $n$, and $f$ respectively.\n2. We are given:\n   $3p + 5n + 7f = 245$  --- (Equation 1)\n   $4p + 7n + 10f = 345$ --- (Equation 2)\n3. Multiply Equation 1 by $3$ and Equation 2 by $2$:\n   $3(3p + 5n + 7f) = 3 \\times 245 \\implies 9p + 15n + 21f = 735$\n   $2(4p + 7n + 10f) = 2 \\times 345 \\implies 8p + 14n + 20f = 690$\n4. Subtract the second derived equation from the first:\n   $(9p - 8p) + (15n - 14n) + (21f - 20f) = 735 - 690$\n   $p + n + f = 45$.\n5. The total cost of 1 pen, 1 notebook, and 1 file is 45.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c14f1568-ed4b-4aa4-99a8-07557b1218ff",
+    "spec": "L4-1",
+    "concept_id": "L4",
+    "type": "MCQ",
+    "stem": "Find the sum of all real values of $x$ that satisfy the equation $x(2x - 5) = 9x$.",
+    "options": [
+      "7",
+      "0",
+      "2",
+      "-7"
+    ],
+    "answer": "7",
+    "solution": "1. Expand or rearrange the terms: $2x^2 - 5x = 9x \\implies 2x^2 - 14x = 0$.\n2. Factorise the expression: $2x(x - 7) = 0$.\n3. This gives roots $x = 0$ and $x = 7$.\n4. Sum of all real values = $0 + 7 = 7$.\n\nFinal Answer: 7",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L4_DIVIDE_BY_VARIABLE",
+    "distractor_misconceptions": [
+      {
+        "option": "-7",
+        "misconception_id": "L4_SUM_ROOTS_SIGN"
+      }
+    ]
+  },
+  {
+    "id": "cef085dd-a76b-4a77-9ffe-76b315b8f1d7",
+    "spec": "L4-2",
+    "concept_id": "L4",
+    "type": "TITA",
+    "stem": "Let $\\alpha$ and $\\beta$ be the roots of the quadratic equation $x^2 - 7x + 9 = 0$. If a new quadratic equation has roots $\\frac{\\alpha}{\\beta}$ and $\\frac{\\beta}{\\alpha}$, and is written in the form $9x^2 - px + q = 0$, where $p$ and $q$ are integers, find the value of $p + q$.",
+    "options": null,
+    "answer": "40",
+    "solution": "1. For the given equation $x^2 - 7x + 9 = 0$, the sum of roots is $\\alpha + \\beta = 7$ and the product of roots is $\\alpha\\beta = 9$.\n2. The roots of the new quadratic equation are $r_1 = \\frac{\\alpha}{\\beta}$ and $r_2 = \\frac{\\beta}{\\alpha}$.\n3. Calculate the sum of the new roots: $r_1 + r_2 = \\frac{\\alpha}{\\beta} + \\frac{\\beta}{\\alpha} = \\frac{\\alpha^2 + \\beta^2}{\\alpha\\beta} = \\frac{(\\alpha + \\beta)^2 - 2\\alpha\\beta}{\\alpha\\beta} = \\frac{7^2 - 2(9)}{9} = \\frac{49 - 18}{9} = \\frac{31}{9}$.\n4. Calculate the product of the new roots: $r_1 r_2 = \\frac{\\alpha}{\\beta} \\cdot \\frac{\\beta}{\\alpha} = 1$.\n5. The quadratic equation with these roots is $x^2 - (r_1 + r_2)x + r_1 r_2 = 0$, which is $x^2 - \\frac{31}{9}x + 1 = 0$, or multiplying through by 9: $9x^2 - 31x + 9 = 0$.\n6. Comparing with $9x^2 - px + q = 0$, we find $p = 31$ and $q = 9$.\n7. Therefore, $p + q = 31 + 9 = 40$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "b8c57fe7-187a-45f2-a93b-96b0e232ae48",
+    "spec": "L5-1",
+    "concept_id": "L5",
+    "type": "MCQ",
+    "stem": "Find the range of real values of $x$ satisfying the inequality $|5 - 2x| \\le 11$.",
+    "options": [
+      "$-3 \\le x \\le 8$",
+      "$-8 \\le x \\le 3$",
+      "$x \\le -3$ or $x \\ge 8$",
+      "$x \\ge 8$"
+    ],
+    "answer": "$-3 \\le x \\le 8$",
+    "solution": "1. The inequality $|5 - 2x| \\le 11$ can be rewritten as the double inequality $-11 \\le 5 - 2x \\le 11$.\n2. Subtract $5$ from all parts: $-16 \\le -2x \\le 6$.\n3. Divide all parts by $-2$. Since $-2$ is negative, the direction of the inequalities must be reversed: $\\frac{-16}{-2} \\ge x \\ge \\frac{6}{-2}$, which gives $8 \\ge x \\ge -3$, or $-3 \\le x \\le 8$.\n4. Therefore, the correct range is $-3 \\le x \\le 8$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L5_NEG_NO_FLIP",
+    "distractor_misconceptions": [
+      {
+        "option": "$-8 \\le x \\le 3$",
+        "misconception_id": "L5_NEG_NO_FLIP"
+      },
+      {
+        "option": "$x \\le -3$ or $x \\ge 8$",
+        "misconception_id": "L5_MODULUS_ONE_CASE"
+      }
+    ]
+  },
+  {
+    "id": "b3d149bc-9791-4dce-9e0b-8e993854fb43",
+    "spec": "L5-2",
+    "concept_id": "L5",
+    "type": "TITA",
+    "stem": "Find the number of integral values of $x$ that satisfy the inequality $\\frac{|x - 3| - 2}{|x - 3| - 5} \\le 0$.",
+    "options": null,
+    "answer": "6",
+    "solution": "1. Let $y = |x - 3|$. Note that $y \\ge 0$.\n2. The given inequality becomes $\\frac{y - 2}{y - 5} \\le 0$.\n3. For this rational inequality to hold, the numerator and denominator must have opposite signs, and the denominator cannot be zero. Thus, $2 \\le y < 5$.\n4. Substituting back $y = |x - 3|$, we get $2 \\le |x - 3| < 5$.\n5. This splits into two ranges: $2 \\le x - 3 < 5$ or $-5 < x - 3 \\le -2$.\n6. Solving $2 \\le x - 3 < 5$ gives $5 \\le x < 8$, which contains the integers $x \\in \\{5, 6, 7\\}$ (3 values).\n7. Solving $-5 < x - 3 \\le -2$ gives $-2 < x \\le 1$, which contains the integers $x \\in \\{-1, 0, 1\\}$ (3 values).\n8. Thus, there are $3 + 3 = 6$ integral values in total.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "4e1f6fd1-c2c5-44b9-93b7-ce9758ec6dca",
+    "spec": "L6-1",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "In an arithmetic progression, the $7^{\\text{th}}$ term is $29$ and the $15^{\\text{th}}$ term is $61$. What is the $31^{\\text{st}}$ term of this progression?",
+    "options": [
+      "125",
+      "129",
+      "121",
+      "133"
+    ],
+    "answer": "125",
+    "solution": "1. Let the first term of the arithmetic progression be $a$ and the common difference be $d$.\n2. The $n^{\\text{th}}$ term is given by $T_n = a + (n - 1)d$.\n3. From the given conditions:\n$T_7 = a + 6d = 29$\n$T_{15} = a + 14d = 61$\n4. Subtracting the two equations: $8d = 32 \\implies d = 4$.\n5. Finding $a$: $a + 6(4) = 29 \\implies a + 24 = 29 \\implies a = 5$.\n6. The $31^{\\text{st}}$ term is $T_{31} = a + 30d = 5 + 30(4) = 5 + 120 = 125$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1",
+    "distractor_misconceptions": [
+      {
+        "option": "129",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      },
+      {
+        "option": "121",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      }
+    ]
+  },
+  {
+    "id": "41c44554-edf4-4566-a2d2-a67301541ae5",
+    "spec": "L6-2",
+    "concept_id": "L6",
+    "type": "TITA",
+    "stem": "The sum of the first $n$ terms of an arithmetic progression is given by $S_n = 3n^2 - 2n$. If the $k^{\\text{th}}$ term of this progression is $145$, find the value of $k$.",
+    "options": null,
+    "answer": "25",
+    "solution": "1. The $n^{\\text{th}}$ term $T_n$ of an arithmetic progression can be found using the relation $T_n = S_n - S_{n-1}$ for $n \\ge 2$.\n2. $S_n = 3n^2 - 2n$, and $S_{n-1} = 3(n-1)^2 - 2(n-1) = 3(n^2 - 2n + 1) - 2n + 2 = 3n^2 - 8n + 5$.\n3. Thus, $T_n = (3n^2 - 2n) - (3n^2 - 8n + 5) = 6n - 5$. (Note: for $n=1$, $T_1 = 6(1) - 5 = 1 = S_1$, which holds).\n4. We are given $T_k = 145$, so $6k - 5 = 145 \\implies 6k = 150 \\implies k = 25$.\n5. Therefore, the value of $k$ is 25.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f36f2d4c-758c-4a7a-9120-549be889d5b7",
+    "spec": "L7-1",
+    "concept_id": "L7",
+    "type": "MCQ",
+    "stem": "Let $f(x) = 2x - 3$ and $g(x) = x^2 + 1$ for all real numbers $x$. If $h(x) = f(g(x)) - g(f(x))$, what is the value of $g(f(2))$?",
+    "options": [
+      "2",
+      "7",
+      "5",
+      "1"
+    ],
+    "answer": "2",
+    "solution": "1. To evaluate $g(f(2))$, we first evaluate the inner function at $x = 2$: $f(2) = 2(2) - 3 = 1$.\n2. Next, apply the outer function $g$ to this result: $g(1) = 1^2 + 1 = 2$.\n3. Therefore, $g(f(2)) = 2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L7_COMPOSITION_ORDER",
+    "distractor_misconceptions": [
+      {
+        "option": "7",
+        "misconception_id": "L7_COMPOSITION_ORDER"
+      }
+    ]
+  },
+  {
+    "id": "5b20ef5e-88e4-4d4d-88b6-e2c89c75779c",
+    "spec": "M1-1",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In an aptitude training batch of 120 students, each student enrolled in at least one of three special modules: Quantitative Aptitude ($Q$), Data Interpretation ($D$), and Verbal Ability ($V$). Exactly $72$ students enrolled in $Q$, $65$ in $D$, and $58$ in $V$. The number of students enrolled in both $Q$ and $D$ is $34$, both $D$ and $V$ is $26$, and both $Q$ and $V$ is $30$. If each student is accounted for within these three modules, how many students are enrolled in all three modules?",
+    "options": [
+      "15",
+      "25",
+      "30",
+      "10"
+    ],
+    "answer": "15",
+    "solution": "1. By the principle of inclusion-exclusion for three sets:\n$n(Q \\cup D \\cup V) = n(Q) + n(D) + n(V) - [n(Q \\cap D) + n(D \\cap V) + n(Q \\cap V)] + n(Q \\cap D \\cap V)$.\n2. We are given $n(Q \\cup D \\cup V) = 120$, $n(Q) = 72$, $n(D) = 65$, $n(V) = 58$.\nSum of single modules: $72 + 65 + 58 = 195$.\n3. Sum of pairwise overlaps: $34 + 26 + 30 = 90$.\n4. Substituting these into the formula:\n$120 = 195 - 90 + n(Q \\cap D \\cap V)$\n$120 = 105 + n(Q \\cap D \\cap V)$\n$n(Q \\cap D \\cap V) = 120 - 105 = 15$.\n5. Therefore, $15$ students enrolled in all three modules.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_FORGET_TRIPLE",
+    "distractor_misconceptions": [
+      {
+        "option": "25",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "a8047ead-1f0a-4c5c-99f1-fd01c6555393",
+    "spec": "M2-1",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "A corporate committee of $5$ members is to be formed from a department consisting of $6$ software engineers and $4$ project managers. If the committee must contain at least $3$ software engineers, in how many distinct ways can the committee be formed?",
+    "options": [
+      "186",
+      "11160",
+      "140",
+      "210"
+    ],
+    "answer": "186",
+    "solution": "1. The committee requires $5$ members in total from $6$ software engineers (SE) and $4$ project managers (PM), with at least $3$ SEs.\n2. Case 1: Exactly $3$ SEs and $2$ PMs.\nNumber of ways = $\\binom{6}{3} \\times \\binom{4}{2} = 20 \\times 6 = 120$.\n3. Case 2: Exactly $4$ SEs and $1$ PM.\nNumber of ways = $\\binom{6}{4} \\times \\binom{4}{1} = 15 \\times 4 = 60$.\n4. Case 3: Exactly $5$ SEs and $0$ PMs.\nNumber of ways = $\\binom{6}{5} \\times \\binom{4}{0} = 6 \\times 1 = 6$.\n5. Total number of distinct ways = $120 + 60 + 6 = 186$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_PERM_FOR_COMB",
+    "distractor_misconceptions": [
+      {
+        "option": "11160",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      }
+    ]
+  },
+  {
+    "id": "8cd37f8d-0bc0-46e9-b781-08a243c81212",
+    "spec": "M3-1",
+    "concept_id": "M3",
+    "type": "MCQ",
+    "stem": "An integer is chosen at random from the set of all two-digit natural numbers from $10$ to $99$, inclusive. What is the probability that the chosen number is a multiple of $3$ or a multiple of $5$?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{7}{15}$",
+      "$\\frac{21}{50}$",
+      "$\\frac{8}{15}$"
+    ],
+    "answer": "$\\frac{7}{15}$",
+    "solution": "1. The total number of two-digit natural numbers from $10$ to $99$ is $99 - 10 + 1 = 90$.\n2. Let $A$ be the event that the number is a multiple of $3$. Multiples of $3$ are $12, 15, \\dots, 99$, giving $n(A) = \\lfloor \\frac{99}{3} \\rfloor - \\lfloor \\frac{9}{3} \\rfloor = 33 - 3 = 30$.\n3. Let $B$ be the event that the number is a multiple of $5$. Multiples of $5$ are $10, 15, \\dots, 95$, giving $n(B) = \\lfloor \\frac{99}{5} \\rfloor - \\lfloor \\frac{9}{5} \\rfloor = 19 - 1 = 18$.\n4. The overlapping event $A \\cap B$ is the set of multiples of $\\text{lcm}(3, 5) = 15$. These are $15, 30, \\dots, 90$, giving $n(A \\cap B) = \\lfloor \\frac{99}{15} \\rfloor = 6$.\n5. By the principle of inclusion-exclusion, $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 30 + 18 - 6 = 42$.\n6. The required probability is $\\frac{42}{90} = \\frac{7}{15}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M3_ADD_NON_EXCLUSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{8}{15}$",
+        "misconception_id": "M3_ADD_NON_EXCLUSIVE"
+      }
+    ]
+  },
+  {
+    "id": "c3d4a3c9-7128-499e-b9de-f5de70e366bc",
+    "spec": "N1-1",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "How many positive integers less than or equal to $600$ are divisible by both $15$ and $20$, but not by $40$?",
+    "options": [
+      "5",
+      "10",
+      "1",
+      "2"
+    ],
+    "answer": "5",
+    "solution": "1. A number is divisible by both $15$ and $20$ if and only if it is a multiple of $\\text{LCM}(15, 20) = 60$.\n2. The number of multiples of $60$ up to $600$ is $\\lfloor \\frac{600}{60} \\rfloor = 10$.\n3. Among these, we must exclude numbers that are also divisible by $40$. A multiple of $60$ that is divisible by $40$ must be a multiple of $\\text{LCM}(60, 40) = 120$.\n4. The number of multiples of $120$ up to $600$ is $\\lfloor \\frac{600}{120} \\rfloor = 5$.\n5. Therefore, the required count is $10 - 5 = 5$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N1_DIVISIBLE_BY_PRODUCT",
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      },
+      {
+        "option": "10",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      }
+    ]
+  },
+  {
+    "id": "f2563643-5305-4170-9f04-1acc3e8e9e59",
+    "spec": "N2-1",
+    "concept_id": "N2",
+    "type": "MCQ",
+    "stem": "Three numbers are in the ratio $3 : 5 : 6$, and their highest common factor (HCF) is $4$. What is the lowest common multiple (LCM) of these three numbers?",
+    "options": [
+      "120",
+      "7200",
+      "360",
+      "480"
+    ],
+    "answer": "120",
+    "solution": "1. Let the three numbers be $3x, 5x, 6x$. Since their HCF is $4$, we have $x = 4$ because $\\text{HCF}(3, 5, 6) = 1$.\n2. Thus, the three numbers are $3 \\times 4 = 12$, $5 \\times 4 = 20$, and $6 \\times 4 = 24$.\n3. To find the LCM of $12, 20$, and $24$:\n$12 = 2^2 \\times 3$\n$20 = 2^2 \\times 5$\n$24 = 2^3 \\times 3$\n$\\text{LCM}(12, 20, 24) = 2^3 \\times 3 \\times 5 = 8 \\times 3 \\times 5 = 120$.\n4. Hence, the correct LCM is 120.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N2_PRODUCT_RULE_3NUMS",
+    "distractor_misconceptions": [
+      {
+        "option": "7200",
+        "misconception_id": "N2_PRODUCT_RULE_3NUMS"
+      }
+    ]
+  },
+  {
+    "id": "c49dffa1-f770-43fb-9741-3bd9a9406fc2",
+    "spec": "N3-1",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "Find the remainder when $3^{75}$ is divided by $28$.",
+    "options": [
+      "27",
+      "1",
+      "9",
+      "3"
+    ],
+    "answer": "27",
+    "solution": "1. Express $3^{75}$ in terms of powers close to a multiple of $28$. Notice that $3^3 = 27 = 28 - 1$.\n2. Rewrite the expression: $3^{75} = (3^3)^{25} = 27^{25}$.\n3. Take modulo $28$: $27 \\equiv -1 \\pmod{28}$.\n4. Therefore, $27^{25} \\equiv (-1)^{25} \\equiv -1 \\pmod{28}$.\n5. Convert the negative remainder to a standard non-negative remainder: $-1 + 28 = 27$.\n\nFinal Answer: 27",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N3_NEGATIVE_REMAINDER",
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  }
+]

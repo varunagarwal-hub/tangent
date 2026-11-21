@@ -98,6 +98,15 @@ async function main() {
     id: m.id, conceptId: m.concept_id, name: m.name, description: m.description, wrongReasoningExample: m.wrong_reasoning_example,
     telltaleSigns: m.telltale_signs, contrastQuestionIdea: m.contrast_question_idea,
   })));
+  // Questions first (attempts reference them); their Elo is recalibrated after the simulation.
+  for (let i = 0; i < questions.length; i += 100) {
+    await db.insert(s.questions).values(questions.slice(i, i + 100).map((q) => ({
+      id: q.id, conceptId: q.concept_id, type: q.type, stem: q.stem, options: q.options, answer: q.answer, solution: q.solution,
+      difficultyElo: q.difficulty_elo, attemptsCount: 0, source: "bank" as const, verified: true,
+      targetsMisconceptionId: q.targets_misconception_id && mcIds.has(q.targets_misconception_id) ? q.targets_misconception_id : null,
+      distractorMisconceptions: q.distractor_misconceptions,
+    })));
+  }
   // question elo is mutated by the simulation; keep a live map
   const qElo = new Map(questions.map((q) => [q.id, q.difficulty_elo]));
   const qAttempts = new Map(questions.map((q) => [q.id, 0]));
@@ -134,6 +143,7 @@ async function main() {
     perSession: () => number;
     conceptWeight: (conceptId: string) => number;
     resolveChance: number;
+    randomMisattribution?: number; // chance a wrong answer is pinned on a misconception the student does not hold
     skillBoost?: (conceptId: string, t: Date) => number;
   }) {
     const state = new Map<string, ReturnType<typeof L.initialConceptState>>();
@@ -175,7 +185,7 @@ async function main() {
         if (!correct) {
           const candidates = misconceptionsFor(concept.id).map((m) => m.id);
           if (heldHere.length && chance(0.8)) misconceptionId = pick(heldHere);
-          else if (candidates.length && chance(0.35)) misconceptionId = pick(candidates);
+          else if (candidates.length && chance(opts.randomMisattribution ?? 0.35)) misconceptionId = pick(candidates);
           verdict = misconceptionId ? "flawed" : "unknown";
         } else if (heldHere.length && chance(0.12)) {
           // right answer, wrong reasoning
@@ -293,7 +303,7 @@ async function main() {
 
   // ── Riya: the scripted demo student ──
   {
-    const riyaSkill: Record<string, number> = { A1: 880, A4: 940, A5: 1000, A2: 1220, A3: 1150, A6: 1080, A7: 1180, A8: 1120 };
+    const riyaSkill: Record<string, number> = { A1: 1080, A4: 1020, A5: 1150, A2: 1500, A3: 1450, A6: 1350, A7: 1450, A8: 1400 };
     const sessions: Date[] = [];
     for (let d = 14; d >= 1; d--) {
       // last 6 days consecutive (6-day streak), sporadic before
@@ -301,12 +311,12 @@ async function main() {
     }
     simulate({
       id: RIYA_ID,
-      skill: (cid) => riyaSkill[cid] ?? (areaOf(cid) === "Algebra" ? 1320 : 1150),
+      skill: (cid) => riyaSkill[cid] ?? (areaOf(cid) === "Algebra" ? 1650 : 1350),
       holds: new Set(["A1_ADD_SUCCESSIVE"]),
       speed: 1.05, careless: 0.05, overconfident: false,
       sessions, perSession: () => 4 + Math.floor(rand() * 3),
       conceptWeight: (cid) => (["A1", "A4", "A2", "A3"].includes(cid) ? 6 : cid.startsWith("L") ? 2 : 1),
-      resolveChance: 0,
+      resolveChance: 0, randomMisattribution: 0.08,
     });
     // Guarantee the demo state: A1_ADD_SUCCESSIVE is active ("fixing"); A4_ADD_DISCOUNTS is NOT yet known
     // (the demo detects it live). Strip any simulated A4_ADD_DISCOUNTS evidence for Riya.
@@ -320,6 +330,23 @@ async function main() {
     const ev = eventRows.find((e) => e.studentId === RIYA_ID && e.misconceptionId === "A1_ADD_SUCCESSIVE");
     if (ev) { ev.status = "fixing"; ev.evidenceCount = Math.max(3, ev.evidenceCount ?? 0); ev.cleanCount = 0; }
     else eventRows.push({ studentId: RIYA_ID, misconceptionId: "A1_ADD_SUCCESSIVE", status: "fixing", evidenceCount: 3, cleanCount: 0, updatedAt: new Date(now.getTime() - DAY) });
+
+    // "A few due reviews": keep the active misconception card + the 3 most overdue concept cards due;
+    // push the rest out over the coming week (demo readability).
+    const riyaCards = cardRows.filter((c) => c.studentId === RIYA_ID).sort((a, b) => +new Date(a.dueAt) - +new Date(b.dueAt));
+    const keepDue = new Set([
+      ...riyaCards.filter((c) => c.itemId === "A1_ADD_SUCCESSIVE"),
+      ...riyaCards.filter((c) => c.itemType === "concept").slice(0, 3),
+    ]);
+    let offset = 1;
+    for (const c of riyaCards) {
+      if (keepDue.has(c)) {
+        if (+new Date(c.dueAt) > +now) c.dueAt = new Date(now.getTime() - 3600_000);
+      } else if (+new Date(c.dueAt) <= +now) {
+        c.dueAt = new Date(now.getTime() + (offset++ % 6 + 1) * DAY);
+      } else continue;
+      c.fsrsState = { ...(c.fsrsState as StoredCard), due: new Date(c.dueAt).toISOString() };
+    }
 
     studentRows.push({
       id: RIYA_ID, name: "Riya Sharma", role: "student", classId: CLASS_ID, targetPercentile: 99, examDate, dailyMinutes: 90,
@@ -337,13 +364,10 @@ async function main() {
   await chunk(cardRows, 300, (p) => db.insert(s.reviewCards).values(p));
   await chunk(eventRows, 300, (p) => db.insert(s.misconceptionEvents).values(p));
 
-  // Questions go in last so their Elo reflects the whole simulated class.
-  await chunk(questions, 100, (p) => db.insert(s.questions).values(p.map((q) => ({
-    id: q.id, conceptId: q.concept_id, type: q.type, stem: q.stem, options: q.options, answer: q.answer, solution: q.solution,
-    difficultyElo: Math.round(qElo.get(q.id)!), attemptsCount: qAttempts.get(q.id)!, source: "bank" as const, verified: true,
-    targetsMisconceptionId: q.targets_misconception_id && mcIds.has(q.targets_misconception_id) ? q.targets_misconception_id : null,
-    distractorMisconceptions: q.distractor_misconceptions,
-  }))));
+  // Recalibrated question Elo from the whole simulated class (one UPDATE … FROM VALUES).
+  const eloValues = questions.map((q) => sql`(${q.id}::uuid, ${Math.round(qElo.get(q.id)!)}::float, ${qAttempts.get(q.id)!}::int)`);
+  await db.execute(sql`update questions set difficulty_elo = v.elo, attempts_count = v.n
+    from (values ${sql.join(eloValues, sql`, `)}) as v(id, elo, n) where questions.id = v.id`);
 
   if (a3Questions.length) {
     await db.insert(s.assignments).values({
