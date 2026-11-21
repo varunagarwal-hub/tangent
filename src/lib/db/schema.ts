@@ -231,3 +231,26 @@ export type Mastery = typeof mastery.$inferSelect;
 export type MisconceptionEvent = typeof misconceptionEvents.$inferSelect;
 export type ReviewCard = typeof reviewCards.$inferSelect;
 export type AgentRun = typeof agentRuns.$inferSelect;
+
+/** A student's question to their teacher (typed or voice), optionally about a specific question/attempt. */
+export const studentQueries = pgTable(
+  "student_queries",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    studentId: uuid("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+    classId: uuid("class_id").references(() => classes.id),
+    questionId: uuid("question_id").references(() => questions.id, { onDelete: "set null" }),
+    attemptId: uuid("attempt_id").references(() => attempts.id, { onDelete: "set null" }),
+    conceptId: text("concept_id"),
+    text: text("text").notNull(),
+    audioUrl: text("audio_url"),
+    viaVoice: boolean("via_voice").notNull().default(false),
+    status: text("status", { enum: ["open", "answered"] }).notNull().default("open"),
+    replyText: text("reply_text"),
+    replyAudioUrl: text("reply_audio_url"),
+    replyViaVoice: boolean("reply_via_voice").notNull().default(false),
+    repliedAt: timestamp("replied_at", { withTimezone: true }),
+    createdAt: createdAt(),
+  },
+  (t) => [index("student_queries_student_idx").on(t.studentId, t.createdAt), index("student_queries_class_idx").on(t.classId, t.status, t.createdAt)],
+);

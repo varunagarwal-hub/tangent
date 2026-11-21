@@ -16,6 +16,7 @@ import { SectionHeading, fetchJson, pct } from "@/components/tangent/teacher/sha
 import { cn } from "@/lib/utils";
 import { PageIntro } from "@/components/tangent/page-intro";
 import { InfoTip } from "@/components/tangent/info-tip";
+import { StudentQuestions } from "@/components/tangent/teacher/student-questions";
 import type { GlossaryTerm } from "@/lib/glossary";
 
 function Kpi({ label, value, note, tone = "ink", tip }: { label: string; value: string; note?: string; tone?: "ink" | "red"; tip?: GlossaryTerm }) {
@@ -175,6 +176,17 @@ export function TeacherClient() {
           />
         </div>
       </header>
+
+      {/* 2b. student questions (voice or text) */}
+      <section aria-labelledby="sq-h" className="flex min-w-0 flex-col gap-4">
+        <SectionHeading
+          id="sq-h"
+          kicker="straight from the batch"
+          title={<span className="inline-flex items-center gap-1.5">Student questions <InfoTip term="studentQuestions" /></span>}
+          aside={<p className="text-sm text-ink-soft">Sent by voice or text while practising. Reply the same way.</p>}
+        />
+        <StudentQuestions />
+      </section>
 
       {/* 3. heatmap */}
       <section aria-labelledby="heat-h" className="flex min-w-0 flex-col gap-4">

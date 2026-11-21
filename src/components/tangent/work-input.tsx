@@ -1,7 +1,8 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
-import { BookOpenCheck, Camera, Check, ImageUp, Keyboard, Loader2, PenLine, TriangleAlert, X } from "lucide-react";
+import { BookOpenCheck, Camera, Check, ImageUp, Keyboard, Loader2, Mic, PenLine, TriangleAlert, X } from "lucide-react";
+import { VoiceButton, transcribeAudio } from "./voice-recorder";
 import type { WorkPayload } from "@/lib/api-types";
 import { compressImage } from "@/lib/compress-image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -17,7 +18,7 @@ export interface WorkSample {
   imageUrl?: string;
 }
 
-type Tab = "scratchpad" | "type" | "upload" | "sample";
+type Tab = "scratchpad" | "type" | "speak" | "upload" | "sample";
 
 const ACCEPTED = ["image/jpeg", "image/png", "image/webp"];
 
@@ -34,7 +35,7 @@ function tabFor(source: WorkPayload["source"]): Tab {
   return source === "type" || source === "upload" || source === "sample" ? source : "scratchpad";
 }
 
-/** Rough-work input: Scratchpad | Type | Upload photo | Use sample. Each tab emits its own WorkPayload. */
+/** Rough-work input: Scratchpad | Type | Speak | Upload photo | Use sample. Each tab emits its own WorkPayload. */
 export function WorkInput({
   value,
   onChange,
@@ -54,6 +55,7 @@ export function WorkInput({
   const [typed, setTyped] = useState(value.source === "type" ? (value.text ?? "") : "");
   const [drawing, setDrawing] = useState<string | null>(value.source === "scratchpad" ? (value.imageDataUrl ?? null) : null);
   const [photo, setPhoto] = useState<string | null>(value.source === "upload" ? (value.imageDataUrl ?? null) : null);
+  const [spoken, setSpoken] = useState("");
   const [sampleId, setSampleId] = useState<string | null>(null);
   const [busy, setBusy] = useState<"upload" | "sample" | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -61,6 +63,7 @@ export function WorkInput({
 
   function emitFor(t: Tab) {
     if (t === "type") onChange(typed.trim() ? { text: typed, source: "type" } : { source: "none" });
+    else if (t === "speak") onChange(spoken.trim() ? { text: spoken, source: "type" } : { source: "none" });
     else if (t === "scratchpad") onChange(drawing ? { imageDataUrl: drawing, source: "scratchpad" } : { source: "none" });
     else if (t === "upload") onChange(photo ? { imageDataUrl: photo, source: "upload" } : { source: "none" });
     else if (t === "sample") {
@@ -124,12 +127,15 @@ export function WorkInput({
           emitFor(t);
         }}
       >
-        <TabsList className="grid h-auto! w-full grid-cols-4 gap-0.5 p-1">
+        <TabsList className="grid h-auto! w-full grid-cols-5 gap-0.5 p-1">
           <TabsTrigger value="scratchpad" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <PenLine aria-hidden="true" /> Scratchpad
           </TabsTrigger>
           <TabsTrigger value="type" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <Keyboard aria-hidden="true" /> Type
+          </TabsTrigger>
+          <TabsTrigger value="speak" aria-label="Speak your working" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
+            <Mic aria-hidden="true" /> Speak
           </TabsTrigger>
           <TabsTrigger value="upload" aria-label="Upload photo" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <Camera aria-hidden="true" /> <span>Upload<span className="hidden sm:inline"> photo</span></span>
@@ -165,6 +171,44 @@ export function WorkInput({
               onChange(e.target.value.trim() ? { text: e.target.value, source: "type" } : { source: "none" });
             }}
           />
+        </TabsContent>
+
+        <TabsContent value="speak" className="pt-1">
+          <div className="flex flex-col gap-3 rounded-lg border border-dashed border-ink/25 bg-card p-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <VoiceButton
+                label={spoken ? "Record again" : "Think aloud"}
+                processingLabel="Writing down your steps…"
+                maxSec={120}
+                onAudio={async (wav) => {
+                  setError(null);
+                  const r = await transcribeAudio(wav, "work");
+                  const text = r.lines.length ? r.lines.map((l, i) => `${i + 1}. ${l.replace(/^\d+[.)]\s*/, "")}`).join("\n") : r.text;
+                  setSpoken(text);
+                  onChange(text.trim() ? { text, source: "type" } : { source: "none" });
+                }}
+              />
+              <p className="text-sm text-ink-soft">Talk through how you’re solving it. Tangent writes your steps down so it can check the reasoning.</p>
+            </div>
+            {spoken && (
+              <>
+                <label htmlFor={`${id}-spoken`} className="text-sm font-medium text-ink">
+                  Here’s what I heard (edit if needed)
+                </label>
+                <Textarea
+                  id={`${id}-spoken`}
+                  value={spoken}
+                  disabled={disabled}
+                  rows={5}
+                  className="min-h-32 bg-paper font-mono text-sm leading-7"
+                  onChange={(e) => {
+                    setSpoken(e.target.value);
+                    onChange(e.target.value.trim() ? { text: e.target.value, source: "type" } : { source: "none" });
+                  }}
+                />
+              </>
+            )}
+          </div>
         </TabsContent>
 
         <TabsContent value="upload" className="pt-1">

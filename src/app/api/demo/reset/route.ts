@@ -1,7 +1,7 @@
 import { connection } from "next/server";
-import { eq } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 import { db, schema as s } from "@/lib/db";
-import { RIYA_ID } from "@/lib/personas";
+import { CLASS_ID, RIYA_ID } from "@/lib/personas";
 import { rateLimit, tooMany } from "@/lib/rate-limit";
 import snapshot from "../../../../../data/riya-snapshot.json";
 
@@ -59,8 +59,29 @@ export async function POST() {
     createdAt: toDate(f.createdAt as string, delta)!,
   }));
 
+  // Teacher inbox: clear test questions and seed two realistic open ones from classmates.
+  const classmates = await db
+    .select({ id: s.students.id })
+    .from(s.students)
+    .where(and(eq(s.students.classId, CLASS_ID), eq(s.students.isSynthetic, true)))
+    .orderBy(asc(s.students.name))
+    .limit(2);
+  const seededQueries = classmates.map((c, i) => ({
+    studentId: c.id,
+    classId: CLASS_ID,
+    conceptId: i === 0 ? "A8" : "A3",
+    text:
+      i === 0
+        ? "For average speed over the same distance, why can't I just take (40 + 60) / 2? When do I use the harmonic mean?"
+        : "If two sections have averages of 50 and 75, is the class average always 62.5? I keep getting these wrong.",
+    viaVoice: false,
+    createdAt: new Date(Date.now() - (i + 1) * 47 * 60_000),
+  }));
+
   try {
     const ops = [
+      db.delete(s.studentQueries),
+      ...(seededQueries.length ? [db.insert(s.studentQueries).values(seededQueries)] : []),
       // Deleting the student cascades to attempts (→ feedback), mastery, misconception events and review cards.
       db.delete(s.students).where(eq(s.students.id, RIYA_ID)),
       db.delete(s.feedback).where(eq(s.feedback.byRole, "teacher")),

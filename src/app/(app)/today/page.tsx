@@ -10,6 +10,7 @@ import { getConcept, getMisconception } from "@/lib/content";
 import { PenLoader } from "@/components/tangent/pen-loader";
 import { StatusChip } from "@/components/tangent/status-chip";
 import { PageIntro } from "@/components/tangent/page-intro";
+import { MyQuestions } from "@/components/tangent/my-questions";
 import { InfoTip } from "@/components/tangent/info-tip";
 
 export const metadata: Metadata = { title: "Today · Tangent" };
@@ -196,6 +197,7 @@ async function TodayContent() {
           </Link>
         </section>
       </div>
+      <MyQuestions />
       <p className="text-center text-xs text-ink-soft">
         {t.attemptsTotal} questions answered so far. Tangent never predicts a percentile; it shows readiness by area.
       </p>

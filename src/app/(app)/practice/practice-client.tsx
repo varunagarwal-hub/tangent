@@ -16,6 +16,7 @@ import { useAnswerFlow } from "@/lib/client/answer-flow";
 import { SAMPLE_WORK } from "@/lib/samples";
 import type { Confidence, NextAction, TraceStep, WorkLine, WorkPayload } from "@/lib/api-types";
 import { PageIntro } from "@/components/tangent/page-intro";
+import { AskTeacher } from "@/components/tangent/ask-teacher";
 import { SessionRecap, type SessionEntry } from "@/components/tangent/session-recap";
 import { markDemoStep } from "@/components/tangent/demo-guide/events";
 
@@ -184,7 +185,8 @@ export function PracticeClient() {
               {startedAt > 0 && <Timer startedAt={startedAt} targetSec={action.question.targetTimeSec} />}
             </div>
             <WorkInput value={work} onChange={setWork} samples={SAMPLE_WORK} />
-            <div className="flex justify-end">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <AskTeacher questionId={action.question.id} conceptId={action.conceptId} conceptName={action.conceptName} teacherName="Prof. Mehta" />
               <Button size="lg" onClick={onSubmit} disabled={!answer.trim()}>
                 Submit answer <ArrowRight className="size-4" />
               </Button>
@@ -294,6 +296,7 @@ export function PracticeClient() {
                 <MessageCircleQuestion className="size-4" /> {d?.unsure ? "Tell me your approach" : "That's not why I got it wrong"}
               </Button>
             )}
+            <AskTeacher questionId={action.question.id} conceptId={action.conceptId} conceptName={action.conceptName} attemptId={r?.attemptId} teacherName="Prof. Mehta" />
             <Button size="lg" className="ml-auto" onClick={goNext} disabled={loading}>
               {loading ? "Planning…" : "Next question"} <ArrowRight className="size-4" />
             </Button>

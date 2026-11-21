@@ -67,6 +67,10 @@ export const GLOSSARY = {
     title: "Misconception leaderboard",
     body: "The mistakes most students in the class are making right now, with how many are affected and whether it's growing.",
   },
+  studentQuestions: {
+    title: "Student questions",
+    body: "Questions students sent you by voice or text while practising, with the problem they were on. Reply by typing or recording; the student sees it on their Today page.",
+  },
   elo: {
     title: "Difficulty rating",
     body: "Every question and every student has a rating, like chess. Tangent picks questions you have about a 60–70% chance of getting right: hard enough to learn from, not so hard you guess.",

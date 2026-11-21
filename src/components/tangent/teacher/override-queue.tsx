@@ -7,6 +7,7 @@ import type { OverrideItem } from "@/lib/api-types";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { MathText } from "@/components/tangent/math-text";
+import { DictateButton } from "@/components/tangent/voice-recorder";
 import { cn } from "@/lib/utils";
 import { postJson } from "./shared";
 
@@ -148,17 +149,24 @@ function QueueItem({ item, onDone }: { item: OverrideItem; onDone: (attemptId: s
               </label>
             ))}
           </fieldset>
-          <label className="flex flex-col gap-1 text-sm text-ink">
-            <span>
-              Note for the detective <span className="text-ink-soft">(optional)</span>
-            </span>
+          <div className="flex flex-col gap-1 text-sm text-ink">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <label htmlFor={`note-${item.attemptId}`}>
+                Note for the detective <span className="text-ink-soft">(optional)</span>
+              </label>
+              <DictateButton
+                label="Dictate note"
+                onText={({ text }) => setNote((n) => (n.trim() ? `${n.trim()} ${text}` : text))}
+              />
+            </div>
             <Textarea
+              id={`note-${item.attemptId}`}
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              placeholder="e.g. They added the percentages instead of compounding them"
-              className="min-h-16 font-hand text-xl"
+              placeholder="Type it, or tap Dictate note and just say it"
+              className="min-h-16 text-base"
             />
-          </label>
+          </div>
           <div className="flex flex-wrap gap-2">
             <Button type="submit" size="lg" disabled={busy || !choice}>
               <PencilLine aria-hidden="true" /> Save relabel

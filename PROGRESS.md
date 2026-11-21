@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 8 UX pass done (fonts, welcome tour + role picker, page intros, info tips, guided demo, session recap, reset demo); built, checked desktop + 375px, deployed. Riya reset via /api/demo/reset. Human: demo video.
+Last updated: Phase 9 voice done (Speak tab, Ask your teacher, teacher inbox with voice replies, dictation); deployed. Human: demo video + deck export for submission.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -82,6 +82,14 @@ Last updated: Phase 8 UX pass done (fonts, welcome tour + role picker, page intr
 - [x] Session recap card after every 5 practice answers (`session-recap.tsx`)
 - [x] Reset demo (Help menu → Reset demo, `POST /api/demo/reset` restores Riya from `data/riya-snapshot.json`, clears teacher corrections). seed-db regenerates the snapshot.
 - [x] Fixed: header id hydration mismatch (guide moved to its own Suspense boundary); dead `text-amber-ink` class
+
+### Phase 9 — Voice (approved by human, ~11 PM)
+- [x] Shared voice core: `voice-recorder.tsx` (MediaRecorder → 16 kHz WAV in the browser via `src/lib/client/wav.ts`; `VoiceButton`, `DictateButton`), `src/lib/voice.ts` (Gemini Flash audio transcription: "work" mode keeps spoken steps verbatim incl. mistakes; "note" mode clean transcript; Blob upload for playback), `POST /api/transcribe`
+- [x] Student: **Speak** tab in rough-work input (think aloud → numbered steps → Detective, editable), **Ask your teacher** dialog on practice (voice or text, linked to the question/attempt), replies on Today ("Your questions to Prof. Mehta")
+- [x] Teacher: **Student questions** inbox on /teacher (play the voice note, reply by text, dictation or a voice reply), **Dictate note** in the override queue
+- [x] Table `student_queries` (pushed to Neon); APIs `/api/queries` (GET mine, POST ask), `/api/teacher/queries`, `/api/teacher/queries/[id]/reply`
+- [x] Reset demo also clears the inbox and seeds two open classmate questions (A8 average speed, A3 averaging averages)
+- Tested with a TTS-generated WAV: work-mode transcription kept "20 + 10 = 30%" verbatim; voice question → teacher voice reply → shown on Today with playable audio
 
 ──── CUT LINE B ────
 
