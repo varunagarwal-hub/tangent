@@ -15,16 +15,20 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - [x] P0.10 Infra wired: Neon project `tangent` (id `falling-scene-06569260`, aws-ap-southeast-1, PG17); `npm run db:push` done, 13 tables confirmed. Vercel project `tangent` (team varun-s-workspace) linked and connected to GitHub `varunagarwal-hub/tangent` (pushes to main auto-deploy). Blob store `tangent-rough-work` (public, sin1) connected to all envs. Vercel env: DATABASE_URL, BLOB_READ_WRITE_TOKEN, GEMINI_MODEL_FAST/SMART set for production/preview/development. `/api/health` reports DB/blob/Gemini wiring.
 - [x] P0.9 Image storage: `src/lib/storage.ts` (`uploadRoughWork()` → Vercel Blob URL, or null when BLOB_READ_WRITE_TOKEN is missing/fails), `src/lib/compress-image.ts` (client-side, ≤1600px JPEG, <4MB).
 
+### Phase 1 — Content & learner model (in progress)
+- [x] `data/concepts.json` (27 nodes, weights, target times)
+- [x] Learner model `src/lib/learner/` (bkt, elo, calibration, fsrs, index → `applyAttempt()` + `stepMisconception()` lifecycle). 21 vitest tests + 3 grading tests pass (`npm test`).
+- [x] `src/lib/grading.ts` deterministic answer matching (₹, commas, units, LaTeX fractions, option letters)
+- [x] Generator + verifier agents (`src/lib/agents/generator.ts`, `verifier.ts`, prompts in `prompts/`): `generateVerified()` loop, max 2 retries with rejection reason, trace steps
+- [x] `src/lib/content.ts` (typed access to concepts/misconceptions), `src/lib/personas.ts` (fixed Riya/Mehta/class UUIDs)
+- [x] `data/anchor-questions.json`: 5 hand-written demo questions (successive discounts, avg speed, time & work, similar-triangle area, successive %) with tagged distractors
+- [x] `scripts/seed-content.ts` (resumable, concurrency 4, logs rejections to `data/questions-rejections.json`) and `scripts/seed-db.ts` (wipe + load + simulate 30 synthetic students + Riya through `applyAttempt`)
+
 ## In progress
-- (nothing)
+- [ ] `data/misconceptions.json` (~75), `data/fewshot-seed.json`, `data/evals/detective.json`: being written by a subagent
+- [ ] Run seed-content (60 + 5 anchors), then seed-db; build; push
 
 ## Next
-### Phase 1 — Content & learner model
-- [ ] data/concepts.json (27 nodes)
-- [ ] data/misconceptions.json (~75; ≥4 per arithmetic concept)
-- [ ] Learner model: BKT, Elo, calibration, FSRS rating map + vitest tests
-- [ ] scripts/seed-content.ts → data/questions.json (60 verified to start)
-- [ ] scripts/seed-db.ts (Riya, Prof. Mehta, CAT 2027 Batch A, 30 synthetic students)
 
 ### Phase 2 — Core student loop
 - [ ] /diagnostic (adaptive 12 Q), work input tabs (scratchpad / type / upload / sample)
@@ -67,6 +71,9 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 - drizzle-kit pulls an old nested esbuild whose binary fails to install here (Windows path length in the deep workspace folder). Fixed with `overrides["@esbuild-kit/core-utils"].esbuild = 0.28.2` in package.json, which reuses the hoisted esbuild.
 - Vercel CLI quirks: `vercel env pull` / `blob create-store` rewrite `.env.local` (comments lost, sensitive vars come back empty). After any pull, re-check DATABASE_URL locally. `vercel env add` with `--value` saved an empty value once; pipe the value on stdin with `--environment <env>` instead. `vercel link` appends `.env*` to .gitignore; removed so `.env.example` stays tracked.
 - Gemini client is pinned to `apiVersion: "v1beta"`: preview models (the Pro preview) 404 on v1. `npx tsx scripts/check-gemini.ts` smoke-tests both tiers (both pass).
+- Learner-model interpretations: "correct but slow → 70% toward the correct update" = p + 0.7·(p_correct − p). Calibration stored per concept as an EMA (α 0.2) of (confidence value − correctness); positive = overconfident. FSRS Easy = correct, ≤0.75× target time and "Certain". ts-fsrs v6 has no `get_retrievability`, so `retrievability()` uses the FSRS-6 curve directly (decay 0.1542).
+- Bank question Elo starts at band centre (easy 1050 / medium 1250 / hard 1450); seed-db then recalibrates it from the simulated class's attempts.
+- Riya's seeded state: A1_ADD_SUCCESSIVE active ("fixing"); A4_ADD_DISCOUNTS deliberately absent so the demo detects it live.
 - `cacheComponents` is on in Next 16: use `await connection()` instead of `export const dynamic`.
 - `db` in `@/lib/db` is a lazy Proxy so `next build` works without DATABASE_URL.
 

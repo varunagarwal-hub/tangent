@@ -1,0 +1,62 @@
+[
+  {
+    "key": "demo-discounts",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A shopkeeper marks a jacket at ₹2,000 and offers two successive discounts of 20% and 10%. At what price does he sell the jacket?",
+    "options": ["₹1,400", "₹1,440", "₹1,460", "₹1,500"],
+    "answer": "₹1,440",
+    "solution": "1. After the 20% discount: $2000 \\times 0.8 = 1600$\n2. After a further 10% discount: $1600 \\times 0.9 = 1440$\n3. Successive discounts multiply: effective discount is $1 - 0.8 \\times 0.9 = 28\\%$, not 30%.\n4. Selling price = ₹1,440",
+    "difficulty_elo": 1050,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": [{ "option": "₹1,400", "misconception_id": "A4_ADD_DISCOUNTS" }]
+  },
+  {
+    "key": "demo-avg-speed",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "A cyclist rides from town A to town B at 12 km/h and returns along the same road at 18 km/h. What is her average speed for the whole journey, in km/h?",
+    "options": ["14", "14.4", "15", "16"],
+    "answer": "14.4",
+    "solution": "1. Let the distance one way be $d$.\n2. Total time $= \\frac{d}{12} + \\frac{d}{18} = \\frac{5d}{36}$\n3. Average speed $= \\frac{2d}{5d/36} = \\frac{72}{5} = 14.4$ km/h (the harmonic mean, not $\\frac{12+18}{2} = 15$).",
+    "difficulty_elo": 1150,
+    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "distractor_misconceptions": [{ "option": "15", "misconception_id": "A8_MEAN_OF_SPEEDS" }]
+  },
+  {
+    "key": "demo-time-work",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "Ravi can complete a piece of work in 12 days and Sunil can complete it in 6 days. If they work together, in how many days will they complete it?",
+    "options": ["4", "6", "9", "18"],
+    "answer": "4",
+    "solution": "1. Ravi's rate $= \\frac{1}{12}$ of the work per day; Sunil's rate $= \\frac{1}{6}$.\n2. Together: $\\frac{1}{12} + \\frac{1}{6} = \\frac{3}{12} = \\frac{1}{4}$ per day.\n3. Time $= 4$ days. Add the rates, never the days.",
+    "difficulty_elo": 1000,
+    "targets_misconception_id": "A7_ADD_DAYS",
+    "distractor_misconceptions": [{ "option": "18", "misconception_id": "A7_ADD_DAYS" }]
+  },
+  {
+    "key": "demo-similar-area",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "Two similar triangles have corresponding sides in the ratio $3:5$. If the area of the smaller triangle is 36 sq cm, what is the area of the larger triangle, in sq cm?",
+    "options": ["60", "90", "100", "150"],
+    "answer": "100",
+    "solution": "1. For similar triangles, the ratio of areas is the square of the ratio of sides: $\\left(\\frac{5}{3}\\right)^2 = \\frac{25}{9}$.\n2. Larger area $= 36 \\times \\frac{25}{9} = 100$ sq cm.",
+    "difficulty_elo": 1100,
+    "targets_misconception_id": "G2_AREA_RATIO_NOT_SQUARED",
+    "distractor_misconceptions": [{ "option": "60", "misconception_id": "G2_AREA_RATIO_NOT_SQUARED" }]
+  },
+  {
+    "key": "demo-successive-pct",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The population of a town was 50,000 at the start of 2024. It rose by 20% during 2024 and then fell by 20% during 2025. What was the population at the end of 2025?",
+    "options": ["46,000", "48,000", "50,000", "52,000"],
+    "answer": "48,000",
+    "solution": "1. After a 20% rise: $50000 \\times 1.2 = 60000$\n2. After a 20% fall: $60000 \\times 0.8 = 48000$\n3. Successive changes multiply: $1.2 \\times 0.8 = 0.96$, a net 4% fall, not 0%.",
+    "difficulty_elo": 1000,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [{ "option": "50,000", "misconception_id": "A1_ADD_SUCCESSIVE" }]
+  }
+]
