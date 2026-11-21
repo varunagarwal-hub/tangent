@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { connection } from "next/server";
 import { ArrowRight } from "lucide-react";
-import { getStudentId } from "@/lib/session";
+import { getPersona, getStudentId } from "@/lib/session";
+import { FingerprintCard, type FingerprintData } from "@/components/tangent/fingerprint-card";
 import { getMistakeJournal, type JournalEntry } from "@/lib/views";
 import { CLEAN_TO_RESOLVE } from "@/lib/learner";
 import { PenLoader } from "@/components/tangent/pen-loader";
@@ -86,9 +87,25 @@ function Entry({ e }: { e: JournalEntry }) {
 
 async function Journal() {
   await connection();
-  const entries = await getMistakeJournal(await getStudentId());
+  const [persona, studentId] = await Promise.all([getPersona(), getStudentId()]);
+  const entries = await getMistakeJournal(studentId);
   const active = entries.filter((e) => e.status !== "resolved");
   const resolved = entries.filter((e) => e.status === "resolved");
+  const byWeight = (a: JournalEntry, b: JournalEntry) => b.evidenceCount - a.evidenceCount;
+  const fingerprint: FingerprintData = {
+    studentName: persona.role === "student" ? persona.name : "Riya Sharma",
+    items: [...active.sort(byWeight), ...resolved.sort(byWeight)].slice(0, 4).map((e) => ({
+      name: e.name,
+      conceptName: e.conceptName,
+      status: e.status,
+      evidenceCount: e.evidenceCount,
+      cleanCount: e.cleanCount,
+    })),
+    active: active.length,
+    resolved: resolved.length,
+    caught: entries.reduce((n, e) => n + e.evidenceCount, 0),
+    cleanToResolve: CLEAN_TO_RESOLVE,
+  };
 
   return (
     <div className="space-y-8">
@@ -128,6 +145,16 @@ async function Journal() {
               <Entry key={e.id} e={e} />
             ))}
           </ul>
+        </section>
+      )}
+
+      {entries.length > 0 && (
+        <section aria-labelledby="fp-title">
+          <p className="font-hand text-xl text-redpen">share it</p>
+          <h2 id="fp-title" className="mb-4 text-2xl">
+            Mistake Fingerprint
+          </h2>
+          <FingerprintCard data={fingerprint} />
         </section>
       )}
     </div>
