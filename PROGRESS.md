@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Phase 4 complete and deployed: teacher dashboard (heatmap, leaderboard, lesson plan, drill-down, override queue → few-shot, assignments + impact). CUT LINE A reached: all P0 ships. Next: Phase 5 (P1 polish). Keep this file true at every commit.
+Last updated: Phase 5 (P1 polish) done except a Skip Coach copy fix: landing, /strategy, /under-the-hood wired and checked at 375px. Next: Phase 6 extras (Mistake Fingerprint card, bank → 150), then Phase 7 submission (README, reseed, final deploy) by 10:30 PM.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -66,7 +66,11 @@ Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired u
 ──── CUT LINE A ────
 
 ### Phase 5 — P1 polish
-- [ ] Landing animations, Skip Coach + calibration, "That's not why" loop, /under-the-hood + eval score, mobile pass, reduced motion, loading/error states
+- [x] Landing `/`: GSAP hero (SplitText headline, DrawSVG tangent scene), looping red-pen demo (3 real mistakes), bento features (Magic UI), mini animated concept graph, how-it-works, CTA, Lenis smooth scroll (landing only). Components in `src/components/landing/`.
+- [x] `/strategy`: Skip Coach replay (+3/−1, TITA no negative), calibration by confidence/area, Sprint mode toggle (P2 done here too)
+- [x] `/under-the-hood`: architecture diagram, counts, 7 agent cards with live runs/latency/errors, detective eval (20/20), verifier rejection rate + reasons, algorithms, feedback loops, live agent feed (15s refresh). `outputFileTracingIncludes` ships the data JSON for its API on Vercel.
+- [x] "That's not why" loop (Phase 2), branded 404/error pages, per-persona rate limits on AI routes, 375px pass (no horizontal overflow on landing, practice, today, mistakes, onboarding, teacher, reveal, strategy, under-the-hood), reduced-motion paths (GSAP matchMedia)
+- [ ] Skip Coach copy says "Rule A / Rule B" (prompt jargon leaking); reword in the coach prompt
 
 ──── CUT LINE B ────
 
