@@ -55,7 +55,7 @@ export interface StructuredCall<S extends z.ZodType> {
   temperature?: number;
   cache?: boolean;
   /** Model "thinking" budget. Lower = much faster; keep higher only where accuracy needs it. */
-  thinking?: "MINIMAL" | "LOW" | "MEDIUM" | "HIGH";
+  thinking?: "LOW" | "MEDIUM" | "HIGH";
 }
 
 export interface StructuredResult<T> {

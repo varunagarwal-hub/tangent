@@ -64,7 +64,7 @@ export async function diagnosticSummary(input: {
       schema: SummaryOutput,
       studentId: input.studentId,
       inputSummary: "diagnostic summary",
-      thinking: "MINIMAL",
+      thinking: "LOW",
       timeoutMs: 10_000,
     });
     return data.summary.trim();

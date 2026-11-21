@@ -98,12 +98,14 @@ export async function masteryMap(studentId: string): Promise<Record<string, numb
 
 /** Concept state for the learner model (with prerequisite-propagated prior when untouched). */
 export async function conceptState(studentId: string, conceptId: string) {
-  const rows = await getMasteryRows(studentId);
+  const [rows, [card]] = await Promise.all([
+    getMasteryRows(studentId),
+    db
+      .select()
+      .from(s.reviewCards)
+      .where(and(eq(s.reviewCards.studentId, studentId), eq(s.reviewCards.itemType, "concept"), eq(s.reviewCards.itemId, conceptId))),
+  ]);
   const row = rows.find((r) => r.conceptId === conceptId);
-  const [card] = await db
-    .select()
-    .from(s.reviewCards)
-    .where(and(eq(s.reviewCards.studentId, studentId), eq(s.reviewCards.itemType, "concept"), eq(s.reviewCards.itemId, conceptId)));
   if (row) {
     return {
       exists: true,
@@ -190,7 +192,10 @@ export async function recordAttempt(r: RecordInput) {
     now,
   );
 
-  const [attempt] = await db
+  const retired = L.shouldRetire({ difficultyElo: res.questionElo, flagCount: r.question.flagCount });
+  // independent writes in parallel (neon-http: each is one round-trip)
+  const [[attempt]] = await Promise.all([
+    db
     .insert(s.attempts)
     .values({
       studentId: r.studentId,
@@ -204,21 +209,23 @@ export async function recordAttempt(r: RecordInput) {
       mode: r.mode,
       diagnosis: { prevState: cs.state, confidentlyWrong: L.isConfidentlyWrong(r.confidence, r.correct) },
     })
-    .returning({ id: s.attempts.id });
-
-  await saveConceptState(r.studentId, concept.id, res.concept, [...cs.history, { t: now.toISOString(), p: +res.concept.pMastery.toFixed(4) }], now);
-
-  // question calibration loop (all students calibrate the question)
-  const retired = L.shouldRetire({ difficultyElo: res.questionElo, flagCount: r.question.flagCount });
-  await db
-    .update(s.questions)
-    .set({ difficultyElo: res.questionElo, attemptsCount: r.question.attemptsCount + 1, ...(retired ? { status: "retired" as const } : {}) })
-    .where(eq(s.questions.id, r.question.id));
+    .returning({ id: s.attempts.id }),
+    saveConceptState(r.studentId, concept.id, res.concept, [...cs.history, { t: now.toISOString(), p: +res.concept.pMastery.toFixed(4) }], now),
+    // question calibration loop (all students calibrate the question)
+    db
+      .update(s.questions)
+      .set({ difficultyElo: res.questionElo, attemptsCount: r.question.attemptsCount + 1, ...(retired ? { status: "retired" as const } : {}) })
+      .where(eq(s.questions.id, r.question.id)),
+  ]);
 
   return { attemptId: attempt.id, before: cs.state.pMastery, after: res.concept.pMastery, rating: res.rating };
 }
 
 async function saveConceptState(studentId: string, conceptId: string, st: L.ConceptState, history: { t: string; p: number }[], now: Date) {
+  await Promise.all([saveMasteryRow(studentId, conceptId, st, history, now), saveConceptCard(studentId, conceptId, st)]);
+}
+
+async function saveMasteryRow(studentId: string, conceptId: string, st: L.ConceptState, history: { t: string; p: number }[], now: Date) {
   await db
     .insert(s.mastery)
     .values({
@@ -244,6 +251,9 @@ async function saveConceptState(studentId: string, conceptId: string, st: L.Conc
         history: history.slice(-60),
       },
     });
+}
+
+async function saveConceptCard(studentId: string, conceptId: string, st: L.ConceptState) {
   if (st.card) {
     await db
       .insert(s.reviewCards)

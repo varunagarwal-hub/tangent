@@ -116,7 +116,7 @@ async function writeWhy(c: Candidate, studentId: string): Promise<{ why: string;
       schema: WhyOutput,
       studentId,
       inputSummary: `why ${c.kind} ${c.conceptId}`,
-      thinking: "MINIMAL",
+      thinking: "LOW",
       timeoutMs: 8_000,
       temperature: 0.6,
     });
