@@ -1,3 +1,4 @@
+import { rateLimit, tooMany } from "@/lib/rate-limit";
 import { after, connection } from "next/server";
 import { planNext } from "@/lib/agents/planner";
 import { ensurePool } from "@/lib/pool";
@@ -13,6 +14,8 @@ export async function GET(req: Request) {
   const lastConceptId = url.searchParams.get("last");
   const exclude = url.searchParams.getAll("exclude").slice(0, 20);
   const studentId = await getStudentId();
+  const rl = rateLimit(`next:${studentId}`, 40);
+  if (!rl.ok) return tooMany(rl.retryAfter);
 
   const mode = url.searchParams.get("mode") === "review" ? ("review" as const) : undefined;
   const action = await planNext(studentId, { lastConceptId, exclude, mode });

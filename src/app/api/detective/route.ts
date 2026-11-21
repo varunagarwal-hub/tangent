@@ -1,3 +1,4 @@
+import { rateLimit, tooMany } from "@/lib/rate-limit";
 import { connection } from "next/server";
 import { and, eq } from "drizzle-orm";
 import { z } from "zod";
@@ -41,6 +42,8 @@ export async function POST(req: Request) {
   if (!parsed.success) return Response.json({ error: "bad request" }, { status: 400 });
   const b = parsed.data;
   const studentId = await getStudentId();
+  const rl = rateLimit(`detective:${studentId}`, 20);
+  if (!rl.ok) return tooMany(rl.retryAfter);
 
   const [att] = await db
     .select()

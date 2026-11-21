@@ -26,7 +26,10 @@ function parse(input: string): Segment[] {
 
 /** Make student/LLM math friendlier to KaTeX: bare % is a comment in TeX, ₹ isn't a math symbol. */
 function prepMath(tex: string): string {
-  return tex.replace(/(^|[^\\])%/g, "$1\\%").replace(/₹/g, "\\text{₹}");
+  return tex
+    .replace(/(^|[^\\])%/g, "$1\\%")
+    .replace(/₹/g, "\\text{₹}")
+    .replace(/(\d),(?=\d{2,3}\b)/g, "$1{,}"); // digit-group commas: 48,000 not "48, 000"
 }
 
 function renderMath(tex: string, display: boolean): string {
