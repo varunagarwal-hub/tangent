@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 5 (P1 polish) done except a Skip Coach copy fix: landing, /strategy, /under-the-hood wired and checked at 375px. Next: Phase 6 extras (Mistake Fingerprint card, bank → 150), then Phase 7 submission (README, reseed, final deploy) by 10:30 PM.
+Last updated: Phase 5 (P1 polish) done: landing, /strategy, /under-the-hood wired and checked at 375px. Next: Phase 6 extras (Mistake Fingerprint card, bank → 150), then Phase 7 submission (README, reseed, final deploy) by 10:30 PM.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -70,7 +70,7 @@ Last updated: Phase 5 (P1 polish) done except a Skip Coach copy fix: landing, /s
 - [x] `/strategy`: Skip Coach replay (+3/−1, TITA no negative), calibration by confidence/area, Sprint mode toggle (P2 done here too)
 - [x] `/under-the-hood`: architecture diagram, counts, 7 agent cards with live runs/latency/errors, detective eval (20/20), verifier rejection rate + reasons, algorithms, feedback loops, live agent feed (15s refresh). `outputFileTracingIncludes` ships the data JSON for its API on Vercel.
 - [x] "That's not why" loop (Phase 2), branded 404/error pages, per-persona rate limits on AI routes, 375px pass (no horizontal overflow on landing, practice, today, mistakes, onboarding, teacher, reveal, strategy, under-the-hood), reduced-motion paths (GSAP matchMedia)
-- [ ] Skip Coach copy says "Rule A / Rule B" (prompt jargon leaking); reword in the coach prompt
+- [x] Skip Coach copy no longer leaks "Rule A / Rule B" prompt labels
 
 ──── CUT LINE B ────
 
