@@ -122,7 +122,9 @@ export async function getStrategyData(studentId: string): Promise<StrategyData> 
       prompt: [
         `Questions answered: ${rows.length}. Actual CAT-style score: ${actualScore} (+3 correct, −1 wrong MCQ, 0 wrong TITA).`,
         `Marks lost to wrong MCQs (negative marking): ${negativeMarks}.`,
-        `RULE A, skip by MASTERY: attempting only questions on concepts where your mastery was at least ${Math.round(bestPoint.threshold * 100)}% would have skipped ${bestPoint.skipped} questions and changed the score by ${skipBase.best.gain >= 0 ? "+" : ""}${skipBase.best.gain}.`,
+        skipBase.best.gain > 0
+          ? `RULE A, skip by MASTERY: attempting only questions on concepts where your mastery was at least ${Math.round(bestPoint.threshold * 100)}% would have skipped ${bestPoint.skipped} questions and changed the score by +${skipBase.best.gain}.`
+          : `RULE A, skip by MASTERY: no mastery cut-off would have improved the score; the student's attempt choices by mastery were already sound. Say this plainly; do not mention any percentage threshold.`,
         `RULE B, skip by CONFIDENCE: skipping the ${skipBase.skipGuesses.skipped} answers marked "Guessing" would have changed the score by ${skipBase.skipGuesses.gain >= 0 ? "+" : ""}${skipBase.skipGuesses.gain}.`,
         `"Certain" but wrong: ${calibration.confidentlyWrong} times.`,
         `Most overconfident area: ${byArea.filter((a) => a.gap != null && a.n >= 3).sort((a, b) => (b.gap ?? 0) - (a.gap ?? 0))[0]?.area ?? "none"}.`,

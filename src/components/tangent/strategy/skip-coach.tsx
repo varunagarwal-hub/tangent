@@ -74,12 +74,18 @@ export function SkipCoach({ data }: { data: SkipCoachData }) {
           <p className="text-xs font-semibold uppercase tracking-wider text-ink-soft">Skip Coach · your last {data.attempts} questions</p>
           <p className="mt-3 font-hand text-[1.7rem] leading-[1.15] text-ink sm:text-3xl">{data.insight}</p>
 
-          <p className="mt-5 text-lg leading-snug text-ink">
-            Attempting only above <span className="highlight font-mono font-semibold">{thresholdPct}% mastery</span> would have scored{" "}
-            <strong className={cn("font-mono text-2xl", best.gain > 0 ? "text-redpen" : "text-ink")}>{signed(best.gain)}</strong>
-            <span className="text-ink-soft"> marks</span>
-            {best.skipped > 0 && <span className="text-ink-soft"> (skipping {best.skipped})</span>}.
-          </p>
+          {best.gain > 0 ? (
+            <p className="mt-5 text-lg leading-snug text-ink">
+              Attempting only above <span className="highlight font-mono font-semibold">{thresholdPct}% mastery</span> would have scored{" "}
+              <strong className="font-mono text-2xl text-redpen">{signed(best.gain)}</strong>
+              <span className="text-ink-soft"> marks</span>
+              {best.skipped > 0 && <span className="text-ink-soft"> (skipping {best.skipped})</span>}.
+            </p>
+          ) : (
+            <p className="mt-5 text-lg leading-snug text-ink">
+              Your attempt choices held up: <span className="highlight font-semibold">no mastery cut-off</span> would have beaten your actual score.
+            </p>
+          )}
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Chip icon={ListChecks}>

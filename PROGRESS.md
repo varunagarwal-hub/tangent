@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 6 done (Fingerprint card, bank → 128, Sprint); README written; Neon reseeded. Next: Phase 7 final deploy + live/mobile route check by 10:30 PM. Human: demo video, optional handwritten samples.
+Last updated: Phase 7 live check passed; Neon reseeded to the scripted demo state. Remaining (human): record the demo video, optional handwritten samples in public/samples/. Re-run `npx tsx scripts/seed-db.ts` right before recording if anything else is tested.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -82,12 +82,14 @@ Last updated: Phase 6 done (Fingerprint card, bank → 128, Sprint); README writ
 
 ### Phase 7 — Submission (start by 10:30 PM)
 - [x] README written (problem, solution, 7 requirements map, architecture, agents, algorithms, loops, eval, demo path, stack, setup)
-- [ ] Final deploy + live + mobile route check
+- [x] Final deploy + live check (tangent-chi-seven.vercel.app, ~8:10 PM): all routes load (/, today, practice, diagnostic, map, reveal, mistakes, strategy, teacher, under-the-hood, onboarding, 404); no horizontal overflow at 375px on any. Live practice: verdict 260ms, Detective 3.6s (line 2, A1_ADD_SUCCESSIVE, 99%). Live lesson plan 12s. Neon reseeded afterwards.
+- [x] Skip Coach: when no mastery cut-off helps, says so plainly instead of "above 0% mastery would have scored +0"
 
 ## Known bugs
 - Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
 - Testing pollutes Riya's demo state. Reseeded at ~7:45 PM with the 128-question bank (Riya: A1 0.18 / A4 0.18, A1_ADD_SUCCESSIVE fixing, 49 attempts, 4 due). **Re-run `npx tsx scripts/seed-db.ts` right before recording the demo** if more testing happens.
 - `/map` at 375px fits but is tiny (pan/zoom works).
+- In a hidden/background tab, streamed sections (/mistakes) and the /reveal animation wait for the tab to become visible (React reveals on animation frames). Fine for real visitors; looks frozen only in hidden test panes.
 
 ## Decisions
 - Next.js 16.4 / React 19.3 / Tailwind v4 (latest stable from create-next-app).
