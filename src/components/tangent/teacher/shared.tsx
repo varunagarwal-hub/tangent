@@ -99,7 +99,7 @@ export function SectionHeading({
   return (
     <div className={cn("flex flex-wrap items-end justify-between gap-x-4 gap-y-2", className)}>
       <div className="min-w-0">
-        {kicker && <p className="font-hand text-lg leading-none text-redpen">{kicker}</p>}
+        {kicker && <p className="font-hand text-xl leading-none text-redpen">{kicker}</p>}
         <h2 id={id} className="hand-underline mt-1 text-2xl text-ink sm:text-3xl">
           {title}
         </h2>

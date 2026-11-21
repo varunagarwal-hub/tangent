@@ -136,7 +136,7 @@ export function Heatmap({ data, onOpenStudent }: { data: TeacherClassData; onOpe
               </button>
             ))}
           </div>
-          <span className="font-hand text-base text-ink-soft">
+          <span className="text-sm font-medium text-ink-soft">
             sorted by {sortLabel}, {sort.dir === "asc" ? "lowest first" : "highest first"}
             {sort.key === "name" && (sort.dir === "asc" ? " (A→Z)" : " (Z→A)")}
           </span>
@@ -175,7 +175,7 @@ export function Heatmap({ data, onOpenStudent }: { data: TeacherClassData; onOpe
                     key={g.area}
                     scope="colgroup"
                     colSpan={g.concepts.length}
-                    className="sticky top-0 z-20 h-6 border-l border-ink/15 bg-card px-1 text-left font-hand text-sm font-normal whitespace-nowrap text-ink-soft"
+                    className="sticky top-0 z-20 h-6 border-l border-ink/15 bg-card px-1 text-left text-xs font-medium whitespace-nowrap text-ink-soft"
                   >
                     {g.area}
                   </th>
@@ -223,7 +223,7 @@ export function Heatmap({ data, onOpenStudent }: { data: TeacherClassData; onOpe
               {/* class average */}
               <tr className="tg-heat-avg">
                 <th scope="row" className="sticky left-0 z-10 border-r border-b-2 border-b-ink/30 bg-paper-deep px-2 py-1.5 text-left">
-                  <span className="font-hand text-base leading-none text-ink">Class average</span>
+                  <span className="text-sm font-medium leading-none text-ink">Class average</span>
                 </th>
                 {concepts.map((c) => {
                   const p = data.conceptAvg[c.id];
@@ -268,7 +268,7 @@ export function Heatmap({ data, onOpenStudent }: { data: TeacherClassData; onOpe
           <span className="inline-flex items-center gap-1.5">
             <span className="size-2 rounded-full bg-redpen" aria-hidden="true" /> at risk
           </span>
-          <span className="font-hand text-sm">Arrow keys move between cells · Enter opens the student</span>
+          <span className="text-xs font-medium">Arrow keys move between cells · Enter opens the student</span>
         </div>
       </div>
     </TooltipProvider>

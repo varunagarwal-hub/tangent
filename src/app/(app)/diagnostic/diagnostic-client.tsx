@@ -138,8 +138,11 @@ export function DiagnosticClient() {
       <div className="min-w-0 space-y-5">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-redpen">Diagnostic</p>
+            <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-redpen">Diagnostic</p>
             <h1 className="text-3xl sm:text-4xl">Let&apos;s map how you think</h1>
+            <p className="mt-1 max-w-xl text-sm leading-relaxed text-ink-soft">
+              12 questions that adapt as you go. Miss one and the next checks the foundation underneath it. Show your working if you can: Tangent reads it.
+            </p>
           </div>
           {/* progress dots */}
           <ol className="flex gap-1.5" aria-label={`Question ${index + 1} of ${total}`}>

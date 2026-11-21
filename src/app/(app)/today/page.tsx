@@ -9,6 +9,8 @@ import { scoreCandidates } from "@/lib/agents/planner";
 import { getConcept, getMisconception } from "@/lib/content";
 import { PenLoader } from "@/components/tangent/pen-loader";
 import { StatusChip } from "@/components/tangent/status-chip";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { InfoTip } from "@/components/tangent/info-tip";
 
 export const metadata: Metadata = { title: "Today · Tangent" };
 
@@ -58,6 +60,14 @@ async function TodayContent() {
 
   return (
     <div className="space-y-6">
+      <PageIntro
+        id="today"
+        steps={[
+          "Start with the next best move: the planner picked it for you, and \"Why this?\" says why.",
+          "Clear your due reviews: quick recall questions on concepts you're about to forget.",
+          "Check mastery by area and your Mistake Journal to see what's improving.",
+        ]}
+      />
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="font-hand text-2xl text-redpen">{greeting()},</p>
@@ -74,14 +84,14 @@ async function TodayContent() {
         {/* next best action */}
         {top && (
           <section className="paper-card relative overflow-hidden border-l-4 border-l-redpen p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-redpen">Next best move · {KIND_LABEL[top.kind]}</p>
+            <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-redpen">Next best move · {KIND_LABEL[top.kind]} <InfoTip term="nextMove" className="-my-1" /></p>
             <h2 className="mt-2 text-3xl">
               {topMc ? topMc.name : getConcept(top.conceptId).name}
             </h2>
             <p className="mt-1 text-sm text-ink-soft">
               {getConcept(top.conceptId).name} · {getConcept(top.conceptId).area}
             </p>
-            <p className="mt-4 font-hand text-xl leading-snug">
+            <p className="mt-4 text-base leading-relaxed text-ink">
               <span className="sr-only">Why this? </span>
               {top.reason}
             </p>
@@ -98,7 +108,7 @@ async function TodayContent() {
         <section className="paper-card p-6">
           <div className="flex items-center gap-2">
             <RotateCcw className="size-5" />
-            <h2 className="text-2xl">Due for review</h2>
+            <h2 className="flex items-center gap-1.5 text-2xl">Due for review <InfoTip term="review" /></h2>
           </div>
           <p className="mt-2 font-mono text-5xl">
             <span className={reviews ? "highlight" : ""}>{reviews}</span>
@@ -133,7 +143,7 @@ async function TodayContent() {
       <div className="grid gap-6 lg:grid-cols-2">
         {/* mastery by area */}
         <section className="paper-card p-6">
-          <h2 className="hand-underline text-2xl">Mastery by area</h2>
+          <h2 className="flex items-center gap-1.5 text-2xl"><span className="hand-underline">Mastery by area</span> <InfoTip term="mastery" /></h2>
           <ul className="mt-6 space-y-4">
             {t.areas.map((a) => {
               const b = band(a.mastery);

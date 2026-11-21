@@ -12,6 +12,8 @@ import { InkEdge, type InkFlowEdge } from "@/components/tangent/map/ink-edge";
 import { ConceptDrawer } from "@/components/tangent/map/concept-drawer";
 import { AREAS, isDue, layoutMap, summarize } from "@/components/tangent/map/layout";
 import { cn } from "@/lib/utils";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { InfoTip } from "@/components/tangent/info-tip";
 
 const COL_PITCH = NODE_W + 120;
 const ROW_PITCH = NODE_H + 34;
@@ -56,8 +58,16 @@ export function MapClient() {
 
   return (
     <div className="flex flex-col gap-5">
+      <PageIntro
+        id="map"
+        steps={[
+          "Each card is a CAT Quant concept; arrows point from a foundation to what's built on it.",
+          "The ring and colour show your mastery. Faded cards are due for review; a red dot is an active mistake.",
+          "Tap a concept for its history, forgetting curve and mistakes.",
+        ]}
+      />
       <header className="flex flex-col gap-3">
-        <h1 className="hand-underline self-start text-4xl text-ink sm:text-5xl">Your Mastery Map</h1>
+        <h1 className="flex items-center gap-2 self-start text-4xl text-ink sm:text-5xl"><span className="hand-underline">Your Mastery Map</span> <InfoTip term="masteryScale" /></h1>
         <p className="max-w-2xl text-sm text-ink-soft sm:text-base">
           Every CAT Quant concept, wired to what it&apos;s built on. Tap a concept to see how it&apos;s going, and when you&apos;ll start to forget it.
         </p>

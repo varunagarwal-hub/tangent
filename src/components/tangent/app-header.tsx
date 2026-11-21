@@ -4,7 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu } from "@base-ui/react/menu";
-import { Check, ChevronDown, GraduationCap, Loader2, MenuIcon, Sparkles, UserRound } from "lucide-react";
+import { Check, ChevronDown, Compass, GraduationCap, HelpCircle, Loader2, MenuIcon, RotateCcw, Sparkles, UserRound } from "lucide-react";
+import { openDemoGuide, openTour } from "@/components/tangent/demo-guide/events";
+import { ResetDemoDialog } from "@/components/tangent/demo-guide/reset-demo";
 import { Logo } from "@/components/brand/logo";
 import { ThemeToggle } from "@/components/brand/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -32,6 +34,12 @@ const PERSONA_OPTIONS: { key: PersonaKeyLite; label: string; sub: string; home: 
   { key: "mehta", label: "Prof. Mehta", sub: "Teacher", home: "/teacher", Icon: GraduationCap },
   { key: "new", label: "New student", sub: "Start fresh", home: "/onboarding", Icon: Sparkles },
 ];
+
+const HELP_ITEMS = [
+  { key: "tour", label: "How Tangent works", sub: "Quick tour for students or teachers", Icon: HelpCircle },
+  { key: "demo", label: "Guided demo", sub: "Step-by-step checklist of the best parts", Icon: Compass },
+  { key: "reset", label: "Reset demo", sub: "Put Riya back to her scripted state", Icon: RotateCcw },
+] as const;
 
 function isActive(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(href + "/");
@@ -63,7 +71,7 @@ function NavLinks({ items, pathname, onNavigate, vertical }: { items: typeof STU
   );
 }
 
-function PersonaSwitcher({ persona }: { persona: HeaderPersona }) {
+function PersonaSwitcher({ persona, onReset }: { persona: HeaderPersona; onReset: () => void }) {
   const router = useRouter();
   const [busy, setBusy] = useState<PersonaKeyLite | null>(null);
 
@@ -121,6 +129,21 @@ function PersonaSwitcher({ persona }: { persona: HeaderPersona }) {
                 </Menu.Item>
               );
             })}
+            <div className="my-1 border-t border-dashed border-border" role="separator" />
+            <div className="px-2 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-soft">Help</div>
+            {HELP_ITEMS.map((h) => (
+              <Menu.Item
+                key={h.label}
+                onClick={h.key === "reset" ? onReset : h.key === "tour" ? openTour : openDemoGuide}
+                className="flex cursor-pointer items-center gap-2.5 rounded-md px-2 py-2 text-ink outline-none select-none data-highlighted:bg-accent"
+              >
+                <h.Icon className="size-4 text-ink-soft" aria-hidden="true" />
+                <span className="flex flex-1 flex-col leading-tight">
+                  <span>{h.label}</span>
+                  <span className="text-xs text-ink-soft">{h.sub}</span>
+                </span>
+              </Menu.Item>
+            ))}
           </Menu.Popup>
         </Menu.Positioner>
       </Menu.Portal>
@@ -132,6 +155,7 @@ function PersonaSwitcher({ persona }: { persona: HeaderPersona }) {
 export function AppHeader({ persona, className }: { persona: HeaderPersona; className?: string }) {
   const pathname = usePathname() ?? "/";
   const [menuOpen, setMenuOpen] = useState(false);
+  const [resetOpen, setResetOpen] = useState(false);
   const items = persona.role === "teacher" ? TEACHER_NAV : STUDENT_NAV;
 
   return (
@@ -146,7 +170,7 @@ export function AppHeader({ persona, className }: { persona: HeaderPersona; clas
         </nav>
 
         <div className="ml-auto flex items-center gap-1.5">
-          <PersonaSwitcher persona={persona} />
+          <PersonaSwitcher persona={persona} onReset={() => setResetOpen(true)} />
           <div className="hidden sm:block">
             <ThemeToggle />
           </div>
@@ -163,6 +187,25 @@ export function AppHeader({ persona, className }: { persona: HeaderPersona; clas
               <nav aria-label="Main" className="px-2">
                 <NavLinks items={items} pathname={pathname} vertical onNavigate={() => setMenuOpen(false)} />
               </nav>
+              <div className="mt-4 border-t border-dashed px-2 pt-3">
+                <p className="px-3 pb-1 text-xs font-medium uppercase tracking-wider text-ink-soft">Help</p>
+                {HELP_ITEMS.map((h) => (
+                  <button
+                    key={h.key}
+                    type="button"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      if (h.key === "reset") setResetOpen(true);
+                      else if (h.key === "tour") openTour();
+                      else openDemoGuide();
+                    }}
+                    className="flex w-full items-center gap-2.5 rounded-md px-3 py-2.5 text-left text-base text-ink hover:bg-accent"
+                  >
+                    <h.Icon className="size-4 text-ink-soft" aria-hidden="true" />
+                    {h.label}
+                  </button>
+                ))}
+              </div>
               <div className="mt-auto flex items-center justify-between border-t p-4">
                 <span className="text-sm text-ink-soft">Theme</span>
                 <ThemeToggle />
@@ -171,6 +214,7 @@ export function AppHeader({ persona, className }: { persona: HeaderPersona; clas
           </Sheet>
         </div>
       </div>
+      <ResetDemoDialog open={resetOpen} onOpenChange={setResetOpen} />
     </header>
   );
 }

@@ -15,6 +15,9 @@ import { MathText } from "@/components/tangent/math-text";
 import { useAnswerFlow } from "@/lib/client/answer-flow";
 import { SAMPLE_WORK } from "@/lib/samples";
 import type { Confidence, NextAction, TraceStep, WorkLine, WorkPayload } from "@/lib/api-types";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { SessionRecap, type SessionEntry } from "@/components/tangent/session-recap";
+import { markDemoStep } from "@/components/tangent/demo-guide/events";
 
 const KIND_LABEL: Record<string, string> = {
   contrast_question: "Contrast question",
@@ -41,6 +44,7 @@ export function PracticeClient() {
   const [note, setNote] = useState("");
   const [confirmDraft, setConfirmDraft] = useState<WorkLine[]>([]);
   const [loading, setLoading] = useState(false);
+  const [session, setSession] = useState<SessionEntry[]>([]);
 
   const onTrace = useCallback((s: TraceStep) => setTrace((t) => [...t, s]), []);
   const flow = useAnswerFlow({ onTrace });
@@ -88,6 +92,11 @@ export function PracticeClient() {
     if (flow.phase === "confirm") setConfirmDraft(flow.lines);
   }, [flow.phase, flow.lines]);
 
+  // Guided demo: the red-pen step is done once the detective has marked up a piece of work.
+  useEffect(() => {
+    if (flow.phase === "done" && flow.diagnosis?.errorLineNumber != null) markDemoStep("redpen");
+  }, [flow.phase, flow.diagnosis]);
+
   async function onSubmit() {
     if (!action || !answer.trim()) return;
     const timeSec = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
@@ -118,15 +127,43 @@ export function PracticeClient() {
   const r = flow.result;
   const d = flow.diagnosis;
 
+  // This attempt, once marked, counts toward the session (it's committed to `session` on "Next question").
+  const current: SessionEntry | null =
+    flow.phase === "done" && r
+      ? {
+          attemptId: r.attemptId,
+          conceptName: action.conceptName,
+          correct: r.correct,
+          masteryBefore: r.masteryBefore,
+          masteryAfter: r.masteryAfter,
+          misconceptionName: !r.correct || d?.reasoningVerdict === "flawed" ? (d?.misconceptionName ?? null) : null,
+          flawed: d?.reasoningVerdict === "flawed",
+        }
+      : null;
+  const sessionView = current && !session.some((e) => e.attemptId === current.attemptId) ? [...session, current] : session;
+  const showRecap = !!current && sessionView.length > 0 && sessionView.length % 5 === 0;
+  const goNext = () => {
+    if (current) setSession((s) => (s.some((e) => e.attemptId === current.attemptId) ? s : [...s, current]));
+    void loadNext(action.conceptId);
+  };
+
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
       <div className="min-w-0 space-y-5">
+        <PageIntro
+          id="practice"
+          steps={[
+            "Pick an answer and say how sure you are.",
+            "Show your rough work: draw, type, upload a photo, or use the sample.",
+            "Submit: Tangent circles the exact line where your reasoning went wrong, then picks your next question.",
+          ]}
+        />
         {/* Why this question? */}
         <div className="paper-card flex flex-col gap-1 border-l-4 border-l-redpen p-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-redpen">
+          <span className="text-[0.78rem] font-semibold uppercase tracking-wide text-redpen">
             {KIND_LABEL[action.kind]} · {action.conceptName}
           </span>
-          <p className="font-hand text-xl leading-snug text-ink">
+          <p className="text-[0.95rem] leading-relaxed text-ink">
             <span className="sr-only">Why this question? </span>
             {action.why}
           </p>
@@ -243,10 +280,12 @@ export function PracticeClient() {
 
         {showSolution && r && (
           <div className="paper-card p-4">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink-soft">Full solution</p>
+            <p className="mb-2 text-[0.78rem] font-semibold uppercase tracking-wide text-ink-soft">Full solution</p>
             <MathText text={r.solution} className="leading-relaxed" />
           </div>
         )}
+
+        {showRecap && <SessionRecap entries={sessionView} />}
 
         {flow.phase === "done" && (
           <div className="flex flex-wrap items-center gap-3">
@@ -255,7 +294,7 @@ export function PracticeClient() {
                 <MessageCircleQuestion className="size-4" /> {d?.unsure ? "Tell me your approach" : "That's not why I got it wrong"}
               </Button>
             )}
-            <Button size="lg" className="ml-auto" onClick={() => loadNext(action.conceptId)} disabled={loading}>
+            <Button size="lg" className="ml-auto" onClick={goNext} disabled={loading}>
               {loading ? "Planning…" : "Next question"} <ArrowRight className="size-4" />
             </Button>
           </div>
@@ -271,7 +310,7 @@ export function PracticeClient() {
               value={note}
               onChange={(e) => setNote(e.target.value)}
               placeholder="e.g. I knew discounts multiply, I just misread 10% as 20%…"
-              className="font-hand text-lg"
+              className="font-hand text-xl"
             />
             <div className="flex gap-2">
               <Button

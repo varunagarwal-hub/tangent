@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 7 live check passed; Neon reseeded to the scripted demo state. Remaining (human): record the demo video, optional handwritten samples in public/samples/. Re-run `npx tsx scripts/seed-db.ts` right before recording if anything else is tested.
+Last updated: Phase 8 UX pass done (fonts, welcome tour + role picker, page intros, info tips, guided demo, session recap, reset demo); built, checked desktop + 375px, deployed. Riya reset via /api/demo/reset. Human: demo video.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -72,6 +72,17 @@ Last updated: Phase 7 live check passed; Neon reseeded to the scripted demo stat
 - [x] "That's not why" loop (Phase 2), branded 404/error pages, per-persona rate limits on AI routes, 375px pass (no horizontal overflow on landing, practice, today, mistakes, onboarding, teacher, reveal, strategy, under-the-hood), reduced-motion paths (GSAP matchMedia)
 - [x] Skip Coach copy no longer leaks "Rule A / Rule B" prompt labels
 
+### Phase 8 — UX & clarity pass (approved by human, ~9 PM)
+- [x] Font/readability: Caveat only for short accents ≥ 20px; small labels + paragraphs (Skip Coach, "Why this?", agent notes) in Geist; `.margin-note` is now readable UI type with a red-pen rule; uppercase labels bigger; dark-mode soft ink lighter
+- [x] Math: plain numbers/%/₹/units in `$…$` render as text (no KaTeX serif mid-sentence); variables and real formulas stay KaTeX (`asPlainText` in math-text.tsx)
+- [x] Welcome tour with role picker (I'm a student / I'm a teacher), auto on first visit to /, reopen from Help menu (`src/components/tangent/welcome/`)
+- [x] Plain-language page intros (`PageIntro`, dismissable) on today, practice, map, mistakes, strategy, teacher; diagnostic subtitle
+- [x] Hover/tap explanations (`InfoTip` + `src/lib/glossary.ts`) on mastery, reviews, next move, confidence, lifecycle, clean answers, tangent point, Skip Coach, calibration, heatmap, at-risk, leaderboard, override queue, Detective learned
+- [x] Guided demo checklist for judges (compact pill, 8 steps, auto-ticks; `markDemoStep` events from practice/teacher) (`src/components/tangent/demo-guide/`)
+- [x] Session recap card after every 5 practice answers (`session-recap.tsx`)
+- [x] Reset demo (Help menu → Reset demo, `POST /api/demo/reset` restores Riya from `data/riya-snapshot.json`, clears teacher corrections). seed-db regenerates the snapshot.
+- [x] Fixed: header id hydration mismatch (guide moved to its own Suspense boundary); dead `text-amber-ink` class
+
 ──── CUT LINE B ────
 
 ### Phase 6 — P2
@@ -87,7 +98,7 @@ Last updated: Phase 7 live check passed; Neon reseeded to the scripted demo stat
 
 ## Known bugs
 - Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
-- Testing pollutes Riya's demo state. Reseeded at ~7:45 PM with the 128-question bank (Riya: A1 0.18 / A4 0.18, A1_ADD_SUCCESSIVE fixing, 49 attempts, 4 due). **Re-run `npx tsx scripts/seed-db.ts` right before recording the demo** if more testing happens.
+- Testing pollutes Riya's demo state. Reseeded at ~7:45 PM with the 128-question bank (Riya: A1 0.18 / A4 0.18, A1_ADD_SUCCESSIVE fixing, 49 attempts, 4 due). Before recording: persona menu → Help → **Reset demo** (or `npx tsx scripts/seed-db.ts`).
 - `/map` at 375px fits but is tiny (pan/zoom works).
 - In a hidden/background tab, streamed sections (/mistakes) and the /reveal animation wait for the tab to become visible (React reveals on animation frames). Fine for real visitors; looks frozen only in hidden test panes.
 

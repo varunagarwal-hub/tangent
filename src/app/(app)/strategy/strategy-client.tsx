@@ -11,6 +11,8 @@ import { SkipCoach } from "@/components/tangent/strategy/skip-coach";
 import { Calibration } from "@/components/tangent/strategy/calibration";
 import { Sprint } from "@/components/tangent/strategy/sprint";
 import { cn } from "@/lib/utils";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { InfoTip } from "@/components/tangent/info-tip";
 
 function SprintToggle({ on, onChange }: { on: boolean; onChange: (v: boolean) => void }) {
   return (
@@ -52,6 +54,14 @@ export function StrategyClient() {
 
   return (
     <div className="flex flex-col gap-10">
+      <PageIntro
+        id="strategy"
+        steps={[
+          "The Skip Coach replays your answers with real CAT marking (+3 / −1).",
+          "See whether skipping low-mastery or guessed questions would have scored more.",
+          "Calibration shows where you're overconfident; Sprint mode ranks what to study if CAT were close.",
+        ]}
+      />
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div className="min-w-0">
           <p className="font-hand text-xl leading-none text-redpen">exam temperament</p>
@@ -106,12 +116,12 @@ export function StrategyClient() {
           </AnimatePresence>
 
           <section aria-labelledby="skip-h" className="flex flex-col gap-4">
-            <SectionHeading id="skip-h" kicker="+3 / −1 / 0" title="Skip Coach" />
+            <SectionHeading id="skip-h" kicker="+3 / −1 / 0" title={<span className="inline-flex items-center gap-1.5">Skip Coach <InfoTip term="skipCoach" /></span>} />
             <SkipCoach data={data.skip} />
           </section>
 
           <section aria-labelledby="cal-h" className="flex flex-col gap-4">
-            <SectionHeading id="cal-h" kicker="confidence loop" title="Calibration" />
+            <SectionHeading id="cal-h" kicker="confidence loop" title={<span className="inline-flex items-center gap-1.5">Calibration <InfoTip term="calibration" /></span>} />
             <Calibration data={data.calibration} />
           </section>
         </>

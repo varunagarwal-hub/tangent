@@ -194,7 +194,7 @@ export function RevealClient() {
               <ol className="flex flex-col gap-3">
                 {cards.map((c, i) => (
                   <li key={c.title} className="rv-mis paper-card relative overflow-hidden border-l-4 border-l-redpen py-3 pr-4 pl-4">
-                    <span className="font-hand text-lg leading-none text-redpen">{c.sub}</span>
+                    <span className="font-hand text-xl leading-none text-redpen">{c.sub}</span>
                     <p className="mt-1 font-serif text-xl leading-snug text-ink">
                       <span className="mr-2 font-mono text-sm text-ink-soft">{i + 1}.</span>
                       {c.title}

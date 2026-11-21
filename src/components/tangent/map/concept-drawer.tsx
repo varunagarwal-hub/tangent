@@ -137,7 +137,7 @@ function DrawerBody({ d, now }: { d: ConceptDetail; now: number }) {
           )}
         </Section>
 
-        <Section title="Forgetting curve" aside={due ? <span className={cn("highlight shrink-0 pr-1 font-hand text-lg", due === "Due now" ? "text-redpen" : "text-ink")}>{due}</span> : null}>
+        <Section title="Forgetting curve" aside={due ? <span className={cn("highlight shrink-0 pr-1 font-hand text-xl", due === "Due now" ? "text-redpen" : "text-ink")}>{due}</span> : null}>
           {d.forgetting.length === 0 || d.dueAt == null ? (
             <p className="text-sm text-ink-soft">No review scheduled yet. Answer a question on this concept to start its memory clock.</p>
           ) : (
@@ -211,7 +211,7 @@ function DrawerBody({ d, now }: { d: ConceptDetail; now: number }) {
                   )}
                   <span className="font-mono text-xs text-ink-soft">{new Date(a.at).toLocaleDateString("en-IN", { day: "numeric", month: "short" })}</span>
                   <span className="font-mono text-xs text-ink">{formatSecs(a.timeSec)}</span>
-                  {a.misconceptionName && <span className="truncate font-hand text-base text-redpen">{a.misconceptionName}</span>}
+                  {a.misconceptionName && <span className="truncate text-sm font-medium text-redpen">{a.misconceptionName}</span>}
                 </li>
               ))}
             </ul>

@@ -42,7 +42,7 @@ function Body({ d }: { d: StudentDrilldown }) {
   return (
     <>
       <SheetHeader className="gap-1 border-b border-dashed px-5 pt-5 pb-4">
-        <p className="font-hand text-lg leading-none text-redpen">{d.archetype ?? "Student"}</p>
+        <p className="font-hand text-xl leading-none text-redpen">{d.archetype ?? "Student"}</p>
         <SheetTitle className="pr-8 font-serif text-3xl leading-tight text-ink">{d.name}</SheetTitle>
         <SheetDescription className="sr-only">Mastery, misconceptions and recent attempts for {d.name}</SheetDescription>
         <dl className="mt-2 grid grid-cols-3 gap-2 text-center">
@@ -91,7 +91,7 @@ function Body({ d }: { d: StudentDrilldown }) {
 
       <Block title={`Misconceptions (${mis.length})`}>
         {mis.length === 0 ? (
-          <p className="font-hand text-lg text-ink-soft">None caught yet.</p>
+          <p className="font-hand text-xl text-ink-soft">None caught yet.</p>
         ) : (
           <ul className="flex flex-col gap-2">
             {misShown.map((m) => (
@@ -126,7 +126,7 @@ function Body({ d }: { d: StudentDrilldown }) {
                 )}
                 <span className="min-w-0 flex-1">
                   <span className="text-ink">{a.conceptName}</span>
-                  {a.misconceptionName && <span className="block font-hand text-base leading-tight text-redpen">{a.misconceptionName}</span>}
+                  {a.misconceptionName && <span className="block text-sm font-medium leading-tight text-redpen">{a.misconceptionName}</span>}
                 </span>
                 <span className="shrink-0 text-right font-mono text-[0.7rem] text-ink-soft tabular-nums">
                   {a.timeSec != null && <span className="block">{a.timeSec}s</span>}

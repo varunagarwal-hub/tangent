@@ -186,7 +186,7 @@ export function Architecture() {
                 <Node id={id} nodeRef={refs[id]} side={MOBILE_SIDE.has(id)} />
               </div>
             ))}
-            <p className="font-hand text-lg leading-none text-redpen">↺ and back to the student&apos;s next answer</p>
+            <p className="font-hand text-xl leading-none text-redpen">↺ and back to the student&apos;s next answer</p>
           </div>
         )}
 

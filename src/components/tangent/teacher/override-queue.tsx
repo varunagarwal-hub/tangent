@@ -25,7 +25,7 @@ function Work({ text, errorLine }: { text: string; errorLine: string | null }) {
       {lines.map((l, i) => {
         const hit = i === hitIdx;
         return (
-          <p key={i} className="font-hand text-lg leading-snug text-ink">
+          <p key={i} className="font-hand text-xl leading-snug text-ink">
             <span className={cn(hit && "tg-error-line")}>{l}</span>
             {hit && <span className="ml-2 text-base text-redpen">← tangent point</span>}
           </p>
@@ -90,7 +90,7 @@ function QueueItem({ item, onDone }: { item: OverrideItem; onDone: (attemptId: s
       {item.workText ? (
         <Work text={item.workText} errorLine={item.errorLine} />
       ) : item.errorLine ? (
-        <p className="font-hand text-lg">
+        <p className="font-hand text-xl">
           <span className="tg-error-line">{item.errorLine}</span>
         </p>
       ) : (
@@ -156,7 +156,7 @@ function QueueItem({ item, onDone }: { item: OverrideItem; onDone: (attemptId: s
               value={note}
               onChange={(e) => setNote(e.target.value)}
               placeholder="e.g. They added the percentages instead of compounding them"
-              className="min-h-16 font-hand text-lg"
+              className="min-h-16 font-hand text-xl"
             />
           </label>
           <div className="flex flex-wrap gap-2">
@@ -169,7 +169,7 @@ function QueueItem({ item, onDone }: { item: OverrideItem; onDone: (attemptId: s
           </div>
         </form>
       )}
-      {busy && <p className="font-hand text-base text-ink-soft" role="status">Saving…</p>}
+      {busy && <p className="text-sm font-medium text-ink-soft" role="status">Saving…</p>}
       {error && (
         <p className="text-sm text-redpen" role="alert">
           {error}
@@ -209,13 +209,13 @@ export function OverrideQueue({ items, onCorrection }: { items: OverrideItem[]; 
             >
               <Check className="size-4 text-mastery-high" aria-hidden="true" />
               {flash.text}
-              <span className="font-hand text-base text-ink-soft">(feedback loop 8)</span>
+              <span className="text-sm font-medium text-ink-soft">(feedback loop 8)</span>
             </motion.p>
           )}
         </AnimatePresence>
       </div>
       {visible.length === 0 && (
-        <p className="font-hand text-lg text-ink-soft">Queue clear. Every low-confidence diagnosis has a teacher&apos;s mark on it.</p>
+        <p className="font-hand text-xl text-ink-soft">Queue clear. Every low-confidence diagnosis has a teacher&apos;s mark on it.</p>
       )}
       <ul className="grid items-start gap-3 lg:grid-cols-2">
         <AnimatePresence initial={false}>

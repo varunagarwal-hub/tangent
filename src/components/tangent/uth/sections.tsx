@@ -129,7 +129,7 @@ export function AgentCards({ perAgent }: { perAgent: UnderTheHoodData["perAgent"
                 <TierChip key={t} t={t} />
               ))}
             </div>
-            <p className="mt-2 font-hand text-lg leading-tight text-ink-soft">{a.note}</p>
+            <p className="mt-2 text-sm leading-snug text-ink-soft">{a.note}</p>
             <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-dashed border-ink/20 pt-3 text-center">
               <div>
                 <dt className="text-[11px] text-ink-soft">runs</dt>
@@ -210,7 +210,7 @@ export function Algorithms() {
     <ul className="grid gap-4 md:grid-cols-2">
       {ALGOS.map((a) => (
         <li key={a.name} className="paper-card flex flex-col p-5">
-          <p className="font-hand text-lg leading-none text-redpen">{a.tag}</p>
+          <p className="font-hand text-xl leading-none text-redpen">{a.tag}</p>
           <h3 className="mt-1 text-2xl">{a.name}</h3>
           <p className="mt-2 text-sm leading-relaxed text-ink">{a.body}</p>
           <div className="mt-auto pt-4">
@@ -318,7 +318,7 @@ export function VerifierCard({ v }: { v: UnderTheHoodData["verifier"] }) {
 
       {v.topReasons.length > 0 && (
         <>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-ink-soft">Top rejection reasons</p>
+          <p className="mt-4 text-[0.78rem] font-semibold uppercase tracking-wide text-ink-soft">Top rejection reasons</p>
           <ul className="mt-2 space-y-1.5">
             {v.topReasons.slice(0, 5).map((r) => (
               <li key={r.reason} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 text-sm">
@@ -364,7 +364,7 @@ export function Loops() {
           <div className="min-w-0">
             <p className="font-medium text-ink">{l.name}</p>
             <p className="text-sm text-ink-soft">{l.what}</p>
-            <Link href={l.href} className="mt-0.5 inline-flex items-center gap-0.5 font-hand text-lg leading-tight text-redpen underline-offset-4 hover:underline">
+            <Link href={l.href} className="mt-0.5 inline-flex items-center gap-0.5 font-hand text-xl leading-tight text-redpen underline-offset-4 hover:underline">
               see it: {l.where}
               <ArrowUpRight className="size-3.5" aria-hidden="true" />
             </Link>
@@ -379,7 +379,7 @@ export function Loops() {
 
 const STATUS: Record<string, { label: string; Icon: LucideIcon; cls: string }> = {
   ok: { label: "ok", Icon: Check, cls: "border-mastery-high/50 bg-mastery-high/10 text-mastery-high" },
-  fallback: { label: "fallback", Icon: Undo2, cls: "border-mastery-mid/60 bg-mastery-mid/15 text-amber-ink" },
+  fallback: { label: "fallback", Icon: Undo2, cls: "border-mastery-mid/60 bg-mastery-mid/15 text-[#9a6212] dark:text-mastery-mid" },
   rejected: { label: "rejected", Icon: X, cls: "border-redpen/50 bg-redpen/10 text-redpen" },
   error: { label: "error", Icon: TriangleAlert, cls: "border-redpen bg-redpen/15 text-redpen" },
 };

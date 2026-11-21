@@ -71,8 +71,8 @@ export function SkipCoach({ data }: { data: SkipCoachData }) {
     <div className="paper-card relative overflow-hidden p-5 sm:p-7">
       <div className="grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-8">
         <div className="min-w-0">
-          <p className="text-xs font-semibold uppercase tracking-wider text-ink-soft">Skip Coach · your last {data.attempts} questions</p>
-          <p className="mt-3 font-hand text-[1.7rem] leading-[1.15] text-ink sm:text-3xl">{data.insight}</p>
+          <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-ink-soft">Skip Coach · your last {data.attempts} questions</p>
+          <p className="mt-3 text-lg leading-relaxed text-ink sm:text-xl">{data.insight}</p>
 
           {best.gain > 0 ? (
             <p className="mt-5 text-lg leading-snug text-ink">
@@ -173,7 +173,7 @@ export function SkipCoach({ data }: { data: SkipCoachData }) {
               </LineChart>
             </ResponsiveContainer>
           </div>
-          <p className="mt-1 font-hand text-lg leading-tight text-redpen">
+          <p className="mt-1 font-hand text-xl leading-tight text-redpen">
             ↑ best cut-off: {thresholdPct}% → {signed(best.score)}
           </p>
         </figure>

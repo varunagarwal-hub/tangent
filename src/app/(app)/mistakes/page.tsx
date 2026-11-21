@@ -10,6 +10,8 @@ import { CLEAN_TO_RESOLVE } from "@/lib/learner";
 import { PenLoader } from "@/components/tangent/pen-loader";
 import { StatusChip } from "@/components/tangent/status-chip";
 import { MathText } from "@/components/tangent/math-text";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { InfoTip } from "@/components/tangent/info-tip";
 
 export const metadata: Metadata = { title: "Mistake Journal · Tangent" };
 
@@ -30,7 +32,7 @@ function Entry({ e }: { e: JournalEntry }) {
     <li className={`paper-card relative p-5 ${resolved ? "opacity-90" : ""}`}>
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
+          <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-ink-soft">
             {e.conceptName} · first seen {fmt(e.firstSeen)}
           </p>
           <h3 className="mt-1 text-2xl">{e.name}</h3>
@@ -44,7 +46,7 @@ function Entry({ e }: { e: JournalEntry }) {
 
       {e.lastErrorLine && (
         <div className="mt-4 rounded-lg border border-dashed border-redpen/40 bg-redpen/5 p-3">
-          <p className="text-xs font-semibold uppercase tracking-wider text-redpen">Tangent point, last time</p>
+          <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-redpen">Tangent point, last time <InfoTip term="tangentPoint" className="-my-1" /></p>
           <p className="mt-1 font-hand text-2xl decoration-redpen decoration-wavy underline-offset-4 [text-decoration-line:underline]">
             {e.lastErrorLine}
           </p>
@@ -58,7 +60,7 @@ function Entry({ e }: { e: JournalEntry }) {
         </span>
         {!resolved && (
           <span className="flex items-center gap-2">
-            Clean answers since:
+            Clean answers since <InfoTip term="cleanAnswers" />:
             <span className="flex gap-1" aria-label={`${e.cleanCount} of ${CLEAN_TO_RESOLVE} clean answers`}>
               {Array.from({ length: CLEAN_TO_RESOLVE }, (_, i) => (
                 <span key={i} className={`size-3 rounded-full border ${i < e.cleanCount ? "border-mastery-high bg-mastery-high" : "border-ink/30"}`} />
@@ -109,8 +111,16 @@ async function Journal() {
 
   return (
     <div className="space-y-8">
+      <PageIntro
+        id="mistakes"
+        steps={[
+          "Every mistake Tangent caught in your working, with the exact line where it went wrong.",
+          "Fix one by answering 2 questions on it correctly with sound working.",
+          "Share your Mistake Fingerprint card at the bottom of the page.",
+        ]}
+      />
       <header>
-        <h1 className="hand-underline text-4xl sm:text-5xl">Mistake Journal</h1>
+        <h1 className="flex items-center gap-2 text-4xl sm:text-5xl"><span className="hand-underline">Mistake Journal</span> <InfoTip term="lifecycle" /></h1>
         <p className="mt-4 max-w-2xl text-ink-soft">
           Every place your reasoning went off on a tangent, and how far you are from fixing it. Each one moves from
           <span className="mx-1 font-medium text-redpen">Off on a tangent</span>→<span className="mx-1 font-medium">Fixing</span>→

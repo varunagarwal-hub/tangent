@@ -7,6 +7,8 @@ import { RedPenDemo } from "@/components/landing/red-pen-demo";
 import { Features } from "@/components/landing/features";
 import { ConceptGraph } from "@/components/landing/concept-graph";
 import { SmoothScroll } from "@/components/landing/smooth-scroll";
+import { WelcomeTour } from "@/components/tangent/welcome/welcome-tour";
+import { GuidedDemoButton, TourButton } from "@/components/tangent/welcome/tour-buttons";
 
 const STEPS = [
   {
@@ -30,9 +32,14 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col overflow-x-clip px-4 py-6 sm:py-8">
       <SmoothScroll />
+      <WelcomeTour autoOpen />
       <header className="flex items-center justify-between">
         <Logo />
         <div className="flex items-center gap-4">
+          <TourButton className="text-sm text-ink-soft underline-offset-4 hover:text-ink hover:underline">
+            <span className="hidden sm:inline">How it works</span>
+            <span className="sm:hidden">Tour</span>
+          </TourButton>
           <Link href="/under-the-hood" className="hidden text-sm text-ink-soft underline-offset-4 hover:text-ink hover:underline sm:inline">
             Under the hood
           </Link>
@@ -73,6 +80,11 @@ export default function Home() {
             Try as Prof. Mehta (teacher)
           </PersonaButton>
         </div>
+        <p className="text-sm text-ink-soft">
+          New here?{" "}
+          <GuidedDemoButton className="font-medium text-ink underline underline-offset-4 hover:text-redpen">Follow the guided demo</GuidedDemoButton>{" "}
+          or <TourButton className="font-medium text-ink underline underline-offset-4 hover:text-redpen">take the 1-minute tour</TourButton>.
+        </p>
       </section>
 
       <footer className="mt-20 flex flex-wrap items-center justify-between gap-3 border-t border-dashed border-border pt-6 text-sm text-ink-soft">

@@ -19,7 +19,7 @@ export function ThemeToggle() {
 
   return (
     <Button variant="ghost" size="sm" onClick={toggle} aria-label={dark ? "Switch to paper theme" : "Switch to chalkboard theme"}>
-      <span className="font-hand text-lg">{dark ? "paper" : "chalkboard"}</span>
+      <span className="font-hand text-xl">{dark ? "paper" : "chalkboard"}</span>
     </Button>
   );
 }

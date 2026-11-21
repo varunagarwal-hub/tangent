@@ -392,6 +392,10 @@ async function main() {
     (select count(*) from misconception_events)::int as events, (select count(*) from questions)::int as questions,
     (select count(*) from review_cards where student_id = ${RIYA_ID} and due_at <= now())::int as riya_due`);
   console.log("Seeded:", counts.rows[0]);
+
+  // Snapshot Riya's freshly seeded state for the in-app "Reset demo" button (POST /api/demo/reset).
+  const { snapshotRiya } = await import("./snapshot-riya");
+  await snapshotRiya();
 }
 
 main().catch((e) => {

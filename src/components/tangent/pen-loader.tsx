@@ -23,7 +23,7 @@ export function PenLoader({ label = "Reading your working…", className }: { la
           </g>
         </g>
       </svg>
-      <span className="font-hand text-lg leading-none">{label}</span>
+      <span className="font-hand text-xl leading-none">{label}</span>
     </div>
   );
 }

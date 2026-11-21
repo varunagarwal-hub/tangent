@@ -10,6 +10,7 @@ import { PenLoader } from "@/components/tangent/pen-loader";
 import { TracePanel } from "@/components/tangent/trace-panel";
 import { cn } from "@/lib/utils";
 import { postJson } from "./shared";
+import { markDemoStep } from "@/components/tangent/demo-guide/events";
 
 const CAPTIONS = [
   "Reading 31 students' mistakes…",
@@ -63,13 +64,13 @@ function Gap({ g, i }: { g: LessonPlan["gaps"][number]; i: number }) {
         </p>
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="rounded-md border border-redpen/30 bg-redpen/5 p-2.5">
-            <p className="mb-1 font-hand text-base leading-none text-redpen">✗ the tangent</p>
+            <p className="mb-1 text-sm font-medium leading-none text-redpen">✗ the tangent</p>
             <p className="tg-strike text-sm text-ink-soft">
               <MathText text={g.workedExample.wrongWay} />
             </p>
           </div>
           <div className="rounded-md border border-mastery-high/40 bg-mastery-high/5 p-2.5">
-            <p className="mb-1 font-hand text-base leading-none text-mastery-high">✓ back on the curve</p>
+            <p className="mb-1 text-sm font-medium leading-none text-mastery-high">✓ back on the curve</p>
             <p className="text-sm text-ink">
               <MathText text={g.workedExample.rightWay} />
             </p>
@@ -99,6 +100,7 @@ export function LessonPlanCard({ onAssigned }: { onAssigned: (a: AssignmentRow) 
     try {
       const p = await postJson<LessonPlan>("/api/teacher/lesson-plan");
       setPlan(p);
+      markDemoStep("lesson");
       setAssign({ state: "idle" });
     } catch (e) {
       setError((e as Error).message);
@@ -147,7 +149,7 @@ export function LessonPlanCard({ onAssigned }: { onAssigned: (a: AssignmentRow) 
     <motion.div initial={reduced ? { opacity: 0 } : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="flex flex-col gap-4">
       <article className="tg-notebook flex flex-col gap-6 rounded-xl border px-4 py-6 sm:pr-8 sm:pl-14" aria-label="Monday lesson plan">
         <header className="flex flex-col gap-1">
-          <p className="font-hand text-lg leading-none text-redpen">Monday&apos;s lesson</p>
+          <p className="font-hand text-xl leading-none text-redpen">Monday&apos;s lesson</p>
           <h3 className="font-serif text-3xl leading-tight text-ink sm:text-4xl">{plan.headline}</h3>
         </header>
 
@@ -164,7 +166,7 @@ export function LessonPlanCard({ onAssigned }: { onAssigned: (a: AssignmentRow) 
               {plan.groups.map((g) => (
                 <div key={g.label} className="paper-card p-3">
                   <p className="font-medium text-ink">{g.label}</p>
-                  <p className="font-hand text-base leading-tight text-redpen">{g.focus}</p>
+                  <p className="text-sm font-medium leading-tight text-redpen">{g.focus}</p>
                   <ul className="mt-2 flex flex-wrap gap-1">
                     {g.students.map((s) => (
                       <li key={s} className="rounded-full border bg-paper px-2 py-0.5 text-xs text-ink">
@@ -213,7 +215,7 @@ export function LessonPlanCard({ onAssigned }: { onAssigned: (a: AssignmentRow) 
         </div>
         {assign.msg && (
           <p role="status" className={cn("text-sm", assign.state === "error" ? "text-redpen" : "text-mastery-high")}>
-            {assign.msg} {assign.state === "done" && <span className="font-hand text-base text-ink-soft">Watch its lift under Assignments.</span>}
+            {assign.msg} {assign.state === "done" && <span className="text-sm font-medium text-ink-soft">Watch its lift under Assignments.</span>}
           </p>
         )}
         {error && (

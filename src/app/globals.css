@@ -120,7 +120,7 @@
   --paper: #1e2b26;
   --paper-deep: #18231f;
   --ink: #ecebe4; /* chalk white */
-  --ink-soft: #a9b3ad;
+  --ink-soft: #bcc5bf;
   --redpen: #f0776a; /* chalk red */
   --highlighter: rgba(244, 222, 120, 0.35);
   --highlighter-solid: #f4de78; /* chalk yellow */
@@ -169,10 +169,14 @@
     @apply rounded-xl border bg-card text-card-foreground;
     box-shadow: var(--shadow-paper);
   }
+  /* A mentor's note in the margin: readable UI type, ink colour, red-pen rule on the left. */
   .margin-note {
-    @apply font-hand text-redpen;
-    font-size: 1.35rem;
-    line-height: 1.15;
+    @apply font-sans text-ink;
+    display: block;
+    font-size: 0.975rem;
+    line-height: 1.55;
+    border-left: 3px solid var(--redpen);
+    padding-left: 0.75rem;
   }
   .highlight {
     background: linear-gradient(transparent 45%, var(--highlighter) 45%, var(--highlighter) 90%, transparent 90%);
@@ -450,4 +454,9 @@
 }
 @media (max-width: 639px) {
   .tg-notebook::before { left: 0.75rem; }
+}
+
+/* Inline maths should sit in the sentence, not shout over it. */
+.katex {
+  font-size: 1.04em;
 }

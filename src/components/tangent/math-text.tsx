@@ -32,6 +32,39 @@ function prepMath(tex: string): string {
     .replace(/(\d),(?=\d{2,3}\b)/g, "$1{,}"); // digit-group commas: 48,000 not "48, 000"
 }
 
+/**
+ * Generated questions often wrap plain numbers in $...$ ("$25\%$", "$₹48{,}000$", "$3 \times 4$").
+ * Rendering those in the KaTeX serif breaks the sentence's typeface, so anything that is just
+ * numbers, currency, percentages and basic operators is returned as plain text instead.
+ */
+function asPlainText(tex: string): string | null {
+  // \text{...} content is plain words (units, labels): set it aside so letters there are allowed,
+  // while a bare letter (a variable like x) keeps the expression in KaTeX.
+  const words: string[] = [];
+  const t = tex
+    .replace(/\\(?:text|mathrm)\{([^{}]*)\}/g, (_m, w: string) => `@${words.push(w) - 1}@`)
+    .replace(/\\%/g, "%")
+    .replace(/\{,\}/g, ",")
+    .replace(/\\,|\\;|\\!|~/g, " ")
+    .replace(/\\times/g, "×")
+    .replace(/\\cdot/g, "·")
+    .replace(/\\div/g, "÷")
+    .replace(/\\pm/g, "±")
+    .replace(/\\le(q)?\b/g, "≤")
+    .replace(/\\ge(q)?\b/g, "≥")
+    .replace(/\\rightarrow|\\to\b/g, "→")
+    .replace(/\\Rs\b|\\rupee\b/g, "₹")
+    .trim();
+  if (/[\\^_{}]/.test(t)) return null;
+  if (!/^[\d\s.,%₹+\-−×·÷±=≤≥<>→:()/'@]+$/.test(t)) return null;
+  return t
+    .replace(/-/g, "−")
+    .replace(/\s*([×÷=±≤≥<>→])\s*/g, " $1 ")
+    .replace(/@(\d+)@/g, (_m, i: string) => words[Number(i)] ?? "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function renderMath(tex: string, display: boolean): string {
   try {
     return katex.renderToString(prepMath(tex), { throwOnError: false, displayMode: display, strict: "ignore", output: "htmlAndMathml" });
@@ -58,6 +91,10 @@ export function MathText({ text, className }: { text: string; className?: string
   const nodes = useMemo(() => {
     return parse(text ?? "").map((seg, i) => {
       if (seg.kind === "text") return <Fragment key={i}>{textWithBreaks(seg.value, String(i))}</Fragment>;
+      if (!seg.display) {
+        const plain = asPlainText(seg.value);
+        if (plain != null) return <Fragment key={i}>{plain}</Fragment>;
+      }
       const html = renderMath(seg.value, seg.display);
       if (!html) return <Fragment key={i}>{`$${seg.value}$`}</Fragment>;
       return (

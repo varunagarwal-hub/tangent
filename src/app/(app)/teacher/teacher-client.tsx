@@ -14,13 +14,19 @@ import { Assignments } from "@/components/tangent/teacher/assignments";
 import { StudentSheet } from "@/components/tangent/teacher/student-sheet";
 import { SectionHeading, fetchJson, pct } from "@/components/tangent/teacher/shared";
 import { cn } from "@/lib/utils";
+import { PageIntro } from "@/components/tangent/page-intro";
+import { InfoTip } from "@/components/tangent/info-tip";
+import type { GlossaryTerm } from "@/lib/glossary";
 
-function Kpi({ label, value, note, tone = "ink" }: { label: string; value: string; note?: string; tone?: "ink" | "red" }) {
+function Kpi({ label, value, note, tone = "ink", tip }: { label: string; value: string; note?: string; tone?: "ink" | "red"; tip?: GlossaryTerm }) {
   return (
     <div className="paper-card relative flex flex-col gap-1 overflow-hidden px-4 py-3">
-      <span className="text-xs text-ink-soft">{label}</span>
+      <span className="flex items-center gap-1 text-sm text-ink-soft">
+        {label}
+        {tip && <InfoTip term={tip} />}
+      </span>
       <span className={cn("font-mono text-3xl tabular-nums sm:text-4xl", tone === "red" ? "text-redpen" : "text-ink")}>{value}</span>
-      {note && <span className={cn("font-hand text-base leading-tight", tone === "red" ? "text-redpen" : "text-ink-soft")}>{note}</span>}
+      {note && <span className={cn("text-sm font-medium leading-tight", tone === "red" ? "text-redpen" : "text-ink-soft")}>{note}</span>}
     </div>
   );
 }
@@ -31,7 +37,6 @@ function CorrectionsBadge({ n }: { n: number }) {
     <span
       className="inline-flex items-center gap-1.5 rounded-full border border-redpen/40 bg-redpen/8 px-3 py-1 text-sm text-ink"
       aria-live="polite"
-      title="Teacher corrections are saved as few-shot examples for the detective agent"
     >
       <Sparkles className="size-3.5 text-redpen" aria-hidden="true" />
       Detective learned from{" "}
@@ -114,6 +119,14 @@ export function TeacherClient() {
 
   return (
     <div className="flex flex-col gap-10">
+      <PageIntro
+        id="teacher"
+        steps={[
+          "Scan the heatmap for red columns: concepts the whole batch is weak on.",
+          "The leaderboard names the misconception behind each gap; generate Monday's lesson plan around them.",
+          "Confirm or relabel unsure diagnoses in the override queue to teach the Detective.",
+        ]}
+      />
       {/* 1. header */}
       <header className="flex flex-col gap-4">
         <div className="flex flex-wrap items-start justify-between gap-4">
@@ -141,7 +154,10 @@ export function TeacherClient() {
                 Only one class is set up
               </span>
             </label>
-            <CorrectionsBadge n={corrections} />
+            <span className="inline-flex items-center gap-1">
+              <CorrectionsBadge n={corrections} />
+              <InfoTip term="detectiveLearned" />
+            </span>
           </div>
         </div>
 
@@ -152,6 +168,7 @@ export function TeacherClient() {
           <Kpi label="Active misconceptions" value={String(k.activeMisconceptions)} note="detected or fixing" />
           <Kpi
             label="At-risk students"
+            tip="atRisk"
             value={String(k.atRisk)}
             tone="red"
             note={atRiskNames.length ? `${atRiskNames.slice(0, 2).join(", ")}${atRiskNames.length > 2 ? ` +${atRiskNames.length - 2}` : ""}` : "none flagged"}
@@ -164,7 +181,7 @@ export function TeacherClient() {
         <SectionHeading
           id="heat-h"
           kicker="who knows what"
-          title="Class heatmap"
+          title={<span className="inline-flex items-center gap-1.5">Class heatmap <InfoTip term="heatmap" /></span>}
           aside={<p className="text-sm text-ink-soft">Click a name to open their notebook. Click a concept id to sort by it.</p>}
         />
         <div className="paper-card min-w-0 p-3 sm:p-4">
@@ -175,7 +192,7 @@ export function TeacherClient() {
       {/* 4 + 7. leaderboard and assignments side by side on desktop */}
       <div className="grid min-w-0 gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-8">
         <section aria-labelledby="lb-h" className="flex min-w-0 flex-col gap-4">
-          <SectionHeading id="lb-h" kicker="what keeps going wrong" title="Misconception leaderboard" />
+          <SectionHeading id="lb-h" kicker="what keeps going wrong" title={<span className="inline-flex items-center gap-1.5">Misconception leaderboard <InfoTip term="leaderboard" /></span>} />
           <div className="paper-card px-4 py-2">
             <Leaderboard rows={data.leaderboard} />
           </div>
@@ -183,7 +200,7 @@ export function TeacherClient() {
         <section aria-labelledby="as-h" className="flex min-w-0 flex-col gap-4">
           <SectionHeading id="as-h" kicker="did it work?" title="Assignments & impact" />
           <div className="paper-card px-4 py-2">
-            <p className="border-b border-dashed py-2 font-hand text-base text-ink-soft">
+            <p className="border-b border-dashed py-2 text-sm font-medium text-ink-soft">
               Class mastery on the concept when assigned → now. Feedback loop 9.
             </p>
             <Assignments rows={assignments} freshId={freshAssignment} />
@@ -202,7 +219,7 @@ export function TeacherClient() {
         <SectionHeading
           id="oq-h"
           kicker="check the detective's homework"
-          title="Override queue"
+          title={<span className="inline-flex items-center gap-1.5">Override queue <InfoTip term="overrideQueue" /></span>}
           aside={
             <button
               type="button"

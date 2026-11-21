@@ -9,7 +9,7 @@ function Slope({ a }: { a: AssignmentRow }) {
   const W = 120;
   const H = 44;
   const y = (p: number) => 4 + (1 - p) * (H - 8);
-  if (a.baseline == null) return <span className="font-hand text-ink-soft">no baseline</span>;
+  if (a.baseline == null) return <span className="text-sm text-ink-soft">no baseline</span>;
   const b = a.baseline;
   const c = a.current ?? a.baseline;
   const up = (a.lift ?? c - b) >= 0;
@@ -28,7 +28,7 @@ function Slope({ a }: { a: AssignmentRow }) {
 export function Assignments({ rows, freshId }: { rows: AssignmentRow[]; freshId?: string | null }) {
   if (rows.length === 0)
     return (
-      <p className="font-hand text-lg text-ink-soft">
+      <p className="font-hand text-xl text-ink-soft">
         Nothing assigned yet. Generate Monday&apos;s plan and assign its set to start measuring lift.
       </p>
     );

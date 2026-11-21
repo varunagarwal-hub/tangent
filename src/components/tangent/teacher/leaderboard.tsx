@@ -34,7 +34,7 @@ function Trend({ t }: { t: LeaderboardRow["trend"] }) {
 
 export function Leaderboard({ rows }: { rows: LeaderboardRow[] }) {
   const top = rows.slice(0, 8);
-  if (top.length === 0) return <p className="font-hand text-lg text-ink-soft">No active misconceptions. The class is on the curve.</p>;
+  if (top.length === 0) return <p className="font-hand text-xl text-ink-soft">No active misconceptions. The class is on the curve.</p>;
   return (
     <ol className="flex flex-col">
       {top.map((r, i) => {
@@ -49,7 +49,7 @@ export function Leaderboard({ rows }: { rows: LeaderboardRow[] }) {
             <div className="min-w-0">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
                 <span className={cn("font-medium text-ink", gap && "highlight")}>{r.name}</span>
-                {gap && <span className="font-hand text-base leading-none text-redpen">← class-wide gap</span>}
+                {gap && <span className="text-sm font-medium leading-none text-redpen">← class-wide gap</span>}
               </div>
               <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-ink-soft">
                 <span>
