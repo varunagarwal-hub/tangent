@@ -7,7 +7,6 @@ import { getStudentId } from "@/lib/session";
 import { getTodayData } from "@/lib/views";
 import { scoreCandidates } from "@/lib/agents/planner";
 import { getConcept, getMisconception } from "@/lib/content";
-import { NumberTicker } from "@/components/ui/number-ticker";
 import { PenLoader } from "@/components/tangent/pen-loader";
 import { StatusChip } from "@/components/tangent/status-chip";
 
@@ -198,9 +197,7 @@ function Stat({ icon, label, value }: { icon: React.ReactNode; label: string; va
   return (
     <div className="paper-card flex items-center gap-2 px-4 py-2">
       {icon}
-      <dd className="font-mono text-2xl">
-        <NumberTicker value={value} />
-      </dd>
+      <dd className="font-mono text-2xl">{value}</dd>
       <dt className="text-xs text-ink-soft">{label}</dt>
     </div>
   );
