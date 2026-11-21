@@ -157,6 +157,7 @@ export function RedPenWork({
     let timer: number | undefined;
     let raf = 0;
     let lastWidth = root.clientWidth;
+    let lastHeight = root.clientHeight;
 
     const draw = (withAnimation: boolean) => {
       annotation?.remove();
@@ -183,9 +184,12 @@ export function RedPenWork({
     };
     start();
 
+    // Redraw when the card changes size in EITHER direction: the margin note sliding in makes the
+    // row taller, which re-centres the circled line, so the circle must follow it.
     const ro = new ResizeObserver(() => {
-      if (root.clientWidth === lastWidth) return;
+      if (root.clientWidth === lastWidth && root.clientHeight === lastHeight) return;
       lastWidth = root.clientWidth;
+      lastHeight = root.clientHeight;
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => !cancelled && draw(false));
     });

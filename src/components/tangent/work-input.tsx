@@ -131,10 +131,10 @@ export function WorkInput({
           <TabsTrigger value="type" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <Keyboard aria-hidden="true" /> Type
           </TabsTrigger>
-          <TabsTrigger value="upload" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
+          <TabsTrigger value="upload" aria-label="Upload photo" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <Camera aria-hidden="true" /> <span>Upload<span className="hidden sm:inline"> photo</span></span>
           </TabsTrigger>
-          <TabsTrigger value="sample" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
+          <TabsTrigger value="sample" aria-label="Use sample rough work" disabled={disabled} className="h-auto flex-col gap-0.5 py-1.5 text-xs sm:flex-row sm:gap-1.5 sm:text-sm">
             <BookOpenCheck aria-hidden="true" /> <span><span className="hidden sm:inline">Use </span>sample</span>
           </TabsTrigger>
         </TabsList>
