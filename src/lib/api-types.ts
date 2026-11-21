@@ -260,3 +260,59 @@ export interface LessonPlan {
   generatedAt: string;
   trace: TraceStep[];
 }
+
+/* ── Phase 5: strategy (Skip Coach + calibration), under the hood ─────── */
+
+export interface SkipCoachData {
+  attempts: number;
+  /** actual simulated CAT score over the history (+3 correct, −1 wrong MCQ, 0 wrong TITA) */
+  actualScore: number;
+  /** score if the student had only attempted questions whose concept mastery (at that time) was ≥ threshold */
+  curve: { threshold: number; score: number; attempted: number; skipped: number }[];
+  best: { threshold: number; score: number; gain: number; skipped: number };
+  /** what skipping "Guessing"-confidence answers would have done */
+  skipGuesses: { score: number; gain: number; skipped: number };
+  /** wrong MCQ answers that cost −1 each */
+  negativeMarks: number;
+  insight: string; // coach-written, 2–3 sentences
+}
+
+export interface CalibrationData {
+  /** per confidence level: how often the student was right */
+  byConfidence: { level: 1 | 2 | 3; label: string; expected: number; accuracy: number | null; n: number }[];
+  byArea: { area: string; avgConfidence: number | null; accuracy: number | null; gap: number | null; n: number }[];
+  confidentlyWrong: number;
+  overall: { avgConfidence: number | null; accuracy: number | null; gap: number | null };
+}
+
+export interface StrategyData {
+  skip: SkipCoachData;
+  calibration: CalibrationData;
+  /** Sprint mode (P2): concepts ranked by weight × (1 − mastery) / estimated attempts to improve */
+  sprint: { conceptId: string; name: string; area: string; weight: number; p: number | null; score: number }[];
+}
+
+export interface AgentRunRow {
+  id: string;
+  agent: string;
+  summary: string;
+  latencyMs: number | null;
+  status: string;
+  createdAt: string;
+}
+
+export interface UnderTheHoodData {
+  feed: AgentRunRow[];
+  perAgent: { agent: string; runs: number; avgMs: number | null; errorRate: number }[];
+  eval: {
+    cases: number;
+    misconceptionAccuracy: number;
+    errorLineAccuracy: number;
+    bothAccuracy: number;
+    avgMs: number;
+    ranAt: string;
+    model: string | null;
+  } | null;
+  verifier: { accepted: number; rejected: number; rejectionRate: number; topReasons: { reason: string; n: number }[]; generatedLive: number };
+  counts: { concepts: number; misconceptions: number; questions: number; students: number; attempts: number; teacherCorrections: number };
+}
