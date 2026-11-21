@@ -1,0 +1,766 @@
+[
+  {
+    "id": "A1_ADD_SUCCESSIVE",
+    "concept_id": "A1",
+    "name": "Adds successive percentage changes",
+    "description": "Believes successive percentage changes can be added or subtracted directly. Each change acts on a new base, so the factors must be multiplied (1.2 × 0.8 = 0.96, a 4% fall).",
+    "wrong_reasoning_example": "1. Price rises by 20%, then falls by 20%.\n2. Net change = +20% − 20% = 0%\n3. So the final price equals the original.\n4. Answer: no change",
+    "telltale_signs": ["Writes the changes as a sum like '+20 − 20' or '10 + 20'", "No multiplying factors such as 1.2 or 0.8 anywhere in the work", "Net change exactly equals the algebraic sum of the given percentages", "Never picks a concrete base like 100 to check"],
+    "contrast_question_idea": "A price rises 50% and then falls 50%: the misconception gives 0% change, but the true change is a 25% fall."
+  },
+  {
+    "id": "A1_BASE_SWAP",
+    "concept_id": "A1",
+    "name": "Assumes 'x% more' reverses to 'x% less'",
+    "description": "Believes that if A is 25% more than B, then B is 25% less than A. The percentage is relative to the base being compared to, so B = A/1.25 = 0.8A, which is 20% less.",
+    "wrong_reasoning_example": "1. A is 25% more than B.\n2. So B is 25% less than A.\n3. If A = 100, then B = 75.\n4. Answer: B is 25% less than A",
+    "telltale_signs": ["Reuses the same percentage after switching which quantity is the base", "Picks 100 for the larger quantity instead of the base quantity", "No division like 25/125 in the work"],
+    "contrast_question_idea": "X earns 50% more than Y; by what percent does Y earn less than X? The misconception gives 50%, the correct answer is 33.33%."
+  },
+  {
+    "id": "A1_PERCENT_POINTS",
+    "concept_id": "A1",
+    "name": "Confuses percentage points with percent change",
+    "description": "Treats the difference between two percentages as the percentage change. Going from 10% to 12% is a rise of 2 percentage points but a 20% increase relative to the original 10%.",
+    "wrong_reasoning_example": "1. Interest rate went from 10% to 12%.\n2. Increase = 12 − 10 = 2\n3. Percentage increase = 2%\n4. Answer: 2%",
+    "telltale_signs": ["Subtracts two percentages and writes the result with a % sign", "Never divides the change by the original percentage", "Answer equals the gap between the two rates"],
+    "contrast_question_idea": "A party's vote share goes from 20% to 25%; by what percent did its share increase? The misconception gives 5%, the correct answer is 25%."
+  },
+  {
+    "id": "A1_WRONG_BASE_CHANGE",
+    "concept_id": "A1",
+    "name": "Divides the change by the new value",
+    "description": "Computes percentage change using the final value as the base. Percentage change is always measured against the original value.",
+    "wrong_reasoning_example": "1. Old price = 80, new price = 60\n2. Decrease = 80 − 60 = 20\n3. % decrease = 20/60 × 100 = 33.33%\n4. Answer: 33.33%",
+    "telltale_signs": ["Denominator in the % change step is the final value", "Percentage decrease comes out too large (or an increase too small)", "Writes change/new instead of change/old"],
+    "contrast_question_idea": "Price falls from 200 to 150: the misconception gives a 33.33% decrease, the correct answer is 25%."
+  },
+
+  {
+    "id": "A2_CHAIN_WITHOUT_LCM",
+    "concept_id": "A2",
+    "name": "Joins ratios without matching the common term",
+    "description": "Combines A:B and B:C by writing the numbers side by side. The common term B has different values in the two ratios and must first be made equal (e.g. via the LCM).",
+    "wrong_reasoning_example": "1. A:B = 2:3 and B:C = 4:5\n2. So A:B:C = 2:3:5\n3. A:C = 2:5\n4. Answer: 2:5",
+    "telltale_signs": ["Writes A:B:C by copying both ratios with B appearing once", "Neither ratio is scaled before combining", "The B value from the second ratio is silently dropped"],
+    "contrast_question_idea": "A:B = 3:4 and B:C = 6:7; find A:C. The misconception gives 3:7, the correct answer is 9:14."
+  },
+  {
+    "id": "A2_INVERT_WHEN_COMBINING",
+    "concept_id": "A2",
+    "name": "Inverts the ratio when translating a relation",
+    "description": "Reads '2A = 3B' as A:B = 2:3. If 2A = 3B then A/B = 3/2, so the coefficients swap places in the ratio.",
+    "wrong_reasoning_example": "1. 2A = 3B and A + B = 50\n2. So A:B = 2:3\n3. A = 50 × 2/5 = 20, B = 30\n4. Answer: A = 20",
+    "telltale_signs": ["Ratio written in the same order as the coefficients in an equation like 2A = 3B", "Doesn't substitute back to check that 2A equals 3B", "The smaller coefficient goes with the smaller share"],
+    "contrast_question_idea": "3 times A's share equals 5 times B's share and the total is 160; find A's share. The misconception gives 60, the correct answer is 100."
+  },
+  {
+    "id": "A2_ADD_TO_RATIO",
+    "concept_id": "A2",
+    "name": "Thinks adding the same amount keeps the ratio",
+    "description": "Assumes a ratio is unchanged when the same number is added to both terms, as with ages after some years. Only multiplying both terms by the same number preserves a ratio.",
+    "wrong_reasoning_example": "1. Ages of P and Q are in the ratio 3:5, and P is 15.\n2. So Q is 25.\n3. After 10 years, the ratio stays 3:5.\n4. Answer: 3:5",
+    "telltale_signs": ["Carries the old ratio forward after an addition or subtraction", "Doesn't compute the new actual values", "Treats age ratios as constant over time"],
+    "contrast_question_idea": "Ages are in the ratio 2:3 and the elder is 15; what is the ratio after 5 years? The misconception keeps 2:3, the correct answer is 3:4."
+  },
+  {
+    "id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "concept_id": "A2",
+    "name": "Splits partnership profit by capital alone",
+    "description": "Divides profit in the ratio of the amounts invested, ignoring how long each amount stayed in the business. Profit share is proportional to capital × time.",
+    "wrong_reasoning_example": "1. A invests 6000 for 12 months, B invests 8000 for 6 months; profit is 7000.\n2. Profit ratio A:B = 6000:8000 = 3:4\n3. A's share = 7000 × 3/7 = 3000\n4. Answer: Rs 3000",
+    "telltale_signs": ["Time periods are given but never multiplied with the capital", "Profit ratio equals the investment ratio", "Months appear in the question but not in the work"],
+    "contrast_question_idea": "A puts in 10,000 for 12 months and B 20,000 for 3 months, profit 9,000: the misconception gives A 3,000, the correct share is 6,000."
+  },
+
+  {
+    "id": "A3_AVG_OF_AVGS",
+    "concept_id": "A3",
+    "name": "Averages averages without weighting",
+    "description": "Takes the simple mean of group averages. When groups differ in size, each average must be weighted by its group size (total sum ÷ total count).",
+    "wrong_reasoning_example": "1. Class A: 20 students, average 60. Class B: 30 students, average 80.\n2. Combined average = (60 + 80)/2 = 70\n3. Answer: 70",
+    "telltale_signs": ["Writes (avg1 + avg2)/2 even when group sizes differ", "Group sizes are given but never multiplied with the averages", "Combined average lands exactly midway between the group averages"],
+    "contrast_question_idea": "10 students average 90 and 40 students average 40: the misconception gives 65, the correct answer is 50."
+  },
+  {
+    "id": "A3_REPLACEMENT_UNSCALED",
+    "concept_id": "A3",
+    "name": "Forgets to scale the average change by group size",
+    "description": "When one member is replaced and the average rises by d, assumes the newcomer is only d more than the person replaced. The total rises by n × d, so the newcomer is n × d more.",
+    "wrong_reasoning_example": "1. Average weight of 8 people rises by 2.5 kg when a 60 kg person is replaced.\n2. New person = 60 + 2.5\n3. = 62.5 kg\n4. Answer: 62.5 kg",
+    "telltale_signs": ["Adds the change in average directly to the replaced value", "Group size never multiplies the change in average", "Answer differs from the replaced value by exactly the change in average"],
+    "contrast_question_idea": "The average age of 10 players rises by 3 when a 25-year-old is replaced: the misconception gives 28, the correct answer is 55."
+  },
+  {
+    "id": "A3_OLD_COUNT",
+    "concept_id": "A3",
+    "name": "Uses the old count after someone joins",
+    "description": "When a new member joins, computes the new total using the old number of members. The new average must be multiplied by the new count (n + 1).",
+    "wrong_reasoning_example": "1. Average of 10 numbers is 20, so total = 200.\n2. After adding one number, the average is 21.\n3. New total = 21 × 10 = 210\n4. New number = 210 − 200 = 10\n5. Answer: 10",
+    "telltale_signs": ["Multiplies the new average by the original count", "The added number is below the new average even though the average went up", "No (n + 1) anywhere in the work"],
+    "contrast_question_idea": "The average of 5 numbers is 30 and a sixth number raises it to 32: the misconception gives 10, the correct answer is 42."
+  },
+  {
+    "id": "A3_DEVIATION_SIGN_DROP",
+    "concept_id": "A3",
+    "name": "Drops signs on deviations from an assumed mean",
+    "description": "Uses the assumed-mean shortcut but treats every deviation as positive. Values below the assumed mean have negative deviations that cancel the positive ones.",
+    "wrong_reasoning_example": "1. Numbers 47, 52, 55, 46; assumed mean 50\n2. Deviations: 3, 2, 5, 4\n3. Sum of deviations = 14, so mean = 50 + 14/4\n4. = 53.5\n5. Answer: 53.5",
+    "telltale_signs": ["All deviations written without signs", "Result is above the assumed mean even though some values are below it", "Sum of deviations equals the sum of absolute differences"],
+    "contrast_question_idea": "Mean of 98, 103, 95, 104 using an assumed mean of 100: the misconception gives 103.5, the correct answer is 100."
+  },
+
+  {
+    "id": "A4_PROFIT_ON_SP",
+    "concept_id": "A4",
+    "name": "Calculates profit % on selling price",
+    "description": "Divides profit by the selling price. Profit and loss percentages are computed on the cost price unless the question says otherwise.",
+    "wrong_reasoning_example": "1. CP = 400, SP = 500\n2. Profit = 500 − 400 = 100\n3. Profit % = 100/500 × 100 = 20%\n4. Answer: 20%",
+    "telltale_signs": ["SP appears in the denominator of the profit % step", "Profit % comes out lower than it should (loss % higher)", "Writes profit/SP"],
+    "contrast_question_idea": "Bought at 50 and sold at 100: the misconception gives 50% profit, the correct answer is 100%."
+  },
+  {
+    "id": "A4_ADD_DISCOUNTS",
+    "concept_id": "A4",
+    "name": "Adds successive discounts",
+    "description": "Adds successive discounts into one discount. The second discount applies to the already-reduced price, so 20% then 10% is 1 − 0.8 × 0.9 = 28%, not 30%.",
+    "wrong_reasoning_example": "1. Marked price = 1000; discounts of 20% and 10%\n2. Total discount = 20 + 10 = 30%\n3. SP = 1000 × 0.7 = 700\n4. Answer: Rs 700",
+    "telltale_signs": ["Writes the discounts as a sum like '20 + 10'", "A single multiplier such as 0.7 instead of 0.8 × 0.9", "Equivalent discount equals the sum of the given discounts"],
+    "contrast_question_idea": "Successive discounts of 50% and 50%: the misconception gives 100% off (free), the correct equivalent is 75% off."
+  },
+  {
+    "id": "A4_MARKUP_MINUS_DISCOUNT",
+    "concept_id": "A4",
+    "name": "Subtracts discount % from markup %",
+    "description": "Assumes marking up by m% and discounting by d% gives a profit of (m − d)%. The discount applies to the marked price, which is larger than cost, so the factors must be multiplied.",
+    "wrong_reasoning_example": "1. Marked 40% above CP; 20% discount on the marked price\n2. Profit % = 40 − 20 = 20%\n3. Answer: 20%",
+    "telltale_signs": ["Writes 'markup − discount' as the profit %", "No product of factors like 1.4 × 0.8", "Profit % is a clean difference of the two given percentages"],
+    "contrast_question_idea": "Marked up 25% and sold at a 20% discount: the misconception gives 5% profit, the correct answer is no profit, no loss (1.25 × 0.8 = 1)."
+  },
+  {
+    "id": "A4_FALSE_WEIGHT_BASE",
+    "concept_id": "A4",
+    "name": "Computes false-weight gain on the claimed weight",
+    "description": "A dealer who gives 900 g for 1 kg gains 100 g on every 900 g he actually hands over, so the gain is 100/900, not 100/1000.",
+    "wrong_reasoning_example": "1. Dealer gives 900 g instead of 1000 g, at cost price.\n2. Gain = 100 g per kg\n3. Gain % = 100/1000 × 100 = 10%\n4. Answer: 10%",
+    "telltale_signs": ["Denominator is the claimed weight (1000) instead of the weight actually given", "Answer is a round number like 10% or 20%", "Writes error/claimed weight"],
+    "contrast_question_idea": "A dealer uses an 800 g weight for 1 kg: the misconception gives 20% gain, the correct answer is 25%."
+  },
+  {
+    "id": "A4_SAME_SP_NO_LOSS",
+    "concept_id": "A4",
+    "name": "Thinks equal % profit and loss cancel",
+    "description": "When two items sell at the same price, one at x% profit and one at x% loss, assumes there's no net profit or loss. The cost prices differ, so there's always a net loss of (x²/100)%.",
+    "wrong_reasoning_example": "1. Two phones sold at Rs 240 each.\n2. One at 20% profit, the other at 20% loss.\n3. +20% and −20% cancel, so no profit no loss.\n4. Answer: 0%",
+    "telltale_signs": ["Writes '+x − x = 0' for the profit and loss", "Never computes the two cost prices", "Answer is 'no profit no loss'"],
+    "contrast_question_idea": "Two horses sold at Rs 9,900 each, one at 10% gain and one at 10% loss: the misconception gives no loss, the correct answer is a 1% loss."
+  },
+
+  {
+    "id": "A5_SI_FOR_CI",
+    "concept_id": "A5",
+    "name": "Uses simple interest when interest compounds",
+    "description": "Calculates the same interest every year on the original principal. With compound interest, each year's interest is earned on the previous year's amount.",
+    "wrong_reasoning_example": "1. P = 10000, r = 10% compounded annually, t = 2 years\n2. Interest = 10000 × 10 × 2/100 = 2000\n3. Answer: Rs 2000",
+    "telltale_signs": ["Uses P × r × t/100 in a compound-interest question", "Interest is the same every year", "No (1 + r/100)^n factor"],
+    "contrast_question_idea": "Rs 1000 at 100% compounded annually for 3 years: the misconception gives interest of 3000, the correct answer is 7000."
+  },
+  {
+    "id": "A5_HALFYEARLY_RATE",
+    "concept_id": "A5",
+    "name": "Doesn't adjust rate and periods for half-yearly compounding",
+    "description": "For half-yearly compounding, keeps the annual rate per period or counts years instead of half-years. The rate per period must be r/2 and the number of periods 2t.",
+    "wrong_reasoning_example": "1. P = 10000, r = 20% p.a. compounded half-yearly, t = 1 year\n2. 2 half-years, so amount = 10000 × (1.20)^2\n3. = 14400\n4. Answer: Rs 14,400",
+    "telltale_signs": ["Annual rate used inside (1 + r/100) despite half-yearly compounding", "Exponent equals years instead of half-years, or periods doubled with the rate left unchanged", "Answer equals the annual-compounding result, or is far above it"],
+    "contrast_question_idea": "Rs 10,000 at 10% p.a. compounded half-yearly for 1 year: the misconception gives 11,000 (or 12,100), the correct amount is 11,025."
+  },
+  {
+    "id": "A5_CI_DIFF_2YR_FORMULA",
+    "concept_id": "A5",
+    "name": "Uses the 2-year CI − SI shortcut for other durations",
+    "description": "Applies the 2-year shortcut CI − SI = P(r/100)² to any number of years. For 3 years the difference is P(r/100)²(3 + r/100).",
+    "wrong_reasoning_example": "1. P = 8000, r = 10%, t = 3 years; find CI − SI\n2. Difference = P(r/100)^2\n3. = 8000 × 0.01 = 80\n4. Answer: Rs 80",
+    "telltale_signs": ["Uses P(r/100)^2 when t is not 2", "No term depending on the number of years", "Answer far smaller than a direct CI and SI calculation would give"],
+    "contrast_question_idea": "Difference between CI and SI on Rs 1000 at 10% for 3 years: the misconception gives 10, the correct answer is 31."
+  },
+  {
+    "id": "A5_CI_LINEAR_SCALING",
+    "concept_id": "A5",
+    "name": "Scales compound growth linearly with time",
+    "description": "Assumes the growth multiple scales linearly with time, so if money doubles in 4 years it becomes 8 times in 4 × 4 years. Under compound interest each period multiplies the amount: 8 = 2³, so it takes 3 doubling periods.",
+    "wrong_reasoning_example": "1. A sum doubles in 4 years at compound interest.\n2. 8 times = 4 × (2 times), so it needs 4 doubling periods.\n3. Time = 4 × 4 = 16 years\n4. Answer: 16 years",
+    "telltale_signs": ["Divides the target multiple by 2 to count doubling periods", "Treats '8 times' as '4 doublings'", "No powers like 2^3 in the work"],
+    "contrast_question_idea": "A sum doubles in 5 years at CI; when does it become 16 times? The misconception gives 40 years, the correct answer is 20."
+  },
+
+  {
+    "id": "A6_ALLIGATION_ON_QUANTITIES",
+    "concept_id": "A6",
+    "name": "Applies alligation to quantities instead of concentrations",
+    "description": "Puts quantities or ratio parts into the alligation cross. Alligation only works on rates (concentrations, prices per unit, averages), so a milk:water ratio of 3:1 must first become a milk fraction of 3/4.",
+    "wrong_reasoning_example": "1. A has milk:water = 3:1, B has 1:1; want 2:1\n2. Alligate the milk parts: 3 and 1 around 2\n3. A:B = (2 − 1):(3 − 2) = 1:1\n4. Answer: 1:1",
+    "telltale_signs": ["Numbers in the alligation cross are ratio parts or litres, not fractions or percentages", "Never converts milk:water ratios into milk fractions", "Mean value in the cross is a quantity rather than a concentration"],
+    "contrast_question_idea": "Milk:water mixtures of 4:1 and 1:1 are mixed to give 3:2: the misconception (parts 4, 1 around 3) gives 2:1, the correct ratio is 1:2."
+  },
+  {
+    "id": "A6_REPLACEMENT_LINEAR",
+    "concept_id": "A6",
+    "name": "Treats repeated replacement as linear",
+    "description": "Subtracts the same amount of the original liquid at every replacement. Each draw removes a mixture, so the remaining fraction multiplies: final = initial × (1 − x/V)^n.",
+    "wrong_reasoning_example": "1. 40 L of milk; 4 L is taken out and replaced with water, twice.\n2. Milk removed each time = 4 L\n3. Milk left = 40 − 4 − 4 = 32 L\n4. Answer: 32 L",
+    "telltale_signs": ["Subtracts the same volume at every step", "No (1 − x/V)^n factor", "Whole-number answer where the true answer has decimals"],
+    "contrast_question_idea": "A 10 L vessel of pure milk has 5 L replaced with water three times: the misconception gives −5 L (impossible), the correct answer is 1.25 L."
+  },
+  {
+    "id": "A6_ALLIGATION_REVERSED",
+    "concept_id": "A6",
+    "name": "Reverses the alligation differences",
+    "description": "Writes cheaper:dearer as (mean − cheap):(dear − mean). Each ingredient's share is proportional to the OTHER ingredient's distance from the mean, so cheaper:dearer = (dear − mean):(mean − cheap).",
+    "wrong_reasoning_example": "1. Cheap rice Rs 30/kg, dear rice Rs 50/kg, mixture Rs 35/kg\n2. Cheap:dear = (35 − 30):(50 − 35) = 5:15\n3. = 1:3\n4. Answer: 1:3",
+    "telltale_signs": ["Mean is closer to the cheaper price, yet the answer uses more of the dearer one", "Each ingredient is paired with its own difference from the mean", "No check by computing the weighted average"],
+    "contrast_question_idea": "Mix Rs 20/kg and Rs 60/kg to get Rs 30/kg: the misconception gives cheap:dear = 1:3, the correct ratio is 3:1."
+  },
+  {
+    "id": "A6_SP_AS_MEAN",
+    "concept_id": "A6",
+    "name": "Uses selling price as the alligation mean",
+    "description": "Puts the mixture's selling price into the alligation cross when it's sold at a profit. The mean must be the mixture's cost price, SP ÷ (1 + profit%).",
+    "wrong_reasoning_example": "1. Tea at Rs 60/kg and Rs 90/kg; mixture sold at Rs 84/kg at 20% profit\n2. Mean price = 84\n3. Cheap:dear = (90 − 84):(84 − 60) = 6:24 = 1:4\n4. Answer: 1:4",
+    "telltale_signs": ["Profit % is given but never used", "Mean price in the cross is the selling price", "No division like 84/1.2"],
+    "contrast_question_idea": "Rs 40 and Rs 60 sugar are mixed and sold at Rs 60 with 20% profit: the misconception gives 0:1 (all dear sugar), the correct ratio is 1:1."
+  },
+
+  {
+    "id": "A7_ADD_DAYS",
+    "concept_id": "A7",
+    "name": "Adds days instead of work rates",
+    "description": "Adds the individual times to get the time taken together. Working together adds rates (1/a + 1/b), and the combined time is always less than either individual time.",
+    "wrong_reasoning_example": "1. A does the job in 10 days, B in 15 days.\n2. Together they take 10 + 15 = 25 days\n3. Answer: 25 days",
+    "telltale_signs": ["Sums the given days or hours", "Combined time is longer than either person alone", "No fractions like 1/10 + 1/15"],
+    "contrast_question_idea": "Two identical machines each take 8 hours: the misconception gives 16 hours together, the correct answer is 4."
+  },
+  {
+    "id": "A7_EMPTY_PIPE_ADDS",
+    "concept_id": "A7",
+    "name": "Adds an emptying pipe's rate",
+    "description": "Treats a leak or outlet pipe as if it also fills the tank. Emptying rates must be subtracted from filling rates.",
+    "wrong_reasoning_example": "1. Pipe A fills in 6 h, pipe B empties in 12 h; both open\n2. Net rate = 1/6 + 1/12 = 3/12 = 1/4\n3. Time = 4 h\n4. Answer: 4 hours",
+    "telltale_signs": ["Plus sign between a filling rate and an emptying rate", "Tank fills faster with the leak than without it", "Ignores words like 'empties', 'leak' or 'outlet'"],
+    "contrast_question_idea": "A tap fills a tank in 4 h and a leak empties it in 5 h: the misconception gives about 2.2 h, the correct answer is 20 h."
+  },
+  {
+    "id": "A7_MEN_DAYS_DIRECT",
+    "concept_id": "A7",
+    "name": "Treats men and days as directly proportional",
+    "description": "Assumes more workers take more days. For a fixed job, men × days is constant, so men and days are inversely proportional.",
+    "wrong_reasoning_example": "1. 12 men finish a job in 20 days; how long for 15 men?\n2. Days = 20 × 15/12\n3. = 25 days\n4. Answer: 25 days",
+    "telltale_signs": ["Multiplies days by new men ÷ old men", "More workers end up needing more time", "No product M × D written as a constant"],
+    "contrast_question_idea": "10 men take 12 days; how long for 30 men? The misconception gives 36 days, the correct answer is 4."
+  },
+  {
+    "id": "A7_EFFICIENCY_TIME_SAME_PCT",
+    "concept_id": "A7",
+    "name": "Assumes x% more efficient means x% less time",
+    "description": "Believes that if A is 50% more efficient than B, A takes 50% less time. Time is inversely proportional to efficiency, so A takes 1/1.5 = 2/3 of B's time, i.e. 33.33% less.",
+    "wrong_reasoning_example": "1. A is 50% more efficient than B; B takes 30 days\n2. So A takes 50% less time\n3. A's time = 15 days\n4. Answer: 15 days",
+    "telltale_signs": ["Applies the efficiency % directly as a % cut in time", "No division by 1.5 (or a similar factor)", "Ratio of times isn't the inverse of the efficiency ratio"],
+    "contrast_question_idea": "A is 100% more efficient than B, who takes 10 days: the misconception gives 0 days, the correct answer is 5."
+  },
+
+  {
+    "id": "A8_MEAN_OF_SPEEDS",
+    "concept_id": "A8",
+    "name": "Averages speeds as a simple mean",
+    "description": "Takes the arithmetic mean of speeds over equal distances. More time is spent at the slower speed, so average speed = total distance ÷ total time (2ab/(a + b) for two equal legs).",
+    "wrong_reasoning_example": "1. Goes at 60 km/h and returns at 40 km/h over the same road.\n2. Average speed = (60 + 40)/2 = 50 km/h\n3. Answer: 50 km/h",
+    "telltale_signs": ["Writes (speed1 + speed2)/2", "No total distance or total time computed", "Answer lies exactly midway between the speeds"],
+    "contrast_question_idea": "Up a hill at 10 km/h and back down at 90 km/h: the misconception gives 50 km/h, the correct answer is 18 km/h."
+  },
+  {
+    "id": "A8_SAME_DIR_SUM",
+    "concept_id": "A8",
+    "name": "Adds speeds for same-direction motion",
+    "description": "Adds speeds when two objects move in the same direction. Relative speed is the difference for the same direction and the sum only for opposite directions.",
+    "wrong_reasoning_example": "1. Trains at 72 km/h and 54 km/h, same direction, lengths 150 m and 100 m\n2. Relative speed = 72 + 54 = 126 km/h = 35 m/s\n3. Time = (150 + 100)/35 = 7.14 s\n4. Answer: 7.14 s",
+    "telltale_signs": ["Plus sign between speeds when the question says 'same direction'", "Overtaking time comes out very short", "Same relative speed used whatever the direction"],
+    "contrast_question_idea": "A thief at 10 km/h is chased by a policeman at 12 km/h from 200 m behind: the misconception gives about 33 s, the correct answer is 6 minutes."
+  },
+  {
+    "id": "A8_IGNORE_TRAIN_LENGTH",
+    "concept_id": "A8",
+    "name": "Ignores the train's own length",
+    "description": "Uses only the platform or bridge length as the distance. To cross completely, the train must cover its own length plus the length of the platform or bridge.",
+    "wrong_reasoning_example": "1. A 200 m train at 72 km/h crosses a 300 m platform.\n2. Speed = 72 × 5/18 = 20 m/s\n3. Time = 300/20 = 15 s\n4. Answer: 15 s",
+    "telltale_signs": ["Distance equals the platform or bridge length alone", "Train length is given but unused", "Time to cross a platform is no more than the time to pass a pole"],
+    "contrast_question_idea": "A 400 m train crosses a 100 m bridge at 36 km/h: the misconception gives 10 s, the correct answer is 50 s."
+  },
+  {
+    "id": "A8_STREAM_NO_HALVE",
+    "concept_id": "A8",
+    "name": "Forgets to halve when finding stream speed",
+    "description": "Takes stream speed as downstream speed minus upstream speed. Downstream = b + s and upstream = b − s, so their difference is 2s and must be halved.",
+    "wrong_reasoning_example": "1. Downstream speed 16 km/h, upstream 10 km/h\n2. Stream speed = 16 − 10 = 6 km/h\n3. Answer: 6 km/h",
+    "telltale_signs": ["Stream speed equals downstream minus upstream", "No division by 2", "Boat speed + stream speed doesn't match the downstream speed when checked"],
+    "contrast_question_idea": "Downstream 20 km/h and upstream 12 km/h: the misconception gives a stream speed of 8 km/h, the correct answer is 4."
+  },
+
+  {
+    "id": "N1_DIVISIBLE_BY_PRODUCT",
+    "concept_id": "N1",
+    "name": "Multiplies divisors that share factors",
+    "description": "Assumes a number divisible by both a and b is divisible by a × b. That's only true when a and b are coprime; in general it's divisible by LCM(a, b).",
+    "wrong_reasoning_example": "1. Count numbers from 1 to 100 divisible by both 4 and 6.\n2. Divisible by both means divisible by 4 × 6 = 24\n3. 100/24 gives 4 numbers\n4. Answer: 4",
+    "telltale_signs": ["Multiplies two divisors that share a common factor", "Uses a × b where LCM(a, b) is needed", "Misses numbers like 12 that satisfy both conditions"],
+    "contrast_question_idea": "How many numbers up to 60 are divisible by both 6 and 10? The misconception gives 1, the correct answer is 2."
+  },
+  {
+    "id": "N1_FACTOR_COUNT_NO_PLUS_ONE",
+    "concept_id": "N1",
+    "name": "Forgets the +1 when counting factors",
+    "description": "Multiplies the prime exponents directly to count factors. A prime with exponent a can appear 0 to a times, giving (a + 1) choices, so the count is the product of (exponent + 1).",
+    "wrong_reasoning_example": "1. 72 = 2^3 × 3^2\n2. Number of factors = 3 × 2 = 6\n3. Answer: 6",
+    "telltale_signs": ["Multiplies exponents without adding 1", "Count leaves out 1 and other factors missing a prime", "A prime number would get a factor count of 1"],
+    "contrast_question_idea": "How many factors does 2^4 × 5 have? The misconception gives 4, the correct answer is 10."
+  },
+
+  {
+    "id": "N2_PRODUCT_RULE_3NUMS",
+    "concept_id": "N2",
+    "name": "Uses HCF × LCM = product for 3+ numbers",
+    "description": "Applies HCF × LCM = product of the numbers to three or more numbers. The identity holds only for two numbers.",
+    "wrong_reasoning_example": "1. Numbers 4, 6, 10; HCF = 2\n2. LCM = product/HCF = (4 × 6 × 10)/2\n3. = 240/2 = 120\n4. Answer: 120",
+    "telltale_signs": ["Divides the product of three numbers by the HCF", "LCM found is a multiple of the true LCM", "Never lists prime factorisations"],
+    "contrast_question_idea": "LCM of 6, 10 and 15 (HCF 1): the misconception gives 900, the correct answer is 30."
+  },
+  {
+    "id": "N2_HCF_FOR_LCM",
+    "concept_id": "N2",
+    "name": "Uses HCF where LCM is needed",
+    "description": "Mixes up when to use HCF and LCM. 'Together again' and 'smallest number divisible by' problems need the LCM; 'largest size that fits exactly' problems need the HCF.",
+    "wrong_reasoning_example": "1. Bells ring every 6, 8 and 12 minutes; they ring together now.\n2. Next time together = HCF(6, 8, 12)\n3. = 2 minutes\n4. Answer: after 2 minutes",
+    "telltale_signs": ["HCF used in a 'when will they coincide again' problem", "Answer is smaller than the individual intervals (or larger than the given lengths)", "Writes 'common' without deciding between greatest and least"],
+    "contrast_question_idea": "Largest square tile that exactly covers a 12 m × 18 m floor: the misconception gives 36 m (the LCM), the correct answer is 6 m."
+  },
+  {
+    "id": "N2_REMAINDER_NOT_SUBTRACTED",
+    "concept_id": "N2",
+    "name": "Takes HCF without removing the remainders",
+    "description": "For 'largest number dividing a and b leaving remainders r1 and r2', takes HCF(a, b). The divisor divides a − r1 and b − r2 exactly, so it's HCF(a − r1, b − r2).",
+    "wrong_reasoning_example": "1. Largest number dividing 70 and 125 leaving remainders 5 and 8\n2. Required number = HCF(70, 125)\n3. = 5\n4. Answer: 5",
+    "telltale_signs": ["Remainders given but not subtracted", "HCF taken of the original numbers", "Answer is not larger than the given remainders"],
+    "contrast_question_idea": "Largest number dividing 43 and 91 leaving remainder 7 in each: the misconception gives 1, the correct answer is 12."
+  },
+
+  {
+    "id": "N3_NEGATIVE_REMAINDER",
+    "concept_id": "N3",
+    "name": "Mishandles negative remainders",
+    "description": "Gets a negative remainder like −1 and either drops the sign or leaves it as the answer. A negative remainder must be converted by adding the divisor: −1 mod 6 = 5.",
+    "wrong_reasoning_example": "1. Remainder when 5^99 is divided by 6\n2. 5 ≡ −1 (mod 6), so 5^99 ≡ (−1)^99 = −1\n3. Remainder can't be negative, so remainder = 1\n4. Answer: 1",
+    "telltale_signs": ["Writes −1 and then drops the minus sign", "Final remainder given as a negative number", "Never adds the divisor to a negative result"],
+    "contrast_question_idea": "Remainder when 10^5 is divided by 11: the misconception gives 1 (or −1), the correct answer is 10."
+  },
+  {
+    "id": "N3_CANCEL_NOT_RESTORED",
+    "concept_id": "N3",
+    "name": "Cancels a common factor and forgets to restore it",
+    "description": "Cancels a common factor from the dividend and divisor and reports the reduced remainder. The remainder must be multiplied back by the cancelled factor.",
+    "wrong_reasoning_example": "1. Remainder when 28 is divided by 12\n2. Cancel 4: 7 divided by 3\n3. Remainder = 1\n4. Answer: 1",
+    "telltale_signs": ["Divides both the dividend and the divisor by a common factor", "Final remainder never multiplied back", "Remainder fails a direct check"],
+    "contrast_question_idea": "Remainder when 2^10 is divided by 24: cancelling 8, the misconception gives 2, the correct answer is 16."
+  },
+  {
+    "id": "N3_CYCLICITY_ZERO_INDEX",
+    "concept_id": "N3",
+    "name": "Treats a zero remainder in cyclicity as power 0",
+    "description": "When the exponent is a multiple of the cycle length, uses remainder 0 to pick base^0 = 1. A zero remainder means the LAST element of the cycle.",
+    "wrong_reasoning_example": "1. Unit digit of 2^100\n2. Cycle of 2: 2, 4, 8, 6 (length 4)\n3. 100 mod 4 = 0, so unit digit = 2^0 = 1\n4. Answer: 1",
+    "telltale_signs": ["Writes base^0 = 1 when the remainder is 0", "Unit digit answer isn't in the listed cycle", "Uses remainder 0 as a position in the cycle"],
+    "contrast_question_idea": "Unit digit of 8^40: the misconception gives 1, the correct answer is 6."
+  },
+
+  {
+    "id": "L1_ADD_EXP_DIFF_BASES",
+    "concept_id": "L1",
+    "name": "Adds exponents of different bases",
+    "description": "Multiplies powers with different bases by multiplying the bases and adding the exponents. a^m × a^n = a^(m+n) works only for the same base.",
+    "wrong_reasoning_example": "1. Simplify 2^3 × 3^2\n2. = (2 × 3)^(3 + 2) = 6^5\n3. = 7776\n4. Answer: 7776",
+    "telltale_signs": ["Combines different bases into one base", "Adds exponents across different bases", "Result far larger than a direct evaluation"],
+    "contrast_question_idea": "Evaluate 2^2 × 5^1: the misconception gives 10^3 = 1000, the correct answer is 20."
+  },
+  {
+    "id": "L1_ROOT_OF_SUM",
+    "concept_id": "L1",
+    "name": "Splits a root or power over a sum",
+    "description": "Believes √(a + b) = √a + √b or (a + b)² = a² + b². Roots and powers distribute over products, not sums.",
+    "wrong_reasoning_example": "1. Evaluate √(16 + 9)\n2. = √16 + √9\n3. = 4 + 3 = 7\n4. Answer: 7",
+    "telltale_signs": ["Root applied term by term inside a sum", "Missing 2ab cross term when squaring a sum", "Pythagoras-type lengths come out as simple sums"],
+    "contrast_question_idea": "Find √(36 + 64): the misconception gives 14, the correct answer is 10."
+  },
+
+  {
+    "id": "L2_LOG_OF_SUM",
+    "concept_id": "L2",
+    "name": "Thinks log(a + b) = log a + log b",
+    "description": "Splits the log of a sum into a sum of logs. The rule log a + log b = log(ab) applies to products, not sums.",
+    "wrong_reasoning_example": "1. Evaluate log_2(8 + 8)\n2. = log_2 8 + log_2 8\n3. = 3 + 3 = 6\n4. Answer: 6",
+    "telltale_signs": ["Log applied separately to the terms inside a sum", "Writes log(a + b) = log a + log b", "Uses the product rule where there's no product"],
+    "contrast_question_idea": "Evaluate log_10(50 + 50): the misconception gives log 2500 ≈ 3.4, the correct answer is 2."
+  },
+  {
+    "id": "L2_RATIO_OF_LOGS",
+    "concept_id": "L2",
+    "name": "Treats a ratio of logs as the log of a ratio",
+    "description": "Simplifies log a / log b as log(a/b) or log a − log b. A ratio of logs is a change of base: log a / log b = log_b a.",
+    "wrong_reasoning_example": "1. Evaluate log 100 / log 10\n2. = log(100/10)\n3. = log 10 = 1\n4. Answer: 1",
+    "telltale_signs": ["Turns log a / log b into log(a/b)", "Subtracts logs where a quotient of logs appears", "No change-of-base step"],
+    "contrast_question_idea": "Evaluate log 81 / log 3: the misconception gives log 27 ≈ 1.43, the correct answer is 4."
+  },
+  {
+    "id": "L2_IGNORE_DOMAIN",
+    "concept_id": "L2",
+    "name": "Keeps roots that make a log undefined",
+    "description": "Solves the algebra after combining logs but doesn't check that each original log argument is positive. Roots that give a zero or negative argument must be rejected.",
+    "wrong_reasoning_example": "1. log x + log(x − 3) = 1 (base 10)\n2. log[x(x − 3)] = 1, so x^2 − 3x = 10\n3. (x − 5)(x + 2) = 0, so x = 5 or x = −2\n4. Both are solutions; sum of solutions = 3\n5. Answer: 3",
+    "telltale_signs": ["Never substitutes roots back into the original logs", "Accepts a negative x inside log x", "Reports two solutions where only one is valid"],
+    "contrast_question_idea": "Solve log_2 x + log_2(x − 2) = 3: the misconception gives x = 4 or x = −2, the correct answer is x = 4 only."
+  },
+
+  {
+    "id": "L3_SIGN_ON_TRANSPOSE",
+    "concept_id": "L3",
+    "name": "Forgets to change sign when transposing",
+    "description": "Moves a term to the other side of an equation without changing its sign. Moving +7 across the equals sign makes it −7.",
+    "wrong_reasoning_example": "1. 3x + 7 = 22\n2. 3x = 22 + 7 = 29\n3. x = 29/3\n4. Answer: x = 29/3",
+    "telltale_signs": ["Term keeps its sign after crossing the equals sign", "Solution fails when substituted back", "Fractional answer where the numbers suggest an integer"],
+    "contrast_question_idea": "Solve 5x − 8 = 12: the misconception gives x = 4/5, the correct answer is x = 4."
+  },
+  {
+    "id": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "concept_id": "L3",
+    "name": "Assumes proportional coefficients mean infinitely many solutions",
+    "description": "Concludes a pair of linear equations has infinitely many solutions whenever the x and y coefficients are proportional. If the constants aren't in the same ratio, the lines are parallel and there's no solution.",
+    "wrong_reasoning_example": "1. 2x + 3y = 5 and 4x + 6y = 12\n2. 2/4 = 3/6, so the lines coincide\n3. Infinitely many solutions\n4. Answer: infinitely many",
+    "telltale_signs": ["Compares only a1/a2 and b1/b2", "Constant ratio c1/c2 never checked", "Calls parallel lines 'coincident'"],
+    "contrast_question_idea": "For what k does x + 2y = 3, 2x + 4y = k have no solution? The misconception says every k gives infinitely many solutions; the correct answer is any k ≠ 6."
+  },
+
+  {
+    "id": "L4_DIVIDE_BY_VARIABLE",
+    "concept_id": "L4",
+    "name": "Divides by the variable and loses a root",
+    "description": "Cancels x from both sides of an equation like 3x² = 12x. Dividing by x assumes x ≠ 0, which silently discards the root x = 0; factorise instead.",
+    "wrong_reasoning_example": "1. Solve 3x^2 = 12x\n2. Divide both sides by x: 3x = 12\n3. x = 4\n4. Answer: x = 4 (one root)",
+    "telltale_signs": ["Cancels a variable common to both sides", "Fewer roots than the degree of the equation", "x = 0 never considered"],
+    "contrast_question_idea": "Solve x^2 = 7x: the misconception gives only x = 7, missing x = 0."
+  },
+  {
+    "id": "L4_SUM_ROOTS_SIGN",
+    "concept_id": "L4",
+    "name": "Gets the sign wrong in sum of roots",
+    "description": "Uses b/a for the sum of roots of ax² + bx + c = 0. The sum is −b/a (the product is c/a).",
+    "wrong_reasoning_example": "1. 2x^2 + 6x − 8 = 0\n2. Sum of roots = b/a = 6/2 = 3\n3. Answer: 3",
+    "telltale_signs": ["Sum of roots has the same sign as b", "Writes b/a instead of −b/a", "Doesn't check with the actual roots"],
+    "contrast_question_idea": "Sum of roots of x^2 − 9x + 20 = 0: the misconception gives −9, the correct answer is 9."
+  },
+  {
+    "id": "L4_ZERO_PRODUCT_NONZERO",
+    "concept_id": "L4",
+    "name": "Uses the zero-product rule when the product isn't zero",
+    "description": "From (x − a)(x − b) = k with k ≠ 0, sets each factor equal to k. Only a product equal to zero lets you split the factors; otherwise expand and rearrange.",
+    "wrong_reasoning_example": "1. (x − 2)(x − 3) = 6\n2. x − 2 = 6 or x − 3 = 6\n3. x = 8 or x = 9\n4. Answer: x = 8, 9",
+    "telltale_signs": ["Sets factors equal to a non-zero right-hand side", "Roots fail when substituted back", "No expansion into standard form"],
+    "contrast_question_idea": "Solve (x − 1)(x − 4) = 4: the misconception gives x = 5 or 8, the correct answer is x = 0 or 5."
+  },
+
+  {
+    "id": "L5_NEG_NO_FLIP",
+    "concept_id": "L5",
+    "name": "Doesn't flip the inequality for a negative",
+    "description": "Multiplies or divides both sides of an inequality by a negative number without reversing the sign. Multiplying by a negative reverses the order.",
+    "wrong_reasoning_example": "1. −3x + 5 > 11\n2. −3x > 6\n3. Divide by −3: x > −2\n4. Answer: x > −2",
+    "telltale_signs": ["Divides by a negative coefficient and keeps the same inequality sign", "A test value from the claimed range fails the original inequality", "No note about flipping the sign"],
+    "contrast_question_idea": "Solve 4 − 2x ≥ 10: the misconception gives x ≥ −3, the correct answer is x ≤ −3."
+  },
+  {
+    "id": "L5_MODULUS_ONE_CASE",
+    "concept_id": "L5",
+    "name": "Drops the negative case of a modulus",
+    "description": "Removes the modulus bars as if the expression inside were positive. |x − 3| < 5 means −5 < x − 3 < 5, giving −2 < x < 8.",
+    "wrong_reasoning_example": "1. |x − 3| < 5\n2. x − 3 < 5\n3. x < 8\n4. Answer: x < 8",
+    "telltale_signs": ["Modulus bars simply erased", "Only one case written for |expression|", "Range unbounded on one side when it should be bounded"],
+    "contrast_question_idea": "How many integers satisfy |x + 2| ≤ 3? The misconception gives infinitely many (x ≤ 1), the correct answer is 7."
+  },
+  {
+    "id": "L5_MULTIPLY_UNKNOWN_SIGN",
+    "concept_id": "L5",
+    "name": "Multiplies by an expression of unknown sign",
+    "description": "Cross-multiplies an inequality by a variable expression like x without knowing its sign. If x can be negative the inequality may flip, so cases or sign analysis are needed.",
+    "wrong_reasoning_example": "1. 1/x < 2\n2. Multiply both sides by x: 1 < 2x\n3. x > 1/2\n4. Answer: x > 1/2",
+    "telltale_signs": ["Multiplies an inequality by x or (x − a) directly", "Negative values of x missing from the answer", "No case split on the sign of the denominator"],
+    "contrast_question_idea": "Solve 3/x > 1: the misconception gives x < 3, the correct answer is 0 < x < 3."
+  },
+
+  {
+    "id": "L6_N_INSTEAD_OF_N_MINUS_1",
+    "concept_id": "L6",
+    "name": "Uses n instead of (n − 1) in the nth term",
+    "description": "Writes the nth term of an AP as a + nd (or of a GP as ar^n). The first term already counts as one term, so it's a + (n − 1)d and ar^(n − 1).",
+    "wrong_reasoning_example": "1. AP: 3, 7, 11, ...; find the 10th term\n2. a = 3, d = 4\n3. T10 = a + 10d = 3 + 40 = 43\n4. Answer: 43",
+    "telltale_signs": ["Writes a + nd or ar^n", "Answer is exactly one common difference (or one factor of r) too far", "Formula doesn't return a when n = 1"],
+    "contrast_question_idea": "The 20th term of 1, 2, 3, ...: the misconception gives 21, the correct answer is 20."
+  },
+  {
+    "id": "L6_COUNT_TERMS_NO_PLUS_ONE",
+    "concept_id": "L6",
+    "name": "Forgets the +1 when counting terms",
+    "description": "Counts the terms from a to l with step d as (l − a)/d. That counts the gaps; the number of terms is (l − a)/d + 1.",
+    "wrong_reasoning_example": "1. How many multiples of 4 are there from 12 to 96?\n2. Number of terms = (96 − 12)/4\n3. = 21\n4. Answer: 21",
+    "telltale_signs": ["Divides the range by the step and stops", "Answer is one less than a manual count", "No '+ 1' after (l − a)/d"],
+    "contrast_question_idea": "How many integers are there from 10 to 20 inclusive? The misconception gives 10, the correct answer is 11."
+  },
+  {
+    "id": "L6_IGNORE_RATIO_SIGN",
+    "concept_id": "L6",
+    "name": "Ignores the sign of a GP's ratio",
+    "description": "Takes the absolute value of the common ratio for an alternating GP. In 8 − 4 + 2 − ... the ratio is −1/2, which changes the sum.",
+    "wrong_reasoning_example": "1. Sum to infinity of 8 − 4 + 2 − 1 + ...\n2. a = 8, r = 1/2\n3. S = 8/(1 − 1/2) = 16\n4. Answer: 16",
+    "telltale_signs": ["Positive r used for a series with alternating signs", "Infinite sum of an alternating series exceeds its first term", "Ratio found by dividing magnitudes only"],
+    "contrast_question_idea": "Sum to infinity of 9 − 3 + 1 − ...: the misconception gives 13.5, the correct answer is 6.75."
+  },
+
+  {
+    "id": "L7_COMPOSITION_ORDER",
+    "concept_id": "L7",
+    "name": "Composes functions in the wrong order",
+    "description": "Evaluates f(g(x)) by applying f first. In f(g(x)) the inner function g acts first and f is applied to its output.",
+    "wrong_reasoning_example": "1. f(x) = 2x + 1, g(x) = x^2; find f(g(3))\n2. f(3) = 7\n3. g(7) = 49\n4. Answer: 49",
+    "telltale_signs": ["Applies the outer function to x first", "Answer equals g(f(x)) rather than f(g(x))", "Reads the composition left to right"],
+    "contrast_question_idea": "f(x) = x + 5, g(x) = 3x; find g(f(1)): the misconception gives 8, the correct answer is 18."
+  },
+  {
+    "id": "L7_SHIFT_DIRECTION",
+    "concept_id": "L7",
+    "name": "Shifts graphs the wrong way",
+    "description": "Thinks f(x − h) shifts the graph left by h. Replacing x with x − h moves the graph RIGHT by h, and f(x + h) moves it left.",
+    "wrong_reasoning_example": "1. y = x^2 has its minimum at x = 0\n2. y = (x − 3)^2 is y = x^2 shifted left by 3\n3. Minimum at x = −3\n4. Answer: x = −3",
+    "telltale_signs": ["Links a minus sign inside f with a leftward shift", "Vertex x-coordinate has the opposite sign", "Doesn't solve x − 3 = 0 to locate the vertex"],
+    "contrast_question_idea": "Where does y = |x + 4| reach its minimum? The misconception gives x = 4, the correct answer is x = −4."
+  },
+
+  {
+    "id": "G1_CO_INTERIOR_EQUAL",
+    "concept_id": "G1",
+    "name": "Treats co-interior angles as equal",
+    "description": "Thinks co-interior (same-side interior) angles on parallel lines are equal. They add up to 180°; it's alternate and corresponding angles that are equal.",
+    "wrong_reasoning_example": "1. Lines l and m are parallel, cut by a transversal\n2. One interior angle on the right of the transversal is 70°\n3. Co-interior angle on the same side = 70°\n4. Answer: 70°",
+    "telltale_signs": ["Copies an angle to the same side of the transversal", "Two same-side interior angles don't sum to 180°", "Labels the pair as alternate angles"],
+    "contrast_question_idea": "On parallel lines the co-interior angles are (2x + 10)° and (3x)°: the misconception gives x = 10, the correct answer is x = 34."
+  },
+  {
+    "id": "G1_COMPLEMENT_SUPPLEMENT_MIX",
+    "concept_id": "G1",
+    "name": "Mixes up complement and supplement",
+    "description": "Uses 180° for a complement or 90° for a supplement. Complementary angles add to 90°, supplementary angles to 180°.",
+    "wrong_reasoning_example": "1. Find the supplement of the complement of 40°\n2. Complement of 40° = 180 − 40 = 140°\n3. Supplement of 140° = 180 − 140 = 40°\n4. Answer: 40°",
+    "telltale_signs": ["Subtracts from 180 for a complement (or from 90 for a supplement)", "A complement larger than 90°", "Ends up back at the original angle"],
+    "contrast_question_idea": "An angle equals its complement plus 20°: the misconception (using 180) gives 100°, the correct answer is 55°."
+  },
+
+  {
+    "id": "G2_AREA_RATIO_NOT_SQUARED",
+    "concept_id": "G2",
+    "name": "Uses the side ratio as the area ratio",
+    "description": "Assumes the areas of similar triangles are in the same ratio as their sides. Areas scale with the square of the side ratio.",
+    "wrong_reasoning_example": "1. Similar triangles with corresponding sides 4 cm and 6 cm\n2. Smaller area = 32 sq cm\n3. Area ratio = 4:6, so larger area = 32 × 6/4 = 48\n4. Answer: 48 sq cm",
+    "telltale_signs": ["Area ratio written equal to the side ratio", "No squaring of the scale factor", "Area answer scales linearly with length"],
+    "contrast_question_idea": "Two similar triangles have sides in the ratio 1:3 and the small one has area 10: the misconception gives 30, the correct answer is 90."
+  },
+  {
+    "id": "G2_HYPOTENUSE_AS_LEG",
+    "concept_id": "G2",
+    "name": "Adds squares when the hypotenuse is given",
+    "description": "Always adds the two known squares in Pythagoras. If one known side is the hypotenuse, the missing leg is √(c² − a²).",
+    "wrong_reasoning_example": "1. Right triangle with hypotenuse 13 and one leg 5; find the other leg\n2. Other side = √(13^2 + 5^2)\n3. = √194 ≈ 13.9\n4. Answer: about 13.9",
+    "telltale_signs": ["A leg comes out longer than the hypotenuse", "Adds squares when one side is labelled the hypotenuse", "Doesn't identify the side opposite the right angle"],
+    "contrast_question_idea": "A 25 m ladder has its foot 7 m from a wall; how high does it reach? The misconception gives about 26 m, the correct answer is 24 m."
+  },
+  {
+    "id": "G2_IGNORE_TRIANGLE_INEQUALITY",
+    "concept_id": "G2",
+    "name": "Assumes any three lengths form a triangle",
+    "description": "Counts every choice of three lengths as a triangle. The sum of any two sides must be greater than the third.",
+    "wrong_reasoning_example": "1. Sticks of length 2, 3, 5, 6; how many triangles can be formed?\n2. Choose any 3 of the 4 sticks\n3. C(4, 3) = 4\n4. Answer: 4",
+    "telltale_signs": ["Counts combinations with no side check", "Includes sets like (2, 3, 5) where two sides only equal the third", "Answer is a pure nCr"],
+    "contrast_question_idea": "How many triangles can be made from lengths 1, 2, 3, 4? The misconception gives 4, the correct answer is 1."
+  },
+
+  {
+    "id": "G3_INSCRIBED_VS_CENTRAL",
+    "concept_id": "G3",
+    "name": "Confuses inscribed and central angles",
+    "description": "Treats the angle an arc makes at the circumference as equal to the angle at the centre, or halves/doubles the wrong one. The central angle is twice the inscribed angle on the same arc.",
+    "wrong_reasoning_example": "1. Arc AB subtends 100° at the centre O\n2. Angle ACB at the circumference = angle AOB\n3. = 100°\n4. Answer: 100°",
+    "telltale_signs": ["Sets the angle at the centre equal to the angle at the circumference", "Halves when it should double, or vice versa", "Never marks which angle is at the centre"],
+    "contrast_question_idea": "An inscribed angle is 35°; find the central angle on the same arc. The misconception gives 35° (or 17.5°), the correct answer is 70°."
+  },
+  {
+    "id": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "concept_id": "G3",
+    "name": "Misses the right angle at the point of contact",
+    "description": "Finds the tangent length by subtracting the radius from the distance to the centre. The radius is perpendicular to the tangent, so tangent length = √(d² − r²).",
+    "wrong_reasoning_example": "1. Point P is 13 cm from the centre; radius 5 cm\n2. Tangent length = 13 − 5\n3. = 8 cm\n4. Answer: 8 cm",
+    "telltale_signs": ["Subtracts lengths instead of using Pythagoras", "No right angle marked where the tangent touches", "Answer doesn't satisfy r^2 + t^2 = d^2"],
+    "contrast_question_idea": "Tangent from a point 10 cm from the centre of a circle of radius 6: the misconception gives 4, the correct answer is 8."
+  },
+  {
+    "id": "G3_CYCLIC_OPPOSITE_EQUAL",
+    "concept_id": "G3",
+    "name": "Thinks opposite angles of a cyclic quadrilateral are equal",
+    "description": "Assumes opposite angles in a cyclic quadrilateral are equal, as in a parallelogram. They are supplementary (they sum to 180°).",
+    "wrong_reasoning_example": "1. ABCD is cyclic with angle A = 75°\n2. Opposite angle C = angle A\n3. = 75°\n4. Answer: 75°",
+    "telltale_signs": ["Opposite angles set equal", "A + C ≠ 180°", "Uses parallelogram properties on a cyclic quadrilateral"],
+    "contrast_question_idea": "In cyclic ABCD, angle B = 2x and angle D = x: the misconception gives x = 0 (no valid answer), the correct answer is 60°."
+  },
+
+  {
+    "id": "G4_DIAGONALS_NC2",
+    "concept_id": "G4",
+    "name": "Counts sides as diagonals",
+    "description": "Uses nC2 for the number of diagonals of an n-gon. nC2 counts every pair of vertices, including the n sides, so diagonals = n(n − 3)/2.",
+    "wrong_reasoning_example": "1. Number of diagonals of a decagon\n2. Join any 2 of the 10 vertices: C(10, 2)\n3. = 45\n4. Answer: 45",
+    "telltale_signs": ["Uses nC2 without subtracting n", "Answer too large by exactly n", "A triangle would have 3 'diagonals' by this method"],
+    "contrast_question_idea": "Number of diagonals of a hexagon: the misconception gives 15, the correct answer is 9."
+  },
+  {
+    "id": "G4_RHOMBUS_NO_HALF",
+    "concept_id": "G4",
+    "name": "Forgets the ½ in rhombus area",
+    "description": "Computes rhombus area as d1 × d2. The diagonals split the rhombus into four right triangles, giving area ½ × d1 × d2.",
+    "wrong_reasoning_example": "1. Rhombus with diagonals 10 cm and 24 cm\n2. Area = 10 × 24\n3. = 240 sq cm\n4. Answer: 240 sq cm",
+    "telltale_signs": ["Multiplies the diagonals with no ½", "Area exactly double the correct value", "Treats the diagonals like a rectangle's length and breadth"],
+    "contrast_question_idea": "A square has a diagonal of 10 cm: the misconception gives area 100, the correct answer is 50."
+  },
+
+  {
+    "id": "G5_CSA_VS_TSA",
+    "concept_id": "G5",
+    "name": "Confuses curved and total surface area",
+    "description": "Uses curved surface area when the total is asked for (or vice versa). The total surface area of a closed cylinder adds the two circular ends: 2πr(r + h).",
+    "wrong_reasoning_example": "1. Closed cylinder, r = 7 cm, h = 10 cm; find the total surface area\n2. TSA = 2πrh = 2 × 22/7 × 7 × 10\n3. = 440 sq cm\n4. Answer: 440 sq cm",
+    "telltale_signs": ["Uses 2πrh when 'total' or 'closed' is mentioned", "Never adds the area of the circular faces", "Paint or material answers ignore the top and bottom"],
+    "contrast_question_idea": "Area to paint on a closed cylindrical tin with r = h = 7 cm: the misconception gives 308 sq cm, the correct answer is 616 sq cm."
+  },
+  {
+    "id": "G5_VOLUME_SCALES_LINEARLY",
+    "concept_id": "G5",
+    "name": "Scales volume linearly with length",
+    "description": "Assumes that multiplying the radius by k multiplies the volume by k. Volume scales with k³ (and surface area with k²).",
+    "wrong_reasoning_example": "1. A sphere of radius 3 cm is melted into spheres of radius 1 cm\n2. The radius is 3 times smaller, so we get 3 small spheres\n3. Answer: 3",
+    "telltale_signs": ["Ratio of volumes written equal to the ratio of radii", "No cubes in the volume comparison", "Melting/recasting answers far too small"],
+    "contrast_question_idea": "If a cube's side doubles, by what factor does its volume grow? The misconception gives 2, the correct answer is 8."
+  },
+  {
+    "id": "G5_SLANT_AS_HEIGHT",
+    "concept_id": "G5",
+    "name": "Uses slant height for vertical height",
+    "description": "Uses the slant height l in the cone volume formula. Volume uses the vertical height h = √(l² − r²); slant height belongs in the curved surface area.",
+    "wrong_reasoning_example": "1. Cone with r = 3 and slant height 5; find the volume\n2. V = (1/3)π r^2 × 5\n3. = (1/3)π × 9 × 5 = 15π\n4. Answer: 15π",
+    "telltale_signs": ["Slant height appears in the volume formula", "No Pythagoras step to find h", "Volume answer too large"],
+    "contrast_question_idea": "Cone with radius 6 and slant height 10: the misconception gives 120π, the correct volume is 96π."
+  },
+
+  {
+    "id": "G6_SLOPE_INVERTED",
+    "concept_id": "G6",
+    "name": "Inverts the slope formula",
+    "description": "Computes slope as run over rise, (x2 − x1)/(y2 − y1). Slope is rise over run: (y2 − y1)/(x2 − x1).",
+    "wrong_reasoning_example": "1. Slope of the line through (1, 2) and (3, 8)\n2. m = (3 − 1)/(8 − 2)\n3. = 2/6 = 1/3\n4. Answer: 1/3",
+    "telltale_signs": ["x-differences in the numerator", "A steep line gets a slope smaller than 1", "Slope is the reciprocal of the right answer"],
+    "contrast_question_idea": "Slope of the line through (0, 0) and (1, 5): the misconception gives 1/5, the correct answer is 5."
+  },
+  {
+    "id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "concept_id": "G6",
+    "name": "Only negates the slope for a perpendicular",
+    "description": "Takes the perpendicular slope as −m. Perpendicular slopes multiply to −1, so the perpendicular slope is −1/m.",
+    "wrong_reasoning_example": "1. Line perpendicular to y = 2x + 1 through (0, 3)\n2. Perpendicular slope = −2\n3. Line: y = −2x + 3\n4. Answer: y = −2x + 3",
+    "telltale_signs": ["Perpendicular slope written as −m", "Product of the two slopes isn't −1", "Reciprocal step missing"],
+    "contrast_question_idea": "Slope of a line perpendicular to 3x − y = 4: the misconception gives −3, the correct answer is −1/3."
+  },
+
+  {
+    "id": "M1_FORGET_TRIPLE",
+    "concept_id": "M1",
+    "name": "Forgets to add back the triple overlap",
+    "description": "Uses n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − (pairwise overlaps) without adding back n(A ∩ B ∩ C). The triple region is added three times and then removed three times by the pair terms, so it must be added once.",
+    "wrong_reasoning_example": "1. n(A) = 40, n(B) = 35, n(C) = 30\n2. A∩B = 12, B∩C = 10, A∩C = 8; all three = 5\n3. Union = 105 − 30 = 75\n4. Answer: 75",
+    "telltale_signs": ["Triple-overlap number given but unused", "Formula stops after subtracting the pairs", "Venn total doesn't match a region-by-region count"],
+    "contrast_question_idea": "Three identical sets of 10 (every pair and all three overlap in 10): the misconception gives a union of 0, the correct answer is 10."
+  },
+  {
+    "id": "M1_EXACTLY_TWO_PAIRWISE",
+    "concept_id": "M1",
+    "name": "Treats pairwise overlaps as 'exactly two'",
+    "description": "Adds the pairwise intersections to count people in exactly two sets. Each pairwise figure includes those in all three, so exactly two = sum of pairs − 3 × triple.",
+    "wrong_reasoning_example": "1. A∩B = 12, B∩C = 10, A∩C = 8, A∩B∩C = 5\n2. Exactly two = 12 + 10 + 8\n3. = 30\n4. Answer: 30",
+    "telltale_signs": ["Adds the pairwise intersections and stops", "Triple region counted inside 'exactly two'", "Region totals in the Venn diagram exceed the group size"],
+    "contrast_question_idea": "Each pair overlaps in 6 people and 6 are in all three: the misconception gives 18 in exactly two sets, the correct answer is 0."
+  },
+
+  {
+    "id": "M2_PERM_FOR_COMB",
+    "concept_id": "M2",
+    "name": "Uses permutations when order doesn't matter",
+    "description": "Counts selections with nPr. For a committee, team or group where order is irrelevant, use nCr = nPr / r!.",
+    "wrong_reasoning_example": "1. Choose a committee of 3 from 7 people\n2. Ways = 7P3 = 7 × 6 × 5\n3. = 210\n4. Answer: 210",
+    "telltale_signs": ["nPr used for committees, teams or handshakes", "Answer is r! times too big", "Never divides by r!"],
+    "contrast_question_idea": "Number of handshakes among 10 people: the misconception gives 90, the correct answer is 45."
+  },
+  {
+    "id": "M2_OVERCOUNT_IDENTICAL",
+    "concept_id": "M2",
+    "name": "Overcounts arrangements of identical items",
+    "description": "Uses n! for arrangements when some items are identical. Swapping identical items gives the same arrangement, so divide by the factorial of each repeated count.",
+    "wrong_reasoning_example": "1. Arrangements of the letters of LEVEL\n2. 5 letters, so 5!\n3. = 120\n4. Answer: 120",
+    "telltale_signs": ["Plain n! with repeated letters or identical objects", "No division by p! q!", "Swaps of identical letters counted as new arrangements"],
+    "contrast_question_idea": "Arrangements of the letters AAAB: the misconception gives 24, the correct answer is 4."
+  },
+  {
+    "id": "M2_CIRCULAR_AS_LINEAR",
+    "concept_id": "M2",
+    "name": "Treats circular arrangements as linear",
+    "description": "Uses n! for seating n people around a round table. Rotations of the same seating are identical, so there are (n − 1)! arrangements.",
+    "wrong_reasoning_example": "1. 6 people sit around a round table\n2. Arrangements = 6!\n3. = 720\n4. Answer: 720",
+    "telltale_signs": ["n! for a round table", "Rotations counted as different seatings", "No person fixed as a reference point"],
+    "contrast_question_idea": "3 people around a round table: the misconception gives 6, the correct answer is 2."
+  },
+
+  {
+    "id": "M3_ADD_NON_EXCLUSIVE",
+    "concept_id": "M3",
+    "name": "Adds probabilities of overlapping events",
+    "description": "Uses P(A or B) = P(A) + P(B) when A and B can happen together. The overlap must be subtracted: P(A or B) = P(A) + P(B) − P(A and B).",
+    "wrong_reasoning_example": "1. One card from a deck: P(king or heart)?\n2. P = 4/52 + 13/52\n3. = 17/52\n4. Answer: 17/52",
+    "telltale_signs": ["Adds probabilities with no overlap term", "An outcome like the king of hearts counted twice", "Sum can exceed 1 in similar problems"],
+    "contrast_question_idea": "P(at least one head in two coin tosses) found as 1/2 + 1/2: the misconception gives 1, the correct answer is 3/4."
+  },
+  {
+    "id": "M3_DEPENDENT_AS_INDEPENDENT",
+    "concept_id": "M3",
+    "name": "Treats draws without replacement as independent",
+    "description": "Uses the same probability for each draw when items aren't replaced. After the first draw the counts change, so the second probability is conditional on the first.",
+    "wrong_reasoning_example": "1. Bag has 5 red and 3 blue balls; two drawn without replacement\n2. P(both red) = 5/8 × 5/8\n3. = 25/64\n4. Answer: 25/64",
+    "telltale_signs": ["Same fraction squared for draws without replacement", "Denominator doesn't drop between draws", "The phrase 'without replacement' is ignored"],
+    "contrast_question_idea": "Two balls drawn without replacement from a bag with 1 red and 1 blue: the misconception gives P(both red) = 1/4, the correct answer is 0."
+  },
+  {
+    "id": "M3_OUTCOMES_NOT_EQUALLY_LIKELY",
+    "concept_id": "M3",
+    "name": "Treats unequal outcomes as equally likely",
+    "description": "Lists the possible results and gives each the same probability. Outcomes like dice sums aren't equally likely; count the underlying equally likely cases (36 ordered pairs for two dice).",
+    "wrong_reasoning_example": "1. Two dice are thrown; P(sum = 7)?\n2. Possible sums: 2 to 12, that's 11 outcomes\n3. P = 1/11\n4. Answer: 1/11",
+    "telltale_signs": ["Sample space is a list of sums or totals instead of ordered pairs", "Probability written as 1/(number of possible totals)", "Sum 2 and sum 7 given the same probability"],
+    "contrast_question_idea": "Two coins tossed; P(one head and one tail): the misconception gives 1/3 (HH, HT, TT), the correct answer is 1/2."
+  }
+]

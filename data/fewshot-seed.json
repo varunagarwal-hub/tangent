@@ -1,0 +1,117 @@
+[
+  {
+    "misconception_id": "A1_ADD_SUCCESSIVE",
+    "question": "A shirt's price is increased by 30% and then decreased by 10%. What is the net percentage change in its price?",
+    "work_text": "1. Increase of 30%, then decrease of 10%\n2. Net change = 30 − 10 = +20%\n3. Answer: 20% increase"
+  },
+  {
+    "misconception_id": "A1_BASE_SWAP",
+    "question": "Ravi's salary is 50% more than Sunil's. By what percent is Sunil's salary less than Ravi's?",
+    "work_text": "1. Ravi = Sunil + 50% of Sunil\n2. So Sunil's salary is 50% less than Ravi's\n3. Answer: 50%"
+  },
+  {
+    "misconception_id": "A3_AVG_OF_AVGS",
+    "question": "Section A has 40 students with an average of 50 marks and section B has 10 students with an average of 80 marks. Find the average marks of all 50 students.",
+    "work_text": "1. Average of A = 50, average of B = 80\n2. Overall average = (50 + 80)/2 = 65\n3. Answer: 65"
+  },
+  {
+    "misconception_id": "A4_PROFIT_ON_SP",
+    "question": "A trader buys a watch for Rs 600 and sells it for Rs 750. Find his profit percentage.",
+    "work_text": "1. CP = 600, SP = 750\n2. Profit = 750 − 600 = 150\n3. Profit % = 150/750 × 100 = 20%\n4. Answer: 20%"
+  },
+  {
+    "misconception_id": "A4_ADD_DISCOUNTS",
+    "question": "A jacket marked at Rs 2000 is sold after successive discounts of 25% and 10%. Find the selling price.",
+    "work_text": "1. Discounts of 25% and 10%\n2. Total discount = 25 + 10 = 35%\n3. SP = 2000 × 0.65 = 1300\n4. Answer: Rs 1300"
+  },
+  {
+    "misconception_id": "A5_SI_FOR_CI",
+    "question": "Find the compound interest on Rs 5000 at 20% per annum for 2 years, compounded annually.",
+    "work_text": "1. P = 5000, r = 20%, t = 2 years\n2. Interest = 5000 × 20 × 2/100 = 2000\n3. Answer: Rs 2000"
+  },
+  {
+    "misconception_id": "A5_HALFYEARLY_RATE",
+    "question": "Find the amount on Rs 8000 at 10% per annum for 1 year, compounded half-yearly.",
+    "work_text": "1. P = 8000, r = 10%, t = 1 year\n2. Amount = 8000 × (1.10)^1\n3. = 8800\n4. Answer: Rs 8800"
+  },
+  {
+    "misconception_id": "A6_ALLIGATION_ON_QUANTITIES",
+    "question": "Mixture A has milk and water in the ratio 7:3 and mixture B has them in the ratio 2:3. In what ratio should A and B be mixed to get milk and water in the ratio 3:2?",
+    "work_text": "1. A: milk:water = 7:3, B: 2:3, target 3:2\n2. Alligate the milk parts: 7 and 2 around 3\n3. A:B = (3 − 2):(7 − 3) = 1:4\n4. Answer: 1:4"
+  },
+  {
+    "misconception_id": "A7_ADD_DAYS",
+    "question": "A can complete a job in 12 days and B can complete it in 24 days. How many days will they take working together?",
+    "work_text": "1. A takes 12 days, B takes 24 days\n2. Together = 12 + 24 = 36 days\n3. Answer: 36 days"
+  },
+  {
+    "misconception_id": "A8_MEAN_OF_SPEEDS",
+    "question": "A car goes from P to Q at 30 km/h and returns from Q to P at 60 km/h. Find its average speed for the round trip.",
+    "work_text": "1. Speeds 30 and 60 km/h over the same distance each way\n2. Average speed = (30 + 60)/2 = 45 km/h\n3. Answer: 45 km/h"
+  },
+  {
+    "misconception_id": "A8_SAME_DIR_SUM",
+    "question": "Two trains 120 m and 180 m long run in the same direction at 90 km/h and 54 km/h. How long does the faster train take to completely pass the slower one?",
+    "work_text": "1. Speeds: 90 km/h = 25 m/s, 54 km/h = 15 m/s\n2. Relative speed = 25 + 15 = 40 m/s\n3. Distance = 120 + 180 = 300 m\n4. Time = 300/40 = 7.5 s\n5. Answer: 7.5 s"
+  },
+  {
+    "misconception_id": "A8_IGNORE_TRAIN_LENGTH",
+    "question": "A 150 m long train running at 54 km/h crosses a 300 m long bridge. How long does it take to cross the bridge completely?",
+    "work_text": "1. Speed = 54 × 5/18 = 15 m/s\n2. Distance = 300 m (the bridge)\n3. Time = 300/15 = 20 s\n4. Answer: 20 s"
+  },
+  {
+    "misconception_id": "N3_NEGATIVE_REMAINDER",
+    "question": "Find the remainder when 7^51 is divided by 8.",
+    "work_text": "1. 7 ≡ −1 (mod 8)\n2. 7^51 ≡ (−1)^51 = −1\n3. Remainder = 1 (drop the minus sign)\n4. Answer: 1"
+  },
+  {
+    "misconception_id": "L2_LOG_OF_SUM",
+    "question": "Evaluate log_2(16 + 16).",
+    "work_text": "1. log_2(16 + 16)\n2. = log_2 16 + log_2 16\n3. = 4 + 4 = 8\n4. Answer: 8"
+  },
+  {
+    "misconception_id": "L4_DIVIDE_BY_VARIABLE",
+    "question": "How many real roots does the equation x^3 = 9x have?",
+    "work_text": "1. x^3 = 9x\n2. Divide both sides by x: x^2 = 9\n3. x = 3 or x = −3\n4. Answer: 2 roots"
+  },
+  {
+    "misconception_id": "L5_NEG_NO_FLIP",
+    "question": "Find the range of x for which 7 − 2x > 15.",
+    "work_text": "1. 7 − 2x > 15\n2. −2x > 8\n3. Divide by −2: x > −4\n4. Answer: x > −4"
+  },
+  {
+    "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1",
+    "question": "Find the 15th term of the AP 5, 8, 11, ...",
+    "work_text": "1. a = 5, d = 3\n2. T15 = a + 15d\n3. = 5 + 45 = 50\n4. Answer: 50"
+  },
+  {
+    "misconception_id": "G2_AREA_RATIO_NOT_SQUARED",
+    "question": "Two similar triangles have corresponding sides of 3 cm and 5 cm. If the smaller triangle has an area of 27 sq cm, find the area of the larger one.",
+    "work_text": "1. Side ratio = 3:5\n2. Area ratio = 3:5\n3. Larger area = 27 × 5/3 = 45\n4. Answer: 45 sq cm"
+  },
+  {
+    "misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "question": "Chord AB of a circle subtends an angle of 80° at the centre O. Find angle ACB, where C is a point on the major arc.",
+    "work_text": "1. Angle AOB = 80°\n2. Angle ACB stands on the same arc, so angle ACB = angle AOB\n3. Angle ACB = 80°\n4. Answer: 80°"
+  },
+  {
+    "misconception_id": "M2_PERM_FOR_COMB",
+    "question": "In how many ways can a team of 2 be chosen from 6 people?",
+    "work_text": "1. Choose 2 from 6\n2. Ways = 6P2 = 6 × 5\n3. = 30\n4. Answer: 30"
+  },
+  {
+    "misconception_id": "M2_OVERCOUNT_IDENTICAL",
+    "question": "How many distinct arrangements of the letters of the word BANANA are there?",
+    "work_text": "1. BANANA has 6 letters\n2. Arrangements = 6!\n3. = 720\n4. Answer: 720"
+  },
+  {
+    "misconception_id": "M3_ADD_NON_EXCLUSIVE",
+    "question": "A number is chosen at random from 1 to 20. What is the probability that it is a multiple of 2 or a multiple of 5?",
+    "work_text": "1. Multiples of 2: 10 numbers, multiples of 5: 4 numbers\n2. P = 10/20 + 4/20\n3. = 14/20 = 7/10\n4. Answer: 7/10"
+  },
+  {
+    "misconception_id": "M3_DEPENDENT_AS_INDEPENDENT",
+    "question": "A bag has 4 white and 6 black balls. Two balls are drawn one after another without replacement. Find the probability that both are white.",
+    "work_text": "1. P(first white) = 4/10\n2. P(second white) = 4/10\n3. P(both) = 4/10 × 4/10 = 16/100 = 4/25\n4. Answer: 4/25"
+  }
+]

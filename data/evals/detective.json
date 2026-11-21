@@ -1,0 +1,202 @@
+[
+  {
+    "id": "E01",
+    "concept_id": "A1",
+    "question": "The population of a town increases by 10% in the first year and by 20% in the second year. What is the total percentage increase over the two years?",
+    "correct_answer": "32%",
+    "student_answer": "30%",
+    "work_text": "1. Year 1: +10%, year 2: +20%\n2. Total increase = 10 + 20 = 30%\n3. Answer: 30%",
+    "expected_misconception_id": "A1_ADD_SUCCESSIVE",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E02",
+    "concept_id": "A1",
+    "question": "A share price falls by 40% and then rises by 40%. What is the net percentage change in the share price?",
+    "correct_answer": "16% decrease",
+    "student_answer": "No change (0%)",
+    "work_text": "1. Fall of 40%, then rise of 40%\n2. Let the price be 100\n3. Net change = −40 + 40 = 0\n4. Answer: no change",
+    "expected_misconception_id": "A1_ADD_SUCCESSIVE",
+    "expected_error_line": 3
+  },
+  {
+    "id": "E03",
+    "concept_id": "A1",
+    "question": "The length of a rectangle is increased by 20% and its breadth is decreased by 10%. Find the percentage change in its area.",
+    "correct_answer": "8% increase",
+    "student_answer": "10% increase",
+    "work_text": "1. Area = length × breadth\n2. Length +20%, breadth −10%\n3. Change in area = 20 − 10 = +10%\n4. Answer: 10% increase",
+    "expected_misconception_id": "A1_ADD_SUCCESSIVE",
+    "expected_error_line": 3
+  },
+  {
+    "id": "E04",
+    "concept_id": "A4",
+    "question": "A store offers successive discounts of 30% and 20% on a TV marked at Rs 50,000. What is the selling price?",
+    "correct_answer": "Rs 28,000",
+    "student_answer": "Rs 25,000",
+    "work_text": "1. MP = 50000\n2. Total discount = 30 + 20 = 50%\n3. SP = 50000 × 0.5 = 25000\n4. Answer: Rs 25,000",
+    "expected_misconception_id": "A4_ADD_DISCOUNTS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E05",
+    "concept_id": "A4",
+    "question": "Offer 1 is a single discount of 35%. Offer 2 is successive discounts of 20% and 15%. Find the single discount equivalent to Offer 2 and say which offer is better for the buyer.",
+    "correct_answer": "32%; Offer 1 is better",
+    "student_answer": "35%; both offers are equal",
+    "work_text": "1. Offer 1: 35%\n2. Offer 2: 20% then 15% = 20 + 15 = 35%\n3. Both offers give the same discount\n4. Answer: 35%, both equal",
+    "expected_misconception_id": "A4_ADD_DISCOUNTS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E06",
+    "concept_id": "A3",
+    "question": "A company has 30 men with an average salary of Rs 40,000 and 20 women with an average salary of Rs 50,000. Find the average salary of all employees.",
+    "correct_answer": "Rs 44,000",
+    "student_answer": "Rs 45,000",
+    "work_text": "1. Men's average = 40000, women's average = 50000\n2. Overall average = (40000 + 50000)/2\n3. = 45000\n4. Answer: Rs 45,000",
+    "expected_misconception_id": "A3_AVG_OF_AVGS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E07",
+    "concept_id": "A3",
+    "question": "A batsman averages 40 runs in his first 15 innings and 60 runs in his next 5 innings. Find his batting average over all 20 innings.",
+    "correct_answer": "45",
+    "student_answer": "50",
+    "work_text": "1. First 15 innings: average 40; next 5 innings: average 60\n2. Overall average = (40 + 60)/2 = 50\n3. Answer: 50",
+    "expected_misconception_id": "A3_AVG_OF_AVGS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E08",
+    "concept_id": "A8",
+    "question": "A cyclist rides uphill at 10 km/h and comes back down the same road at 15 km/h. Find the average speed for the whole trip.",
+    "correct_answer": "12 km/h",
+    "student_answer": "12.5 km/h",
+    "work_text": "1. Uphill at 10 km/h, downhill at 15 km/h\n2. Average speed = (10 + 15)/2\n3. = 12.5 km/h\n4. Answer: 12.5 km/h",
+    "expected_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E09",
+    "concept_id": "A8",
+    "question": "A man covers the first third of a journey at 20 km/h, the second third at 30 km/h and the last third at 60 km/h. Find his average speed for the journey.",
+    "correct_answer": "30 km/h",
+    "student_answer": "36.67 km/h",
+    "work_text": "1. Three equal parts at 20, 30 and 60 km/h\n2. Average speed = (20 + 30 + 60)/3\n3. = 110/3 = 36.67 km/h\n4. Answer: 36.67 km/h",
+    "expected_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E10",
+    "concept_id": "L2",
+    "question": "Evaluate log_5(2 + 2) + log_5 6.25.",
+    "correct_answer": "2",
+    "student_answer": "2",
+    "work_text": "1. log_5(2 + 2) = log_5 2 + log_5 2\n2. So the expression = log_5 2 + log_5 2 + log_5 6.25\n3. = log_5(2 × 2 × 6.25) = log_5 25\n4. = 2\n5. Answer: 2",
+    "expected_misconception_id": "L2_LOG_OF_SUM",
+    "expected_error_line": 1
+  },
+  {
+    "id": "E11",
+    "concept_id": "L4",
+    "question": "Find the sum of all real roots of the equation x^2 = 6x.",
+    "correct_answer": "6",
+    "student_answer": "6",
+    "work_text": "1. x^2 = 6x\n2. Divide both sides by x: x = 6\n3. The only root is 6, so the sum is 6\n4. Answer: 6",
+    "expected_misconception_id": "L4_DIVIDE_BY_VARIABLE",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E12",
+    "concept_id": "A1",
+    "question": "A's income is 20% less than B's. By what percent is B's income more than A's?",
+    "correct_answer": "25%",
+    "student_answer": "20%",
+    "work_text": "1. A = B − 20% of B\n2. So B is 20% more than A\n3. Answer: 20%",
+    "expected_misconception_id": "A1_BASE_SWAP",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E13",
+    "concept_id": "A4",
+    "question": "By selling a chair for Rs 1,440, a dealer gains Rs 240. Find his gain percent.",
+    "correct_answer": "20%",
+    "student_answer": "16.67%",
+    "work_text": "1. SP = 1440, gain = 240\n2. Gain % = 240/1440 × 100\n3. = 16.67%\n4. Answer: 16.67%",
+    "expected_misconception_id": "A4_PROFIT_ON_SP",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E14",
+    "concept_id": "A5",
+    "question": "What will Rs 10,000 amount to in 3 years at 10% per annum compound interest, compounded annually?",
+    "correct_answer": "Rs 13,310",
+    "student_answer": "Rs 13,000",
+    "work_text": "1. P = 10000, r = 10%, n = 3\n2. Interest each year = 10% of 10000 = 1000\n3. Total interest = 3 × 1000 = 3000\n4. Amount = 10000 + 3000 = 13000\n5. Answer: Rs 13,000",
+    "expected_misconception_id": "A5_SI_FOR_CI",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E15",
+    "concept_id": "A7",
+    "question": "A can paint a wall in 6 hours and B can paint it in 3 hours. How long will they take to paint it together?",
+    "correct_answer": "2 hours",
+    "student_answer": "9 hours",
+    "work_text": "1. A: 6 hours, B: 3 hours\n2. Together = 6 + 3 = 9 hours\n3. Answer: 9 hours",
+    "expected_misconception_id": "A7_ADD_DAYS",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E16",
+    "concept_id": "A8",
+    "question": "A 240 m long train passes completely through a 360 m long platform at 72 km/h. Find the time taken.",
+    "correct_answer": "30 s",
+    "student_answer": "18 s",
+    "work_text": "1. 72 km/h = 72 × 5/18 = 20 m/s\n2. Distance to cover = 360 m\n3. Time = 360/20 = 18 s\n4. Answer: 18 s",
+    "expected_misconception_id": "A8_IGNORE_TRAIN_LENGTH",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E17",
+    "concept_id": "L5",
+    "question": "How many integers x with 1 ≤ x ≤ 10 satisfy 20 − 3x > 2?",
+    "correct_answer": "5",
+    "student_answer": "4",
+    "work_text": "1. 20 − 3x > 2\n2. −3x > −18\n3. Divide by −3: x > 6\n4. So x = 7, 8, 9, 10\n5. Answer: 4",
+    "expected_misconception_id": "L5_NEG_NO_FLIP",
+    "expected_error_line": 3
+  },
+  {
+    "id": "E18",
+    "concept_id": "M2",
+    "question": "In how many distinct ways can 3 identical red flags and 2 identical blue flags be arranged in a row?",
+    "correct_answer": "10",
+    "student_answer": "120",
+    "work_text": "1. 5 flags in total\n2. Arrangements = 5!\n3. = 120\n4. Answer: 120",
+    "expected_misconception_id": "M2_OVERCOUNT_IDENTICAL",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E19",
+    "concept_id": "M3",
+    "question": "Two cards are drawn without replacement from a standard 52-card deck. Find the probability that both are aces.",
+    "correct_answer": "1/221",
+    "student_answer": "1/169",
+    "work_text": "1. P(first ace) = 4/52 = 1/13\n2. P(second ace) = 1/13 as well\n3. P(both aces) = 1/13 × 1/13 = 1/169\n4. Answer: 1/169",
+    "expected_misconception_id": "M3_DEPENDENT_AS_INDEPENDENT",
+    "expected_error_line": 2
+  },
+  {
+    "id": "E20",
+    "concept_id": "G2",
+    "question": "In triangle ABC, a line DE parallel to BC meets AB at D and AC at E, with AD:DB = 2:1. If the area of triangle ABC is 45 sq cm, find the area of triangle ADE.",
+    "correct_answer": "20 sq cm",
+    "student_answer": "30 sq cm",
+    "work_text": "1. DE is parallel to BC, so triangle ADE is similar to triangle ABC\n2. AD:AB = 2:3\n3. Area ADE : area ABC = 2:3\n4. Area ADE = 45 × 2/3 = 30\n5. Answer: 30 sq cm",
+    "expected_misconception_id": "G2_AREA_RATIO_NOT_SQUARED",
+    "expected_error_line": 3
+  }
+]
