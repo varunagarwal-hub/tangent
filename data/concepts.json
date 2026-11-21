@@ -1,0 +1,33 @@
+[
+  { "id": "A1", "name": "Percentages", "area": "Arithmetic", "prerequisites": [], "target_time_sec": 90, "weight": 3 },
+  { "id": "A2", "name": "Ratio & Proportion", "area": "Arithmetic", "prerequisites": [], "target_time_sec": 90, "weight": 3 },
+  { "id": "A3", "name": "Averages", "area": "Arithmetic", "prerequisites": [], "target_time_sec": 90, "weight": 3 },
+  { "id": "A4", "name": "Profit, Loss & Discount", "area": "Arithmetic", "prerequisites": ["A1"], "target_time_sec": 120, "weight": 3 },
+  { "id": "A5", "name": "Simple & Compound Interest", "area": "Arithmetic", "prerequisites": ["A1"], "target_time_sec": 120, "weight": 2 },
+  { "id": "A6", "name": "Mixtures & Alligation", "area": "Arithmetic", "prerequisites": ["A2", "A3"], "target_time_sec": 120, "weight": 3 },
+  { "id": "A7", "name": "Time & Work", "area": "Arithmetic", "prerequisites": ["A2"], "target_time_sec": 120, "weight": 3 },
+  { "id": "A8", "name": "Time, Speed & Distance", "area": "Arithmetic", "prerequisites": ["A2"], "target_time_sec": 150, "weight": 3 },
+
+  { "id": "N1", "name": "Number Properties & Divisibility", "area": "Number System", "prerequisites": [], "target_time_sec": 120, "weight": 2 },
+  { "id": "N2", "name": "HCF & LCM", "area": "Number System", "prerequisites": ["N1"], "target_time_sec": 105, "weight": 2 },
+  { "id": "N3", "name": "Remainders", "area": "Number System", "prerequisites": ["N1"], "target_time_sec": 135, "weight": 2 },
+
+  { "id": "L1", "name": "Indices & Surds", "area": "Algebra", "prerequisites": [], "target_time_sec": 90, "weight": 2 },
+  { "id": "L2", "name": "Logarithms", "area": "Algebra", "prerequisites": ["L1"], "target_time_sec": 120, "weight": 2 },
+  { "id": "L3", "name": "Linear Equations", "area": "Algebra", "prerequisites": [], "target_time_sec": 90, "weight": 3 },
+  { "id": "L4", "name": "Quadratic Equations", "area": "Algebra", "prerequisites": ["L3"], "target_time_sec": 120, "weight": 3 },
+  { "id": "L5", "name": "Inequalities & Modulus", "area": "Algebra", "prerequisites": ["L3"], "target_time_sec": 135, "weight": 3 },
+  { "id": "L6", "name": "Progressions", "area": "Algebra", "prerequisites": ["L3"], "target_time_sec": 120, "weight": 3 },
+  { "id": "L7", "name": "Functions & Graphs", "area": "Algebra", "prerequisites": ["L3"], "target_time_sec": 150, "weight": 2 },
+
+  { "id": "G1", "name": "Lines & Angles", "area": "Geometry", "prerequisites": [], "target_time_sec": 90, "weight": 1 },
+  { "id": "G2", "name": "Triangles", "area": "Geometry", "prerequisites": ["G1"], "target_time_sec": 150, "weight": 3 },
+  { "id": "G3", "name": "Circles", "area": "Geometry", "prerequisites": ["G2"], "target_time_sec": 150, "weight": 2 },
+  { "id": "G4", "name": "Polygons & Quadrilaterals", "area": "Geometry", "prerequisites": ["G2"], "target_time_sec": 135, "weight": 2 },
+  { "id": "G5", "name": "Mensuration", "area": "Geometry", "prerequisites": ["G2", "G4"], "target_time_sec": 150, "weight": 2 },
+  { "id": "G6", "name": "Coordinate Geometry", "area": "Geometry", "prerequisites": ["L3", "G2"], "target_time_sec": 135, "weight": 2 },
+
+  { "id": "M1", "name": "Sets & Venn Diagrams", "area": "Modern Math", "prerequisites": [], "target_time_sec": 120, "weight": 1 },
+  { "id": "M2", "name": "Permutations & Combinations", "area": "Modern Math", "prerequisites": [], "target_time_sec": 150, "weight": 2 },
+  { "id": "M3", "name": "Probability", "area": "Modern Math", "prerequisites": ["M2"], "target_time_sec": 150, "weight": 2 }
+]
