@@ -157,3 +157,106 @@ export interface RevealPayload {
   misconceptions?: string[];
   results?: { conceptId: string; correct: boolean }[];
 }
+
+/* ── Phase 4: teacher dashboard ───────────────────────────────────────── */
+
+export interface TeacherStudentRow {
+  id: string;
+  name: string;
+  archetype: string | null;
+  avgMastery: number | null;
+  attempts: number;
+  activeMisconceptions: number;
+  atRisk: boolean;
+  /** why at risk, e.g. "avg mastery 31%", "4 active misconceptions", "inactive 6 days" */
+  riskReasons: string[];
+  lastActive: string | null;
+}
+
+export interface LeaderboardRow {
+  misconceptionId: string;
+  name: string;
+  conceptId: string;
+  conceptName: string;
+  /** students with this misconception active (detected/fixing) */
+  students: number;
+  pctClass: number; // 0–1
+  /** attempts attributed to it in the last 7 days vs the 7 days before */
+  trend: { thisWeek: number; lastWeek: number };
+}
+
+export interface OverrideItem {
+  attemptId: string;
+  studentId: string;
+  studentName: string;
+  conceptId: string;
+  conceptName: string;
+  questionStem: string;
+  studentAnswer: string | null;
+  workText: string | null;
+  errorLine: string | null;
+  misconceptionId: string | null;
+  misconceptionName: string | null;
+  confidence: number | null;
+  createdAt: string;
+  /** misconceptions of this concept, for the relabel picker */
+  candidates: { id: string; name: string }[];
+}
+
+export interface AssignmentRow {
+  id: string;
+  conceptId: string;
+  conceptName: string;
+  createdAt: string;
+  questionCount: number;
+  baseline: number | null; // class avg mastery when assigned
+  current: number | null; // class avg mastery now
+  lift: number | null; // current − baseline
+}
+
+export interface TeacherClassData {
+  class: { id: string; name: string };
+  kpis: { students: number; avgMastery: number | null; activeMisconceptions: number; atRisk: number };
+  concepts: { id: string; name: string; area: string; weight: number }[];
+  students: TeacherStudentRow[];
+  /** heat[studentId][conceptId] = p_mastery (null = untested) */
+  heat: Record<string, Record<string, number | null>>;
+  /** class average per concept (null = nobody tested) */
+  conceptAvg: Record<string, number | null>;
+  leaderboard: LeaderboardRow[];
+  overrideQueue: OverrideItem[];
+  assignments: AssignmentRow[];
+  teacherCorrections: number;
+}
+
+export interface StudentDrilldown {
+  id: string;
+  name: string;
+  archetype: string | null;
+  targetPercentile: number | null;
+  streakDays: number;
+  calibrationGap: number | null; // + = overconfident
+  areas: { area: string; mastery: number | null }[];
+  weakest: { conceptId: string; name: string; p: number }[];
+  misconceptions: { id: string; name: string; status: "detected" | "fixing" | "resolved"; evidenceCount: number }[];
+  recentAttempts: { at: string; conceptName: string; correct: boolean; timeSec: number | null; misconceptionName: string | null }[];
+}
+
+export interface LessonPlan {
+  headline: string;
+  gaps: {
+    conceptId: string;
+    conceptName: string;
+    misconceptionId: string | null;
+    misconceptionName: string | null;
+    studentsAffected: number;
+    title: string;
+    whyItHappens: string;
+    workedExample: { problem: string; wrongWay: string; rightWay: string };
+    teachingMove: string;
+  }[];
+  groups: { label: string; focus: string; students: string[] }[];
+  questionSet: { id: string; conceptId: string; stem: string }[];
+  generatedAt: string;
+  trace: TraceStep[];
+}

@@ -267,6 +267,13 @@ async function main() {
   const assignmentAt = new Date(now.getTime() - 5 * DAY);
   const a3Questions = (qByConcept.get("A3") ?? []).map((q) => q.id).slice(0, 10);
 
+  /** A student's mastery on a concept as of a moment, from the recorded history. */
+  function masteryAt(studentId: string, conceptId: string, at: Date) {
+    const row = masteryRows.find((m) => m.studentId === studentId && m.conceptId === conceptId);
+    const before = (row?.history ?? []).filter((h) => new Date(h.t) <= at);
+    return before.length ? before[before.length - 1].p : 0.3;
+  }
+
   // ── 30 synthetic students ──
   const studentRows: (typeof s.students.$inferInsert)[] = [];
   const a3Baseline: number[] = [];
@@ -291,14 +298,14 @@ async function main() {
       skill: (cid) => base + (arch.area[areaOf(cid)] ?? 0) + conceptJitter.get(cid)!,
       holds, speed: arch.speed * between(0.9, 1.1), careless: arch.careless, overconfident: arch.overconfident,
       sessions, perSession, conceptWeight: arithmeticHeavy, resolveChance: 0.3,
-      skillBoost: (cid, t) => (cid === "A3" && t > assignmentAt ? 140 : 0),
+      skillBoost: (cid, t) => (cid === "A3" && t > assignmentAt ? 260 : 0),
     });
     studentRows.push({
       id, name: NAMES[i], role: "student", classId: CLASS_ID, targetPercentile: pick([90, 95, 97, 99]), examDate,
       dailyMinutes: pick([45, 60, 90, 120]), persona: { archetype: arch.label, holds: [...holds] }, isSynthetic: true,
       streakDays: Math.floor(rand() * 9),
     });
-    a3Baseline.push(sim.mastery["A3"] ?? 0.3);
+    a3Baseline.push(masteryAt(id, "A3", assignmentAt));
   }
 
   // ── Riya: the scripted demo student ──
