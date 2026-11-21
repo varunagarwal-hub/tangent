@@ -2,6 +2,8 @@ import { GoogleGenAI, type Part } from "@google/genai";
 import { z } from "zod";
 import { createHash } from "node:crypto";
 import type { AgentName, TraceStatus } from "@/lib/agents/trace";
+import { getDb, hasDatabase } from "@/lib/db/client";
+import { agentRuns } from "@/lib/db/schema";
 
 /**
  * Gemini wrapper: JSON-schema structured output → Zod validation → one retry on
@@ -157,19 +159,17 @@ export async function logRun(r: {
   status: TraceStatus;
 }) {
   try {
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) return;
-    const { createClient } = await import("@supabase/supabase-js");
-    const sb = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY, {
-      auth: { persistSession: false },
-    });
-    await sb.from("agent_runs").insert({
-      agent: r.agent,
-      student_id: r.studentId ?? null,
-      input_summary: r.inputSummary?.slice(0, 500) ?? null,
-      output: r.output,
-      latency_ms: r.ms,
-      status: r.status,
-    });
+    if (!hasDatabase()) return;
+    await getDb()
+      .insert(agentRuns)
+      .values({
+        agent: r.agent,
+        studentId: r.studentId ?? null,
+        inputSummary: r.inputSummary?.slice(0, 500) ?? null,
+        output: r.output,
+        latencyMs: Math.round(r.ms),
+        status: r.status,
+      });
   } catch {
     /* logging must never break a request */
   }

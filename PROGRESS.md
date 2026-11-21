@@ -1,20 +1,21 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete. Next: Phase 1. Keep this file true at every commit.
+Last updated: Phase 0 complete + data layer switched to Neon/Drizzle/Vercel Blob. Waiting on DATABASE_URL to run `npm run db:push`, then Phase 1. Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
 - [x] P0.1 Scaffold Next.js 16 (App Router, TS, src/, Tailwind v4) + git init
 - [x] P0.2 shadcn/ui init + base components; Magic UI (number-ticker, animated-beam, bento-grid, border-beam, blur-fade)
-- [x] P0.3 Install stack deps (gsap, motion, lenis, rough-notation, roughjs, xyflow, recharts, katex, perfect-freehand, supabase, genai, zod, ts-fsrs, vitest, tsx)
+- [x] P0.3 Install stack deps (gsap, motion, lenis, rough-notation, roughjs, xyflow, recharts, katex, perfect-freehand, @neondatabase/serverless, drizzle-orm, drizzle-kit, @vercel/blob, genai, zod, ts-fsrs, vitest, tsx)
 - [x] P0.4 CLAUDE.md, PROGRESS.md, .env.example
 - [x] P0.5 Fonts + design tokens (paper grid, ink, red pen, highlighter, mastery scale, chalkboard dark mode) + Logo SVG (`src/components/brand/logo.tsx`) + favicon (`src/app/icon.svg`) + theme toggle. Checked visually in both themes.
-- [x] P0.6 `supabase/schema.sql` (also creates the `rough-work` bucket)
-- [x] P0.7 Gemini wrapper `src/lib/ai/gemini.ts`: `generateStructured()` (Zod → JSON schema → `responseJsonSchema`, Zod validation, 1 retry with error feedback, 25s timeout, 10-min cache, `agent_runs` logging). Supabase client `src/lib/supabase/server.ts`. Trace type `src/lib/agents/trace.ts`.
+- [x] P0.6 Drizzle schema `src/lib/db/schema.ts` (13 tables, same columns/indexes as the old SQL). `src/lib/db/index.ts` (server-only lazy `db`), `src/lib/db/client.ts` (`getDb()` for scripts), `drizzle.config.ts`, scripts `db:push` / `db:generate` / `db:studio`.
+- [x] P0.7 Gemini wrapper `src/lib/ai/gemini.ts`: `generateStructured()` (Zod → JSON schema → `responseJsonSchema`, Zod validation, 1 retry with error feedback, 25s timeout, 10-min cache, `agent_runs` logging via Drizzle; logging is skipped if no DATABASE_URL). Trace type `src/lib/agents/trace.ts`.
 - [x] P0.8 `npm run build` passes; pushed to GitHub (private repo)
+- [x] P0.9 Image storage: `src/lib/storage.ts` (`uploadRoughWork()` → Vercel Blob URL, or null when BLOB_READ_WRITE_TOKEN is missing/fails), `src/lib/compress-image.ts` (client-side, ≤1600px JPEG, <4MB).
 
 ## In progress
-- (nothing)
+- [ ] Run `npm run db:push` once DATABASE_URL is in `.env.local`; confirm the 13 tables exist.
 
 ## Next
 ### Phase 1 — Content & learner model
@@ -61,10 +62,14 @@ Last updated: Phase 0 complete. Next: Phase 1. Keep this file true at every comm
 - Gemini model IDs (from ai.google.dev models page, Nov 2026): FAST=`gemini-3.8-flash`, SMART=`gemini-3.1-pro-preview` (latest Pro is still preview). Override via env.
 - `@types/node` bumped to ^24 to satisfy vitest 5 peer dep.
 - Magic UI components live in `src/components/ui/` (shadcn default path).
+- **Switched from Supabase to Neon + Drizzle + Vercel Blob** (human's call, before Phase 1). Neon via neon-http driver (no transactions over HTTP; use `db.batch()` if atomic multi-writes are needed). No RLS: the DB is only touched from server code. Images: Vercel Blob; if no token, the image goes straight to Gemini and only the transcription is stored (`work_image_url` = null).
+- drizzle-kit pulls an old nested esbuild whose binary fails to install here (Windows path length in the deep workspace folder). Fixed with `overrides["@esbuild-kit/core-utils"].esbuild = 0.28.2` in package.json, which reuses the hoisted esbuild.
+- `db` in `@/lib/db` is a lazy Proxy so `next build` works without DATABASE_URL.
 
 ## Human tasks
-1. [ ] Create Supabase project; run `supabase/schema.sql` in SQL editor; create public storage bucket `rough-work`; put `NEXT_PUBLIC_SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` in `.env.local` and Vercel.
-2. [ ] Add `GEMINI_API_KEY` (+ model IDs) to `.env.local` and Vercel.
-3. [ ] Hand-write 3–4 wrong solutions (successive discounts added; avg speed = mean of speeds; adding days in time & work; area ratio not squared), photograph, save as `public/samples/sample-1.jpg` …
-4. [ ] Connect GitHub repo to Vercel.
-5. [ ] Record 2–3 min demo video; LinkedIn posts at milestones.
+1. [ ] Create a Neon project (or add Neon from Vercel's Storage tab); paste the pooled `DATABASE_URL` into `.env.local` (and Vercel env vars). Then Claude runs `npm run db:push`.
+2. [ ] Create a Vercel Blob store; paste `BLOB_READ_WRITE_TOKEN` into `.env.local` and Vercel.
+3. [ ] Add `GEMINI_API_KEY` (+ model IDs) to `.env.local` and Vercel.
+4. [ ] Hand-write 3–4 wrong solutions (successive discounts added; avg speed = mean of speeds; adding days in time & work; area ratio not squared), photograph, save as `public/samples/sample-1.jpg` …
+5. [ ] Connect GitHub repo to Vercel.
+6. [ ] Record 2–3 min demo video; LinkedIn posts at milestones.

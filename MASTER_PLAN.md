@@ -48,14 +48,15 @@ You are building **Tangent**, an adaptive CAT Quant exam-prep tutor, for the Pro
 - **rough-notation** for the hand-drawn red-pen circles, underlines and highlights; **roughjs** for hand-drawn chart accents where useful
 - **@xyflow/react** for the concept graph; **Recharts** for charts; **KaTeX** (`react-katex` or `katex`) for ALL math rendering
 - **perfect-freehand** for the scratchpad canvas (exported as PNG)
-- **Supabase** (free tier, Postgres). The server uses the service-role key only; no auth. Demo personas are selected by a cookie.
+- **Neon Postgres** via `@neondatabase/serverless` (neon-http driver) + **Drizzle ORM** (`drizzle-orm`, `drizzle-kit`). The database is accessed only from server code (no RLS, no auth). Demo personas are selected by a cookie.
+- **Vercel Blob** (`@vercel/blob`) for rough-work image uploads
 - **Gemini API** via `@google/genai`. Use JSON-schema structured output (`responseMimeType: "application/json"` + `responseSchema`), validate everything with **Zod**, retry once on parse failure. Check the Gemini docs for current model IDs and put them in env:
   - `GEMINI_MODEL_FAST`: latest Flash model (detective on typed text, coach, explanations)
   - `GEMINI_MODEL_SMART`: latest Pro model (verifier, vision/handwriting, lesson plans)
 - `ts-fsrs` for spaced repetition
 - All AI calls run in server route handlers or server actions. Set `export const maxDuration = 60` on AI routes. Never expose keys to the client.
 
-**Env vars (`.env.example`):** `GEMINI_API_KEY`, `GEMINI_MODEL_FAST`, `GEMINI_MODEL_SMART`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
+**Env vars (`.env.example`):** `GEMINI_API_KEY`, `GEMINI_MODEL_FAST`, `GEMINI_MODEL_SMART`, `DATABASE_URL` (Neon pooled connection string), `BLOB_READ_WRITE_TOKEN`.
 
 ---
 
@@ -119,7 +120,9 @@ Seed examples (write the rest in the same quality):
 
 ---
 
-## 6. Data model (Supabase SQL → `supabase/schema.sql`; the human runs it in the SQL editor)
+## 6. Data model (Drizzle schema → `src/lib/db/schema.ts`; create tables with `npm run db:push`)
+
+Typed client: `import { db } from "@/lib/db"` (server-only). Scripts use `getDb()` from `src/lib/db/client.ts`. Column names below are the SQL names; Drizzle fields are camelCase.
 
 - `concepts` (id text pk, name, area, prerequisites text[], target_time_sec int, weight int)
 - `misconceptions` (id text pk, concept_id, name, description, wrong_reasoning_example, telltale_signs text[], contrast_question_idea)
@@ -135,7 +138,7 @@ Seed examples (write the rest in the same quality):
 - `assignments` (id, class_id, concept_id, question_ids uuid[], created_at, baseline_mastery float)
 - `agent_runs` (id, agent, student_id, input_summary, output jsonb, latency_ms, status, created_at)
 
-Use Supabase Storage (bucket `rough-work`, public read) for uploaded images, max 4MB, compressed client-side.
+Uploaded images go to **Vercel Blob** via `uploadRoughWork(file)` in `src/lib/storage.ts` (public URL under `rough-work/`), max 4MB, compressed client-side first (`src/lib/compress-image.ts`). If `BLOB_READ_WRITE_TOKEN` is missing, don't crash: send the image straight to Gemini, save only the transcription, and set `work_image_url` to null.
 
 ---
 
@@ -218,7 +221,7 @@ Each agent is a typed function with a Zod input/output schema and a short, sharp
 ## 11. Seed data & demo (scripts in `scripts/`, run with `tsx`)
 
 - `seed-content.ts`: writes `concepts.json` and `misconceptions.json`, and generates a **bank of about 150 questions** (heavier on arithmetic), each passed through the verifier; only verified ones are saved to `data/questions.json`. Commit the JSON so the demo never depends on live generation.
-- `seed-db.ts`: loads the JSON into Supabase; creates class "CAT 2027 Batch A", teacher Prof. Mehta, and **30 synthetic students** with personas (e.g. strong in algebra/weak in arithmetic, careless/fast, slow/accurate, overconfident) simulated through the real learner model over 40–80 attempts each, with misconception events drawn from their persona. This gives realistic heatmap patterns: make "averaging averages" and "successive percentages" class-wide gaps.
+- `seed-db.ts`: loads the JSON into Neon (via Drizzle); creates class "CAT 2027 Batch A", teacher Prof. Mehta, and **30 synthetic students** with personas (e.g. strong in algebra/weak in arithmetic, careless/fast, slow/accurate, overconfident) simulated through the real learner model over 40–80 attempts each, with misconception events drawn from their persona. This gives realistic heatmap patterns: make "averaging averages" and "successive percentages" class-wide gaps.
 - **Riya (demo student):** pre-loaded history showing weakness in A1→A4 with the active misconception "adds successive percentage changes", a 6-day streak and a few due reviews, so every screen looks alive instantly.
 - `eval-detective.ts`: runs the detective on `data/evals/detective.json` (20 labeled typed wrong solutions covering 10+ misconceptions) and writes accuracy plus a confusion summary to `data/evals/results.json`, shown on `/under-the-hood`.
 - **Scripted demo path** (also in the README): Riya → practice → sample rough work for a successive-discount question → red-pen circle → contrast question → correct → mastery ticks up on the map → switch to Prof. Mehta → heatmap → lesson plan → relabel a diagnosis → "Detective learned" badge.
@@ -227,7 +230,7 @@ Each agent is a typed function with a Zod input/output schema and a short, sharp
 
 ## 12. Build phases (in order; deploy at the end of Phase 3; cut lines marked)
 
-**Phase 0 — Setup (≈30 min):** scaffold Next.js, Tailwind, shadcn, fonts, design tokens (paper grid, colors, dark chalkboard), CLAUDE.md, PROGRESS.md, .env.example, Supabase schema file, Gemini client wrapper with structured output + Zod + retry + `agent_runs` logging. Push to GitHub.
+**Phase 0 — Setup (≈30 min):** scaffold Next.js, Tailwind, shadcn, fonts, design tokens (paper grid, colors, dark chalkboard), CLAUDE.md, PROGRESS.md, .env.example, Drizzle schema (Neon) + Vercel Blob storage helper, Gemini client wrapper with structured output + Zod + retry + `agent_runs` logging. Push to GitHub.
 
 **Phase 1 — Content & learner model (≈1.5 h):** concepts and misconceptions JSON, learner model (BKT/Elo/calibration/FSRS mapping) with tests, seed-content script (start with 60 questions to save time; expand later), seed-db with Riya, Prof. Mehta and 30 synthetic students.
 
@@ -262,11 +265,12 @@ Each agent is a typed function with a Zod input/output schema and a short, sharp
 
 ## 14. Human tasks (list these in PROGRESS.md and remind the human)
 
-1. Create a Supabase project; run `supabase/schema.sql`; create the `rough-work` storage bucket (public); paste the keys into `.env.local` and into Vercel env vars.
-2. Add the Gemini API key and model IDs to `.env.local` and Vercel.
-3. **Write 3–4 wrong solutions by hand on paper** (one each for: successive discounts added, average speed as the mean of speeds, adding days in time & work, area ratio not squared), photograph them in good light, and save them to `public/samples/` as `sample-1.jpg`, etc.
-4. Connect the GitHub repo to Vercel.
-5. Record a 2–3 minute demo video following the scripted demo path; post LinkedIn updates at each milestone.
+1. Create a Neon project (or add Neon from Vercel's Storage tab) and paste the pooled `DATABASE_URL` into `.env.local` and Vercel env vars. Then `npm run db:push` creates the tables.
+2. Create a Vercel Blob store and paste `BLOB_READ_WRITE_TOKEN` into `.env.local` and Vercel (optional locally: without it, images go straight to Gemini and aren't stored).
+3. Add `GEMINI_API_KEY` (and model IDs) to `.env.local` and Vercel.
+4. **Write 3–4 wrong solutions by hand on paper** (one each for: successive discounts added, average speed as the mean of speeds, adding days in time & work, area ratio not squared), photograph them in good light, and save them to `public/samples/` as `sample-1.jpg`, etc.
+5. Connect the GitHub repo to Vercel.
+6. Record a 2–3 minute demo video following the scripted demo path; post LinkedIn updates at each milestone.
 
 ---
 
