@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 5 (P1 polish) done: landing, /strategy, /under-the-hood wired and checked at 375px. Next: Phase 6 extras (Mistake Fingerprint card, bank → 150), then Phase 7 submission (README, reseed, final deploy) by 10:30 PM.
+Last updated: Phase 6 done (Fingerprint card, bank → 128, Sprint); README written; Neon reseeded. Next: Phase 7 final deploy + live/mobile route check by 10:30 PM. Human: demo video, optional handwritten samples.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -75,14 +75,18 @@ Last updated: Phase 5 (P1 polish) done: landing, /strategy, /under-the-hood wire
 ──── CUT LINE B ────
 
 ### Phase 6 — P2
-- [ ] Mistake Fingerprint card, Sprint mode, bank → 150, Hinglish toggle
+- [x] Mistake Fingerprint card (`src/components/tangent/fingerprint-card.tsx`): canvas-drawn 1080×1350 notebook page on /mistakes, downloadable PNG, fixed paper palette in either theme
+- [x] Sprint mode (on /strategy)
+- [x] Question bank 64 → 128 verified (61 + 3 new; 9 specs given up after repeated verifier rejection). 68 rejections logged (≈34% rejection rate). Neon reseeded with the full bank.
+- [ ] Hinglish toggle (skipped: low value for the time left)
 
 ### Phase 7 — Submission (start by 10:30 PM)
-- [ ] README, final deploy, live + mobile route check
+- [x] README written (problem, solution, 7 requirements map, architecture, agents, algorithms, loops, eval, demo path, stack, setup)
+- [ ] Final deploy + live + mobile route check
 
 ## Known bugs
 - Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
-- Testing pollutes Riya's demo state (extra attempts, A4_ADD_DISCOUNTS now detected). **Run `npx tsx scripts/seed-db.ts` before recording the demo / final submission** to restore the scripted state.
+- Testing pollutes Riya's demo state. Reseeded at ~7:45 PM with the 128-question bank (Riya: A1 0.18 / A4 0.18, A1_ADD_SUCCESSIVE fixing, 49 attempts, 4 due). **Re-run `npx tsx scripts/seed-db.ts` right before recording the demo** if more testing happens.
 - `/map` at 375px fits but is tiny (pan/zoom works).
 
 ## Decisions
@@ -99,6 +103,7 @@ Last updated: Phase 5 (P1 polish) done: landing, /strategy, /under-the-hood wire
 - Gemini thinking level matters a lot: Flash at default thinking took >45s per question draft (timeouts); `thinking: "LOW"` → ~6s. Generator uses LOW (verifier re-solves everything). Verifier (Pro) keeps default thinking with a 90s timeout. Use LOW/MINIMAL for any latency-sensitive call (detective on typed text, coach).
 - `grading.normalizeAnswer` strips option labels ("B. 48,000"): the verifier sometimes echoes them.
 - seed-db: Riya's skill profile is hand-tuned and her random misattribution is 8% (vs 35% for synthetic students) so her story stays clean; her review cards are post-processed to 4 due (rest spread over the next week).
+- Riya's seed skills tuned after the bank grew (A4 900, A1/A4 drawn more often) so the weak A1→A4 chain doesn't depend on which questions the simulation draws.
 - Riya's seeded state: A1_ADD_SUCCESSIVE active ("fixing"); A4_ADD_DISCOUNTS deliberately absent so the demo detects it live.
 - Gemini Flash 3.8 rejects thinking level MINIMAL (400). Use LOW for fast calls.
 - `vercel.json` pins functions to `sin1` (Singapore) next to Neon; the default iad1 would add a trans-Pacific hop to every query.

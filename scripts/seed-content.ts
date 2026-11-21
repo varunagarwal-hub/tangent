@@ -50,14 +50,19 @@ const PATTERN: Omit<Spec, "spec" | "conceptId">[] = [
   { band: "medium", type: "TITA", contrastIndex: null },
   { band: "hard", type: "MCQ", contrastIndex: 1 },
   { band: "hard", type: "TITA", contrastIndex: 2 },
+  // Phase 6 expansion (bank → ~150): more variety per concept, more contrast coverage
+  { band: "easy", type: "TITA", contrastIndex: null },
+  { band: "medium", type: "MCQ", contrastIndex: 3 },
+  { band: "easy", type: "MCQ", contrastIndex: 2 },
+  { band: "hard", type: "MCQ", contrastIndex: 0 },
 ];
 
-// Arithmetic is the depth focus (36 of 60); weight-3 algebra/geometry get 2; the rest 1.
+// Arithmetic is the depth focus (64 slots); weight-3 algebra/geometry get 4; the rest 3. (~146 specs)
 const PLAN: Record<string, number[]> = {
-  A1: [0, 1, 2, 3, 4], A2: [0, 1, 2, 3], A3: [0, 1, 2, 3, 4], A4: [0, 1, 2, 3, 4],
-  A5: [0, 1, 2, 3], A6: [0, 1, 2, 3], A7: [0, 1, 2, 3], A8: [0, 1, 2, 3, 4],
-  L3: [1, 2], L4: [1, 2], L5: [1, 2], L6: [1, 2], G2: [1, 2],
-  N1: [1], N2: [1], N3: [1], L1: [1], L2: [1], L7: [1], G1: [1], G3: [1], G4: [1], G5: [1], G6: [1], M1: [1], M2: [1], M3: [1],
+  A1: [0, 1, 2, 3, 4, 5, 6, 7, 8], A2: [0, 1, 2, 3, 5, 6, 7], A3: [0, 1, 2, 3, 4, 5, 6, 7, 8], A4: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  A5: [0, 1, 2, 3, 5, 6, 7], A6: [0, 1, 2, 3, 5, 6, 7], A7: [0, 1, 2, 3, 5, 6, 7], A8: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  L3: [0, 1, 2, 3], L4: [0, 1, 2, 3], L5: [0, 1, 2, 3], L6: [0, 1, 2, 3], G2: [0, 1, 2, 3],
+  N1: [0, 1, 2], N2: [0, 1, 2], N3: [0, 1, 2], L1: [0, 1, 2], L2: [0, 1, 2], L7: [0, 1, 2], G1: [0, 1, 2], G3: [0, 1, 2], G4: [0, 1, 2], G5: [0, 1, 2], G6: [0, 1, 2], M1: [0, 1, 2], M2: [0, 1, 2], M3: [0, 1, 2],
 };
 
 function buildSpecs(): Spec[] {

@@ -313,7 +313,7 @@ async function main() {
 
   // ── Riya: the scripted demo student ──
   {
-    const riyaSkill: Record<string, number> = { A1: 1080, A4: 1020, A5: 1150, A2: 1500, A3: 1450, A6: 1350, A7: 1450, A8: 1400 };
+    const riyaSkill: Record<string, number> = { A1: 1060, A4: 900, A5: 1150, A2: 1500, A3: 1450, A6: 1350, A7: 1450, A8: 1400 };
     const sessions: Date[] = [];
     for (let d = 14; d >= 1; d--) {
       // last 6 days consecutive (6-day streak), sporadic before
@@ -325,7 +325,7 @@ async function main() {
       holds: new Set(["A1_ADD_SUCCESSIVE"]),
       speed: 1.05, careless: 0.05, overconfident: false,
       sessions, perSession: () => 4 + Math.floor(rand() * 3),
-      conceptWeight: (cid) => (["A1", "A4", "A2", "A3"].includes(cid) ? 6 : cid.startsWith("L") ? 2 : 1),
+      conceptWeight: (cid) => (["A1", "A4"].includes(cid) ? 9 : ["A2", "A3"].includes(cid) ? 5 : cid.startsWith("L") ? 2 : 1),
       resolveChance: 0, randomMisattribution: 0.08,
     });
     // Guarantee the demo state: A1_ADD_SUCCESSIVE is active ("fixing"); A4_ADD_DISCOUNTS is NOT yet known

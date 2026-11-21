@@ -114,5 +114,161 @@
   {
     "spec": "A2-3",
     "reason": "ambiguous (Typo in the question: 'twice the share of P is equal to three times the share of Q' (2P=3Q) yields no matching options. )"
+  },
+  {
+    "spec": "A7-6",
+    "reason": "answer mismatch (key says $\frac{600}{41}$ days, independent solve got $\u0000frac{600}{41}$ days)"
+  },
+  {
+    "spec": "L4-3",
+    "reason": "answer mismatch (key says -40, independent solve got -16)"
+  },
+  {
+    "spec": "A8-8",
+    "reason": "ambiguous (The mathematically correct answer is 360/11 (approx 32.72 km/h), which is not in the options. The intended answer is lik)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The question contains a typo in the given equations. As written (4P = 3Q and 5Q = 2R), the ratio is 3:4:10, which sums t)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total amount ₹3,380 is a typo and contradicts the options. It should be ₹2,970 for the options to be valid (which wo)"
+  },
+  {
+    "spec": "L3-3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L3-3",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "L5-3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "L5-3",
+    "reason": "ambiguous (The solution set is x <= 3 or x >= 9, which contains infinitely many integers. The question is flawed. It likely intende)"
+  },
+  {
+    "spec": "L5-3",
+    "reason": "ambiguous (The correct answer is 11, which is not in the options. The options likely stem from a calculation error (assuming y=0 gi)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "answer mismatch (key says 60, independent solve got 360)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (Zero options are correct. The GCD of (139-7) and (181-7) is 6, but a divisor must be strictly greater than the remainder)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (No such number exists. 314 - 5 = 309, which is not divisible by any of the options. The question contains a typo in the )"
+  },
+  {
+    "spec": "N2-2",
+    "reason": "answer mismatch (key says 3, independent solve got 2)"
+  },
+  {
+    "spec": "N2-2",
+    "reason": "answer mismatch (key says 3, independent solve got 2)"
+  },
+  {
+    "spec": "L6-3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-3",
+    "reason": "answer mismatch (key says 15, independent solve got 14)"
+  },
+  {
+    "spec": "L6-3",
+    "reason": "ambiguous (Zero options are correct. The two APs have absolutely no common terms because all terms in AP A are odd (13 + 6k) and al)"
+  },
+  {
+    "spec": "N3-2",
+    "reason": "answer mismatch (key says 28, independent solve got 43)"
+  },
+  {
+    "spec": "L7-0",
+    "reason": "ambiguous (None of the options are correct. The correct answer is 2. The author likely intended to ask for f(g(3)) + g(f(3)), which)"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "answer mismatch (key says 32, independent solve got 8)"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "answer mismatch (key says 16, independent solve got 25)"
+  },
+  {
+    "spec": "G1-2",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M2-2",
+    "reason": "answer mismatch (key says 144, independent solve got 288)"
+  },
+  {
+    "spec": "M2-2",
+    "reason": "answer mismatch (key says 84, independent solve got 60)"
+  },
+  {
+    "spec": "M2-2",
+    "reason": "answer mismatch (key says 72, independent solve got 96)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "answer mismatch (key says 24, independent solve got 12)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (The correct answer is 16, which is not in the options. There is likely a typo in the question (if 328 was 344, the answe)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (No such number exists because the GCD of (165-5), (228-4), and (285-9) is 4, which is not greater than the remainder 9. )"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "answer mismatch (key says 16, independent solve got 17)"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "ambiguous (The correct answer is 17, which is not in the options. If the question meant 'divided by 31', the answer would be 16. If)"
+  },
+  {
+    "spec": "N3-0",
+    "reason": "ambiguous (The correct answer is 17, which is not in the options. The author likely intended the divisor to be 31 (which gives a re)"
+  },
+  {
+    "spec": "M2-2",
+    "reason": "answer mismatch (key says 45, independent solve got 72)"
+  },
+  {
+    "spec": "L6-3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Zero options are correct. The mathematically correct answer is ₹48,000, which is missing from the options.)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Typo in the question's data: The total sum should be ₹1,65,000 instead of ₹1,60,000 for any of the options to be correct)"
   }
 ]
