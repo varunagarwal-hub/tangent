@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 0 complete + data layer switched to Neon/Drizzle/Vercel Blob. Waiting on DATABASE_URL to run `npm run db:push`, then Phase 1. Keep this file true at every commit.
+Last updated: Phase 0 complete; Neon, Vercel Blob and Vercel project are wired up. Only GEMINI_API_KEY is missing. Next: Phase 1. Keep this file true at every commit.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -12,10 +12,11 @@ Last updated: Phase 0 complete + data layer switched to Neon/Drizzle/Vercel Blob
 - [x] P0.6 Drizzle schema `src/lib/db/schema.ts` (13 tables, same columns/indexes as the old SQL). `src/lib/db/index.ts` (server-only lazy `db`), `src/lib/db/client.ts` (`getDb()` for scripts), `drizzle.config.ts`, scripts `db:push` / `db:generate` / `db:studio`.
 - [x] P0.7 Gemini wrapper `src/lib/ai/gemini.ts`: `generateStructured()` (Zod → JSON schema → `responseJsonSchema`, Zod validation, 1 retry with error feedback, 25s timeout, 10-min cache, `agent_runs` logging via Drizzle; logging is skipped if no DATABASE_URL). Trace type `src/lib/agents/trace.ts`.
 - [x] P0.8 `npm run build` passes; pushed to GitHub (private repo)
+- [x] P0.10 Infra wired: Neon project `tangent` (id `falling-scene-06569260`, aws-ap-southeast-1, PG17); `npm run db:push` done, 13 tables confirmed. Vercel project `tangent` (team varun-s-workspace) linked and connected to GitHub `varunagarwal-hub/tangent` (pushes to main auto-deploy). Blob store `tangent-rough-work` (public, sin1) connected to all envs. Vercel env: DATABASE_URL, BLOB_READ_WRITE_TOKEN, GEMINI_MODEL_FAST/SMART set for production/preview/development. `/api/health` reports DB/blob/Gemini wiring.
 - [x] P0.9 Image storage: `src/lib/storage.ts` (`uploadRoughWork()` → Vercel Blob URL, or null when BLOB_READ_WRITE_TOKEN is missing/fails), `src/lib/compress-image.ts` (client-side, ≤1600px JPEG, <4MB).
 
 ## In progress
-- [ ] Run `npm run db:push` once DATABASE_URL is in `.env.local`; confirm the 13 tables exist.
+- [ ] Waiting on GEMINI_API_KEY (human pastes into `.env.local`; Claude syncs it to Vercel).
 
 ## Next
 ### Phase 1 — Content & learner model
@@ -64,12 +65,14 @@ Last updated: Phase 0 complete + data layer switched to Neon/Drizzle/Vercel Blob
 - Magic UI components live in `src/components/ui/` (shadcn default path).
 - **Switched from Supabase to Neon + Drizzle + Vercel Blob** (human's call, before Phase 1). Neon via neon-http driver (no transactions over HTTP; use `db.batch()` if atomic multi-writes are needed). No RLS: the DB is only touched from server code. Images: Vercel Blob; if no token, the image goes straight to Gemini and only the transcription is stored (`work_image_url` = null).
 - drizzle-kit pulls an old nested esbuild whose binary fails to install here (Windows path length in the deep workspace folder). Fixed with `overrides["@esbuild-kit/core-utils"].esbuild = 0.28.2` in package.json, which reuses the hoisted esbuild.
+- Vercel CLI quirks: `vercel env pull` / `blob create-store` rewrite `.env.local` (comments lost, sensitive vars come back empty). After any pull, re-check DATABASE_URL locally. `vercel env add` with `--value` saved an empty value once; pipe the value on stdin with `--environment <env>` instead. `vercel link` appends `.env*` to .gitignore; removed so `.env.example` stays tracked.
+- `cacheComponents` is on in Next 16: use `await connection()` instead of `export const dynamic`.
 - `db` in `@/lib/db` is a lazy Proxy so `next build` works without DATABASE_URL.
 
 ## Human tasks
-1. [ ] Create a Neon project (or add Neon from Vercel's Storage tab); paste the pooled `DATABASE_URL` into `.env.local` (and Vercel env vars). Then Claude runs `npm run db:push`.
-2. [ ] Create a Vercel Blob store; paste `BLOB_READ_WRITE_TOKEN` into `.env.local` and Vercel.
+1. [x] (done by Claude) Create a Neon project (or add Neon from Vercel's Storage tab); paste the pooled `DATABASE_URL` into `.env.local` (and Vercel env vars). Then Claude runs `npm run db:push`.
+2. [x] (done by Claude) Create a Vercel Blob store; paste `BLOB_READ_WRITE_TOKEN` into `.env.local` and Vercel.
 3. [ ] Add `GEMINI_API_KEY` (+ model IDs) to `.env.local` and Vercel.
 4. [ ] Hand-write 3–4 wrong solutions (successive discounts added; avg speed = mean of speeds; adding days in time & work; area ratio not squared), photograph, save as `public/samples/sample-1.jpg` …
-5. [ ] Connect GitHub repo to Vercel.
+5. [x] (done by Claude) Connect GitHub repo to Vercel.
 6. [ ] Record 2–3 min demo video; LinkedIn posts at milestones.

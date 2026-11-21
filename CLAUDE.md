@@ -15,6 +15,8 @@ Tangent is an adaptive CAT Quant tutor (hackathon: Product Space Agentic AI, PS2
 ## Stack
 Next.js 16 (App Router, TS, `src/`), Tailwind v4, shadcn/ui + Magic UI (in `src/components/ui`), GSAP + @gsap/react, Motion, Lenis (landing only), rough-notation, roughjs, @xyflow/react, Recharts, KaTeX, perfect-freehand, Neon Postgres (`@neondatabase/serverless`, neon-http) + Drizzle ORM (server only, no RLS, no auth; persona via cookie), Vercel Blob for images, Gemini via `@google/genai` (structured JSON + Zod + 1 retry), ts-fsrs, vitest, tsx scripts.
 
+Note: `cacheComponents` is ON. Don't use `export const dynamic = ...`; call `await connection()` (from `next/server`) in route handlers/pages that must run per request.
+
 Note: this Next.js version has breaking changes vs. older training data — check `node_modules/next/dist/docs/` before using unfamiliar APIs (see AGENTS.md).
 
 ## Layout
