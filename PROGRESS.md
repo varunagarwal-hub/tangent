@@ -9,7 +9,7 @@ Last updated: Phase 0 in progress. Keep this file true at every commit.
 - [x] P0.4 CLAUDE.md, PROGRESS.md, .env.example
 
 ## In progress
-- [ ] P0.5 Fonts + design tokens (paper grid, ink, red pen, highlighter, mastery scale, chalkboard dark mode) + Logo SVG + favicon
+- [x] P0.5 Fonts + design tokens (paper grid, ink, red pen, highlighter, mastery scale, chalkboard dark mode) + Logo SVG + favicon
 - [ ] P0.6 `supabase/schema.sql`
 - [ ] P0.7 Gemini wrapper (structured output + Zod + retry + timeout + agent_runs logging)
 - [ ] P0.8 Build passes, push to GitHub
