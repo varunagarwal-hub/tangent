@@ -301,3 +301,19 @@ export const mocks = pgTable(
   },
   (t) => [index("mocks_student_idx").on(t.studentId, t.startedAt.desc())],
 );
+
+/** Doubt classes a teacher schedules for the students stuck on one misconception (or a lesson-plan group). */
+export const doubtClasses = pgTable(
+  "doubt_classes",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    classId: uuid("class_id").notNull(),
+    misconceptionId: text("misconception_id"),
+    title: text("title").notNull(),
+    startsAt: timestamp("starts_at", { withTimezone: true }).notNull(),
+    link: text("link"),
+    studentIds: jsonb("student_ids").$type<string[]>().notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [index("doubt_classes_class_idx").on(t.classId, t.startsAt)],
+);

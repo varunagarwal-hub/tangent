@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { PenLoader } from "@/components/tangent/pen-loader";
 import { Heatmap } from "@/components/tangent/teacher/heatmap";
 import { Leaderboard } from "@/components/tangent/teacher/leaderboard";
+import { ScheduleDoubtClass, UpcomingDoubtClasses } from "@/components/tangent/teacher/doubt-classes";
 import { LessonPlanCard } from "@/components/tangent/teacher/lesson-plan";
 import { OverrideQueue } from "@/components/tangent/teacher/override-queue";
 import { Assignments } from "@/components/tangent/teacher/assignments";
@@ -206,7 +207,11 @@ export function TeacherClient() {
         <section aria-labelledby="lb-h" className="flex min-w-0 flex-col gap-4">
           <SectionHeading id="lb-h" kicker="what keeps going wrong" title={<span className="inline-flex items-center gap-1.5">Misconception leaderboard <InfoTip term="leaderboard" /></span>} />
           <div className="paper-card px-4 py-2">
-            <Leaderboard rows={data.leaderboard} />
+            <Leaderboard rows={data.leaderboard} action={(r) => <ScheduleDoubtClass misconceptionId={r.misconceptionId} defaultTitle={`Doubt class: ${r.name}`} />} />
+          </div>
+          <div className="paper-card px-4 py-2">
+            <p className="border-b border-dashed py-2 text-sm font-medium text-ink">Upcoming doubt classes</p>
+            <UpcomingDoubtClasses />
           </div>
         </section>
         <section aria-labelledby="as-h" className="flex min-w-0 flex-col gap-4">

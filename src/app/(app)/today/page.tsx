@@ -15,6 +15,7 @@ import { InfoTip } from "@/components/tangent/info-tip";
 import { DailyChecklist } from "@/components/tangent/daily-checklist";
 import { getDailyChecklist } from "@/lib/daily";
 import { flashcardStatus } from "@/lib/flashcards";
+import { upcomingForStudent } from "@/lib/doubt-classes";
 
 export const metadata: Metadata = { title: "Today · Tangent" };
 
@@ -41,7 +42,7 @@ function greeting() {
 async function TodayContent() {
   await connection(); // per-request: reads the clock and the persona cookie
   const studentId = await getStudentId();
-  const [t, cands, daily, cards] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId), getDailyChecklist(studentId), flashcardStatus(studentId)]);
+  const [t, cands, daily, cards, doubts] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId), getDailyChecklist(studentId), flashcardStatus(studentId), upcomingForStudent(studentId)]);
   const cardsToday = cards.due + cards.newToday;
   const top = cands[0];
   const firstName = t.name.split(" ")[0];
@@ -154,6 +155,26 @@ async function TodayContent() {
           </Link>
         </section>
       </div>
+
+      {doubts.length > 0 && (
+        <section aria-label="Doubt classes" className="flex flex-col gap-2">
+          {doubts.map((d) => (
+            <div key={d.id} className="paper-card flex flex-wrap items-center justify-between gap-3 border-l-4 border-l-redpen px-5 py-3">
+              <p className="text-ink">
+                <span className="font-semibold">{d.title}</span>
+                <span className="text-ink-soft"> · {new Intl.DateTimeFormat("en-IN", { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZone: "Asia/Kolkata" }).format(new Date(d.startsAt))} · Prof. Mehta invited you and {d.invited - 1} other{d.invited - 1 === 1 ? "" : "s"}</span>
+              </p>
+              {d.link ? (
+                <a href={d.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-lg border px-3 py-1.5 text-sm font-medium hover:bg-accent">
+                  Join link <ArrowRight className="size-3.5" />
+                </a>
+              ) : (
+                <span className="text-sm text-ink-soft">Link to follow</span>
+              )}
+            </div>
+          ))}
+        </section>
+      )}
 
       <DailyChecklist {...daily} />
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { ScheduleDoubtClass } from "./doubt-classes";
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronDown, ClipboardCheck, NotebookPen, RefreshCw, Users } from "lucide-react";
@@ -174,6 +175,7 @@ export function LessonPlanCard({ onAssigned }: { onAssigned: (a: AssignmentRow) 
                       </li>
                     ))}
                   </ul>
+                  <ScheduleDoubtClass studentNames={g.students} defaultTitle={`Doubt class: ${g.focus}`} />
                 </div>
               ))}
             </div>

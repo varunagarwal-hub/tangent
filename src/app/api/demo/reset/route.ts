@@ -81,8 +81,9 @@ export async function POST() {
   try {
     const ops = [
       db.delete(s.studentQueries),
+      db.delete(s.doubtClasses), // demo class only: teacher-scheduled doubt classes start empty
       ...(seededQueries.length ? [db.insert(s.studentQueries).values(seededQueries)] : []),
-      // Deleting the student cascades to attempts (→ feedback), mastery, misconception events and review cards.
+      // Deleting the student cascades to attempts (→ feedback), mastery, misconception events, review cards (incl. flashcards), game scores, mocks and foundation status.
       db.delete(s.students).where(eq(s.students.id, RIYA_ID)),
       db.delete(s.feedback).where(eq(s.feedback.byRole, "teacher")),
       db.delete(s.fewshotExamples).where(eq(s.fewshotExamples.source, "teacher")),

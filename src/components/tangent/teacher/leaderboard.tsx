@@ -32,7 +32,7 @@ function Trend({ t }: { t: LeaderboardRow["trend"] }) {
   );
 }
 
-export function Leaderboard({ rows }: { rows: LeaderboardRow[] }) {
+export function Leaderboard({ rows, action }: { rows: LeaderboardRow[]; action?: (row: LeaderboardRow) => React.ReactNode }) {
   const top = rows.slice(0, 8);
   if (top.length === 0) return <p className="font-hand text-xl text-ink-soft">No active misconceptions. The class is on the curve.</p>;
   return (
@@ -72,6 +72,7 @@ export function Leaderboard({ rows }: { rows: LeaderboardRow[] }) {
                 </div>
                 <span className="shrink-0 text-right font-mono text-xs whitespace-nowrap tabular-nums text-ink">{pctClass}% of class</span>
               </div>
+              {action?.(r)}
             </div>
           </li>
         );
