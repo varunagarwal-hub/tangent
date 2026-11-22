@@ -75,6 +75,9 @@ async function TodayContent() {
         <div>
           <p className="font-hand text-2xl text-redpen">{greeting()},</p>
           <h1 className="text-4xl sm:text-5xl">{firstName}&apos;s plan for today</h1>
+          <Link href="/plan" className="mt-2 inline-flex items-center gap-1 text-sm text-ink-soft underline-offset-4 hover:text-ink hover:underline">
+            Your Road to CAT <ArrowRight className="size-3.5" />
+          </Link>
         </div>
         <dl className="flex flex-wrap gap-3">
           <Stat icon={<Flame className="size-4 text-redpen" />} label="day streak" value={daily.streak} />
