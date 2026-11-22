@@ -14,8 +14,11 @@ import { randomUUID } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
 const OUT = "data/questions.json";
+const CONCEPT_LIST: { id: string; area: string; weight: number }[] = JSON.parse(readFileSync("data/concepts.json", "utf8"));
+const ANCHOR_COUNT: Record<string, number> = (JSON.parse(readFileSync("data/anchor-questions.json", "utf8")) as { concept_id: string }[]).reduce(
+  (m, q) => ({ ...m, [q.concept_id]: (m[q.concept_id] ?? 0) + 1 }), {} as Record<string, number>);
 const REJ = "data/questions-rejections.json";
-const CONCURRENCY = 4;
+const CONCURRENCY = 6;
 
 type Band = "easy" | "medium" | "hard";
 interface Spec {
@@ -24,6 +27,7 @@ interface Spec {
   band: Band;
   type: "MCQ" | "TITA";
   contrastIndex: number | null; // index into the concept's misconceptions
+  theme?: string;
 }
 
 export interface BankQuestion {
@@ -65,10 +69,42 @@ const PLAN: Record<string, number[]> = {
   N1: [0, 1, 2], N2: [0, 1, 2], N3: [0, 1, 2], L1: [0, 1, 2], L2: [0, 1, 2], L7: [0, 1, 2], G1: [0, 1, 2], G3: [0, 1, 2], G4: [0, 1, 2], G5: [0, 1, 2], G6: [0, 1, 2], M1: [0, 1, 2], M2: [0, 1, 2], M3: [0, 1, 2],
 };
 
+// Bank → ~1,000: top every concept up to a target set by its CAT weight (3 → 50, 2 → 30, 1 → 20).
+const TARGET_BY_WEIGHT: Record<number, number> = { 3: 50, 2: 30, 1: 20 };
+const BAND_CYCLE: Band[] = ["easy", "medium", "medium", "hard", "medium", "easy", "hard", "medium", "hard", "easy"];
+const LIFE_THEMES = [
+  "salaries and pay revisions", "shopping, sales and discounts", "city population and census", "investments and savings",
+  "cricket and sports scores", "train and road travel", "factory production", "farming and harvests", "exam marks and results",
+  "mixing ingredients in a kitchen", "fuel and mileage", "rent and property prices", "a small business's accounts",
+  "water tanks and pipes", "a school or college", "festivals and events", "online orders and delivery", "elections and votes",
+];
+const MATH_ANGLES = [
+  "direct computation", "find the unknown value", "which of the following must be true", "count the number of solutions",
+  "minimum or maximum value", "integer constraints", "a short word problem", "pattern or sequence",
+  "compare two quantities", "a condition that pins down the answer",
+];
+
 function buildSpecs(): Spec[] {
-  return Object.entries(PLAN).flatMap(([conceptId, slots]) =>
-    slots.map((slot) => ({ spec: `${conceptId}-${slot}`, conceptId, ...PATTERN[slot] })),
+  const base = Object.entries(PLAN).flatMap(([conceptId, slots]) =>
+    slots.map((slot) => ({ spec: `${conceptId}-${slot}`, conceptId, ...PATTERN[slot] }) as Spec),
   );
+  const extra: Spec[] = [];
+  for (const c of CONCEPT_LIST) {
+    const have = base.filter((b) => b.conceptId === c.id).length + (ANCHOR_COUNT[c.id] ?? 0);
+    const want = TARGET_BY_WEIGHT[c.weight] ?? 20;
+    const themes = c.area === "Arithmetic" || c.area === "Modern Math" ? LIFE_THEMES : MATH_ANGLES;
+    for (let n = 0; n < Math.max(0, want - have); n++) {
+      extra.push({
+        spec: `${c.id}-x${n}`,
+        conceptId: c.id,
+        band: BAND_CYCLE[n % BAND_CYCLE.length],
+        type: n % 3 === 2 ? "TITA" : "MCQ",
+        contrastIndex: n % 2 === 0 ? Math.floor(n / 2) : null,
+        theme: themes[(n * 7 + c.id.charCodeAt(1)) % themes.length],
+      });
+    }
+  }
+  return [...base, ...extra];
 }
 
 async function pool<T>(items: T[], n: number, fn: (t: T) => Promise<void>) {
@@ -114,6 +150,11 @@ async function main() {
   }
 
   // 2) Generated bank.
+  if (process.argv.includes("--plan")) {
+    const all = buildSpecs(); const todo = all.filter((s) => !done.has(s.spec));
+    console.log(`plan: ${all.length} specs + anchors; ${todo.length} still to generate`);
+    return;
+  }
   const specs = buildSpecs().filter((s) => !done.has(s.spec));
   console.log(`${specs.length} specs to generate (${bank.length} already in bank)`);
   let ok = 0, failed = 0;
@@ -123,7 +164,7 @@ async function main() {
     const target = s.contrastIndex != null && mcs.length ? mcs[s.contrastIndex % mcs.length] : null;
     const avoidStems = bank.filter((q) => q.concept_id === s.conceptId).map((q) => q.stem);
     const r = await generateVerified({
-      conceptId: s.conceptId, targetElo: BAND_ELO[s.band], type: s.type, targetMisconceptionId: target?.id ?? null, avoidStems,
+      conceptId: s.conceptId, targetElo: BAND_ELO[s.band], type: s.type, targetMisconceptionId: target?.id ?? null, avoidStems, theme: s.theme,
     });
     for (const reason of r.rejections) rejections.push({ spec: s.spec, reason });
     if (!r.question) {

@@ -22,7 +22,7 @@ export async function POST(req: Request) {
   const mastery = await masteryMap(studentId);
   const next = nextDiagnosticConcept(asked, mastery);
   const exclude = asked.map((a) => a.questionId).filter((x): x is string => !!x);
-  const q = await pickQuestion({ conceptId: next.conceptId, studentElo: await studentElo(studentId, next.conceptId), exclude });
+  const q = await pickQuestion({ conceptId: next.conceptId, studentElo: await studentElo(studentId, next.conceptId), exclude, studentId });
   if (!q) return Response.json({ error: "no question" }, { status: 404 });
 
   const trace: TraceStep[] = [{ agent: "diagnostician", summary: next.reason, ms: Date.now() - t0, status: "ok" }];

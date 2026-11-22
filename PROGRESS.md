@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: Phase 9 voice done (Speak tab, Ask your teacher, teacher inbox with voice replies, dictation); deployed. Human: demo video + deck export for submission.
+Last updated: 22 Nov — project SUBMITTED (team gamma_pass). Phase 10 in progress: per-student question pool done + deployed; bank expansion paused at 186/1,030 — resume with `npx tsx scripts/seed-content.ts`, then `npx tsx scripts/load-bank.ts --apply`. Non-code assets and next steps: ../HANDOFF.md.
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -90,6 +90,13 @@ Last updated: Phase 9 voice done (Speak tab, Ask your teacher, teacher inbox wit
 - [x] Table `student_queries` (pushed to Neon); APIs `/api/queries` (GET mine, POST ask), `/api/teacher/queries`, `/api/teacher/queries/[id]/reply`
 - [x] Reset demo also clears the inbox and seeds two open classmate questions (A8 average speed, A3 averaging averages)
 - Tested with a TTS-generated WAV: work-mode transcription kept "20 + 10 = 30%" verbatim; voice question → teacher voice reply → shown on Today with playable audio
+
+### Phase 10 — Question bank → ~1,000 + per-student pool (IN PROGRESS, 22 Nov)
+- [x] Per-student pool: `pickQuestion` prefers questions the student never attempted; `ensurePool` generates when the student has < 3 UNSEEN questions per (concept, band) (was: < 3 total for everyone). One refill in flight per student. New questions join the shared bank. (`src/lib/repo.ts`, `src/lib/pool.ts`, `/api/next`, planner, diagnostic)
+- [x] Seed plan → 1,025 specs: weight-based targets (weight 3 → 50, 2 → 30, 1 → 20 per concept), band/type/contrast cycles, and a `theme` per spec (life scenarios for Arithmetic/Modern Math, problem styles for Algebra/Geometry/Number) passed to the generator; generator now avoids the last 12 stems. `npx tsx scripts/seed-content.ts --plan` shows what's left.
+- [x] `scripts/load-bank.ts`: adds new questions from data/questions.json to Neon WITHOUT wiping (skips ids already in DB and ≥80% word-overlap near-duplicates). Dry run by default; `--apply` to insert. Use this, NOT seed-db.ts (seed-db wipes and re-simulates the class, which changes Riya's demo story).
+- [ ] **Bank run paused at 186/1,030 (844 specs left).** Resume: `npx tsx scripts/seed-content.ts` (resumable, saves after every question; ~2–3 questions/min at concurrency 6; Gemini Pro verifier is the slow part). Then `npx tsx scripts/load-bank.ts` (dry run) → `--apply`. Live DB had 188 active questions after loading the first 57.
+- [ ] After the bank is loaded: confirm the count; the submission deck already says "1,000+" (evaluation + closing slides), so fix the deck if fewer than 1,000 pass. Update README "128 verified questions" and `/under-the-hood` will update itself from the DB.
 
 ──── CUT LINE B ────
 

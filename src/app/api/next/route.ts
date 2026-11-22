@@ -23,7 +23,7 @@ export async function GET(req: Request) {
 
   after(async () => {
     const elo = await studentElo(studentId, action.conceptId);
-    await ensurePool(action.conceptId, elo, action.misconceptionId);
+    await ensurePool(action.conceptId, elo, action.misconceptionId, studentId);
   });
   return Response.json(action);
 }

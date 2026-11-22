@@ -270,5 +270,185 @@
   {
     "spec": "A2-3",
     "reason": "ambiguous (Typo in the question's data: The total sum should be ₹1,65,000 instead of ₹1,60,000 for any of the options to be correct)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (The correct answer is 10, which is not in the options. '218' is likely a typo for '216', which would make the answer 26.)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "answer mismatch (key says 24, independent solve got 12)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (Mathematical flaw: The GCD of the differences is 5, but a divisor must be strictly greater than its remainder. Dividing )"
+  },
+  {
+    "spec": "A1-x17",
+    "reason": "answer mismatch (key says 8.67, independent solve got 26/3)"
+  },
+  {
+    "spec": "A1-x17",
+    "reason": "ambiguous (The mathematically correct answer (750/17 or approx 44.12) is not an integer, which is highly unusual for a TITA questio)"
+  },
+  {
+    "spec": "A1-x26",
+    "reason": "ambiguous (The mathematical answer is 47.9166...%, which is not an integer (unusual for TITA). The author likely intended the answe)"
+  },
+  {
+    "spec": "A1-x23",
+    "reason": "ambiguous (The question asks for a 'percentage increase' but the actual value decreases. Furthermore, the result is a non-integer n)"
+  },
+  {
+    "spec": "A1-x23",
+    "reason": "answer mismatch (key says 200000, independent solve got 245614)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The given conditions (2P = 3Q and 4Q = 5R) lead to a ratio of P:Q:R = 15:10:8, summing to 33 parts. 11,700 is not cleanl)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Contradictory data/Typo: The total ₹1,45,200 is not divisible by the sum of the ratio parts (19). The intended total was)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total profit of ₹2,05,000 does not yield an answer that matches any of the options (it results in ₹68,333.33). There)"
+  },
+  {
+    "spec": "A2-x8",
+    "reason": "answer mismatch (key says 4740, independent solve got 5340)"
+  },
+  {
+    "spec": "A2-x8",
+    "reason": "ambiguous (The number of orders evaluates to a fraction (1925/9), which is unrealistic since the number of orders must be an intege)"
+  },
+  {
+    "spec": "A2-x8",
+    "reason": "ambiguous (The numbers provided in the question do not yield an integer value for the number of orders. 285 is not divisible by 7, )"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "answer mismatch (key says $14,750$, independent solve got $11,800$)"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "ambiguous (Zero options are correct. The correct total number of votes is 14,000, but this is not listed in the options. None of th)"
+  },
+  {
+    "spec": "A2-x15",
+    "reason": "ambiguous (Contradictory data: The given ratios imply that the rent of A is greater than C (12:10), but the text states A is ₹12,00)"
+  },
+  {
+    "spec": "A2-x15",
+    "reason": "ambiguous (No option is correct based on the provided numbers. The calculated rent for B is ₹15,555.55. There is likely a typo in t)"
+  },
+  {
+    "spec": "A2-x14",
+    "reason": "ambiguous (The numbers provided in the question do not result in an integer value. The sum of the investment ratio parts is 19, but)"
+  },
+  {
+    "spec": "A2-x1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x1",
+    "reason": "ambiguous (The question is mathematically contradictory. Vikram's total earnings (0.2P + 0.3P = 0.5P) are exactly equal to Sandeep')"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x6",
+    "reason": "ambiguous (The total surveyor-months sum to 1180, which does not divide the ₹11,40,000 bonus evenly. Partner B's share evaluates to)"
+  },
+  {
+    "spec": "A2-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (Typo in the question: The total population is given as 3,56,000, which is not divisible by the sum of the ratio parts (7)"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (Typo in the question: The ratio of North to Central zone should be 5:4 instead of 3:4 to yield a total of 37 parts, whic)"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (The numbers provided in the question are contradictory. The sum of the ratio parts (9 + 12 + 10 = 31) does not perfectly)"
+  },
+  {
+    "spec": "A2-x25",
+    "reason": "ambiguous (The numbers provided in the question yield a butter weight of approximately 412.68 g, which does not match any of the op)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (The correct answer based on the given numbers is ₹1,20,000, which is missing from the options. The options likely contai)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (The question contains a typo in the provided ratios. With A:B = 4:5 and B:C = 3:4, Bharat's salary evaluates to ₹330,000)"
+  },
+  {
+    "spec": "A2-x18",
+    "reason": "ambiguous (The sum of the ratio parts (15+10+8) is 33, but 3,36,000 is not divisible by 33. The options are derived from mistakenly)"
+  },
+  {
+    "spec": "A2-x18",
+    "reason": "ambiguous (The given ratios (C:P = 3:2 and P:M = 5:4) result in parts 15:10:8, which sum to 33. The total grant ₹4,55,000 is not di)"
+  },
+  {
+    "spec": "A2-x18",
+    "reason": "ambiguous (The sum of the ratio parts (15+10+8) is 33, but 33,60,000 is not divisible by 33. The options are derived from mistakenl)"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "ambiguous (Contradictory data: The problem states tank C (9k) has 180 litres more than tank B (10k), which leads to a negative volu)"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "answer mismatch (key says 318, independent solve got 461.1)"
+  },
+  {
+    "spec": "A2-x29",
+    "reason": "ambiguous (The difference in ratio units is 11, but the given value (1040) is not divisible by 11, leading to a non-integer, non-te)"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "ambiguous (The values given (4P = 3Q and 5Q = 6R) result in a total ratio sum of 31. Since 3330 is not divisible by 31, it results )"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "ambiguous (The total number of orders (2320) is not divisible by the sum of the ratio parts (35). This results in a non-integer num)"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
   }
 ]

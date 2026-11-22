@@ -38,6 +38,8 @@ export interface GenerateRequest {
   type?: "MCQ" | "TITA";
   targetMisconceptionId?: string | null;
   avoidStems?: string[];
+  /** optional scenario or problem style (bank building) */
+  theme?: string;
   studentId?: string | null;
 }
 
@@ -63,6 +65,7 @@ export async function draftQuestion(req: GenerateRequest, retryReason?: string):
       target,
       misconceptions: mcs.map((m) => ({ id: m.id, name: m.name })),
       avoidStems: req.avoidStems,
+      theme: req.theme,
       retryReason,
     }),
     schema: GeneratorOutput,

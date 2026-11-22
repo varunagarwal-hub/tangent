@@ -51,10 +51,24 @@ export async function pickQuestion(opts: {
   studentElo: number;
   exclude?: string[];
   targetMisconceptionId?: string | null;
+  /** when given, questions this student has never attempted are preferred */
+  studentId?: string;
 }): Promise<Question | null> {
   const where = [eq(s.questions.conceptId, opts.conceptId), eq(s.questions.status, "active")];
   if (opts.exclude?.length) where.push(notInArray(s.questions.id, opts.exclude));
   let pool = await db.select().from(s.questions).where(and(...where));
+  if (opts.studentId && pool.length) {
+    const seen = new Set(
+      (
+        await db
+          .select({ id: s.attempts.questionId })
+          .from(s.attempts)
+          .where(and(eq(s.attempts.studentId, opts.studentId), eq(s.attempts.conceptId, opts.conceptId)))
+      ).map((r) => r.id),
+    );
+    const unseen = pool.filter((q) => !seen.has(q.id));
+    if (unseen.length) pool = unseen;
+  }
   if (!pool.length && opts.exclude?.length) {
     pool = await db.select().from(s.questions).where(and(eq(s.questions.conceptId, opts.conceptId), eq(s.questions.status, "active")));
   }
@@ -69,8 +83,11 @@ export async function pickQuestion(opts: {
   return L.pickByDifficulty(opts.studentElo, pool);
 }
 
-/** Count active questions per difficulty band for the pool refill. */
-export async function poolSize(conceptId: string, band: "easy" | "medium" | "hard") {
+/**
+ * Count active questions per difficulty band for the pool refill.
+ * With studentId, counts only questions that student has never attempted, so heavy users keep getting fresh ones.
+ */
+export async function poolSize(conceptId: string, band: "easy" | "medium" | "hard", studentId?: string) {
   const range = band === "easy" ? [0, 1100] : band === "medium" ? [1100, 1350] : [1350, 5000];
   const [r] = await db
     .select({ n: sql<number>`count(*)::int` })
@@ -80,6 +97,9 @@ export async function poolSize(conceptId: string, band: "easy" | "medium" | "har
         eq(s.questions.conceptId, conceptId),
         eq(s.questions.status, "active"),
         sql`${s.questions.difficultyElo} >= ${range[0]} and ${s.questions.difficultyElo} < ${range[1]}`,
+        studentId
+          ? sql`not exists (select 1 from ${s.attempts} where ${s.attempts.studentId} = ${studentId} and ${s.attempts.questionId} = ${s.questions.id})`
+          : undefined,
       ),
     );
   return r?.n ?? 0;

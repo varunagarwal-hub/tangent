@@ -22,6 +22,8 @@ export function generatorPrompt(a: {
   target?: { id: string; name: string; description: string; contrast_question_idea: string } | null;
   misconceptions: { id: string; name: string }[];
   avoidStems?: string[];
+  /** optional scenario or problem style, to keep a large bank varied */
+  theme?: string;
   retryReason?: string;
 }) {
   const lines = [
@@ -43,8 +45,11 @@ export function generatorPrompt(a: {
         : `A student holding this misconception must get a clearly different number from the correct one.`,
     );
   }
+  if (a.theme) {
+    lines.push(``, `Setting / style for this question: ${a.theme}. Keep it natural and CAT-realistic.`);
+  }
   if (a.avoidStems?.length) {
-    lines.push(``, `Do not repeat these existing questions:`, ...a.avoidStems.slice(-8).map((s) => `- ${s.slice(0, 140)}`));
+    lines.push(``, `Do not repeat these existing questions (write a genuinely different situation and numbers):`, ...a.avoidStems.slice(-12).map((s) => `- ${s.slice(0, 140)}`));
   }
   if (a.retryReason) {
     lines.push(``, `Your previous draft was REJECTED by an independent verifier: ${a.retryReason}. Write a NEW question that avoids this problem; double-check the arithmetic.`);

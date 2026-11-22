@@ -143,7 +143,7 @@ export async function planNext(
   for (const c of cands.slice(0, 8)) {
     const elo = await studentElo(studentId, c.conceptId);
     const target = c.kind === "stretch" ? elo + 150 : elo;
-    const q = await pickQuestion({ conceptId: c.conceptId, studentElo: target, exclude, targetMisconceptionId: c.misconceptionId ?? null });
+    const q = await pickQuestion({ conceptId: c.conceptId, studentElo: target, exclude, targetMisconceptionId: c.misconceptionId ?? null, studentId });
     if (!q) continue;
 
     const top = cands.slice(0, 3).map((x) => `${x.kind.replace("_", " ")} ${x.conceptId} (${Math.round(x.score)})`).join(", ");

@@ -2973,5 +2973,1622 @@
     "verified": true,
     "targets_misconception_id": null,
     "distractor_misconceptions": []
+  },
+  {
+    "id": "6d9b4199-018e-4981-a919-a160254ddce0",
+    "spec": "A1-x2",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In a bakery recipe, the weight of flour used is $60\\%$ more than the weight of sugar used. By what percentage is the weight of sugar used less than the weight of flour used?",
+    "options": null,
+    "answer": "37.5",
+    "solution": "1. Let the weight of sugar used be $100\\text{ g}$.\n2. Since the weight of flour is $60\\%$ more than sugar, weight of flour $= 100 + 60 = 160\\text{ g}$.\n3. The difference in weight is $160 - 100 = 60\\text{ g}$.\n4. Required percentage by which sugar is less than flour $= \\left(\\frac{60}{160}\\right) \\times 100\\% = \\frac{3}{8} \\times 100\\% = 37.5\\%$.\n5. Therefore, the answer is 37.5.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "311133c8-d466-418b-899a-460f60ba103e",
+    "spec": "A1-x0",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "Due to a sudden influx of rainwater, the volume of water in a municipal storage tank increased by $30\\%$. Over the next week, heavy pumping for supply reduced the tank's water volume by $30\\%$. What is the net percentage change in the volume of water in the tank compared to its initial volume before the rain?",
+    "options": [
+      "No change",
+      "$9\\%$ decrease",
+      "$6.92\\%$ decrease",
+      "$9\\%$ increase"
+    ],
+    "answer": "$9\\%$ decrease",
+    "solution": "1. Let the initial volume of water in the tank be $100$ units.\n2. After the $30\\%$ increase, the volume becomes $100 \\times 1.30 = 130$ units.\n3. After the subsequent $30\\%$ reduction, the volume becomes $130 \\times (1 - 0.30) = 130 \\times 0.70 = 91$ units.\n4. Net change $= 91 - 100 = -9$ units, which is a decrease of $9\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "No change",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "$6.92\\%$ decrease",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "c88c4d2b-8aaa-4b57-97bf-fe1ad084257a",
+    "spec": "A1-x1",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In the $2011$ census, the population of a district was recorded as $8,00,000$. Over the next decade, the male population increased by $15\\%$ while the female population increased by $25\\%$. If the total population of the district increased by $21\\%$ in the $2021$ census, what was the female population of the district in $2011$?",
+    "options": [
+      "3,20,000",
+      "4,80,000",
+      "4,00,000",
+      "5,33,333"
+    ],
+    "answer": "4,80,000",
+    "solution": "1. Let $M$ and $F$ denote the male and female populations in $2011$ respectively, so $M + F = 8,00,000$.\n2. The overall percentage increase is a weighted average of the two group percentage increases: $15\\left(\\frac{M}{M+F}\\right) + 25\\left(\\frac{F}{M+F}\\right) = 21$.\n3. Using alligation, the ratio of male to female population in $2011$ is $\\frac{M}{F} = \\frac{25 - 21}{21 - 15} = \\frac{4}{6} = \\frac{2}{3}$.\n4. Thus, the female population in $2011$ was $\\frac{3}{2 + 3} \\times 8,00,000 = \\frac{3}{5} \\times 8,00,000 = 4,80,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "3,20,000",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "4,00,000",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "5,33,333",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "797bb01c-3504-4297-adf3-6cc37dd287fc",
+    "spec": "N3-0",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "What is the remainder when $2^{99}$ is divided by $36$?",
+    "options": [
+      "8",
+      "2",
+      "28",
+      "26"
+    ],
+    "answer": "8",
+    "solution": "1. Express the expression as a fraction: $\\frac{2^{99}}{36} = \\frac{2^2 \\times 2^{97}}{4 \\times 9} = \\frac{4 \\times 2^{97}}{4 \\times 9}$.\n2. Cancel the common factor of $4$ from both numerator and denominator to evaluate the remainder of $\\frac{2^{97}}{9}$.\n3. Note that $2^3 = 8 \\equiv -1 \\pmod 9$. Thus, $2^{97} = 2^{3 \\times 32 + 1} = (2^3)^{32} \\times 2^1 \\equiv (-1)^{32} \\times 2 \\equiv 1 \\times 2 \\equiv 2 \\pmod 9$.\n4. Restore the cancelled factor of $4$: the required remainder is $2 \\times 4 = 8$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "28",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  },
+  {
+    "id": "46ca5d54-52ee-4029-92fb-f42bbce5f4a6",
+    "spec": "A1-x3",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "An online delivery platform fulfilled $20\\%$ more orders in October than in September. However, due to delivery delays, the proportion of orders that received customer complaints increased from $5\\%$ of total orders in September to $8\\%$ of total orders in October. By what percentage did the number of orders with complaints increase from September to October?",
+    "options": [
+      "$3\\%$",
+      "$60\\%$",
+      "$92\\%$",
+      "$47.9\\%$"
+    ],
+    "answer": "$92\\%$",
+    "solution": "1. Let the total number of orders in September be $100$.\n2. Complaints in September $= 5\\%$ of $100 = 5$.\n3. Total orders in October $= 100 \\times 1.20 = 120$.\n4. Complaints in October $= 8\\%$ of $120 = 9.6$.\n5. Percentage increase in complaints $= \\frac{9.6 - 5}{5} \\times 100\\% = \\frac{4.6}{5} \\times 100\\% = 92\\%$.\n\nHence, the correct answer is $92\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$3\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$60\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$47.9\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "b60f162b-f70f-4dc0-b967-49f5e9a46005",
+    "spec": "A1-x4",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In 2020, electric trains accounted for $40\\%$ of the total passenger train journeys operated by a regional railway zone. By 2023, following extensive electrification, electric trains accounted for $54\\%$ of the total passenger train journeys. If the total number of passenger train journeys operated by the zone remained constant throughout this period, by what percentage did the number of electric train journeys increase?",
+    "options": [
+      "$14\\%$",
+      "$25.9\\%$",
+      "$35\\%$",
+      "$28\\%$"
+    ],
+    "answer": "$35\\%$",
+    "solution": "1. Let the total number of passenger train journeys operated be $100$.\n2. In 2020, the number of electric train journeys was $40\\%$ of $100 = 40$.\n3. In 2023, the number of electric train journeys was $54\\%$ of $100 = 54$.\n4. The increase in electric train journeys is $54 - 40 = 14$.\n5. Percentage increase $= \\frac{14}{40} \\times 100 = 35\\%$.\n6. The correct answer is $35\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": [
+      {
+        "option": "$14\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$25.9\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "359f23c0-04ea-4016-b3e9-0d9aee63cfb5",
+    "spec": "A1-x5",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In April, the total operating expenditure of a boutique was ₹$1,25,000$, of which $36\\%$ was spent on raw fabrics and the rest on utility and staff costs. In May, the expenditure on raw fabrics increased by $25\\%$, while the utility and staff costs decreased by $10\\%$. What was the boutique's total operating expenditure (in ₹) in May?",
+    "options": null,
+    "answer": "128250",
+    "solution": "1. Calculate April's breakdown:\n- Fabric cost in April = $36\\%$ of ₹$1,25,000 = 0.36 \\times 1,25,000 = ₹45,000$.\n- Utility and staff costs in April = ₹$1,25,000 - 45,000 = ₹80,000$.\n\n2. Calculate May's breakdown:\n- Fabric cost in May = $45,000 \\times 1.25 = ₹56,250$.\n- Utility and staff costs in May = $80,000 \\times (1 - 0.10) = 80,000 \\times 0.90 = ₹72,000$.\n\n3. Calculate total operating expenditure in May:\n- Total = $56,250 + 72,000 = ₹1,28,250$.\n\nFinal Answer: 128250",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "7b14f905-a781-4692-bade-3167e6d40eb2",
+    "spec": "A1-x6",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "During an end-of-season sale, a clothing retailer offers a promotional scheme: \\\"Buy $3$ shirts at their original marked price and get $2$ shirts of identical marked price free\\\". Additionally, a customer who pays using a specific bank card receives an extra flat cashback equal to $10\\%$ of the final bill amount paid at the checkout counter. Taking all discounts and cashback into account, what is the effective percentage reduction in the price paid per shirt by such a customer compared to its original marked price?",
+    "options": [
+      "46%",
+      "50%",
+      "85.19%",
+      "54%"
+    ],
+    "answer": "46%",
+    "solution": "1. Let the original marked price of one shirt be ₹$100$. The total marked price for $5$ shirts is $5 \\times 100 = ₹500$.\n2. Under the scheme, the customer pays for only $3$ shirts at the counter, so the bill amount paid is $3 \\times 100 = ₹300$.\n3. The customer receives a $10\\%$ cashback on this billed amount: $10\\% \\text{ of } 300 = ₹30$.\n4. Thus, the net amount paid for all $5$ shirts is $300 - 30 = ₹270$.\n5. The net effective cost per shirt is $\\frac{270}{5} = ₹54$.\n6. The original price per shirt was ₹$100$, so the reduction per shirt is $100 - 54 = ₹46$.\n7. The percentage reduction relative to the original price is $\\frac{46}{100} \\times 100\\% = 46\\%$.\n\nFinal Answer: 46%",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_WRONG_BASE_CHANGE",
+    "distractor_misconceptions": [
+      {
+        "option": "50%",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "85.19%",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      },
+      {
+        "option": "54%",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "e56c37d0-6d10-4165-af89-0d37b6479f99",
+    "spec": "A1-x8",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "During a three-day cultural festival, the entry ticket price was ₹$800$ on Day 1. On Day 2, the price was raised by $25\\%$. On Day 3, facing lower demand, the organizers reduced the Day 2 price by $20\\%$. Meanwhile, the total footfall on Day 2 was $10\\%$ higher than that on Day 1, but on Day 3 it dropped by $30\\%$ compared to Day 2. If the total ticketing revenue collected on Day 1 was ₹$16,00,000$, find the ticketing revenue (in ₹) collected on Day 3.",
+    "options": null,
+    "answer": "1232000",
+    "solution": "1. Find Day 1 footfall: Footfall on Day 1 = $\\frac{16,00,000}{800} = 2000$ visitors.\n2. Calculate Day 3 ticket price: Day 2 price = $800 \\times 1.25 = ₹1000$. Day 3 price = $1000 \\times (1 - 0.20) = ₹800$.\n3. Calculate Day 3 footfall: Day 2 footfall = $2000 \\times 1.10 = 2200$. Day 3 footfall = $2200 \\times (1 - 0.30) = 1540$.\n4. Compute Day 3 revenue: Revenue = Day 3 price $\\times$ Day 3 footfall = $800 \\times 1540 = ₹12,32,000$.\n\nFinal Answer: 1232000",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "28069594-4249-4d16-b3e9-090145bfe59d",
+    "spec": "A1-x7",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In an examination, the qualifying marks were set at $40\\%$ of the maximum marks. Following an evaluation revision, the maximum marks of the examination were reduced by $20\\%$, but the passing cutoff marks were kept unchanged. What is the new qualifying cutoff expressed as a percentage of the revised maximum marks, and by what percentage has this qualifying percentage increased over the original qualifying percentage?",
+    "options": [
+      "$50\\%$ and $25\\%$",
+      "$50\\%$ and $20\\%$",
+      "$50\\%$ and $10\\%$",
+      "$60\\%$ and $20\\%$"
+    ],
+    "answer": "$50\\%$ and $25\\%$",
+    "solution": "1. Let the original maximum marks be $100$.\n2. The original qualifying marks are $40\\%$ of $100 = 40$.\n3. After the revision, the new maximum marks are reduced by $20\\%$, so they become $100 - 20 = 80$.\n4. Since the passing cutoff marks remain unchanged at $40$, the new qualifying cutoff as a percentage of the revised maximum marks is $\\frac{40}{80} \\times 100 = 50\\%$.\n5. The qualifying percentage increased from $40\\%$ to $50\\%$. The percentage increase over the original qualifying percentage is $\\frac{50 - 40}{40} \\times 100 = \\frac{10}{40} \\times 100 = 25\\%$.\n6. Therefore, the required values are $50\\%$ and $25\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$50\\%$ and $20\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      },
+      {
+        "option": "$50\\%$ and $10\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$60\\%$ and $20\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "862f0e10-0e3c-44f9-bc94-fea15f9da41d",
+    "spec": "A1-x9",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In a T20 match, a batsman's strike rate in the death overs was $25\\%$ higher than his strike rate in the middle overs. By what percentage was his strike rate in the middle overs lower than that in the death overs?",
+    "options": [
+      "$25\\%$",
+      "$20\\%$",
+      "$33.33\\%$",
+      "$16.67\\%$"
+    ],
+    "answer": "$20\\%$",
+    "solution": "1. Let the batsman's strike rate in the middle overs be $100$.\n2. Then, his strike rate in the death overs is $100 + 25 = 125$.\n3. The difference between the two strike rates is $125 - 100 = 25$.\n4. The percentage by which the strike rate in the middle overs is lower than in the death overs is $\\frac{25}{125} \\times 100\\% = 20\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$16.67\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "e0ae350c-78e9-41c5-80da-7a19dd6086ec",
+    "spec": "A1-x10",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The monthly rent of a commercial showroom in South Delhi is $25\\%$ more than that of an identical showroom in Noida. By what percentage is the monthly rent of the Noida showroom less than that of the South Delhi showroom?",
+    "options": [
+      "$20\\%$",
+      "$25\\%$",
+      "$16.67\\%$",
+      "$33.33\\%$"
+    ],
+    "answer": "$20\\%$",
+    "solution": "1. Let the monthly rent of the showroom in Noida be ₹$100$.\n2. Since the rent in South Delhi is $25\\%$ more, the rent in South Delhi is $100 + 25 = ₹125$.\n3. The difference in rent is $125 - 100 = ₹25$.\n4. To find by what percentage Noida's rent is less than South Delhi's rent, South Delhi's rent must be taken as the base: $\\frac{25}{125} \\times 100 = 20\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "871e10ad-f5a1-4047-8d9f-407a071ae88f",
+    "spec": "A1-x12",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In 2022, organic wheat accounted for $16\\%$ of the total grain harvest in a district. In 2023, while the total grain harvest remained unchanged, organic wheat accounted for $22\\%$ of the total harvest. By what percentage did the production of organic wheat increase from 2022 to 2023?",
+    "options": [
+      "$6\\%$",
+      "$27.27\\%$",
+      "$37.5\\%$",
+      "$45\\%$"
+    ],
+    "answer": "$37.5\\%$",
+    "solution": "1. Let the total grain harvest in both years be $100$ quintals.\n2. In 2022, organic wheat production $= 16$ quintals. In 2023, organic wheat production $= 22$ quintals.\n3. The absolute increase in organic wheat production $= 22 - 16 = 6$ quintals.\n4. Percentage increase in organic wheat production $= \\frac{6}{16} \\times 100 = 37.5\\%$.\n5. Therefore, the production of organic wheat increased by $37.5\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": [
+      {
+        "option": "$6\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$27.27\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "2e1ce95b-289a-431d-8881-0f34d477b5c9",
+    "spec": "A1-x14",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "An investor's mutual fund portfolio had a net asset value of ₹$4,80,000$ at the beginning of the year. Due to a market downturn, the portfolio's value dropped to ₹$3,60,000$ by the end of the year. What was the percentage decrease in the value of the portfolio during the year?",
+    "options": null,
+    "answer": "25",
+    "solution": "1. Identify the initial value (base) and the final value: Initial value = ₹$4,80,000$, Final value = ₹$3,60,000$.\n2. Compute the absolute decrease in value: $4,80,000 - 3,60,000 = 1,20,000$.\n3. Calculate the percentage decrease by dividing the change by the initial value: $\\frac{1,20,000}{4,80,000} \\times 100\\% = \\frac{1}{4} \\times 100\\% = 25\\%$.\n(Note: Computing with respect to the new value gives $\\frac{1,20,000}{3,60,000} \\times 100\\% = 33.33\\%$, which is incorrect).\n4. The percentage decrease is 25.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_WRONG_BASE_CHANGE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "0fd77669-d0ff-4a78-bc0d-74873a48c658",
+    "spec": "A1-x13",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In an engineering college, the number of applicants increased by $20\\%$ from $2022$ to $2023$, and then decreased by $15\\%$ from $2023$ to $2024$. The college acceptance rate was $15\\%$ in $2022$, $12.5\\%$ in $2023$, and $16\\%$ in $2024$. By what percentage did the number of students admitted in $2024$ change compared to the number of students admitted in $2022$?",
+    "options": [
+      "Increased by $8.8\\%$",
+      "Decreased by $10.0\\%$",
+      "Increased by $5.0\\%$",
+      "Increased by $1.0\\%$"
+    ],
+    "answer": "Increased by $8.8\\%$",
+    "solution": "1. Let the number of applicants in $2022$ be $100$.\n2. The number of students admitted in $2022 = 15\\% \\text{ of } 100 = 15$.\n3. In $2023$, applicants $= 100 \\times 1.20 = 120$.\n4. In $2024$, applicants $= 120 \\times (1 - 0.15) = 120 \\times 0.85 = 102$.\n5. The number of students admitted in $2024 = 16\\% \\text{ of } 102 = 0.16 \\times 102 = 16.32$.\n6. Percentage change in admissions from $2022$ to $2024 = \\frac{16.32 - 15}{15} \\times 100\\% = \\frac{1.32}{15} \\times 100\\% = 8.8\\%$.\n7. Therefore, the number of admitted students increased by $8.8\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "Increased by $5.0\\%$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "Increased by $1.0\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "Decreased by $10.0\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "4ea10a3c-3a11-4b78-8f2a-fc3e274f642a",
+    "spec": "A1-x15",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "Due to highway driving conditions, the fuel efficiency of a car improved from $16\\text{ km/litre}$ in city traffic to $20\\text{ km/litre}$ on the expressway. By what percentage did the car's fuel consumption (in litres per km) decrease?",
+    "options": [
+      "16.67%",
+      "20%",
+      "25%",
+      "4%"
+    ],
+    "answer": "20%",
+    "solution": "1. Fuel consumption per kilometre is the reciprocal of fuel efficiency (mileage). In city traffic, fuel consumption is $\\frac{1}{16}\\text{ litres/km}$. On the expressway, it is $\\frac{1}{20}\\text{ litres/km}$.\n2. The decrease in fuel consumption is $\\frac{1}{16} - \\frac{1}{20} = \\frac{5 - 4}{80} = \\frac{1}{80}\\text{ litres/km}$.\n3. Percentage decrease $= \\frac{\\frac{1}{80}}{\\frac{1}{16}} \\times 100 = \\frac{16}{80} \\times 100 = 20\\%$.\n\nAlternatively, efficiency increased by $\\frac{20 - 16}{16} = 25\\% = \\frac{1}{4}$. Since consumption is inversely proportional to efficiency, consumption becomes $\\frac{1}{1 + 1/4} = \\frac{4}{5}$ of its original value, which is a reduction of $\\frac{1}{5}$ or $20\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25%",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "16.67%",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      },
+      {
+        "option": "4%",
+        "misconception_id": "A1_PERCENT_POINTS"
+      }
+    ]
+  },
+  {
+    "id": "55348297-eb4b-4354-bb91-d2b9c273df5f",
+    "spec": "A1-x11",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In an IT firm, an employee's gross monthly salary consists of basic pay and allowances. Initially, the basic pay accounted for $65\\%$ of the gross salary. Following an annual compensation revision, the basic pay was increased by $20\\%$, while the allowances were increased by $10\\%$. What is the overall percentage increase in the employee's gross monthly salary?",
+    "options": null,
+    "answer": "16.5",
+    "solution": "1. Let the initial gross monthly salary be ₹$100$.\n2. The initial basic pay is $65\\%$ of ₹$100 =$ ₹$65$, and the initial allowances are ₹$100 - 65 =$ ₹$35$.\n3. The basic pay increases by $20\\%$: Increase in basic pay $= 0.20 \\times 65 =$ ₹$13$.\n4. The allowances increase by $10\\%$: Increase in allowances $= 0.10 \\times 35 =$ ₹$3.5$.\n5. Total increase in gross monthly salary $= 13 + 3.5 =$ ₹$16.5$.\n6. Percentage increase in gross salary $= \\frac{16.5}{100} \\times 100\\% = 16.5\\%$. Thus, the answer is 16.5.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f13ca396-8abb-457f-be0e-63a6b9957931",
+    "spec": "A1-x16",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In a municipal constituency, the total number of registered voters increased by $20\\%$ from 2014 to 2019, and then increased further by $25\\%$ from 2019 to 2024. In the 2014 election, Candidate A secured $40\\%$ of the total registered votes. In the 2024 election, Candidate A secured $36\\%$ of the total registered votes. What was the percentage change in the absolute number of votes secured by Candidate A from 2014 to 2024?",
+    "options": [
+      "$18\\%$ decrease",
+      "$15\\%$ increase",
+      "$35\\%$ increase",
+      "$31\\%$ decrease"
+    ],
+    "answer": "$35\\%$ increase",
+    "solution": "1. Let the total number of registered voters in 2014 be $100$.\n2. Total voters in 2024 $= 100 \\times 1.20 \\times 1.25 = 100 \\times 1.50 = 150$.\n3. Votes secured by Candidate A in 2014 $= 40\\%$ of $100 = 40$.\n4. Votes secured by Candidate A in 2024 $= 36\\%$ of $150 = 54$.\n5. Percentage change in votes secured by Candidate A $= \\frac{54 - 40}{40} \\times 100\\% = \\frac{14}{40} \\times 100\\% = 35\\%$ increase.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "$15\\%$ increase",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "$18\\%$ decrease",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$31\\%$ decrease",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "5797c640-4cf2-426f-b0a9-d9840f1e20d6",
+    "spec": "A1-x20",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In a bakery, a chef adjusts a cake batter recipe. In the original recipe, sugar accounts for $16\\%$ of the total weight of the batter. In the revised recipe, the proportion of sugar is increased to $20\\%$ of the total weight. By what percentage has the proportion of sugar in the batter increased?",
+    "options": null,
+    "answer": "25",
+    "solution": "1. The original proportion of sugar is $16\\%$.\n2. The new proportion of sugar is $20\\%$.\n3. The absolute increase in proportion is $20\\% - 16\\% = 4$ percentage points.\n4. The percentage increase relative to the original proportion is $\\frac{4}{16} \\times 100\\% = 25\\%$.\n\nFinal Answer: 25",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "7f0de6de-8ae9-4017-b867-e991a4e547c5",
+    "spec": "A1-x19",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "According to the municipal census of a township, the population of Zone A is $60\\%$ more than the population of Zone B. By what percentage is the population of Zone B less than that of Zone A?",
+    "options": [
+      "$37.5\\%$",
+      "$60.0\\%$",
+      "$62.5\\%$",
+      "$40.0\\%$"
+    ],
+    "answer": "$37.5\\%$",
+    "solution": "1. Let the population of Zone B be $100$.\n2. Since Zone A has $60\\%$ more population than Zone B, the population of Zone A is $100 + 60 = 160$.\n3. The difference in population is $160 - 100 = 60$.\n4. The required percentage by which Zone B is less than Zone A is calculated on the base of Zone A: $\\frac{60}{160} \\times 100 = \\frac{3}{8} \\times 100 = 37.5\\%$.\n5. Thus, the population of Zone B is $37.5\\%$ less than that of Zone A.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$60.0\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$62.5\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "3bc5944a-18d6-4df5-8d07-86b538f8b581",
+    "spec": "A1-x18",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "An overhead water tank is supplied by two inlet pipes, A and B. Pipe A can fill the tank in a certain number of hours, while Pipe B's flow rate (in litres per hour) is $40\\%$ higher than that of Pipe A. Due to an operational bottleneck, the flow rate of Pipe B drops so that it takes the same amount of time to fill the tank as Pipe A originally took. By what percentage was Pipe B's flow rate reduced?",
+    "options": [
+      "$28.57\\%$",
+      "$40\\%$",
+      "$66.67\\%$",
+      "$71.43\\%$"
+    ],
+    "answer": "$28.57\\%$",
+    "solution": "1. Let the original flow rate of Pipe A be $r_A = 100$ litres/hour.\n2. Since Pipe B's flow rate is $40\\%$ higher than Pipe A's, the original flow rate of Pipe B is $r_B = 140$ litres/hour.\n3. To fill the tank in the same time as Pipe A originally did, Pipe B's new flow rate must equal Pipe A's original flow rate, which is $100$ litres/hour.\n4. The reduction in Pipe B's rate is $140 - 100 = 40$ litres/hour.\n5. Percentage reduction in Pipe B's flow rate = $\\frac{40}{140} \\times 100\\% = \\frac{2}{7} \\times 100\\% \\approx 28.57\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": [
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$71.43\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "7ddfca77-4980-4b54-98e1-8d70d00a05c2",
+    "spec": "A1-x22",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "With the opening of a new expressway, the travel time of an intercity passenger bus between two towns was reduced from $7.5\\text{ hours}$ to $6\\text{ hours}$. By what percentage was the travel time reduced?",
+    "options": [
+      "$15.0\\%$",
+      "$20.0\\%$",
+      "$22.5\\%$",
+      "$25.0\\%$"
+    ],
+    "answer": "$20.0\\%$",
+    "solution": "1. Find the absolute decrease in travel time: $7.5 - 6 = 1.5\\text{ hours}$.\n2. Compute the percentage decrease relative to the original travel time: $\\frac{1.5}{7.5} \\times 100\\% = \\frac{1}{5} \\times 100\\% = 20.0\\%$.\n3. The travel time was reduced by $20.0\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_WRONG_BASE_CHANGE",
+    "distractor_misconceptions": [
+      {
+        "option": "$25.0\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "1c972876-c096-4d43-8f5a-fb42cc7b2fec",
+    "spec": "A1-x21",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "An online grocery delivery platform recorded that the average order value increased by $20\\%$ in October compared to September, while the total number of orders placed decreased by $15\\%$. In November, the platform offered free deliveries, which resulted in a further $25\\%$ increase in the total number of orders compared to October, but the average order value dropped by $10\\%$ compared to October. What was the overall percentage change in the platform's total gross revenue from September to November?",
+    "options": [
+      "$14.75\\%$ increase",
+      "$20\\%$ increase",
+      "$12.85\\%$ increase",
+      "$16.25\\%$ increase"
+    ],
+    "answer": "$14.75\\%$ increase",
+    "solution": "1. Gross Revenue is given by $\\text{Gross Revenue} = \\text{Total Orders} \\times \\text{Average Order Value}$.\n2. Let the number of orders in September be $N_0$ and the average order value in September be $V_0$. The September revenue is $R_0 = N_0 \\times V_0$.\n3. In October:\n- Orders: $N_1 = 0.85 N_0$\n- Value: $V_1 = 1.20 V_0$\n- Revenue in October: $R_1 = 0.85 \\times 1.20 \\times R_0 = 1.02 R_0$.\n4. In November:\n- Orders: $N_2 = 1.25 N_1 = 1.25 \\times 0.85 N_0 = 1.0625 N_0$\n- Value: $V_2 = 0.90 V_1 = 0.90 \\times 1.20 V_0 = 1.08 V_0$\n- Revenue in November: $R_2 = 1.0625 \\times 1.08 \\times R_0 = 1.1475 R_0$.\n5. The overall percentage change from September to November is $(1.1475 - 1) \\times 100\\% = 14.75\\%$ increase.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$ increase",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "$12.85\\%$ increase",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "cb29da96-8315-4a95-b52e-afec469449fd",
+    "spec": "A1-x24",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "During a festive sale, a retail store marked up the original price of a leather jacket by $30\\%$. As the jacket remained unsold after two weeks, the store offered a discount of $30\\%$ on the marked-up price. If a customer finally bought the jacket for ₹$3,640$, what was its original price before any markup?",
+    "options": [
+      "₹$3,640$",
+      "₹$4,000$",
+      "₹$4,200$",
+      "₹$3,960$"
+    ],
+    "answer": "₹$4,000$",
+    "solution": "1. Let the original price of the leather jacket be ₹$P$.\n2. After a markup of $30\\%$, the marked price becomes $P \\times \\left(1 + \\frac{30}{100}\\right) = 1.3P$.\n3. A discount of $30\\%$ is applied on this marked price, making the final selling price $1.3P \\times \\left(1 - \\frac{30}{100}\\right) = 1.3P \\times 0.7 = 0.91P$.\n4. Given that the selling price is ₹$3,640$, we have $0.91P = 3640 \\implies P = \\frac{3640}{0.91} = 4000$.\n5. Hence, the original price was ₹$4,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$3,640$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      }
+    ]
+  },
+  {
+    "id": "048f6129-977a-4532-92d1-49c26a6cdb90",
+    "spec": "A1-x25",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In a midterm examination, Rohit scored $40\\%$ more marks than Aniket. By what percentage were Aniket's marks lower than Rohit's marks?",
+    "options": [
+      "$28.57\\%$",
+      "$40\\%$",
+      "$66.67\\%$",
+      "$42.86\\%$"
+    ],
+    "answer": "$28.57\\%$",
+    "solution": "1. Let Aniket's marks be $100$.\n2. Since Rohit scored $40\\%$ more than Aniket, Rohit's marks $= 100 + 40 = 140$.\n3. The difference in their marks is $140 - 100 = 40$.\n4. The required percentage by which Aniket's marks are lower than Rohit's is $\\frac{40}{140} \\times 100 = \\frac{2}{7} \\times 100 \\approx 28.57\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$42.86\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "1ad52bf7-3d93-451a-b044-c11f88e6ac9c",
+    "spec": "A1-x27",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In a T20 cricket tournament, a batsman scored $40\\%$ of his team's total runs in Match 1, and in Match 2, he scored $50\\%$ of his team's total runs. If the team's total runs in Match 2 was $20\\%$ higher than that in Match 1, by what percentage did the batsman's own score increase from Match 1 to Match 2?",
+    "options": [
+      "30%",
+      "50%",
+      "25%",
+      "33.33%"
+    ],
+    "answer": "50%",
+    "solution": "1. Let the team's total score in Match 1 be $100$ runs.\n2. In Match 1, the batsman scored $40\\%$ of $100 = 40$ runs.\n3. The team's total score in Match 2 was $20\\%$ higher than in Match 1, which is $100 \\times 1.20 = 120$ runs.\n4. In Match 2, the batsman scored $50\\%$ of $120 = 60$ runs.\n5. The increase in the batsman's score is $60 - 40 = 20$ runs.\n6. The percentage increase is $\\frac{20}{40} \\times 100 = 50\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "30%",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "25%",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "33.33%",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "b4533058-8e8d-4e3a-be34-6e00284c14cb",
+    "spec": "A1-x28",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In 2020, a real estate firm spent $16\\%$ of its annual revenue on commercial office rent. In 2021, the firm's total revenue increased by $25\\%$, while the actual rent paid increased by $75\\%$. The share of rent in the firm's total revenue increased from 2020 to 2021 by what percentage?",
+    "options": [
+      "$40\\%$",
+      "$6.4\\%$",
+      "$28.57\\%$",
+      "$44\\%$"
+    ],
+    "answer": "$40\\%$",
+    "solution": "1. Let total revenue in 2020 be ₹$100$. Then, the rent paid in 2020 was $16\\%$ of ₹$100$ = ₹$16$.\n2. In 2021, total revenue grew by $25\\%$, becoming $100 \\times 1.25 =$ ₹$125$.\n3. In 2021, the rent paid grew by $75\\%$, becoming $16 \\times 1.75 =$ ₹$28$.\n4. Thus, the share of rent in revenue in 2021 was $\\frac{28}{125} \\times 100 = 22.4\\%$.\n5. The share changed from $16\\%$ to $22.4\\%$. The percentage increase in this share is $\\frac{22.4 - 16}{16} \\times 100 = \\frac{6.4}{16} \\times 100 = 40\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": [
+      {
+        "option": "$6.4\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$28.57\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "f3f07cb4-b5fc-4719-adca-6c989fdbc44d",
+    "spec": "A1-x29",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "An analyst's monthly salary was revised twice in a year. First, it was increased by $25\\%$, and later in the year, it was reduced by $12\\%$. If the final monthly salary is ₹$66,000$, find the analyst's initial monthly salary (in ₹).",
+    "options": null,
+    "answer": "60000",
+    "solution": "1. Let the initial monthly salary be $S$.\n2. After an increase of $25\\%$, the salary becomes $S \\times \\left(1 + \\frac{25}{100}\\right) = 1.25S = \\frac{5}{4}S$.\n3. After a subsequent reduction of $12\\%$, the salary becomes $\\frac{5}{4}S \\times \\left(1 - \\frac{12}{100}\\right) = \\frac{5}{4}S \\times 0.88 = 1.10S$.\n4. Equating to the final salary: $1.10S = 66000$, which gives $S = \\frac{66000}{1.1} = 60000$.\n5. The initial monthly salary is 60000.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "02ae891a-d041-4130-96d9-f79439151844",
+    "spec": "A1-x30",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "Due to deficient monsoon rains, the wheat yield on a farm dropped from $250\\text{ quintals}$ in the previous season to $200\\text{ quintals}$ in the current season. By what percentage did the wheat yield decrease?",
+    "options": [
+      "$20\\%$",
+      "$25\\%$",
+      "$50\\%$",
+      "$16.67\\%$"
+    ],
+    "answer": "$20\\%$",
+    "solution": "1. Initial yield $= 250\\text{ quintals}$ and final yield $= 200\\text{ quintals}$.\n2. Decrease in yield $= 250 - 200 = 50\\text{ quintals}$.\n3. Percentage decrease is calculated with respect to the initial yield: $\\frac{50}{250} \\times 100 = 20\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_WRONG_BASE_CHANGE",
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "c3cd4812-ae20-4880-b8b2-62f292976bb4",
+    "spec": "A1-x31",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In an engineering college, the annual tuition fee was increased by $20\\%$ at the beginning of the academic year. After student protests, the administration decided to offer a scholarship that effectively reduced the new tuition fee by $20\\%$. If a student's family now pays ₹$96,000$ per year, how much tuition fee would they have paid originally?",
+    "options": [
+      "₹$96,000$",
+      "₹$1,00,000$",
+      "₹$1,04,000$",
+      "₹$80,000$"
+    ],
+    "answer": "₹$1,00,000$",
+    "solution": "1. Let the original tuition fee be ₹$x$.\n2. After an increase of $20\\%$, the fee becomes $x \\times 1.20$.\n3. A discount/reduction of $20\\%$ on the new fee gives the final fee: $1.20x \\times (1 - 0.20) = 1.20x \\times 0.80 = 0.96x$.\n4. We are given $0.96x = 96,000$, which gives $x = \\frac{96,000}{0.96} = 1,00,000$.\n5. Therefore, the original fee was ₹$1,00,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$96,000$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "₹$1,04,000$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "₹$80,000$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "074aa030-a317-4563-8507-4db6f1244ef8",
+    "spec": "A1-x32",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "An investor allocated a fixed sum of money to a mutual fund scheme. In the first year, the value of the investment grew by $40\\%$. In the second year, due to market volatility, the value of the investment decreased by $30\\%$. In the third year, the value increased again by $20\\%$. If the value of the investment at the end of the third year was ₹$58,800$, find the initial amount (in ₹) invested by the person.",
+    "options": null,
+    "answer": "50000",
+    "solution": "1. Let the initial investment be $P$ rupees.\n2. In the first year, value increases by $40\\%$, so it becomes $P \\times 1.40$.\n3. In the second year, value decreases by $30\\%$, so it becomes $(P \\times 1.40) \\times (1 - 0.30) = P \\times 1.40 \\times 0.70 = 0.98P$.\n4. In the third year, value increases by $20\\%$, so it becomes $0.98P \\times 1.20 = 1.176P$.\n5. Given that $1.176P = 58800$.\n6. Solving for $P$: $P = \\frac{58800}{1.176} = \\frac{58800000}{1176} = 50000$.\n\nFinal Answer: 50000",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "d37f563d-6c68-4ea1-835c-2b48b8a2e411",
+    "spec": "A1-x17",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In a manufacturing unit, a machine produces electronic components. In the first quarter of the year, $5\\%$ of the total components produced were found to be defective. In the second quarter, total production increased by $20\\%$, but improved calibration reduced the defect rate to $3\\%$ of the components produced in that quarter. What is the percentage decrease in the absolute number of defective components produced in the second quarter compared to the first quarter?",
+    "options": null,
+    "answer": "28",
+    "solution": "1. Let the total production in the first quarter be $100$ units.\n2. In the first quarter, the number of defective components is $5\\%$ of $100 = 5$.\n3. In the second quarter, total production increases by $20\\%$, so it becomes $100 \\times 1.20 = 120$ units.\n4. Defective components in the second quarter are $3\\%$ of $120 = 3.6$ units.\n5. The absolute decrease in defective components is $5 - 3.6 = 1.4$.\n6. Percentage decrease $= \\left(\\frac{1.4}{5}\\right) \\times 100 = 28\\%$.\n\nFinal Answer: 28",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "1241c592-991e-4a09-96a5-a7e1b4d99335",
+    "spec": "A1-x26",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "During a cultural festival, the organisers initially planned a standard duration for each musical performance. However, due to time constraints, the duration of each performance had to be reduced so that the number of performances staged per hour increased by $60\\%$. Later, in the evening session, the organizers relaxed the schedule and increased the duration of each performance by $25\\%$ compared to its afternoon duration. By what percentage is the evening duration of each performance less than the originally planned duration?",
+    "options": null,
+    "answer": "21.875",
+    "solution": "1. Let the original planned duration of a performance be $T_0$. The original rate of performances per hour is $R_0 = \\frac{1}{T_0}$.\n2. The afternoon rate increases by $60\\%$, so $R_1 = 1.60 R_0 = \\frac{8}{5} R_0$.\n3. Since duration is inversely proportional to rate, the afternoon duration is $T_1 = \\frac{1}{R_1} = \\frac{5}{8} T_0 = 0.625 T_0$.\n4. In the evening, the duration is increased by $25\\%$ over the afternoon duration: $T_2 = 1.25 \\times T_1 = \\frac{5}{4} \\times \\frac{5}{8} T_0 = \\frac{25}{32} T_0 = 0.78125 T_0$.\n5. The percentage reduction from the original duration is $(1 - 0.78125) \\times 100\\% = 0.21875 \\times 100\\% = 21.875\\%$.\n6. Final answer: 21.875",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "34bead43-abde-4cac-85fe-848e277e5128",
+    "spec": "A1-x34",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "In a municipal council election between two candidates, Amit and Bhavesh, Amit secured $25\\%$ more votes than Bhavesh. By what percentage was the number of votes secured by Bhavesh less than that secured by Amit?",
+    "options": [
+      "$25\\%$",
+      "$20\\%$",
+      "$16.67\\%$",
+      "$33.33\\%$"
+    ],
+    "answer": "$20\\%$",
+    "solution": "1. Let the number of votes secured by Bhavesh be $100$.\n2. Since Amit secured $25\\%$ more votes than Bhavesh, Amit's votes $= 100 + 25 = 125$.\n3. The difference in votes is $125 - 100 = 25$.\n4. The required percentage by which Bhavesh's votes are less than Amit's votes is calculated with Amit's votes as the base: $\\frac{25}{125} \\times 100 = 20\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_BASE_SWAP",
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "450ece08-4254-4446-93fc-8c4b9cf2af19",
+    "spec": "A1-x33",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "The price of petrol increased by $25\\%$. Consequently, Rohan reduced his monthly travel distance by $10\\%$. Due to engine maintenance, his car's mileage (in km per litre) also improved by $20\\%$. By what percentage did his monthly expenditure on petrol change?",
+    "options": [
+      "Decreases by $6.25\\%$",
+      "Decreases by $5\\%$",
+      "Increases by $35\\%$",
+      "Decreases by $6.67\\%$"
+    ],
+    "answer": "Decreases by $6.25\\%$",
+    "solution": "1. Let initial price be $P$, initial distance be $D$, and initial mileage be $M$ km/litre.\n2. Initial fuel consumed $= \\frac{D}{M}$, and initial expenditure $E_1 = P \\times \\frac{D}{M}$.\n3. The new price is $P' = 1.25P = \\frac{5}{4}P$.\n4. The new distance is $D' = 0.90D = \\frac{9}{10}D$.\n5. The new mileage is $M' = 1.20M = \\frac{6}{5}M$.\n6. The new expenditure $E_2 = P' \\times \\frac{D'}{M'} = \\left(\\frac{5}{4}P\\right) \\times \\frac{\\frac{9}{10}D}{\\frac{6}{5}M} = P \\times \\frac{D}{M} \\times \\left(\\frac{5}{4} \\times \\frac{9}{10} \\times \\frac{5}{6}\\right) = E_1 \\times \\frac{15}{16} = 0.9375 E_1$.\n7. Percentage change in expenditure $= \\frac{0.9375 - 1}{1} \\times 100\\% = -6.25\\%$, which is a decrease of $6.25\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "Decreases by $5\\%$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "Increases by $35\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "Decreases by $6.67\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "fa341a8b-ec53-49a7-a2eb-ae204dc00f54",
+    "spec": "A1-x35",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In an automobile assembly factory, the daily output of cars increased by $25\\%$ after a machinery upgrade. However, due to a supply chain disruption the following month, the daily output decreased by $20\\%$ from the upgraded level. If the factory produced $450$ cars per day after the disruption, what was its original daily output of cars before the machinery upgrade?",
+    "options": null,
+    "answer": "450",
+    "solution": "1. Let the original daily output of cars be $x$.\n2. After the $25\\%$ increase, daily output became $x \\times \\left(1 + \\frac{25}{100}\\right) = 1.25x = \\frac{5}{4}x$.\n3. After a subsequent $20\\%$ decrease, daily output became $\\frac{5}{4}x \\times \\left(1 - \\frac{20}{100}\\right) = \\frac{5}{4}x \\times \\frac{4}{5} = x$.\n4. Since the final output is given as $450$ cars per day, we have $x = 450$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "80e3cd7c-f22d-4795-a6b9-e66d2634027c",
+    "spec": "A1-x38",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In a commercial bakery, a chef prepared a large batch of cake batter containing flour, sugar, and butter. Initially, the weight of sugar was $20\\%$ of the total weight of the batter. To adjust the sweetness and texture, the chef added some more flour and butter to the mixture, without altering the quantity of sugar. As a result, the total weight of the batter increased to $150\\text{ kg}$, and sugar now accounted for only $16\\%$ of the total mixture. What was the percentage increase in the total weight of the batter?",
+    "options": null,
+    "answer": "25",
+    "solution": "1. Sugar content remains unchanged throughout the process.\n2. In the final mixture of $150\\text{ kg}$, sugar constitutes $16\\%$, which is $0.16 \\times 150 = 24\\text{ kg}$.\n3. Since the quantity of sugar was originally $20\\%$ of the initial batter weight $W_{\\text{initial}}$, we have $0.20 \\times W_{\\text{initial}} = 24$, giving $W_{\\text{initial}} = 120\\text{ kg}$.\n4. The increase in total weight is $150 - 120 = 30\\text{ kg}$.\n5. The percentage increase is calculated on the initial weight: $\\frac{30}{120} \\times 100\\% = 25\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_WRONG_BASE_CHANGE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "bb5e2586-9a52-4d88-a617-da60bf59c6ca",
+    "spec": "A1-x37",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "According to municipal census data, the population of a town increased by $20\\%$ from the end of $2021$ to the end of $2022$. Due to migration and industrial slowdown, the population decreased by $15\\%$ from the end of $2022$ to the end of $2023$. What was the net percentage change in the population of the town over this two-year period?",
+    "options": [
+      "$5\\%$ increase",
+      "$2\\%$ increase",
+      "$1.96\\%$ increase",
+      "$5\\%$ decrease"
+    ],
+    "answer": "$2\\%$ increase",
+    "solution": "1. Let the population of the town at the end of $2021$ be $100$.\n2. At the end of $2022$, after a $20\\%$ increase, the population became $100 \\times 1.20 = 120$.\n3. At the end of $2023$, after a $15\\%$ decrease on the $2022$ population, the population became $120 \\times (1 - 0.15) = 120 \\times 0.85 = 102$.\n4. The net change from $2021$ to $2023$ is $\\frac{102 - 100}{100} \\times 100\\% = 2\\%$ increase.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$5\\%$ increase",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      },
+      {
+        "option": "$1.96\\%$ increase",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "2478184d-c2cd-4c7d-b43c-3f3db3c4f2d7",
+    "spec": "A1-x39",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "During a festive sale week, an e-commerce platform recorded $60\\%$ more daily delivery orders than it did during a regular week. By what percentage is the number of daily delivery orders in a regular week less than that during the festive sale week?",
+    "options": [
+      "$60\\%$",
+      "$37.5\\%$",
+      "$40\\%$",
+      "$62.5\\%$"
+    ],
+    "answer": "$37.5\\%$",
+    "solution": "1. Let the number of daily delivery orders during a regular week be $100$.\n2. During the festive sale week, the orders increase by $60\\%$, making it $100 + 60 = 160$.\n3. The shortfall of regular week orders compared to festive week orders is $160 - 100 = 60$.\n4. Required percentage difference with respect to the festive week is $\\frac{60}{160} \\times 100 = \\frac{3}{8} \\times 100 = 37.5\\%$.\n5. Hence, the correct answer is $37.5\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$60\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      },
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$62.5\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      }
+    ]
+  },
+  {
+    "id": "9fa8cff7-3955-42af-8d79-446bba765ed5",
+    "spec": "A2-x0",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a college library, the ratio of the number of physics books to mathematics books is $3 : 5$, and the ratio of the number of mathematics books to chemistry books is $4 : 7$. What is the ratio of the number of physics books to chemistry books?",
+    "options": [
+      "$12 : 35$",
+      "$3 : 7$",
+      "$35 : 12$",
+      "$15 : 28$"
+    ],
+    "answer": "$12 : 35$",
+    "solution": "1. Let $P$, $M$, and $C$ denote the number of physics, mathematics, and chemistry books respectively.\n2. We are given $P : M = 3 : 5$ and $M : C = 4 : 7$.\n3. To find $P : C$, multiply the ratios: $\\frac{P}{C} = \\frac{P}{M} \\times \\frac{M}{C} = \\frac{3}{5} \\times \\frac{4}{7} = \\frac{12}{35}$.\n4. Thus, the ratio of physics books to chemistry books is $12 : 35$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_CHAIN_WITHOUT_LCM",
+    "distractor_misconceptions": [
+      {
+        "option": "$3 : 7$",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "$35 : 12$",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "5eb3644a-212a-41f5-9e25-bab900bd3e54",
+    "spec": "A1-x23",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In financial year $2022\\text{--}23$, a manufacturing enterprise incurred an expenditure divided into raw materials, labour, and overheads in the ratio $5 : 3 : 2$. In $2023\\text{--}24$, raw material costs increased by $20\\%$, labour costs increased by $30\\%$, while overhead expenses decreased by $10\\%$. If the total expenditure of the enterprise in $2023\\text{--}24$ was ₹$58,50,000$, find the raw material expenditure (in ₹) in $2022\\text{--}23$.",
+    "options": null,
+    "answer": "2500000",
+    "solution": "1. Let the expenditures in $2022\\text{--}23$ on raw materials, labour, and overheads be $5x$, $3x$, and $2x$ respectively. Total expenditure in $2022\\text{--}23$ was $5x + 3x + 2x = 10x$.\n2. In $2023\\text{--}24$, the components change as follows:\n- Raw materials: $5x \\times 1.20 = 6x$\n- Labour: $3x \\times 1.30 = 3.9x$\n- Overheads: $2x \\times 0.90 = 1.8x$\n3. Total expenditure in $2023\\text{--}24 = 6x + 3.9x + 1.8x = 11.7x$.\n4. We are given $11.7x = 58,50,000$, which gives $x = \\frac{58,50,000}{11.7} = 5,00,000$.\n5. The raw material expenditure in $2022\\text{--}23$ was $5x = 5 \\times 5,00,000 = 25,00,000$.\n\nFinal Answer: 2500000",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "9d5e5574-9b15-4186-a5b3-cfe31a08dafb",
+    "spec": "A2-x2",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "Two cars, $X$ and $Y$, covered equal distances on a highway. The fuel consumed by car $X$ in litres multiplied by $3$ equals the fuel consumed by car $Y$ in litres multiplied by $5$. If both cars together consumed a total of $96$ litres of fuel for this journey, how many litres of fuel were consumed by car $X$?",
+    "options": null,
+    "answer": "60",
+    "solution": "1. Let the fuel consumed by car $X$ and car $Y$ be $x$ litres and $y$ litres, respectively.\n2. According to the problem, $3x = 5y$, which gives the ratio of fuel consumption as $\\frac{x}{y} = \\frac{5}{3}$ or $x : y = 5 : 3$.\n3. The total fuel consumed is $x + y = 96$ litres.\n4. Therefore, the fuel consumed by car $X$ is $\\frac{5}{5 + 3} \\times 96 = \\frac{5}{8} \\times 96 = 60$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_INVERT_WHEN_COMBINING",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "3f2d2632-5d29-4bc8-b461-33a534e828cb",
+    "spec": "A1-x36",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "A chemical processing plant has two water tanks, $A$ and $B$, of equal total capacity. Initially, Tank $A$ is filled to $24\\%$ of its capacity, and Tank $B$ is filled to $40\\%$ of its capacity. Fresh water is pumped continuously into Tank $A$ via an inlet pipe until the volume of water in Tank $A$ reaches the initial volume of water in Tank $B$. By what percentage did the water level in Tank $A$, measured as a percentage of its total capacity, increase?",
+    "options": [
+      "$16\\%$",
+      "$40\\%$",
+      "$66\\frac{2}{3}\\%$",
+      "$28\\frac{4}{7}\\%$"
+    ],
+    "answer": "$66\\frac{2}{3}\\%$",
+    "solution": "1. Let the capacity of each tank be $100$ litres.\n2. Initial volume in Tank $A = 24$ litres ($24\\%$ of capacity). Initial volume in Tank $B = 40$ litres ($40\\%$ of capacity).\n3. Water is pumped into Tank $A$ until it contains $40$ litres, which is $40\\%$ of its capacity.\n4. The initial water level percentage is $24\\%$, and the final water level percentage is $40\\%$.\n5. Percentage increase in the water level percentage is $\\frac{40 - 24}{24} \\times 100 = \\frac{16}{24} \\times 100 = \\frac{2}{3} \\times 100 = 66\\frac{2}{3}\\%$.\n\nHence, the correct answer is $66\\frac{2}{3}\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_PERCENT_POINTS",
+    "distractor_misconceptions": [
+      {
+        "option": "$16\\%$",
+        "misconception_id": "A1_PERCENT_POINTS"
+      },
+      {
+        "option": "$28\\frac{4}{7}\\%$",
+        "misconception_id": "A1_WRONG_BASE_CHANGE"
+      },
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A1_BASE_SWAP"
+      }
+    ]
+  },
+  {
+    "id": "85cad404-9c88-4b32-8904-8666a5447d15",
+    "spec": "A2-x4",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a manufacturing unit, the numbers of steel bolts and brass bolts produced in the morning shift were in the ratio $3 : 5$. The unit produced $450$ brass bolts during that shift. In the afternoon shift, an additional $150$ bolts of each type were produced. What was the ratio of the total number of steel bolts to the total number of brass bolts produced across both shifts?",
+    "options": [
+      "$3 : 5$",
+      "$7 : 10$",
+      "$2 : 3$",
+      "$5 : 7$"
+    ],
+    "answer": "$7 : 10$",
+    "solution": "1. Let the morning production of steel bolts and brass bolts be $3x$ and $5x$ respectively.\n2. Since brass bolts produced = $450$, we have $5x = 450 \\implies x = 90$.\n3. Morning steel bolts = $3 \\times 90 = 270$.\n4. In the afternoon, $150$ bolts of each type are added:\n   Total steel bolts = $270 + 150 = 420$.\n   Total brass bolts = $450 + 150 = 600$.\n5. New ratio = $\\frac{420}{600} = \\frac{7}{10}$, which is $7 : 10$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": [
+      {
+        "option": "$3 : 5$",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      }
+    ]
+  },
+  {
+    "id": "3082416e-69d8-42bd-8cba-6e3c8678e570",
+    "spec": "A2-x5",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "Three overhead water tanks, $A$, $B$, and $C$, have capacities in fixed proportions. The ratio of the capacity of tank $A$ to that of tank $B$ is $4 : 5$, and the ratio of the capacity of tank $B$ to that of tank $C$ is $3 : 4$. If tank $C$ can hold $160$ litres more water than tank $A$, find the capacity (in litres) of tank $B$.",
+    "options": null,
+    "answer": "300",
+    "solution": "1. Express the capacities of the three tanks in a combined ratio. Given $A : B = 4 : 5$ and $B : C = 3 : 4$, equate the term for $B$ by multiplying the first ratio by $3$ and the second by $5$:\n$A : B : C = (4 \\times 3) : (5 \\times 3) : (4 \\times 5) = 12 : 15 : 20$.\n\n2. Let the capacities of tanks $A$, $B$, and $C$ be $12x$, $15x$, and $20x$ litres, respectively.\n\n3. The difference between tank $C$ and tank $A$ is $20x - 12x = 8x$.\nGiven $8x = 160$, we get $x = 20$.\n\n4. Therefore, the capacity of tank $B$ is $15x = 15 \\times 20 = 300$ litres.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "da555a75-e593-4c30-8192-9da63415f5f7",
+    "spec": "A2-x7",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a bakery, a chef prepares a cake batter by mixing flour, sugar, and butter. The ratio of the weight of flour to sugar is $5 : 3$, and the ratio of the weight of sugar to butter is $4 : 5$. If the total weight of the mixture is $2.35\\text{ kg}$, what is the weight of flour used?",
+    "options": [
+      "$1.00\\text{ kg}$",
+      "$0.94\\text{ kg}$",
+      "$0.75\\text{ kg}$",
+      "$1.25\\text{ kg}$"
+    ],
+    "answer": "$1.00\\text{ kg}$",
+    "solution": "1. Express the ratios with a common term for sugar: Flour : Sugar = $5 : 3 = 20 : 12$, and Sugar : Butter = $4 : 5 = 12 : 15$.\n2. The combined ratio of Flour : Sugar : Butter is $20 : 12 : 15$.\n3. Total ratio parts = $20 + 12 + 15 = 47$.\n4. Weight of flour = $\\frac{20}{47} \\times 2.35\\text{ kg} = 20 \\times 0.05 = 1.00\\text{ kg}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$0.94\\text{ kg}$",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "$0.75\\text{ kg}$",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "36f5ec90-3abc-4c8e-b511-7fe563825785",
+    "spec": "A2-x9",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "A traveller covers a total journey using three modes of transport: bus, train, and taxi. The ratio of the distance covered by bus to that by train is $3 : 5$, and the ratio of the distance covered by train to that by taxi is $4 : 3$. If the distance covered by taxi is $180\\text{ km}$, what is the distance covered by bus?",
+    "options": [
+      "$144\\text{ km}$",
+      "$180\\text{ km}$",
+      "$225\\text{ km}$",
+      "$300\\text{ km}$"
+    ],
+    "answer": "$144\\text{ km}$",
+    "solution": "1. Let the distances covered by bus, train, and taxi be $B$, $T$, and $X$ respectively.\n2. We are given $B : T = 3 : 5$ and $T : X = 4 : 3$.\n3. To find a combined ratio $B : T : X$, make the common term $T$ equal using $\\text{LCM}(5, 4) = 20$:\n   $B : T = 12 : 20$\n   $T : X = 20 : 15$\n   Thus, $B : T : X = 12 : 20 : 15$.\n4. Given $X = 180\\text{ km}$, $15\\text{ units} = 180\\implies 1\\text{ unit} = 12\\text{ km}$.\n5. Therefore, distance by bus $B = 12 \\times 12 = 144\\text{ km}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$180\\text{ km}$",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "$225\\text{ km}$",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "2ceba825-9029-4555-b7cb-674be41177af",
+    "spec": "A2-x10",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a small trading firm, the annual operating profit of ₹$2,80,000$ is split completely between two partners, Arvind and Bhuvan. According to their agreement, $3$ times Arvind's share is equal to $4$ times Bhuvan's share. How much did Arvind receive as his share of the profit?",
+    "options": [
+      "₹1,20,000",
+      "₹1,40,000",
+      "₹1,60,000",
+      "₹2,10,000"
+    ],
+    "answer": "₹1,60,000",
+    "solution": "1. Let Arvind's share be $A$ and Bhuvan's share be $B$.\n2. From the agreement, $3A = 4B$, which gives $\\frac{A}{B} = \\frac{4}{3}$.\n3. The ratio of Arvind's share to Bhuvan's share is $4 : 3$.\n4. Since the total profit is ₹$2,80,000$, Arvind's share is $\\frac{4}{4 + 3} \\times 2,80,000 = \\frac{4}{7} \\times 2,80,000 = ₹1,60,000$.\n5. The correct answer is ₹1,60,000.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_INVERT_WHEN_COMBINING",
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,20,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "59a638f9-96ca-4da0-a09c-97373dbf0518",
+    "spec": "A2-x12",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a school midterm examination, the marks obtained by Arun and Barun were in the ratio $3 : 4$. After a re-evaluation of answer scripts, both students were awarded an additional $10$ marks each due to an evaluation error. If Barun's original marks were $40$, what is the new ratio of the marks obtained by Arun to those obtained by Barun?",
+    "options": [
+      "$3 : 4$",
+      "$4 : 5$",
+      "$7 : 9$",
+      "$2 : 3$"
+    ],
+    "answer": "$4 : 5$",
+    "solution": "1. Barun's original marks are given as $40$.\n2. The initial ratio of Arun's marks to Barun's marks was $3 : 4$, so Arun's original marks were $\\frac{3}{4} \\times 40 = 30$.\n3. After re-evaluation, each student receives an additional $10$ marks. Arun's new score is $30 + 10 = 40$ and Barun's new score is $40 + 10 = 50$.\n4. The new ratio of their marks is $40 : 50 = 4 : 5$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": [
+      {
+        "option": "$3 : 4$",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      }
+    ]
+  },
+  {
+    "id": "e376d7fa-6835-4e47-be66-1a25fdf19ae0",
+    "spec": "A2-x11",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "During a festival sale at an apparel store, the marked prices of a shirt and a pair of trousers are in the ratio $3 : 5$, while the marked prices of a pair of trousers and a jacket are in the ratio $4 : 7$. The store offers discounts of $25\\%$ on shirts, $15\\%$ on trousers, and $20\\%$ on jackets. A customer purchases $3$ shirts, $2$ pairs of trousers, and $2$ jackets, paying a total discounted bill of ₹$11,700$. What was the marked price (in ₹) of a jacket?",
+    "options": null,
+    "answer": "3500",
+    "solution": "1. Combine the ratios of the marked prices. Since $\\text{Shirt} : \\text{Trouser} = 3 : 5$ and $\\text{Trouser} : \\text{Jacket} = 4 : 7$, make the term for Trouser equal to $\\text{LCM}(5, 4) = 20$.\n2. The combined ratio of marked prices is $\\text{Shirt} : \\text{Trouser} : \\text{Jacket} = 12 : 20 : 35$. Let their marked prices be ₹$12x$, ₹$20x$, and ₹$35x$, respectively.\n3. Calculate the selling price (SP) per unit after discount:\n- SP of a shirt $= 12x \\times (1 - 0.25) = 9x$\n- SP of a pair of trousers $= 20x \\times (1 - 0.15) = 17x$\n- SP of a jacket $= 35x \\times (1 - 0.20) = 28x$\n4. Calculate the total bill for $3$ shirts, $2$ trousers, and $2$ jackets:\n$\\text{Total} = 3(9x) + 2(17x) + 2(28x) = 27x + 34x + 56x = 117x$.\n5. Equating to the total amount paid:\n$117x = 11700 \\implies x = 100$.\n6. The marked price of a jacket is $35x = 35 \\times 100 = 3500$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e84905c4-6fd5-45dc-a742-621ec837eecd",
+    "spec": "A2-x15",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a commercial building, three office spaces $A$, $B$, and $C$ are rented out. The ratio of the monthly rent of office $A$ to that of office $B$ is $3 : 4$, and the ratio of the monthly rent of office $B$ to that of office $C$ is $5 : 6$. If the total monthly rent collected from all three offices is ₹$1,18,000$, what is the monthly rent of office $B$?",
+    "options": [
+      "₹40,000",
+      "₹36,000",
+      "₹48,000",
+      "₹37,760"
+    ],
+    "answer": "₹40,000",
+    "solution": "1. We are given the ratios $A : B = 3 : 4$ and $B : C = 5 : 6$.\n2. To find the combined ratio $A : B : C$, equalize the term for $B$ by taking the LCM of $4$ and $5$, which is $20$:\n$A : B = (3 \\times 5) : (4 \\times 5) = 15 : 20$\n$B : C = (5 \\times 4) : (6 \\times 4) = 20 : 24$\nThus, $A : B : C = 15 : 20 : 24$.\n3. The sum of the ratio parts is $15 + 20 + 24 = 59$.\n4. Rent of office $B = \\frac{20}{59} \\times 1,18,000 = 20 \\times 2,000 =$ ₹$40,000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹36,000",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹48,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "6816a2ef-2963-4453-b3be-4d6d391bd079",
+    "spec": "A2-x14",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "Two sports coaches, Amit and Bharat, jointly set up a cricket academy. Amit invested ₹$1,20,000$ and operated it for the full $12$ months of the year. Bharat joined him with an investment of ₹$1,80,000$, but remained an active partner for only $4$ months during the year. At the end of the year, the academy earned a net profit of ₹$1,08,000$. If the entire profit is distributed strictly in proportion to each partner's capital and time duration of investment, how much (in ₹) did Amit receive as his share of the profit?",
+    "options": null,
+    "answer": "72000",
+    "solution": "1. Find the ratio of effective investments (Capital $\\times$ Time):\n- Amit's contribution = $1,20,000 \\times 12 = 14,40,000$\n- Bharat's contribution = $1,80,000 \\times 4 = 7,20,000$\n\n2. Ratio of profit distribution (Amit : Bharat) = $14,40,000 : 7,20,000 = 2 : 1$.\n\n3. Total parts = $2 + 1 = 3$.\n\n4. Amit's share of the profit = $\\frac{2}{3} \\times 1,08,000 = 72,000$.\n\nFinal Answer: 72000",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ee131791-06a0-4273-9b65-cdb65fe1ab28",
+    "spec": "A2-x17",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "A farmer harvested wheat, barley, and mustard seeds from his farmland. The ratio of the quantity of wheat harvested to that of barley was $4 : 3$, and the ratio of the quantity of barley to that of mustard was $5 : 2$. After selling $120\\text{ kg}$ of wheat and harvesting an additional $60\\text{ kg}$ of mustard, the ratio of the total quantity of wheat to mustard became $2 : 1$. Find the quantity, in $\\text{kg}$, of barley harvested.",
+    "options": null,
+    "answer": "450",
+    "solution": "1. Express the initial quantities of wheat ($W$), barley ($B$), and mustard ($M$) in a continuous ratio.\nGiven $W : B = 4 : 3$ and $B : M = 5 : 2$. Multiplying the first ratio by $5$ and the second by $3$ gives:\n$W : B : M = 20 : 15 : 6$.\n\n2. Let $W = 20x$, $B = 15x$, and $M = 6x$ kg for some constant $x$.\n\n3. According to the problem, after selling $120\\text{ kg}$ of wheat and adding $60\\text{ kg}$ of mustard:\n$\\frac{20x - 120}{6x + 60} = \\frac{2}{1}$\n\n4. Cross-multiply and solve for $x$:\n$20x - 120 = 2(6x + 60)$\n$20x - 120 = 12x + 120$\n$8x = 240 \\implies x = 30$.\n\n5. Calculate the quantity of barley harvested:\n$B = 15x = 15 \\times 30 = 450\\text{ kg}$.\n\nFinal Answer: 450",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "13d651b6-9e44-40ae-99c6-2d4aad5ec3e8",
+    "spec": "A2-x1",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Arjun and Varun started a business where Arjun invested ₹$80,000$ for $9$ months and Varun invested ₹$60,000$ for $12$ months. Out of their total annual profit, $15\\%$ was kept aside as a reserve fund and the remaining was distributed between them in the ratio of their effective investments. If Arjun's share of the distributed profit was ₹$1,02,000$, what was the total annual profit of the business?",
+    "options": [
+      "₹$2,40,000$",
+      "₹$2,22,222$",
+      "₹$2,70,000$",
+      "₹$2,04,000$"
+    ],
+    "answer": "₹$2,40,000$",
+    "solution": "1. Effective investment of Arjun $= 80,000 \\times 9 = 7,20,000$.\n2. Effective investment of Varun $= 60,000 \\times 12 = 7,20,000$.\n3. The ratio of effective investments is $7,20,000 : 7,20,000 = 1 : 1$.\n4. Since Arjun and Varun share the distributed profit equally, Arjun receives half of the distributed profit.\n5. Total distributed profit $= 2 \\times 1,02,000 = ₹2,04,000$.\n6. The distributed profit is $100\\% - 15\\% = 85\\%$ of the total profit $P$.\n7. Therefore, $0.85 P = 2,04,000 \\implies P = \\frac{2,04,000}{0.85} = ₹2,40,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$2,70,000$",
+        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
+      },
+      {
+        "option": "₹$2,04,000$",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      }
+    ]
+  },
+  {
+    "id": "172e034a-802d-455e-9323-a195ac7900ab",
+    "spec": "A2-x20",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "The fuel tank of a car and that of an SUV contained petrol in the ratio $3 : 7$. When $15$ litres of petrol were pumped into each vehicle's tank, the ratio of petrol in the car to that in the SUV became $3 : 5$. Find the total quantity of petrol, in litres, present in both tanks together initially.",
+    "options": null,
+    "answer": "50",
+    "solution": "1. Let the initial quantities of petrol in the car and SUV be $3x$ and $7x$ litres, respectively.\n2. After adding $15$ litres to each, the quantities become $3x + 15$ and $7x + 15$.\n3. Set up the ratio: $\\frac{3x + 15}{7x + 15} = \\frac{3}{5}$.\n4. Cross-multiplying gives $5(3x + 15) = 3(7x + 15) \\implies 15x + 75 = 21x + 45 \\implies 6x = 30 \\implies x = 5$.\n5. Total initial petrol in both tanks $= 3x + 7x = 10x = 10 \\times 5 = 50$ litres.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "a6c907b6-0e71-4998-a013-f3399fe4e95e",
+    "spec": "A2-x21",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a municipal council election, three candidates—$P$, $Q$, and $R$—contested. All votes polled were valid. The ratio of the votes received by candidate $P$ to those received by candidate $Q$ was $3 : 4$, while the ratio of the votes received by candidate $Q$ to those received by candidate $R$ was $6 : 5$. If candidate $P$ received $1,200$ fewer votes than candidate $R$, what was the total number of votes polled in the election?",
+    "options": [
+      "37,200",
+      "14,400",
+      "44,400",
+      "40,800"
+    ],
+    "answer": "37,200",
+    "solution": "1. Express the given ratios: $P : Q = 3 : 4$ and $Q : R = 6 : 5$.\n2. To find the combined ratio $P : Q : R$, find the LCM of the values corresponding to $Q$, which are $4$ and $6$. The LCM is $12$.\n3. Multiply $P : Q$ by $3$ to get $9 : 12$, and multiply $Q : R$ by $2$ to get $12 : 10$. Thus, $P : Q : R = 9 : 12 : 10$.\n4. Let the votes received by $P$, $Q$, and $R$ be $9x$, $12x$, and $10x$, respectively.\n5. The difference between the votes of $R$ and $P$ is $10x - 9x = x = 1,200$.\n6. The total number of votes polled is $(9 + 12 + 10)x = 31x = 31 \\times 1,200 = 37,200$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "14,400",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "44,400",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "0cbd71e4-2040-4073-803c-27fe07007351",
+    "spec": "A2-x19",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Three colleagues, Aman, Barun, and Charan, save a total of ₹$1,08,000$ in a particular month. The ratio of Aman's savings to Barun's savings is $3 : 4$, while the ratio of Charan's savings to Barun's savings is $1 : 2$. What is the monthly savings of Aman?",
+    "options": [
+      "₹36,000",
+      "₹21,600",
+      "₹40,500",
+      "₹54,000"
+    ],
+    "answer": "₹36,000",
+    "solution": "1. We are given the ratio of savings: Aman : Barun $= 3 : 4$ and Charan : Barun $= 1 : 2$.\n2. Reversing the second ratio gives Barun : Charan $= 2 : 1 = 4 : 2$.\n3. Combining the two ratios with Barun's share equalized gives Aman : Barun : Charan $= 3 : 4 : 2$.\n4. The sum of the ratio parts is $3 + 4 + 2 = 9$ parts.\n5. Therefore, Aman's savings $= \\frac{3}{9} \\times ₹1,08,000 = ₹36,000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹21,600",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      },
+      {
+        "option": "₹40,500",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹54,000",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      }
+    ]
+  },
+  {
+    "id": "e96b152c-aacc-4266-bc73-6b38167e0f25",
+    "spec": "A2-x22",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Two entrepreneurs, Deepak and Farhan, jointly leased a manufacturing unit for a year to produce industrial valves. Deepak invested ₹$6,00,000$ to set up machinery and remained an active partner for the entire $12$ months. Farhan joined him later with an investment of ₹$9,00,000$, keeping his capital deployed for only the last $4$ months of the year. At the end of the year, the factory earned a net profit of ₹$4,20,000$, which was distributed entirely in proportion to their effective capital contributions. What was Farhan's share in the profit?",
+    "options": [
+      "₹1,40,000",
+      "₹2,52,000",
+      "₹1,68,000",
+      "₹2,80,000"
+    ],
+    "answer": "₹1,40,000",
+    "solution": "1. Effective capital contribution is calculated as $\\text{Capital} \\times \\text{Time}$.\n2. Deepak's contribution $= 6,00,000 \\times 12 = 72,00,000$.\n3. Farhan's contribution $= 9,00,000 \\times 4 = 36,00,000$.\n4. Ratio of profit shares $= 72,00,000 : 36,00,000 = 2 : 1$.\n5. Farhan's share $= \\frac{1}{2 + 1} \\times 4,20,000 = \\frac{1}{3} \\times 4,20,000 = ₹1,40,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "distractor_misconceptions": [
+      {
+        "option": "₹2,52,000",
+        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
+      }
+    ]
+  },
+  {
+    "id": "7d71851e-7193-4d0a-98e0-2b79ae10b8a1",
+    "spec": "A2-x27",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "A sales executive travels a certain distance by train, car, and scooter. The ratio of the distance travelled by car to that by train is $3 : 4$, and the ratio of the distance travelled by car to that by scooter is $5 : 2$. If the distance travelled by train exceeds the distance travelled by scooter by $420$ km, what is the distance, in km, travelled by car?",
+    "options": [
+      "300",
+      "450",
+      "525",
+      "700"
+    ],
+    "answer": "450",
+    "solution": "1. Let the distances travelled by train, car, and scooter be $T$, $C$, and $S$ respectively.\n2. We are given $C : T = 3 : 4$, which means $T : C = 4 : 3$, and $C : S = 5 : 2$.\n3. To combine the ratios, equate the term for $C$ by finding the LCM of $3$ and $5$, which is $15$. Thus, $T : C = 20 : 15$ and $C : S = 15 : 6$, giving $T : C : S = 20 : 15 : 6$.\n4. We are given $T - S = 420$ km. In terms of ratio units, $20 - 6 = 14$ units $= 420$ km, so $1$ unit $= \\frac{420}{14} = 30$ km.\n5. Therefore, the distance travelled by car is $15 \\times 30 = 450$ km.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "700",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "525",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "b4368304-aa64-4bc8-93a1-116d0b7f9dc7",
+    "spec": "A2-x25",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a bakery, a special cake dough is prepared using flour, sugar, and butter. The ratio of the weight of flour to that of sugar is $5 : 3$, and the ratio of the weight of sugar to that of butter is $4 : 5$. If the total weight of the three ingredients used is $1.88\\text{ kg}$, what is the weight of butter used?",
+    "options": [
+      "480 g",
+      "600 g",
+      "750 g",
+      "705 g"
+    ],
+    "answer": "600 g",
+    "solution": "1. Let $F$, $S$, and $B$ represent the weights of flour, sugar, and butter, respectively.\n2. We are given $F : S = 5 : 3$ and $S : B = 4 : 5$.\n3. To combine the ratios, make the common term $S$ equal by taking the LCM of $3$ and $4$, which is $12$:\n   $F : S = (5 \\times 4) : (3 \\times 4) = 20 : 12$\n   $S : B = (4 \\times 3) : (5 \\times 3) = 12 : 15$\n   Thus, $F : S : B = 20 : 12 : 15$.\n4. The sum of the ratio terms is $20 + 12 + 15 = 47$ units.\n5. Total weight is $1.88\\text{ kg} = 1880\\text{ g}$.\n   $1\\text{ unit} = \\frac{1880}{47} = 40\\text{ g}$.\n6. The weight of butter is $15 \\times 40 = 600\\text{ g}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "750 g",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "705 g",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "c3d53a9c-7d8b-4267-b50e-c4e3b6cdd8fc",
+    "spec": "A2-x30",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "An education trust sponsored an annual scholarship pool of ₹$1,44,000$ to be divided between two students, Rohan and Sohan, as a stipend for their preparation and performance in competitive entrance exams. The stipend was agreed to be shared in proportion to each student's effective effort, defined as the product of the score obtained in the qualifying exam and the duration (in months) for which they actively attended the foundation classes during the academic year. Rohan scored $80$ marks and attended classes for $9$ months, whereas Sohan scored $120$ marks and attended classes for $4$ months. What is Rohan's share of the scholarship pool?",
+    "options": [
+      "₹57,600",
+      "₹72,000",
+      "₹86,400",
+      "₹96,000"
+    ],
+    "answer": "₹86,400",
+    "solution": "1. Effective effort is calculated as Score $\\times$ Time in months.\n2. Rohan's effort $= 80 \\times 9 = 720$.\n3. Sohan's effort $= 120 \\times 4 = 480$.\n4. Ratio of Rohan's share to Sohan's share $= 720 : 480 = 3 : 2$.\n5. Rohan's share $= \\frac{3}{3 + 2} \\times ₹1,44,000 = \\frac{3}{5} \\times ₹1,44,000 = ₹86,400$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "distractor_misconceptions": [
+      {
+        "option": "₹57,600",
+        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
+      }
+    ]
+  },
+  {
+    "id": "6135ebcf-a680-487b-aaae-2fe7e47ccc05",
+    "spec": "A2-x29",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "During an annual end-of-season sale, a retailer offers discounts on shoes, jackets, and watches. The ratio of the discounted price of a pair of shoes to that of a jacket is $4 : 5$, and the ratio of the discounted price of a jacket to that of a watch is $3 : 4$. If a watch costs ₹$1,600$ more than a pair of shoes after discounts, find the discounted price (in ₹) of a jacket.",
+    "options": null,
+    "answer": "3000",
+    "solution": "1. Let $S$, $J$, and $W$ denote the discounted prices of a pair of shoes, a jacket, and a watch, respectively.\n2. We are given $S : J = 4 : 5$ and $J : W = 3 : 4$.\n3. To find the combined ratio $S : J : W$, equate the common term $J$ by multiplying the first ratio by $3$ and the second ratio by $5$:\n$S : J : W = (4 \\times 3) : (5 \\times 3) : (4 \\times 5) = 12 : 15 : 20$.\n4. Let $S = 12x$, $J = 15x$, and $W = 20x$.\n5. The difference between the watch and the shoes is $W - S = 20x - 12x = 8x$.\n6. Given $8x = 1600$, we have $x = 200$.\n7. Therefore, the discounted price of a jacket is $J = 15x = 15 \\times 200 = 3000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "3c07602d-9c8e-4224-9819-6e1b9bd94833",
+    "spec": "A2-x33",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "A real estate investor purchased two commercial plots, $P$ and $Q$. The ratio of the cost price of plot $P$ to that of plot $Q$ was $3 : 4$. To develop the land, the investor spent an additional ₹$18$ lakh on plot $P$ and ₹$18$ lakh on plot $Q$. After this expenditure, the ratio of their total invested amounts became $5 : 6$. Plot $P$ was subsequently leased out at an annual rent which yielded a $10\\%$ return on its total invested amount, while plot $Q$ was leased out to yield a $12\\%$ return on its total invested amount. What is the ratio of the annual rent received from plot $P$ to that received from plot $Q$?",
+    "options": [
+      "25 : 36",
+      "5 : 6",
+      "36 : 25",
+      "1 : 1"
+    ],
+    "answer": "25 : 36",
+    "solution": "1. Let the original cost prices of plot $P$ and plot $Q$ be $3x$ and $4x$ (in ₹ lakh) respectively.\n2. After adding development costs of ₹$18$ lakh to each plot, the new ratio of total investments is given by:\n$\\frac{3x + 18}{4x + 18} = \\frac{5}{6}$\n3. Cross-multiplying gives:\n$6(3x + 18) = 5(4x + 18) \\implies 18x + 108 = 20x + 90 \\implies 2x = 18 \\implies x = 9$.\n4. Therefore, the total invested amount for plot $P$ is $3(9) + 18 = 45$ lakh, and for plot $Q$ is $4(9) + 18 = 54$ lakh.\n(Note: the ratio of their investments is indeed $\\frac{45}{54} = \\frac{5}{6}$.)\n5. The annual rent from plot $P$ is $10\\%$ of $45 = 4.5$ lakh, and from plot $Q$ is $12\\%$ of $54 = 6.48$ lakh.\n6. The ratio of annual rents is $\\frac{10\\% \\times 5}{12\\% \\times 6} = \\frac{50}{72} = \\frac{25}{36}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "5 : 6",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      },
+      {
+        "option": "36 : 25",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      },
+      {
+        "option": "1 : 1",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      }
+    ]
+  },
+  {
+    "id": "47d33956-34c3-457b-8e8e-305eaf7a9677",
+    "spec": "A2-x34",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Under a new pay revision at a technology firm, the monthly salary of an employee consists of a base component and an incentive component. Three times the base component is equal to five times the incentive component. If the total monthly salary of the employee is ₹$1,20,000$, what is the amount of the base component?",
+    "options": [
+      "₹75,000",
+      "₹45,000",
+      "₹72,000",
+      "₹80,000"
+    ],
+    "answer": "₹75,000",
+    "solution": "1. Let the base component be $B$ and the incentive component be $I$.\n2. Given: $3B = 5I$, which gives the ratio $\\frac{B}{I} = \\frac{5}{3}$, or $B : I = 5 : 3$.\n3. The total salary is $B + I = ₹1,20,000$.\n4. Base component $B = \\frac{5}{5 + 3} \\times 1,20,000 = \\frac{5}{8} \\times 1,20,000 = ₹75,000$.\n\nHence, the correct answer is ₹75,000.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_INVERT_WHEN_COMBINING",
+    "distractor_misconceptions": [
+      {
+        "option": "₹45,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "f2bfdebe-1549-4fc0-b1f2-588516e16be4",
+    "spec": "A2-x31",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "During an annual inter-college cultural festival, the core committee allocated a total budget of ₹$3,78,000$ across three domains: Stage & Lightings, Hospitality, and Publicity. The ratio of the budget allocated to Stage & Lightings to that of Hospitality was $3 : 5$, while the ratio of the budget allocated to Hospitality to that of Publicity was $2 : 1$. What was the amount allocated to Publicity?",
+    "options": [
+      "₹42,000",
+      "₹90,000",
+      "₹1,08,000",
+      "₹2,10,000"
+    ],
+    "answer": "₹90,000",
+    "solution": "1. Let $S$, $H$, and $P$ represent the allocations for Stage & Lightings, Hospitality, and Publicity, respectively.\n2. We are given $S : H = 3 : 5$ and $H : P = 2 : 1$. To combine these, equalize the term for $H$ using the LCM of $5$ and $2$, which is $10$.\n3. Multiplying the terms gives $S : H = 6 : 10$ and $H : P = 10 : 5$, so $S : H : P = 6 : 10 : 5$.\n4. Total parts = $6 + 10 + 5 = 21$.\n5. Value of $1$ part = $\\frac{3,78,000}{21} = ₹18,000$.\n6. Allocation to Publicity ($P$) = $5 \\times 18,000 = ₹90,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹42,000",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹2,10,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
   }
 ]
