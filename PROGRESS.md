@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 915 questions live; 95 specs left (`npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Phase 11 (nine Curio-inspired upgrades): #1–#5 done (Spot, concept cards, sprint, daily checklist, foundations); next #6 CAT sectional mock. Specs, order and ground rules in ../HANDOFF.md → "Next build".**
+Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10 done: 1,032 questions live. **Phase 11 (nine Curio-inspired upgrades): #1–#5 done (Spot, concept cards, sprint, daily checklist, foundations); next #6 CAT sectional mock. Specs, order and ground rules in ../HANDOFF.md → "Next build".**
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -91,12 +91,12 @@ Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 
 - [x] Reset demo also clears the inbox and seeds two open classmate questions (A8 average speed, A3 averaging averages)
 - Tested with a TTS-generated WAV: work-mode transcription kept "20 + 10 = 30%" verbatim; voice question → teacher voice reply → shown on Today with playable audio
 
-### Phase 10 — Question bank → ~1,000 + per-student pool (915 loaded, 22 Nov)
+### Phase 10 — Question bank → ~1,000 + per-student pool ✅ (1,032 live, 22 Nov)
 - [x] Per-student pool: `pickQuestion` prefers questions the student never attempted; `ensurePool` generates when the student has < 3 UNSEEN questions per (concept, band) (was: < 3 total for everyone). One refill in flight per student. New questions join the shared bank. (`src/lib/repo.ts`, `src/lib/pool.ts`, `/api/next`, planner, diagnostic)
 - [x] Seed plan → 1,025 specs: weight-based targets (weight 3 → 50, 2 → 30, 1 → 20 per concept), band/type/contrast cycles, and a `theme` per spec (life scenarios for Arithmetic/Modern Math, problem styles for Algebra/Geometry/Number) passed to the generator; generator now avoids the last 12 stems. `npx tsx scripts/seed-content.ts --plan` shows what's left.
 - [x] `scripts/load-bank.ts`: adds new questions from data/questions.json to Neon WITHOUT wiping (skips ids already in DB and ≥80% word-overlap near-duplicates). Dry run by default; `--apply` to insert. Use this, NOT seed-db.ts (seed-db wipes and re-simulates the class, which changes Riya's demo story).
 - [x] Bank run reached 935/1,030 verified (95 specs left). `load-bank.ts` dedupe fixed: it compared against the SHORTER stem and dropped numbers under 3 digits, so an SI-vs-CI lease question counted as a "duplicate" of a plain CI one (153 skipped). Now: words + all numbers, overlap relative to the LONGER stem ≥ 80% (23 skipped, all true rewordings). Loaded 727 → **915 active questions in Neon** (22 Nov).
-- [ ] Generate the last 95 specs (`npx tsx scripts/seed-content.ts`), then `load-bank.ts --apply`. The deck says "1,000+", so confirm the count passes 1,000 (or fix the deck). Update README "128 verified questions".
+- [x] Last 95 specs generated, then a `--plus=2` top-up (27 × 2 more specs; one run crashed when Windows briefly locked questions.json mid-save, resumed fine). Bank file 1,057; **1,032 active questions in Neon** (22 Nov), so the deck's "1,000+" holds. README updated. Overall rejection rate ≈48%.
 
 ──── CUT LINE B ────
 

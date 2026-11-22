@@ -3838,5 +3838,101 @@
   {
     "spec": "G3-x26",
     "reason": "answer mismatch (key says 8, independent solve got 2)"
+  },
+  {
+    "spec": "M3-x27",
+    "reason": "ambiguous (The question explicitly specifies 'without replacement', for which the correct probability is 99/910. None of the option)"
+  },
+  {
+    "spec": "M3-x27",
+    "reason": "ambiguous (The correct answer (11/60) is missing from the options. Option D (7/40) is the probability for 'exactly 2' rather than ')"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "answer mismatch (key says $\\frac{9}{16}$, independent solve got \\frac{1}{2})"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "answer mismatch (key says $\\frac{3}{4}$, independent solve got \\frac{3}{5})"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "ambiguous (None of the options are correct. The correct answer is 5/9, but the options provided are 1/2, 4/7, 7/11, and 3/5.)"
+  },
+  {
+    "spec": "G3-x28",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G3-x28",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x28",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M2-x27",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M2-x27",
+    "reason": "ambiguous (The phrase 'numbered 1 to 7' makes the bays distinct and fixed. If the bays are distinct, the answer is 3360 (which is n)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 3, independent solve got 5)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "ambiguous (The question mistakenly asks for the 'orthocentre', which places no upper bound on k and results in infinitely many poss)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 16, independent solve got 25)"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G1-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G1-x18",
+    "reason": "ambiguous (Zero options are correct. The equation 4(90 + Θ) = 9(90 - Θ/2) yields Θ = 900/17 ≈ 52.94°, which is not an integer and d)"
+  },
+  {
+    "spec": "G1-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M3-x28",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M3-x28",
+    "reason": "ambiguous (Zero options are correct (the true mathematical answer is 0.62, but the author likely forgot to subtract P(X+Y=20)=0.06 )"
+  },
+  {
+    "spec": "M3-x28",
+    "reason": "answer mismatch (key says $\\frac{7}{9}$, independent solve got \\frac{2}{3})"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "answer mismatch (key says ₹1925, independent solve got ₹1540)"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "verifier unavailable"
   }
 ]

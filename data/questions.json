@@ -1100,6 +1100,46 @@
     ]
   },
   {
+    "id": "a8747ccc-8854-4b4a-b505-206e854b9b51",
+    "spec": "A1-x40",
+    "concept_id": "A1",
+    "type": "MCQ",
+    "stem": "Due to peak holiday demand, a private bus operator increased the fare of a sleeper ticket from Mumbai to Goa by $30\\%$. Immediately after the holiday season ended, the operator reduced the fare by $20\\%$. What was the net percentage change in the ticket fare compared to the initial price before the holiday season?",
+    "options": [
+      "Increase of $10\\%$",
+      "Increase of $4\\%$",
+      "Decrease of $4\\%$",
+      "Increase of $5\\%$"
+    ],
+    "answer": "Increase of $4\\%$",
+    "solution": "1. Let the initial fare before the holiday season be ₹$100$.\n2. After an increase of $30\\%$, the new fare becomes $100 \\times 1.30 =$ ₹$130$.\n3. After a subsequent reduction of $20\\%$, the final fare becomes $130 \\times (1 - 0.20) = 130 \\times 0.80 =$ ₹$104$.\n4. Net change $= 104 - 100 = +4$, which represents an increase of $4\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
+    "distractor_misconceptions": [
+      {
+        "option": "Increase of $10\\%$",
+        "misconception_id": "A1_ADD_SUCCESSIVE"
+      }
+    ]
+  },
+  {
+    "id": "e644cef7-44ed-47b9-a653-a8e31903076d",
+    "spec": "A1-x41",
+    "concept_id": "A1",
+    "type": "TITA",
+    "stem": "In the financial year 2022–23, the total operating expenditure of a design firm consisted entirely of staff salaries and office rental, with staff salaries accounting for $60\\%$ of the total. In the financial year 2023–24, the amount spent on staff salaries increased by $20\\%$, while the firm's total operating expenditure increased by $30\\%$. What was the percentage increase in the office rental from 2022–23 to 2023–24?",
+    "options": null,
+    "answer": "45",
+    "solution": "1. Assume the total operating expenditure in 2022–23 was ₹$100$.\n2. Then, staff salaries = ₹$60$ and office rental = ₹$40$.\n3. In 2023–24, total operating expenditure increased by $30\\%$ to $100 \\times 1.30 = \\text{₹}130$.\n4. Staff salaries increased by $20\\%$ to $60 \\times 1.20 = \\text{₹}72$.\n5. Therefore, office rental in 2023–24 was $130 - 72 = \\text{₹}58$.\n6. The percentage increase in office rental is $\\frac{58 - 40}{40} \\times 100\\% = \\frac{18}{40} \\times 100\\% = 45\\%$.\n\nFinal Answer: 45",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "359f23c0-04ea-4016-b3e9-0d9aee63cfb5",
     "spec": "A1-x5",
     "concept_id": "A1",
@@ -1482,6 +1522,39 @@
     ]
   },
   {
+    "id": "c6bf8fa5-46d1-4e24-bcbf-1a7de8c63a74",
+    "spec": "A2-x13",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Three event management agencies—Alpha, Beta, and Gamma—pooled funds to organize a cultural festival. Their invested capitals were in the ratio $3 : 4 : 5$. Alpha withdrew its entire capital after 8 months, Beta remained invested for 10 months, while Gamma stayed invested for the full year of 12 months. Out of the total annual profit generated from the festival, a fixed portion was first donated to a local charity, and the remaining profit was distributed among Alpha, Beta, and Gamma in proportion to their effective investments. If Gamma received ₹$72,000$ more than Alpha, and Beta received ₹$40,000$ less than Gamma, what was the total profit distributed among the three agencies?",
+    "options": [
+      "₹3,10,000",
+      "₹2,48,000",
+      "₹2,64,000",
+      "₹3,72,000"
+    ],
+    "answer": "₹2,48,000",
+    "solution": "1. Let the capital ratio be $C_A : C_B : C_C = 3 : 4 : 5$ and the respective time periods in months be $T_A = 8$, $T_B = 10$, and $T_C = 12$.\n2. The ratio of effective investments (and hence profit shares) is $(3 \\times 8) : (4 \\times 10) : (5 \\times 12) = 24 : 40 : 60 = 6 : 10 : 15$.\n3. Let their profit shares be $6x$, $10x$, and $15x$.\n4. Gamma received ₹$72,000$ more than Alpha: $15x - 6x = 9x = 72,000 \\implies x = 8,000$. (Checking consistency: Gamma - Beta = $15x - 10x = 5x = 5 \\times 8,000 = 40,000$, which matches the given condition).\n5. Total profit distributed $= 6x + 10x + 15x = 31x = 31 \\times 8,000 = ₹2,48,000$.\n\nFinal Answer: ₹2,48,000",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹3,10,000",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹2,64,000",
+        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
+      },
+      {
+        "option": "₹3,72,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
     "id": "6816a2ef-2963-4453-b3be-4d6d391bd079",
     "spec": "A2-x14",
     "concept_id": "A2",
@@ -1840,6 +1913,35 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "9950cfef-ff03-4762-b6e5-1f181654242f",
+    "spec": "A2-x3",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In a municipal council election, three candidates—$P$, $Q$, and $R$—contested. A total of $1,05,000$ votes were cast, all of which were valid. The ratio of the votes received by candidate $P$ to the total votes received by candidates $Q$ and $R$ combined was $3 : 4$. Among the remaining two candidates, the ratio of votes received by $Q$ to those received by $R$ was $3 : 2$. How many more votes did candidate $P$ receive than candidate $R$?",
+    "options": [
+      "15,000",
+      "21,000",
+      "27,000",
+      "30,000"
+    ],
+    "answer": "21,000",
+    "solution": "1. The ratio of votes received by $P$ to $(Q + R)$ is $3 : 4$.\n2. Since total votes are $1,05,000$, votes received by $P = \\frac{3}{3 + 4} \\times 1,05,000 = \\frac{3}{7} \\times 1,05,000 = 45,000$.\n3. The combined votes received by $Q$ and $R = 1,05,000 - 45,000 = 60,000$.\n4. The ratio of votes of $Q$ to $R$ is $3 : 2$. Thus, votes received by $R = \\frac{2}{3 + 2} \\times 60,000 = \\frac{2}{5} \\times 60,000 = 24,000$.\n5. The difference between the votes received by $P$ and $R$ is $45,000 - 24,000 = 21,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "15,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      },
+      {
+        "option": "27,000",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      }
+    ]
+  },
+  {
     "id": "c3d53a9c-7d8b-4267-b50e-c4e3b6cdd8fc",
     "spec": "A2-x30",
     "concept_id": "A2",
@@ -2172,6 +2274,21 @@
         "misconception_id": "A2_INVERT_WHEN_COMBINING"
       }
     ]
+  },
+  {
+    "id": "e2406282-5c92-4b8d-80fa-0b15f34b19a0",
+    "spec": "A2-x44",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "An online grocery delivery platform operates in two sectors, Sector A and Sector B. At 8:00 AM, the ratio of pending delivery orders in Sector A to that in Sector B was $5 : 8$. Over the next two hours, exactly $60$ new orders were placed in Sector A and $60$ new orders were placed in Sector B, while no orders were dispatched. At 10:00 AM, the ratio of pending orders in Sector A to that in Sector B became $7 : 10$. Find the total number of pending orders across both sectors combined at 10:00 AM.",
+    "options": null,
+    "answer": "510",
+    "solution": "1. Let the number of pending orders at 8:00 AM in Sector A and Sector B be $5x$ and $8x$, respectively.\n2. After $60$ orders are added to each sector, the pending orders become $5x + 60$ and $8x + 60$.\n3. Given the new ratio: $\\frac{5x + 60}{8x + 60} = \\frac{7}{10}$.\n4. Cross-multiplying: $10(5x + 60) = 7(8x + 60) \\implies 50x + 600 = 56x + 420$.\n5. Solving for $x$: $6x = 180 \\implies x = 30$.\n6. At 10:00 AM, the total number of orders across both sectors is $(5x + 60) + (8x + 60) = 13x + 120 = 13(30) + 120 = 390 + 120 = 510$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": []
   },
   {
     "id": "3082416e-69d8-42bd-8cba-6e3c8678e570",
@@ -3369,6 +3486,50 @@
     ]
   },
   {
+    "id": "b2638906-eda7-4c67-824f-59711ada7508",
+    "spec": "A3-x41",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In an economics class at a college, a professor calculated the average score of $32$ students on a midterm exam to be $66$. Later, two clerical errors were discovered: one student's actual score of $83$ had been recorded as $38$, while another student's actual score of $54$ had been recorded as $75$. In addition, $8$ students who were previously absent took a make-up exam, scoring an average of $73$. What is the correct overall average score of all $40$ students?",
+    "options": null,
+    "answer": "68",
+    "solution": "1. Calculate the net correction in the total score of the initial $32$ students:\n$\\\\Delta = (83 - 38) + (54 - 75) = 45 - 21 = +24$.\n\n2. Calculate the corrected average of the $32$ students:\n$\\\\text{Corrected average} = 66 + \\\\frac{24}{32} = 66 + 0.75 = 66.75$.\n\n3. Use the weighted average for the two groups of students ($32$ students with an average of $66.75$, and $8$ students with an average of $73$):\nThe ratio of the number of students is $32 : 8 = 4 : 1$.\n\n$\\\\text{Overall Average} = \\\\frac{4 \\\\times 66.75 + 1 \\\\times 73}{4 + 1} = \\\\frac{267 + 73}{5} = \\\\frac{340}{5} = 68$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f5be9fd5-526f-4b5c-bd5a-b6e7050ca1f1",
+    "spec": "A3-x42",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An investor maintains a portfolio of $16$ systematic investment plans (SIPs) in mutual funds. To optimize returns, she terminates an underperforming SIP with a monthly contribution of ₹$4,500$ and replaces it with a new equity SIP. As a result of this replacement, the average monthly contribution across all $16$ SIPs in her portfolio increases by ₹$750$. What is the monthly contribution of the new SIP?",
+    "options": [
+      "₹5,250",
+      "₹12,000",
+      "₹15,750",
+      "₹16,500"
+    ],
+    "answer": "₹16,500",
+    "solution": "1. Let $n = 16$ be the total number of SIPs in the portfolio.\n2. When an existing SIP of value $V_{\\text{old}} = ₹4,500$ is replaced by a new SIP of value $V_{\\text{new}}$, the total contribution changes by $V_{\\text{new}} - V_{\\text{old}}$.\n3. Since the average contribution increases by $d = ₹750$, the increase in the total monthly contribution across all $16$ SIPs is $n \\times d = 16 \\times 750 = ₹12,000$.\n4. Therefore, $V_{\\text{new}} = V_{\\text{old}} + n \\times d = 4,500 + 12,000 = ₹16,500$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": [
+      {
+        "option": "₹5,250",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "₹15,750",
+        "misconception_id": "A3_OLD_COUNT"
+      }
+    ]
+  },
+  {
     "id": "6647d48e-d52a-4888-ab62-1df2b3dd047d",
     "spec": "A3-x5",
     "concept_id": "A3",
@@ -4546,6 +4707,46 @@
     ]
   },
   {
+    "id": "0e1bac54-5abe-4bfc-a46a-093ad1295058",
+    "spec": "A4-x40",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An education testing agency licenses access to its online mock exam question bank to college placement cells. The total operational cost incurred by the agency is ₹$800$ per student license. The agency sells each license to an engineering college for ₹$1,000$. What is the agency's profit percentage on each license?",
+    "options": [
+      "$20\\%$",
+      "$25\\%$",
+      "$16.67\\%$",
+      "$22.5\\%$"
+    ],
+    "answer": "$25\\%$",
+    "solution": "1. Cost Price (CP) per license = ₹$800$, Selling Price (SP) per license = ₹$1,000$.\n2. Profit = $\\text{SP} - \\text{CP} = 1,000 - 800 = \\text{₹}200$.\n3. Profit percentage is always calculated on the Cost Price: $\\text{Profit}\\% = \\left(\\frac{200}{800}\\right) \\times 100 = 25\\%$.\n4. Thus, the profit percentage is $25\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "88190a49-6a99-428d-a58a-f8f330971440",
+    "spec": "A4-x41",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "During a cultural festival, a handicrafts stall owner procures brass lanterns at a certain cost price each. He marks up each lantern such that after offering a cash discount of $15\\%$ on the marked price, he still earns an overall profit of $36\\%$. On the final day of the festival, to clear the remaining stock, he gives an additional promotional scheme: buy $3$ lanterns and get $1$ lantern free, while retaining the $15\\%$ cash discount on the paid lanterns. What is his overall profit percentage on the lanterns sold under this scheme?",
+    "options": null,
+    "answer": "2",
+    "solution": "1. Let the cost price ($CP$) of one lantern be ₹$100$.\n2. With a profit of $36\\%$, the selling price ($SP$) before the buy-and-get-free scheme is $100 \\times 1.36 = \\text{₹}136$.\n3. Under the clearance scheme, a customer takes $4$ lanterns ($3$ paid + $1$ free) while paying for $3$ lanterns at the discounted price of ₹$136$ each.\n4. Total revenue collected for $4$ lanterns $= 3 \\times 136 = \\text{₹}408$.\n5. Total cost price for these $4$ lanterns $= 4 \\times 100 = \\text{₹}400$.\n6. Overall profit percentage $= \\frac{408 - 400}{400} \\times 100 = \\frac{8}{400} \\times 100 = 2\\%$.\n\nFinal Answer: 2",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "2a731a3a-1094-4eeb-a01c-41aae66efd6a",
     "spec": "A4-x5",
     "concept_id": "A4",
@@ -5252,6 +5453,50 @@
       {
         "option": "60 years",
         "misconception_id": "A5_SI_FOR_CI"
+      }
+    ]
+  },
+  {
+    "id": "49453153-5a85-4922-8910-dd8f78f62195",
+    "spec": "A5-x23",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "An online delivery platform borrows a sum of money at $10\\%$ per annum compound interest, compounded annually, to purchase a fleet of electric delivery bikes. The platform repays the loan in two equal annual instalments of ₹$4,84,000$ each, paid at the end of the first and second years, respectively. Had the company instead borrowed the same principal amount under simple interest at the same rate of $10\\%$ per annum for $2$ years and repaid the entire loan with interest in one single payment at the end of $2$ years, what would have been the total interest, in ₹, paid on the loan?",
+    "options": null,
+    "answer": "168000",
+    "solution": "1. Let the borrowed principal be $P$. Each annual instalment is $x = 4,84,000$ at $r = 10\\% = 0.10$.\n2. Equating the present value of the instalments to the principal: $P = \\frac{x}{1 + r} + \\frac{x}{(1 + r)^2} = \\frac{4,84,000}{1.1} + \\frac{4,84,000}{1.21}$.\n3. Calculating the individual terms: $\\frac{4,84,000}{1.1} = 4,40,000$ and $\\frac{4,84,000}{1.21} = 4,00,000$.\n4. Thus, $P = 4,40,000 + 4,00,000 = 8,40,000$.\n5. Under simple interest at $10\\%$ per annum for $2$ years, the total interest paid is $\\text{SI} = \\frac{P \\times r \\times t}{100} = \\frac{8,40,000 \\times 10 \\times 2}{100} = 1,68,000$.\nFinal Answer: 168000",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "b42c23e7-41fc-4b7a-8c9f-1edea3d36d19",
+    "spec": "A5-x24",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A state transport corporation sets aside a reserve of ₹$1,25,000$ to upgrade its highway intercity bus fleet after $3$ years. The amount is invested in an infrastructure fund that earns interest at $20\\%$ per annum compounded annually. What is the total interest earned by the corporation at the end of $3$ years?",
+    "options": [
+      "₹$75,000$",
+      "₹$91,000$",
+      "₹$90,000$",
+      "₹$2,16,000$"
+    ],
+    "answer": "₹$91,000$",
+    "solution": "1. The principal invested is $P = ₹1,25,000$, rate $r = 20\\%$, and time $n = 3$ years compounded annually.\n2. The total accumulated amount at the end of $3$ years is $A = P\\left(1 + \\frac{r}{100}\\right)^n = 1,25,000 \\times \\left(1 + \\frac{20}{100}\\right)^3 = 1,25,000 \\times \\left(\\frac{6}{5}\\right)^3$.\n3. $\\left(\\frac{6}{5}\\right)^3 = \\frac{216}{125}$, so $A = 1,25,000 \\times \\frac{216}{125} = 1,000 \\times 216 = ₹2,16,000$.\n4. The total interest earned is $CI = A - P = 2,16,000 - 1,25,000 = ₹91,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_SI_FOR_CI",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$75,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$90,000$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
       }
     ]
   },
@@ -6492,6 +6737,54 @@
     ]
   },
   {
+    "id": "a906e3b5-2e8f-44b3-8c64-248d73e984e9",
+    "spec": "A6-x43",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A chemical plant has a storage tank filled with $600$ litres of a chlorine solution containing $40\\%$ chlorine by volume. To gradually reduce the chlorine concentration, a drainage pipe empties $120$ litres of the well-mixed solution from the tank, which is then immediately refilled with $120$ litres of pure water. This entire operation (draining $120$ litres followed by refilling with $120$ litres of pure water) is carried out a total of $3$ times. What is the final concentration of chlorine in the tank?",
+    "options": [
+      "$16.0\\%$",
+      "$20.48\\%$",
+      "$24.0\\%$",
+      "$25.6\\%$"
+    ],
+    "answer": "$20.48\\%$",
+    "solution": "1. The tank initially has a capacity and volume of $V = 600$ litres with an initial chlorine concentration of $C_0 = 40\\%$.\n2. In each cycle, $x = 120$ litres of solution is removed and replaced by pure water. The fraction of liquid retained in each cycle is $\\frac{V - x}{V} = \\frac{600 - 120}{600} = \\frac{480}{600} = \\frac{4}{5} = 0.8$.\n3. After $n = 3$ operations, the concentration becomes $C = C_0 \\times \\left(1 - \\frac{x}{V}\\right)^n = 40\\% \\times (0.8)^3$.\n4. Calculating the value: $40\\% \\times 0.512 = 20.48\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$16.0\\%$",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      },
+      {
+        "option": "$25.6\\%$",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      },
+      {
+        "option": "$24.0\\%$",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "a28ee020-7752-4233-be19-ab4752017813",
+    "spec": "A6-x44",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "A census survey was conducted across two sectors, Sector A and Sector B, of a newly planned industrial city. In Sector A, $68\\%$ of the population are registered taxpayers, whereas in Sector B, $92\\%$ of the population are registered taxpayers. When the data from both sectors are combined, exactly $74\\%$ of the entire city's population are found to be registered taxpayers. If the total population of Sector B is $18,000$, find the total population of Sector A.",
+    "options": null,
+    "answer": "54000",
+    "solution": "1. Let $P_A$ and $P_B$ be the populations of Sector A and Sector B, respectively.\n2. By the rule of alligation on taxpayer percentages:\n$$\\frac{P_A}{P_B} = \\frac{92 - 74}{74 - 68} = \\frac{18}{6} = \\frac{3}{1}$$\n3. Note: A common mistake (reversing the differences) gives $\\frac{P_A}{P_B} = \\frac{74 - 68}{92 - 74} = \\frac{1}{3}$, which would yield $P_A = 6,000$.\n4. With the correct ratio $P_A : P_B = 3 : 1$ and $P_B = 18,000$:\n$$P_A = 3 \\times 18,000 = 54,000$$\n\nFinal Answer: 54000",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_REVERSED",
+    "distractor_misconceptions": []
+  },
+  {
     "id": "7a4748c2-6710-400a-93a0-53e0ca791b5b",
     "spec": "A6-x5",
     "concept_id": "A6",
@@ -7138,6 +7431,21 @@
     ]
   },
   {
+    "id": "9fa7d93c-0a1b-434c-8840-0251fc187c74",
+    "spec": "A7-x23",
+    "concept_id": "A7",
+    "type": "TITA",
+    "stem": "A corporate training consultancy assigns a project to two consultants, Arvind and Bipin. Working alone, Arvind can complete the project in $30$ days, while Bipin takes $45$ days. The company agrees to pay them a total contract fee of ₹$1{,}20{,}000$, distributed strictly in proportion to the work done by each. Arvind works alone for the first $6$ days, after which Bipin joins him. After working together for some days, Arvind gets an appraisal and his daily efficiency increases by $25\\%$. The two continue working at their respective new rates and finish the remaining work in $6$ days. Find the total amount (in ₹) earned by Bipin from the contract.",
+    "options": null,
+    "answer": "36000",
+    "solution": "1. Let total work be the LCM of $30$ and $45$, which is $90$ units.\n2. Normal daily rate of Arvind = $\\frac{90}{30} = 3$ units/day.\n3. Daily rate of Bipin = $\\frac{90}{45} = 2$ units/day.\n4. Arvind works alone for the first $6$ days: work done = $6 \\times 3 = 18$ units.\n5. In the final phase, Arvind's efficiency increases by $25\\%$, so his new rate = $3 \\times 1.25 = 3.75$ units/day.\n6. In the final $6$ days, Arvind and Bipin together do $6 \\times (3.75 + 2) = 6 \\times 5.75 = 34.5$ units of work.\n7. Remaining work done during the intermediate phase when Arvind (normal rate) and Bipin worked together: $90 - (18 + 34.5) = 37.5$ units.\n8. Combined rate in this intermediate phase = $3 + 2 = 5$ units/day. Thus, the intermediate phase lasted $\\frac{37.5}{5} = 7.5$ days.\n9. Total days Bipin worked = $7.5$ days (intermediate) + $6$ days (final) = $13.5$ days.\n10. Total work done by Bipin = $13.5 \\times 2 = 27$ units out of $90$ units.\n11. Proportion of work done by Bipin = $\\frac{27}{90} = \\frac{3}{10}$.\n12. Total payment to Bipin = $\\frac{3}{10} \\times 1{,}20{,}000 = ₹36{,}000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "4e3cbdea-edc7-4936-8529-38db314acb7e",
     "spec": "A7-x24",
     "concept_id": "A7",
@@ -7597,6 +7905,64 @@
     "verified": true,
     "targets_misconception_id": null,
     "distractor_misconceptions": []
+  },
+  {
+    "id": "a70eb207-d661-4494-b23c-c354b2547de5",
+    "spec": "A7-x42",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "An irrigation reservoir on an organic farm is filled by two solar pumps, Pump A and Pump B, while water is drawn for field irrigation by an outlet drainage canal. Working alone, Pump A can fill the empty reservoir in $12$ hours, and Pump B can fill it in $15$ hours. The drainage canal, if operated continuously without any pumps running, can completely empty a full reservoir in $20$ hours. If the reservoir is initially empty and both pumps as well as the drainage canal are opened simultaneously, in how many hours will the reservoir be completely filled?",
+    "options": [
+      "$5$",
+      "$10$",
+      "$4$",
+      "$47$"
+    ],
+    "answer": "$10$",
+    "solution": "1. Let the capacity of the reservoir be the LCM of $12, 15,$ and $20$, which is $60$ units.\n2. Work rate of Pump A (filling) $= \\frac{60}{12} = +5$ units/hour.\n3. Work rate of Pump B (filling) $= \\frac{60}{15} = +4$ units/hour.\n4. Work rate of the drainage canal (emptying) $= \\frac{60}{20} = -3$ units/hour.\n5. Net filling rate when all three are open simultaneously $= 5 + 4 - 3 = 6$ units/hour.\n6. Time taken to fill the empty reservoir $= \\frac{60}{6} = 10$ hours.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A7_EMPTY_PIPE_ADDS",
+    "distractor_misconceptions": [
+      {
+        "option": "$5$",
+        "misconception_id": "A7_EMPTY_PIPE_ADDS"
+      },
+      {
+        "option": "$47$",
+        "misconception_id": "A7_ADD_DAYS"
+      }
+    ]
+  },
+  {
+    "id": "6118ad15-445e-46f0-b0b7-f00562902827",
+    "spec": "A7-x43",
+    "concept_id": "A7",
+    "type": "MCQ",
+    "stem": "For a college cultural festival, the design committee needs to fabricate a set of wooden stage props. Working alone, senior student Ananya can complete the task in $36$ hours, while junior student Rohan can complete it in $60$ hours. Rohan is $25\\%$ more efficient than his classmate Shreya. Ananya begins the work alone and works for $9$ hours, after which she leaves. Rohan and Shreya then work together to complete the remaining work. If the college pays a total stipend of ₹$16,800$ for the entire project, distributed strictly in proportion to the work done by each student, how much more does Rohan earn than Shreya?",
+    "options": [
+      "₹$2,800$",
+      "₹$1,400$",
+      "₹$3,150$",
+      "₹$1,260$"
+    ],
+    "answer": "₹$1,400$",
+    "solution": "1. Let total work be the LCM of relevant time quantities. First, determine Shreya's rate. Rohan takes $60$ hours alone. Since Rohan is $25\\%$ more efficient than Shreya, the ratio of their efficiencies is $\\frac{\\text{Rate}_R}{\\text{Rate}_S} = \\frac{5}{4}$.\nThus, $\\text{Rate}_S = \\frac{4}{5} \\times \\text{Rate}_R$, meaning Shreya alone takes $60 \\times \\frac{5}{4} = 75$ hours.\n\n2. Let total work $= 900$ units (LCM of $36, 60, 75$).\n- Ananya's rate $= \\frac{900}{36} = 25$ units/hour.\n- Rohan's rate $= \\frac{900}{60} = 15$ units/hour.\n- Shreya's rate $= \\frac{4}{5} \\times 15 = 12$ units/hour.\n\n3. Ananya works alone for $9$ hours:\nWork completed by Ananya $= 9 \\times 25 = 225$ units.\nRemaining work $= 900 - 225 = 675$ units.\n\n4. Rohan and Shreya work together to finish the remaining $675$ units.\nTheir combined rate $= 15 + 12 = 27$ units/hour.\nTime taken by Rohan and Shreya $= \\frac{675}{27} = 25$ hours.\n\n5. Work done by Rohan $= 25 \\times 15 = 375$ units.\nWork done by Shreya $= 25 \\times 12 = 300$ units.\nDifference in work done by Rohan and Shreya $= 375 - 300 = 75$ units.\n\n6. The difference in their earnings $= \\frac{75}{900} \\times 16,800 = \\frac{1}{12} \\times 16,800 = ₹1,400$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$2,800$",
+        "misconception_id": "A7_MEN_DAYS_DIRECT"
+      },
+      {
+        "option": "₹$1,260$",
+        "misconception_id": "A7_EFFICIENCY_TIME_SAME_PCT"
+      }
+    ]
   },
   {
     "id": "ff59b6f4-0bb0-4a94-b8b1-6e2c1af09d63",
@@ -8696,6 +9062,46 @@
     ]
   },
   {
+    "id": "4f2eafaa-c7ac-4b7a-909d-262869d0cedf",
+    "spec": "A8-x40",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "An auditor for a textile firm travels by car from the head office to a retail branch to inspect its accounts at a uniform speed of $30\\text{ km/h}$. After completing the audit, she returns to the head office along the exact same route at a uniform speed of $60\\text{ km/h}$. What was her average speed for the entire round trip?",
+    "options": [
+      "$45\\text{ km/h}$",
+      "$40\\text{ km/h}$",
+      "$36\\text{ km/h}$",
+      "$48\\text{ km/h}$"
+    ],
+    "answer": "$40\\text{ km/h}$",
+    "solution": "1. Let the one-way distance between the head office and the branch be $d\\text{ km}$.\n2. Time taken for the outward trip: $t_1 = \\frac{d}{30}\\text{ hours}$.\n3. Time taken for the return trip: $t_2 = \\frac{d}{60}\\text{ hours}$.\n4. Total distance = $2d\\text{ km}$ and total time = $\\frac{d}{30} + \\frac{d}{60} = \\frac{3d}{60} = \\frac{d}{20}\\text{ hours}$.\n5. Average speed = $\\frac{\\text{Total distance}}{\\text{Total time}} = \\frac{2d}{d/20} = 40\\text{ km/h}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "distractor_misconceptions": [
+      {
+        "option": "$45\\text{ km/h}$",
+        "misconception_id": "A8_MEAN_OF_SPEEDS"
+      }
+    ]
+  },
+  {
+    "id": "77b0eb91-88d7-4544-8fb1-3b486eb49a1e",
+    "spec": "A8-x41",
+    "concept_id": "A8",
+    "type": "TITA",
+    "stem": "During a promotional festive sale, a retail manager drives from her central store to a newly opened suburban outlet to oversee operations, a distance of $60\\text{ km}$. If she increases her usual driving speed by $10\\text{ km/h}$, she reaches the suburban outlet $18\\text{ minutes}$ earlier than usual. Find her usual driving speed (in $\\text{km/h}$).",
+    "options": null,
+    "answer": "40",
+    "solution": "1. Let the usual speed be $v\\text{ km/h}$. Then the increased speed is $(v + 10)\\text{ km/h}$.\n2. The difference in time taken for a journey of $60\\text{ km}$ is $18\\text{ minutes} = \\frac{18}{60}\\text{ hours} = \\frac{3}{10}\\text{ hours}$.\n3. Setting up the equation: $\\frac{60}{v} - \\frac{60}{v+10} = \\frac{3}{10}$.\n4. Divide by $3$: $\\frac{20}{v} - \\frac{20}{v+10} = \\frac{1}{10} \\implies 20\\left(\\frac{10}{v(v+10)}\\right) = \\frac{1}{10} \\implies v(v+10) = 2000$.\n5. Solving the quadratic $v^2 + 10v - 2000 = 0$, we find $(v + 50)(v - 40) = 0$. Since speed must be positive, $v = 40$.\n6. Thus, her usual driving speed is $40$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "d4c85a7a-4b94-4177-8e88-54bc38afa04f",
     "spec": "A8-x5",
     "concept_id": "A8",
@@ -9235,6 +9641,21 @@
         "misconception_id": "G1_COMPLEMENT_SUPPLEMENT_MIX"
       }
     ]
+  },
+  {
+    "id": "fca1a26d-fbe6-4c72-a92b-96213dca717a",
+    "spec": "G1-x17",
+    "concept_id": "G1",
+    "type": "TITA",
+    "stem": "Two angles, $A$ and $B$, are acute angles measured in degrees. The supplement of angle $A$ exceeds three times its complement by $20^\\circ$. For angle $B$, the ratio of its complement to its supplement is $2 : 5$. Find the absolute difference, in degrees, between angle $A$ and angle $B$.",
+    "options": null,
+    "answer": "25",
+    "solution": "1. For angle $A$, its supplement is $(180 - A)$ and its complement is $(90 - A)$. According to the problem:\n$(180 - A) - 3(90 - A) = 20$\n$180 - A - 270 + 3A = 20$\n$2A - 90 = 20 \\implies 2A = 110 \\implies A = 55^\\circ$.\n\n2. For angle $B$, the ratio of its complement to its supplement is $2 : 5$:\n$\\frac{90 - B}{180 - B} = \\frac{2}{5}$\n$5(90 - B) = 2(180 - B)$\n$450 - 5B = 360 - 2B$\n$3B = 90 \\implies B = 30^\\circ$.\n\n3. The absolute difference between angle $A$ and angle $B$ is $|55^\\circ - 30^\\circ| = 25^\\circ$.\nFinal Answer: 25",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "1610afd8-579b-459c-a030-559b69dceea0",
@@ -10407,6 +10828,56 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "c021dcf2-e264-4475-b0da-fa43a09e3843",
+    "spec": "G2-x45",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "Four straight wooden rods have lengths of $4\\text{ cm}$, $7\\text{ cm}$, $10\\text{ cm}$, and $12\\text{ cm}$. A student wants to choose any three of these rods to form a triangle. How many non-congruent triangles can be formed?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "solution": "1. The total number of ways to choose 3 rods from the 4 available rods is $\\binom{4}{3} = 4$.\n2. Test each combination using the triangle inequality theorem (the sum of the two shorter sides must be strictly greater than the longest side):\n- Combination $\\{4, 7, 10\\}$: $4 + 7 = 11 > 10$. This forms a valid triangle.\n- Combination $\\{4, 7, 12\\}$: $4 + 7 = 11 \\le 12$. This does not form a triangle.\n- Combination $\\{4, 10, 12\\}$: $4 + 10 = 14 > 12$. This forms a valid triangle.\n- Combination $\\{7, 10, 12\\}$: $7 + 10 = 17 > 12$. This forms a valid triangle.\n3. Out of the 4 combinations, exactly 3 form valid triangles. Thus, the answer is 3.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "4",
+        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
+      }
+    ]
+  },
+  {
+    "id": "8fb7dcdd-b7aa-44cf-9fab-5b0c552c2832",
+    "spec": "G2-x46",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "Let $S = \\{4, 7, 10, 15, 21\\}$ be a set of five segments of distinct integer lengths in cm. Let $N$ be the number of distinct non-degenerate triangles that can be formed using three distinct segments chosen from $S$. Which of the following statements is true?",
+    "options": [
+      "$N = 10$",
+      "$N = 4$",
+      "$N = 5$",
+      "$N = 3$"
+    ],
+    "answer": "$N = 4$",
+    "solution": "1. The total number of ways to choose 3 segments from 5 is $\\binom{5}{3} = 10$.\n2. For any three lengths $a < b < c$ to form a non-degenerate triangle, the triangle inequality requires $a + b > c$.\n3. Test all 10 combinations:\n- $(4, 7, 10)$: $4 + 7 = 11 > 10$ (Valid)\n- $(4, 7, 15)$: $4 + 7 = 11 \\le 15$ (Invalid)\n- $(4, 7, 21)$: $4 + 7 = 11 \\le 21$ (Invalid)\n- $(4, 10, 15)$: $4 + 10 = 14 \\le 15$ (Invalid)\n- $(4, 10, 21)$: $4 + 10 = 14 \\le 21$ (Invalid)\n- $(4, 15, 21)$: $4 + 15 = 19 \\le 21$ (Invalid)\n- $(7, 10, 15)$: $7 + 10 = 17 > 15$ (Valid)\n- $(7, 10, 21)$: $7 + 10 = 17 \\le 21$ (Invalid)\n- $(7, 15, 21)$: $7 + 15 = 22 > 21$ (Valid)\n- $(10, 15, 21)$: $10 + 15 = 25 > 21$ (Valid)\n4. Thus, exactly 4 combinations form non-degenerate triangles: $(4, 7, 10)$, $(7, 10, 15)$, $(7, 15, 21)$, and $(10, 15, 21)$, so $N = 4$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY",
+    "distractor_misconceptions": [
+      {
+        "option": "$N = 10$",
+        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
+      }
+    ]
+  },
+  {
     "id": "fb41b068-e050-4f60-8f63-22c3344d8658",
     "spec": "G2-x5",
     "concept_id": "G2",
@@ -11037,6 +11508,39 @@
     ]
   },
   {
+    "id": "1a08e4ff-e9ba-4da0-936c-5589a0318c06",
+    "spec": "G3-x27",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, chords $PQ$ and $PR$ are drawn such that $\\angle QPR = 64^\\circ$. Tangents to the circle at points $Q$ and $R$ intersect at a point $T$ outside the circle. A point $S$ is chosen on the minor arc $QR$ such that $PQSR$ is a cyclic quadrilateral. What is the value of $\\angle QTR + \\angle QSR$?",
+    "options": [
+      "168^\\circ",
+      "180^\\circ",
+      "232^\\circ",
+      "284^\\circ"
+    ],
+    "answer": "168^\\circ",
+    "solution": "1. The angle subtended by arc $QR$ at the centre $O$ is $\\angle QOR = 2 \\times \\angle QPR = 2 \\times 64^\\circ = 128^\\circ$.\n2. The tangents $TQ$ and $TR$ are perpendicular to the radii $OQ$ and $OR$ respectively, so in quadrilateral $TQOR$, $\\angle QTR = 180^\\circ - \\angle QOR = 180^\\circ - 128^\\circ = 52^\\circ$.\n3. Since $PQSR$ is a cyclic quadrilateral, the opposite angles sum to $180^\\circ$. Therefore, $\\angle QSR = 180^\\circ - \\angle QPR = 180^\\circ - 64^\\circ = 116^\\circ$.\n4. Hence, $\\angle QTR + \\angle QSR = 52^\\circ + 116^\\circ = 168^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "180^\\circ",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "232^\\circ",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "284^\\circ",
+        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
+      }
+    ]
+  },
+  {
     "id": "77b0547d-9cf1-4360-b5d1-3b7272ac4bca",
     "spec": "G3-x3",
     "concept_id": "G3",
@@ -11639,6 +12143,21 @@
     ]
   },
   {
+    "id": "7645256c-760f-48b9-890d-ca09862b0577",
+    "spec": "G4-x23",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "In an isosceles trapezium with integer side lengths, the two non-parallel sides and the shorter parallel base each have a length of $10\\text{ cm}$. If the area of the trapezium is an integer (in $\\text{cm}^2$), find the total number of non-congruent such trapeziums possible.",
+    "options": null,
+    "answer": "2",
+    "solution": "1. Let the trapezium be $ABCD$ with parallel bases $AB$ and $CD$. Here $AD = BC = CD = 10\\text{ cm}$, and the longer base $AB = b$ is an integer.\n2. Since $AB > CD$, we have $b > 10$. Drop perpendiculars from $C$ and $D$ to $AB$. The projection of each non-parallel side onto $AB$ has length $x = \\frac{b - 10}{2}$.\n3. Since $b$ is an integer and $x > 0$, $x$ can be an integer or a half-integer, but the triangle inequality on the right-angled triangle requires $0 < x < 10$.\n4. The height $h$ is given by $h = \\sqrt{10^2 - x^2} = \\sqrt{100 - x^2}$.\n5. The area is $A = \\frac{b + 10}{2} \\times h = (10 + x)h = (10 + x)\\sqrt{100 - x^2}$.\n6. For the area to be an integer, $(10+x)^2(100 - x^2) = (10+x)^3(10-x)$ must be a perfect square. Thus, $(10+x)(10-x) = 100 - x^2$ must be the square of a rational number, which means $h = \\sqrt{100 - x^2}$ must be rational.\n7. Since $x^2 + h^2 = 10^2 = 100$ and $2x = b - 10$ is an integer, $(2x)^2 + (2h)^2 = 20^2 = 400$. Thus $(2x, 2h, 20)$ forms an integer right triangle with hypotenuse $20$ (and $2h$ rational means $2h$ is an integer since $2x$ is an integer).\n8. The primitive right triangles scaling to hypotenuse $20$ are from $(3, 4, 5)$ scaled by $4$: legs are $12$ and $16$.\n9. Thus, the possible values for $2x$ are $12$ and $16$, which gives $x = 6$ or $x = 8$.\n- If $x = 6$: $b = 10 + 2(6) = 22$, $h = \\sqrt{100 - 36} = 8$. Area $= (10 + 6) \\times 8 = 128$ (integer).\n- If $x = 8$: $b = 10 + 2(8) = 26$, $h = \\sqrt{100 - 64} = 6$. Area $= (10 + 8) \\times 6 = 108$ (integer).\n10. Both values of $x$ yield valid, non-congruent trapeziums with integer side lengths. Hence, there are $2$ such trapeziums.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "7022ed31-2637-4cb6-a5e2-1654bfb141ac",
     "spec": "G4-x24",
     "concept_id": "G4",
@@ -11702,6 +12221,56 @@
     "verified": true,
     "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "658b4877-1151-4c1a-a00c-106c0379a8fb",
+    "spec": "G4-x27",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A regular polygon $P$ has each of its interior angles equal to $157.5^\\circ$. What is the total number of diagonals of $P$?",
+    "options": [
+      "120",
+      "104",
+      "88",
+      "136"
+    ],
+    "answer": "104",
+    "solution": "1. For a regular polygon, the sum of an interior angle and its corresponding exterior angle is $180^\\circ$. Thus, the exterior angle is $180^\\circ - 157.5^\\circ = 22.5^\\circ$.\n2. The number of sides $n$ is given by $\\frac{360^\\circ}{22.5^\\circ} = 16$.\n3. The total number of diagonals in an $n$-sided polygon is $\\frac{n(n - 3)}{2}$. For $n = 16$, the number of diagonals is $\\frac{16 \\times 13}{2} = 8 \\times 13 = 104$.\n4. Therefore, the correct answer is 104.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "120",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "99d65539-ea55-41cc-97ab-3bbd4cba8db7",
+    "spec": "G4-x28",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "Two regular polygons, $A$ and $B$, have their number of sides in the ratio $3 : 4$. The measure of each interior angle of polygon $B$ exceeds that of polygon $A$ by $5^\\circ$. By how much does the number of diagonals of polygon $B$ exceed the number of diagonals of polygon $A$?",
+    "options": [
+      "117",
+      "123",
+      "135",
+      "234"
+    ],
+    "answer": "117",
+    "solution": "1. Let the number of sides of polygon $A$ be $3k$ and polygon $B$ be $4k$.\n2. The exterior angle of an $n$-sided regular polygon is $\\frac{360^\\circ}{n}$. Since each interior angle of $B$ exceeds that of $A$ by $5^\\circ$, each exterior angle of $A$ exceeds that of $B$ by $5^\\circ$:\n$$\\frac{360^\\circ}{3k} - \\frac{360^\\circ}{4k} = 5^\\circ$$\n$$\\frac{120}{k} - \\frac{90}{k} = 5 \\implies \\frac{30}{k} = 5 \\implies k = 6$$\nSo, polygon $A$ has $n_A = 3(6) = 18$ sides, and polygon $B$ has $n_B = 4(6) = 24$ sides.\n\n3. The number of diagonals of an $n$-sided polygon is given by $\\frac{n(n - 3)}{2}$:\nFor polygon $B$: $D_B = \\frac{24(21)}{2} = 252$.\nFor polygon $A$: $D_A = \\frac{18(15)}{2} = 135$.\n\n4. Difference $= D_B - D_A = 252 - 135 = 117$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "123",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
   },
   {
     "id": "976494c9-7be0-4162-8385-b4a510f632b9",
@@ -12379,6 +12948,60 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "f7a22291-c141-4f4f-8404-bd27bb2a2055",
+    "spec": "G5-x27",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone has a base radius of $8\\text{ cm}$ and a slant height of $17\\text{ cm}$. A solid right circular cylinder has the same base radius as the cone. If the total surface area of the cone is equal to the curved surface area of the cylinder, which of the following statements is true regarding their volumes?",
+    "options": [
+      "The volume of the cylinder is $2.5$ times the volume of the cone",
+      "The volume of the cylinder is $1.7$ times the volume of the cone",
+      "The volume of the cylinder is $3.4$ times the volume of the cone",
+      "The volume of the cylinder is $1.25$ times the volume of the cone"
+    ],
+    "answer": "The volume of the cylinder is $2.5$ times the volume of the cone",
+    "solution": "1. Let $r$ be the common radius, so $r = 8\\text{ cm}$. For the cone, the slant height is $l = 17\\text{ cm}$.\n2. The vertical height of the cone is $h_{\\text{cone}} = \\sqrt{l^2 - r^2} = \\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15\\text{ cm}$.\n3. The total surface area of the cone is $\\text{TSA}_{\\text{cone}} = \\pi r (l + r) = \\pi \\times 8 \\times (17 + 8) = 200\\pi\\text{ cm}^2$.\n4. The curved surface area of the cylinder is $\\text{CSA}_{\\text{cyl}} = 2\\pi r h_{\\text{cyl}} = 2\\pi (8) h_{\\text{cyl}} = 16\\pi h_{\\text{cyl}}$.\n5. Equating the two areas: $16\\pi h_{\\text{cyl}} = 200\\pi \\implies h_{\\text{cyl}} = \\frac{200}{16} = 12.5\\text{ cm}$.\n6. The volume of the cone is $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h_{\\text{cone}} = \\frac{1}{3}\\pi (8^2)(15) = 320\\pi\\text{ cm}^3$.\n7. The volume of the cylinder is $V_{\\text{cyl}} = \\pi r^2 h_{\\text{cyl}} = \\pi (8^2)(12.5) = 800\\pi\\text{ cm}^3$.\n8. The ratio of the volume of the cylinder to that of the cone is $\\frac{V_{\\text{cyl}}}{V_{\\text{cone}}} = \\frac{800\\pi}{320\\pi} = 2.5$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "The volume of the cylinder is $1.7$ times the volume of the cone",
+        "misconception_id": "G5_CSA_VS_TSA"
+      },
+      {
+        "option": "The volume of the cylinder is $3.4$ times the volume of the cone",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "4ca36b27-675a-4da2-ad43-dca12e253205",
+    "spec": "G5-x28",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone has a base radius of $14\\text{ cm}$ and a slant height of $50\\text{ cm}$. The cone is melted and recast into a solid right circular cylinder whose base radius is $7\\text{ cm}$. If there is no loss of material in the process, find the height of the cylinder.",
+    "options": [
+      "$64\\text{ cm}$",
+      "$66\\frac{2}{3}\\text{ cm}$",
+      "$48\\text{ cm}$",
+      "$32\\text{ cm}$"
+    ],
+    "answer": "$64\\text{ cm}$",
+    "solution": "1. For the cone, the base radius is $r = 14\\text{ cm}$ and the slant height is $l = 50\\text{ cm}$.\n2. The vertical height $h_{\\text{cone}}$ is given by $\\sqrt{l^2 - r^2} = \\sqrt{50^2 - 14^2} = \\sqrt{2500 - 196} = \\sqrt{2304} = 48\\text{ cm}$.\n3. The volume of the cone is $V = \\frac{1}{3}\\pi r^2 h_{\\text{cone}} = \\frac{1}{3}\\pi (14)^2 (48) = 16 \\times 196\\pi = 3136\\pi\\text{ cm}^3$.\n4. Equating the volume of the cone to the volume of the cylinder with base radius $R = 7\\text{ cm}$ and height $H$:\n$\\pi R^2 H = 3136\\pi \\implies \\pi (7^2) H = 3136\\pi \\implies 49H = 3136 \\implies H = 64\\text{ cm}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_SLANT_AS_HEIGHT",
+    "distractor_misconceptions": [
+      {
+        "option": "$66\\frac{2}{3}\\text{ cm}$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
     "id": "26ea8af3-c34f-40b9-9ed6-69be09b763a7",
     "spec": "G5-x3",
     "concept_id": "G5",
@@ -12669,6 +13292,21 @@
     ]
   },
   {
+    "id": "6c105f42-ed4b-4357-8cf4-f583f0b794a2",
+    "spec": "G6-x11",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, the vertices of a triangle are $O(0, 0)$, $A(6, 0)$, and $B(2, 4)$. The altitude from $A$ to the side $OB$ intersects the line $x = 0$ at the point $(0, k)$. Find the value of $k$.",
+    "options": null,
+    "answer": "3",
+    "solution": "1. The line segment $OB$ connects $(0, 0)$ and $(2, 4)$. Its slope is $m_{OB} = \\frac{4 - 0}{2 - 0} = 2$.\n2. The altitude from vertex $A(6, 0)$ is perpendicular to $OB$, so its slope is $m = -\\frac{1}{m_{OB}} = -\\frac{1}{2}$.\n3. The equation of the line containing this altitude is $y - 0 = -\\frac{1}{2}(x - 6)$, which simplifies to $x + 2y = 6$.\n4. This line intersects the $y$-axis (the line $x = 0$) when $0 + 2y = 6 \\implies y = 3$.\n5. Therefore, $k = 3$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "13518481-0ead-448f-8ac7-9ea3fa3f146f",
     "spec": "G6-x12",
     "concept_id": "G6",
@@ -12794,6 +13432,21 @@
         "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
       }
     ]
+  },
+  {
+    "id": "c9c49e0a-590e-496f-bdee-51572b6dd936",
+    "spec": "G6-x17",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "Find the number of integral values of $k$ such that the line $3x + 4y = k$ intersects the region enclosed by the circle $x^2 + y^2 - 6x - 8y = 0$ at two distinct points.",
+    "options": null,
+    "answer": "49",
+    "solution": "1. Rewrite the circle equation in standard form: $(x - 3)^2 + (y - 4)^2 = 3^2 + 4^2 = 25 = 5^2$. Thus, the center is $C(3, 4)$ and the radius is $R = 5$.\n2. A straight line intersects a circle at two distinct points if and only if the perpendicular distance $d$ from the center of the circle to the line is strictly less than the radius $R$.\n3. The perpendicular distance from $(3, 4)$ to $3x + 4y - k = 0$ is:\n$$d = \\frac{|3(3) + 4(4) - k|}{\\sqrt{3^2 + 4^2}} = \\frac{|25 - k|}{5}$$\n4. Setting $d < 5$ gives:\n$$\\frac{|25 - k|}{5} < 5 \\implies |25 - k| < 25$$\n$$-25 < 25 - k < 25 \\implies 0 < k < 50$$\n5. The integer values of $k$ satisfying $0 < k < 50$ are $k \\in \\{1, 2, \\dots, 49\\}$. Hence, there are $49$ possible integral values.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "3e2862b5-81af-47ff-b926-a78609dc3b0d",
@@ -13005,6 +13658,35 @@
     "verified": true,
     "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "26928590-710e-4760-9f50-bae00269a5b9",
+    "spec": "G6-x27",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, line $L_1$ passes through the points $(2, 1)$ and $(5, 7)$. A line $L_2$ is perpendicular to $L_1$ and has an equation of the form $x + ky = c$, where $k$ and $c$ are integers with $k > 0$. If $L_2$ intersects the region defined by $x \\ge 0$, $y \\ge 0$, and $x + 2y \\le 40$, how many integer values can the constant $c$ take?",
+    "options": [
+      "41",
+      "81",
+      "21",
+      "161"
+    ],
+    "answer": "41",
+    "solution": "1. The slope of line $L_1$ is $m_1 = \\frac{7 - 1}{5 - 2} = \\frac{6}{3} = 2$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{2}$.\n3. The equation of $L_2$ is $x + ky = c$, which has slope $-\\frac{1}{k}$. Equating gives $-\\frac{1}{k} = -\\frac{1}{2} \\implies k = 2$ (with $k > 0$).\n4. Thus, the equation of $L_2$ is $x + 2y = c$.\n5. The line $L_2$ must intersect the triangular region bounded by $x \\ge 0$, $y \\ge 0$, and $x + 2y \\le 40$. In this region, the expression $x + 2y$ attains its minimum value of $0$ at $(0, 0)$ and its maximum value of $40$ along the boundary $x + 2y = 40$.\n6. Therefore, $0 \\le c \\le 40$. Since $c$ is an integer, the number of possible values of $c$ is $40 - 0 + 1 = 41$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "81",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "21",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
   },
   {
     "id": "796a0e78-38a8-4389-9e16-baf87db8a3d2",
@@ -13664,6 +14346,56 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "33b97916-6241-4254-a597-5952c22e6aae",
+    "spec": "L1-x27",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "Let $A = \\sqrt{13} - \\sqrt{11}$ and $B = \\sqrt{17} - \\sqrt{15}$. Which of the following statements is true?",
+    "options": [
+      "$A > B$",
+      "$A < B$",
+      "$A = B$",
+      "$A + B = \\sqrt{2}$"
+    ],
+    "answer": "$A > B$",
+    "solution": "1. Rationalize both expressions by multiplying and dividing by their respective conjugates:\n$A = \\frac{(\\sqrt{13} - \\sqrt{11})(\\sqrt{13} + \\sqrt{11})}{\\sqrt{13} + \\sqrt{11}} = \\frac{13 - 11}{\\sqrt{13} + \\sqrt{11}} = \\frac{2}{\\sqrt{13} + \\sqrt{11}}$\n$B = \\frac{(\\sqrt{17} - \\sqrt{15})(\\sqrt{17} + \\sqrt{15})}{\\sqrt{17} + \\sqrt{15}} = \\frac{17 - 15}{\\sqrt{17} + \\sqrt{15}} = \\frac{2}{\\sqrt{17} + \\sqrt{15}}$\n2. Compare the denominators: since $\\sqrt{17} > \\sqrt{13}$ and $\\sqrt{15} > \\sqrt{11}$, we have $\\sqrt{17} + \\sqrt{15} > \\sqrt{13} + \\sqrt{11} > 0$.\n3. Since both numerators are equal to $2$, the fraction with the smaller denominator is larger. Hence, $\\frac{2}{\\sqrt{13} + \\sqrt{11}} > \\frac{2}{\\sqrt{17} + \\sqrt{15}}$, which means $A > B$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$A = B$",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      }
+    ]
+  },
+  {
+    "id": "1e594ed8-7a67-4814-8657-79727c240410",
+    "spec": "L1-x28",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "If $a$ and $b$ are positive integers such that $2^a \\times 5^b = 400$, what is the value of $\\frac{10^{a+b}}{2^a \\times 5^b}$?",
+    "options": [
+      "2500",
+      "1",
+      "250",
+      "1000"
+    ],
+    "answer": "2500",
+    "solution": "1. Express $400$ as the product of its prime factors: $400 = 16 \\times 25 = 2^4 \\times 5^2$.\n2. Comparing with $2^a \\times 5^b = 400$, since $a$ and $b$ are integers, we have $a = 4$ and $b = 2$.\n3. Then $a + b = 4 + 2 = 6$, which gives $10^{a+b} = 10^6 = 1{,}000{,}000$.\n4. The required value is $\\frac{10^6}{400} = \\frac{1{,}000{,}000}{400} = 2500$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L1_ADD_EXP_DIFF_BASES",
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "L1_ADD_EXP_DIFF_BASES"
+      }
+    ]
+  },
+  {
     "id": "cb9eba29-2e51-49ad-8c1e-3a30a8eb1373",
     "spec": "L1-x3",
     "concept_id": "L1",
@@ -13731,6 +14463,31 @@
     "verified": true,
     "targets_misconception_id": null,
     "distractor_misconceptions": []
+  },
+  {
+    "id": "79ffbc47-6f0b-4369-8f8a-d48f4b96bab6",
+    "spec": "L1-x6",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "If $x$ is a positive real number satisfying the equation $\\sqrt{x^2 + 144} - \\sqrt{x^2 + 25} = 3$, what is the value of $\\sqrt{x^2 + 144} + \\sqrt{x^2 + 25}$?",
+    "options": [
+      "17",
+      "39",
+      "47",
+      "\\frac{119}{3}"
+    ],
+    "answer": "\\frac{119}{3}",
+    "solution": "1. Let $A = \\sqrt{x^2 + 144}$ and $B = \\sqrt{x^2 + 25}$. We are given $A - B = 3$ and need to find $A + B$.\n2. Note the identity $A^2 - B^2 = (x^2 + 144) - (x^2 + 25) = 119$.\n3. Since $A^2 - B^2 = (A - B)(A + B)$, we have $119 = 3(A + B)$.\n4. Thus, $A + B = \\frac{119}{3}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L1_ROOT_OF_SUM",
+    "distractor_misconceptions": [
+      {
+        "option": "17",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      }
+    ]
   },
   {
     "id": "feb07356-3544-44fc-84f6-c89008dd9ded",
@@ -13940,6 +14697,21 @@
         "misconception_id": "L2_IGNORE_DOMAIN"
       }
     ]
+  },
+  {
+    "id": "508be35c-93de-44e8-8e91-a9b1a2a624a7",
+    "spec": "L2-x11",
+    "concept_id": "L2",
+    "type": "TITA",
+    "stem": "A sequence $a_1, a_2, a_3, \\dots$ is defined such that $a_n = \\log_2\\left(1 + \\frac{1}{n(n+2)}\\right)$ for all integers $n \\ge 1$. If the sum $S = \\sum_{n=1}^{62} a_n$, find the value of $2^S$.",
+    "options": null,
+    "answer": "1.96875",
+    "solution": "1. Simplify the general term $a_n$:\n$1 + \\frac{1}{n(n+2)} = \\frac{n(n+2)+1}{n(n+2)} = \\frac{(n+1)^2}{n(n+2)}$.\nThus, $a_n = \\log_2\\left(\\frac{(n+1)^2}{n(n+2)}\\right) = \\log_2\\left(\\frac{n+1}{n} \\cdot \\frac{n+1}{n+2}\\right)$.\n\n2. Summing from $n = 1$ to $62$:\n$S = \\sum_{n=1}^{62} \\log_2\\left(\\frac{(n+1)^2}{n(n+2)}\\right) = \\log_2\\left( \\prod_{n=1}^{62} \\frac{(n+1)^2}{n(n+2)} \\right)$.\n\n3. Write the product in telescoping form:\n$\\prod_{n=1}^{62} \\frac{(n+1)^2}{n(n+2)} = \\left(\\prod_{n=1}^{62} \\frac{n+1}{n}\\right) \\cdot \\left(\\prod_{n=1}^{62} \\frac{n+1}{n+2}\\right)$\n$= \\left(\\frac{2}{1} \\cdot \\frac{3}{2} \\dotsm \\frac{63}{62}\\right) \\cdot \\left(\\frac{2}{3} \\cdot \\frac{3}{4} \\dotsm \\frac{63}{64}\\right)$\n$= 63 \\cdot \\frac{2}{64} = \\frac{126}{64} = \\frac{63}{32}$.\n\n4. Therefore, $S = \\log_2\\left(\\frac{63}{32}\\right)$, which gives $2^S = \\frac{63}{32} = 1.96875$.\n\nFinal Answer: 1.96875",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "9c36479b-1244-48e6-823d-2c1770c2d1d9",
@@ -14312,6 +15084,60 @@
     "verified": true,
     "targets_misconception_id": "L2_RATIO_OF_LOGS",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "23229a5e-a683-4ace-9060-4f5395002a6b",
+    "spec": "L2-x27",
+    "concept_id": "L2",
+    "type": "MCQ",
+    "stem": "Find the sum of all real solutions to the equation $\\log_2(x - 2) + \\log_2(x - 4) = 3$.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "6",
+    "solution": "1. For the logarithmic terms to be defined, we require $x - 2 > 0$ and $x - 4 > 0$, which gives $x > 4$.\n2. Using the product rule for logarithms: $\\log_2((x - 2)(x - 4)) = 3$.\n3. Converting to exponential form: $(x - 2)(x - 4) = 2^3 = 8$.\n4. Expanding the expression gives $x^2 - 6x + 8 = 8$, which simplifies to $x^2 - 6x = 0$, or $x(x - 6) = 0$.\n5. The solutions to the algebraic equation are $x = 0$ and $x = 6$.\n6. Since the domain requires $x > 4$, $x = 0$ is extraneous. Thus, the only valid real solution is $x = 6$, and the sum of all real solutions is 6.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "8",
+        "misconception_id": "L2_LOG_OF_SUM"
+      },
+      {
+        "option": "7",
+        "misconception_id": "L2_RATIO_OF_LOGS"
+      }
+    ]
+  },
+  {
+    "id": "6f15ccca-60e1-497f-a84a-7b908271af97",
+    "spec": "L2-x28",
+    "concept_id": "L2",
+    "type": "MCQ",
+    "stem": "An analyst models the operating profit $P$ (in ₹ lakhs) of a startup after $x$ months of operation using the equation $\\log_2(x - 1) + \\log_2(x - 5) = 5$. If the model is valid only for months $x$ where all logarithmic terms are well-defined, what is the sum of all possible values of $x$?",
+    "options": [
+      "9",
+      "6",
+      "10",
+      "4"
+    ],
+    "answer": "9",
+    "solution": "1. For the logarithmic terms to be well-defined, the arguments must be strictly positive: $x - 1 > 0 \\implies x > 1$ and $x - 5 > 0 \\implies x > 5$. Thus, the domain is $x > 5$.\n2. Combine the terms using log properties: $\\log_2((x - 1)(x - 5)) = 5$.\n3. Convert to exponential form: $(x - 1)(x - 5) = 2^5 = 32$.\n4. Expand and solve the quadratic: $x^2 - 6x + 5 = 32 \\implies x^2 - 6x - 27 = 0$.\n5. Factorize: $(x - 9)(x + 3) = 0$, giving $x = 9$ or $x = -3$.\n6. Since the domain requires $x > 5$, $x = -3$ is an extraneous root and must be rejected. The only valid value is $x = 9$, so the sum is 9.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L2_IGNORE_DOMAIN",
+    "distractor_misconceptions": [
+      {
+        "option": "6",
+        "misconception_id": "L2_IGNORE_DOMAIN"
+      }
+    ]
   },
   {
     "id": "8a8eb489-9ee7-4d3c-9629-84159ec7e06d",
@@ -16679,6 +17505,39 @@
     ]
   },
   {
+    "id": "a1aad1be-9b6f-4f11-be52-8410b4e05449",
+    "spec": "L4-x46",
+    "concept_id": "L4",
+    "type": "MCQ",
+    "stem": "Let $S$ be the set of all real values of $x$ satisfying the equation $(x - 3)(x - 8) = 14$. A function $f(x)$ is defined as $f(x) = x^2 - 6x + 13$. Find the minimum value of $f(x)$ as $x$ varies over the set $S$.",
+    "options": [
+      "5",
+      "8",
+      "29",
+      "125"
+    ],
+    "answer": "8",
+    "solution": "1. Expand and rearrange the given equation into standard quadratic form:\n$(x - 3)(x - 8) = 14 \\implies x^2 - 11x + 24 = 14 \\implies x^2 - 11x + 10 = 0$.\n2. Factorise the quadratic equation:\n$(x - 1)(x - 10) = 0 \\implies x = 1$ or $x = 10$.\nThus, the set $S = \\{1, 10\\}$.\n3. Evaluate $f(x) = x^2 - 6x + 13$ for each element in $S$:\nFor $x = 1$: $f(1) = 1^2 - 6(1) + 13 = 8$.\nFor $x = 10$: $f(10) = 10^2 - 6(10) + 13 = 53$.\n4. The minimum value of $f(x)$ on $S$ is $\\min(8, 53) = 8$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L4_ZERO_PRODUCT_NONZERO",
+    "distractor_misconceptions": [
+      {
+        "option": "5",
+        "misconception_id": "L4_ZERO_PRODUCT_NONZERO"
+      },
+      {
+        "option": "29",
+        "misconception_id": "L4_SUM_ROOTS_SIGN"
+      },
+      {
+        "option": "125",
+        "misconception_id": "L4_DIVIDE_BY_VARIABLE"
+      }
+    ]
+  },
+  {
     "id": "a5729f64-580d-474f-8ef6-3515c8991f21",
     "spec": "L4-x5",
     "concept_id": "L4",
@@ -17815,6 +18674,39 @@
     ]
   },
   {
+    "id": "cf2a4327-f84f-4c41-ad0d-695b64d1057c",
+    "spec": "L5-x43",
+    "concept_id": "L5",
+    "type": "MCQ",
+    "stem": "Find the maximum real value of $x$ that satisfies the inequality $\\frac{|x - 3| - 2}{|x - 3| - 6} \\le 0$ along with $x \\le 8$.",
+    "options": [
+      "5",
+      "8",
+      "9",
+      "7"
+    ],
+    "answer": "8",
+    "solution": "1. Let $y = |x - 3|$. Since absolute value is non-negative, $y \\ge 0$.\n2. The inequality becomes $\\frac{y - 2}{y - 6} \\le 0$.\n3. For the rational expression to be non-positive, $y$ must lie in the range $[2, 6)$ (note that $y \\neq 6$ because the denominator cannot be zero).\n4. Substituting back $y = |x - 3|$, we get $2 \\le |x - 3| < 6$.\n5. Splitting the compound inequality:\n   - $|x - 3| < 6 \\implies -6 < x - 3 < 6 \\implies -3 < x < 9$.\n   - $|x - 3| \\ge 2 \\implies x - 3 \\le -2$ or $x - 3 \\ge 2 \\implies x \\le 1$ or $x \\ge 5$.\n6. Combining these gives $x \\in (-3, 1] \\cup [5, 9)$.\n7. We are also given the constraint $x \\le 8$. The intersection is $(-3, 1] \\cup [5, 8]$.\n8. The maximum real value of $x$ in this set is $8$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "5",
+        "misconception_id": "L5_NEG_NO_FLIP"
+      },
+      {
+        "option": "9",
+        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
+      },
+      {
+        "option": "7",
+        "misconception_id": "L5_MODULUS_ONE_CASE"
+      }
+    ]
+  },
+  {
     "id": "f8d815ca-6ce3-4a2e-ac34-9f2d28fae5c9",
     "spec": "L5-x44",
     "concept_id": "L5",
@@ -17857,6 +18749,54 @@
         "misconception_id": "L5_NEG_NO_FLIP"
       }
     ]
+  },
+  {
+    "id": "4b0f2ce5-8a5f-458f-ab12-9e17d16dc6b0",
+    "spec": "L5-x46",
+    "concept_id": "L5",
+    "type": "MCQ",
+    "stem": "Find the number of non-zero integer values of $x$ such that $-10 \\le x \\le 10$ and $\\frac{x^2 - 5x - 6}{x} \\le 0$.",
+    "options": [
+      "7",
+      "12",
+      "16",
+      "17"
+    ],
+    "answer": "16",
+    "solution": "1. We are given $\\frac{x^2 - 5x - 6}{x} \\le 0$, with $x$ being a non-zero integer in $[-10, 10]$. Factor the numerator: $\\frac{(x - 6)(x + 1)}{x} \\le 0$.\n2. Determine the critical points: $x = -1$, $x = 0$, and $x = 6$.\n3. Test the sign on the intervals formed by the critical points:\n- For $x < -1$: $(-) \\cdot (-) / (-) = - < 0$ (Satisfies inequality)\n- For $-1 \\le x < 0$: $(-) \\cdot (+) / (-) = + > 0$ (Does not satisfy)\n- At $x = -1$: expression equals $0$ (Satisfies inequality)\n- For $0 < x \\le 6$: $(-) \\cdot (+) / (+) = - \\le 0$ (Satisfies inequality)\n- For $x > 6$: $(+) \\cdot (+) / (+) = + > 0$ (Does not satisfy)\n4. Thus, the solution set is $x \\le -1$ or $0 < x \\le 6$.\n5. Constraining to integer values in $[-10, 10]$:\n- From $x \\le -1$: integers are $\\{-10, -9, -8, -7, -6, -5, -4, -3, -2, -1\\}$, giving $10$ values.\n- From $0 < x \\le 6$: integers are $\\{1, 2, 3, 4, 5, 6\\}$, giving $6$ values.\n6. Total number of valid integer values = $10 + 6 = 16$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN",
+    "distractor_misconceptions": [
+      {
+        "option": "7",
+        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
+      },
+      {
+        "option": "17",
+        "misconception_id": "L5_MODULUS_ONE_CASE"
+      },
+      {
+        "option": "12",
+        "misconception_id": "L5_NEG_NO_FLIP"
+      }
+    ]
+  },
+  {
+    "id": "20e1861b-efe5-49e6-950d-0b73158f8e2b",
+    "spec": "L5-x47",
+    "concept_id": "L5",
+    "type": "TITA",
+    "stem": "Find the number of integral values of $x$ satisfying the inequality $\\frac{|x + 3| - 2}{|x + 3| - 6} < 0$.",
+    "options": null,
+    "answer": "6",
+    "solution": "1. Let $y = |x + 3|$. Note that $y \\ge 0$.\n2. The inequality becomes $\\frac{y - 2}{y - 6} < 0$.\n3. For this rational expression to be negative, the numerator and denominator must have opposite signs, which gives $2 < y < 6$.\n4. Substituting back $y = |x + 3|$, we get $2 < |x + 3| < 6$.\n5. This splits into two intervals for $(x + 3)$:\n   - Positive case: $2 < x + 3 < 6 \\implies -1 < x < 3$. The integers in this range are $x \\in \\{0, 1, 2\\}$ (3 values).\n   - Negative case: $-6 < x + 3 < -2 \\implies -9 < x < -5$. The integers in this range are $x \\in \\{-8, -7, -6\\}$ (3 values).\n6. Combining both sets, there are $3 + 3 = 6$ integral values of $x$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "21c1bbd2-9e5f-4a82-a33d-55282db202ce",
@@ -18196,6 +19136,35 @@
     "distractor_misconceptions": [
       {
         "option": "₹$1700$",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      }
+    ]
+  },
+  {
+    "id": "e8396e4e-0b78-477a-991c-5bbec7bb9074",
+    "spec": "L6-x13",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "Consider two arithmetic progressions: $S_1: 7, 12, 17, \\dots, 902$ and $S_2: 4, 11, 18, \\dots, 907$. How many terms are common to both $S_1$ and $S_2$?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "35"
+    ],
+    "answer": "25",
+    "solution": "1. The common difference of $S_1$ is $d_1 = 5$, so its terms are of the form $5x + 2$ with $7 \\le T \\le 902$.\n2. The common difference of $S_2$ is $d_2 = 7$, so its terms are of the form $7y + 4$ with $4 \\le T \\le 907$.\n3. The common terms must satisfy $T \\equiv 2 \\pmod 5$ and $T \\equiv 4 \\pmod 7$.\n4. Testing small values of $T = 7y + 4$: for $y = 0$, $T = 4 \\not\\equiv 2 \\pmod 5$; for $y = 1$, $T = 11 \\not\\equiv 2 \\pmod 5$; for $y = 2$, $T = 18 \\not\\equiv 2 \\pmod 5$; for $y = 3$, $T = 25 \\not\\equiv 2 \\pmod 5$; for $y = 4$, $T = 32 \\equiv 2 \\pmod 5$. Thus, the first common term is $a = 32$.\n5. The common difference of the sequence of common terms is $\\text{lcm}(5, 7) = 35$.\n6. The upper limit for common terms is $\\min(902, 907) = 902$.\n7. Any common term is given by $32 + 35(n - 1) \\le 902 \\implies 35(n - 1) \\le 870 \\implies n - 1 \\le 24.857$, so $n - 1 = 24$, giving $n = 25$ terms.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "24",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      },
+      {
+        "option": "26",
         "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
       }
     ]
@@ -18935,6 +19904,35 @@
     ]
   },
   {
+    "id": "769992f9-1192-468d-b8b6-a129e416032c",
+    "spec": "L6-x43",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "Consider the arithmetic progression $14, 25, 36, \\dots, 1015$. How many terms of this sequence are divisible by $6$?",
+    "options": [
+      "15",
+      "16",
+      "91",
+      "92"
+    ],
+    "answer": "15",
+    "solution": "1. The given sequence is an arithmetic progression with first term $a = 14$ and common difference $d = 11$.\n2. The general term is $T_n = 14 + (n-1)11 = 11n + 3$.\n3. The last term is $1015$, so $11n + 3 = 1015 \\implies 11n = 1012 \\implies n = 92$. Thus, there are $92$ terms in total.\n4. We require $T_n$ to be divisible by $6$: $11n + 3 \\equiv 0 \\pmod 6$, which simplifies to $-n + 3 \\equiv 0 \\pmod 6 \\implies n \\equiv 3 \\pmod 6$.\n5. Therefore, $n$ takes values of the form $n = 6k + 3$ for integer $k \\ge 0$.\n6. Since $1 \\le n \\le 92$, we have $1 \\le 6k + 3 \\le 92 \\implies -2 \\le 6k \\le 89$. As $k$ is an integer, $0 \\le k \\le 14$.\n7. The number of possible integer values for $k$ is $14 - 0 + 1 = 15$.\n\nFinal Answer: 15",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "16",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      },
+      {
+        "option": "91",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      }
+    ]
+  },
+  {
     "id": "bad03cd8-7595-4203-ac08-3f2b88f9d978",
     "spec": "L6-x44",
     "concept_id": "L6",
@@ -18977,6 +19975,46 @@
         "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
       }
     ]
+  },
+  {
+    "id": "aac2f2da-e4a0-4abe-8a4d-756b0d349bec",
+    "spec": "L6-x46",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "A particle moves along a straight line in successive steps. In the first step, it moves $72\\text{ cm}$ to the right. In the second step, it moves $48\\text{ cm}$ to the left. In each subsequent step, the distance it moves is $\\frac{2}{3}$ of the distance moved in the immediately preceding step, and the direction of movement alternates between right and left. If this motion continues indefinitely, what is the net displacement of the particle from its starting position?",
+    "options": [
+      "43.2 cm",
+      "216 cm",
+      "36 cm",
+      "120 cm"
+    ],
+    "answer": "43.2 cm",
+    "solution": "1. Let movement to the right be positive and movement to the left be negative.\n2. The net displacement is given by the infinite sum: $S = 72 - 48 + 32 - \\dots$\n3. This is an infinite geometric progression with first term $a = 72$ and common ratio $r = -\\frac{48}{72} = -\\frac{2}{3}$.\n4. Since $|r| < 1$, the sum to infinity is $S = \\frac{a}{1 - r} = \\frac{72}{1 - (-\\frac{2}{3})} = \\frac{72}{\\frac{5}{3}} = \\frac{216}{5} = 43.2\\text{ cm}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L6_IGNORE_RATIO_SIGN",
+    "distractor_misconceptions": [
+      {
+        "option": "216 cm",
+        "misconception_id": "L6_IGNORE_RATIO_SIGN"
+      }
+    ]
+  },
+  {
+    "id": "24a15aaa-d5a3-436c-b9c3-c66b3b7b55f9",
+    "spec": "L6-x47",
+    "concept_id": "L6",
+    "type": "TITA",
+    "stem": "Consider two arithmetic progressions: $P = 7, 12, 17, \\dots, 452$ and $Q = 4, 11, 18, \\dots, 452$. How many terms are common to both progressions?",
+    "options": null,
+    "answer": "13",
+    "solution": "1. The common difference of sequence $P$ is $d_1 = 5$, and that of sequence $Q$ is $d_2 = 7$.\n2. Terms of $P$ satisfy $x \\equiv 7 \\equiv 2 \\pmod 5$, and terms of $Q$ satisfy $x \\equiv 4 \\pmod 7$.\n3. To find the smallest common term, check terms of $Q$: $4$ (mod $5 = 4$), $11$ (mod $5 = 1$), $18$ (mod $5 = 3$), $25$ (mod $5 = 0$), $32$ (mod $5 = 2$). Thus, the first common term is $a = 32$.\n4. Common terms form an arithmetic progression with common difference $\\text{lcm}(5, 7) = 35$.\n5. The common terms are given by $T_k = 32 + 35(k - 1) \\le 452$.\n6. Solving $35(k - 1) \\le 452 - 32 = 420$, we get $k - 1 \\le 12$, which gives $k \\le 13$.\n7. Since the smallest term corresponds to $k = 1$, there are $13$ common terms.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "80265de7-1740-479f-ad78-fd17331eb82e",
@@ -19607,6 +20645,60 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "ea70e041-d5ec-44c2-bc12-09ca5c35fa0a",
+    "spec": "L7-x27",
+    "concept_id": "L7",
+    "type": "MCQ",
+    "stem": "Let $f(x) = x^2 - 4x + 9$ and $g(x) = 2x - 3$ for all real numbers $x$. The graph of $y = f(g(x))$ is shifted $3$ units to the right and $4$ units downwards to obtain the graph of $h(x)$. What is the minimum value of $h(x)$?",
+    "options": [
+      "1",
+      "4",
+      "7",
+      "3"
+    ],
+    "answer": "1",
+    "solution": "1. Find the minimum value of $f(x)$ or analyze the composition $f(g(x))$. Note that $f(t) = t^2 - 4t + 9 = (t - 2)^2 + 5$. Since $g(x) = 2x - 3$ spans all real numbers as $x$ varies over $\\mathbb{R}$, the range of $f(g(x))$ is identical to the range of $f(t)$ for $t \\in \\mathbb{R}$.\n2. The minimum value of $(g(x) - 2)^2 + 5$ occurs when $g(x) = 2$ (which happens at $x = 2.5$), yielding a minimum value of $5$.\n3. Shifting the graph of a function to the right by $3$ units changes the $x$-coordinate of the minimum but does not affect the vertical values (minimum remains $5$). Shifting it $4$ units downwards decreases every $y$-value by $4$.\n4. Therefore, the minimum value of $h(x)$ is $5 - 4 = 1$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "7",
+        "misconception_id": "L7_COMPOSITION_ORDER"
+      },
+      {
+        "option": "4",
+        "misconception_id": "L7_SHIFT_DIRECTION"
+      }
+    ]
+  },
+  {
+    "id": "aedc8008-a0a0-40fa-8be2-553c337ffc27",
+    "spec": "L7-x28",
+    "concept_id": "L7",
+    "type": "MCQ",
+    "stem": "Let $f(x) = x^2 - 2x - 3$ and $g(x) = 3x - 1$ be defined for all real numbers $x$. If $k$ is a positive constant such that $f(g(k)) = 12$, what is the value of $k$?",
+    "options": [
+      "2",
+      "4",
+      "\\frac{5}{3}",
+      "\\frac{2}{3}"
+    ],
+    "answer": "2",
+    "solution": "1. Let $y = g(k)$. Then the equation is $f(y) = 12$, which gives $y^2 - 2y - 3 = 12$, or $y^2 - 2y - 15 = 0$.\n2. Factoring the quadratic gives $(y - 5)(y + 3) = 0$, so $y = 5$ or $y = -3$.\n3. Since $y = g(k) = 3k - 1$:\n   - If $3k - 1 = 5$, then $3k = 6 \\implies k = 2$.\n   - If $3k - 1 = -3$, then $3k = -2 \\implies k = -\\frac{2}{3}$.\n4. As $k$ is given to be positive, we have $k = 2$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L7_COMPOSITION_ORDER",
+    "distractor_misconceptions": [
+      {
+        "option": "4",
+        "misconception_id": "L7_COMPOSITION_ORDER"
+      }
+    ]
+  },
+  {
     "id": "eae4db27-4078-4671-b4e1-bc5f617d2b5a",
     "spec": "L7-x3",
     "concept_id": "L7",
@@ -20062,6 +21154,21 @@
         "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
       }
     ]
+  },
+  {
+    "id": "4e666c2c-08d1-47e2-9398-592ab776a5fc",
+    "spec": "M1-x17",
+    "concept_id": "M1",
+    "type": "TITA",
+    "stem": "A quality assurance audit inspected a batch of $200$ defective components rejected by an automobile parts manufacturing unit. Each component had at least one of three types of defects: Surface Blemish ($S$), Dimensional Variance ($D$), and Material Porosity ($M$). A total of $105$ components had defect $S$, $90$ had defect $D$, and $85$ had defect $M$. Furthermore, $35$ components had both defects $S$ and $D$, $30$ had both $D$ and $M$, and $40$ had both $S$ and $M$. Find the number of components that had exactly one of these three defects.",
+    "options": null,
+    "answer": "145",
+    "solution": "1. Let $S$, $D$, and $M$ denote the sets of components having Surface Blemish, Dimensional Variance, and Material Porosity defects, respectively.\n2. We are given: $|S \\cup D \\cup M| = 200$, $|S| = 105$, $|D| = 90$, $|M| = 85$, $|S \\cap D| = 35$, $|D \\cap M| = 30$, and $|S \\cap M| = 40$.\n3. Using the Principle of Inclusion-Exclusion:\n$|S \\cup D \\cup M| = (|S| + |D| + |M|) - (|S \\cap D| + |D \\cap M| + |S \\cap M|) + |S \\cap D \\cap M|$\n$200 = (105 + 90 + 85) - (35 + 30 + 40) + |S \\cap D \\cap M|$\n$200 = 280 - 105 + |S \\cap D \\cap M|$\n$200 = 175 + |S \\cap D \\cap M| \\implies |S \\cap D \\cap M| = 25$.\n4. The number of components with defects in exactly two categories is:\n$\\sum |\\text{pairwise intersections}| - 3|S \\cap D \\cap M| = (35 + 30 + 40) - 3(25) = 105 - 75 = 30$.\n5. Therefore, the number of components with exactly one defect is:\n$|\\text{Total}| - (|\\text{Exactly two}| + |\\text{All three}|) = 200 - (30 + 25) = 145$.\n\nFinal Answer: 145",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
   },
   {
     "id": "824c376c-2e34-4899-9c6e-b2eb5e26d761",
@@ -20781,6 +21888,72 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "886348dc-c80a-4665-82bd-16de97e13679",
+    "spec": "M2-x27",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "A tourist bus operates a circular sightseeing route around a historic city with $7$ distinct designated stops. The tour operator decides to schedule photo stops at exactly $4$ of these $7$ stops such that no two photo stops are at consecutive stops along the route. In how many different ways can the tour operator choose this set of $4$ photo stops?",
+    "options": [
+      "0",
+      "7",
+      "35",
+      "42"
+    ],
+    "answer": "0",
+    "solution": "1. Let $n = 7$ be the total number of stops arranged in a circle, and $k = 4$ be the number of stops to be chosen such that no two are consecutive.\n2. The number of ways to choose $k$ non-consecutive items from $n$ items arranged in a circle is given by the formula $\\frac{n}{n-k} \\binom{n-k}{k}$ when $n \\ge 2k$.\n3. Here, $k = 4$, so $2k = 8$. Since $n = 7 < 8$, it is impossible to pick $4$ mutually non-consecutive stops from $7$ stops in a circle (picking $4$ stops leaves only $3$ unpicked stops, which can separate at most $3$ chosen stops by the Pigeonhole Principle).\n4. Therefore, the number of valid ways is $0$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "7",
+        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
+      },
+      {
+        "option": "35",
+        "misconception_id": "M2_OVERCOUNT_IDENTICAL"
+      },
+      {
+        "option": "42",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      }
+    ]
+  },
+  {
+    "id": "dd7c72f7-fb09-4211-a775-a1cb159c225c",
+    "spec": "M2-x28",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "The internal audit team of a small accounting firm consists of $5$ senior auditors and $3$ junior associates. To review the annual financial statements, they all sit together around a circular conference table having $8$ symmetrically placed seats. To ensure balanced oversight, no two junior associates are allowed to sit adjacent to each other. In how many distinct seating arrangements can the team be seated around the table?",
+    "options": [
+      "1440",
+      "7200",
+      "14400",
+      "2880"
+    ],
+    "answer": "1440",
+    "solution": "1. Seat the $5$ senior auditors first around the circular table. Since circular arrangements are invariant under rotation, the number of ways to seat $5$ people around a circular table is $(5 - 1)! = 4! = 24$.\n2. Once the senior auditors are seated, they create $5$ distinct gaps between them around the table.\n3. To ensure no two junior associates sit adjacent to each other, the $3$ junior associates must be placed into these $5$ distinct gaps, with at most one junior associate per gap. The number of ways to choose and arrange $3$ junior associates in these $5$ positions is $^{5}P_3 = 5 \\times 4 \\times 3 = 60$.\n4. Therefore, the total number of distinct seating arrangements is $24 \\times 60 = 1440$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_CIRCULAR_AS_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "7200",
+        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
+      },
+      {
+        "option": "14400",
+        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
+      },
+      {
+        "option": "2880",
+        "misconception_id": "M2_OVERCOUNT_IDENTICAL"
+      }
+    ]
+  },
+  {
     "id": "356c92a9-95d6-4e09-afaa-9985e53e51ad",
     "spec": "M2-x3",
     "concept_id": "M2",
@@ -21447,6 +22620,39 @@
     ]
   },
   {
+    "id": "ddd5dbc6-9d79-4b28-857f-7250b34a618e",
+    "spec": "M3-x27",
+    "concept_id": "M3",
+    "type": "MCQ",
+    "stem": "A manufacturing unit has two assembly lines, Line 1 and Line 2, producing the same mechanical component. Line 1 produces $60\\%$ of the total components and Line 2 produces the remaining $40\\%$. The defect rate for components manufactured by Line 1 is $5\\%$, while that for Line 2 is $10\\%$. A quality control auditor randomly selects one manufactured component and finds that it is defective. What is the probability that this component was produced by Line 1?",
+    "options": [
+      "$\\frac{3}{7}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{4}{7}$"
+    ],
+    "answer": "$\\frac{3}{7}$",
+    "solution": "1. Let $E_1$ be the event that the component was produced by Line 1, and $E_2$ be the event that it was produced by Line 2. We are given $P(E_1) = 0.60$ and $P(E_2) = 0.40$.\n2. Let $D$ be the event that the component is defective. We are given $P(D \\mid E_1) = 0.05$ and $P(D \\mid E_2) = 0.10$.\n3. The total probability of selecting a defective component is:\n$P(D) = P(E_1)P(D \\mid E_1) + P(E_2)P(D \\mid E_2) = (0.60)(0.05) + (0.40)(0.10) = 0.03 + 0.04 = 0.07$.\n4. By Bayes' Theorem, the probability that the defective component came from Line 1 is:\n$P(E_1 \\mid D) = \\frac{P(E_1)P(D \\mid E_1)}{P(D)} = \\frac{0.03}{0.07} = \\frac{3}{7}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{1}{2}$",
+        "misconception_id": "M3_OUTCOMES_NOT_EQUALLY_LIKELY"
+      },
+      {
+        "option": "$\\frac{3}{5}$",
+        "misconception_id": "M3_DEPENDENT_AS_INDEPENDENT"
+      },
+      {
+        "option": "$\\frac{4}{7}$",
+        "misconception_id": "M3_OUTCOMES_NOT_EQUALLY_LIKELY"
+      }
+    ]
+  },
+  {
     "id": "4b6f5719-4177-4195-b287-1e0a8eb7721e",
     "spec": "M3-x3",
     "concept_id": "M3",
@@ -22061,6 +23267,21 @@
     ]
   },
   {
+    "id": "849b6eb4-efd1-4b6e-9f1e-997f83ebe804",
+    "spec": "N1-x23",
+    "concept_id": "N1",
+    "type": "TITA",
+    "stem": "Find the number of positive integers $n \\le 1000$ such that $n$ is divisible by neither $4$ nor $6$, but $3n$ is divisible by $9$.",
+    "options": null,
+    "answer": "167",
+    "solution": "1. The condition \"$3n$ is divisible by $9$\" is equivalent to $3n$ being a multiple of $9$, which means $n$ must be a multiple of $3$.\n2. So, $n$ must be an integer such that $1 \\le n \\le 1000$, $n$ is a multiple of $3$, $n$ is not divisible by $4$, and $n$ is not divisible by $6$.\n3. Notice that any multiple of $6$ is already a multiple of $3$ that is even (divisible by $2$). Therefore, if $n$ is a multiple of $3$, saying $n$ is not divisible by $6$ simply means $n$ is an odd multiple of $3$.\n4. Any multiple of $4$ is even, so an odd multiple of $3$ is never divisible by $4$.\n5. Hence, the conditions reduce to: $n$ is an odd multiple of $3$ in the range $1 \\le n \\le 1000$.\n6. The odd multiples of $3$ are of the form $3(2k - 1) = 6k - 3$ for integers $k \\ge 1$.\n7. We require $1 \\le 6k - 3 \\le 1000$, which gives $4 \\le 6k \\le 1003$, so $\\frac{4}{6} \\le k \\le \\frac{1003}{6} = 167.166\\dots$\n8. The possible values of $k$ are $1, 2, \\dots, 167$, giving a total of $167$ integers.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "55332b03-89c5-462b-9417-f108745f7c7a",
     "spec": "N1-x24",
     "concept_id": "N1",
@@ -22086,6 +23307,35 @@
     ]
   },
   {
+    "id": "406d85d2-f38a-497f-997a-449070ca7ec7",
+    "spec": "N1-x25",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "What is the minimum positive integer $n$ such that $n$ is divisible by both $18$ and $24$, and the total number of positive factors of $n$ is at least $15$?",
+    "options": [
+      "72",
+      "144",
+      "216",
+      "432"
+    ],
+    "answer": "144",
+    "solution": "1. The integer $n$ must be a common multiple of $18$ and $24$. The least common multiple is $\\text{lcm}(18, 24) = \\text{lcm}(2 \\times 3^2, 2^3 \\times 3) = 2^3 \\times 3^2 = 72$.\n2. Any such multiple can be written as $n = 72k$ for some positive integer $k$.\n3. Check multiples in increasing order:\n- For $n = 72 = 2^3 \\times 3^2$, the number of factors is $(3+1)(2+1) = 4 \\times 3 = 12 < 15$.\n- For $n = 144 = 72 \\times 2 = 2^4 \\times 3^2$, the number of factors is $(4+1)(2+1) = 5 \\times 3 = 15 \\ge 15$.\n4. Thus, the minimum positive integer is $144$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "72",
+        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
+      },
+      {
+        "option": "432",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      }
+    ]
+  },
+  {
     "id": "1e9aafe6-7116-4dbf-9497-7fe15b10e2c1",
     "spec": "N1-x26",
     "concept_id": "N1",
@@ -22099,6 +23349,64 @@
     "verified": true,
     "targets_misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "6f271fad-a7d3-4042-8cd0-7bdae01f9baf",
+    "spec": "N1-x27",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "Let $P$ denote the number of integers from $1$ to $1200$ (inclusive) that are divisible by both $15$ and $20$. Let $Q$ denote the total number of positive factors of the integer $N = 2^3 \\times 3^2 \\times 5^1$. What is the value of $|P - Q|$?",
+    "options": [
+      "0",
+      "4",
+      "18",
+      "20"
+    ],
+    "answer": "4",
+    "solution": "1. Find $P$: An integer is divisible by both $15$ and $20$ if and only if it is divisible by $\\text{lcm}(15, 20) = 60$. The number of multiples of $60$ from $1$ to $1200$ is $\\lfloor \\frac{1200}{60} \\rfloor = 20$. Thus, $P = 20$.\n2. Find $Q$: The prime factorization of $N$ is $2^3 \\times 3^2 \\times 5^1$. The total number of positive factors is given by $(3 + 1)(2 + 1)(1 + 1) = 4 \\times 3 \\times 2 = 24$. Thus, $Q = 24$.\n3. Calculate $|P - Q| = |20 - 24| = 4$.\n4. Therefore, the required value is 4.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "20",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      },
+      {
+        "option": "18",
+        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
+      },
+      {
+        "option": "0",
+        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
+      }
+    ]
+  },
+  {
+    "id": "900f2975-53be-4feb-824e-036c3613ca75",
+    "spec": "N1-x28",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "A library catalog uses integers from $1$ to $3600$ to index books. A book is selected for digital archiving if its index number is divisible by both $30$ and $45$, but is not divisible by $75$. How many books from the catalog are selected for digital archiving?",
+    "options": [
+      "32",
+      "2",
+      "40",
+      "24"
+    ],
+    "answer": "32",
+    "solution": "1. Find the condition for being divisible by both $30$ and $45$: A number is divisible by both $30$ and $45$ if and only if it is a multiple of $\\text{lcm}(30, 45) = 90$.\n2. The number of multiples of $90$ up to $3600$ is $\\lfloor 3600 / 90 \\rfloor = 40$.\n3. From these multiples, we must exclude those divisible by $75$. A number is divisible by both $90$ and $75$ if and only if it is a multiple of $\\text{lcm}(90, 75) = 450$.\n4. The number of multiples of $450$ up to $3600$ is $\\lfloor 3600 / 450 \\rfloor = 8$.\n5. Therefore, the number of selected books is $40 - 8 = 32$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N1_DIVISIBLE_BY_PRODUCT",
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      }
+    ]
   },
   {
     "id": "5688d564-cd68-492c-97d3-028565e32881",
@@ -22694,6 +24002,21 @@
     ]
   },
   {
+    "id": "20b0af00-0e27-441c-9267-a1cc0aa0c2ff",
+    "spec": "N2-x23",
+    "concept_id": "N2",
+    "type": "TITA",
+    "stem": "Let $a$, $b$, and $c$ be positive integers such that $\\gcd(a, b) = 12$, $\\gcd(b, c) = 18$, and $\\gcd(c, a) = 30$. Find the minimum possible value of $a + b + c$.",
+    "options": null,
+    "answer": "186",
+    "solution": "1. Any positive integer $a$ that satisfies $\\gcd(a, b) = 12$ and $\\gcd(c, a) = 30$ must be a multiple of both $12$ and $30$. Hence, $a$ must be a multiple of $\\text{lcm}(12, 30) = 60$. The smallest positive integer value for $a$ is $60$.\n\n2. Similarly, $b$ must be a multiple of both $\\gcd(a, b) = 12$ and $\\gcd(b, c) = 18$. Thus, $b$ must be a multiple of $\\text{lcm}(12, 18) = 36$. The smallest positive integer value for $b$ is $36$.\n\n3. Likewise, $c$ must be a multiple of both $\\gcd(b, c) = 18$ and $\\gcd(c, a) = 30$. Thus, $c$ must be a multiple of $\\text{lcm}(18, 30) = 90$. The smallest positive integer value for $c$ is $90$.\n\n4. Verify the given conditions for the triple $(a, b, c) = (60, 36, 90)$:\n- $\\gcd(60, 36) = 12$\n- $\\gcd(36, 90) = 18$\n- $\\gcd(90, 60) = 30$\n\nAll conditions are satisfied. Since each variable independently attains its minimum possible value, the minimum sum is $a + b + c = 60 + 36 + 90 = 186$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
     "id": "cf9365cd-5729-41d7-ba57-b6d0e4c72ec6",
     "spec": "N2-x24",
     "concept_id": "N2",
@@ -22761,6 +24084,35 @@
     "verified": true,
     "targets_misconception_id": "N2_HCF_FOR_LCM",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "184ef88d-a95a-4768-8db3-5a70ceafc3e2",
+    "spec": "N2-x27",
+    "concept_id": "N2",
+    "type": "MCQ",
+    "stem": "Three positive integers $a$, $b$, and $c$ have a highest common factor (HCF) of $4$ and their product is $a \\times b \\times c = 43200$. If $\\text{HCF}(a, b) = \\text{HCF}(b, c) = \\text{HCF}(c, a) = 4$, find the least common multiple (LCM) of $a$, $b$, and $c$.",
+    "options": [
+      "10800",
+      "2700",
+      "675",
+      "4"
+    ],
+    "answer": "2700",
+    "solution": "1. Let $a = 4x$, $b = 4y$, and $c = 4z$. Since the pairwise HCF between any two of the numbers is $4$, the integers $x, y, z$ must be pairwise coprime, meaning $\\gcd(x, y) = \\gcd(y, z) = \\gcd(z, x) = 1$.\n2. The product of the three numbers is $a \\times b \\times c = 4x \\times 4y \\times 4z = 64xyz$.\n3. Given $a \\times b \\times c = 43200$, we have $64xyz = 43200 \\implies xyz = \\frac{43200}{64} = 675$.\n4. For three numbers where no two share any prime factors other than the common HCF (i.e., $x, y, z$ are pairwise coprime), the LCM is given by $\\text{LCM}(a, b, c) = 4 \\times x \\times y \\times z = 4 \\times 675 = 2700$.\n5. Therefore, the least common multiple is $2700$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "10800",
+        "misconception_id": "N2_PRODUCT_RULE_3NUMS"
+      },
+      {
+        "option": "4",
+        "misconception_id": "N2_HCF_FOR_LCM"
+      }
+    ]
   },
   {
     "id": "529ee510-62a7-4d51-a69f-303712a2774c",
@@ -23294,6 +24646,39 @@
     "distractor_misconceptions": []
   },
   {
+    "id": "a7cb3b7c-4593-428a-afea-9dc292cf397f",
+    "spec": "N3-x21",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "Let $R_1$ be the remainder when $15^{82}$ is divided by $40$, and let $R_2$ be the remainder when $13^{83}$ is divided by $14$. Which of the following statements correctly relates $R_1$ and $R_2$?",
+    "options": [
+      "$R_1 - R_2 = 12$",
+      "$R_1 - R_2 = 24$",
+      "$R_1 - R_2 = 14$",
+      "$R_1 - R_2 = 2$"
+    ],
+    "answer": "$R_1 - R_2 = 12$",
+    "solution": "1. To find $R_1$, consider $\\frac{15^{82}}{40}$. Notice that both numerator and denominator share a factor of $5$. Dividing both by $5$, we evaluate $\\frac{3 \\cdot 15^{81}}{8}$. Since $15 \\equiv -1 \\pmod{8}$, $15^{81} \\equiv (-1)^{81} \\equiv -1 \\equiv 7 \\pmod{8}$. Then $3 \\cdot 15^{81} \\equiv 3 \\cdot (-1) \\equiv -3 \\equiv 5 \\pmod{8}$.\n2. Restoring the cancelled factor of $5$, we get $R_1 = 5 \\times 5 = 25$.\n3. To find $R_2$, consider $13^{83} \\pmod{14}$. Since $13 \\equiv -1 \\pmod{14}$, we have $13^{83} \\equiv (-1)^{83} = -1 \\equiv 13 \\pmod{14}$. Hence, $R_2 = 13$.\n4. Therefore, $R_1 - R_2 = 25 - 13 = 12$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$R_1 - R_2 = 24$",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      },
+      {
+        "option": "$R_1 - R_2 = 4$",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "$R_1 - R_2 = 14$",
+        "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
+      }
+    ]
+  },
+  {
     "id": "d2637173-b1f5-4757-914a-012383ae938a",
     "spec": "N3-x22",
     "concept_id": "N3",
@@ -23401,6 +24786,60 @@
     "verified": true,
     "targets_misconception_id": "N3_CANCEL_NOT_RESTORED",
     "distractor_misconceptions": []
+  },
+  {
+    "id": "2bd06454-27f4-4104-9ebe-ad2f7d3f469b",
+    "spec": "N3-x27",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "What is the remainder when $3^{162}$ is divided by $162$?",
+    "options": [
+      "1",
+      "81",
+      "161",
+      "27"
+    ],
+    "answer": "81",
+    "solution": "1. Factor the divisor: $162 = 2 \\times 81 = 2 \\times 3^4$.\n2. The dividend is $3^{162} = 3^4 \\times 3^{158} = 81 \\times 3^{158}$.\n3. To find the remainder of $\\frac{3^{162}}{162}$, cancel the common factor of $81$: we need to find the remainder when $3^{158}$ is divided by $2$.\n4. Since $3 \\equiv 1 \\pmod 2$, we have $3^{158} \\equiv 1^{158} \\equiv 1 \\pmod 2$.\n5. Restoring the cancelled factor of $81$, the true remainder is $1 \\times 81 = 81$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "161",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  },
+  {
+    "id": "474b9a8b-b081-43c1-b0c4-95e4d4e75f38",
+    "spec": "N3-x28",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "A sequence of numbers is generated such that the $n$-th term is given by $T_n = 33^{4n} + 48^{4n}$. What is the remainder when the sum $S = \\sum_{n=1}^{25} T_n$ is divided by $10$?",
+    "options": [
+      "5",
+      "0",
+      "7",
+      "2"
+    ],
+    "answer": "5",
+    "solution": "1. We need to find $S \\pmod{10}$, which is the units digit of $S = \\sum_{n=1}^{25} (33^{4n} + 48^{4n})$.\n2. The units digit of $33^{4n}$ depends on the powers of $3$: the cyclicity is $3, 9, 7, 1$ (period 4). Since the exponent $4n$ is a multiple of $4$, the units digit is the 4th element of the cycle, which is $3^4 \\equiv 1 \\pmod{10}$.\n3. The units digit of $48^{4n}$ depends on powers of $8$: the cyclicity is $8, 4, 2, 6$ (period 4). Since $4n$ is a multiple of $4$, the units digit is the 4th element of the cycle, which is $8^4 \\equiv 6 \\pmod{10}$.\n4. Thus, for each $n$, the units digit of $T_n$ is $1 + 6 = 7$.\n5. The sum of $25$ such terms gives $S \\equiv 25 \\times 7 = 175 \\equiv 5 \\pmod{10}$.\n\nHence, the remainder is 5.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N3_CYCLICITY_ZERO_INDEX",
+    "distractor_misconceptions": [
+      {
+        "option": "0",
+        "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
+      }
+    ]
   },
   {
     "id": "8c66b6f9-4913-4f90-8fe8-2208e9960c9f",
@@ -23570,1364 +25009,6 @@
       {
         "option": "1",
         "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
-      }
-    ]
-  },
-  {
-    "id": "0e1bac54-5abe-4bfc-a46a-093ad1295058",
-    "spec": "A4-x40",
-    "concept_id": "A4",
-    "type": "MCQ",
-    "stem": "An education testing agency licenses access to its online mock exam question bank to college placement cells. The total operational cost incurred by the agency is ₹$800$ per student license. The agency sells each license to an engineering college for ₹$1,000$. What is the agency's profit percentage on each license?",
-    "options": [
-      "$20\\%$",
-      "$25\\%$",
-      "$16.67\\%$",
-      "$22.5\\%$"
-    ],
-    "answer": "$25\\%$",
-    "solution": "1. Cost Price (CP) per license = ₹$800$, Selling Price (SP) per license = ₹$1,000$.\n2. Profit = $\\text{SP} - \\text{CP} = 1,000 - 800 = \\text{₹}200$.\n3. Profit percentage is always calculated on the Cost Price: $\\text{Profit}\\% = \\left(\\frac{200}{800}\\right) \\times 100 = 25\\%$.\n4. Thus, the profit percentage is $25\\%$.",
-    "difficulty_elo": 1050,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A4_PROFIT_ON_SP",
-    "distractor_misconceptions": [
-      {
-        "option": "$20\\%$",
-        "misconception_id": "A4_PROFIT_ON_SP"
-      }
-    ]
-  },
-  {
-    "id": "a8747ccc-8854-4b4a-b505-206e854b9b51",
-    "spec": "A1-x40",
-    "concept_id": "A1",
-    "type": "MCQ",
-    "stem": "Due to peak holiday demand, a private bus operator increased the fare of a sleeper ticket from Mumbai to Goa by $30\\%$. Immediately after the holiday season ended, the operator reduced the fare by $20\\%$. What was the net percentage change in the ticket fare compared to the initial price before the holiday season?",
-    "options": [
-      "Increase of $10\\%$",
-      "Increase of $4\\%$",
-      "Decrease of $4\\%$",
-      "Increase of $5\\%$"
-    ],
-    "answer": "Increase of $4\\%$",
-    "solution": "1. Let the initial fare before the holiday season be ₹$100$.\n2. After an increase of $30\\%$, the new fare becomes $100 \\times 1.30 =$ ₹$130$.\n3. After a subsequent reduction of $20\\%$, the final fare becomes $130 \\times (1 - 0.20) = 130 \\times 0.80 =$ ₹$104$.\n4. Net change $= 104 - 100 = +4$, which represents an increase of $4\\%$.",
-    "difficulty_elo": 1050,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A1_ADD_SUCCESSIVE",
-    "distractor_misconceptions": [
-      {
-        "option": "Increase of $10\\%$",
-        "misconception_id": "A1_ADD_SUCCESSIVE"
-      }
-    ]
-  },
-  {
-    "id": "f5be9fd5-526f-4b5c-bd5a-b6e7050ca1f1",
-    "spec": "A3-x42",
-    "concept_id": "A3",
-    "type": "MCQ",
-    "stem": "An investor maintains a portfolio of $16$ systematic investment plans (SIPs) in mutual funds. To optimize returns, she terminates an underperforming SIP with a monthly contribution of ₹$4,500$ and replaces it with a new equity SIP. As a result of this replacement, the average monthly contribution across all $16$ SIPs in her portfolio increases by ₹$750$. What is the monthly contribution of the new SIP?",
-    "options": [
-      "₹5,250",
-      "₹12,000",
-      "₹15,750",
-      "₹16,500"
-    ],
-    "answer": "₹16,500",
-    "solution": "1. Let $n = 16$ be the total number of SIPs in the portfolio.\n2. When an existing SIP of value $V_{\\text{old}} = ₹4,500$ is replaced by a new SIP of value $V_{\\text{new}}$, the total contribution changes by $V_{\\text{new}} - V_{\\text{old}}$.\n3. Since the average contribution increases by $d = ₹750$, the increase in the total monthly contribution across all $16$ SIPs is $n \\times d = 16 \\times 750 = ₹12,000$.\n4. Therefore, $V_{\\text{new}} = V_{\\text{old}} + n \\times d = 4,500 + 12,000 = ₹16,500$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
-    "distractor_misconceptions": [
-      {
-        "option": "₹5,250",
-        "misconception_id": "A3_REPLACEMENT_UNSCALED"
-      },
-      {
-        "option": "₹15,750",
-        "misconception_id": "A3_OLD_COUNT"
-      }
-    ]
-  },
-  {
-    "id": "a28ee020-7752-4233-be19-ab4752017813",
-    "spec": "A6-x44",
-    "concept_id": "A6",
-    "type": "TITA",
-    "stem": "A census survey was conducted across two sectors, Sector A and Sector B, of a newly planned industrial city. In Sector A, $68\\%$ of the population are registered taxpayers, whereas in Sector B, $92\\%$ of the population are registered taxpayers. When the data from both sectors are combined, exactly $74\\%$ of the entire city's population are found to be registered taxpayers. If the total population of Sector B is $18,000$, find the total population of Sector A.",
-    "options": null,
-    "answer": "54000",
-    "solution": "1. Let $P_A$ and $P_B$ be the populations of Sector A and Sector B, respectively.\n2. By the rule of alligation on taxpayer percentages:\n$$\\frac{P_A}{P_B} = \\frac{92 - 74}{74 - 68} = \\frac{18}{6} = \\frac{3}{1}$$\n3. Note: A common mistake (reversing the differences) gives $\\frac{P_A}{P_B} = \\frac{74 - 68}{92 - 74} = \\frac{1}{3}$, which would yield $P_A = 6,000$.\n4. With the correct ratio $P_A : P_B = 3 : 1$ and $P_B = 18,000$:\n$$P_A = 3 \\times 18,000 = 54,000$$\n\nFinal Answer: 54000",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A6_ALLIGATION_REVERSED",
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "b42c23e7-41fc-4b7a-8c9f-1edea3d36d19",
-    "spec": "A5-x24",
-    "concept_id": "A5",
-    "type": "MCQ",
-    "stem": "A state transport corporation sets aside a reserve of ₹$1,25,000$ to upgrade its highway intercity bus fleet after $3$ years. The amount is invested in an infrastructure fund that earns interest at $20\\%$ per annum compounded annually. What is the total interest earned by the corporation at the end of $3$ years?",
-    "options": [
-      "₹$75,000$",
-      "₹$91,000$",
-      "₹$90,000$",
-      "₹$2,16,000$"
-    ],
-    "answer": "₹$91,000$",
-    "solution": "1. The principal invested is $P = ₹1,25,000$, rate $r = 20\\%$, and time $n = 3$ years compounded annually.\n2. The total accumulated amount at the end of $3$ years is $A = P\\left(1 + \\frac{r}{100}\\right)^n = 1,25,000 \\times \\left(1 + \\frac{20}{100}\\right)^3 = 1,25,000 \\times \\left(\\frac{6}{5}\\right)^3$.\n3. $\\left(\\frac{6}{5}\\right)^3 = \\frac{216}{125}$, so $A = 1,25,000 \\times \\frac{216}{125} = 1,000 \\times 216 = ₹2,16,000$.\n4. The total interest earned is $CI = A - P = 2,16,000 - 1,25,000 = ₹91,000$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A5_SI_FOR_CI",
-    "distractor_misconceptions": [
-      {
-        "option": "₹$75,000$",
-        "misconception_id": "A5_SI_FOR_CI"
-      },
-      {
-        "option": "₹$90,000$",
-        "misconception_id": "A5_CI_LINEAR_SCALING"
-      }
-    ]
-  },
-  {
-    "id": "e2406282-5c92-4b8d-80fa-0b15f34b19a0",
-    "spec": "A2-x44",
-    "concept_id": "A2",
-    "type": "TITA",
-    "stem": "An online grocery delivery platform operates in two sectors, Sector A and Sector B. At 8:00 AM, the ratio of pending delivery orders in Sector A to that in Sector B was $5 : 8$. Over the next two hours, exactly $60$ new orders were placed in Sector A and $60$ new orders were placed in Sector B, while no orders were dispatched. At 10:00 AM, the ratio of pending orders in Sector A to that in Sector B became $7 : 10$. Find the total number of pending orders across both sectors combined at 10:00 AM.",
-    "options": null,
-    "answer": "510",
-    "solution": "1. Let the number of pending orders at 8:00 AM in Sector A and Sector B be $5x$ and $8x$, respectively.\n2. After $60$ orders are added to each sector, the pending orders become $5x + 60$ and $8x + 60$.\n3. Given the new ratio: $\\frac{5x + 60}{8x + 60} = \\frac{7}{10}$.\n4. Cross-multiplying: $10(5x + 60) = 7(8x + 60) \\implies 50x + 600 = 56x + 420$.\n5. Solving for $x$: $6x = 180 \\implies x = 30$.\n6. At 10:00 AM, the total number of orders across both sectors is $(5x + 60) + (8x + 60) = 13x + 120 = 13(30) + 120 = 390 + 120 = 510$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A2_ADD_TO_RATIO",
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "49453153-5a85-4922-8910-dd8f78f62195",
-    "spec": "A5-x23",
-    "concept_id": "A5",
-    "type": "TITA",
-    "stem": "An online delivery platform borrows a sum of money at $10\\%$ per annum compound interest, compounded annually, to purchase a fleet of electric delivery bikes. The platform repays the loan in two equal annual instalments of ₹$4,84,000$ each, paid at the end of the first and second years, respectively. Had the company instead borrowed the same principal amount under simple interest at the same rate of $10\\%$ per annum for $2$ years and repaid the entire loan with interest in one single payment at the end of $2$ years, what would have been the total interest, in ₹, paid on the loan?",
-    "options": null,
-    "answer": "168000",
-    "solution": "1. Let the borrowed principal be $P$. Each annual instalment is $x = 4,84,000$ at $r = 10\\% = 0.10$.\n2. Equating the present value of the instalments to the principal: $P = \\frac{x}{1 + r} + \\frac{x}{(1 + r)^2} = \\frac{4,84,000}{1.1} + \\frac{4,84,000}{1.21}$.\n3. Calculating the individual terms: $\\frac{4,84,000}{1.1} = 4,40,000$ and $\\frac{4,84,000}{1.21} = 4,00,000$.\n4. Thus, $P = 4,40,000 + 4,00,000 = 8,40,000$.\n5. Under simple interest at $10\\%$ per annum for $2$ years, the total interest paid is $\\text{SI} = \\frac{P \\times r \\times t}{100} = \\frac{8,40,000 \\times 10 \\times 2}{100} = 1,68,000$.\nFinal Answer: 168000",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "88190a49-6a99-428d-a58a-f8f330971440",
-    "spec": "A4-x41",
-    "concept_id": "A4",
-    "type": "TITA",
-    "stem": "During a cultural festival, a handicrafts stall owner procures brass lanterns at a certain cost price each. He marks up each lantern such that after offering a cash discount of $15\\%$ on the marked price, he still earns an overall profit of $36\\%$. On the final day of the festival, to clear the remaining stock, he gives an additional promotional scheme: buy $3$ lanterns and get $1$ lantern free, while retaining the $15\\%$ cash discount on the paid lanterns. What is his overall profit percentage on the lanterns sold under this scheme?",
-    "options": null,
-    "answer": "2",
-    "solution": "1. Let the cost price ($CP$) of one lantern be ₹$100$.\n2. With a profit of $36\\%$, the selling price ($SP$) before the buy-and-get-free scheme is $100 \\times 1.36 = \\text{₹}136$.\n3. Under the clearance scheme, a customer takes $4$ lanterns ($3$ paid + $1$ free) while paying for $3$ lanterns at the discounted price of ₹$136$ each.\n4. Total revenue collected for $4$ lanterns $= 3 \\times 136 = \\text{₹}408$.\n5. Total cost price for these $4$ lanterns $= 4 \\times 100 = \\text{₹}400$.\n6. Overall profit percentage $= \\frac{408 - 400}{400} \\times 100 = \\frac{8}{400} \\times 100 = 2\\%$.\n\nFinal Answer: 2",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "a70eb207-d661-4494-b23c-c354b2547de5",
-    "spec": "A7-x42",
-    "concept_id": "A7",
-    "type": "MCQ",
-    "stem": "An irrigation reservoir on an organic farm is filled by two solar pumps, Pump A and Pump B, while water is drawn for field irrigation by an outlet drainage canal. Working alone, Pump A can fill the empty reservoir in $12$ hours, and Pump B can fill it in $15$ hours. The drainage canal, if operated continuously without any pumps running, can completely empty a full reservoir in $20$ hours. If the reservoir is initially empty and both pumps as well as the drainage canal are opened simultaneously, in how many hours will the reservoir be completely filled?",
-    "options": [
-      "$5$",
-      "$10$",
-      "$4$",
-      "$47$"
-    ],
-    "answer": "$10$",
-    "solution": "1. Let the capacity of the reservoir be the LCM of $12, 15,$ and $20$, which is $60$ units.\n2. Work rate of Pump A (filling) $= \\frac{60}{12} = +5$ units/hour.\n3. Work rate of Pump B (filling) $= \\frac{60}{15} = +4$ units/hour.\n4. Work rate of the drainage canal (emptying) $= \\frac{60}{20} = -3$ units/hour.\n5. Net filling rate when all three are open simultaneously $= 5 + 4 - 3 = 6$ units/hour.\n6. Time taken to fill the empty reservoir $= \\frac{60}{6} = 10$ hours.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A7_EMPTY_PIPE_ADDS",
-    "distractor_misconceptions": [
-      {
-        "option": "$5$",
-        "misconception_id": "A7_EMPTY_PIPE_ADDS"
-      },
-      {
-        "option": "$47$",
-        "misconception_id": "A7_ADD_DAYS"
-      }
-    ]
-  },
-  {
-    "id": "4f2eafaa-c7ac-4b7a-909d-262869d0cedf",
-    "spec": "A8-x40",
-    "concept_id": "A8",
-    "type": "MCQ",
-    "stem": "An auditor for a textile firm travels by car from the head office to a retail branch to inspect its accounts at a uniform speed of $30\\text{ km/h}$. After completing the audit, she returns to the head office along the exact same route at a uniform speed of $60\\text{ km/h}$. What was her average speed for the entire round trip?",
-    "options": [
-      "$45\\text{ km/h}$",
-      "$40\\text{ km/h}$",
-      "$36\\text{ km/h}$",
-      "$48\\text{ km/h}$"
-    ],
-    "answer": "$40\\text{ km/h}$",
-    "solution": "1. Let the one-way distance between the head office and the branch be $d\\text{ km}$.\n2. Time taken for the outward trip: $t_1 = \\frac{d}{30}\\text{ hours}$.\n3. Time taken for the return trip: $t_2 = \\frac{d}{60}\\text{ hours}$.\n4. Total distance = $2d\\text{ km}$ and total time = $\\frac{d}{30} + \\frac{d}{60} = \\frac{3d}{60} = \\frac{d}{20}\\text{ hours}$.\n5. Average speed = $\\frac{\\text{Total distance}}{\\text{Total time}} = \\frac{2d}{d/20} = 40\\text{ km/h}$.",
-    "difficulty_elo": 1050,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
-    "distractor_misconceptions": [
-      {
-        "option": "$45\\text{ km/h}$",
-        "misconception_id": "A8_MEAN_OF_SPEEDS"
-      }
-    ]
-  },
-  {
-    "id": "77b0eb91-88d7-4544-8fb1-3b486eb49a1e",
-    "spec": "A8-x41",
-    "concept_id": "A8",
-    "type": "TITA",
-    "stem": "During a promotional festive sale, a retail manager drives from her central store to a newly opened suburban outlet to oversee operations, a distance of $60\\text{ km}$. If she increases her usual driving speed by $10\\text{ km/h}$, she reaches the suburban outlet $18\\text{ minutes}$ earlier than usual. Find her usual driving speed (in $\\text{km/h}$).",
-    "options": null,
-    "answer": "40",
-    "solution": "1. Let the usual speed be $v\\text{ km/h}$. Then the increased speed is $(v + 10)\\text{ km/h}$.\n2. The difference in time taken for a journey of $60\\text{ km}$ is $18\\text{ minutes} = \\frac{18}{60}\\text{ hours} = \\frac{3}{10}\\text{ hours}$.\n3. Setting up the equation: $\\frac{60}{v} - \\frac{60}{v+10} = \\frac{3}{10}$.\n4. Divide by $3$: $\\frac{20}{v} - \\frac{20}{v+10} = \\frac{1}{10} \\implies 20\\left(\\frac{10}{v(v+10)}\\right) = \\frac{1}{10} \\implies v(v+10) = 2000$.\n5. Solving the quadratic $v^2 + 10v - 2000 = 0$, we find $(v + 50)(v - 40) = 0$. Since speed must be positive, $v = 40$.\n6. Thus, her usual driving speed is $40$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "6f271fad-a7d3-4042-8cd0-7bdae01f9baf",
-    "spec": "N1-x27",
-    "concept_id": "N1",
-    "type": "MCQ",
-    "stem": "Let $P$ denote the number of integers from $1$ to $1200$ (inclusive) that are divisible by both $15$ and $20$. Let $Q$ denote the total number of positive factors of the integer $N = 2^3 \\times 3^2 \\times 5^1$. What is the value of $|P - Q|$?",
-    "options": [
-      "0",
-      "4",
-      "18",
-      "20"
-    ],
-    "answer": "4",
-    "solution": "1. Find $P$: An integer is divisible by both $15$ and $20$ if and only if it is divisible by $\\text{lcm}(15, 20) = 60$. The number of multiples of $60$ from $1$ to $1200$ is $\\lfloor \\frac{1200}{60} \\rfloor = 20$. Thus, $P = 20$.\n2. Find $Q$: The prime factorization of $N$ is $2^3 \\times 3^2 \\times 5^1$. The total number of positive factors is given by $(3 + 1)(2 + 1)(1 + 1) = 4 \\times 3 \\times 2 = 24$. Thus, $Q = 24$.\n3. Calculate $|P - Q| = |20 - 24| = 4$.\n4. Therefore, the required value is 4.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "20",
-        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
-      },
-      {
-        "option": "18",
-        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
-      },
-      {
-        "option": "0",
-        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
-      }
-    ]
-  },
-  {
-    "id": "900f2975-53be-4feb-824e-036c3613ca75",
-    "spec": "N1-x28",
-    "concept_id": "N1",
-    "type": "MCQ",
-    "stem": "A library catalog uses integers from $1$ to $3600$ to index books. A book is selected for digital archiving if its index number is divisible by both $30$ and $45$, but is not divisible by $75$. How many books from the catalog are selected for digital archiving?",
-    "options": [
-      "32",
-      "2",
-      "40",
-      "24"
-    ],
-    "answer": "32",
-    "solution": "1. Find the condition for being divisible by both $30$ and $45$: A number is divisible by both $30$ and $45$ if and only if it is a multiple of $\\text{lcm}(30, 45) = 90$.\n2. The number of multiples of $90$ up to $3600$ is $\\lfloor 3600 / 90 \\rfloor = 40$.\n3. From these multiples, we must exclude those divisible by $75$. A number is divisible by both $90$ and $75$ if and only if it is a multiple of $\\text{lcm}(90, 75) = 450$.\n4. The number of multiples of $450$ up to $3600$ is $\\lfloor 3600 / 450 \\rfloor = 8$.\n5. Therefore, the number of selected books is $40 - 8 = 32$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "N1_DIVISIBLE_BY_PRODUCT",
-    "distractor_misconceptions": [
-      {
-        "option": "2",
-        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
-      }
-    ]
-  },
-  {
-    "id": "e644cef7-44ed-47b9-a653-a8e31903076d",
-    "spec": "A1-x41",
-    "concept_id": "A1",
-    "type": "TITA",
-    "stem": "In the financial year 2022–23, the total operating expenditure of a design firm consisted entirely of staff salaries and office rental, with staff salaries accounting for $60\\%$ of the total. In the financial year 2023–24, the amount spent on staff salaries increased by $20\\%$, while the firm's total operating expenditure increased by $30\\%$. What was the percentage increase in the office rental from 2022–23 to 2023–24?",
-    "options": null,
-    "answer": "45",
-    "solution": "1. Assume the total operating expenditure in 2022–23 was ₹$100$.\n2. Then, staff salaries = ₹$60$ and office rental = ₹$40$.\n3. In 2023–24, total operating expenditure increased by $30\\%$ to $100 \\times 1.30 = \\text{₹}130$.\n4. Staff salaries increased by $20\\%$ to $60 \\times 1.20 = \\text{₹}72$.\n5. Therefore, office rental in 2023–24 was $130 - 72 = \\text{₹}58$.\n6. The percentage increase in office rental is $\\frac{58 - 40}{40} \\times 100\\% = \\frac{18}{40} \\times 100\\% = 45\\%$.\n\nFinal Answer: 45",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "406d85d2-f38a-497f-997a-449070ca7ec7",
-    "spec": "N1-x25",
-    "concept_id": "N1",
-    "type": "MCQ",
-    "stem": "What is the minimum positive integer $n$ such that $n$ is divisible by both $18$ and $24$, and the total number of positive factors of $n$ is at least $15$?",
-    "options": [
-      "72",
-      "144",
-      "216",
-      "432"
-    ],
-    "answer": "144",
-    "solution": "1. The integer $n$ must be a common multiple of $18$ and $24$. The least common multiple is $\\text{lcm}(18, 24) = \\text{lcm}(2 \\times 3^2, 2^3 \\times 3) = 2^3 \\times 3^2 = 72$.\n2. Any such multiple can be written as $n = 72k$ for some positive integer $k$.\n3. Check multiples in increasing order:\n- For $n = 72 = 2^3 \\times 3^2$, the number of factors is $(3+1)(2+1) = 4 \\times 3 = 12 < 15$.\n- For $n = 144 = 72 \\times 2 = 2^4 \\times 3^2$, the number of factors is $(4+1)(2+1) = 5 \\times 3 = 15 \\ge 15$.\n4. Thus, the minimum positive integer is $144$.",
-    "difficulty_elo": 1050,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "72",
-        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
-      },
-      {
-        "option": "432",
-        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
-      }
-    ]
-  },
-  {
-    "id": "9fa7d93c-0a1b-434c-8840-0251fc187c74",
-    "spec": "A7-x23",
-    "concept_id": "A7",
-    "type": "TITA",
-    "stem": "A corporate training consultancy assigns a project to two consultants, Arvind and Bipin. Working alone, Arvind can complete the project in $30$ days, while Bipin takes $45$ days. The company agrees to pay them a total contract fee of ₹$1{,}20{,}000$, distributed strictly in proportion to the work done by each. Arvind works alone for the first $6$ days, after which Bipin joins him. After working together for some days, Arvind gets an appraisal and his daily efficiency increases by $25\\%$. The two continue working at their respective new rates and finish the remaining work in $6$ days. Find the total amount (in ₹) earned by Bipin from the contract.",
-    "options": null,
-    "answer": "36000",
-    "solution": "1. Let total work be the LCM of $30$ and $45$, which is $90$ units.\n2. Normal daily rate of Arvind = $\\frac{90}{30} = 3$ units/day.\n3. Daily rate of Bipin = $\\frac{90}{45} = 2$ units/day.\n4. Arvind works alone for the first $6$ days: work done = $6 \\times 3 = 18$ units.\n5. In the final phase, Arvind's efficiency increases by $25\\%$, so his new rate = $3 \\times 1.25 = 3.75$ units/day.\n6. In the final $6$ days, Arvind and Bipin together do $6 \\times (3.75 + 2) = 6 \\times 5.75 = 34.5$ units of work.\n7. Remaining work done during the intermediate phase when Arvind (normal rate) and Bipin worked together: $90 - (18 + 34.5) = 37.5$ units.\n8. Combined rate in this intermediate phase = $3 + 2 = 5$ units/day. Thus, the intermediate phase lasted $\\frac{37.5}{5} = 7.5$ days.\n9. Total days Bipin worked = $7.5$ days (intermediate) + $6$ days (final) = $13.5$ days.\n10. Total work done by Bipin = $13.5 \\times 2 = 27$ units out of $90$ units.\n11. Proportion of work done by Bipin = $\\frac{27}{90} = \\frac{3}{10}$.\n12. Total payment to Bipin = $\\frac{3}{10} \\times 1{,}20{,}000 = ₹36{,}000$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "a7cb3b7c-4593-428a-afea-9dc292cf397f",
-    "spec": "N3-x21",
-    "concept_id": "N3",
-    "type": "MCQ",
-    "stem": "Let $R_1$ be the remainder when $15^{82}$ is divided by $40$, and let $R_2$ be the remainder when $13^{83}$ is divided by $14$. Which of the following statements correctly relates $R_1$ and $R_2$?",
-    "options": [
-      "$R_1 - R_2 = 12$",
-      "$R_1 - R_2 = 24$",
-      "$R_1 - R_2 = 14$",
-      "$R_1 - R_2 = 2$"
-    ],
-    "answer": "$R_1 - R_2 = 12$",
-    "solution": "1. To find $R_1$, consider $\\frac{15^{82}}{40}$. Notice that both numerator and denominator share a factor of $5$. Dividing both by $5$, we evaluate $\\frac{3 \\cdot 15^{81}}{8}$. Since $15 \\equiv -1 \\pmod{8}$, $15^{81} \\equiv (-1)^{81} \\equiv -1 \\equiv 7 \\pmod{8}$. Then $3 \\cdot 15^{81} \\equiv 3 \\cdot (-1) \\equiv -3 \\equiv 5 \\pmod{8}$.\n2. Restoring the cancelled factor of $5$, we get $R_1 = 5 \\times 5 = 25$.\n3. To find $R_2$, consider $13^{83} \\pmod{14}$. Since $13 \\equiv -1 \\pmod{14}$, we have $13^{83} \\equiv (-1)^{83} = -1 \\equiv 13 \\pmod{14}$. Hence, $R_2 = 13$.\n4. Therefore, $R_1 - R_2 = 25 - 13 = 12$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "$R_1 - R_2 = 24$",
-        "misconception_id": "N3_NEGATIVE_REMAINDER"
-      },
-      {
-        "option": "$R_1 - R_2 = 4$",
-        "misconception_id": "N3_CANCEL_NOT_RESTORED"
-      },
-      {
-        "option": "$R_1 - R_2 = 14$",
-        "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
-      }
-    ]
-  },
-  {
-    "id": "2bd06454-27f4-4104-9ebe-ad2f7d3f469b",
-    "spec": "N3-x27",
-    "concept_id": "N3",
-    "type": "MCQ",
-    "stem": "What is the remainder when $3^{162}$ is divided by $162$?",
-    "options": [
-      "1",
-      "81",
-      "161",
-      "27"
-    ],
-    "answer": "81",
-    "solution": "1. Factor the divisor: $162 = 2 \\times 81 = 2 \\times 3^4$.\n2. The dividend is $3^{162} = 3^4 \\times 3^{158} = 81 \\times 3^{158}$.\n3. To find the remainder of $\\frac{3^{162}}{162}$, cancel the common factor of $81$: we need to find the remainder when $3^{158}$ is divided by $2$.\n4. Since $3 \\equiv 1 \\pmod 2$, we have $3^{158} \\equiv 1^{158} \\equiv 1 \\pmod 2$.\n5. Restoring the cancelled factor of $81$, the true remainder is $1 \\times 81 = 81$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "1",
-        "misconception_id": "N3_CANCEL_NOT_RESTORED"
-      },
-      {
-        "option": "161",
-        "misconception_id": "N3_NEGATIVE_REMAINDER"
-      }
-    ]
-  },
-  {
-    "id": "79ffbc47-6f0b-4369-8f8a-d48f4b96bab6",
-    "spec": "L1-x6",
-    "concept_id": "L1",
-    "type": "MCQ",
-    "stem": "If $x$ is a positive real number satisfying the equation $\\sqrt{x^2 + 144} - \\sqrt{x^2 + 25} = 3$, what is the value of $\\sqrt{x^2 + 144} + \\sqrt{x^2 + 25}$?",
-    "options": [
-      "17",
-      "39",
-      "47",
-      "\\frac{119}{3}"
-    ],
-    "answer": "\\frac{119}{3}",
-    "solution": "1. Let $A = \\sqrt{x^2 + 144}$ and $B = \\sqrt{x^2 + 25}$. We are given $A - B = 3$ and need to find $A + B$.\n2. Note the identity $A^2 - B^2 = (x^2 + 144) - (x^2 + 25) = 119$.\n3. Since $A^2 - B^2 = (A - B)(A + B)$, we have $119 = 3(A + B)$.\n4. Thus, $A + B = \\frac{119}{3}$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L1_ROOT_OF_SUM",
-    "distractor_misconceptions": [
-      {
-        "option": "17",
-        "misconception_id": "L1_ROOT_OF_SUM"
-      }
-    ]
-  },
-  {
-    "id": "474b9a8b-b081-43c1-b0c4-95e4d4e75f38",
-    "spec": "N3-x28",
-    "concept_id": "N3",
-    "type": "MCQ",
-    "stem": "A sequence of numbers is generated such that the $n$-th term is given by $T_n = 33^{4n} + 48^{4n}$. What is the remainder when the sum $S = \\sum_{n=1}^{25} T_n$ is divided by $10$?",
-    "options": [
-      "5",
-      "0",
-      "7",
-      "2"
-    ],
-    "answer": "5",
-    "solution": "1. We need to find $S \\pmod{10}$, which is the units digit of $S = \\sum_{n=1}^{25} (33^{4n} + 48^{4n})$.\n2. The units digit of $33^{4n}$ depends on the powers of $3$: the cyclicity is $3, 9, 7, 1$ (period 4). Since the exponent $4n$ is a multiple of $4$, the units digit is the 4th element of the cycle, which is $3^4 \\equiv 1 \\pmod{10}$.\n3. The units digit of $48^{4n}$ depends on powers of $8$: the cyclicity is $8, 4, 2, 6$ (period 4). Since $4n$ is a multiple of $4$, the units digit is the 4th element of the cycle, which is $8^4 \\equiv 6 \\pmod{10}$.\n4. Thus, for each $n$, the units digit of $T_n$ is $1 + 6 = 7$.\n5. The sum of $25$ such terms gives $S \\equiv 25 \\times 7 = 175 \\equiv 5 \\pmod{10}$.\n\nHence, the remainder is 5.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "N3_CYCLICITY_ZERO_INDEX",
-    "distractor_misconceptions": [
-      {
-        "option": "0",
-        "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
-      }
-    ]
-  },
-  {
-    "id": "a906e3b5-2e8f-44b3-8c64-248d73e984e9",
-    "spec": "A6-x43",
-    "concept_id": "A6",
-    "type": "MCQ",
-    "stem": "A chemical plant has a storage tank filled with $600$ litres of a chlorine solution containing $40\\%$ chlorine by volume. To gradually reduce the chlorine concentration, a drainage pipe empties $120$ litres of the well-mixed solution from the tank, which is then immediately refilled with $120$ litres of pure water. This entire operation (draining $120$ litres followed by refilling with $120$ litres of pure water) is carried out a total of $3$ times. What is the final concentration of chlorine in the tank?",
-    "options": [
-      "$16.0\\%$",
-      "$20.48\\%$",
-      "$24.0\\%$",
-      "$25.6\\%$"
-    ],
-    "answer": "$20.48\\%$",
-    "solution": "1. The tank initially has a capacity and volume of $V = 600$ litres with an initial chlorine concentration of $C_0 = 40\\%$.\n2. In each cycle, $x = 120$ litres of solution is removed and replaced by pure water. The fraction of liquid retained in each cycle is $\\frac{V - x}{V} = \\frac{600 - 120}{600} = \\frac{480}{600} = \\frac{4}{5} = 0.8$.\n3. After $n = 3$ operations, the concentration becomes $C = C_0 \\times \\left(1 - \\frac{x}{V}\\right)^n = 40\\% \\times (0.8)^3$.\n4. Calculating the value: $40\\% \\times 0.512 = 20.48\\%$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "$16.0\\%$",
-        "misconception_id": "A6_REPLACEMENT_LINEAR"
-      },
-      {
-        "option": "$25.6\\%$",
-        "misconception_id": "A6_REPLACEMENT_LINEAR"
-      },
-      {
-        "option": "$24.0\\%$",
-        "misconception_id": "A6_REPLACEMENT_LINEAR"
-      }
-    ]
-  },
-  {
-    "id": "1e594ed8-7a67-4814-8657-79727c240410",
-    "spec": "L1-x28",
-    "concept_id": "L1",
-    "type": "MCQ",
-    "stem": "If $a$ and $b$ are positive integers such that $2^a \\times 5^b = 400$, what is the value of $\\frac{10^{a+b}}{2^a \\times 5^b}$?",
-    "options": [
-      "2500",
-      "1",
-      "250",
-      "1000"
-    ],
-    "answer": "2500",
-    "solution": "1. Express $400$ as the product of its prime factors: $400 = 16 \\times 25 = 2^4 \\times 5^2$.\n2. Comparing with $2^a \\times 5^b = 400$, since $a$ and $b$ are integers, we have $a = 4$ and $b = 2$.\n3. Then $a + b = 4 + 2 = 6$, which gives $10^{a+b} = 10^6 = 1{,}000{,}000$.\n4. The required value is $\\frac{10^6}{400} = \\frac{1{,}000{,}000}{400} = 2500$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L1_ADD_EXP_DIFF_BASES",
-    "distractor_misconceptions": [
-      {
-        "option": "1",
-        "misconception_id": "L1_ADD_EXP_DIFF_BASES"
-      }
-    ]
-  },
-  {
-    "id": "33b97916-6241-4254-a597-5952c22e6aae",
-    "spec": "L1-x27",
-    "concept_id": "L1",
-    "type": "MCQ",
-    "stem": "Let $A = \\sqrt{13} - \\sqrt{11}$ and $B = \\sqrt{17} - \\sqrt{15}$. Which of the following statements is true?",
-    "options": [
-      "$A > B$",
-      "$A < B$",
-      "$A = B$",
-      "$A + B = \\sqrt{2}$"
-    ],
-    "answer": "$A > B$",
-    "solution": "1. Rationalize both expressions by multiplying and dividing by their respective conjugates:\n$A = \\frac{(\\sqrt{13} - \\sqrt{11})(\\sqrt{13} + \\sqrt{11})}{\\sqrt{13} + \\sqrt{11}} = \\frac{13 - 11}{\\sqrt{13} + \\sqrt{11}} = \\frac{2}{\\sqrt{13} + \\sqrt{11}}$\n$B = \\frac{(\\sqrt{17} - \\sqrt{15})(\\sqrt{17} + \\sqrt{15})}{\\sqrt{17} + \\sqrt{15}} = \\frac{17 - 15}{\\sqrt{17} + \\sqrt{15}} = \\frac{2}{\\sqrt{17} + \\sqrt{15}}$\n2. Compare the denominators: since $\\sqrt{17} > \\sqrt{13}$ and $\\sqrt{15} > \\sqrt{11}$, we have $\\sqrt{17} + \\sqrt{15} > \\sqrt{13} + \\sqrt{11} > 0$.\n3. Since both numerators are equal to $2$, the fraction with the smaller denominator is larger. Hence, $\\frac{2}{\\sqrt{13} + \\sqrt{11}} > \\frac{2}{\\sqrt{17} + \\sqrt{15}}$, which means $A > B$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "$A = B$",
-        "misconception_id": "L1_ROOT_OF_SUM"
-      }
-    ]
-  },
-  {
-    "id": "c6bf8fa5-46d1-4e24-bcbf-1a7de8c63a74",
-    "spec": "A2-x13",
-    "concept_id": "A2",
-    "type": "MCQ",
-    "stem": "Three event management agencies—Alpha, Beta, and Gamma—pooled funds to organize a cultural festival. Their invested capitals were in the ratio $3 : 4 : 5$. Alpha withdrew its entire capital after 8 months, Beta remained invested for 10 months, while Gamma stayed invested for the full year of 12 months. Out of the total annual profit generated from the festival, a fixed portion was first donated to a local charity, and the remaining profit was distributed among Alpha, Beta, and Gamma in proportion to their effective investments. If Gamma received ₹$72,000$ more than Alpha, and Beta received ₹$40,000$ less than Gamma, what was the total profit distributed among the three agencies?",
-    "options": [
-      "₹3,10,000",
-      "₹2,48,000",
-      "₹2,64,000",
-      "₹3,72,000"
-    ],
-    "answer": "₹2,48,000",
-    "solution": "1. Let the capital ratio be $C_A : C_B : C_C = 3 : 4 : 5$ and the respective time periods in months be $T_A = 8$, $T_B = 10$, and $T_C = 12$.\n2. The ratio of effective investments (and hence profit shares) is $(3 \\times 8) : (4 \\times 10) : (5 \\times 12) = 24 : 40 : 60 = 6 : 10 : 15$.\n3. Let their profit shares be $6x$, $10x$, and $15x$.\n4. Gamma received ₹$72,000$ more than Alpha: $15x - 6x = 9x = 72,000 \\implies x = 8,000$. (Checking consistency: Gamma - Beta = $15x - 10x = 5x = 5 \\times 8,000 = 40,000$, which matches the given condition).\n5. Total profit distributed $= 6x + 10x + 15x = 31x = 31 \\times 8,000 = ₹2,48,000$.\n\nFinal Answer: ₹2,48,000",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "₹3,10,000",
-        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
-      },
-      {
-        "option": "₹2,64,000",
-        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
-      },
-      {
-        "option": "₹3,72,000",
-        "misconception_id": "A2_INVERT_WHEN_COMBINING"
-      }
-    ]
-  },
-  {
-    "id": "6118ad15-445e-46f0-b0b7-f00562902827",
-    "spec": "A7-x43",
-    "concept_id": "A7",
-    "type": "MCQ",
-    "stem": "For a college cultural festival, the design committee needs to fabricate a set of wooden stage props. Working alone, senior student Ananya can complete the task in $36$ hours, while junior student Rohan can complete it in $60$ hours. Rohan is $25\\%$ more efficient than his classmate Shreya. Ananya begins the work alone and works for $9$ hours, after which she leaves. Rohan and Shreya then work together to complete the remaining work. If the college pays a total stipend of ₹$16,800$ for the entire project, distributed strictly in proportion to the work done by each student, how much more does Rohan earn than Shreya?",
-    "options": [
-      "₹$2,800$",
-      "₹$1,400$",
-      "₹$3,150$",
-      "₹$1,260$"
-    ],
-    "answer": "₹$1,400$",
-    "solution": "1. Let total work be the LCM of relevant time quantities. First, determine Shreya's rate. Rohan takes $60$ hours alone. Since Rohan is $25\\%$ more efficient than Shreya, the ratio of their efficiencies is $\\frac{\\text{Rate}_R}{\\text{Rate}_S} = \\frac{5}{4}$.\nThus, $\\text{Rate}_S = \\frac{4}{5} \\times \\text{Rate}_R$, meaning Shreya alone takes $60 \\times \\frac{5}{4} = 75$ hours.\n\n2. Let total work $= 900$ units (LCM of $36, 60, 75$).\n- Ananya's rate $= \\frac{900}{36} = 25$ units/hour.\n- Rohan's rate $= \\frac{900}{60} = 15$ units/hour.\n- Shreya's rate $= \\frac{4}{5} \\times 15 = 12$ units/hour.\n\n3. Ananya works alone for $9$ hours:\nWork completed by Ananya $= 9 \\times 25 = 225$ units.\nRemaining work $= 900 - 225 = 675$ units.\n\n4. Rohan and Shreya work together to finish the remaining $675$ units.\nTheir combined rate $= 15 + 12 = 27$ units/hour.\nTime taken by Rohan and Shreya $= \\frac{675}{27} = 25$ hours.\n\n5. Work done by Rohan $= 25 \\times 15 = 375$ units.\nWork done by Shreya $= 25 \\times 12 = 300$ units.\nDifference in work done by Rohan and Shreya $= 375 - 300 = 75$ units.\n\n6. The difference in their earnings $= \\frac{75}{900} \\times 16,800 = \\frac{1}{12} \\times 16,800 = ₹1,400$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "₹$2,800$",
-        "misconception_id": "A7_MEN_DAYS_DIRECT"
-      },
-      {
-        "option": "₹$1,260$",
-        "misconception_id": "A7_EFFICIENCY_TIME_SAME_PCT"
-      }
-    ]
-  },
-  {
-    "id": "6f15ccca-60e1-497f-a84a-7b908271af97",
-    "spec": "L2-x28",
-    "concept_id": "L2",
-    "type": "MCQ",
-    "stem": "An analyst models the operating profit $P$ (in ₹ lakhs) of a startup after $x$ months of operation using the equation $\\log_2(x - 1) + \\log_2(x - 5) = 5$. If the model is valid only for months $x$ where all logarithmic terms are well-defined, what is the sum of all possible values of $x$?",
-    "options": [
-      "9",
-      "6",
-      "10",
-      "4"
-    ],
-    "answer": "9",
-    "solution": "1. For the logarithmic terms to be well-defined, the arguments must be strictly positive: $x - 1 > 0 \\implies x > 1$ and $x - 5 > 0 \\implies x > 5$. Thus, the domain is $x > 5$.\n2. Combine the terms using log properties: $\\log_2((x - 1)(x - 5)) = 5$.\n3. Convert to exponential form: $(x - 1)(x - 5) = 2^5 = 32$.\n4. Expand and solve the quadratic: $x^2 - 6x + 5 = 32 \\implies x^2 - 6x - 27 = 0$.\n5. Factorize: $(x - 9)(x + 3) = 0$, giving $x = 9$ or $x = -3$.\n6. Since the domain requires $x > 5$, $x = -3$ is an extraneous root and must be rejected. The only valid value is $x = 9$, so the sum is 9.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L2_IGNORE_DOMAIN",
-    "distractor_misconceptions": [
-      {
-        "option": "6",
-        "misconception_id": "L2_IGNORE_DOMAIN"
-      }
-    ]
-  },
-  {
-    "id": "9950cfef-ff03-4762-b6e5-1f181654242f",
-    "spec": "A2-x3",
-    "concept_id": "A2",
-    "type": "MCQ",
-    "stem": "In a municipal council election, three candidates—$P$, $Q$, and $R$—contested. A total of $1,05,000$ votes were cast, all of which were valid. The ratio of the votes received by candidate $P$ to the total votes received by candidates $Q$ and $R$ combined was $3 : 4$. Among the remaining two candidates, the ratio of votes received by $Q$ to those received by $R$ was $3 : 2$. How many more votes did candidate $P$ receive than candidate $R$?",
-    "options": [
-      "15,000",
-      "21,000",
-      "27,000",
-      "30,000"
-    ],
-    "answer": "21,000",
-    "solution": "1. The ratio of votes received by $P$ to $(Q + R)$ is $3 : 4$.\n2. Since total votes are $1,05,000$, votes received by $P = \\frac{3}{3 + 4} \\times 1,05,000 = \\frac{3}{7} \\times 1,05,000 = 45,000$.\n3. The combined votes received by $Q$ and $R = 1,05,000 - 45,000 = 60,000$.\n4. The ratio of votes of $Q$ to $R$ is $3 : 2$. Thus, votes received by $R = \\frac{2}{3 + 2} \\times 60,000 = \\frac{2}{5} \\times 60,000 = 24,000$.\n5. The difference between the votes received by $P$ and $R$ is $45,000 - 24,000 = 21,000$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "15,000",
-        "misconception_id": "A2_INVERT_WHEN_COMBINING"
-      },
-      {
-        "option": "27,000",
-        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
-      }
-    ]
-  },
-  {
-    "id": "b2638906-eda7-4c67-824f-59711ada7508",
-    "spec": "A3-x41",
-    "concept_id": "A3",
-    "type": "TITA",
-    "stem": "In an economics class at a college, a professor calculated the average score of $32$ students on a midterm exam to be $66$. Later, two clerical errors were discovered: one student's actual score of $83$ had been recorded as $38$, while another student's actual score of $54$ had been recorded as $75$. In addition, $8$ students who were previously absent took a make-up exam, scoring an average of $73$. What is the correct overall average score of all $40$ students?",
-    "options": null,
-    "answer": "68",
-    "solution": "1. Calculate the net correction in the total score of the initial $32$ students:\n$\\\\Delta = (83 - 38) + (54 - 75) = 45 - 21 = +24$.\n\n2. Calculate the corrected average of the $32$ students:\n$\\\\text{Corrected average} = 66 + \\\\frac{24}{32} = 66 + 0.75 = 66.75$.\n\n3. Use the weighted average for the two groups of students ($32$ students with an average of $66.75$, and $8$ students with an average of $73$):\nThe ratio of the number of students is $32 : 8 = 4 : 1$.\n\n$\\\\text{Overall Average} = \\\\frac{4 \\\\times 66.75 + 1 \\\\times 73}{4 + 1} = \\\\frac{267 + 73}{5} = \\\\frac{340}{5} = 68$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "23229a5e-a683-4ace-9060-4f5395002a6b",
-    "spec": "L2-x27",
-    "concept_id": "L2",
-    "type": "MCQ",
-    "stem": "Find the sum of all real solutions to the equation $\\log_2(x - 2) + \\log_2(x - 4) = 3$.",
-    "options": [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    "answer": "6",
-    "solution": "1. For the logarithmic terms to be defined, we require $x - 2 > 0$ and $x - 4 > 0$, which gives $x > 4$.\n2. Using the product rule for logarithms: $\\log_2((x - 2)(x - 4)) = 3$.\n3. Converting to exponential form: $(x - 2)(x - 4) = 2^3 = 8$.\n4. Expanding the expression gives $x^2 - 6x + 8 = 8$, which simplifies to $x^2 - 6x = 0$, or $x(x - 6) = 0$.\n5. The solutions to the algebraic equation are $x = 0$ and $x = 6$.\n6. Since the domain requires $x > 4$, $x = 0$ is extraneous. Thus, the only valid real solution is $x = 6$, and the sum of all real solutions is 6.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "8",
-        "misconception_id": "L2_LOG_OF_SUM"
-      },
-      {
-        "option": "7",
-        "misconception_id": "L2_RATIO_OF_LOGS"
-      }
-    ]
-  },
-  {
-    "id": "a1aad1be-9b6f-4f11-be52-8410b4e05449",
-    "spec": "L4-x46",
-    "concept_id": "L4",
-    "type": "MCQ",
-    "stem": "Let $S$ be the set of all real values of $x$ satisfying the equation $(x - 3)(x - 8) = 14$. A function $f(x)$ is defined as $f(x) = x^2 - 6x + 13$. Find the minimum value of $f(x)$ as $x$ varies over the set $S$.",
-    "options": [
-      "5",
-      "8",
-      "29",
-      "125"
-    ],
-    "answer": "8",
-    "solution": "1. Expand and rearrange the given equation into standard quadratic form:\n$(x - 3)(x - 8) = 14 \\implies x^2 - 11x + 24 = 14 \\implies x^2 - 11x + 10 = 0$.\n2. Factorise the quadratic equation:\n$(x - 1)(x - 10) = 0 \\implies x = 1$ or $x = 10$.\nThus, the set $S = \\{1, 10\\}$.\n3. Evaluate $f(x) = x^2 - 6x + 13$ for each element in $S$:\nFor $x = 1$: $f(1) = 1^2 - 6(1) + 13 = 8$.\nFor $x = 10$: $f(10) = 10^2 - 6(10) + 13 = 53$.\n4. The minimum value of $f(x)$ on $S$ is $\\min(8, 53) = 8$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L4_ZERO_PRODUCT_NONZERO",
-    "distractor_misconceptions": [
-      {
-        "option": "5",
-        "misconception_id": "L4_ZERO_PRODUCT_NONZERO"
-      },
-      {
-        "option": "29",
-        "misconception_id": "L4_SUM_ROOTS_SIGN"
-      },
-      {
-        "option": "125",
-        "misconception_id": "L4_DIVIDE_BY_VARIABLE"
-      }
-    ]
-  },
-  {
-    "id": "508be35c-93de-44e8-8e91-a9b1a2a624a7",
-    "spec": "L2-x11",
-    "concept_id": "L2",
-    "type": "TITA",
-    "stem": "A sequence $a_1, a_2, a_3, \\dots$ is defined such that $a_n = \\log_2\\left(1 + \\frac{1}{n(n+2)}\\right)$ for all integers $n \\ge 1$. If the sum $S = \\sum_{n=1}^{62} a_n$, find the value of $2^S$.",
-    "options": null,
-    "answer": "1.96875",
-    "solution": "1. Simplify the general term $a_n$:\n$1 + \\frac{1}{n(n+2)} = \\frac{n(n+2)+1}{n(n+2)} = \\frac{(n+1)^2}{n(n+2)}$.\nThus, $a_n = \\log_2\\left(\\frac{(n+1)^2}{n(n+2)}\\right) = \\log_2\\left(\\frac{n+1}{n} \\cdot \\frac{n+1}{n+2}\\right)$.\n\n2. Summing from $n = 1$ to $62$:\n$S = \\sum_{n=1}^{62} \\log_2\\left(\\frac{(n+1)^2}{n(n+2)}\\right) = \\log_2\\left( \\prod_{n=1}^{62} \\frac{(n+1)^2}{n(n+2)} \\right)$.\n\n3. Write the product in telescoping form:\n$\\prod_{n=1}^{62} \\frac{(n+1)^2}{n(n+2)} = \\left(\\prod_{n=1}^{62} \\frac{n+1}{n}\\right) \\cdot \\left(\\prod_{n=1}^{62} \\frac{n+1}{n+2}\\right)$\n$= \\left(\\frac{2}{1} \\cdot \\frac{3}{2} \\dotsm \\frac{63}{62}\\right) \\cdot \\left(\\frac{2}{3} \\cdot \\frac{3}{4} \\dotsm \\frac{63}{64}\\right)$\n$= 63 \\cdot \\frac{2}{64} = \\frac{126}{64} = \\frac{63}{32}$.\n\n4. Therefore, $S = \\log_2\\left(\\frac{63}{32}\\right)$, which gives $2^S = \\frac{63}{32} = 1.96875$.\n\nFinal Answer: 1.96875",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "849b6eb4-efd1-4b6e-9f1e-997f83ebe804",
-    "spec": "N1-x23",
-    "concept_id": "N1",
-    "type": "TITA",
-    "stem": "Find the number of positive integers $n \\le 1000$ such that $n$ is divisible by neither $4$ nor $6$, but $3n$ is divisible by $9$.",
-    "options": null,
-    "answer": "167",
-    "solution": "1. The condition \"$3n$ is divisible by $9$\" is equivalent to $3n$ being a multiple of $9$, which means $n$ must be a multiple of $3$.\n2. So, $n$ must be an integer such that $1 \\le n \\le 1000$, $n$ is a multiple of $3$, $n$ is not divisible by $4$, and $n$ is not divisible by $6$.\n3. Notice that any multiple of $6$ is already a multiple of $3$ that is even (divisible by $2$). Therefore, if $n$ is a multiple of $3$, saying $n$ is not divisible by $6$ simply means $n$ is an odd multiple of $3$.\n4. Any multiple of $4$ is even, so an odd multiple of $3$ is never divisible by $4$.\n5. Hence, the conditions reduce to: $n$ is an odd multiple of $3$ in the range $1 \\le n \\le 1000$.\n6. The odd multiples of $3$ are of the form $3(2k - 1) = 6k - 3$ for integers $k \\ge 1$.\n7. We require $1 \\le 6k - 3 \\le 1000$, which gives $4 \\le 6k \\le 1003$, so $\\frac{4}{6} \\le k \\le \\frac{1003}{6} = 167.166\\dots$\n8. The possible values of $k$ are $1, 2, \\dots, 167$, giving a total of $167$ integers.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "20b0af00-0e27-441c-9267-a1cc0aa0c2ff",
-    "spec": "N2-x23",
-    "concept_id": "N2",
-    "type": "TITA",
-    "stem": "Let $a$, $b$, and $c$ be positive integers such that $\\gcd(a, b) = 12$, $\\gcd(b, c) = 18$, and $\\gcd(c, a) = 30$. Find the minimum possible value of $a + b + c$.",
-    "options": null,
-    "answer": "186",
-    "solution": "1. Any positive integer $a$ that satisfies $\\gcd(a, b) = 12$ and $\\gcd(c, a) = 30$ must be a multiple of both $12$ and $30$. Hence, $a$ must be a multiple of $\\text{lcm}(12, 30) = 60$. The smallest positive integer value for $a$ is $60$.\n\n2. Similarly, $b$ must be a multiple of both $\\gcd(a, b) = 12$ and $\\gcd(b, c) = 18$. Thus, $b$ must be a multiple of $\\text{lcm}(12, 18) = 36$. The smallest positive integer value for $b$ is $36$.\n\n3. Likewise, $c$ must be a multiple of both $\\gcd(b, c) = 18$ and $\\gcd(c, a) = 30$. Thus, $c$ must be a multiple of $\\text{lcm}(18, 30) = 90$. The smallest positive integer value for $c$ is $90$.\n\n4. Verify the given conditions for the triple $(a, b, c) = (60, 36, 90)$:\n- $\\gcd(60, 36) = 12$\n- $\\gcd(36, 90) = 18$\n- $\\gcd(90, 60) = 30$\n\nAll conditions are satisfied. Since each variable independently attains its minimum possible value, the minimum sum is $a + b + c = 60 + 36 + 90 = 186$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "20e1861b-efe5-49e6-950d-0b73158f8e2b",
-    "spec": "L5-x47",
-    "concept_id": "L5",
-    "type": "TITA",
-    "stem": "Find the number of integral values of $x$ satisfying the inequality $\\frac{|x + 3| - 2}{|x + 3| - 6} < 0$.",
-    "options": null,
-    "answer": "6",
-    "solution": "1. Let $y = |x + 3|$. Note that $y \\ge 0$.\n2. The inequality becomes $\\frac{y - 2}{y - 6} < 0$.\n3. For this rational expression to be negative, the numerator and denominator must have opposite signs, which gives $2 < y < 6$.\n4. Substituting back $y = |x + 3|$, we get $2 < |x + 3| < 6$.\n5. This splits into two intervals for $(x + 3)$:\n   - Positive case: $2 < x + 3 < 6 \\implies -1 < x < 3$. The integers in this range are $x \\in \\{0, 1, 2\\}$ (3 values).\n   - Negative case: $-6 < x + 3 < -2 \\implies -9 < x < -5$. The integers in this range are $x \\in \\{-8, -7, -6\\}$ (3 values).\n6. Combining both sets, there are $3 + 3 = 6$ integral values of $x$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "aac2f2da-e4a0-4abe-8a4d-756b0d349bec",
-    "spec": "L6-x46",
-    "concept_id": "L6",
-    "type": "MCQ",
-    "stem": "A particle moves along a straight line in successive steps. In the first step, it moves $72\\text{ cm}$ to the right. In the second step, it moves $48\\text{ cm}$ to the left. In each subsequent step, the distance it moves is $\\frac{2}{3}$ of the distance moved in the immediately preceding step, and the direction of movement alternates between right and left. If this motion continues indefinitely, what is the net displacement of the particle from its starting position?",
-    "options": [
-      "43.2 cm",
-      "216 cm",
-      "36 cm",
-      "120 cm"
-    ],
-    "answer": "43.2 cm",
-    "solution": "1. Let movement to the right be positive and movement to the left be negative.\n2. The net displacement is given by the infinite sum: $S = 72 - 48 + 32 - \\dots$\n3. This is an infinite geometric progression with first term $a = 72$ and common ratio $r = -\\frac{48}{72} = -\\frac{2}{3}$.\n4. Since $|r| < 1$, the sum to infinity is $S = \\frac{a}{1 - r} = \\frac{72}{1 - (-\\frac{2}{3})} = \\frac{72}{\\frac{5}{3}} = \\frac{216}{5} = 43.2\\text{ cm}$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L6_IGNORE_RATIO_SIGN",
-    "distractor_misconceptions": [
-      {
-        "option": "216 cm",
-        "misconception_id": "L6_IGNORE_RATIO_SIGN"
-      }
-    ]
-  },
-  {
-    "id": "24a15aaa-d5a3-436c-b9c3-c66b3b7b55f9",
-    "spec": "L6-x47",
-    "concept_id": "L6",
-    "type": "TITA",
-    "stem": "Consider two arithmetic progressions: $P = 7, 12, 17, \\dots, 452$ and $Q = 4, 11, 18, \\dots, 452$. How many terms are common to both progressions?",
-    "options": null,
-    "answer": "13",
-    "solution": "1. The common difference of sequence $P$ is $d_1 = 5$, and that of sequence $Q$ is $d_2 = 7$.\n2. Terms of $P$ satisfy $x \\equiv 7 \\equiv 2 \\pmod 5$, and terms of $Q$ satisfy $x \\equiv 4 \\pmod 7$.\n3. To find the smallest common term, check terms of $Q$: $4$ (mod $5 = 4$), $11$ (mod $5 = 1$), $18$ (mod $5 = 3$), $25$ (mod $5 = 0$), $32$ (mod $5 = 2$). Thus, the first common term is $a = 32$.\n4. Common terms form an arithmetic progression with common difference $\\text{lcm}(5, 7) = 35$.\n5. The common terms are given by $T_k = 32 + 35(k - 1) \\le 452$.\n6. Solving $35(k - 1) \\le 452 - 32 = 420$, we get $k - 1 \\le 12$, which gives $k \\le 13$.\n7. Since the smallest term corresponds to $k = 1$, there are $13$ common terms.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "ea70e041-d5ec-44c2-bc12-09ca5c35fa0a",
-    "spec": "L7-x27",
-    "concept_id": "L7",
-    "type": "MCQ",
-    "stem": "Let $f(x) = x^2 - 4x + 9$ and $g(x) = 2x - 3$ for all real numbers $x$. The graph of $y = f(g(x))$ is shifted $3$ units to the right and $4$ units downwards to obtain the graph of $h(x)$. What is the minimum value of $h(x)$?",
-    "options": [
-      "1",
-      "4",
-      "7",
-      "3"
-    ],
-    "answer": "1",
-    "solution": "1. Find the minimum value of $f(x)$ or analyze the composition $f(g(x))$. Note that $f(t) = t^2 - 4t + 9 = (t - 2)^2 + 5$. Since $g(x) = 2x - 3$ spans all real numbers as $x$ varies over $\\mathbb{R}$, the range of $f(g(x))$ is identical to the range of $f(t)$ for $t \\in \\mathbb{R}$.\n2. The minimum value of $(g(x) - 2)^2 + 5$ occurs when $g(x) = 2$ (which happens at $x = 2.5$), yielding a minimum value of $5$.\n3. Shifting the graph of a function to the right by $3$ units changes the $x$-coordinate of the minimum but does not affect the vertical values (minimum remains $5$). Shifting it $4$ units downwards decreases every $y$-value by $4$.\n4. Therefore, the minimum value of $h(x)$ is $5 - 4 = 1$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "7",
-        "misconception_id": "L7_COMPOSITION_ORDER"
-      },
-      {
-        "option": "4",
-        "misconception_id": "L7_SHIFT_DIRECTION"
-      }
-    ]
-  },
-  {
-    "id": "fca1a26d-fbe6-4c72-a92b-96213dca717a",
-    "spec": "G1-x17",
-    "concept_id": "G1",
-    "type": "TITA",
-    "stem": "Two angles, $A$ and $B$, are acute angles measured in degrees. The supplement of angle $A$ exceeds three times its complement by $20^\\circ$. For angle $B$, the ratio of its complement to its supplement is $2 : 5$. Find the absolute difference, in degrees, between angle $A$ and angle $B$.",
-    "options": null,
-    "answer": "25",
-    "solution": "1. For angle $A$, its supplement is $(180 - A)$ and its complement is $(90 - A)$. According to the problem:\n$(180 - A) - 3(90 - A) = 20$\n$180 - A - 270 + 3A = 20$\n$2A - 90 = 20 \\implies 2A = 110 \\implies A = 55^\\circ$.\n\n2. For angle $B$, the ratio of its complement to its supplement is $2 : 5$:\n$\\frac{90 - B}{180 - B} = \\frac{2}{5}$\n$5(90 - B) = 2(180 - B)$\n$450 - 5B = 360 - 2B$\n$3B = 90 \\implies B = 30^\\circ$.\n\n3. The absolute difference between angle $A$ and angle $B$ is $|55^\\circ - 30^\\circ| = 25^\\circ$.\nFinal Answer: 25",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "aedc8008-a0a0-40fa-8be2-553c337ffc27",
-    "spec": "L7-x28",
-    "concept_id": "L7",
-    "type": "MCQ",
-    "stem": "Let $f(x) = x^2 - 2x - 3$ and $g(x) = 3x - 1$ be defined for all real numbers $x$. If $k$ is a positive constant such that $f(g(k)) = 12$, what is the value of $k$?",
-    "options": [
-      "2",
-      "4",
-      "\\frac{5}{3}",
-      "\\frac{2}{3}"
-    ],
-    "answer": "2",
-    "solution": "1. Let $y = g(k)$. Then the equation is $f(y) = 12$, which gives $y^2 - 2y - 3 = 12$, or $y^2 - 2y - 15 = 0$.\n2. Factoring the quadratic gives $(y - 5)(y + 3) = 0$, so $y = 5$ or $y = -3$.\n3. Since $y = g(k) = 3k - 1$:\n   - If $3k - 1 = 5$, then $3k = 6 \\implies k = 2$.\n   - If $3k - 1 = -3$, then $3k = -2 \\implies k = -\\frac{2}{3}$.\n4. As $k$ is given to be positive, we have $k = 2$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L7_COMPOSITION_ORDER",
-    "distractor_misconceptions": [
-      {
-        "option": "4",
-        "misconception_id": "L7_COMPOSITION_ORDER"
-      }
-    ]
-  },
-  {
-    "id": "e8396e4e-0b78-477a-991c-5bbec7bb9074",
-    "spec": "L6-x13",
-    "concept_id": "L6",
-    "type": "MCQ",
-    "stem": "Consider two arithmetic progressions: $S_1: 7, 12, 17, \\dots, 902$ and $S_2: 4, 11, 18, \\dots, 907$. How many terms are common to both $S_1$ and $S_2$?",
-    "options": [
-      "24",
-      "25",
-      "26",
-      "35"
-    ],
-    "answer": "25",
-    "solution": "1. The common difference of $S_1$ is $d_1 = 5$, so its terms are of the form $5x + 2$ with $7 \\le T \\le 902$.\n2. The common difference of $S_2$ is $d_2 = 7$, so its terms are of the form $7y + 4$ with $4 \\le T \\le 907$.\n3. The common terms must satisfy $T \\equiv 2 \\pmod 5$ and $T \\equiv 4 \\pmod 7$.\n4. Testing small values of $T = 7y + 4$: for $y = 0$, $T = 4 \\not\\equiv 2 \\pmod 5$; for $y = 1$, $T = 11 \\not\\equiv 2 \\pmod 5$; for $y = 2$, $T = 18 \\not\\equiv 2 \\pmod 5$; for $y = 3$, $T = 25 \\not\\equiv 2 \\pmod 5$; for $y = 4$, $T = 32 \\equiv 2 \\pmod 5$. Thus, the first common term is $a = 32$.\n5. The common difference of the sequence of common terms is $\\text{lcm}(5, 7) = 35$.\n6. The upper limit for common terms is $\\min(902, 907) = 902$.\n7. Any common term is given by $32 + 35(n - 1) \\le 902 \\implies 35(n - 1) \\le 870 \\implies n - 1 \\le 24.857$, so $n - 1 = 24$, giving $n = 25$ terms.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "24",
-        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
-      },
-      {
-        "option": "26",
-        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
-      }
-    ]
-  },
-  {
-    "id": "8fb7dcdd-b7aa-44cf-9fab-5b0c552c2832",
-    "spec": "G2-x46",
-    "concept_id": "G2",
-    "type": "MCQ",
-    "stem": "Let $S = \\{4, 7, 10, 15, 21\\}$ be a set of five segments of distinct integer lengths in cm. Let $N$ be the number of distinct non-degenerate triangles that can be formed using three distinct segments chosen from $S$. Which of the following statements is true?",
-    "options": [
-      "$N = 10$",
-      "$N = 4$",
-      "$N = 5$",
-      "$N = 3$"
-    ],
-    "answer": "$N = 4$",
-    "solution": "1. The total number of ways to choose 3 segments from 5 is $\\binom{5}{3} = 10$.\n2. For any three lengths $a < b < c$ to form a non-degenerate triangle, the triangle inequality requires $a + b > c$.\n3. Test all 10 combinations:\n- $(4, 7, 10)$: $4 + 7 = 11 > 10$ (Valid)\n- $(4, 7, 15)$: $4 + 7 = 11 \\le 15$ (Invalid)\n- $(4, 7, 21)$: $4 + 7 = 11 \\le 21$ (Invalid)\n- $(4, 10, 15)$: $4 + 10 = 14 \\le 15$ (Invalid)\n- $(4, 10, 21)$: $4 + 10 = 14 \\le 21$ (Invalid)\n- $(4, 15, 21)$: $4 + 15 = 19 \\le 21$ (Invalid)\n- $(7, 10, 15)$: $7 + 10 = 17 > 15$ (Valid)\n- $(7, 10, 21)$: $7 + 10 = 17 \\le 21$ (Invalid)\n- $(7, 15, 21)$: $7 + 15 = 22 > 21$ (Valid)\n- $(10, 15, 21)$: $10 + 15 = 25 > 21$ (Valid)\n4. Thus, exactly 4 combinations form non-degenerate triangles: $(4, 7, 10)$, $(7, 10, 15)$, $(7, 15, 21)$, and $(10, 15, 21)$, so $N = 4$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY",
-    "distractor_misconceptions": [
-      {
-        "option": "$N = 10$",
-        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
-      }
-    ]
-  },
-  {
-    "id": "1a08e4ff-e9ba-4da0-936c-5589a0318c06",
-    "spec": "G3-x27",
-    "concept_id": "G3",
-    "type": "MCQ",
-    "stem": "In a circle with centre $O$, chords $PQ$ and $PR$ are drawn such that $\\angle QPR = 64^\\circ$. Tangents to the circle at points $Q$ and $R$ intersect at a point $T$ outside the circle. A point $S$ is chosen on the minor arc $QR$ such that $PQSR$ is a cyclic quadrilateral. What is the value of $\\angle QTR + \\angle QSR$?",
-    "options": [
-      "168^\\circ",
-      "180^\\circ",
-      "232^\\circ",
-      "284^\\circ"
-    ],
-    "answer": "168^\\circ",
-    "solution": "1. The angle subtended by arc $QR$ at the centre $O$ is $\\angle QOR = 2 \\times \\angle QPR = 2 \\times 64^\\circ = 128^\\circ$.\n2. The tangents $TQ$ and $TR$ are perpendicular to the radii $OQ$ and $OR$ respectively, so in quadrilateral $TQOR$, $\\angle QTR = 180^\\circ - \\angle QOR = 180^\\circ - 128^\\circ = 52^\\circ$.\n3. Since $PQSR$ is a cyclic quadrilateral, the opposite angles sum to $180^\\circ$. Therefore, $\\angle QSR = 180^\\circ - \\angle QPR = 180^\\circ - 64^\\circ = 116^\\circ$.\n4. Hence, $\\angle QTR + \\angle QSR = 52^\\circ + 116^\\circ = 168^\\circ$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "180^\\circ",
-        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
-      },
-      {
-        "option": "232^\\circ",
-        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
-      },
-      {
-        "option": "284^\\circ",
-        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
-      }
-    ]
-  },
-  {
-    "id": "769992f9-1192-468d-b8b6-a129e416032c",
-    "spec": "L6-x43",
-    "concept_id": "L6",
-    "type": "MCQ",
-    "stem": "Consider the arithmetic progression $14, 25, 36, \\dots, 1015$. How many terms of this sequence are divisible by $6$?",
-    "options": [
-      "15",
-      "16",
-      "91",
-      "92"
-    ],
-    "answer": "15",
-    "solution": "1. The given sequence is an arithmetic progression with first term $a = 14$ and common difference $d = 11$.\n2. The general term is $T_n = 14 + (n-1)11 = 11n + 3$.\n3. The last term is $1015$, so $11n + 3 = 1015 \\implies 11n = 1012 \\implies n = 92$. Thus, there are $92$ terms in total.\n4. We require $T_n$ to be divisible by $6$: $11n + 3 \\equiv 0 \\pmod 6$, which simplifies to $-n + 3 \\equiv 0 \\pmod 6 \\implies n \\equiv 3 \\pmod 6$.\n5. Therefore, $n$ takes values of the form $n = 6k + 3$ for integer $k \\ge 0$.\n6. Since $1 \\le n \\le 92$, we have $1 \\le 6k + 3 \\le 92 \\implies -2 \\le 6k \\le 89$. As $k$ is an integer, $0 \\le k \\le 14$.\n7. The number of possible integer values for $k$ is $14 - 0 + 1 = 15$.\n\nFinal Answer: 15",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "16",
-        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
-      },
-      {
-        "option": "91",
-        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
-      }
-    ]
-  },
-  {
-    "id": "658b4877-1151-4c1a-a00c-106c0379a8fb",
-    "spec": "G4-x27",
-    "concept_id": "G4",
-    "type": "MCQ",
-    "stem": "A regular polygon $P$ has each of its interior angles equal to $157.5^\\circ$. What is the total number of diagonals of $P$?",
-    "options": [
-      "120",
-      "104",
-      "88",
-      "136"
-    ],
-    "answer": "104",
-    "solution": "1. For a regular polygon, the sum of an interior angle and its corresponding exterior angle is $180^\\circ$. Thus, the exterior angle is $180^\\circ - 157.5^\\circ = 22.5^\\circ$.\n2. The number of sides $n$ is given by $\\frac{360^\\circ}{22.5^\\circ} = 16$.\n3. The total number of diagonals in an $n$-sided polygon is $\\frac{n(n - 3)}{2}$. For $n = 16$, the number of diagonals is $\\frac{16 \\times 13}{2} = 8 \\times 13 = 104$.\n4. Therefore, the correct answer is 104.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "120",
-        "misconception_id": "G4_DIAGONALS_NC2"
-      }
-    ]
-  },
-  {
-    "id": "c021dcf2-e264-4475-b0da-fa43a09e3843",
-    "spec": "G2-x45",
-    "concept_id": "G2",
-    "type": "MCQ",
-    "stem": "Four straight wooden rods have lengths of $4\\text{ cm}$, $7\\text{ cm}$, $10\\text{ cm}$, and $12\\text{ cm}$. A student wants to choose any three of these rods to form a triangle. How many non-congruent triangles can be formed?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": "3",
-    "solution": "1. The total number of ways to choose 3 rods from the 4 available rods is $\\binom{4}{3} = 4$.\n2. Test each combination using the triangle inequality theorem (the sum of the two shorter sides must be strictly greater than the longest side):\n- Combination $\\{4, 7, 10\\}$: $4 + 7 = 11 > 10$. This forms a valid triangle.\n- Combination $\\{4, 7, 12\\}$: $4 + 7 = 11 \\le 12$. This does not form a triangle.\n- Combination $\\{4, 10, 12\\}$: $4 + 10 = 14 > 12$. This forms a valid triangle.\n- Combination $\\{7, 10, 12\\}$: $7 + 10 = 17 > 12$. This forms a valid triangle.\n3. Out of the 4 combinations, exactly 3 form valid triangles. Thus, the answer is 3.",
-    "difficulty_elo": 1050,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "4",
-        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
-      }
-    ]
-  },
-  {
-    "id": "4b0f2ce5-8a5f-458f-ab12-9e17d16dc6b0",
-    "spec": "L5-x46",
-    "concept_id": "L5",
-    "type": "MCQ",
-    "stem": "Find the number of non-zero integer values of $x$ such that $-10 \\le x \\le 10$ and $\\frac{x^2 - 5x - 6}{x} \\le 0$.",
-    "options": [
-      "7",
-      "12",
-      "16",
-      "17"
-    ],
-    "answer": "16",
-    "solution": "1. We are given $\\frac{x^2 - 5x - 6}{x} \\le 0$, with $x$ being a non-zero integer in $[-10, 10]$. Factor the numerator: $\\frac{(x - 6)(x + 1)}{x} \\le 0$.\n2. Determine the critical points: $x = -1$, $x = 0$, and $x = 6$.\n3. Test the sign on the intervals formed by the critical points:\n- For $x < -1$: $(-) \\cdot (-) / (-) = - < 0$ (Satisfies inequality)\n- For $-1 \\le x < 0$: $(-) \\cdot (+) / (-) = + > 0$ (Does not satisfy)\n- At $x = -1$: expression equals $0$ (Satisfies inequality)\n- For $0 < x \\le 6$: $(-) \\cdot (+) / (+) = - \\le 0$ (Satisfies inequality)\n- For $x > 6$: $(+) \\cdot (+) / (+) = + > 0$ (Does not satisfy)\n4. Thus, the solution set is $x \\le -1$ or $0 < x \\le 6$.\n5. Constraining to integer values in $[-10, 10]$:\n- From $x \\le -1$: integers are $\\{-10, -9, -8, -7, -6, -5, -4, -3, -2, -1\\}$, giving $10$ values.\n- From $0 < x \\le 6$: integers are $\\{1, 2, 3, 4, 5, 6\\}$, giving $6$ values.\n6. Total number of valid integer values = $10 + 6 = 16$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN",
-    "distractor_misconceptions": [
-      {
-        "option": "7",
-        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
-      },
-      {
-        "option": "17",
-        "misconception_id": "L5_MODULUS_ONE_CASE"
-      },
-      {
-        "option": "12",
-        "misconception_id": "L5_NEG_NO_FLIP"
-      }
-    ]
-  },
-  {
-    "id": "6c105f42-ed4b-4357-8cf4-f583f0b794a2",
-    "spec": "G6-x11",
-    "concept_id": "G6",
-    "type": "TITA",
-    "stem": "In the $xy$-plane, the vertices of a triangle are $O(0, 0)$, $A(6, 0)$, and $B(2, 4)$. The altitude from $A$ to the side $OB$ intersects the line $x = 0$ at the point $(0, k)$. Find the value of $k$.",
-    "options": null,
-    "answer": "3",
-    "solution": "1. The line segment $OB$ connects $(0, 0)$ and $(2, 4)$. Its slope is $m_{OB} = \\frac{4 - 0}{2 - 0} = 2$.\n2. The altitude from vertex $A(6, 0)$ is perpendicular to $OB$, so its slope is $m = -\\frac{1}{m_{OB}} = -\\frac{1}{2}$.\n3. The equation of the line containing this altitude is $y - 0 = -\\frac{1}{2}(x - 6)$, which simplifies to $x + 2y = 6$.\n4. This line intersects the $y$-axis (the line $x = 0$) when $0 + 2y = 6 \\implies y = 3$.\n5. Therefore, $k = 3$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "cf2a4327-f84f-4c41-ad0d-695b64d1057c",
-    "spec": "L5-x43",
-    "concept_id": "L5",
-    "type": "MCQ",
-    "stem": "Find the maximum real value of $x$ that satisfies the inequality $\\frac{|x - 3| - 2}{|x - 3| - 6} \\le 0$ along with $x \\le 8$.",
-    "options": [
-      "5",
-      "8",
-      "9",
-      "7"
-    ],
-    "answer": "8",
-    "solution": "1. Let $y = |x - 3|$. Since absolute value is non-negative, $y \\ge 0$.\n2. The inequality becomes $\\frac{y - 2}{y - 6} \\le 0$.\n3. For the rational expression to be non-positive, $y$ must lie in the range $[2, 6)$ (note that $y \\neq 6$ because the denominator cannot be zero).\n4. Substituting back $y = |x - 3|$, we get $2 \\le |x - 3| < 6$.\n5. Splitting the compound inequality:\n   - $|x - 3| < 6 \\implies -6 < x - 3 < 6 \\implies -3 < x < 9$.\n   - $|x - 3| \\ge 2 \\implies x - 3 \\le -2$ or $x - 3 \\ge 2 \\implies x \\le 1$ or $x \\ge 5$.\n6. Combining these gives $x \\in (-3, 1] \\cup [5, 9)$.\n7. We are also given the constraint $x \\le 8$. The intersection is $(-3, 1] \\cup [5, 8]$.\n8. The maximum real value of $x$ in this set is $8$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "5",
-        "misconception_id": "L5_NEG_NO_FLIP"
-      },
-      {
-        "option": "9",
-        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
-      },
-      {
-        "option": "7",
-        "misconception_id": "L5_MODULUS_ONE_CASE"
-      }
-    ]
-  },
-  {
-    "id": "c9c49e0a-590e-496f-bdee-51572b6dd936",
-    "spec": "G6-x17",
-    "concept_id": "G6",
-    "type": "TITA",
-    "stem": "Find the number of integral values of $k$ such that the line $3x + 4y = k$ intersects the region enclosed by the circle $x^2 + y^2 - 6x - 8y = 0$ at two distinct points.",
-    "options": null,
-    "answer": "49",
-    "solution": "1. Rewrite the circle equation in standard form: $(x - 3)^2 + (y - 4)^2 = 3^2 + 4^2 = 25 = 5^2$. Thus, the center is $C(3, 4)$ and the radius is $R = 5$.\n2. A straight line intersects a circle at two distinct points if and only if the perpendicular distance $d$ from the center of the circle to the line is strictly less than the radius $R$.\n3. The perpendicular distance from $(3, 4)$ to $3x + 4y - k = 0$ is:\n$$d = \\frac{|3(3) + 4(4) - k|}{\\sqrt{3^2 + 4^2}} = \\frac{|25 - k|}{5}$$\n4. Setting $d < 5$ gives:\n$$\\frac{|25 - k|}{5} < 5 \\implies |25 - k| < 25$$\n$$-25 < 25 - k < 25 \\implies 0 < k < 50$$\n5. The integer values of $k$ satisfying $0 < k < 50$ are $k \\in \\{1, 2, \\dots, 49\\}$. Hence, there are $49$ possible integral values.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "184ef88d-a95a-4768-8db3-5a70ceafc3e2",
-    "spec": "N2-x27",
-    "concept_id": "N2",
-    "type": "MCQ",
-    "stem": "Three positive integers $a$, $b$, and $c$ have a highest common factor (HCF) of $4$ and their product is $a \\times b \\times c = 43200$. If $\\text{HCF}(a, b) = \\text{HCF}(b, c) = \\text{HCF}(c, a) = 4$, find the least common multiple (LCM) of $a$, $b$, and $c$.",
-    "options": [
-      "10800",
-      "2700",
-      "675",
-      "4"
-    ],
-    "answer": "2700",
-    "solution": "1. Let $a = 4x$, $b = 4y$, and $c = 4z$. Since the pairwise HCF between any two of the numbers is $4$, the integers $x, y, z$ must be pairwise coprime, meaning $\\gcd(x, y) = \\gcd(y, z) = \\gcd(z, x) = 1$.\n2. The product of the three numbers is $a \\times b \\times c = 4x \\times 4y \\times 4z = 64xyz$.\n3. Given $a \\times b \\times c = 43200$, we have $64xyz = 43200 \\implies xyz = \\frac{43200}{64} = 675$.\n4. For three numbers where no two share any prime factors other than the common HCF (i.e., $x, y, z$ are pairwise coprime), the LCM is given by $\\text{LCM}(a, b, c) = 4 \\times x \\times y \\times z = 4 \\times 675 = 2700$.\n5. Therefore, the least common multiple is $2700$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "10800",
-        "misconception_id": "N2_PRODUCT_RULE_3NUMS"
-      },
-      {
-        "option": "4",
-        "misconception_id": "N2_HCF_FOR_LCM"
-      }
-    ]
-  },
-  {
-    "id": "26928590-710e-4760-9f50-bae00269a5b9",
-    "spec": "G6-x27",
-    "concept_id": "G6",
-    "type": "MCQ",
-    "stem": "In the $xy$-plane, line $L_1$ passes through the points $(2, 1)$ and $(5, 7)$. A line $L_2$ is perpendicular to $L_1$ and has an equation of the form $x + ky = c$, where $k$ and $c$ are integers with $k > 0$. If $L_2$ intersects the region defined by $x \\ge 0$, $y \\ge 0$, and $x + 2y \\le 40$, how many integer values can the constant $c$ take?",
-    "options": [
-      "41",
-      "81",
-      "21",
-      "161"
-    ],
-    "answer": "41",
-    "solution": "1. The slope of line $L_1$ is $m_1 = \\frac{7 - 1}{5 - 2} = \\frac{6}{3} = 2$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{2}$.\n3. The equation of $L_2$ is $x + ky = c$, which has slope $-\\frac{1}{k}$. Equating gives $-\\frac{1}{k} = -\\frac{1}{2} \\implies k = 2$ (with $k > 0$).\n4. Thus, the equation of $L_2$ is $x + 2y = c$.\n5. The line $L_2$ must intersect the triangular region bounded by $x \\ge 0$, $y \\ge 0$, and $x + 2y \\le 40$. In this region, the expression $x + 2y$ attains its minimum value of $0$ at $(0, 0)$ and its maximum value of $40$ along the boundary $x + 2y = 40$.\n6. Therefore, $0 \\le c \\le 40$. Since $c$ is an integer, the number of possible values of $c$ is $40 - 0 + 1 = 41$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "81",
-        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
-      },
-      {
-        "option": "21",
-        "misconception_id": "G6_SLOPE_INVERTED"
-      }
-    ]
-  },
-  {
-    "id": "4e666c2c-08d1-47e2-9398-592ab776a5fc",
-    "spec": "M1-x17",
-    "concept_id": "M1",
-    "type": "TITA",
-    "stem": "A quality assurance audit inspected a batch of $200$ defective components rejected by an automobile parts manufacturing unit. Each component had at least one of three types of defects: Surface Blemish ($S$), Dimensional Variance ($D$), and Material Porosity ($M$). A total of $105$ components had defect $S$, $90$ had defect $D$, and $85$ had defect $M$. Furthermore, $35$ components had both defects $S$ and $D$, $30$ had both $D$ and $M$, and $40$ had both $S$ and $M$. Find the number of components that had exactly one of these three defects.",
-    "options": null,
-    "answer": "145",
-    "solution": "1. Let $S$, $D$, and $M$ denote the sets of components having Surface Blemish, Dimensional Variance, and Material Porosity defects, respectively.\n2. We are given: $|S \\cup D \\cup M| = 200$, $|S| = 105$, $|D| = 90$, $|M| = 85$, $|S \\cap D| = 35$, $|D \\cap M| = 30$, and $|S \\cap M| = 40$.\n3. Using the Principle of Inclusion-Exclusion:\n$|S \\cup D \\cup M| = (|S| + |D| + |M|) - (|S \\cap D| + |D \\cap M| + |S \\cap M|) + |S \\cap D \\cap M|$\n$200 = (105 + 90 + 85) - (35 + 30 + 40) + |S \\cap D \\cap M|$\n$200 = 280 - 105 + |S \\cap D \\cap M|$\n$200 = 175 + |S \\cap D \\cap M| \\implies |S \\cap D \\cap M| = 25$.\n4. The number of components with defects in exactly two categories is:\n$\\sum |\\text{pairwise intersections}| - 3|S \\cap D \\cap M| = (35 + 30 + 40) - 3(25) = 105 - 75 = 30$.\n5. Therefore, the number of components with exactly one defect is:\n$|\\text{Total}| - (|\\text{Exactly two}| + |\\text{All three}|) = 200 - (30 + 25) = 145$.\n\nFinal Answer: 145",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": []
-  },
-  {
-    "id": "99d65539-ea55-41cc-97ab-3bbd4cba8db7",
-    "spec": "G4-x28",
-    "concept_id": "G4",
-    "type": "MCQ",
-    "stem": "Two regular polygons, $A$ and $B$, have their number of sides in the ratio $3 : 4$. The measure of each interior angle of polygon $B$ exceeds that of polygon $A$ by $5^\\circ$. By how much does the number of diagonals of polygon $B$ exceed the number of diagonals of polygon $A$?",
-    "options": [
-      "117",
-      "123",
-      "135",
-      "234"
-    ],
-    "answer": "117",
-    "solution": "1. Let the number of sides of polygon $A$ be $3k$ and polygon $B$ be $4k$.\n2. The exterior angle of an $n$-sided regular polygon is $\\frac{360^\\circ}{n}$. Since each interior angle of $B$ exceeds that of $A$ by $5^\\circ$, each exterior angle of $A$ exceeds that of $B$ by $5^\\circ$:\n$$\\frac{360^\\circ}{3k} - \\frac{360^\\circ}{4k} = 5^\\circ$$\n$$\\frac{120}{k} - \\frac{90}{k} = 5 \\implies \\frac{30}{k} = 5 \\implies k = 6$$\nSo, polygon $A$ has $n_A = 3(6) = 18$ sides, and polygon $B$ has $n_B = 4(6) = 24$ sides.\n\n3. The number of diagonals of an $n$-sided polygon is given by $\\frac{n(n - 3)}{2}$:\nFor polygon $B$: $D_B = \\frac{24(21)}{2} = 252$.\nFor polygon $A$: $D_A = \\frac{18(15)}{2} = 135$.\n\n4. Difference $= D_B - D_A = 252 - 135 = 117$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "G4_DIAGONALS_NC2",
-    "distractor_misconceptions": [
-      {
-        "option": "123",
-        "misconception_id": "G4_DIAGONALS_NC2"
-      }
-    ]
-  },
-  {
-    "id": "4ca36b27-675a-4da2-ad43-dca12e253205",
-    "spec": "G5-x28",
-    "concept_id": "G5",
-    "type": "MCQ",
-    "stem": "A solid right circular cone has a base radius of $14\\text{ cm}$ and a slant height of $50\\text{ cm}$. The cone is melted and recast into a solid right circular cylinder whose base radius is $7\\text{ cm}$. If there is no loss of material in the process, find the height of the cylinder.",
-    "options": [
-      "$64\\text{ cm}$",
-      "$66\\frac{2}{3}\\text{ cm}$",
-      "$48\\text{ cm}$",
-      "$32\\text{ cm}$"
-    ],
-    "answer": "$64\\text{ cm}$",
-    "solution": "1. For the cone, the base radius is $r = 14\\text{ cm}$ and the slant height is $l = 50\\text{ cm}$.\n2. The vertical height $h_{\\text{cone}}$ is given by $\\sqrt{l^2 - r^2} = \\sqrt{50^2 - 14^2} = \\sqrt{2500 - 196} = \\sqrt{2304} = 48\\text{ cm}$.\n3. The volume of the cone is $V = \\frac{1}{3}\\pi r^2 h_{\\text{cone}} = \\frac{1}{3}\\pi (14)^2 (48) = 16 \\times 196\\pi = 3136\\pi\\text{ cm}^3$.\n4. Equating the volume of the cone to the volume of the cylinder with base radius $R = 7\\text{ cm}$ and height $H$:\n$\\pi R^2 H = 3136\\pi \\implies \\pi (7^2) H = 3136\\pi \\implies 49H = 3136 \\implies H = 64\\text{ cm}$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "G5_SLANT_AS_HEIGHT",
-    "distractor_misconceptions": [
-      {
-        "option": "$66\\frac{2}{3}\\text{ cm}$",
-        "misconception_id": "G5_SLANT_AS_HEIGHT"
-      }
-    ]
-  },
-  {
-    "id": "dd7c72f7-fb09-4211-a775-a1cb159c225c",
-    "spec": "M2-x28",
-    "concept_id": "M2",
-    "type": "MCQ",
-    "stem": "The internal audit team of a small accounting firm consists of $5$ senior auditors and $3$ junior associates. To review the annual financial statements, they all sit together around a circular conference table having $8$ symmetrically placed seats. To ensure balanced oversight, no two junior associates are allowed to sit adjacent to each other. In how many distinct seating arrangements can the team be seated around the table?",
-    "options": [
-      "1440",
-      "7200",
-      "14400",
-      "2880"
-    ],
-    "answer": "1440",
-    "solution": "1. Seat the $5$ senior auditors first around the circular table. Since circular arrangements are invariant under rotation, the number of ways to seat $5$ people around a circular table is $(5 - 1)! = 4! = 24$.\n2. Once the senior auditors are seated, they create $5$ distinct gaps between them around the table.\n3. To ensure no two junior associates sit adjacent to each other, the $3$ junior associates must be placed into these $5$ distinct gaps, with at most one junior associate per gap. The number of ways to choose and arrange $3$ junior associates in these $5$ positions is $^{5}P_3 = 5 \\times 4 \\times 3 = 60$.\n4. Therefore, the total number of distinct seating arrangements is $24 \\times 60 = 1440$.",
-    "difficulty_elo": 1450,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": "M2_CIRCULAR_AS_LINEAR",
-    "distractor_misconceptions": [
-      {
-        "option": "7200",
-        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
-      },
-      {
-        "option": "14400",
-        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
-      },
-      {
-        "option": "2880",
-        "misconception_id": "M2_OVERCOUNT_IDENTICAL"
-      }
-    ]
-  },
-  {
-    "id": "f7a22291-c141-4f4f-8404-bd27bb2a2055",
-    "spec": "G5-x27",
-    "concept_id": "G5",
-    "type": "MCQ",
-    "stem": "A solid right circular cone has a base radius of $8\\text{ cm}$ and a slant height of $17\\text{ cm}$. A solid right circular cylinder has the same base radius as the cone. If the total surface area of the cone is equal to the curved surface area of the cylinder, which of the following statements is true regarding their volumes?",
-    "options": [
-      "The volume of the cylinder is $2.5$ times the volume of the cone",
-      "The volume of the cylinder is $1.7$ times the volume of the cone",
-      "The volume of the cylinder is $3.4$ times the volume of the cone",
-      "The volume of the cylinder is $1.25$ times the volume of the cone"
-    ],
-    "answer": "The volume of the cylinder is $2.5$ times the volume of the cone",
-    "solution": "1. Let $r$ be the common radius, so $r = 8\\text{ cm}$. For the cone, the slant height is $l = 17\\text{ cm}$.\n2. The vertical height of the cone is $h_{\\text{cone}} = \\sqrt{l^2 - r^2} = \\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15\\text{ cm}$.\n3. The total surface area of the cone is $\\text{TSA}_{\\text{cone}} = \\pi r (l + r) = \\pi \\times 8 \\times (17 + 8) = 200\\pi\\text{ cm}^2$.\n4. The curved surface area of the cylinder is $\\text{CSA}_{\\text{cyl}} = 2\\pi r h_{\\text{cyl}} = 2\\pi (8) h_{\\text{cyl}} = 16\\pi h_{\\text{cyl}}$.\n5. Equating the two areas: $16\\pi h_{\\text{cyl}} = 200\\pi \\implies h_{\\text{cyl}} = \\frac{200}{16} = 12.5\\text{ cm}$.\n6. The volume of the cone is $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h_{\\text{cone}} = \\frac{1}{3}\\pi (8^2)(15) = 320\\pi\\text{ cm}^3$.\n7. The volume of the cylinder is $V_{\\text{cyl}} = \\pi r^2 h_{\\text{cyl}} = \\pi (8^2)(12.5) = 800\\pi\\text{ cm}^3$.\n8. The ratio of the volume of the cylinder to that of the cone is $\\frac{V_{\\text{cyl}}}{V_{\\text{cone}}} = \\frac{800\\pi}{320\\pi} = 2.5$.",
-    "difficulty_elo": 1250,
-    "source": "bank",
-    "verified": true,
-    "targets_misconception_id": null,
-    "distractor_misconceptions": [
-      {
-        "option": "The volume of the cylinder is $1.7$ times the volume of the cone",
-        "misconception_id": "G5_CSA_VS_TSA"
-      },
-      {
-        "option": "The volume of the cylinder is $3.4$ times the volume of the cone",
-        "misconception_id": "G5_SLANT_AS_HEIGHT"
       }
     ]
   }

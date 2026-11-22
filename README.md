@@ -125,7 +125,7 @@ Each agent has a Zod input/output schema, a short system prompt in `src/lib/agen
 | Detective: exact error line found | **20 / 20** |
 | Detective: average latency | 3.6s (Gemini Flash) |
 | Verifier rejection rate while building the bank | **~34%** of generated drafts rejected (68 rejections: wrong answer keys, no correct option, typos, impossible numbers) |
-| Question bank | **128 verified questions** across all 27 concepts, heaviest on arithmetic |
+| Question bank | **1,032 verified questions** across all 27 concepts, weighted by CAT frequency (every one re-solved by Gemini Pro before it went in; ≈48% of drafts rejected) |
 
 Honest caveat: the eval set is typed solutions; real handwriting is harder. Run it yourself with `npx tsx scripts/eval-detective.ts` (results land in `data/evals/results.json` and on `/under-the-hood`).
 
@@ -172,7 +172,8 @@ npm run dev
 | Command | What it does |
 |---|---|
 | `npm test` | Unit tests for BKT, Elo, FSRS rating mapping and answer grading |
-| `npx tsx scripts/seed-content.ts` | Generate + verify the question bank into `data/questions.json` (resumable) |
+| `npx tsx scripts/seed-content.ts` | Generate + verify the question bank into `data/questions.json` (resumable; `--plus=N` tops every concept up by N) |
+| `npx tsx scripts/load-bank.ts --apply` | Add new bank questions to Neon without wiping (skips near-duplicates) |
 | `npx tsx scripts/seed-db.ts` | Wipe and reseed the database (restores the scripted demo state) |
 | `npx tsx scripts/eval-detective.ts` | Score the Detective on the labelled eval set |
 | `npx tsx scripts/check-gemini.ts` | Smoke-test both Gemini model tiers |
