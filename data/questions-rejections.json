@@ -450,5 +450,133 @@
   {
     "spec": "A2-x26",
     "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "ambiguous (The total number of runs (370) is not divisible by the sum of the ratio parts (41), resulting in non-integer values for )"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "ambiguous (The sum of the ratio parts is 12 + 15 + 20 = 47. The total runs (672) is not divisible by 47, which results in non-integ)"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "ambiguous (The total number of runs (696) is not divisible by the sum of the ratio parts (47). This results in non-integer values f)"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "ambiguous (The numbers provided in the question (specifically the difference of 190) are not divisible by the ratio difference (23))"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "answer mismatch (key says 1220, independent solve got 9540)"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "ambiguous (The total weight (3150) is not a multiple of the sum of the ratio parts (47), resulting in a non-integer, non-terminatin)"
+  },
+  {
+    "spec": "A2-x28",
+    "reason": "answer mismatch (key says $1 : 2$, independent solve got 5 : 7)"
+  },
+  {
+    "spec": "A2-x28",
+    "reason": "answer mismatch (key says $13 : 19$, independent solve got 7 : 9)"
+  },
+  {
+    "spec": "A2-x28",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x37",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x37",
+    "reason": "ambiguous (The question contains a typo in the ratios. It states 'Dev to Faruq is 3:2', which leads to a total of 35 parts and no m)"
+  },
+  {
+    "spec": "A2-x37",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x41",
+    "reason": "ambiguous (The numbers provided in the problem lead to a negative capacity (k = -70). The ratio of remaining water (5:7) is mathema)"
+  },
+  {
+    "spec": "A2-x41",
+    "reason": "ambiguous (The numbers provided in the question do not yield an integer answer. Solving the equation gives x = 540/13, making the f)"
+  },
+  {
+    "spec": "A3-x8",
+    "reason": "ambiguous (The final answer is a repeating decimal (212/3 or 70.666...), which is problematic for a TITA question since CAT typical)"
+  },
+  {
+    "spec": "A3-x7",
+    "reason": "ambiguous (The correct answer (18.8 km/l) is missing from the options.)"
+  },
+  {
+    "spec": "A2-x39",
+    "reason": "ambiguous (The given ratios A:B = 3:4 and B:C = 5:6 lead to A:B:C = 15:20:24. The difference C - A = 9 units = 480 votes, which giv)"
+  },
+  {
+    "spec": "A2-x39",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x36",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x36",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A3-x11",
+    "reason": "answer mismatch (key says 7100, independent solve got 4600)"
+  },
+  {
+    "spec": "A3-x13",
+    "reason": "ambiguous (The correct answer (18) is missing from the options. Furthermore, the options incorrectly include the rupee symbol (₹) f)"
+  },
+  {
+    "spec": "A3-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 75, independent solve got 62.5)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 90, independent solve got 80)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 50, independent solve got 14)"
+  },
+  {
+    "spec": "A3-x37",
+    "reason": "answer mismatch (key says 24, independent solve got 28)"
+  },
+  {
+    "spec": "A3-x17",
+    "reason": "ambiguous (The phrase 'including the omitted student' strongly implies that the student was not part of the original 36 students. H)"
+  },
+  {
+    "spec": "A3-x17",
+    "reason": "answer mismatch (key says 68.2, independent solve got 2812/41)"
+  },
+  {
+    "spec": "A3-x17",
+    "reason": "answer mismatch (key says 65, independent solve got 2389/37)"
+  },
+  {
+    "spec": "A4-x17",
+    "reason": "ambiguous (The answer evaluates to a non-terminating decimal (approx 19.12%), which is not suitable for a TITA question without rou)"
+  },
+  {
+    "spec": "A4-x20",
+    "reason": "ambiguous (1. 'After adding packaging and shipping' implies additional costs were incurred, but their values are not provided, mean)"
   }
 ]

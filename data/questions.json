@@ -4590,5 +4590,1699 @@
         "misconception_id": "A2_INVERT_WHEN_COMBINING"
       }
     ]
+  },
+  {
+    "id": "0d45ee4d-4a03-4912-a00d-fe9091e5a1f6",
+    "spec": "A2-x38",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "Two logistics operators, $A$ and $B$, jointly rented a commercial diesel generator to supply backup power to their refrigerated transport fleets for a month. Operator $A$ connected $12$ vehicles to the generator for $15$ days, whereas Operator $B$ connected $8$ vehicles for $20$ days. The generator consumed a total of ₹$76,500$ worth of diesel over the month, with fuel consumption being directly proportional to the product of the number of vehicles connected and the duration (in days) they were powered. By how much (in ₹) does the fuel cost borne by $A$ exceed the fuel cost borne by $B$?",
+    "options": null,
+    "answer": "4500",
+    "solution": "1. The fuel consumed by each operator is directly proportional to $(\\text{number of vehicles}) \\times (\\text{time in days})$.\n2. Share of $A \\propto 12 \\times 15 = 180$.\n3. Share of $B \\propto 8 \\times 20 = 160$.\n4. Ratio of fuel costs $A : B = 180 : 160 = 9 : 8$.\n5. Total cost = ₹$76,500$, representing $9 + 8 = 17$ equal parts.\n6. Value of $1$ part = $\\frac{76500}{17} = 4500$.\n7. The difference between the cost borne by $A$ and $B$ is $(9 - 8) \\times 4500 = 4500$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "472f3bd3-991d-4dba-977a-c45f1e3279b4",
+    "spec": "A2-x40",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In an automobile manufacturing plant, three assembly lines—Line $A$, Line $B$, and Line $C$—operate concurrently. On a given day, the ratio of the number of engines manufactured by Line $A$ to that by Line $B$ was $5 : 6$, while the ratio of the number of engines manufactured by Line $B$ to that by Line $C$ was $8 : 9$. What was the ratio of the number of engines manufactured by Line $A$ to that by Line $C$?",
+    "options": [
+      "5 : 9",
+      "20 : 27",
+      "27 : 20",
+      "15 : 16"
+    ],
+    "answer": "20 : 27",
+    "solution": "1. We are given the ratios $A : B = 5 : 6$ and $B : C = 8 : 9$.\n2. To find the ratio $A : C$, multiply the two fractions: $\\frac{A}{C} = \\frac{A}{B} \\times \\frac{B}{C} = \\frac{5}{6} \\times \\frac{8}{9}$.\n3. Simplifying the product: $\\frac{5 \\times 8}{6 \\times 9} = \\frac{40}{54} = \\frac{20}{27}$.\n4. Thus, the ratio of engines manufactured by Line $A$ to Line $C$ is $20 : 27$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_CHAIN_WITHOUT_LCM",
+    "distractor_misconceptions": [
+      {
+        "option": "5 : 9",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "27 : 20",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "00bf03a8-609b-404a-9739-dd2a6c815c60",
+    "spec": "A2-x42",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "According to a municipal census report, the total adult population of two neighbouring zones in a city, Zone $A$ and Zone $B$, is $1,44,000$. The report states that $5$ times the adult population of Zone $A$ is equal to $7$ times the adult population of Zone $B$. What is the adult population of Zone $A$?",
+    "options": [
+      "60,000",
+      "72,000",
+      "84,000",
+      "96,000"
+    ],
+    "answer": "84,000",
+    "solution": "1. Let the adult populations of Zone $A$ and Zone $B$ be $A$ and $B$, respectively.\n2. We are given $5A = 7B$. Rearranging gives $\\frac{A}{B} = \\frac{7}{5}$.\n3. The total population is $A + B = 1,44,000$, which corresponds to $7 + 5 = 12$ units.\n4. Value of $1$ unit $= \\frac{1,44,000}{12} = 12,000$.\n5. Adult population of Zone $A = 7 \\times 12,000 = 84,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_INVERT_WHEN_COMBINING",
+    "distractor_misconceptions": [
+      {
+        "option": "60,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "30f8af4f-7daf-4bf1-b904-94865c833719",
+    "spec": "A3-x0",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "During a college cultural festival, the organizing committee comprised two sub-teams: the Logistics team with $15$ members and the Hospitality team with $35$ members. Each member of the Logistics team worked an average of $44$ hours, while each member of the Hospitality team worked an average of $24$ hours. What was the average number of hours worked per member across the entire organizing committee?",
+    "options": [
+      "$34$",
+      "$30$",
+      "$38$",
+      "$28$"
+    ],
+    "answer": "$30$",
+    "solution": "1. Find the total hours worked by the Logistics team: $15 \\times 44 = 660$ hours.\n2. Find the total hours worked by the Hospitality team: $35 \\times 24 = 840$ hours.\n3. Compute the overall total hours: $660 + 840 = 1500$ hours.\n4. Divide by the total number of members: $\\frac{1500}{15 + 35} = \\frac{1500}{50} = 30$ hours.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": [
+      {
+        "option": "$34$",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "5f58f727-51be-4777-868c-bfb344b48b1a",
+    "spec": "A3-x1",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A batsman has a certain batting average after playing $17$ innings. In his $18^{\\text{th}}$ innings, he scores $98$ runs, thereby increasing his batting average by $2.5$ runs. What is his new batting average?",
+    "options": [
+      "53",
+      "55.5",
+      "58",
+      "95.5"
+    ],
+    "answer": "55.5",
+    "solution": "1. Let his batting average after $17$ innings be $A$.\n2. Total runs scored in $17$ innings = $17A$.\n3. After the $18^{\\text{th}}$ innings, the total runs become $17A + 98$ and the new average is $A + 2.5$.\n4. Equating total runs: $17A + 98 = 18(A + 2.5) = 18A + 45$.\n5. Solving for $A$: $A = 98 - 45 = 53$.\n6. The new batting average is $A + 2.5 = 53 + 2.5 = 55.5$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "53",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "58",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      },
+      {
+        "option": "95.5",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "4b418e0a-67dc-4f11-8935-9bea35ec8058",
+    "spec": "A3-x2",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "A commercial complex has $16$ office spaces let out at varying monthly rentals. When the lease of one office generating a monthly rent of ₹$48,000$ expired, it was immediately leased out to a new tenant at a higher rent, while the rents of all other offices remained unchanged. As a consequence, the average monthly rent per office across the complex increased by ₹$2,500$. What is the monthly rent (in ₹) paid by the new tenant?",
+    "options": null,
+    "answer": "88000",
+    "solution": "1. Let $n = 16$ be the total number of office spaces in the commercial complex.\n2. When one office with a monthly rent of ₹$48,000$ is replaced by a new tenant, the average rent per office increases by ₹$2,500$.\n3. The total increase in monthly rental revenue across all $16$ offices is $16 \\times 2,500 = 40,000$.\n4. Therefore, the new rent is the old rent plus the total increase: $48,000 + 40,000 = 88,000$.\n5. The monthly rent paid by the new tenant is 88000.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "679dc855-c37f-4a85-b686-ef51c0158977",
+    "spec": "A3-x3",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "The average monthly salary of $24$ employees in a department was ₹$62,000$. During an annual review, one employee resigned and a new recruit joined in their place. Additionally, a new managerial post was created, bringing the total number of employees to $25$. The salary of the newly joined recruit was ₹$14,000$ less than that of the employee who resigned. If the revised average monthly salary of all $25$ employees became ₹$64,000$, what is the monthly salary of the newly appointed manager?",
+    "options": [
+      "₹$1,26,000$",
+      "₹$1,12,000$",
+      "₹$1,02,000$",
+      "₹$1,24,000$"
+    ],
+    "answer": "₹$1,26,000$",
+    "solution": "1. Initially, there were $24$ employees with total salary = $24 \\times 62,000 = ₹14,88,000$.\n2. One employee was replaced by a recruit who earns ₹$14,000$ less, so the sum of salaries of the $24$ employees became $14,88,000 - 14,000 = ₹14,74,000$.\n3. With the new manager, there are $25$ employees with an average salary of ₹$64,000$. Thus, total salary = $25 \\times 64,000 = ₹16,00,000$.\n4. Manager's salary = $16,00,000 - 14,74,000 = ₹1,26,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$1,12,000$",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      },
+      {
+        "option": "₹$1,02,000$",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "₹$1,24,000$",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "a7ca7cbf-c871-4d5c-8009-329294bd3037",
+    "spec": "A3-x4",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A farmer harvested wheat from $9$ distinct plots of land, obtaining an average yield of $42$ quintals per plot. After harvesting a $10^{\\text{th}}$ plot, the overall average yield increased to $45$ quintals per plot. What was the yield (in quintals) obtained from the $10^{\\text{th}}$ plot?",
+    "options": [
+      "48 quintals",
+      "72 quintals",
+      "27 quintals",
+      "69 quintals"
+    ],
+    "answer": "72 quintals",
+    "solution": "1. Find the total yield from the first $9$ plots: $9 \\times 42 = 378$ quintals.\n2. With the addition of the $10^{\\text{th}}$ plot, there are now $10$ plots, with an average yield of $45$ quintals. Total yield from all $10$ plots: $10 \\times 45 = 450$ quintals.\n3. Yield of the $10^{\\text{th}}$ plot $= 450 - 378 = 72$ quintals.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "27 quintals",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "48 quintals",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "69 quintals",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "6647d48e-d52a-4888-ab62-1df2b3dd047d",
+    "spec": "A3-x5",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "The average weight of $24$ students in a college sports club was $65\\text{ kg}$. When a new student joined the club, the overall average weight increased by $0.5\\text{ kg}$. What was the weight (in $\\text{kg}$) of the new student?",
+    "options": null,
+    "answer": "77.5",
+    "solution": "1. Initially, there are $24$ students with an average weight of $65\\text{ kg}$.\n2. When $1$ new student joins, the total number of students becomes $24 + 1 = 25$.\n3. The new average weight becomes $65 + 0.5 = 65.5\\text{ kg}$.\n4. Using the deviation approach, the weight of the new student is:\n$\\text{New Student's Weight} = \\text{Old Average} + (\\text{New Count} \\times \\text{Increase in Average})$\n$\\text{Weight} = 65 + (25 \\times 0.5) = 65 + 12.5 = 77.5\\text{ kg}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "4477a54c-c106-4c5d-9ebe-29360562c872",
+    "spec": "A3-x6",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An investor tracks the monthly returns from six portfolio schemes against a benchmark return of ₹$25,000$. The deviations of the monthly returns from this benchmark were recorded as $+₹1,800$, $-₹2,400$, $+₹3,100$, $-₹1,500$, $+₹900$, and $-₹1,300$. What is the actual average monthly return across these six schemes?",
+    "options": [
+      "₹25,100",
+      "₹26,833",
+      "₹24,900",
+      "₹25,600"
+    ],
+    "answer": "₹25,100",
+    "solution": "1. Let the assumed mean (benchmark) be $A = 25,000$.\n2. Compute the algebraic sum of the deviations from $A$:\n$\\sum d = (+1800) + (-2400) + (+3100) + (-1500) + (+900) + (-1300) = 600$.\n3. The average deviation across the $6$ schemes is $\\frac{600}{6} = +100$.\n4. Therefore, the actual average monthly return is $25,000 + 100 = ₹25,100$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_DEVIATION_SIGN_DROP",
+    "distractor_misconceptions": [
+      {
+        "option": "₹26,833",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "6ca8f36d-35c8-4758-96ef-74b6e25e2b0e",
+    "spec": "A2-x41",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "In a water treatment facility, three storage tanks, $A, B$, and $C$, hold water such that the ratio of the volume of water in tank $A$ to that in tank $B$ is $3 : 4$, and the ratio of the volume of water in tank $B$ to that in tank $C$ is $2 : 3$. To balance the reserves, $40$ litres of water are pumped from tank $C$ into tank $A$, and $20$ litres of water are pumped from tank $C$ into tank $B$. If the ratio of the volume of water in tank $A$ to that in tank $B$ now becomes $7 : 9$, find the initial volume of water, in litres, in tank $C$.",
+    "options": null,
+    "answer": "1320",
+    "solution": "1. Express the initial volumes in a combined ratio:\n$A : B = 3 : 4$ and $B : C = 2 : 3 = 4 : 6$.\nThus, $A : B : C = 3 : 4 : 6$.\n\n2. Let the initial volumes in tanks $A, B$, and $C$ be $3x$, $4x$, and $6x$ litres, respectively.\n\n3. After the transfers, the volumes in tanks $A$ and $B$ become:\nVolume in $A = 3x + 40$\nVolume in $B = 4x + 20$\n\n4. Using the given new ratio:\n$\\frac{3x + 40}{4x + 20} = \\frac{7}{9}$\n\n5. Cross-multiply and solve for $x$:\n$9(3x + 40) = 7(4x + 20)$\n$27x + 360 = 28x + 140$\n$x = 220$\n\n6. Initial volume in tank $C = 6x = 6 \\times 220 = 1320$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ab9d8620-fb70-4c7d-8f34-d9353d8d654d",
+    "spec": "A3-x9",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A manufacturing unit has $15$ machines that produce an average of $240$ components each per day. When one newly installed high-capacity machine is added to the line, the average daily production across all machines increases by $12$ components. How many components does the new machine produce per day?",
+    "options": [
+      "420",
+      "432",
+      "252",
+      "408"
+    ],
+    "answer": "432",
+    "solution": "1. Initially, there are $15$ machines with an average output of $240$ components.\n2. When $1$ new machine joins, the total number of machines becomes $15 + 1 = 16$.\n3. The new average production is $240 + 12 = 252$ components.\n4. Output of the new machine = New Average + (Initial Count $\\times$ Increase in Average) = $252 + (15 \\times 12) = 252 + 180 = 432$.\nAlternatively, Total new output - Total initial output = $(16 \\times 252) - (15 \\times 240) = 4032 - 3600 = 432$.\n5. Thus, the new machine produces $432$ components.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "420",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "252",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "c398ccd1-3c9e-45ae-84f8-16a078d76a22",
+    "spec": "A3-x10",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A housing society maintains a battery of $12$ identical overhead water tanks. A faulty inlet pipe in one tank, which delivered water at a flow rate of $45$ litres per hour, is replaced by an upgraded high-capacity pipe. Consequently, the average flow rate of water entering the $12$ tanks increases by $3.5$ litres per hour. What is the flow rate of the newly installed inlet pipe?",
+    "options": [
+      "48.5 litres per hour",
+      "83.5 litres per hour",
+      "87.0 litres per hour",
+      "73.0 litres per hour"
+    ],
+    "answer": "87.0 litres per hour",
+    "solution": "1. Let $n = 12$ be the number of tanks.\n2. When one pipe is replaced, the increase in total flow rate equals $n \\times (\\text{increase in average})$.\n3. Increase in total flow rate $= 12 \\times 3.5 = 42$ litres per hour.\n4. Therefore, the flow rate of the new pipe $= 45 + 42 = 87$ litres per hour.\n5. The correct answer is 87.0 litres per hour.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": [
+      {
+        "option": "48.5 litres per hour",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "7ca9a56c-04e7-4508-9c3f-ad9d4185f7ec",
+    "spec": "A3-x12",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A chef in a commercial kitchen prepared $7$ batches of a spice blend, with an average weight of $450\\text{ g}$ per batch. To meet an urgent catering order, he prepared an $8^{\\text{th}}$ batch, which raised the average weight across all batches to $475\\text{ g}$. What was the weight of the $8^{\\text{th}}$ batch?",
+    "options": [
+      "650 g",
+      "475 g",
+      "325 g",
+      "175 g"
+    ],
+    "answer": "650 g",
+    "solution": "1. Find the total weight of the initial $7$ batches: $7 \\times 450 = 3150\\text{ g}$.\n2. When the $8^{\\text{th}}$ batch is added, the total number of batches becomes $8$ and the new average is $475\\text{ g}$.\n3. Total weight of $8$ batches: $8 \\times 475 = 3800\\text{ g}$.\n4. Weight of the $8^{\\text{th}}$ batch = $3800 - 3150 = 650\\text{ g}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "175 g",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "475 g",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "9ec25164-42d7-40b7-b45e-ef982fa87d25",
+    "spec": "A3-x8",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In a municipal election, a constituency is divided into three zones: North, Central, and South. The number of polling booths in the North, Central, and South zones are in the ratio $2 : 5 : 3$, respectively. On election day, the average number of votes polled per booth was $540$ in the North zone, $680$ in the Central zone, and $720$ in the South zone. What was the overall average number of votes polled per booth across the entire constituency?",
+    "options": null,
+    "answer": "664",
+    "solution": "1. Let the number of polling booths in North, Central, and South zones be $2k$, $5k$, and $3k$, respectively, where total booths $= 2k + 5k + 3k = 10k$.\n2. Total votes polled in the North zone $= 2k \\times 540 = 1080k$.\n3. Total votes polled in the Central zone $= 5k \\times 680 = 3400k$.\n4. Total votes polled in the South zone $= 3k \\times 720 = 2160k$.\n5. Total votes polled across all booths $= 1080k + 3400k + 2160k = 6640k$.\n6. Overall average votes per booth $= \\frac{6640k}{10k} = 664$.\n(Note: An unweighted average of the averages gives $\\frac{540 + 680 + 720}{3} = \\frac{1940}{3} \\approx 646.67$, which is incorrect.)",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "d234454a-7b1a-4ca4-ae89-9e6734b363c7",
+    "spec": "A3-x7",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A logistics company tracked the fuel efficiency of its fleet of $14$ identical delivery vans over a month, recording an average mileage of $16.5\\text{ km/l}$. The company then added a new, upgraded van to the fleet, which increased the overall average mileage of the fleet by $0.3\\text{ km/l}$. What is the fuel efficiency of the newly added van?",
+    "options": [
+      "21.0 km/l",
+      "20.7 km/l",
+      "16.8 km/l",
+      "19.2 km/l"
+    ],
+    "answer": "21.0 km/l",
+    "solution": "1. Initially, there are $14$ vans with an average mileage of $16.5\\text{ km/l}$. The total mileage across the $14$ vans is $14 \\times 16.5 = 231\\text{ km/l}$.\n2. After adding $1$ new van, the total number of vans becomes $14 + 1 = 15$.\n3. The new average mileage is $16.5 + 0.3 = 16.8\\text{ km/l}$.\n4. The new total mileage is $15 \\times 16.8 = 252\\text{ km/l}$.\n5. The fuel efficiency of the newly added van is $252 - 231 = 21.0\\text{ km/l}$ (or via deviations: $16.8 + 14 \\times 0.3 = 16.8 + 4.2 = 21.0\\text{ km/l}$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "20.7 km/l",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "16.8 km/l",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "2fef8915-b493-4bd3-92a8-b6e77f83bd97",
+    "spec": "A2-x39",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In an election for a college student union, three candidates, $A$, $B$, and $C$, secured all the valid votes cast. The ratio of the votes received by $A$ to those received by $B$ was $3 : 4$, and the ratio of the votes received by $B$ to those received by $C$ was $5 : 6$. If candidate $C$ received $1,440$ votes, how many votes did candidate $A$ receive?",
+    "options": [
+      "900",
+      "720",
+      "1,080",
+      "1,200"
+    ],
+    "answer": "900",
+    "solution": "1. Express the ratio of votes among the three candidates $A : B : C$. We are given $A : B = 3 : 4$ and $B : C = 5 : 6$.\n2. To combine the ratios, equate the term corresponding to $B$ using the LCM of $4$ and $5$, which is $20$:\n$A : B = 15 : 20$\n$B : C = 20 : 24$\nThus, $A : B : C = 15 : 20 : 24$.\n3. Candidate $C$ received $24$ units, which corresponds to $1,440$ votes. Therefore, $1\\text{ unit} = \\frac{1,440}{24} = 60$ votes.\n4. Candidate $A$ received $15$ units: $15 \\times 60 = 900$ votes.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "720",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "1,200",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "981aebd0-fc91-4418-bbfe-edb22ce8f73c",
+    "spec": "A3-x15",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A small design agency employed $11$ designers with an average monthly salary of ₹$48,000$. At the beginning of a quarter, a senior designer was recruited, which raised the agency's average monthly salary across all designers to ₹$51,500$. What is the monthly salary of the newly recruited senior designer?",
+    "options": [
+      "₹90,000",
+      "₹86,500",
+      "₹55,000",
+      "₹51,500"
+    ],
+    "answer": "₹90,000",
+    "solution": "1. Initially, there were $11$ designers with an average salary of ₹$48,000$, giving a total payroll of $11 \\times 48,000 = \\text{₹}5,28,000$.\n2. After the senior designer joins, the total number of designers becomes $11 + 1 = 12$, and the new average salary is ₹$51,500$.\n3. The new total payroll is $12 \\times 51,500 = \\text{₹}6,18,000$.\n4. The salary of the newly recruited senior designer is $6,18,000 - 5,28,000 = \\text{₹}90,000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹86,500",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "₹51,500",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "₹55,000",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "4d516ffb-a2b5-44a4-b779-6cb1b776582b",
+    "spec": "A3-x14",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "An intercity freight train recorded its running speed (in $\\text{km/h}$) across six consecutive stretches of equal distance as follows: $84$, $96$, $78$, $91$, $83$, and $90$. Find the arithmetic mean of the recorded speeds in $\\text{km/h}$.",
+    "options": null,
+    "answer": "87",
+    "solution": "1. Let an assumed mean be $A = 85\\text{ km/h}$.\n2. Calculate the signed deviations $(x_i - A)$ from $85$:\n$84 - 85 = -1$\n$96 - 85 = +11$\n$78 - 85 = -7$\n$91 - 85 = +6$\n$83 - 85 = -2$\n$90 - 85 = +5$\n3. Sum of the deviations $= (-1) + 11 + (-7) + 6 + (-2) + 5 = 12$.\n4. Mean $= A + \\frac{\\sum (x_i - A)}{n} = 85 + \\frac{12}{6} = 85 + 2 = 87$.\n(Note: A student dropping the signs would sum the absolute deviations: $1 + 11 + 7 + 6 + 2 + 5 = 32$, giving $85 + \\frac{32}{6} \\approx 90.33$, which clearly differs from the correct answer $87$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_DEVIATION_SIGN_DROP",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "9e5c5630-0a9f-4d80-859e-cd350b05ab1c",
+    "spec": "A2-x36",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "In an undergraduate college, the ratio of the number of students in the Economics department to that in the History department was $7 : 5$. In the next academic year, each of these two departments admitted $60$ new students, while no existing students left. If the ratio of students in Economics to History after this intake became $4 : 3$, find the new ratio of the number of students in the Economics department to that in the History department if each department were to admit an additional $40$ students further.",
+    "options": [
+      "$4 : 3$",
+      "$9 : 7$",
+      "$13 : 10$",
+      "$19 : 14$"
+    ],
+    "answer": "$13 : 10$",
+    "solution": "1. Let the initial number of students in Economics and History be $7x$ and $5x$, respectively.\n2. After adding $60$ students to each: $\\frac{7x + 60}{5x + 60} = \\frac{4}{3}$.\n3. Cross-multiplying: $3(7x + 60) = 4(5x + 60) \\implies 21x + 180 = 20x + 240 \\implies x = 60$.\n4. Current strengths are: Economics = $7(60) + 60 = 480$, History = $5(60) + 60 = 360$.\n5. If each department admits an additional $40$ students, the new numbers are $480 + 40 = 520$ and $360 + 40 = 400$.\n6. The new ratio is $\\frac{520}{400} = \\frac{13}{10}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": [
+      {
+        "option": "$4 : 3$",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      }
+    ]
+  },
+  {
+    "id": "f5b42707-64d3-453f-bb60-80805bbaab97",
+    "spec": "A3-x11",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In a municipal census, the average population across $14$ administrative zones was $48,500$. After restructuring, two new zones were added to the municipality, which caused the overall average population per zone to increase by $1,500$. If one of the newly added zones has a population of $72,000$, find the population of the other newly added zone.",
+    "options": null,
+    "answer": "49000",
+    "solution": "1. Initially, there are $14$ zones with an average population of $48,500$. The initial total population is $14 \\times 48,500 = 679,000$.\n2. After adding $2$ new zones, the total number of zones becomes $14 + 2 = 16$, and the new average population is $48,500 + 1,500 = 50,000$.\n3. The new total population is $16 \\times 50,000 = 800,000$.\n4. The combined population of the two new zones is $800,000 - 679,000 = 121,000$.\n5. One of the new zones has a population of $72,000$, so the other new zone has a population of $121,000 - 72,000 = 49,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "637e2898-ee93-4fc4-9b36-afe42e79017f",
+    "spec": "A3-x18",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A cultural festival committee manages $18$ food stalls, each paying a daily stall fee. To boost revenues, a small stall paying ₹$4,200$ per day was replaced by a premium artisanal dessert kiosk. Consequently, the average daily fee collected across the $18$ stalls increased by ₹$350$. Later, another existing stall was replaced by a live grill counter paying ₹$11,500$ per day, which further increased the overall average stall fee by ₹$250$. What was the daily fee paid by the stall that was replaced by the live grill counter?",
+    "options": [
+      "₹7,000",
+      "₹10,500",
+      "₹6,150",
+      "₹11,250"
+    ],
+    "answer": "₹7,000",
+    "solution": "1. Let the original sum of daily fees of the $18$ stalls be $S_1$.\n2. In the first replacement, the stall paying ₹$4,200$ is replaced by the dessert kiosk ($K$). The average increases by ₹$350$, meaning the total sum increases by $18 \\times 350 = ₹6,300$.\n3. Therefore, $K = 4,200 + 6,300 = ₹10,500$.\n4. In the second replacement, a stall paying $X$ is replaced by the grill counter paying ₹$11,500$. The average increases by ₹$250$, so the total sum increases by $18 \\times 250 = ₹4,500$.\n5. Hence, $11,500 - X = 4,500 \\implies X = 11,500 - 4,500 = ₹7,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": [
+      {
+        "option": "₹11,250",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "aa0af629-86f8-453f-9808-54dbb6e9e166",
+    "spec": "A3-x19",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A batsman had a certain batting average across $11$ innings. In his $12^{\\text{th}}$ innings, he scored $90$ runs, which raised his overall batting average by $3$ runs. How many runs did he score on average across the first $11$ innings?",
+    "options": [
+      "51",
+      "54",
+      "57",
+      "87"
+    ],
+    "answer": "54",
+    "solution": "1. Let the batsman's average for the first $11$ innings be $A$ runs.\n2. The total runs scored in $11$ innings is $11A$.\n3. After scoring $90$ runs in the $12^{\\text{th}}$ innings, his new average becomes $A + 3$ over $12$ innings.\n4. Equating the total runs: $11A + 90 = 12(A + 3) = 12A + 36$.\n5. Solving for $A$: $A = 90 - 36 = 54$.\n\nThus, the average across the first $11$ innings was $54$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "57",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "87",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "51",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "99815c13-9b5d-4dfb-8a54-507cea94b9e1",
+    "spec": "A3-x21",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "The average monthly salary of $19$ analysts at a financial consultancy firm was ₹$62,000$. During an annual appraisal, a senior analyst was recruited into the team, which raised the average monthly salary of the team by ₹$1,500$. What is the monthly salary of the newly recruited senior analyst?",
+    "options": [
+      "₹$92,000$",
+      "₹$90,500$",
+      "₹$63,500$",
+      "₹$65,000$"
+    ],
+    "answer": "₹$92,000$",
+    "solution": "1. Initially, there were $19$ analysts with an average salary of ₹$62,000$.\n2. After $1$ senior analyst joins, the total number of analysts becomes $19 + 1 = 20$.\n3. The new average salary is $62,000 + 1,500 = ₹63,500$.\n4. The salary of the new entrant can be found by adding the total increase across all members to the initial average: $\\text{Salary} = 62,000 + 20 \\times 1,500 = 62,000 + 30,000 = ₹92,000$.\n\nAlternatively, using totals: $20 \\times 63,500 - 19 \\times 62,000 = 1,270,000 - 1,178,000 = ₹92,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$90,500$",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "₹$63,500$",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "64c53e9e-6001-4c32-b6a4-3bf1bd97094c",
+    "spec": "A3-x22",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An agricultural officer records the paddy yield (in quintals) from $5$ equal-sized plots of land in a village. Relative to the expected target yield of $120$ quintals per plot, the differences in yields recorded across the $5$ plots are $-12$, $+18$, $-15$, $+9$, and $-10$ quintals, respectively. What is the actual average yield per plot?",
+    "options": [
+      "120.4 quintals",
+      "118.0 quintals",
+      "132.8 quintals",
+      "128.0 quintals"
+    ],
+    "answer": "118.0 quintals",
+    "solution": "1. Let the assumed mean (target yield) be $A = 120$ quintals.\n2. The net algebraic sum of deviations from the target is: $\\sum d = (-12) + 18 + (-15) + 9 + (-10) = -10$ quintals.\n3. The average deviation across the $5$ plots is $\\frac{-10}{5} = -2$ quintals.\n4. Therefore, the actual average yield per plot is $120 + (-2) = 118.0$ quintals.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_DEVIATION_SIGN_DROP",
+    "distractor_misconceptions": [
+      {
+        "option": "132.8 quintals",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "19bdc433-3799-4a1c-bfff-986c560d5488",
+    "spec": "A3-x13",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An online grocery hub dispatched 24 delivery batches during the morning shift, with an average of 45 orders per batch. In the afternoon shift, an additional batch was dispatched. Including this new batch, the overall average number of orders per batch increased by 2. How many orders were in this additional batch?",
+    "options": [
+      "95",
+      "93",
+      "47",
+      "43"
+    ],
+    "answer": "95",
+    "solution": "1. Let $n = 24$ be the initial number of batches with an initial average of $A = 45$ orders.\n2. When 1 new batch is added, the total number of batches becomes $n + 1 = 25$, and the new average becomes $A' = 45 + 2 = 47$.\n3. The total orders across all 25 batches is $25 \\times 47 = 1175$.\n4. The total orders across the original 24 batches was $24 \\times 45 = 1080$.\n5. The orders in the additional batch $= 1175 - 1080 = 95$.\n(Alternatively, using deviations: $\\text{New batch orders} = 45 + 25 \\times 2 = 95$.)",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "93",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "47",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "43",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "f3604827-9616-46a5-b59c-cc18e9e15ca7",
+    "spec": "A3-x20",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "A real estate agency managed the rental of $8$ commercial shops in a shopping complex, with an average monthly rent of ₹$45,000$ per shop. The agency then added a newly constructed $9^{\\text{th}}$ shop to its portfolio, which raised the average monthly rent across all managed shops to ₹$48,500$. What is the monthly rent (in ₹) of the newly added shop?",
+    "options": null,
+    "answer": "76500",
+    "solution": "1. Find the initial total rent of the $8$ shops: $\\text{Total}_8 = 8 \\times 45000 = ₹360,000$.\n2. Find the new total rent after adding the $9^{\\text{th}}$ shop, using the updated count of $9$ shops: $\\text{Total}_9 = 9 \\times 48500 = ₹436,500$.\n3. The monthly rent of the new shop is the difference between the two totals: $436,500 - 360,000 = ₹76,500$.\n(Note: A student holding the A3_OLD_COUNT misconception multiplies ₹$48,500$ by $8$ instead of $9$, obtaining $388,000 - 360,000 = 28,000$).",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e16b5679-d9b8-40d7-a60f-c55bbf831fa5",
+    "spec": "A3-x26",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In a municipal constituency, the votes secured by a candidate across $16$ polling stations had an average of $425$. During a post-poll recount, it was discovered that the tally from one faulty electronic voting machine (EVM) showing $310$ votes was invalid and was replaced by the tally from the verified paper audit trail from that same station. Following this correction, the candidate's average votes per station across all $16$ stations increased by $18.5$. What was the actual number of votes recorded for the candidate on the paper audit trail from that station?",
+    "options": null,
+    "answer": "606",
+    "solution": "1. Let $n = 16$ be the total number of polling stations.\n2. When one tally is replaced, the increase in the overall average is $\\Delta A = 18.5$.\n3. The change in the total votes across all $16$ stations is given by $n \\times \\Delta A = 16 \\times 18.5 = 296$.\n4. Therefore, the actual votes on the paper audit trail exceed the faulty EVM count of $310$ by $296$.\n5. Actual votes $= 310 + 296 = 606$.\n\nFinal Answer: 606",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "8c221832-7278-4370-b2a1-41ac4742e063",
+    "spec": "A3-x24",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A wealth management firm categorizes its clients into two groups: High Net-Worth Individuals (HNIs) and Retail investors. The firm manages investments for $30$ HNIs who have an average monthly Systematic Investment Plan (SIP) of ₹$80,000$, and $70$ Retail investors who have an average monthly SIP of ₹$20,000$. What is the overall average monthly SIP per client managed by the firm?",
+    "options": [
+      "₹$38,000$",
+      "₹$44,000$",
+      "₹$50,000$",
+      "₹$56,000$"
+    ],
+    "answer": "₹$38,000$",
+    "solution": "1. Find the total investment contributed by each group: $30 \\times 80,000 = ₹24,00,000$ from HNIs, and $70 \\times 20,000 = ₹14,00,000$ from Retail investors.\n2. Calculate the total investment: $24,00,000 + 14,00,000 = ₹38,00,000$.\n3. Find the overall average across all $30 + 70 = 100$ clients: $\\frac{38,00,000}{100} = ₹38,000$.\n4. Hence, the correct answer is ₹$38,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$50,000$",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "83f4bea9-292b-4c58-bf43-876f7eef0e3c",
+    "spec": "A3-x25",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A car rental agency maintains a fleet of $15$ identical sedans. In a particular week, the fleet recorded an average fuel economy of $16\\text{ km/litre}$. A routine inspection revealed that one sedan had a faulty fuel injector, causing it to record only $10\\text{ km/litre}$ during the week. After the injector was repaired and its true fuel consumption was correctly accounted for, its fuel economy for that week was updated to $14.5\\text{ km/litre}$. What is the corrected average fuel economy (in $\\text{km/litre}$) of the fleet for that week?",
+    "options": [
+      "$16.30$",
+      "$20.50$",
+      "$16.28$",
+      "$15.70$"
+    ],
+    "answer": "$16.30$",
+    "solution": "1. The net increase in the total fuel economy recorded by the fleet is $14.5 - 10 = 4.5\\text{ km/litre}$.\n2. Since the fleet size remains $15$, the increase in the fleet's average fuel economy is $\\frac{4.5}{15} = 0.30\\text{ km/litre}$.\n3. Corrected average = $16 + 0.30 = 16.30\\text{ km/litre}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$20.50$",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "$16.28$",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "$15.70$",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "12673a87-9a23-40e2-bcff-92199084f2d1",
+    "spec": "A3-x27",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A manufacturing plant operates $15$ identical assembly lines whose average daily output was recorded as $240$ units per line. During an expansion phase, a newly upgraded high-capacity assembly line was introduced to the plant, which increased the average daily output across all lines by $8$ units. What is the daily output (in units) of the newly introduced assembly line?",
+    "options": [
+      "248",
+      "360",
+      "368",
+      "376"
+    ],
+    "answer": "368",
+    "solution": "1. Initially, there are $15$ assembly lines with an average output of $240$ units, giving an initial total output of $15 \\times 240 = 3600$ units.\n2. When $1$ new line is added, the total number of lines becomes $15 + 1 = 16$.\n3. The new overall average is $240 + 8 = 248$ units.\n4. The new total output is $16 \\times 248 = 3968$ units.\n5. The output of the new line is $3968 - 3600 = 368$ units (or via deviation: $248 + 15 \\times 8 = 368$ units).\n\nCorrect answer: 368.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "248",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "360",
+        "misconception_id": "A3_OLD_COUNT"
+      }
+    ]
+  },
+  {
+    "id": "49a13e25-8da2-48d7-82e1-83c48d3df659",
+    "spec": "A3-x28",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A chemical plant operates a network of identical cooling reservoirs. Initially, $15$ identical inlet pipes fill a reservoir with an average flow rate of $180$ litres per minute ($\text{L/min}$). To expedite operations, a high-capacity booster pipe is connected to the system, which increases the average flow rate of all the connected pipes by $12\\text{ L/min}$. What is the flow rate of the booster pipe?",
+    "options": [
+      "372 L/min",
+      "192 L/min",
+      "360 L/min",
+      "384 L/min"
+    ],
+    "answer": "372 L/min",
+    "solution": "1. Initially, there are $n = 15$ pipes with an average flow rate of $180\\text{ L/min}$.\nTotal initial flow rate = $15 \\times 180 = 2700\\text{ L/min}$.\n2. After the booster pipe is added, the total number of pipes becomes $15 + 1 = 16$.\n3. The new average flow rate is $180 + 12 = 192\\text{ L/min}$.\n4. Total new flow rate = $16 \\times 192 = 3072\\text{ L/min}$.\n5. Flow rate of the booster pipe = $3072 - 2700 = 372\\text{ L/min}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "192 L/min",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "360 L/min",
+        "misconception_id": "A3_OLD_COUNT"
+      }
+    ]
+  },
+  {
+    "id": "adcece34-c956-4049-9f16-c230188e9bca",
+    "spec": "A3-x29",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "During a demographic survey of a district, the average population across $8$ sub-wards was recorded as $36,250$. When a newly developed $9^{\\text{th}}$ sub-ward was included in the survey, the overall average population of the sub-wards increased by $750$. Find the population of the $9^{\\text{th}}$ sub-ward.",
+    "options": null,
+    "answer": "43000",
+    "solution": "1. Let the initial number of sub-wards be $n_1 = 8$ with an initial average of $A_1 = 36,250$.\n2. When the $9^{\\text{th}}$ sub-ward is added, the new total number of sub-wards becomes $n_2 = 9$, and the new average becomes $A_2 = 36,250 + 750 = 37,000$.\n3. The population of the $9^{\\text{th}}$ sub-ward is given by:\n$$\\text{New value} = \\text{New average} + (n_1 \\times \\text{Increase in average})$$\n$$\\text{Population} = 37,000 + (8 \\times 750) = 37,000 + 6,000 = 43,000$$.\n\nAlternatively, $\\text{Total population of } 9 \\text{ sub-wards} - \\text{Total population of } 8 \\text{ sub-wards} = (9 \\times 37,000) - (8 \\times 36,250) = 333,000 - 290,000 = 43,000$.\n\nFinal Answer: 43000",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e81c737b-02c4-4a0b-9236-6e76457acea2",
+    "spec": "A3-x30",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A chef in a commercial kitchen prepares $5$ batches of a spice mix. The target weight for each batch is $250\\text{ g}$. The actual weights recorded for the $5$ batches are $242\\text{ g}$, $256\\text{ g}$, $247\\text{ g}$, $258\\text{ g}$, and $242\\text{ g}$. What is the actual average weight per batch?",
+    "options": [
+      "249 g",
+      "255 g",
+      "245 g",
+      "251 g"
+    ],
+    "answer": "249 g",
+    "solution": "1. Taking an assumed mean of $A = 250\\text{ g}$, calculate the signed deviations from $250\\text{ g}$ for each batch:\n$242 - 250 = -8$\n$256 - 250 = +6$\n$247 - 250 = -3$\n$258 - 250 = +8$\n$242 - 250 = -8$\n\n2. Sum the deviations:\n$\\sum d = (-8) + 6 + (-3) + 8 + (-8) = -5\\text{ g}$.\n\n3. Calculate the actual mean:\n$\\text{Actual Mean} = 250 + \\frac{-5}{5} = 250 - 1 = 249\\text{ g}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_DEVIATION_SIGN_DROP",
+    "distractor_misconceptions": [
+      {
+        "option": "255 g",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "dbaebf46-652c-452d-8a1b-1a7661983378",
+    "spec": "A3-x31",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An e-commerce fulfilment centre employs $20$ delivery executives who delivered an average of $38$ packages each on a festival day. To handle the evening surge, $4$ freelance riders joined the team, delivering an average of $50$ packages each. What was the overall average number of packages delivered per person by the entire team of executives and freelance riders that day?",
+    "options": [
+      "40",
+      "44",
+      "48",
+      "40.4"
+    ],
+    "answer": "40",
+    "solution": "1. Find the total number of packages delivered by the initial $20$ executives: $20 \\times 38 = 760$.\n2. Find the total number of packages delivered by the $4$ freelance riders: $4 \\times 50 = 200$.\n3. Calculate the overall average for the total of $20 + 4 = 24$ individuals: $\\frac{760 + 200}{24} = \\frac{960}{24} = 40$ packages per person.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "44",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      },
+      {
+        "option": "48",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "40.4",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "09cc7a8a-bf83-4463-83fe-8ed67b4ef0d3",
+    "spec": "A3-x32",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "A logistics firm transports parcels between two cities using a combination of express trains and highway trucks. On a particular day, $12$ express trains carried an average of $850$ parcels each, while $28$ highway trucks carried an average of $350$ parcels each. What was the average number of parcels carried per vehicle across all trains and trucks combined?",
+    "options": null,
+    "answer": "500",
+    "solution": "1. Find the total number of parcels carried by the trains: $12 \\times 850 = 10{,}200$.\n2. Find the total number of parcels carried by the trucks: $28 \\times 350 = 9{,}800$.\n3. Calculate the overall total parcels and vehicles: Total parcels $= 10{,}200 + 9{,}800 = 20{,}000$; Total vehicles $= 12 + 28 = 40$.\n4. Compute the combined average: $\\frac{20{,}000}{40} = 500$.\n(Note: A student taking the simple average of averages would incorrectly compute $\\frac{850 + 350}{2} = 600$.)",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "0849599c-f940-41cc-920f-96f51f6ff5fe",
+    "spec": "A3-x33",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A boutique accounting firm managed $14$ corporate accounts with an average quarterly audit fee of ₹$85,000$. At the start of a new quarter, two new clients joined the firm, paying audit fees in the ratio $3 : 5$. As a result, the firm's overall average fee per client increased by ₹$3,500$. What was the fee paid by the higher-paying of the two new clients?",
+    "options": [
+      "₹$1,27,500$",
+      "₹$1,36,250$",
+      "₹$1,41,250$",
+      "₹$1,77,500$"
+    ],
+    "answer": "₹$1,41,250$",
+    "solution": "1. Let the fees paid by the two new clients be $3x$ and $5x$, so their total fee is $8x$.\n2. The initial number of clients is $14$, and with $2$ new clients, the new count becomes $16$.\n3. The average fee increases by ₹$3,500$, so the new average is ₹$85,000 + 3,500 = ₹88,500$.\n4. Using the deviation method: Total contribution of the new clients above the old average must account for the increase across all $16$ clients, plus their own base at the old average:\n$8x = 2 \\times 85,000 + 16 \\times 3,500 = 1,70,000 + 56,000 = 2,26,000$.\n5. Solving for $x$: $x = \\frac{2,26,000}{8} = 28,250$.\n6. The higher fee is $5x = 5 \\times 28,250 = ₹1,41,250$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$1,36,250$",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "₹$1,27,500$",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      },
+      {
+        "option": "₹$1,77,500$",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "36786ae2-3d7a-4d8c-884f-3a5eede606dc",
+    "spec": "A3-x34",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A boutique displays a collection of $14$ designer shirts on a rack. A customer purchases one of the shirts priced at ₹$3,200$, and the shop manager immediately replaces it with a new arrival on the rack. As a result, the average price of the $14$ shirts on display increases by ₹$150$. What is the price of the newly arrived shirt?",
+    "options": [
+      "₹3,350",
+      "₹5,150",
+      "₹5,300",
+      "₹4,700"
+    ],
+    "answer": "₹5,300",
+    "solution": "1. Let $n = 14$ be the number of shirts on display.\n2. When an item of value $P_{\\text{old}} = ₹3,200$ is replaced by an item of value $P_{\\text{new}}$, the total value of all $14$ shirts changes by $P_{\\text{new}} - P_{\\text{old}}$.\n3. Since the average price increases by ₹$150$, the total price must increase by $14 \\times 150 = ₹2,100$.\n4. Therefore, $P_{\\text{new}} = P_{\\text{old}} + 2,100 = 3,200 + 2,100 = ₹5,300$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_REPLACEMENT_UNSCALED",
+    "distractor_misconceptions": [
+      {
+        "option": "₹3,350",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "3bfeb09f-88bf-4bec-a2c7-90087ee7025f",
+    "spec": "A3-x16",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "During a festive sale, a retail chain recorded transactions across three tiers of stores: Flagship, High-street, and Neighbourhood. The ratio of the number of transactions recorded across Flagship, High-street, and Neighbourhood stores was $1 : 3 : 6$. The average transaction value at the Flagship stores was ₹$4,200$, while at the High-street stores it was ₹$2,600$. If the overall average transaction value across all three tiers of stores combined was ₹$2,100$, what was the average transaction value at the Neighbourhood stores?",
+    "options": [
+      "₹1,250",
+      "₹1,500",
+      "₹1,800",
+      "₹1,600"
+    ],
+    "answer": "₹1,500",
+    "solution": "1. Let the number of transactions at the Flagship, High-street, and Neighbourhood stores be $x$, $3x$, and $6x$ respectively, so the total number of transactions is $x + 3x + 6x = 10x$.\n2. The total transaction value across all stores is $10x \\times 2,100 = 21,000x$.\n3. The value from Flagship stores is $x \\times 4,200 = 4,200x$, and from High-street stores is $3x \\times 2,600 = 7,800x$.\n4. The combined value from Flagship and High-street stores is $4,200x + 7,800x = 12,000x$.\n5. Therefore, the total transaction value from Neighbourhood stores is $21,000x - 12,000x = 9,000x$.\n6. The average transaction value at the Neighbourhood stores is $\\frac{9,000x}{6x} = ₹1,500$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,250",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "fe7eb4c9-ffdb-4005-927a-1d97e9642d88",
+    "spec": "A3-x35",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In an entrance test, the average marks obtained by a batch of $25$ candidates was calculated to be $64$. Later, during verification, it was found that the marks of one candidate were wrongly entered as $38$ instead of $83$, and the marks of another candidate were wrongly entered as $72$ instead of $52$. What is the correct average marks of the batch?",
+    "options": null,
+    "answer": "65",
+    "solution": "1. Find the net change in the total marks:\nChange from first candidate = $83 - 38 = +45$\nChange from second candidate = $52 - 72 = -20$\nNet increase in total marks = $45 - 20 = +25$\n\n2. Calculate the change in the average for the $25$ candidates:\nIncrease in average = $\\frac{+25}{25} = +1$\n\n3. Correct average = $64 + 1 = 65$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "d746957e-d609-4937-b6f6-69289e879665",
+    "spec": "A3-x39",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "The average monthly salary of $19$ analysts at a financial consultancy firm was ₹$68,000$. Following an expansion, one senior analyst was newly recruited into the team, which raised the average monthly salary of the team by ₹$2,500$. What is the monthly salary of the newly recruited senior analyst?",
+    "options": [
+      "₹70,500",
+      "₹1,15,500",
+      "₹1,18,000",
+      "₹1,20,500"
+    ],
+    "answer": "₹1,18,000",
+    "solution": "1. Initially, there are $19$ analysts with an average salary of ₹$68,000$.\n2. When $1$ senior analyst joins, the total number of analysts becomes $19 + 1 = 20$.\n3. The new average salary becomes ₹$68,000 + ₹2,500 = ₹70,500$.\n4. The salary of the new entrant = New Average + (Initial Count $\\times$ Increase in Average) = ₹$70,500 + (19 \\times 2,500) = ₹70,500 + ₹47,500 = ₹1,18,000$.\nAlternatively, New Salary = $(20 \\times 70,500) - (19 \\times 68,000) = 14,10,000 - 12,92,000 = ₹1,18,000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹70,500",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "₹1,15,500",
+        "misconception_id": "A3_OLD_COUNT"
+      }
+    ]
+  },
+  {
+    "id": "b56ec2be-61e2-4d65-a150-0660ffa0a746",
+    "spec": "A3-x38",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "A real estate agency manages $8$ luxury studio apartments in a commercial hub. The monthly rent for each apartment was benchmarked against a target rent of ₹$45,000$. The deviations of the actual monthly rents from this benchmark were recorded as follows: five apartments had rents below the benchmark by ₹$1,200$, ₹$2,400$, ₹$800$, ₹$1,600$, and ₹$3,000$ respectively; the remaining three apartments had rents above the benchmark by ₹$2,500$, ₹$1,800$, and ₹$1,700$ respectively. What was the actual average monthly rent (in ₹) across the $8$ apartments?",
+    "options": null,
+    "answer": "44625",
+    "solution": "1. Let the assumed mean (benchmark) be $A = 45000$.\n2. Compute the algebraic sum of the deviations from $A$:\nNegative deviations: $(-1200) + (-2400) + (-800) + (-1600) + (-3000) = -9000$.\nPositive deviations: $2500 + 1800 + 1700 = +6000$.\nNet deviation $= -9000 + 6000 = -3000$.\n3. The average deviation across the $8$ apartments is $\\frac{-3000}{8} = -375$.\n4. Therefore, the actual average rent is $45000 + (-375) = 44625$.\n\nNote: A student dropping the signs on deviations (treating all deviations as positive) would calculate the net deviation as $9000 + 6000 = +15000$, obtaining $45000 + \\frac{15000}{8} = 46875$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_DEVIATION_SIGN_DROP",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c3dd9602-9cbf-4de9-810b-41b65e1f3941",
+    "spec": "A3-x36",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "During a cultural festival, an event management committee initially deployed $18$ food stalls, which generated an average revenue of ₹$54,000$ each over the first three days. On the fourth day, to cater to a sudden surge in visitors, one premium food stall was added to the group. As a result, the overall average revenue across all stalls increased by ₹$2,500$. What was the revenue generated by this newly added premium food stall?",
+    "options": [
+      "₹$1,01,500",
+      "₹$99,000",
+      "₹$56,500",
+      "₹$71,500"
+    ],
+    "answer": "₹$1,01,500",
+    "solution": "1. Initial number of stalls = $18$, and their initial average revenue = ₹$54,000$.\n2. After adding $1$ premium stall, total number of stalls becomes $18 + 1 = 19$.\n3. The new average revenue per stall = $54,000 + 2,500 = ₹56,500$.\n4. Total revenue of all $19$ stalls = $19 \\times 56,500 = ₹10,73,500$.\n5. Initial total revenue of $18$ stalls = $18 \\times 54,000 = ₹9,72,000$.\n6. Revenue of the new stall = $10,73,500 - 9,72,000 = ₹1,01,500$ (or directly, $54,000 + 19 \\times 2,500 = ₹1,01,500$).\n7. The correct answer is ₹$1,01,500$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_OLD_COUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$99,000",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "₹$56,500",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      }
+    ]
+  },
+  {
+    "id": "42898c88-4f8d-422b-bb16-b62b40479933",
+    "spec": "A4-x0",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An online delivery seller procures a gourmet hamper for ₹$750$ and incurs an additional ₹$50$ on delivery packaging. The seller lists and sells the hamper on a quick-commerce platform for ₹$1,000$. What is the seller's actual profit percentage?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "33.33%"
+    ],
+    "answer": "25%",
+    "solution": "1. Find total cost price: $\\text{Cost Price (CP)} = 750 + 50 = ₹800$.\n2. Selling price is $\\text{SP} = ₹1,000$.\n3. Absolute profit: $\\text{Profit} = 1,000 - 800 = ₹200$.\n4. Compute profit percentage on CP: $\\frac{200}{800} \\times 100 = 25\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": [
+      {
+        "option": "20%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "8879679d-5964-450b-88ce-d6c820595bb3",
+    "spec": "A3-x37",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "A batsman has a certain average score across $11$ innings. In his $12^{\\text{th}}$ innings, he scores $90$ runs, which increases his overall batting average by $3$ runs. How many runs did he score on average across the first $11$ innings?",
+    "options": [
+      "51",
+      "54",
+      "57",
+      "87"
+    ],
+    "answer": "54",
+    "solution": "1. Let the average score across the first $11$ innings be $A$.\n2. The total runs scored in the first $11$ innings is $11A$.\n3. In the $12^{\\text{th}}$ innings, he scores $90$ runs, so the total runs in $12$ innings becomes $11A + 90$.\n4. His new average after $12$ innings is $A + 3$, which means the new total is $12(A + 3) = 12A + 36$.\n5. Equating the two expressions for the total runs: $11A + 90 = 12A + 36 \\implies A = 90 - 36 = 54$.\n6. Thus, the average across the first $11$ innings was $54$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "57",
+        "misconception_id": "A3_OLD_COUNT"
+      },
+      {
+        "option": "87",
+        "misconception_id": "A3_REPLACEMENT_UNSCALED"
+      },
+      {
+        "option": "51",
+        "misconception_id": "A3_DEVIATION_SIGN_DROP"
+      }
+    ]
+  },
+  {
+    "id": "03365869-0964-41d1-8e86-01fe446b587c",
+    "spec": "A4-x1",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A travel agency books bus tour packages from an operator at a fixed wholesale cost per seat. To earn a profit, the agency marks up the cost per seat by $60\\%$. However, to boost seasonal bookings on a certain route, it offers a promotional discount of $35\\%$ on the marked price. What is the agency's actual profit percentage on each booked seat?",
+    "options": [
+      "4%",
+      "25%",
+      "3.85%",
+      "21%"
+    ],
+    "answer": "4%",
+    "solution": "1. Let the wholesale cost price of a seat be ₹$100$.\n2. With a markup of $60\\%$, the marked price is $100 \\times 1.60 =$ ₹$160$.\n3. The promotional discount is $35\\%$ on the marked price: Discount $= 0.35 \\times 160 =$ ₹$56$.\n4. Selling price $= 160 - 56 =$ ₹$104$.\n5. Profit $= 104 - 100 =$ ₹$4$ on a cost price of ₹$100$, which is $4\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25%",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "3.85%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "d87cdad3-d42d-445b-9060-4985d0309391",
+    "spec": "A3-x40",
+    "concept_id": "A3",
+    "type": "MCQ",
+    "stem": "An agricultural cooperative harvests wheat across two neighbouring villages, Rampur and Shyampur. In Rampur, $30$ farmers reported an average yield of $48$ quintals per hectare, whereas in Shyampur, $70$ farmers reported an average yield of $38$ quintals per hectare. What is the overall average yield per hectare across all the farmers in the two villages?",
+    "options": [
+      "41 quintals",
+      "43 quintals",
+      "40 quintals",
+      "45 quintals"
+    ],
+    "answer": "41 quintals",
+    "solution": "1. Calculate the total yield for Rampur: $30 \\times 48 = 1440$ quintals.\n2. Calculate the total yield for Shyampur: $70 \\times 38 = 2660$ quintals.\n3. Total yield across both villages = $1440 + 2660 = 4100$ quintals.\n4. Total number of farmers = $30 + 70 = 100$.\n5. Overall average yield = $\\frac{4100}{100} = 41$ quintals.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A3_AVG_OF_AVGS",
+    "distractor_misconceptions": [
+      {
+        "option": "43 quintals",
+        "misconception_id": "A3_AVG_OF_AVGS"
+      }
+    ]
+  },
+  {
+    "id": "2a731a3a-1094-4eeb-a01c-41aae66efd6a",
+    "spec": "A4-x5",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "During a Diwali mela, a stall owner marks the price of a decorative lamp at ₹$1,500$. He offers a flat discount of $12\\%$ on the marked price and still makes a profit of $10\\%$ on his cost price. Find the cost price (in ₹) of the lamp.",
+    "options": null,
+    "answer": "1200",
+    "solution": "1. Marked Price (MP) = ₹$1,500$.\n2. Discount $= 12\\%$ of $1,500 = 0.12 \\times 1,500 = ₹180$.\n3. Selling Price (SP) $= 1,500 - 180 = ₹1,320$.\n4. Since profit is $10\\%$, $\\text{SP} = 1.10 \\times \\text{CP}$.\n5. $\\text{CP} = \\frac{1,320}{1.10} = 1,200$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "89211273-f6c8-42a6-a26a-737520f43fbd",
+    "spec": "A4-x2",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An office stationery supplier offers two successive discounts of $20\\%$ and $15\\%$ on the catalogue price of an order. A corporate client mistakenly computes the net bill by simply adding the two discount percentages together and pays ₹$7,800$. How much more (in ₹) must the client pay to clear the correct invoiced amount?",
+    "options": null,
+    "answer": "360",
+    "solution": "1. Let the catalogue price of the order be $M$.\n2. The client added the two discounts together, assuming a single discount of $20\\% + 15\\% = 35\\%$.\n3. Under this mistaken assumption, the client paid: $(1 - 0.35)M = 0.65M = 7,800 \\implies M = \\frac{7,800}{0.65} = 12,000$.\n4. The correct selling price after successive discounts of $20\\%$ and $15\\%$ is: $12,000 \\times (1 - 0.20) \\times (1 - 0.15) = 12,000 \\times 0.80 \\times 0.85 = 12,000 \\times 0.68 = 8,160$.\n5. The additional amount the client must pay to clear the invoice is: $8,160 - 7,800 = 360$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "dab64d54-8f38-482d-8cd1-eae891178510",
+    "spec": "A4-x4",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An educational coaching institute prints preparatory workbooks for competitive exams at an initial printing and binding cost of ₹$600$ per copy. To attract enrolments, the institute lists the workbook at a marked price that is $30\\%$ above this production cost, but offers a special discount of $10\\%$ on the marked price to all registered candidates. If a candidate buys the workbook at this discounted price, what is the net profit percentage earned by the institute on the copy?",
+    "options": [
+      "$17\\%$",
+      "$20\\%$",
+      "$14.5\\%$",
+      "$23\\%$"
+    ],
+    "answer": "$17\\%$",
+    "solution": "1. Production cost (Cost Price, $\\text{CP}$) = ₹$600$.\n2. Marked Price ($\\text{MP}$) is $30\\%$ above cost: $\\text{MP} = 600 \\times 1.30 = ₹780$.\n3. Discount of $10\\%$ is given on $\\text{MP}$: $\\text{Selling Price (SP)} = 780 \\times (1 - 0.10) = 780 \\times 0.90 = ₹702$.\n4. Net Profit = $\\text{SP} - \\text{CP} = 702 - 600 = ₹102$.\n5. Profit percentage = $\\frac{102}{600} \\times 100\\% = 17\\%$.\nAlternatively, net multiplier $= (1 + 0.30)(1 - 0.10) = 1.30 \\times 0.90 = 1.17$, which corresponds to a $17\\%$ profit.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_MARKUP_MINUS_DISCOUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$14.5\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "98248deb-6cc1-4e91-b168-fc810e8bba26",
+    "spec": "A4-x6",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A sports academy store procures cricket ground chalk in bulk. The vendor marks the price of the chalk $20\\%$ above the cost price and advertises a discount of $10\\%$ to local cricket clubs. However, while dispensing, the vendor uses a faulty weighing scale that indicates $1\\text{ kg}$ for every $800\\text{ g}$ actually measured out. What is the overall percentage profit earned by the vendor on selling the chalk?",
+    "options": [
+      "35%",
+      "28%",
+      "32%",
+      "29.6%"
+    ],
+    "answer": "35%",
+    "solution": "1. Let the cost price of chalk be ₹$1$ per gram, so the cost price of $1000\\text{ g}$ is ₹$1000$.\n2. The marked price for $1000\\text{ g}$ is ₹$1000 \\times 1.20 =$ ₹$1200$. After a $10\\%$ discount, the selling price charged to the buyer for an indicated $1\\text{ kg}$ is ₹$1200 \\times 0.90 =$ ₹$1080$.\n3. Due to the faulty scale, the vendor only dispenses $800\\text{ g}$ when the scale reads $1\\text{ kg}$. The actual cost incurred by the vendor for this quantity is $800 \\times ₹1 =$ ₹$800$.\n4. Overall profit percentage $= \\frac{\\text{SP} - \\text{Actual CP}}{\\text{Actual CP}} \\times 100 = \\frac{1080 - 800}{800} \\times 100 = \\frac{280}{800} \\times 100 = 35\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_FALSE_WEIGHT_BASE",
+    "distractor_misconceptions": [
+      {
+        "option": "28%",
+        "misconception_id": "A4_FALSE_WEIGHT_BASE"
+      },
+      {
+        "option": "32%",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "29.6%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "53b240ac-f132-424f-85cc-ccd65c66035d",
+    "spec": "A4-x7",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A real estate investor purchased a commercial plot. To find a quick buyer, he listed the plot at a price $40\\%$ higher than his purchase cost, but offered a festive discount of $15\\%$ on this listed price. If the final sale was closed at this discounted price, what was his actual profit percentage on the investment?",
+    "options": [
+      "$19\\%$",
+      "$25\\%$",
+      "$16\\%$",
+      "$20\\%$"
+    ],
+    "answer": "$19\\%$",
+    "solution": "1. Let the purchase cost of the plot be ₹$100$.\n2. The investor marks up the price by $40\\%$, making the listed price ₹$140$.\n3. A discount of $15\\%$ is offered on the listed price: $\\text{Discount} = 0.15 \\times 140 = ₹21$.\n4. Thus, the selling price is $140 - 21 = ₹119$.\n5. The profit is $119 - 100 = ₹19$, which corresponds to a profit of $19\\%$ on the purchase cost.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$16\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "0a9dbe16-27bf-4eb7-b0a7-313f416e566a",
+    "spec": "A4-x9",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An organic farmer harvests a batch of premium basmati rice at an effective cultivation cost of ₹$80$ per kg. To sell it at the local agricultural fair, he marks up the price by $40\\%$ over his cost price. Later in the day, he offers a discount of $15\\%$ on the marked price. What is his net profit percentage on the rice sold?",
+    "options": [
+      "19%",
+      "25%",
+      "20%",
+      "16%"
+    ],
+    "answer": "19%",
+    "solution": "1. Cost Price (CP) = ₹$80$ per kg.\n2. Marked Price (MP) with a $40\\%$ markup = $80 \\times 1.40 =$ ₹$112$ per kg.\n3. Selling Price (SP) after a $15\\%$ discount on MP = $112 \\times (1 - 0.15) = 112 \\times 0.85 =$ ₹$95.20$.\n4. Net Profit = $\\text{SP} - \\text{CP} = 95.20 - 80 =$ ₹$15.20$.\n5. Net Profit Percentage = $\\frac{15.20}{80} \\times 100 = 19\\%$.\n(Alternatively, using successive percentage change: $40 - 15 - \\frac{40 \\times 15}{100} = 25 - 6 = 19\\%$.)",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25%",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "16%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "814775fd-8ae1-4e25-b8ae-46c3e1761db6",
+    "spec": "A4-x10",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "The entrepreneurship club at an engineering college purchased customised hoodies at ₹$600$ per piece and sold them to students at ₹$750$ each during the annual cultural fest. What was the club's profit percentage on the hoodies?",
+    "options": [
+      "$20\\%$",
+      "$25\\%$",
+      "$15\\%$",
+      "$30\\%$"
+    ],
+    "answer": "$25\\%$",
+    "solution": "1. Cost Price (CP) = ₹$600$ and Selling Price (SP) = ₹$750$.\n2. Profit = $\\text{SP} - \\text{CP} = 750 - 600 =$ ₹$150$.\n3. Standard profit percentage is calculated on CP: $\\text{Profit}\\% = \\left(\\frac{150}{600}\\right) \\times 100 = 25\\%$.\n4. Thus, the club made a profit of $25\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "343e7b96-894b-477b-9e3e-8593ff737a06",
+    "spec": "A4-x8",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A consulting firm hired two senior project directors, Amit and Brenda, each on an identical annual billing contract of ₹$99,00,000$. The firm's compensation structure was designed such that the firm earned a profit of $20\\%$ on the total salary package paid to Amit, but incurred a loss of $20\\%$ on the total salary package paid to Brenda. What was the net loss incurred by the firm on the combined salary packages of Amit and Brenda, in ₹ lakhs?",
+    "options": null,
+    "answer": "8.25",
+    "solution": "1. Let the salary packages paid to Amit and Brenda be $C_A$ and $C_B$ respectively.\n2. The billing amount for Amit is the selling price for the firm: $1.20 \\times C_A = 99$, which gives $C_A = \\frac{99}{1.2} = ₹82.5$ lakhs.\n3. The billing amount for Brenda is: $0.80 \\times C_B = 99$, which gives $C_B = \\frac{99}{0.8} = ₹123.75$ lakhs.\n4. Total salary cost paid by the firm = $C_A + C_B = 82.5 + 123.75 = ₹206.25$ lakhs.\n5. Total billing received by the firm = $99 + 99 = ₹198$ lakhs.\n6. Net loss incurred by the firm = $206.25 - 198 = ₹8.25$ lakhs.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_SAME_SP_NO_LOSS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e585cb21-aef9-4d92-8568-6caab6902a21",
+    "spec": "A4-x13",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "During a state election campaign, an event management firm produced printed campaign banners for a political party. The firm marked the catalogue price of each banner $50\\%$ above its cost price. For a bulk order from the candidate's constituency office, the firm offered two successive discounts of $20\\%$ and $10\\%$ on the catalogue price. If the firm earned an overall profit of ₹$24,000$ on the entire order, what was the total cost price of producing the banners for this order?",
+    "options": [
+      "₹2,40,000",
+      "₹3,00,000",
+      "₹1,20,000",
+      "₹2,16,000"
+    ],
+    "answer": "₹3,00,000",
+    "solution": "1. Let the total cost price of the banners be $C$.\n2. The marked catalogue price is $M = 1.50 \\times C$.\n3. Applying successive discounts of $20\\%$ and $10\\%$ on $M$:\n   $\\text{Selling Price } (S) = M \\times (1 - 0.20) \\times (1 - 0.10) = 1.50 C \\times 0.80 \\times 0.90 = 1.08 C$.\n4. The profit earned is $S - C = 1.08 C - C = 0.08 C = 8\\% \\text{ of } C$.\n5. We are given profit $= ₹24,000$, so $0.08 C = 24,000 \\implies C = \\frac{24,000}{0.08} = ₹3,00,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,20,000",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      },
+      {
+        "option": "₹2,40,000",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "₹2,16,000",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "897931ba-7ca7-4509-9597-ba76d8eb334d",
+    "spec": "A4-x12",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A logistics firm purchases bulk fuel coupons from an oil marketing company. The coupons have a face value of ₹$120$ per litre. The oil company offers two successive corporate discounts of $15\\%$ and $10\\%$ on the face value. A transport manager incorrectly calculates the total discount by simply adding the two percentage discounts. What is the absolute difference between the total cost calculated by the manager and the actual cost for a monthly quota of $2,500$ litres?",
+    "options": [
+      "₹$4,500",
+      "₹$5,400",
+      "₹$6,000",
+      "₹$7,500"
+    ],
+    "answer": "₹$4,500",
+    "solution": "1. Face value of fuel for $2,500$ litres = $2,500 \\times 120 = ₹3,00,000$.\n2. Correct effective discount for successive discounts of $15\\%$ and $10\\%$:\n$\\text{Effective discount} = 15 + 10 - \\frac{15 \\times 10}{100} = 25 - 1.5 = 23.5\\%$.\n3. Actual price paid = $3,00,000 \\times (1 - 0.235) = ₹2,29,500$.\n4. The manager adds the discounts directly: $15\\% + 10\\% = 25\\%$.\nManager's calculated price = $3,00,000 \\times (1 - 0.25) = ₹2,25,000$.\n5. Absolute difference = $2,29,500 - 2,25,000 = ₹4,500$ (which is simply $1.5\\%$ of ₹$3,00,000$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$5,400",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "1d43f893-2fbc-452e-a794-617c5137b80a",
+    "spec": "A4-x14",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A manufacturing unit produces industrial valves at a cost of ₹$1,200$ per unit. The production manager marks up the list price by $40\\%$ above the production cost. To secure a bulk order from a distributor, the factory offers a discount of $25\\%$ on the list price. What is the profit earned by the factory on the sale of each valve (in ₹)?",
+    "options": null,
+    "answer": "60",
+    "solution": "1. The production cost per valve is ₹$1,200$.\n2. A markup of $40\\%$ gives a list price of $1,200 \\times 1.40 =$ ₹$1,680$.\n3. A discount of $25\\%$ on the list price gives a selling price of $1,680 \\times (1 - 0.25) = 1,680 \\times 0.75 =$ ₹$1,260$.\n4. Therefore, the profit earned per valve is $1,260 - 1,200 =$ ₹$60$.\n\n(Note: A student applying the misconception $40\\% - 25\\% = 15\\%$ profit would calculate $15\\%$ of ₹$1,200 =$ ₹$180$, which is incorrect.)",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_MARKUP_MINUS_DISCOUNT",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e87ad9b4-f46b-4dcd-901a-2148f1ab2d3e",
+    "spec": "A4-x15",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A plumbing contractor purchases overhead water storage tanks at a wholesale cost price of ₹$8,000$ each. He marks the price of each tank $25\\%$ above its cost price and then offers a discount of $10\\%$ on the marked price. What is his actual profit percentage on the sale of each tank?",
+    "options": [
+      "15%",
+      "12.5%",
+      "11.11%",
+      "13.5%"
+    ],
+    "answer": "12.5%",
+    "solution": "1. Let Cost Price ($CP$) = ₹$8,000$.\n2. Marked Price ($MP$) = $8,000 \\times 1.25$ = ₹$10,000$.\n3. Selling Price ($SP$) after a $10\\%$ discount = $10,000 \\times (1 - 0.10) = 10,000 \\times 0.90$ = ₹$9,000$.\n4. Profit = $SP - CP = 9,000 - 8,000$ = ₹$1,000$.\n5. Profit percentage = $\\frac{1,000}{8,000} \\times 100 = 12.5\\%$.\n\nAlternatively, net profit percentage = $m - d - \\frac{m \\times d}{100} = 25 - 10 - \\frac{250}{100} = 15 - 2.5 = 12.5\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "15%",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "11.11%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "a3262465-bad7-4a78-b69d-f8e8d59beee7",
+    "spec": "A4-x16",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "During a city municipal census survey, an agency contracted to supply relief food grain packages claims to deliver $1\\text{ kg}$ rations directly to surveyed families at cost price. However, the vendor uses a faulty balance that indicates $1,000\\text{ g}$ when only $800\\text{ g}$ is placed on it. Additionally, while procuring the grain from the central warehouse, the vendor uses another altered scale that measures $1,000\\text{ g}$ when receiving $1,200\\text{ g}$ from the supplier. If the vendor sells all procured grain under these conditions at the nominal procurement rate, what is the vendor's actual overall profit percentage?",
+    "options": [
+      "$40\\%$",
+      "$44\\%$",
+      "$50\\%$",
+      "$60\\%$"
+    ],
+    "answer": "$50\\%$",
+    "solution": "1. Let the nominal procurement rate be ₹$1$ per gram.\n2. When purchasing, the vendor receives $1,200\\text{ g}$ while paying for $1,000\\text{ g}$, so the vendor pays ₹$1,000$ to acquire $1,200\\text{ g}$.\n3. When distributing, the vendor delivers only $800\\text{ g}$ to a family while charging for $1,000\\text{ g}$ (₹$1,000$).\n4. Thus, the effective selling price per gram is $\\frac{1000}{800} = \\text{₹}1.25$ per gram.\n5. From the $1,200\\text{ g}$ procured, the total revenue collected is $1,200 \\times 1.25 = \\text{₹}1,500$.\n6. With a total outlay of ₹$1,000$ and revenue of ₹$1,500$, the profit is $\\frac{1500 - 1000}{1000} \\times 100\\% = 50\\%$.\n\n(Note: A student applying the false weight base misconception only counts the $200\\text{ g}$ gain over the claimed $1,000\\text{ g}$ at selling, i.e., $20\\%$, leading to an overall gain of $(1 + 0.20)(1 + 0.20) - 1 = 44\\%$).",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_FALSE_WEIGHT_BASE",
+    "distractor_misconceptions": [
+      {
+        "option": "$44\\%$",
+        "misconception_id": "A4_FALSE_WEIGHT_BASE"
+      },
+      {
+        "option": "$40\\%$",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "3fc6f741-1235-47dc-a9e6-7b0eeec2b1ad",
+    "spec": "A4-x19",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A travel agency books bulk luxury bus tickets at a cost price of ₹$1,600$ per ticket. The agency marks up the ticket price by $30\\%$ and then offers a discount of $10\\%$ to early bird passengers. What is the agency's profit percentage on each such ticket sold?",
+    "options": [
+      "$17\\%$",
+      "$20\\%$",
+      "$14.53\\%$",
+      "$23\\%$"
+    ],
+    "answer": "$17\\%$",
+    "solution": "1. Let Cost Price ($CP$) = ₹$1,600$.\n2. The marked price ($MP$) after a $30\\%$ markup is $1,600 \\times 1.30 = ₹2,080$.\n3. With a $10\\%$ discount on the marked price, the selling price ($SP$) is $2,080 \\times 0.90 = ₹1,872$.\n4. Profit = $SP - CP = 1,872 - 1,600 = ₹272$.\n5. Profit percentage = $\\frac{272}{1,600} \\times 100\\% = 17\\%$.\nAlternatively, effective percentage change = $30 - 10 - \\frac{30 \\times 10}{100} = 17\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$14.53\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "34ceff5c-4dab-49ac-b590-e5756a83ecda",
+    "spec": "A4-x18",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An e-commerce seller fulfilled two customer orders on a quick-commerce platform, selling an ergonomic office chair and a standing desk at an identical invoice value of ₹$11,880$ each. On the chair, the seller made a profit of $20\\%$, whereas on the desk, he incurred a loss of $20\\%$. What was the overall net outcome for the seller across the two transactions?",
+    "options": [
+      "No profit, no loss",
+      "Loss of ₹$990$",
+      "Loss of ₹$1,000$",
+      "Profit of ₹$495$"
+    ],
+    "answer": "Loss of ₹$990$",
+    "solution": "1. Find the cost price ($CP$) of each item:\n- For the ergonomic chair (sold at a $20\\%$ profit): $\\text{SP}_1 = 1.20 \\times \\text{CP}_1 = 11,880 \\implies \\text{CP}_1 = \\frac{11,880}{1.2} = ₹9,900$.\n- For the standing desk (sold at a $20\\%$ loss): $\\text{SP}_2 = 0.80 \\times \\text{CP}_2 = 11,880 \\implies \\text{CP}_2 = \\frac{11,880}{0.8} = ₹14,850$.\n\n2. Compute total cost and total revenue:\n- $\\text{Total CP} = 9,900 + 14,850 = ₹24,750$.\n- $\\text{Total SP} = 11,880 + 11,880 = ₹23,760$.\n\n3. Calculate net loss:\n- $\\text{Net Loss} = \\text{Total CP} - \\text{Total SP} = 24,750 - 23,760 = ₹990$.\n\nAlternatively, with identical SP and equal percentage profit/loss $x = 20\\%$, the overall loss is $\\frac{x^2}{100}\\% = 4\\%$ of Total CP.\nSince $\\text{Total SP} = 96\\%$ of $\\text{Total CP}$, $\\text{Loss} = \\frac{4}{96} \\times 23,760 = \\frac{1}{24} \\times 23,760 = ₹990$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_SAME_SP_NO_LOSS",
+    "distractor_misconceptions": [
+      {
+        "option": "No profit, no loss",
+        "misconception_id": "A4_SAME_SP_NO_LOSS"
+      },
+      {
+        "option": "Loss of ₹$1,000$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "22ade18e-3b2c-4121-b640-e105b59dd3e7",
+    "spec": "A4-x17",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A bakery chef prepares a special chocolate truffle blend by mixing cocoa powder costing ₹$450$ per kg and milk powder costing ₹$150$ per kg in the ratio $3 : 2$ by weight. She sells the mixture at a marked price of ₹$495$ per kg, while offering a discount of $10\\%$ on the marked price. Find the profit percentage earned by the bakery on this mixture.",
+    "options": null,
+    "answer": "35",
+    "solution": "1. Find the cost price (CP) per kg of the mixture:\n$\\text{CP} = \\frac{3 \\times 450 + 2 \\times 150}{3 + 2} = \\frac{1350 + 300}{5} = \\frac{1650}{5} = ₹330$ per kg.\n\n2. Find the selling price (SP) per kg after the $10\\%$ discount on the marked price of ₹$495$:\n$\\text{SP} = 495 \\times (1 - 0.10) = 495 \\times 0.9 = ₹445.50$ per kg.\n\n3. Calculate the profit per kg and the profit percentage:\n$\\text{Profit} = 445.50 - 330 = ₹115.50$ per kg.\n$\\text{Profit \\%} = \\left(\\frac{115.50}{330}\\right) \\times 100 = \\frac{1155}{33} = 35\\%$.\n\nFinal Answer: 35",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ceb75116-6aa3-4f5e-94e5-d7c5053bfedc",
+    "spec": "A4-x21",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A retail electronics store procures a branded smart speaker at a certain wholesale cost price. The store marks the price of the speaker $50\\%$ above its cost price and offers two successive discounts of $10\\%$ and $20\\%$ on the marked price during an festive sale. What is the overall profit percentage earned by the store on the speaker?",
+    "options": [
+      "₹$20\\%$",
+      "₹$8\\%$",
+      "₹$10\\%$",
+      "₹$7.41\\%$"
+    ],
+    "answer": "₹$8\\%$",
+    "solution": "1. Let the cost price ($CP$) of the smart speaker be ₹$100$.\n2. The marked price ($MP$) after a $50\\%$ markup is $100 \\times 1.50 =$ ₹$150$.\n3. Two successive discounts of $10\\%$ and $20\\%$ are applied on the marked price. The single equivalent discount percentage is $10 + 20 - \\frac{10 \\times 20}{100} = 28\\%$.\n4. Alternatively, compute the selling price ($SP$): $SP = 150 \\times \\left(1 - \\frac{10}{100}\\right) \\times \\left(1 - \\frac{20}{100}\\right) = 150 \\times 0.9 \\times 0.8 = 150 \\times 0.72 = 108$.\n5. Profit earned $= SP - CP = 108 - 100 =$ ₹$8$.\n6. Profit percentage $= \\frac{8}{100} \\times 100\\% = 8\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$20\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "₹$10\\%$",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      },
+      {
+        "option": "₹$7.41\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "b2344f95-59c0-4172-942c-963f95c748d2",
+    "spec": "A4-x20",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An artisanal pottery maker produces ceramic planters at a cost of ₹$400$ per piece. She sells each planter directly to customers for ₹$500$. What is her profit percentage on this sale?",
+    "options": null,
+    "answer": "25",
+    "solution": "1. Find the cost price (CP) and selling price (SP):\n$\\text{CP} = ₹400$\n$\\text{SP} = ₹500$\n\n2. Calculate the absolute profit:\n$\\text{Profit} = \\text{SP} - \\text{CP} = 500 - 400 = ₹100$\n\n3. Calculate the profit percentage, which is computed on the cost price:\n$\\text{Profit \\%} = \\left(\\frac{\\text{Profit}}{\\text{CP}}\\right) \\times 100 = \\left(\\frac{100}{400}\\right) \\times 100 = 25\\%$\n\n(Note: Computing profit on selling price would mistakenly give $\\frac{100}{500} \\times 100 = 20\\%$).\n\n4. The final answer is 25.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c065e4b2-9013-45d9-9401-7855ff02f7ef",
+    "spec": "A4-x22",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An educational test-prep institute prices a full-length mock exam series at a printed catalogue price of ₹$4,000$. To attract early registrations before the national entrance exam, the institute offers a primary scholarship discount of $20\\%$ on the catalogue price, followed by an additional institutional fee waiver discount of $10\\%$ on the reduced price for students who scored above the $90^{\\text{th}}$ percentile in the previous year. If the total preparation and hosting cost incurred by the institute per enrolled student is ₹$2,500$, what is the profit percentage earned by the institute on an eligible student's registration?",
+    "options": [
+      "₹$380$",
+      "$12\\%$",
+      "$15.2\\%$",
+      "$20\\%$"
+    ],
+    "answer": "$15.2\\%$",
+    "solution": "1. The catalogue price of the mock series is $M = ₹4,000$.\n2. After the first scholarship discount of $20\\%$, the price becomes $4,000 \\times (1 - 0.20) = ₹3,200$.\n3. The additional $10\\%$ discount applies to this reduced amount: $3,200 \\times (1 - 0.10) = ₹2,880$, which is the selling price ($SP$).\n4. Given the cost price $CP = ₹2,500$, the profit is $SP - CP = 2,880 - 2,500 = ₹380$.\n5. Profit percentage is $\\frac{380}{2,500} \\times 100 = 15.2\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": [
+      {
+        "option": "$12\\%$",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "8dccf1b5-0a5d-425d-9e01-26e5e7a704ea",
+    "spec": "A4-x24",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A sports club procures match-grade English willow cricket bats directly from a manufacturer at ₹$6,000$ each. The club manager marks up the list price by $35\\%$ above the cost price, but then offers a promotional discount of $20\\%$ on the marked price to members during the cricket tournament season. What is the net profit percentage earned by the club on each bat?",
+    "options": [
+      "$15\\%$",
+      "$8\\%$",
+      "$10\\%$",
+      "$7.4\\%$"
+    ],
+    "answer": "$8\\%$",
+    "solution": "1. Cost Price (CP) = ₹$6,000$.\n2. Marked Price (MP) $= 6000 \\times (1 + 0.35) = 6000 \\times 1.35 =$ ₹$8,100$.\n3. Selling Price (SP) after a $20\\%$ discount $= 8100 \\times (1 - 0.20) = 8100 \\times 0.80 =$ ₹$6,480$.\n4. Net profit $= 6480 - 6000 =$ ₹$480$.\n5. Profit percentage $= \\frac{480}{6000} \\times 100 = 8\\%$.\nAlternatively, effective multiplier $= 1.35 \\times 0.80 = 1.08$, which represents an $8\\%$ profit.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_MARKUP_MINUS_DISCOUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "$15\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$7.4\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "789d894e-c325-4df9-b377-eace113c6d02",
+    "spec": "A4-x27",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A farmer marks the price of his organic wheat harvest at $35\\%$ above the production cost per quintal. During a local agricultural fair, he offers a discount of $15\\%$ on the marked price to retail buyers. What is his overall profit percentage on the wheat sold at this fair?",
+    "options": [
+      "$14.75\\%$",
+      "$20\\%$",
+      "$12.85\\%$",
+      "$17.50\\%$"
+    ],
+    "answer": "$14.75\\%$",
+    "solution": "1. Let the cost price per quintal of wheat be ₹$100$.\n2. The farmer marks up the price by $35\\%$, so the marked price is ₹$135$.\n3. A discount of $15\\%$ is offered on the marked price: Discount $= 0.15 \\times 135 =$ ₹$20.25$.\n4. Selling price $= 135 - 20.25 =$ ₹$114.75$.\n5. Profit percentage $= \\frac{114.75 - 100}{100} \\times 100 = 14.75\\%$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$12.85\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
   }
 ]
