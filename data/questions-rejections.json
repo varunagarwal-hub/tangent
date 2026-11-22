@@ -2726,5 +2726,181 @@
   {
     "spec": "M1-x6",
     "reason": "ambiguous (The correct answer (100) is missing from the options. The option 115 assumes the given intersections are 'exactly two', )"
+  },
+  {
+    "spec": "M1-x8",
+    "reason": "ambiguous (The wording 'Exactly 45 students registered for both Music and Dance' strictly means the intersection |M ∩ D| = 45, whic)"
+  },
+  {
+    "spec": "M1-x8",
+    "reason": "answer mismatch (key says 25, independent solve got 20)"
+  },
+  {
+    "spec": "M1-x14",
+    "reason": "answer mismatch (key says 92, independent solve got 102)"
+  },
+  {
+    "spec": "M1-x14",
+    "reason": "answer mismatch (key says 45, independent solve got 30)"
+  },
+  {
+    "spec": "M1-x14",
+    "reason": "answer mismatch (key says 60, independent solve got 80)"
+  },
+  {
+    "spec": "G5-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x16",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G5-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M2-x17",
+    "reason": "answer mismatch (key says 10, independent solve got 13)"
+  },
+  {
+    "spec": "M1-x3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "M1-x3",
+    "reason": "ambiguous (Missing data: The numerical values for x and y are missing from the question text, leaving the answer dependent on an un)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 4, independent solve got 2)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 16, independent solve got 9)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 30, independent solve got 38)"
+  },
+  {
+    "spec": "M2-x14",
+    "reason": "answer mismatch (key says 30, independent solve got 60)"
+  },
+  {
+    "spec": "M2-x14",
+    "reason": "answer mismatch (key says 35, independent solve got 60)"
+  },
+  {
+    "spec": "M3-x5",
+    "reason": "answer mismatch (key says 0.18, independent solve got 0.17)"
+  },
+  {
+    "spec": "M2-x7",
+    "reason": "ambiguous (The correct answer is 240, which is missing from the options. Option B (246) incorrectly assumes the only invalid case i)"
+  },
+  {
+    "spec": "M2-x7",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "M2-x7",
+    "reason": "ambiguous (The correct answer for 'at most 5' is 500, which is not in the options. The option 350 corresponds to 'exactly 5' ingred)"
+  },
+  {
+    "spec": "M2-x16",
+    "reason": "ambiguous (The mathematically correct answer is 1200, which is missing from the options. The option 960 is derived using a flawed g)"
+  },
+  {
+    "spec": "M3-x3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "M3-x11",
+    "reason": "answer mismatch (key says 41, independent solve got 16)"
+  },
+  {
+    "spec": "M3-x11",
+    "reason": "answer mismatch (key says 301, independent solve got 1462)"
+  },
+  {
+    "spec": "M3-x11",
+    "reason": "answer mismatch (key says 13, independent solve got 4)"
+  },
+  {
+    "spec": "M2-x3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "M2-x3",
+    "reason": "ambiguous (The correct answer is 4 (3 ways for the 3-2-1-1 distribution and 1 way for the 4-1-1-1 distribution). However, 4 is not )"
+  },
+  {
+    "spec": "M2-x21",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 61, independent solve got 65)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 53, independent solve got 18)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 74, independent solve got 68)"
+  },
+  {
+    "spec": "M1-x13",
+    "reason": "ambiguous (The correct answer (130) is not present in the given options.)"
+  },
+  {
+    "spec": "M1-x13",
+    "reason": "ambiguous (None of the options are correct. The mathematically correct answer is 100. There may be a typo in the question (e.g., if)"
+  },
+  {
+    "spec": "M1-x13",
+    "reason": "ambiguous (The mathematically correct answer is 80, which is not among the options. Option B (90) is the number of students who reg)"
+  },
+  {
+    "spec": "M3-x23",
+    "reason": "answer mismatch (key says 53, independent solve got 54)"
+  },
+  {
+    "spec": "M3-x23",
+    "reason": "answer mismatch (key says 45, independent solve got 17)"
+  },
+  {
+    "spec": "M3-x23",
+    "reason": "answer mismatch (key says 83, independent solve got 197)"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "ambiguous (Zero options are correct. The true probability is 11/36. The author likely forgot to include the scenario where both car)"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "answer mismatch (key says $\\frac{7}{9}$, independent solve got \\frac{2}{3})"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "ambiguous (Zero options are correct. The correct probability for a total discount of *at least* ₹4000 is 15/36 (or 5/12). Option B )"
+  },
+  {
+    "spec": "M2-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M2-x6",
+    "reason": "ambiguous (The correct answer is 385, which is not among the options. Option B (455) is the answer if the constraint was 'at least )"
+  },
+  {
+    "spec": "M2-x6",
+    "reason": "verifier unavailable"
   }
 ]

@@ -4,7 +4,7 @@
  *   npx tsx scripts/load-bank.ts --apply  (insert)
  *
  * - Skips questions whose id is already in the DB (existing ones keep their calibrated difficulty).
- * - Skips near-duplicates: same concept and ≥ 80% word overlap with a question already kept.
+ * - Skips near-duplicates: same concept and ≥ 80% overlap of words and numbers (relative to the longer stem) with a question already kept.
  * Use this instead of seed-db.ts after growing the bank: seed-db wipes the DB and re-simulates the class.
  */
 import { config } from "dotenv";
@@ -16,11 +16,11 @@ interface BankQ {
   difficulty_elo: number; targets_misconception_id: string | null; distractor_misconceptions: { option: string; misconception_id: string }[];
 }
 
-const words = (s: string) => new Set(s.toLowerCase().replace(/\$[^$]*\$/g, (m) => m.replace(/\s+/g, "")).split(/[^a-z0-9₹%.]+/).filter((w) => w.length > 2));
+const words = (s: string) => new Set(s.toLowerCase().replace(/\$[^$]*\$/g, (m) => m.replace(/\s+/g, "")).split(/[^a-z0-9₹%.]+/).filter((w) => w.length > 2 || /^[0-9]/.test(w)));
 const overlap = (a: Set<string>, b: Set<string>) => {
   let inter = 0;
   for (const w of a) if (b.has(w)) inter++;
-  return inter / Math.max(1, Math.min(a.size, b.size));
+  return inter / Math.max(1, a.size, b.size);
 };
 
 async function main() {

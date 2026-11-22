@@ -1,0 +1,876 @@
+[
+ {
+  "conceptId": "A1",
+  "keyIdea": "Percentages in CAT are fundamentally about identifying the base value and tracking multiplying factors. Treat every percentage change not as an isolated addition, but as a scale factor applied to a baseline that shifts across successive operations.",
+  "formulas": [
+   {
+    "label": "Percentage Change",
+    "latex": "\\% \\text{ Change} = \\left( \\frac{\\text{Final} - \\text{Initial}}{\\text{Initial}} \\right) \\times 100"
+   },
+   {
+    "label": "Successive Percentage Change",
+    "latex": "\\text{Net \\% Change} = a + b + \\frac{ab}{100}"
+   },
+   {
+    "label": "Base Shift Reciprocal",
+    "latex": "\\text{If } A \\text{ is } +\\frac{1}{n} \\text{ of } B, \\text{ then } B \\text{ is } -\\frac{1}{n+1} \\text{ of } A"
+   },
+   {
+    "label": "Multiplying Factor",
+    "latex": "\\text{Final} = \\text{Initial} \\times \\left(1 \\pm \\frac{r}{100}\\right)"
+   }
+  ],
+  "example": {
+   "question": "The price of petrol in Delhi increased by 25%, causing a commuter to reduce consumption such that the total expenditure increased by only 10%. By what percentage did the commuter reduce their petrol consumption?",
+   "steps": [
+    "Let initial expenditure be $E = P \\times C$, so final expenditure $E' = 1.10E$.",
+    "Price increases by 25%, meaning new price $P' = 1.25P$.",
+    "Set up the relationship: $1.10(P \\times C) = (1.25P) \\times C'$.",
+    "Solve for the consumption ratio: $C'/C = 1.10 / 1.25 = 110 / 125 = 22 / 25 = 0.88$.",
+    "Percentage reduction in consumption = $(1 - 0.88) \\times 100 = 12\\%$."
+   ],
+   "answer": "12%"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A1_ADD_SUCCESSIVE",
+    "fix": "Multiply the individual scaling factors together rather than summing the percentages, so a 20% rise then 20% fall is 1.20 × 0.80 = 0.96 (a 4% drop)."
+   },
+   {
+    "misconceptionId": "A1_BASE_SWAP",
+    "fix": "Convert to fractions and shift the denominator: an increase of 1/n corresponds to a decrease of 1/(n+1) relative to the new base."
+   },
+   {
+    "misconceptionId": "A1_PERCENT_POINTS",
+    "fix": "Differentiate between an absolute arithmetic difference between two rates (percentage points) and the relative shift divided by the initial rate (percentage change)."
+   },
+   {
+    "misconceptionId": "A1_WRONG_BASE_CHANGE",
+    "fix": "Always place the starting or reference value in the denominator when calculating relative change, never the resulting value."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Fraction to Percentage Ladder",
+    "body": "Memorize standard unit fractions: if expenditure is constant and price rises by 1/4 (25%), consumption must fall by 1/(4+1) = 1/5 (20%)."
+   },
+   {
+    "title": "Product-Constancy Ratio Rule",
+    "body": "For any relation A × B = C, if C increases by factor k_c and A increases by factor k_a, then B must scale directly by factor k_c / k_a."
+   }
+  ],
+  "verified": {
+   "answer": "12%",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A3",
+  "keyIdea": "Treat the average as an equal distribution balance point, not just a formula for division. Any change in total is absorbed across the entire group, meaning net deviation from the true average must always equal zero. In CAT, tracking deviations from an assumed mean is almost always faster than recalculating large sums.",
+  "formulas": [
+   {
+    "label": "Arithmetic Mean",
+    "latex": "A = \\frac{\\sum x_i}{n}"
+   },
+   {
+    "label": "Weighted Average",
+    "latex": "A_w = \\frac{n_1 A_1 + n_2 A_2 + \\dots + n_k A_k}{n_1 + n_2 + \\dots + n_k}"
+   },
+   {
+    "label": "Net Deviation Principle",
+    "latex": "\\sum (x_i - A) = 0"
+   },
+   {
+    "label": "Replacement Impact",
+    "latex": "\\text{Value}_{\\text{new}} - \\text{Value}_{\\text{old}} = n \\times \\Delta A"
+   }
+  ],
+  "example": {
+   "question": "The average score of 24 students in a mock CAT test is 56 marks. When the scores of the topper and the lowest scorer are excluded, the average drops by 1.5 marks. If the topper scored 42 marks more than the lowest scorer, find the score of the topper.",
+   "steps": [
+    "Total score of all 24 students = 24 × 56 = 1,344.",
+    "Remaining 22 students have an average of 56 − 1.5 = 54.5 marks.",
+    "Sum of remaining 22 students = 22 × 54.5 = 1,199.",
+    "Sum of topper (T) and lowest scorer (L) = 1,344 − 1,199 = 145.",
+    "Given T − L = 42, adding gives 2T = 187, so T = 93.5."
+   ],
+   "answer": "93.5"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A3_AVG_OF_AVGS",
+    "fix": "Always multiply each group's average by its respective size to find total sum before dividing by the overall combined count."
+   },
+   {
+    "misconceptionId": "A3_REPLACEMENT_UNSCALED",
+    "fix": "Account for all members by setting the difference between the newcomer and the replaced person equal to the group size times the change in average ($n \\times d$)."
+   },
+   {
+    "misconceptionId": "A3_OLD_COUNT",
+    "fix": "Update the headcount to $(n + 1)$ immediately when someone joins before computing the new total sum."
+   },
+   {
+    "misconceptionId": "A3_DEVIATION_SIGN_DROP",
+    "fix": "Preserve negative signs strictly for values below the assumed baseline because surplus and deficit must algebraically offset each other."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Assumed Mean Deviation",
+    "body": "Pick a convenient round number as an assumed mean and sum the signed deviations; dividing this net deviation by $n$ gives the exact correction needed. For instance, for 48, 52, and 56 with base 50: deviations are -2, +2, +6 (net +6), so average is $50 + (6/3) = 52$."
+   },
+   {
+    "title": "Alligation for Group Ratios",
+    "body": "When two groups combine, the ratio of their counts is inversely proportional to the distances of their individual averages from the combined average: $n_1 / n_2 = (A_2 - A_{\\text{mix}}) / (A_{\\text{mix}} - A_1)$."
+   }
+  ],
+  "verified": {
+   "answer": "93.5",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A4",
+  "keyIdea": "Treat Profit, Loss, and Discount purely as multiplicative scale factors anchored to their correct bases. CP is the base for Profit/Loss, while MP is the base for Discount; linking them via CP × (1 + m) × (1 − d) = SP avoids 90% of CAT trap questions.",
+  "formulas": [
+   {
+    "label": "Selling Price from CP and MP",
+    "latex": "SP = CP \\times \\left(1 + \\frac{P}{100}\\right) = MP \\times \\left(1 - \\frac{D}{100}\\right)"
+   },
+   {
+    "label": "Relation between Markup, Discount, and Profit",
+    "latex": "1 + \\frac{P}{100} = \\left(1 + \\frac{M}{100}\\right) \\times \\left(1 - \\frac{D}{100}\\right)"
+   },
+   {
+    "label": "Successive Discounts Formula",
+    "latex": "D_{\\text{eff}} = d_1 + d_2 - \\frac{d_1 d_2}{100}"
+   },
+   {
+    "label": "False Weight Profit Percentage",
+    "latex": "P\\% = \\left(\\frac{\\text{Claimed Measure} - \\text{Actual Measure}}{\\text{Actual Measure}}\\right) \\times 100"
+   }
+  ],
+  "example": {
+   "question": "A shopkeeper marks up goods by 40% above CP and offers a discount of 25% on MP. If he also uses a faulty balance that reads 1000 g for every 800 g actually given, find his overall net profit percentage.",
+   "steps": [
+    "Let CP per gram be ₹1, so CP of 1000 g is ₹1000.",
+    "Marked Price for 1000 g = 1000 × 1.40 = ₹1400.",
+    "Selling Price for 1000 g = 1400 × (1 − 0.25) = ₹1050.",
+    "For a customer buying 1000 g, the shopkeeper delivers only 800 g, which cost him ₹800.",
+    "Net Profit = SP − Actual CP = 1050 − 800 = ₹250.",
+    "Net Profit % = (250 / 800) × 100 = 31.25%."
+   ],
+   "answer": "31.25%"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A4_PROFIT_ON_SP",
+    "fix": "Always divide profit or loss by CP unless the question explicitly specifies computation on SP."
+   },
+   {
+    "misconceptionId": "A4_ADD_DISCOUNTS",
+    "fix": "Multiply the retention fractions instead of adding discount percentages: net multiplying factor is (1 − d1) × (1 − d2)."
+   },
+   {
+    "misconceptionId": "A4_MARKUP_MINUS_DISCOUNT",
+    "fix": "Apply the successive change formula or multiply multipliers (1 + m)(1 − d) − 1 to get the actual profit rate."
+   },
+   {
+    "misconceptionId": "A4_FALSE_WEIGHT_BASE",
+    "fix": "Always place the actual quantity given in the denominator because that represents the true cost incurred by the dealer."
+   },
+   {
+    "misconceptionId": "A4_SAME_SP_NO_LOSS",
+    "fix": "Recognize that equal percentage profit and loss on the same SP never cancel; they result in a mandatory net loss of (x/10)% squared."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Equal SP Equal Change",
+    "body": "When two articles have identical SP, one sold at x% profit and the other at x% loss, the transaction always yields a net loss of (x²/100)%. For instance, ±20% gives a net loss of (20²/100)% = 4%."
+   },
+   {
+    "title": "Direct CP to MP Ratio",
+    "body": "Use CP/MP = (100 − D%)/(100 + P%) directly to bypass calculating SP. If a 10% discount yields 26% profit, CP/MP = 90/126 = 5/7 instantly."
+   }
+  ],
+  "verified": {
+   "answer": "31.25%",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A5",
+  "keyIdea": "Simple Interest grows linearly via an arithmetic progression, while Compound Interest compounds exponentially via a geometric progression where every year's interest earns future interest. For CAT, master viewing CI as successive percentage changes or multiplying factors rather than blindly plugging numbers into standard textbook formulas.",
+  "formulas": [
+   {
+    "label": "Simple Interest & Amount",
+    "latex": "SI = \\frac{P \\cdot r \\cdot t}{100}, \\quad A = P + SI"
+   },
+   {
+    "label": "Compound Amount (Annual Compounding)",
+    "latex": "A = P\\left(1 + \\frac{r}{100}\\right)^t"
+   },
+   {
+    "label": "Difference between CI and SI for 2 Years",
+    "latex": "\\Delta_2 = P\\left(\\frac{r}{100}\\right)^2"
+   },
+   {
+    "label": "Difference between CI and SI for 3 Years",
+    "latex": "\\Delta_3 = P\\left(\\frac{r}{100}\\right)^2\\left(3 + \\frac{r}{100}\\right)"
+   }
+  ],
+  "example": {
+   "question": "The difference between the compound interest compounded annually and the simple interest on a certain sum of money at 10% per annum for 3 years is ₹930. Find the principal sum.",
+   "steps": [
+    "Use the 3-year CI − SI difference formula: $\\Delta_3 = P(r/100)^2 (3 + r/100)$.",
+    "Substitute $r = 10$ and $\\Delta_3 = 930$: $930 = P(10/100)^2 (3 + 10/100)$.",
+    "Simplify the terms: $930 = P \\times (1/100) \\times (31/10) = P \\times (31/1000)$.",
+    "Solve for $P$: $P = (930 \\times 1000) / 31 = 30 \\times 1000 = 30,000$."
+   ],
+   "answer": "₹30,000"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A5_SI_FOR_CI",
+    "fix": "Always calculate CI in subsequent years on the accumulated amount ($A_{t-1}$) rather than on the original principal $P$ alone."
+   },
+   {
+    "misconceptionId": "A5_HALFYEARLY_RATE",
+    "fix": "Divide the annual interest rate by the compounding frequency $k$ and multiply the time in years by $k$ before applying any formula."
+   },
+   {
+    "misconceptionId": "A5_CI_DIFF_2YR_FORMULA",
+    "fix": "Reserve $P(r/100)^2$ strictly for $t = 2$; for $t = 3$, remember to multiply that term by $(3 + r/100)$."
+   },
+   {
+    "misconceptionId": "A5_CI_LINEAR_SCALING",
+    "fix": "Express target multiples as powers of the base factor ($k^n$), then multiply the base time period by the exponent $n$ rather than scaling linearly."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Rule of 72 for Doubling",
+    "body": "To approximate the time required for an amount to double under CI, compute $72 / r$. For example, at 8% per annum, money doubles in approximately $72 / 8 = 9$ years."
+   },
+   {
+    "title": "Effective Rate for 2-Year CI",
+    "body": "Calculate the net rate for 2 years using $2r + r^2/100$. For example, at 5% per annum, the effective CI rate is $10 + 0.25 = 10.25\\%$, while SI is simply $10\\%$."
+   }
+  ],
+  "verified": {
+   "answer": "30000",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A6",
+  "keyIdea": "Alligation is just a visual rearrangement of the weighted average formula, applicable strictly to intensive properties like price per kg, concentration, or average speed. The ratio of quantities mixed is inversely proportional to the distances of their individual rates from the overall mixture mean. Master tracking a single component across replacements rather than trying to solve for both liquids simultaneously.",
+  "formulas": [
+   {
+    "label": "Alligation Rule (Ratio of Weights)",
+    "latex": "\\frac{q_1}{q_2} = \\frac{C_2 - C_m}{C_m - C_1}"
+   },
+   {
+    "label": "Weighted Average Concentration",
+    "latex": "C_m = \\frac{q_1 C_1 + q_2 C_2}{q_1 + q_2}"
+   },
+   {
+    "label": "Repeated Replacement Formula",
+    "latex": "Q_{\\text{final}} = Q_{\\text{initial}} \\left(1 - \\frac{x}{V}\\right)^n"
+   }
+  ],
+  "example": {
+   "question": "A container contains 80 litres of pure milk. From this container, 16 litres of milk is removed and replaced with water. This process is repeated one more time. What is the final quantity of milk left in the container?",
+   "steps": [
+    "Identify total volume $V = 80$, removed volume $x = 16$, and number of operations $n = 2$.",
+    "Calculate the remaining fraction per operation: $1 - \\frac{x}{V} = 1 - \\frac{16}{80} = 1 - \\frac{1}{5} = \\frac{4}{5}$.",
+    "Apply the repeated replacement formula: $\\text{Final Milk} = 80 \\times \\left(\\frac{4}{5}\\right)^2$.",
+    "Compute: $80 \\times \\frac{16}{25} = \\frac{1280}{25} = 51.2$ litres."
+   ],
+   "answer": "51.2 litres"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A6_ALLIGATION_ON_QUANTITIES",
+    "fix": "Convert parts or ratios into rates, percentages, or fractions of a specific component before placing them on the cross."
+   },
+   {
+    "misconceptionId": "A6_REPLACEMENT_LINEAR",
+    "fix": "Multiply the original quantity by $(1 - x/V)$ for each replacement step instead of subtracting constant volumes."
+   },
+   {
+    "misconceptionId": "A6_ALLIGATION_REVERSED",
+    "fix": "Ensure each component's quantity weight corresponds to the absolute difference between the mean and the OPPOSITE component's rate."
+   },
+   {
+    "misconceptionId": "A6_SP_AS_MEAN",
+    "fix": "Divide the mixture's selling price by $(1 + \\text{gain}\\%)$ to get the true mean cost price before alligating."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Distance Balancing on Number Line",
+    "body": "Plot rates on a line: the ratio of quantities is inversely proportional to their distances to the mean. If 20% and 50% mix to 30%, distances are 10 and 20, giving a quantity ratio of 20:10 = 2:1 directly."
+   },
+   {
+    "title": "Net Replacement Fraction",
+    "body": "When a fraction $1/k$ of the volume is repeatedly replaced with water, multiply the pure liquid by $((k-1)/k)^n$. For example, removing 1/4th twice leaves $(3/4)^2 = 9/16$ of original liquid."
+   }
+  ],
+  "verified": {
+   "answer": "51.2 litres",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A7",
+  "keyIdea": "Treat total work as the LCM of given individual times to work strictly in integer units of work per day. Efficiency and time are inversely proportional: more workers or higher speed simply means fewer days to complete the same units. Never add time directly; always combine rates or efficiencies.",
+  "formulas": [
+   {
+    "label": "Total Work relation",
+    "latex": "W = \\text{Efficiency} \\times \\text{Time}"
+   },
+   {
+    "label": "Combined Time for Two Workers",
+    "latex": "T_{AB} = \\frac{A \\times B}{A + B}"
+   },
+   {
+    "label": "Man-Days Equivalence",
+    "latex": "\\frac{M_1 \\times D_1 \\times H_1}{W_1} = \\frac{M_2 \\times D_2 \\times H_2}{W_2}"
+   },
+   {
+    "label": "Negative Work (Pipes & Cisterns)",
+    "latex": "\\text{Net Rate} = \\sum R_{\\text{inlet}} - \\sum R_{\\text{outlet}}"
+   }
+  ],
+  "example": {
+   "question": "A can complete a piece of work in 20 days, and B can complete it in 30 days. They work together for 6 days, after which B leaves and C joins. A and C finish the remaining work in 4 days. In how many days can C alone complete the entire work?",
+   "steps": [
+    "Let total work be LCM(20, 30) = 60 units.",
+    "Efficiency of A = 60 ÷ 20 = 3 units/day, and efficiency of B = 60 ÷ 30 = 2 units/day.",
+    "Work done by A and B in 6 days = (3 + 2) × 6 = 30 units, leaving 60 − 30 = 30 units.",
+    "A and C complete the remaining 30 units in 4 days, so their combined rate is 30 ÷ 4 = 7.5 units/day.",
+    "Efficiency of C = 7.5 − 3 = 4.5 units/day.",
+    "Time taken by C alone = 60 ÷ 4.5 = 40/3 days = 13.33 days."
+   ],
+   "answer": "40/3 days"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A7_ADD_DAYS",
+    "fix": "Always invert times to sum the daily work rates or use an assumed LCM total work, since combined time must be less than each individual time."
+   },
+   {
+    "misconceptionId": "A7_EMPTY_PIPE_ADDS",
+    "fix": "Assign a negative efficiency value to leaks or emptying pipes and subtract their rates from the filling rates."
+   },
+   {
+    "misconceptionId": "A7_MEN_DAYS_DIRECT",
+    "fix": "Keep the product of men and days constant for a fixed job because headcounts and completion times are inversely related."
+   },
+   {
+    "misconceptionId": "A7_EFFICIENCY_TIME_SAME_PCT",
+    "fix": "Invert the efficiency multiplier using $T = 1/E$; for instance, a 50% increase in efficiency ($1.5\\times$) reduces time to $1/1.5 = 2/3$ of the original, not by 50%."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "LCM Work Assumption Trick",
+    "body": "Instead of fractions, set total work to the LCM of given time periods; e.g., if A takes 12 days and B takes 18 days, assume 36 units total so A does 3 u/day and B does 2 u/day."
+   },
+   {
+    "title": "Shift from Completion Time",
+    "body": "If A and B take $t$ days together, but A alone takes $t + a$ days and B alone takes $t + b$ days, then $t = \\sqrt{ab}$; e.g., if extras are 4 and 9 days, $t = \\sqrt{36} = 6$ days."
+   }
+  ],
+  "verified": {
+   "answer": "40/3",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "A8",
+  "keyIdea": "Mastering TSD in CAT comes down to proportionality: Distance = Speed × Time means if distance is constant, speed and time are inversely proportional. Frame problems around ratios of speed or time instead of standard equations to eliminate complex algebra.",
+  "formulas": [
+   {
+    "label": "Average Speed (Equal Distances)",
+    "latex": "S_{\\text{avg}} = \\frac{2s_1 s_2}{s_1 + s_2}"
+   },
+   {
+    "label": "Relative Speed",
+    "latex": "S_{\\text{rel}} = |s_1 \\pm s_2| \\quad (+\\text{ for opposite}, -\\text{ for same direction})"
+   },
+   {
+    "label": "Boats and Streams",
+    "latex": "s_{\\text{boat}} = \\frac{D + U}{2}, \\quad s_{\\text{stream}} = \\frac{D - U}{2}"
+   },
+   {
+    "label": "Meeting Point Theorem",
+    "latex": "\\frac{s_1}{s_2} = \\sqrt{\\frac{t_2}{t_1}}"
+   }
+  ],
+  "example": {
+   "question": "A train leaves Delhi for Kanpur at 60 km/h at 8:00 AM. Another train leaves Kanpur for Delhi at 90 km/h at 9:00 AM. If the total distance is 360 km, at what time do they cross each other?",
+   "steps": [
+    "In the first hour (8:00 AM to 9:00 AM), the first train covers 60 km alone.",
+    "Remaining distance between the two trains at 9:00 AM is 360 − 60 = 300 km.",
+    "Since they travel towards each other, relative speed = 60 + 90 = 150 km/h.",
+    "Time taken to meet = 300 ÷ 150 = 2 hours after 9:00 AM.",
+    "They cross each other at 9:00 AM + 2 hours = 11:00 AM."
+   ],
+   "answer": "11:00 AM"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A8_MEAN_OF_SPEEDS",
+    "fix": "Always compute average speed as total distance divided by total time, which yields the harmonic mean 2ab/(a + b) for two equal distances, never the simple average."
+   },
+   {
+    "misconceptionId": "A8_SAME_DIR_SUM",
+    "fix": "Subtract speeds (s₁ − s₂) when moving in the same direction, and only add speeds when moving towards or away from each other."
+   },
+   {
+    "misconceptionId": "A8_IGNORE_TRAIN_LENGTH",
+    "fix": "Set total distance equal to train length plus platform or bridge length whenever a train clears a stationary object with physical length."
+   },
+   {
+    "misconceptionId": "A8_STREAM_NO_HALVE",
+    "fix": "Divide the difference between downstream and upstream speeds by 2 to isolate the stream speed, since downstream − upstream equals 2 × stream."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Speed-Time Inverse Ratio Swap",
+    "body": "For constant distance, if speed ratio is a:b, time ratio is immediately b:a. If a person increases speed by 25% (4:5 ratio), time taken drops to 4/5, saving 1/5th of original time."
+   },
+   {
+    "title": "Product-Constancy Time Delay",
+    "body": "If speed changes by a factor of x/(y + x), time changes by x/y for the same distance. For instance, walking at 3/4th normal speed (a 1/4 drop) means taking 1/3 more time."
+   }
+  ],
+  "verified": {
+   "answer": "11:00 AM",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "N1",
+  "keyIdea": "Every integer is uniquely characterized by its prime factorization, which acts as its DNA. Break down composite divisors into coprime factors to test divisibility, and remember that counting factors or combinations always depends on the choices of powers for each distinct prime base.",
+  "formulas": [
+   {
+    "label": "Total Number of Factors",
+    "latex": "\\text{If } N = p^a q^b r^c, \\text{ then } \\tau(N) = (a+1)(b+1)(c+1)"
+   },
+   {
+    "label": "Sum of Factors",
+    "latex": "S(N) = \\frac{p^{a+1}-1}{p-1} \\cdot \\frac{q^{b+1}-1}{q-1} \\cdot \\frac{r^{c+1}-1}{r-1}"
+   },
+   {
+    "label": "Divisibility by Coprime Split",
+    "latex": "N \\equiv 0 \\pmod{a \\times b} \\iff N \\equiv 0 \\pmod a \\text{ and } N \\equiv 0 \\pmod b \\quad [\\gcd(a, b) = 1]"
+   },
+   {
+    "label": "Number of Odd Factors",
+    "latex": "\\text{If } N = 2^a \\cdot p^b \\cdot q^c, \\text{ then } \\tau_{\\text{odd}}(N) = (b+1)(c+1)"
+   }
+  ],
+  "example": {
+   "question": "Find the smallest positive integer n such that 24 divides n and n has exactly 24 factors.",
+   "steps": [
+    "Let the prime factorization of n be $2^a \\times 3^b \\times p_3^c \\dots$",
+    "Since 24 = $2^3 \\times 3^1$ divides n, we must have $a \\ge 3$ and $b \\ge 1$.",
+    "The total factor count is $(a + 1)(b + 1)(c + 1)... = 24$, with $a + 1 \\ge 4$ and $b + 1 \\ge 2$.",
+    "To minimize n, assign the largest exponents to the smallest primes, factoring 24 as $4 \\times 3 \\times 2$ or $4 \\times 6$.",
+    "Case 1: $a+1=6, b+1=4 \\implies a=5, b=3$, giving $n = 2^5 \\times 3^3 = 32 \\times 27 = 864$.",
+    "Case 2: $a+1=4, b+1=3, c+1=2 \\implies a=3, b=2, c=1$ with smallest prime $p_3 = 5$, giving $n = 2^3 \\times 3^2 \\times 5^1 = 8 \\times 9 \\times 5 = 360$."
+   ],
+   "answer": "360"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "N1_DIVISIBLE_BY_PRODUCT",
+    "fix": "Always use $\\text{LCM}(a, b)$ instead of $a \\times b$, multiplying divisors only when $\\gcd(a, b) = 1$."
+   },
+   {
+    "misconceptionId": "N1_FACTOR_COUNT_NO_PLUS_ONE",
+    "fix": "Include the power of zero by adding 1 to each prime exponent before multiplying, giving $(a+1)(b+1)...$ factors."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Divisibility by 7, 11, 13 Block Rule",
+    "body": "Split the digits into 3-digit groups from right to left and take the alternating sum; if that alternating sum is divisible by 7, 11, or 13, so is the original number (e.g., for 1,048,576: 576 − 048 + 1 = 529)."
+   },
+   {
+    "title": "Number of Prime Divisors vs Factors",
+    "body": "If an integer is a perfect square, its total number of factors is always odd; conversely, if factor count is odd, the number is guaranteed to be a perfect square."
+   }
+  ],
+  "verified": {
+   "answer": "360",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "N2",
+  "keyIdea": "Think of HCF as the greatest common measure (dividing/grouping things into equal parts) and LCM as the earliest common meeting point (cycles, intervals, or divisibility). Express numbers in their prime-factorised forms: HCF takes the minimum power of each common prime, while LCM takes the maximum power of every prime present.",
+  "formulas": [
+   {
+    "label": "Product Rule (Two Numbers Only)",
+    "latex": "a \\times b = \\text{HCF}(a, b) \\times \\text{LCM}(a, b)"
+   },
+   {
+    "label": "HCF of Fractions",
+    "latex": "\\text{HCF}\\left(\\frac{a}{b}, \\frac{c}{d}\\right) = \\frac{\\text{HCF}(a, c)}{\\text{LCM}(b, d)}"
+   },
+   {
+    "label": "LCM of Fractions",
+    "latex": "\\text{LCM}\\left(\\frac{a}{b}, \\frac{c}{d}\\right) = \\frac{\\text{LCM}(a, c)}{\\text{HCF}(b, d)}"
+   },
+   {
+    "label": "Ratio Representation",
+    "latex": "a = Hx, \\; b = Hy \\implies \\text{LCM} = Hxy \\quad (\\text{where } \\gcd(x, y) = 1)"
+   }
+  ],
+  "example": {
+   "question": "Find the smallest three-digit number which when divided by 12, 16, and 24 leaves remainders of 7, 11, and 19, respectively.",
+   "steps": [
+    "Observe the difference between divisor and remainder: 12 − 7 = 5, 16 − 11 = 5, and 24 − 19 = 5 (constant difference k = 5).",
+    "The required numbers are of the form LCM(12, 16, 24) × m − 5.",
+    "Calculate LCM(12, 16, 24) = 48.",
+    "The general form is 48m − 5; for the smallest 3-digit number, test m = 3.",
+    "48 × 3 − 5 = 144 − 5 = 139."
+   ],
+   "answer": "139"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "N2_PRODUCT_RULE_3NUMS",
+    "fix": "Use prime factorisation to find HCF and LCM directly for 3+ numbers, as HCF × LCM = Product only holds for exactly two numbers."
+   },
+   {
+    "misconceptionId": "N2_HCF_FOR_LCM",
+    "fix": "Identify whether you are partitioning into smaller equal batches (find HCF) or synchronising recurring cycles/finding a common multiple (find LCM)."
+   },
+   {
+    "misconceptionId": "N2_REMAINDER_NOT_SUBTRACTED",
+    "fix": "Subtract the given remainders from the respective numbers first, then compute the HCF of the resulting differences."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "HCF Bounds Difference Trick",
+    "body": "The HCF of any set of numbers must divide the difference between any pair; testing factors of the smallest difference quickly reveals the HCF. For example, for 72 and 90, the difference is 18, so HCF must divide 18."
+   },
+   {
+    "title": "Constant Difference Remainder Model",
+    "body": "When divisors d_i leave remainders r_i such that d_i − r_i = k (constant), the answer is always LCM(d_1, d_2, ...) × m − k. For divisors 5 and 6 with remainders 3 and 4 (k = 2), the form is 30m − 2."
+   }
+  ],
+  "verified": {
+   "answer": "139",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "N3",
+  "keyIdea": "CAT remainders hinge on modular arithmetic: break large terms into algebraic chunks and look for remainders of $\\pm 1$. Always simplify large exponents using Euler's Totient Theorem or cyclicity rather than expanding directly.",
+  "formulas": [
+   {
+    "label": "Division Algorithm",
+    "latex": "Dividend = Divisor \\times Quotient + Remainder \\quad (0 \\le R < Divisor)"
+   },
+   {
+    "label": "Remainder Multiplicativity",
+    "latex": "R(a \\times b / m) = R\\big(R(a/m) \\times R(b/m) \\, / \\, m\\big)"
+   },
+   {
+    "label": "Euler's Totient Theorem",
+    "latex": "a^{\\phi(n)} \\equiv 1 \\pmod{n} \\quad \\text{if } \\gcd(a, n) = 1"
+   },
+   {
+    "label": "Wilson's Theorem",
+    "latex": "(p-1)! \\equiv -1 \\pmod{p} \\equiv p-1 \\pmod{p} \\quad \\text{for prime } p"
+   }
+  ],
+  "example": {
+   "question": "Find the remainder when $3^{102}$ is divided by 80.",
+   "steps": [
+    "Express the base in terms of powers close to 80: $3^4 = 81$.",
+    "Rewrite $3^{102}$ as $(3^4)^{25} \\times 3^2 = 81^{25} \\times 9$.",
+    "Compute remainder of $81 \\pmod{80}$, which is $1$.",
+    "Substitute back: $R(81^{25} \\times 9 / 80) = R(1^{25} \\times 9 / 80) = R(9 / 80)$.",
+    "The final remainder is 9."
+   ],
+   "answer": "9"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "N3_NEGATIVE_REMAINDER",
+    "fix": "Always add the divisor to a negative remainder to convert it into its valid non-negative range (e.g., $-1 \\pmod 6 = -1 + 6 = 5$)."
+   },
+   {
+    "misconceptionId": "N3_CANCEL_NOT_RESTORED",
+    "fix": "Remember to multiply the final remainder by the common factor you cancelled out at the start."
+   },
+   {
+    "misconceptionId": "N3_CYCLICITY_ZERO_INDEX",
+    "fix": "Treat a remainder of 0 as the full cycle length (the last term in the cycle) rather than power zero."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Negative Remainder Power Trick",
+    "body": "When the base is 1 less than the divisor, treat the remainder as $-1$. For example, $19^{43} \\div 20$ becomes $(-1)^{43} = -1$, giving a remainder of $20 - 1 = 19$."
+   },
+   {
+    "title": "Factor Cancellation Technique",
+    "body": "Divide out common factors between dividend and divisor to simplify, find the intermediate remainder, and scale back up: for $2^{33} \\div 10$, simplify to $2^{32} \\div 5 \\rightarrow R=1$, then multiply by 2 to get 2."
+   }
+  ],
+  "verified": {
+   "answer": "9",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L1",
+  "keyIdea": "Indices and surds in CAT test structural manipulation rather than brute calculation. Always express numbers in their prime base forms to compare exponents, and rationalize or square whole expressions to eliminate nested roots cleanly.",
+  "formulas": [
+   {
+    "label": "Product of Powers with Same Base",
+    "latex": "a^m \\times a^n = a^{m+n}"
+   },
+   {
+    "label": "Fractional Exponent Definition",
+    "latex": "\\sqrt[n]{a^m} = a^{\\frac{m}{n}}"
+   },
+   {
+    "label": "Power of a Power",
+    "latex": "(a^m)^n = a^{mn}"
+   },
+   {
+    "label": "Conjugate Rationalization",
+    "latex": "\\frac{1}{\\sqrt{a} \\pm \\sqrt{b}} = \\frac{\\sqrt{a} \\mp \\sqrt{b}}{a - b}"
+   }
+  ],
+  "example": {
+   "question": "Find the value of $x$ if $2^{x-1} + 2^{x+1} = 320$.",
+   "steps": [
+    "Factor out $2^{x-1}$ from both terms on the LHS to get $2^{x-1}(1 + 2^2) = 320$.",
+    "Simplify the bracketed term: $2^{x-1} \\times 5 = 320$.",
+    "Divide both sides by 5: $2^{x-1} = 64$.",
+    "Express 64 as a power of 2: $2^{x-1} = 2^6$.",
+    "Equate exponents to find $x - 1 = 6$, giving $x = 7$."
+   ],
+   "answer": "7"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L1_ADD_EXP_DIFF_BASES",
+    "fix": "Only combine exponents using addition when the bases are identical; for different bases like $2^3 \\times 3^3$, multiply bases keeping the power unchanged as $(2 \\times 3)^3$."
+   },
+   {
+    "misconceptionId": "L1_ROOT_OF_SUM",
+    "fix": "Never distribute radicals across additions or subtractions; compute the sum inside the radical first, or square the entire binomial $(a+b)^2 = a^2 + 2ab + b^2$."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Nested Root Square-Forming Trick",
+    "body": "To simplify $\\sqrt{a \\pm 2\\sqrt{b}}$, find two numbers $x$ and $y$ such that $x + y = a$ and $xy = b$; the root simplifies directly to $\\sqrt{x} \\pm \\sqrt{y}$ (e.g., $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$)."
+   },
+   {
+    "title": "Comparing Surds by LCM of Indices",
+    "body": "To compare orders like $\\sqrt[3]{4}$ and $\\sqrt[4]{6}$, raise all terms to the LCM of their surd orders ($12$), converting them to $4^4 = 256$ and $6^3 = 216$ to easily identify the larger value."
+   }
+  ],
+  "verified": {
+   "answer": "7",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L2",
+  "keyIdea": "Logarithms simply translate multiplicative scaling into additive arithmetic. In CAT, almost every logarithm problem boils down to equalizing bases using the change of base rule or enforcing strict domain constraints ($x > 0$, base $> 0$, base $\\neq 1$). Master shifting bases quickly, and you will unlock 90% of CAT log questions.",
+  "formulas": [
+   {
+    "label": "Product & Quotient Rules",
+    "latex": "\\log_b(xy) = \\log_b x + \\log_b y, \\quad \\log_b\\left(\\frac{x}{y}\\right) = \\log_b x - \\log_b y"
+   },
+   {
+    "label": "Power Rule",
+    "latex": "\\log_{b^k}(x^m) = \\frac{m}{k}\\log_b x"
+   },
+   {
+    "label": "Change of Base",
+    "latex": "\\log_b a = \\frac{\\log_c a}{\\log_c b} = \\frac{1}{\\log_a b}"
+   },
+   {
+    "label": "Base-Exponent Swap",
+    "latex": "a^{\\log_b c} = c^{\\log_b a}"
+   }
+  ],
+  "example": {
+   "question": "Find the number of integral solutions for x satisfying $\\log_2(x - 1) + \\log_2(x - 3) = 3$.",
+   "steps": [
+    "Check domain: $x - 1 > 0$ and $x - 3 > 0$, requiring $x > 3$.",
+    "Combine logs: $\\log_2((x - 1)(x - 3)) = 3$.",
+    "Convert to exponential form: $(x - 1)(x - 3) = 2^3 = 8$.",
+    "Expand and rearrange: $x^2 - 4x + 3 = 8 \\implies x^2 - 4x - 5 = 0$.",
+    "Factorize: $(x - 5)(x + 1) = 0$, giving potential roots $x = 5$ or $x = -1$.",
+    "Since $x > 3$, reject $x = -1$, leaving only $x = 5$."
+   ],
+   "answer": "1"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L2_LOG_OF_SUM",
+    "fix": "Remember that logs turn products into sums, so leave $\\log(a + b)$ untouched unless you can factor the inside expression."
+   },
+   {
+    "misconceptionId": "L2_RATIO_OF_LOGS",
+    "fix": "Treat $\\frac{\\log a}{\\log b}$ as the change-of-base formula giving $\\log_b a$, and never subtract them or compress into $\\log(a/b)$."
+   },
+   {
+    "misconceptionId": "L2_IGNORE_DOMAIN",
+    "fix": "Always write down argument $> 0$ and base $> 0$, base $\\neq 1$ before simplifying, and immediately plug your final roots back into the original expressions to discard extraneous values."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Cyclic Telescoping Product",
+    "body": "When facing terms like $\\log_b a \\cdot \\log_c b \\cdot \\log_d c$, convert all to base 10 using change of base so intermediate terms cancel directly to $\\log_d a$."
+   },
+   {
+    "title": "Symmetric Constant Substitution",
+    "body": "For equations like $a^x = b^y = c^z$, equate them to a dummy variable $k$, express each variable as $\\log_k(\\dots)$, and substitute to eliminate powers instantly."
+   }
+  ],
+  "verified": {
+   "answer": "1",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L3",
+  "keyIdea": "In CAT, linear equations are less about routine elimination and more about consistency conditions, integral constraints, and linear combinations. Treat equations as constraints on variables: $n$ independent equations determine $n$ unknowns, but when equations are fewer than variables, use integer bounds or target combinations directly.",
+  "formulas": [
+   {
+    "label": "Unique Solution Condition",
+    "latex": "\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}"
+   },
+   {
+    "label": "No Solution (Parallel Lines)",
+    "latex": "\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}"
+   },
+   {
+    "label": "Infinitely Many Solutions (Coincident Lines)",
+    "latex": "\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}"
+   },
+   {
+    "label": "Linear Diophantine Step Size",
+    "latex": "ax + by = c \\implies x = x_0 + k \\left(\\frac{b}{\\gcd(a,b)}\\right), \\; y = y_0 - k \\left(\\frac{a}{\\gcd(a,b)}\\right)"
+   }
+  ],
+  "example": {
+   "question": "The cost of 3 pens, 5 erasers, and 7 notebooks is ₹230, while the cost of 5 pens, 8 erasers, and 11 notebooks is ₹370. Find the total cost of 1 pen, 1 eraser, and 1 notebook.",
+   "steps": [
+    "Let the costs of a pen, eraser, and notebook be $p$, $e$, and $n$ respectively.",
+    "Given: $3p + 5e + 7n = 230$ (Eq 1) and $5p + 8e + 11n = 370$ (Eq 2).",
+    "Multiply Eq 1 by 2: $6p + 10e + 14n = 460$.",
+    "Subtract Eq 2 from this result: $(6p - 5p) + (10e - 8e) + (14n - 11n) = 460 - 370$, yielding $p + 2e + 3n = 90$ (Eq 3).",
+    "Now subtract Eq 3 from Eq 1: $(3p - p) + (5e - 2e) + (7n - 3n) = 230 - 90$, giving $2p + 3e + 4n = 140$ (Eq 4).",
+    "Finally, subtract Eq 4 from Eq 1: $(3p - 2p) + (5e - 3e) + (7n - 4n) = 230 - 140$, which directly gives $p + e + n = 90 - (90 - 40) = 40$ (or simply Eq 1 − 2×Eq 3: $(3-2)p + (5-4)e + (7-6)n = 230 - 180 = 50$)."
+   ],
+   "answer": "₹50"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L3_SIGN_ON_TRANSPOSE",
+    "fix": "Always flip the sign of a term when shifting it across the equality sign, or treat transposing as adding/subtracting the term from both sides."
+   },
+   {
+    "misconceptionId": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "fix": "Check the constant ratio: equations have infinitely many solutions only if the constant terms share the exact same ratio as the variable coefficients; otherwise, there are zero solutions."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Target Linear Combination",
+    "body": "Never solve for individual variables if asked for an expression like $p + e + n$; find multipliers $k_1, k_2$ directly such that $k_1(Eq_1) + k_2(Eq_2)$ matches the target coefficients."
+   },
+   {
+    "title": "Diophantine Step Method",
+    "body": "For $ax + by = c$, once you find a base integer solution $(x_0, y_0)$, $x$ steps by $+b$ and $y$ steps by $-a$ (divided by $\\gcd(a,b)$) to quickly count non-negative solutions."
+   }
+  ],
+  "verified": {
+   "answer": "50",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L4",
+  "keyIdea": "A quadratic equation $ax^2 + bx + c = 0$ is defined entirely by its discriminant and symmetric relations of roots. In CAT, avoid brute-force root finding; exploit sum ($-b/a$) and product ($c/a$) to evaluate algebraic expressions or analyze sign changes rapidly.",
+  "formulas": [
+   {
+    "label": "Roots Formula",
+    "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
+   },
+   {
+    "label": "Relations of Roots",
+    "latex": "\\alpha + \\beta = -\\frac{b}{a}, \\quad \\alpha\\beta = \\frac{c}{a}"
+   },
+   {
+    "label": "Nature of Roots",
+    "latex": "\\Delta = b^2 - 4ac \\quad (\\Delta > 0: \\text{real, distinct}; \\ \\Delta = 0: \\text{real, equal}; \\ \\Delta < 0: \\text{complex})"
+   },
+   {
+    "label": "Difference of Roots",
+    "latex": "|\\alpha - \\beta| = \\frac{\\sqrt{\\Delta}}{|a|}"
+   }
+  ],
+  "example": {
+   "question": "If the roots of the equation $x^2 - 12x + k = 0$ differ by 4, find the value of $k$.",
+   "steps": [
+    "Let the roots be $\\alpha$ and $\\beta$, so $\\alpha + \\beta = 12$ and $\\alpha\\beta = k$.",
+    "We are given $|\\alpha - \\beta| = 4$.",
+    "Square both sides to get $(\\alpha - \\beta)^2 = 16$.",
+    "Rewrite in symmetric form: $(\\alpha + \\beta)^2 - 4\\alpha\\beta = 16$.",
+    "Substitute known values: $12^2 - 4k = 16 \\implies 144 - 4k = 16$.",
+    "Solve for $k$: $4k = 128 \\implies k = 32$."
+   ],
+   "answer": "32"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L4_DIVIDE_BY_VARIABLE",
+    "fix": "Never divide through by the variable; instead, move all terms to one side and factor out the common variable to retain $x = 0$ as a valid root."
+   },
+   {
+    "misconceptionId": "L4_SUM_ROOTS_SIGN",
+    "fix": "Always insert an explicit negative sign when computing the sum of roots: $\\text{Sum} = -b/a$, whereas the product retains the sign as $c/a$."
+   },
+   {
+    "misconceptionId": "L4_ZERO_PRODUCT_NONZERO",
+    "fix": "Expand and collect all terms onto one side to set the equation to zero before attempting to factorise."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Sum of Coefficients is Zero",
+    "body": "If $a + b + c = 0$, then $x = 1$ is always a root and the other root is $c/a$. For $2x^2 - 5x + 3 = 0$, $2 - 5 + 3 = 0$, so roots are $1$ and $3/2$."
+   },
+   {
+    "title": "Vertex Extrema without Calculus",
+    "body": "The quadratic $ax^2 + bx + c$ attains its optimum value at $x = -b/(2a)$, equal to $-(b^2 - 4ac)/(4a)$. For $x^2 - 6x + 11$, the minimum occurs at $x = 3$, giving $3^2 - 18 + 11 = 2$."
+   }
+  ],
+  "verified": {
+   "answer": "32",
+   "by": "pro"
+  }
+ }
+]

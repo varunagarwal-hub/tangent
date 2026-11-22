@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: 22 Nov ~11:30 IST, project SUBMITTED (team gamma_pass). Phase 10: bank expansion running (735/~1,030 verified; resume with `npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Next: Phase 11, nine Curio-inspired upgrades (Spot the Tangent, concept cards, speed sprint, daily checklist, foundation repair, CAT mock, Road to CAT, flashcards, doubt classes). Full specs, order and ground rules in ../HANDOFF.md → "Next build".**
+Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 915 questions live; 95 specs left (`npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Phase 11 (nine Curio-inspired upgrades): #1 Spot the Tangent done; next #2 concept cards. Specs, order and ground rules in ../HANDOFF.md → "Next build".**
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -91,12 +91,12 @@ Last updated: 22 Nov ~11:30 IST, project SUBMITTED (team gamma_pass). Phase 10: 
 - [x] Reset demo also clears the inbox and seeds two open classmate questions (A8 average speed, A3 averaging averages)
 - Tested with a TTS-generated WAV: work-mode transcription kept "20 + 10 = 30%" verbatim; voice question → teacher voice reply → shown on Today with playable audio
 
-### Phase 10 — Question bank → ~1,000 + per-student pool (IN PROGRESS, 22 Nov)
+### Phase 10 — Question bank → ~1,000 + per-student pool (915 loaded, 22 Nov)
 - [x] Per-student pool: `pickQuestion` prefers questions the student never attempted; `ensurePool` generates when the student has < 3 UNSEEN questions per (concept, band) (was: < 3 total for everyone). One refill in flight per student. New questions join the shared bank. (`src/lib/repo.ts`, `src/lib/pool.ts`, `/api/next`, planner, diagnostic)
 - [x] Seed plan → 1,025 specs: weight-based targets (weight 3 → 50, 2 → 30, 1 → 20 per concept), band/type/contrast cycles, and a `theme` per spec (life scenarios for Arithmetic/Modern Math, problem styles for Algebra/Geometry/Number) passed to the generator; generator now avoids the last 12 stems. `npx tsx scripts/seed-content.ts --plan` shows what's left.
 - [x] `scripts/load-bank.ts`: adds new questions from data/questions.json to Neon WITHOUT wiping (skips ids already in DB and ≥80% word-overlap near-duplicates). Dry run by default; `--apply` to insert. Use this, NOT seed-db.ts (seed-db wipes and re-simulates the class, which changes Riya's demo story).
-- [ ] **Bank run paused at 186/1,030 (844 specs left).** Resume: `npx tsx scripts/seed-content.ts` (resumable, saves after every question; ~2–3 questions/min at concurrency 6; Gemini Pro verifier is the slow part). Then `npx tsx scripts/load-bank.ts` (dry run) → `--apply`. Live DB had 188 active questions after loading the first 57.
-- [ ] After the bank is loaded: confirm the count; the submission deck already says "1,000+" (evaluation + closing slides), so fix the deck if fewer than 1,000 pass. Update README "128 verified questions" and `/under-the-hood` will update itself from the DB.
+- [x] Bank run reached 935/1,030 verified (95 specs left). `load-bank.ts` dedupe fixed: it compared against the SHORTER stem and dropped numbers under 3 digits, so an SI-vs-CI lease question counted as a "duplicate" of a plain CI one (153 skipped). Now: words + all numbers, overlap relative to the LONGER stem ≥ 80% (23 skipped, all true rewordings). Loaded 727 → **915 active questions in Neon** (22 Nov).
+- [ ] Generate the last 95 specs (`npx tsx scripts/seed-content.ts`), then `load-bank.ts --apply`. The deck says "1,000+", so confirm the count passes 1,000 (or fix the deck). Update README "128 verified questions".
 
 ──── CUT LINE B ────
 
@@ -111,8 +111,8 @@ Last updated: 22 Nov ~11:30 IST, project SUBMITTED (team gamma_pass). Phase 10: 
 - [x] Final deploy + live check (tangent-chi-seven.vercel.app, ~8:10 PM): all routes load (/, today, practice, diagnostic, map, reveal, mistakes, strategy, teacher, under-the-hood, onboarding, 404); no horizontal overflow at 375px on any. Live practice: verdict 260ms, Detective 3.6s (line 2, A1_ADD_SUCCESSIVE, 99%). Live lesson plan 12s. Neon reseeded afterwards.
 - [x] Skip Coach: when no mastery cut-off helps, says so plainly instead of "above 0% mastery would have scored +0"
 
-### Phase 11 — Curio-inspired upgrades (not started; specs in ../HANDOFF.md)
-- [ ] 1. Spot the Tangent game (`/play/spot`)
+### Phase 11 — Curio-inspired upgrades (specs in ../HANDOFF.md)
+- [x] 1. Spot the Tangent game (`/play/spot`, hub `/play`, "Play" in the student nav). Rounds are pre-built offline (`scripts/build-spot-rounds.ts` → `data/spot-rounds.json`, no AI at runtime): Flash rewrites each misconception example / seed wrong solution as 4–7 lines with the slip on a RANDOM line (v1 had the slip on line 2 in 83/103 rounds, so "always tap 2" won), Pro independently finds the first wrong line, kept only if they agree. Game: 10 rounds, student's active misconceptions in rounds 2–3, rest weighted to weak concepts, never the same misconception twice; tap the line (+10 / +5 second try), name it from 3 (+10). Red-pen rough-notation circle on the line. Scores in `game_scores` (cascade → Reset demo clears). Spotting + naming one of your OWN active misconceptions = a clean answer in the Mistake Journal (`stepLifecycle clean_correct`), max once per misconception per IST day. `x^2` → `x²` when served (`prettyPowers`).
 - [ ] 2. Concept cards (`/learn`, `/learn/[conceptId]`)
 - [ ] 3. CAT speed sprint (`/play/sprint`)
 - [ ] 4. Daily checklist + streak nudge (`/today`)

@@ -1,0 +1,3433 @@
+[
+ {
+  "id": "lib-A1_ADD_SUCCESSIVE",
+  "misconceptionId": "A1_ADD_SUCCESSIVE",
+  "conceptId": "A1",
+  "question": "The price of an article is increased by 20% and subsequently decreased by 20%. What is the net percentage change in the price of the article?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Initial price = P; changes are +20% followed by -20%"
+   },
+   {
+    "n": 2,
+    "text": "Net % change = +20% - 20% = 0%"
+   },
+   {
+    "n": 3,
+    "text": "Final price = P × (1 + 0%) = P"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 0% change"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Multiply the multiplying factors (1.20 × 0.80 = 0.96) rather than directly adding the percentage changes, resulting in a 4% decrease.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A1_BASE_SWAP",
+  "misconceptionId": "A1_BASE_SWAP",
+  "conceptId": "A1",
+  "question": "If Amit's salary is 25% more than Bimal's salary, by what percentage is Bimal's salary less than Amit's salary?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A is 25% more than B, so B is 25% less than A"
+   },
+   {
+    "n": 2,
+    "text": "Assume A = 100"
+   },
+   {
+    "n": 3,
+    "text": "B = 100 − (25% of 100) = 75"
+   },
+   {
+    "n": 4,
+    "text": "Percentage difference = ((100 − 75) ÷ 100) × 100%"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 25%"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember that the base changes: write A = 1.25B, which means B = A ÷ 1.25 = 0.8A, making B 20% less than A.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A1_PERCENT_POINTS",
+  "misconceptionId": "A1_PERCENT_POINTS",
+  "conceptId": "A1",
+  "question": "A bank increased its lending rate from 10% per annum to 12% per annum. What is the percentage increase in the lending rate?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Initial rate = 10%, Final rate = 12%"
+   },
+   {
+    "n": 2,
+    "text": "Absolute increase in rate = 12 − 10 = 2"
+   },
+   {
+    "n": 3,
+    "text": "Percentage increase = 2%"
+   },
+   {
+    "n": 4,
+    "text": "Relative rise = 2%"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 2%"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Divide the 2 percentage point increase by the base rate of 10% and multiply by 100 to get (2 ÷ 10) × 100 = 20%.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A1_WRONG_BASE_CHANGE",
+  "misconceptionId": "A1_WRONG_BASE_CHANGE",
+  "conceptId": "A1",
+  "question": "The price of an article falls from Rs. 80 to Rs. 60. Find the percentage decrease in its price.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Original price P1 = 80"
+   },
+   {
+    "n": 2,
+    "text": "New price P2 = 60"
+   },
+   {
+    "n": 3,
+    "text": "Price decrease = P1 − P2"
+   },
+   {
+    "n": 4,
+    "text": "Decrease = 80 − 60 = 20"
+   },
+   {
+    "n": 5,
+    "text": "Percentage decrease = (Decrease ÷ Base) × 100"
+   },
+   {
+    "n": 6,
+    "text": "% decrease = (20 ÷ 60) × 100"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 33.33%"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "You should use the original price of 80 as the base in the denominator, computing (20 ÷ 80) × 100 = 25%.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A2_ADD_TO_RATIO",
+  "misconceptionId": "A2_ADD_TO_RATIO",
+  "conceptId": "A2",
+  "question": "The present ages of P and Q are in the ratio 3 : 5. If P is currently 15 years old, what will be the ratio of their ages after 10 years?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "P = 15, so 3x = 15 => x = 5"
+   },
+   {
+    "n": 2,
+    "text": "Q = 5x = 25"
+   },
+   {
+    "n": 3,
+    "text": "Adding 10 years to both preserves ratio = 3 : 5"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 3 : 5"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Calculate their new ages first (P = 25, Q = 35) and find the new ratio 25 : 35 = 5 : 7, since adding a constant to both terms changes the ratio.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A2_CHAIN_WITHOUT_LCM",
+  "misconceptionId": "A2_CHAIN_WITHOUT_LCM",
+  "conceptId": "A2",
+  "question": "If the ratio of A to B is 2:3 and the ratio of B to C is 4:5, find the ratio of A to C.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A : B = 2 : 3"
+   },
+   {
+    "n": 2,
+    "text": "B : C = 4 : 5"
+   },
+   {
+    "n": 3,
+    "text": "Combining them gives A : B : C = 2 : 3 : 5"
+   },
+   {
+    "n": 4,
+    "text": "A : C = 2 : 5"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 2:5"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Before combining the ratios, make the common term B equal in both ratios using the LCM of 3 and 4.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A2_INVERT_WHEN_COMBINING",
+  "misconceptionId": "A2_INVERT_WHEN_COMBINING",
+  "conceptId": "A2",
+  "question": "Two positive quantities A and B satisfy A + B = 50 and 2A = 3B. Find the value of A.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given: A + B = 50"
+   },
+   {
+    "n": 2,
+    "text": "Also, 2A = 3B"
+   },
+   {
+    "n": 3,
+    "text": "Therefore, A:B = 2:3"
+   },
+   {
+    "n": 4,
+    "text": "A = 50 × (2 / (2 + 3)) = 50 × 2/5 = 20"
+   },
+   {
+    "n": 5,
+    "text": "Answer: A = 20"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "From 2A = 3B, divide to get A/B = 3/2, which means the ratio A:B is 3:2, not 2:3.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A2_PARTNERSHIP_IGNORE_TIME",
+  "misconceptionId": "A2_PARTNERSHIP_IGNORE_TIME",
+  "conceptId": "A2",
+  "question": "A invests Rs 6,000 for 12 months and B invests Rs 8,000 for 6 months in a business. If the total annual profit is Rs 7,000, find A's share of the profit.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A's capital = Rs 6000, time = 12 months"
+   },
+   {
+    "n": 2,
+    "text": "B's capital = Rs 8000, time = 6 months"
+   },
+   {
+    "n": 3,
+    "text": "Total profit to divide = Rs 7000"
+   },
+   {
+    "n": 4,
+    "text": "Capital ratio = 6000 : 8000 = 3 : 4"
+   },
+   {
+    "n": 5,
+    "text": "Profit ratio A : B = Capital ratio = 3 : 4"
+   },
+   {
+    "n": 6,
+    "text": "Answer: Rs 3000"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Multiply each partner's capital by their investment time to get the profit ratio (6000 × 12 : 8000 × 6 = 3 : 2) instead of using the capital ratio alone.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A3_AVG_OF_AVGS",
+  "misconceptionId": "A3_AVG_OF_AVGS",
+  "conceptId": "A3",
+  "question": "In an examination, Class A with 20 students scored an average of 60 marks, while Class B with 30 students scored an average of 80 marks. What is the combined average score of all the students across both classes?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Combined average = (60 + 80) / 2"
+   },
+   {
+    "n": 2,
+    "text": "= 140 / 2"
+   },
+   {
+    "n": 3,
+    "text": "= 70"
+   },
+   {
+    "n": 4,
+    "text": "Average score for all 50 students = 70"
+   },
+   {
+    "n": 5,
+    "text": "Overall mean marks = 70"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 70"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Weight each class average by its number of students using (20 × 60 + 30 × 80) / (20 + 30) instead of taking a simple average.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A3_DEVIATION_SIGN_DROP",
+  "misconceptionId": "A3_DEVIATION_SIGN_DROP",
+  "conceptId": "A3",
+  "question": "Find the arithmetic mean of the four numbers 47, 52, 55, and 46.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Assumed mean A = 50 for numbers: 47, 52, 55, 46"
+   },
+   {
+    "n": 2,
+    "text": "Deviations = 3, 2, 5, 4"
+   },
+   {
+    "n": 3,
+    "text": "Mean = 50 + (3 + 2 + 5 + 4)/4 = 50 + 3.5"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 53.5"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Deviations below the assumed mean must be negative, so the deviations should be -3, +2, +5, and -4 instead of taking their absolute values.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A3_OLD_COUNT",
+  "misconceptionId": "A3_OLD_COUNT",
+  "conceptId": "A3",
+  "question": "The average of 10 numbers is 20. If a new number is added, the average increases to 21. What is the value of the new number?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Initial total = 10 × 20 = 200"
+   },
+   {
+    "n": 2,
+    "text": "New total = 10 × 21 = 210"
+   },
+   {
+    "n": 3,
+    "text": "New number = New total − Initial total"
+   },
+   {
+    "n": 4,
+    "text": "New number = 210 − 200 = 10"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 10"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Multiply the new average by the updated count of 11 numbers instead of the old count of 10 to get a new total of 11 × 21 = 231.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A3_REPLACEMENT_UNSCALED",
+  "misconceptionId": "A3_REPLACEMENT_UNSCALED",
+  "conceptId": "A3",
+  "question": "The average weight of a group of 8 people increases by 2.5 kg when one person weighing 60 kg is replaced by a new person. Find the weight of the new person.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Old person replaced = 60 kg, n = 8"
+   },
+   {
+    "n": 2,
+    "text": "Average increases by 2.5 kg"
+   },
+   {
+    "n": 3,
+    "text": "Weight of new person = 60 + 2.5"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 62.5 kg"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Multiply the increase in average by the group size (8 × 2.5 = 20 kg), so the new person's weight should be 60 + 20 = 80 kg.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A4_ADD_DISCOUNTS",
+  "misconceptionId": "A4_ADD_DISCOUNTS",
+  "conceptId": "A4",
+  "question": "An article has a marked price of Rs 1000 and is offered with two successive discounts of 20% and 10%. What is the final selling price of the article?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Marked Price (MP) = Rs 1000"
+   },
+   {
+    "n": 2,
+    "text": "First discount = 20%, second discount = 10%"
+   },
+   {
+    "n": 3,
+    "text": "Let total effective discount percentage be D%"
+   },
+   {
+    "n": 4,
+    "text": "D = 20 + 10 = 30%"
+   },
+   {
+    "n": 5,
+    "text": "Selling Price = 1000 × (1 − 0.30) = Rs 700"
+   },
+   {
+    "n": 6,
+    "text": "Answer: Rs 700"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Calculate the effective discount as 1 − (1 − 0.20) × (1 − 0.10) = 28%, because the second discount applies to the price after the first discount.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A4_FALSE_WEIGHT_BASE",
+  "misconceptionId": "A4_FALSE_WEIGHT_BASE",
+  "conceptId": "A4",
+  "question": "A dishonest dealer professes to sell goods at cost price, but uses a false weight of 900 g for a 1 kg weight. Find his gain percentage.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Dealer claims 1000 g, gives only 900 g"
+   },
+   {
+    "n": 2,
+    "text": "Goods saved per transaction = 1000 - 900 = 100 g"
+   },
+   {
+    "n": 3,
+    "text": "Profit % = (100 / 1000) × 100"
+   },
+   {
+    "n": 4,
+    "text": "= 0.1 × 100"
+   },
+   {
+    "n": 5,
+    "text": "= 10%"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 10%"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Calculate profit percentage based on the actual quantity sold (his actual cost of 900 g), writing (100 / 900) × 100 instead of dividing by 1000.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A4_MARKUP_MINUS_DISCOUNT",
+  "misconceptionId": "A4_MARKUP_MINUS_DISCOUNT",
+  "conceptId": "A4",
+  "question": "A shopkeeper marks an item 40% above its cost price and then allows a discount of 20% on the marked price. What is the shopkeeper's overall profit percentage?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "CP = 100, Markup = 40%, Discount = 20%"
+   },
+   {
+    "n": 2,
+    "text": "Overall profit % = 40% − 20% = 20%"
+   },
+   {
+    "n": 3,
+    "text": "Profit amount = 20% of 100 = 20"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 20%"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Apply the 20% discount to the marked price of 140 (SP = 140 × 0.8 = 112) rather than directly subtracting the discount percentage from the markup percentage.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A4_PROFIT_ON_SP",
+  "misconceptionId": "A4_PROFIT_ON_SP",
+  "conceptId": "A4",
+  "question": "A shopkeeper bought an article for Rs. 400 and sold it for Rs. 500. Find the profit percentage.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "CP = 400"
+   },
+   {
+    "n": 2,
+    "text": "SP = 500"
+   },
+   {
+    "n": 3,
+    "text": "Profit = SP − CP"
+   },
+   {
+    "n": 4,
+    "text": "Profit = 500 − 400 = 100"
+   },
+   {
+    "n": 5,
+    "text": "Profit % = (100 ÷ 500) × 100"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 20%"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Calculate profit percentage using CP as the base: divide by 400 instead of 500, giving (100 ÷ 400) × 100 = 25%.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A4_SAME_SP_NO_LOSS",
+  "misconceptionId": "A4_SAME_SP_NO_LOSS",
+  "conceptId": "A4",
+  "question": "A shopkeeper sells two phones for Rs 240 each, making a profit of 20% on one and incurring a loss of 20% on the other. What is his overall profit or loss percentage on the entire transaction?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "SP1 = 240 with 20% profit, SP2 = 240 with 20% loss"
+   },
+   {
+    "n": 2,
+    "text": "Total SP = 240 + 240 = 480"
+   },
+   {
+    "n": 3,
+    "text": "Net % change = +20% − 20% = 0%"
+   },
+   {
+    "n": 4,
+    "text": "Total CP = Total SP = 480"
+   },
+   {
+    "n": 5,
+    "text": "Net gain or loss = 480 − 480 = 0"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 0%"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Calculate the individual cost prices first (CP1 = 240 ÷ 1.2 = 200, CP2 = 240 ÷ 0.8 = 300) to find the overall net loss, or apply the formula Net Loss = (x^2 / 100)% = 4%.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A5_CI_DIFF_2YR_FORMULA",
+  "misconceptionId": "A5_CI_DIFF_2YR_FORMULA",
+  "conceptId": "A5",
+  "question": "Find the difference between the compound interest and simple interest on a principal of Rs 8000 at 10% per annum for 3 years.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "CI − SI for 3 years = P × (r/100)^2"
+   },
+   {
+    "n": 2,
+    "text": "= 8000 × (10/100)^2"
+   },
+   {
+    "n": 3,
+    "text": "= 8000 × (1/10)^2"
+   },
+   {
+    "n": 4,
+    "text": "= 8000 × (1/100)"
+   },
+   {
+    "n": 5,
+    "text": "= 80"
+   },
+   {
+    "n": 6,
+    "text": "Answer: Rs 80"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "For a duration of 3 years, use the formula CI − SI = P × (r/100)^2 × (3 + r/100) instead of the 2-year shortcut.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A5_CI_LINEAR_SCALING",
+  "misconceptionId": "A5_CI_LINEAR_SCALING",
+  "conceptId": "A5",
+  "question": "A sum of money invested at compound interest doubles itself in 4 years. In how many years will it become 8 times its initial value at the same rate?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "P becomes 2P in 4 years, so growth factor is 2 every 4 years"
+   },
+   {
+    "n": 2,
+    "text": "Target is to reach 8P, which is an 8-fold increase"
+   },
+   {
+    "n": 3,
+    "text": "8-fold growth is 4 times the 2-fold growth, so 4 periods needed"
+   },
+   {
+    "n": 4,
+    "text": "Total time = 4 periods × 4 years = 16 years"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 16 years"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Because compound growth multiplies each period, write 8 as 2^3 to find that only 3 doubling periods (3 × 4 = 12 years) are needed.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A5_HALFYEARLY_RATE",
+  "misconceptionId": "A5_HALFYEARLY_RATE",
+  "conceptId": "A5",
+  "question": "Find the compound amount obtained on an investment of Rs 10,000 for 1 year at an interest rate of 20% per annum compounded half-yearly.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "P = 10000, n = 2 periods of 6 months"
+   },
+   {
+    "n": 2,
+    "text": "A = 10000 × (1 + 0.20)^2"
+   },
+   {
+    "n": 3,
+    "text": "A = 10000 × (1.20)^2"
+   },
+   {
+    "n": 4,
+    "text": "A = 10000 × 1.44 = 14400"
+   },
+   {
+    "n": 5,
+    "text": "Answer: Rs 14,400"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "For half-yearly compounding, halve the annual rate to 10% (0.10) per period, writing A = 10000 × (1 + 0.10)^2.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A5_SI_FOR_CI",
+  "misconceptionId": "A5_SI_FOR_CI",
+  "conceptId": "A5",
+  "question": "Find the total compound interest earned on a sum of Rs 10000 invested for 2 years at an annual interest rate of 10% compounded annually.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "P = 10000, r = 10%, t = 2 years"
+   },
+   {
+    "n": 2,
+    "text": "Interest for Year 1 = 10% of 10000"
+   },
+   {
+    "n": 3,
+    "text": "Year 1 interest = 10000 × 0.10 = 1000"
+   },
+   {
+    "n": 4,
+    "text": "Amount after Year 1 = 10000 + 1000 = 11000"
+   },
+   {
+    "n": 5,
+    "text": "Interest for Year 2 = 10% of 10000 = 1000"
+   },
+   {
+    "n": 6,
+    "text": "Total interest = Year 1 interest + Year 2 interest = 1000 + 1000"
+   },
+   {
+    "n": 7,
+    "text": "Answer: Rs 2000"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "For compound interest, compute the second year's interest on the updated balance of Rs 11000 (10% of 11000 = Rs 1100) rather than on the initial principal.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A6_ALLIGATION_ON_QUANTITIES",
+  "misconceptionId": "A6_ALLIGATION_ON_QUANTITIES",
+  "conceptId": "A6",
+  "question": "In what ratio should two mixtures of milk and water, containing milk and water in the ratios 3:1 and 1:1 respectively, be mixed to obtain a new mixture with milk and water in the ratio 2:1?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Mixture A has milk:water = 3:1"
+   },
+   {
+    "n": 2,
+    "text": "Mixture B has milk:water = 1:1"
+   },
+   {
+    "n": 3,
+    "text": "Target mixture has milk:water = 2:1"
+   },
+   {
+    "n": 4,
+    "text": "Alligate milk ratio values directly: 3 and 1 around mean 2"
+   },
+   {
+    "n": 5,
+    "text": "Left difference = |1 − 2| = 1"
+   },
+   {
+    "n": 6,
+    "text": "Right difference = |3 − 2| = 1"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 1:1"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "You must alligate using the concentration or fraction of milk (3/4, 1/2, and 2/3) rather than the raw ratio parts of milk.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A6_ALLIGATION_REVERSED",
+  "misconceptionId": "A6_ALLIGATION_REVERSED",
+  "conceptId": "A6",
+  "question": "In what ratio must rice costing Rs 30 per kg be mixed with rice costing Rs 50 per kg to obtain a mixture worth Rs 35 per kg?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "C = 30, D = 50, Mean = 35"
+   },
+   {
+    "n": 2,
+    "text": "Ratio of Cheap : Dear = (Mean − C) : (D − Mean)"
+   },
+   {
+    "n": 3,
+    "text": "= (35 − 30) : (50 − 35)"
+   },
+   {
+    "n": 4,
+    "text": "= 5 : 15"
+   },
+   {
+    "n": 5,
+    "text": "Simplify ratio by dividing by 5"
+   },
+   {
+    "n": 6,
+    "text": "= 1 : 3"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 1:3"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Remember the alligation rule cross-subtracts: the ratio of cheaper to dearer should be (D − Mean) : (Mean − C).",
+  "source": "library"
+ },
+ {
+  "id": "lib-A6_REPLACEMENT_LINEAR",
+  "misconceptionId": "A6_REPLACEMENT_LINEAR",
+  "conceptId": "A6",
+  "question": "A container holds 40 L of pure milk. From this, 4 L is removed and replaced with water. This process is repeated one more time. How much milk remains in the container?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Initial milk = 40 L, total volume = 40 L"
+   },
+   {
+    "n": 2,
+    "text": "First replacement: 4 L removed, replaced with water"
+   },
+   {
+    "n": 3,
+    "text": "Milk removed in 1st round = 4 L"
+   },
+   {
+    "n": 4,
+    "text": "Milk remaining after round 1 = 40 − 4 = 36 L"
+   },
+   {
+    "n": 5,
+    "text": "Milk removed in 2nd round = 4 L"
+   },
+   {
+    "n": 6,
+    "text": "Milk remaining after round 2 = 36 − 4 = 32 L"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 32 L"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Account for the diluted mixture by removing 4 × (36/40) = 3.6 L of milk in the second round instead of 4 L.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A6_SP_AS_MEAN",
+  "misconceptionId": "A6_SP_AS_MEAN",
+  "conceptId": "A6",
+  "question": "In what ratio must tea worth Rs 60 per kg be mixed with tea worth Rs 90 per kg so that the resulting mixture, when sold at Rs 84 per kg, yields a profit of 20%?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Cost prices: C1 = 60, C2 = 90"
+   },
+   {
+    "n": 2,
+    "text": "Selling price of mixture = 84 at 20% profit"
+   },
+   {
+    "n": 3,
+    "text": "Mean price for alligation = 84"
+   },
+   {
+    "n": 4,
+    "text": "Ratio = (90 − 84) : (84 − 60) = 6 : 24 = 1 : 4"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 1:4"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "You must use the cost price of the mixture as the mean, which is 84 ÷ 1.20 = Rs 70 per kg, rather than its selling price.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A7_ADD_DAYS",
+  "misconceptionId": "A7_ADD_DAYS",
+  "conceptId": "A7",
+  "question": "A can complete a piece of work in 10 days, while B can complete the same work in 15 days. If they work together, how many days will they take to complete twice the original work?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Time for A alone = 10 days, B alone = 15 days"
+   },
+   {
+    "n": 2,
+    "text": "Time taken together for 1 work = 10 + 15 = 25 days"
+   },
+   {
+    "n": 3,
+    "text": "Combined rate per day = 1/25 of work"
+   },
+   {
+    "n": 4,
+    "text": "Work needed = 2 units"
+   },
+   {
+    "n": 5,
+    "text": "Total days required = 2 ÷ (1/25) = 2 × 25"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 50 days"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Instead of adding days directly, you should add their individual rates (1/10 + 1/15 = 1/6) to find that working together takes 6 days.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A7_EFFICIENCY_TIME_SAME_PCT",
+  "misconceptionId": "A7_EFFICIENCY_TIME_SAME_PCT",
+  "conceptId": "A7",
+  "question": "A is 50% more efficient than B. If B takes 30 days to finish a piece of work alone, how many days will A and B together take to complete the work?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Efficiency of B = e, so Efficiency of A = 1.5e"
+   },
+   {
+    "n": 2,
+    "text": "Time taken by B = 30 days"
+   },
+   {
+    "n": 3,
+    "text": "Since A is 50% more efficient, A takes 50% less time than B"
+   },
+   {
+    "n": 4,
+    "text": "Time taken by A = 30 − (0.5 × 30) = 15 days"
+   },
+   {
+    "n": 5,
+    "text": "Combined rate = (1/30) + (1/15) = 3/30 = 1/10 work/day"
+   },
+   {
+    "n": 6,
+    "text": "Combined time = 1 / (1/10) = 10 days"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 10 days"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Because time is inversely proportional to efficiency, A takes 1/1.5 = 2/3 of B's time (20 days), not 50% less time.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A7_EMPTY_PIPE_ADDS",
+  "misconceptionId": "A7_EMPTY_PIPE_ADDS",
+  "conceptId": "A7",
+  "question": "Pipe A can fill a tank in 6 hours, while Pipe B can empty the full tank in 12 hours. If both pipes are opened simultaneously, how many hours will it take to fill the empty tank?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Rate of A = 1/6, rate of B = 1/12"
+   },
+   {
+    "n": 2,
+    "text": "Net rate = 1/6 + 1/12 = 3/12 = 1/4"
+   },
+   {
+    "n": 3,
+    "text": "Time taken = 1 / (1/4) = 4 hours"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 4 hours"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Since Pipe B empties the tank, its rate must be subtracted from Pipe A's rate: Net rate = 1/6 − 1/12 = 1/12.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A7_MEN_DAYS_DIRECT",
+  "misconceptionId": "A7_MEN_DAYS_DIRECT",
+  "conceptId": "A7",
+  "question": "If 12 men can complete a piece of work in 20 days, how many days will 15 men take to complete the same work?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "12 men take 20 days"
+   },
+   {
+    "n": 2,
+    "text": "Let required days for 15 men be D"
+   },
+   {
+    "n": 3,
+    "text": "Ratio of men = 15/12"
+   },
+   {
+    "n": 4,
+    "text": "Days are directly proportional to men, so D = 20 × (15/12)"
+   },
+   {
+    "n": 5,
+    "text": "D = 20 × 1.25 = 25"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 25 days"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Remember that men and days are inversely proportional for a fixed job, so you should calculate D = 20 × (12/15) instead of multiplying by 15/12.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A8_IGNORE_TRAIN_LENGTH",
+  "misconceptionId": "A8_IGNORE_TRAIN_LENGTH",
+  "conceptId": "A8",
+  "question": "A train of length 200 m traveling at 72 km/h crosses a platform of length 300 m. Find the time taken by the train to completely cross the platform.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Train length = 200 m, Platform length = 300 m"
+   },
+   {
+    "n": 2,
+    "text": "Speed = 72 km/h = 72 × 5/18 = 20 m/s"
+   },
+   {
+    "n": 3,
+    "text": "Time = Distance / Speed"
+   },
+   {
+    "n": 4,
+    "text": "Time = 300 / 20"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 15 s"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Remember that to cross the platform completely, the total distance covered must be the train's length plus the platform's length (200 + 300 = 500 m), not just the platform's length.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A8_MEAN_OF_SPEEDS",
+  "misconceptionId": "A8_MEAN_OF_SPEEDS",
+  "conceptId": "A8",
+  "question": "A motorist drives from town A to town B at 60 km/h and returns along the same route at 40 km/h. What is his average speed for the entire round trip?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Average speed = (60 + 40) ÷ 2"
+   },
+   {
+    "n": 2,
+    "text": "= 100 ÷ 2"
+   },
+   {
+    "n": 3,
+    "text": "= 50 km/h"
+   },
+   {
+    "n": 4,
+    "text": "Overall journey speed = 50 km/h"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 50 km/h"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Since the distances for both legs are equal, use the harmonic mean formula 2ab/(a + b) instead of taking the simple average.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A8_SAME_DIR_SUM",
+  "misconceptionId": "A8_SAME_DIR_SUM",
+  "conceptId": "A8",
+  "question": "Two trains of lengths 150 m and 100 m travel in the same direction at 72 km/h and 54 km/h respectively. How many seconds does the faster train take to completely cross the slower train?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Relative speed = 72 + 54 = 126 km/h"
+   },
+   {
+    "n": 2,
+    "text": "Speed in m/s = 126 × (5 ÷ 18) = 35 m/s"
+   },
+   {
+    "n": 3,
+    "text": "Time = (150 + 100) ÷ 35 = 250 ÷ 35 ≈ 7.14 s"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 7.14 s"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Subtract the speeds instead of adding them, since both trains are moving in the same direction, giving a relative speed of 72 − 54 = 18 km/h.",
+  "source": "library"
+ },
+ {
+  "id": "lib-A8_STREAM_NO_HALVE",
+  "misconceptionId": "A8_STREAM_NO_HALVE",
+  "conceptId": "A8",
+  "question": "A boat covers a certain distance downstream at 16 km/h and returns upstream at 10 km/h. What is the speed of the stream?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Downstream speed = D = 16 km/h"
+   },
+   {
+    "n": 2,
+    "text": "Upstream speed = U = 10 km/h"
+   },
+   {
+    "n": 3,
+    "text": "Let boat speed = b, stream speed = s"
+   },
+   {
+    "n": 4,
+    "text": "D - U = (b + s) - (b - s) = 2s"
+   },
+   {
+    "n": 5,
+    "text": "Stream speed s = D - U = 16 - 10 = 6 km/h"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 6 km/h"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Remember that D − U equals 2s, so you must divide by 2 to get s = (16 − 10) ÷ 2 = 3 km/h.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G1_CO_INTERIOR_EQUAL",
+  "misconceptionId": "G1_CO_INTERIOR_EQUAL",
+  "conceptId": "G1",
+  "question": "Two parallel lines are intersected by a transversal. If one of the interior angles is 70°, find the measure of the co-interior angle on the same side of the transversal.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Lines l and m are parallel"
+   },
+   {
+    "n": 2,
+    "text": "Transversal t cuts both lines"
+   },
+   {
+    "n": 3,
+    "text": "Angle 1 = 70° (interior angle on right)"
+   },
+   {
+    "n": 4,
+    "text": "Angle 2 is co-interior with Angle 1"
+   },
+   {
+    "n": 5,
+    "text": "Since they are co-interior, Angle 2 = Angle 1 = 70°"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 70°"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Co-interior angles are supplementary, so you should set Angle 2 = 180° − 70° = 110° instead of equating them.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G1_COMPLEMENT_SUPPLEMENT_MIX",
+  "misconceptionId": "G1_COMPLEMENT_SUPPLEMENT_MIX",
+  "conceptId": "G1",
+  "question": "What is the measure of the supplement of the complement of an angle measuring 40°?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Complement of 40° = 180° − 40°"
+   },
+   {
+    "n": 2,
+    "text": "Complement = 140°"
+   },
+   {
+    "n": 3,
+    "text": "Supplement of 140° = 180° − 140°"
+   },
+   {
+    "n": 4,
+    "text": "= 40°"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 40°"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember that complementary angles sum to 90°, so the complement of 40° should be calculated as 90° − 40° = 50°.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G2_AREA_RATIO_NOT_SQUARED",
+  "misconceptionId": "G2_AREA_RATIO_NOT_SQUARED",
+  "conceptId": "G2",
+  "question": "Two similar triangles have corresponding sides measuring 4 cm and 6 cm. If the area of the smaller triangle is 32 sq cm, what is the area of the larger triangle?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given sides: s1 = 4 cm, s2 = 6 cm"
+   },
+   {
+    "n": 2,
+    "text": "Side ratio s1 : s2 = 4 : 6 = 2 : 3"
+   },
+   {
+    "n": 3,
+    "text": "Area of smaller triangle A1 = 32 sq cm"
+   },
+   {
+    "n": 4,
+    "text": "Area ratio A1 : A2 = s1 : s2 = 2 : 3"
+   },
+   {
+    "n": 5,
+    "text": "A2 = 32 × (3 / 2) = 48"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 48 sq cm"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Remember that the ratio of the areas of similar figures equals the square of the side ratio, so A1 : A2 should be (2 : 3)^2 = 4 : 9.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G2_HYPOTENUSE_AS_LEG",
+  "misconceptionId": "G2_HYPOTENUSE_AS_LEG",
+  "conceptId": "G2",
+  "question": "A right-angled triangle has a hypotenuse of 13 cm and one leg of 5 cm. What is the length of the other leg?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Missing leg = √(13^2 + 5^2)"
+   },
+   {
+    "n": 2,
+    "text": "= √(169 + 25) = √194"
+   },
+   {
+    "n": 3,
+    "text": "√194 ≈ 13.93"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 13.93"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Subtract the square of the known leg from the square of the hypotenuse: missing leg = √(13^2 − 5^2).",
+  "source": "library"
+ },
+ {
+  "id": "lib-G2_IGNORE_TRIANGLE_INEQUALITY",
+  "misconceptionId": "G2_IGNORE_TRIANGLE_INEQUALITY",
+  "conceptId": "G2",
+  "question": "How many distinct triangles can be formed using sticks of lengths 2 cm, 3 cm, 5 cm, and 6 cm as sides?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given stick lengths: 2, 3, 5, 6"
+   },
+   {
+    "n": 2,
+    "text": "A triangle requires choosing 3 sticks out of 4"
+   },
+   {
+    "n": 3,
+    "text": "Any set of 3 sticks forms a valid triangle"
+   },
+   {
+    "n": 4,
+    "text": "Total triangles = 4C3 = 4"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 4"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Check the triangle inequality (the sum of the two smaller sides must exceed the largest side) for each combination instead of assuming all choices are valid.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G3_CYCLIC_OPPOSITE_EQUAL",
+  "misconceptionId": "G3_CYCLIC_OPPOSITE_EQUAL",
+  "conceptId": "G3",
+  "question": "In a cyclic quadrilateral ABCD, angle A measures 75°. Find the measure of angle C.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Cyclic quadrilateral ABCD with angle A = 75°"
+   },
+   {
+    "n": 2,
+    "text": "Opposite angles are equal, so angle C = angle A"
+   },
+   {
+    "n": 3,
+    "text": "angle C = 75°"
+   },
+   {
+    "n": 4,
+    "text": "Value of angle C = 75°"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 75°"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Remember that opposite angles in a cyclic quadrilateral sum to 180°, so angle C should be 180° − 75° = 105°.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G3_INSCRIBED_VS_CENTRAL",
+  "misconceptionId": "G3_INSCRIBED_VS_CENTRAL",
+  "conceptId": "G3",
+  "question": "In a circle with centre O, points A, B, and C lie on the circumference such that the minor arc AB subtends an angle of 100° at O. If triangle ABC is isosceles with AC = BC, find the measure of angle CAB.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Minor arc AB subtends angle AOB at centre O"
+   },
+   {
+    "n": 2,
+    "text": "angle AOB = 100°"
+   },
+   {
+    "n": 3,
+    "text": "C is on major arc AB, AC = BC => angle CAB = angle CBA"
+   },
+   {
+    "n": 4,
+    "text": "angle ACB = angle AOB = 100°"
+   },
+   {
+    "n": 5,
+    "text": "In triangle ABC, angle CAB + angle CBA + angle ACB = 180°"
+   },
+   {
+    "n": 6,
+    "text": "2 × angle CAB = 180° − 100° = 80° => angle CAB = 40°"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 40°"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "The angle subtended by an arc at the circumference is half the angle subtended at the centre, so angle ACB should be (1/2) × 100° = 50°, not 100°.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G3_TANGENT_NO_RIGHT_ANGLE",
+  "misconceptionId": "G3_TANGENT_NO_RIGHT_ANGLE",
+  "conceptId": "G3",
+  "question": "A point P is located 13 cm away from the centre of a circle of radius 5 cm. What is the length of the tangent drawn from P to the circle?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Distance from centre O to P, OP = 13 cm"
+   },
+   {
+    "n": 2,
+    "text": "Radius of circle, r = 5 cm"
+   },
+   {
+    "n": 3,
+    "text": "Let T be the point of contact on the circle"
+   },
+   {
+    "n": 4,
+    "text": "PT = OP - r"
+   },
+   {
+    "n": 5,
+    "text": "PT = 13 - 5"
+   },
+   {
+    "n": 6,
+    "text": "PT = 8 cm"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 8 cm"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Since the radius is perpendicular to the tangent at the point of contact, triangle OTP is a right-angled triangle, so PT should be calculated using the Pythagoras theorem as √(OP^2 - r^2).",
+  "source": "library"
+ },
+ {
+  "id": "lib-G4_DIAGONALS_NC2",
+  "misconceptionId": "G4_DIAGONALS_NC2",
+  "conceptId": "G4",
+  "question": "Find the total number of diagonals that can be drawn in a regular decagon.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Decagon has n = 10 vertices"
+   },
+   {
+    "n": 2,
+    "text": "Total segments connecting pairs of vertices = 10C2 = 45"
+   },
+   {
+    "n": 3,
+    "text": "Number of diagonals = 45"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 45"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Subtract the 10 sides of the decagon from the 45 total segments to get 45 − 10 = 35 diagonals.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G4_RHOMBUS_NO_HALF",
+  "misconceptionId": "G4_RHOMBUS_NO_HALF",
+  "conceptId": "G4",
+  "question": "Find the area of a rhombus whose diagonals measure 10 cm and 24 cm.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given: d1 = 10 cm, d2 = 24 cm"
+   },
+   {
+    "n": 2,
+    "text": "Half-diagonals are d1/2 = 5 cm, d2/2 = 12 cm"
+   },
+   {
+    "n": 3,
+    "text": "Rhombus is made of 4 congruent right triangles"
+   },
+   {
+    "n": 4,
+    "text": "Each right triangle has base 5 cm and height 12 cm"
+   },
+   {
+    "n": 5,
+    "text": "Area = 4 × (right triangle area)"
+   },
+   {
+    "n": 6,
+    "text": "Area = d1 × d2 = 10 × 24"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 240 sq cm"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "Remember that the area of a rhombus is (1/2) × d1 × d2, so compute (1/2) × 10 × 24 to get 120 sq cm.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G5_CSA_VS_TSA",
+  "misconceptionId": "G5_CSA_VS_TSA",
+  "conceptId": "G5",
+  "question": "Find the total surface area of a closed cylinder with radius 7 cm and height 10 cm.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total surface area = 2 × (22/7) × 7 × 10"
+   },
+   {
+    "n": 2,
+    "text": "= 44 × 10"
+   },
+   {
+    "n": 3,
+    "text": "= 440 sq cm"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 440 sq cm"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember that a closed cylinder includes its two circular bases, so the total surface area formula is 2πr(h + r) rather than just the curved area 2πrh.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G5_SLANT_AS_HEIGHT",
+  "misconceptionId": "G5_SLANT_AS_HEIGHT",
+  "conceptId": "G5",
+  "question": "A right circular cone has a base radius of 3 cm and a slant height of 5 cm. Find the volume of the cone in cm³.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "r = 3, l = 5"
+   },
+   {
+    "n": 2,
+    "text": "Formula: Volume = (1/3)π × r^2 × h"
+   },
+   {
+    "n": 3,
+    "text": "V = (1/3)π × 3^2 × 5"
+   },
+   {
+    "n": 4,
+    "text": "V = (1/3)π × 9 × 5"
+   },
+   {
+    "n": 5,
+    "text": "V = 3π × 5 = 15π"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 15π"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "You should find the vertical height first using h = √(l^2 − r^2) = √(5^2 − 3^2) = 4, and substitute h = 4 instead of the slant height 5 into the volume formula.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G5_VOLUME_SCALES_LINEARLY",
+  "misconceptionId": "G5_VOLUME_SCALES_LINEARLY",
+  "conceptId": "G5",
+  "question": "A solid metallic sphere of radius 3 cm is melted and recast into smaller solid spheres, each of radius 1 cm. How many such smaller spheres can be formed without any loss of metal?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Original sphere radius R = 3 cm"
+   },
+   {
+    "n": 2,
+    "text": "Smaller sphere radius r = 1 cm"
+   },
+   {
+    "n": 3,
+    "text": "Volume of a sphere = (4/3) × π × radius^3"
+   },
+   {
+    "n": 4,
+    "text": "Total volume V = n × v, where n is number of spheres"
+   },
+   {
+    "n": 5,
+    "text": "Ratio of radii = R / r = 3 / 1 = 3"
+   },
+   {
+    "n": 6,
+    "text": "Volume ratio V / v = R / r = 3"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 3"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "Remember that volume scales with the cube of linear dimensions, so the volume ratio should be (R / r)^3 = 3^3 = 27.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G6_PERP_SLOPE_NO_RECIPROCAL",
+  "misconceptionId": "G6_PERP_SLOPE_NO_RECIPROCAL",
+  "conceptId": "G6",
+  "question": "Find the equation of the line perpendicular to the line y = 2x + 1 that passes through the point (0, 3).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given line: y = 2x + 1"
+   },
+   {
+    "n": 2,
+    "text": "Slope of the given line, m1 = 2"
+   },
+   {
+    "n": 3,
+    "text": "The required line passes through (x1, y1) = (0, 3)"
+   },
+   {
+    "n": 4,
+    "text": "Equation of line: y − y1 = m2(x − x1)"
+   },
+   {
+    "n": 5,
+    "text": "Since lines are perpendicular, m2 is the perpendicular slope"
+   },
+   {
+    "n": 6,
+    "text": "m2 = −m1 = −2"
+   },
+   {
+    "n": 7,
+    "text": "Answer: y = −2x + 3"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "For perpendicular lines, m1 × m2 = −1, so the slope should be the negative reciprocal, m2 = −1/2, not just the negative.",
+  "source": "library"
+ },
+ {
+  "id": "lib-G6_SLOPE_INVERTED",
+  "misconceptionId": "G6_SLOPE_INVERTED",
+  "conceptId": "G6",
+  "question": "Find the slope of the straight line passing through the points (1, 2) and (3, 8).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Points given: (x1, y1) = (1, 2) and (x2, y2) = (3, 8)"
+   },
+   {
+    "n": 2,
+    "text": "Change in x = 3 − 1 = 2, Change in y = 8 − 2 = 6"
+   },
+   {
+    "n": 3,
+    "text": "Slope m = (x2 − x1) / (y2 − y1) = 2 / 6"
+   },
+   {
+    "n": 4,
+    "text": "m = 1/3"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 1/3"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Slope is rise over run, so you should calculate m = (y2 − y1) / (x2 − x1) = 6 / 2 = 3 instead of dividing change in x by change in y.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L1_ADD_EXP_DIFF_BASES",
+  "misconceptionId": "L1_ADD_EXP_DIFF_BASES",
+  "conceptId": "L1",
+  "question": "Find the value of the expression 2^3 × 3^2.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Expression = 2^3 × 3^2"
+   },
+   {
+    "n": 2,
+    "text": "= (2 × 3)^(3 + 2)"
+   },
+   {
+    "n": 3,
+    "text": "= 6^(3 + 2)"
+   },
+   {
+    "n": 4,
+    "text": "= 6^5"
+   },
+   {
+    "n": 5,
+    "text": "= 7776"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 7776"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Calculate the individual powers separately as 8 × 9 = 72, because the rule of adding exponents only applies when the bases are identical.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L1_ROOT_OF_SUM",
+  "misconceptionId": "L1_ROOT_OF_SUM",
+  "conceptId": "L1",
+  "question": "Evaluate the value of √(16 + 9) + 5.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Expression = √(16 + 9) + 5"
+   },
+   {
+    "n": 2,
+    "text": "= √16 + √9 + 5"
+   },
+   {
+    "n": 3,
+    "text": "= 4 + 3 + 5"
+   },
+   {
+    "n": 4,
+    "text": "= 7 + 5"
+   },
+   {
+    "n": 5,
+    "text": "= 12"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 12"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Add the terms inside the square root first to get √(25) instead of splitting the radical over addition.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L2_IGNORE_DOMAIN",
+  "misconceptionId": "L2_IGNORE_DOMAIN",
+  "conceptId": "L2",
+  "question": "Find the sum of all real solutions to the equation log(x) + log(x − 3) = 1 (base 10).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "log(x(x − 3)) = 1  =>  x^2 − 3x − 10 = 0"
+   },
+   {
+    "n": 2,
+    "text": "(x − 5)(x + 2) = 0  =>  x = 5 or x = −2"
+   },
+   {
+    "n": 3,
+    "text": "Both roots satisfy the equation, so sum = 5 + (−2)"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 3"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "You must check the domain of the original logarithmic expressions: reject x = −2 because log(x) requires x > 3, leaving x = 5 as the only valid solution.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L2_LOG_OF_SUM",
+  "misconceptionId": "L2_LOG_OF_SUM",
+  "conceptId": "L2",
+  "question": "Find the value of log_2(8 + 8).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Expression = log_2(8 + 8)"
+   },
+   {
+    "n": 2,
+    "text": "= log_2(8) + log_2(8)"
+   },
+   {
+    "n": 3,
+    "text": "= log_2(2^3) + log_2(2^3)"
+   },
+   {
+    "n": 4,
+    "text": "= 3·log_2(2) + 3·log_2(2)"
+   },
+   {
+    "n": 5,
+    "text": "= 3(1) + 3(1)"
+   },
+   {
+    "n": 6,
+    "text": "= 3 + 3"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 6"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "First evaluate the addition inside the logarithm to get log_2(16), because log(a + b) does not expand to log(a) + log(b).",
+  "source": "library"
+ },
+ {
+  "id": "lib-L2_RATIO_OF_LOGS",
+  "misconceptionId": "L2_RATIO_OF_LOGS",
+  "conceptId": "L2",
+  "question": "Evaluate the expression (log 1000 ÷ log 10) + 5.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "log 1000 ÷ log 10 + 5 = log(1000 ÷ 10) + 5"
+   },
+   {
+    "n": 2,
+    "text": "= log(100) + 5"
+   },
+   {
+    "n": 3,
+    "text": "= log(10^2) + 5"
+   },
+   {
+    "n": 4,
+    "text": "= 2 + 5"
+   },
+   {
+    "n": 5,
+    "text": "= 7"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 7"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember that log a ÷ log b equals log_b(a) by the change of base rule, not log(a ÷ b).",
+  "source": "library"
+ },
+ {
+  "id": "lib-L3_PROPORTIONAL_MEANS_INFINITE",
+  "misconceptionId": "L3_PROPORTIONAL_MEANS_INFINITE",
+  "conceptId": "L3",
+  "question": "Determine the number of solutions to the system of linear equations: 2x + 3y = 5 and 4x + 6y = 12.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "2/4 = 3/6 = 1/2, so the two lines are identical"
+   },
+   {
+    "n": 2,
+    "text": "Identical lines share all points in common"
+   },
+   {
+    "n": 3,
+    "text": "Number of solutions is infinite"
+   },
+   {
+    "n": 4,
+    "text": "Answer: infinitely many solutions"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Check the ratio of constant terms as well; since 2/4 = 3/6 ≠ 5/12, the lines are parallel and have no solution.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L3_SIGN_ON_TRANSPOSE",
+  "misconceptionId": "L3_SIGN_ON_TRANSPOSE",
+  "conceptId": "L3",
+  "question": "Solve for x if 3x + 7 = 22.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "3x + 7 = 22"
+   },
+   {
+    "n": 2,
+    "text": "3x = 22 + 7"
+   },
+   {
+    "n": 3,
+    "text": "3x = 29"
+   },
+   {
+    "n": 4,
+    "text": "x = 29/3"
+   },
+   {
+    "n": 5,
+    "text": "Answer: x = 29/3"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "When transposing +7 to the other side of the equation, change its sign to subtraction so that 3x = 22 − 7.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L4_DIVIDE_BY_VARIABLE",
+  "misconceptionId": "L4_DIVIDE_BY_VARIABLE",
+  "conceptId": "L4",
+  "question": "Find the number of real solutions to the equation 3x^2 = 12x.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "3x^2 = 12x => 3x = 12 (dividing both sides by x)"
+   },
+   {
+    "n": 2,
+    "text": "x = 12 / 3"
+   },
+   {
+    "n": 3,
+    "text": "x = 4"
+   },
+   {
+    "n": 4,
+    "text": "Only one solution found"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 1 solution"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Do not divide both sides by x as it eliminates the root x = 0; instead, rearrange to 3x^2 - 12x = 0 and factorise to get 3x(x - 4) = 0.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L4_SUM_ROOTS_SIGN",
+  "misconceptionId": "L4_SUM_ROOTS_SIGN",
+  "conceptId": "L4",
+  "question": "If α and β are the roots of the quadratic equation 2x^2 + 6x − 8 = 0, find the value of α + β + αβ.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Equation: 2x^2 + 6x − 8 = 0"
+   },
+   {
+    "n": 2,
+    "text": "a = 2, b = 6, c = −8"
+   },
+   {
+    "n": 3,
+    "text": "Product of roots αβ = c/a = −8/2 = −4"
+   },
+   {
+    "n": 4,
+    "text": "Sum of roots α + β = b/a = 6/2 = 3"
+   },
+   {
+    "n": 5,
+    "text": "α + β + αβ = 3 + (−4)"
+   },
+   {
+    "n": 6,
+    "text": "Answer: −1"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "The sum of roots is given by −b/a, so you should compute −6/2 = −3 instead of 6/2 = 3.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L4_ZERO_PRODUCT_NONZERO",
+  "misconceptionId": "L4_ZERO_PRODUCT_NONZERO",
+  "conceptId": "L4",
+  "question": "Find the sum of all real values of x satisfying the equation (x − 1)(x − 4) = 4.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given: (x − 1)(x − 4) = 4"
+   },
+   {
+    "n": 2,
+    "text": "Let y = x − 1, then x − 4 = y − 3"
+   },
+   {
+    "n": 3,
+    "text": "y(y − 3) = 4"
+   },
+   {
+    "n": 4,
+    "text": "(x − 1)(x − 4) = 4"
+   },
+   {
+    "n": 5,
+    "text": "x − 1 = 4 or x − 4 = 4"
+   },
+   {
+    "n": 6,
+    "text": "Answer: x = 5 or x = 8, sum = 13"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "Expand the left side to get x^2 − 5x + 4 = 4, rearrange to x^2 − 5x = 0, and then solve for x since the zero-product property only applies when the product equals zero.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L5_MODULUS_ONE_CASE",
+  "misconceptionId": "L5_MODULUS_ONE_CASE",
+  "conceptId": "L5",
+  "question": "Find the range of values of x that satisfy the inequality |2x − 6| < 10.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "|2x − 6| < 10"
+   },
+   {
+    "n": 2,
+    "text": "2|x − 3| < 10 => |x − 3| < 5"
+   },
+   {
+    "n": 3,
+    "text": "x − 3 < 5"
+   },
+   {
+    "n": 4,
+    "text": "x < 5 + 3"
+   },
+   {
+    "n": 5,
+    "text": "x < 8"
+   },
+   {
+    "n": 6,
+    "text": "Answer: x < 8"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Remember that |x − 3| < 5 implies −5 < x − 3 < 5, so you must include the lower bound as well.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L5_MULTIPLY_UNKNOWN_SIGN",
+  "misconceptionId": "L5_MULTIPLY_UNKNOWN_SIGN",
+  "conceptId": "L5",
+  "question": "Find the set of all real numbers x that satisfy the inequality 3/(x - 2) < 1.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given inequality: 3/(x - 2) < 1"
+   },
+   {
+    "n": 2,
+    "text": "Denominator cannot be zero, so x != 2"
+   },
+   {
+    "n": 3,
+    "text": "Cross-multiplying by (x - 2): 3 < 1 × (x - 2)"
+   },
+   {
+    "n": 4,
+    "text": "3 < x - 2"
+   },
+   {
+    "n": 5,
+    "text": "Add 2 to both sides: 5 < x"
+   },
+   {
+    "n": 6,
+    "text": "Rearranging: x > 5"
+   },
+   {
+    "n": 7,
+    "text": "Answer: x > 5"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Instead of multiplying by (x - 2) which could be negative, subtract 1 to get (3 - (x - 2))/(x - 2) < 0 and analyze the signs.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L5_NEG_NO_FLIP",
+  "misconceptionId": "L5_NEG_NO_FLIP",
+  "conceptId": "L5",
+  "question": "Find the range of values of x that satisfy the inequality −3x + 5 > 11.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "−3x + 5 > 11"
+   },
+   {
+    "n": 2,
+    "text": "−3x > 11 − 5 ⇒ −3x > 6"
+   },
+   {
+    "n": 3,
+    "text": "x > 6 ÷ (−3) ⇒ x > −2"
+   },
+   {
+    "n": 4,
+    "text": "Answer: x > −2"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "When dividing both sides of an inequality by a negative number, remember to reverse the inequality sign to get x < −2.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L6_COUNT_TERMS_NO_PLUS_ONE",
+  "misconceptionId": "L6_COUNT_TERMS_NO_PLUS_ONE",
+  "conceptId": "L6",
+  "question": "How many multiples of 4 are there in the inclusive range from 12 to 96?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Number of multiples = (96 − 12) ÷ 4"
+   },
+   {
+    "n": 2,
+    "text": "= 84 ÷ 4"
+   },
+   {
+    "n": 3,
+    "text": "= 21"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 21"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember to add 1 when counting terms in an inclusive sequence: the formula is (last − first) ÷ step + 1, which gives (96 − 12) ÷ 4 + 1.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L6_IGNORE_RATIO_SIGN",
+  "misconceptionId": "L6_IGNORE_RATIO_SIGN",
+  "conceptId": "L6",
+  "question": "Find the sum to infinity of the geometric progression 8 − 4 + 2 − 1 + ...",
+  "lines": [
+   {
+    "n": 1,
+    "text": "a = 8, r = 1/2"
+   },
+   {
+    "n": 2,
+    "text": "S_inf = a / (1 − r)"
+   },
+   {
+    "n": 3,
+    "text": "S_inf = 8 / (1 − 1/2) = 8 / (1/2) = 16"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 16"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Because the terms alternate in sign, the common ratio r is (−4)/8 = −1/2, not +1/2.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L6_N_INSTEAD_OF_N_MINUS_1",
+  "misconceptionId": "L6_N_INSTEAD_OF_N_MINUS_1",
+  "conceptId": "L6",
+  "question": "Find the 10th term of the arithmetic progression 3, 7, 11, ...",
+  "lines": [
+   {
+    "n": 1,
+    "text": "T10 = a + 10d"
+   },
+   {
+    "n": 2,
+    "text": "a = 3, d = 7 - 3 = 4"
+   },
+   {
+    "n": 3,
+    "text": "T10 = 3 + 10 × 4"
+   },
+   {
+    "n": 4,
+    "text": "T10 = 3 + 40 = 43"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 43"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Use the formula T_n = a + (n − 1)d instead of a + nd, so the 10th term should be written as T10 = a + 9d.",
+  "source": "library"
+ },
+ {
+  "id": "lib-L7_COMPOSITION_ORDER",
+  "misconceptionId": "L7_COMPOSITION_ORDER",
+  "conceptId": "L7",
+  "question": "If f(x) = 2x + 1 and g(x) = x^2, find the value of f(g(3)).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "f(x) = 2x + 1, g(x) = x^2, evaluate f(g(3))"
+   },
+   {
+    "n": 2,
+    "text": "First evaluate f(3) = 2(3) + 1 = 7"
+   },
+   {
+    "n": 3,
+    "text": "Then apply g to the result: g(7) = 7^2 = 49"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 49"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "You should evaluate the inner function first to get g(3) = 3^2 = 9, and then find f(9).",
+  "source": "library"
+ },
+ {
+  "id": "lib-L7_SHIFT_DIRECTION",
+  "misconceptionId": "L7_SHIFT_DIRECTION",
+  "conceptId": "L7",
+  "question": "Find the value of x at which the quadratic function y = (x − 3)^2 achieves its minimum value.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "y = x^2 has its vertex and minimum at x = 0"
+   },
+   {
+    "n": 2,
+    "text": "Replacing x with x − 3 shifts the graph left by 3 units"
+   },
+   {
+    "n": 3,
+    "text": "New x-coordinate of the vertex = 0 − 3"
+   },
+   {
+    "n": 4,
+    "text": "x = −3"
+   },
+   {
+    "n": 5,
+    "text": "Answer: x = −3"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Remember that replacing x with x − 3 shifts the graph to the right by 3 units, not to the left.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M1_EXACTLY_TWO_PAIRWISE",
+  "misconceptionId": "M1_EXACTLY_TWO_PAIRWISE",
+  "conceptId": "M1",
+  "question": "In a survey of students, 12 like both Math and Physics, 10 like both Physics and Chemistry, 8 like both Math and Chemistry, and 5 like all three subjects. How many students like exactly two of these three subjects?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Pairwise overlaps: n(M∩P) = 12, n(P∩C) = 10, n(M∩C) = 8"
+   },
+   {
+    "n": 2,
+    "text": "Triple overlap: n(M∩P∩C) = 5"
+   },
+   {
+    "n": 3,
+    "text": "Exactly two subjects = n(M∩P) + n(P∩C) + n(M∩C)"
+   },
+   {
+    "n": 4,
+    "text": "= 12 + 10 + 8 = 30"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 30"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Subtract 3 × n(M∩P∩C) from the sum of the pairwise intersections, because each two-set overlap includes the students who like all three subjects.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M1_FORGET_TRIPLE",
+  "misconceptionId": "M1_FORGET_TRIPLE",
+  "conceptId": "M1",
+  "question": "In a survey of students, 40 like Apple, 35 like Banana, and 30 like Cherry. Exactly 12 like Apple and Banana, 10 like Banana and Cherry, 8 like Apple and Cherry, and 5 like all three. How many students like at least one of the fruits?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total singles = 40 + 35 + 30 = 105"
+   },
+   {
+    "n": 2,
+    "text": "Pairwise overlaps = 12 + 10 + 8 = 30, all three = 5"
+   },
+   {
+    "n": 3,
+    "text": "Union = 105 − 30 = 75"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 75"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "By the Principle of Inclusion-Exclusion, you must add back the triple intersection, giving Union = 105 − 30 + 5 = 80.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M2_CIRCULAR_AS_LINEAR",
+  "misconceptionId": "M2_CIRCULAR_AS_LINEAR",
+  "conceptId": "M2",
+  "question": "In how many distinct ways can 6 people be seated around a round dining table?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total people to be seated = 6"
+   },
+   {
+    "n": 2,
+    "text": "Table shape = circular"
+   },
+   {
+    "n": 3,
+    "text": "Let the people be P1, P2, P3, P4, P5, P6"
+   },
+   {
+    "n": 4,
+    "text": "Need to find distinct seating arrangements"
+   },
+   {
+    "n": 5,
+    "text": "Count ways to arrange 6 items"
+   },
+   {
+    "n": 6,
+    "text": "Ways around circular table = 6!"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 720"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "Because circular rotations of the same seating order are indistinguishable, you should fix one person's position and arrange the remaining 5 as (6 − 1)! = 5! = 120.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M2_OVERCOUNT_IDENTICAL",
+  "misconceptionId": "M2_OVERCOUNT_IDENTICAL",
+  "conceptId": "M2",
+  "question": "In how many distinct ways can the letters of the word LEVEL be arranged?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Word has 5 letters: L, E, V, E, L"
+   },
+   {
+    "n": 2,
+    "text": "Frequencies: L appears 2 times, E appears 2 times, V appears 1 time"
+   },
+   {
+    "n": 3,
+    "text": "Total positions to fill = 5"
+   },
+   {
+    "n": 4,
+    "text": "Number of arrangements = 5!"
+   },
+   {
+    "n": 5,
+    "text": "= 5 × 4 × 3 × 2 × 1"
+   },
+   {
+    "n": 6,
+    "text": "= 120"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 120"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Because the letters L and E each repeat twice, you must divide by the factorials of their counts: 5! / (2! × 2!).",
+  "source": "library"
+ },
+ {
+  "id": "lib-M2_PERM_FOR_COMB",
+  "misconceptionId": "M2_PERM_FOR_COMB",
+  "conceptId": "M2",
+  "question": "In how many ways can a committee of 3 members be selected from a group of 7 people?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Number of ways to form committee = 7P3"
+   },
+   {
+    "n": 2,
+    "text": "= 7! / (7 − 3)!"
+   },
+   {
+    "n": 3,
+    "text": "= 7 × 6 × 5"
+   },
+   {
+    "n": 4,
+    "text": "= 210"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 210"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Because the order of members in a committee does not matter, you should use combinations (7C3) rather than permutations (7P3).",
+  "source": "library"
+ },
+ {
+  "id": "lib-M3_ADD_NON_EXCLUSIVE",
+  "misconceptionId": "M3_ADD_NON_EXCLUSIVE",
+  "conceptId": "M3",
+  "question": "A single card is drawn at random from a standard deck of 52 playing cards. What is the probability that the card drawn is either a King or a Heart?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total cards in deck = 52"
+   },
+   {
+    "n": 2,
+    "text": "Number of Kings = 4, so P(King) = 4/52"
+   },
+   {
+    "n": 3,
+    "text": "Number of Hearts = 13, so P(Heart) = 13/52"
+   },
+   {
+    "n": 4,
+    "text": "Card can be both: King of Hearts = 1 card"
+   },
+   {
+    "n": 5,
+    "text": "So P(King and Heart) = 1/52"
+   },
+   {
+    "n": 6,
+    "text": "P(King or Heart) = P(King) + P(Heart) = 4/52 + 13/52"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 17/52"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "Subtract the intersection using P(A or B) = P(A) + P(B) − P(A and B), which gives (4/52 + 13/52) − 1/52 = 16/52 = 4/13.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M3_DEPENDENT_AS_INDEPENDENT",
+  "misconceptionId": "M3_DEPENDENT_AS_INDEPENDENT",
+  "conceptId": "M3",
+  "question": "A bag contains 5 red balls and 3 blue balls. If two balls are drawn at random one after another without replacement, what is the probability that both balls are red?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total balls = 5 + 3 = 8"
+   },
+   {
+    "n": 2,
+    "text": "P(1st Red) = 5/8, P(2nd Red) = 5/8"
+   },
+   {
+    "n": 3,
+    "text": "P(both Red) = P(1st Red) × P(2nd Red)"
+   },
+   {
+    "n": 4,
+    "text": "= (5/8) × (5/8)"
+   },
+   {
+    "n": 5,
+    "text": "= (5 × 5) / (8 × 8)"
+   },
+   {
+    "n": 6,
+    "text": "= 25/64"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 25/64"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Since the first ball is not replaced, only 4 red balls and 7 total balls remain, so P(2nd Red) should be 4/7.",
+  "source": "library"
+ },
+ {
+  "id": "lib-M3_OUTCOMES_NOT_EQUALLY_LIKELY",
+  "misconceptionId": "M3_OUTCOMES_NOT_EQUALLY_LIKELY",
+  "conceptId": "M3",
+  "question": "Two standard fair six-sided dice are rolled simultaneously. What is the probability that the sum of the numbers shown on the dice is 7?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Sum of two dice ranges from 2 to 12"
+   },
+   {
+    "n": 2,
+    "text": "Total distinct possible sums = 12 - 2 + 1 = 11"
+   },
+   {
+    "n": 3,
+    "text": "Each sum is equally likely, so P(sum = 7) = 1/11"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 1/11"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Instead of assuming all 11 sums are equally likely, count favorable ordered pairs out of the 36 equally likely outcomes to get 6/36 = 1/6.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N1_DIVISIBLE_BY_PRODUCT",
+  "misconceptionId": "N1_DIVISIBLE_BY_PRODUCT",
+  "conceptId": "N1",
+  "question": "How many positive integers up to 100 are divisible by both 4 and 6?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Range of integers is from 1 to 100"
+   },
+   {
+    "n": 2,
+    "text": "Divisible by 4 implies n is a multiple of 4"
+   },
+   {
+    "n": 3,
+    "text": "Divisible by 6 implies n is a multiple of 6"
+   },
+   {
+    "n": 4,
+    "text": "Need to find common multiples of 4 and 6 in this range"
+   },
+   {
+    "n": 5,
+    "text": "Smallest common multiple = 4 × 6 = 24"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 100 ÷ 24 = 4"
+   }
+  ],
+  "errorLine": 5,
+  "fix": "You should find the LCM of 4 and 6, which is 12, rather than multiplying them together since they share a common factor.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N1_FACTOR_COUNT_NO_PLUS_ONE",
+  "misconceptionId": "N1_FACTOR_COUNT_NO_PLUS_ONE",
+  "conceptId": "N1",
+  "question": "Find the total number of factors of 72.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "72 = 8 × 9 = 2^3 × 3^2"
+   },
+   {
+    "n": 2,
+    "text": "Total factors = 3 × 2"
+   },
+   {
+    "n": 3,
+    "text": "Total factors = 6"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 6"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Add 1 to each exponent to account for the zero power, giving (3 + 1) × (2 + 1) = 4 × 3 = 12 factors.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N2_HCF_FOR_LCM",
+  "misconceptionId": "N2_HCF_FOR_LCM",
+  "conceptId": "N2",
+  "question": "Three bells toll at intervals of 6, 8, and 12 minutes, respectively. If they toll together now, after how many minutes will they next toll together?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Bell intervals: 6 min, 8 min, 12 min"
+   },
+   {
+    "n": 2,
+    "text": "Prime factors: 6 = 2 × 3, 8 = 2^3, 12 = 2^2 × 3"
+   },
+   {
+    "n": 3,
+    "text": "Interval to toll together again = HCF(6, 8, 12) = 2"
+   },
+   {
+    "n": 4,
+    "text": "Answer: after 2 minutes"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "To find when repetitive events coincide again, you need the least common multiple, LCM(6, 8, 12) = 24 minutes, rather than the HCF.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N2_PRODUCT_RULE_3NUMS",
+  "misconceptionId": "N2_PRODUCT_RULE_3NUMS",
+  "conceptId": "N2",
+  "question": "Find the least common multiple (LCM) of the three numbers 4, 6, and 10.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Numbers given: 4, 6, 10"
+   },
+   {
+    "n": 2,
+    "text": "Prime factors: 4 = 2^2, 6 = 2 × 3, 10 = 2 × 5"
+   },
+   {
+    "n": 3,
+    "text": "Common prime factor to all three is 2"
+   },
+   {
+    "n": 4,
+    "text": "HCF(4, 6, 10) = 2"
+   },
+   {
+    "n": 5,
+    "text": "Product of the numbers = 4 × 6 × 10 = 240"
+   },
+   {
+    "n": 6,
+    "text": "LCM(4, 6, 10) = Product ÷ HCF = 240 ÷ 2"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 120"
+   }
+  ],
+  "errorLine": 6,
+  "fix": "Do not use the identity LCM × HCF = Product for three numbers; instead, take the highest power of each prime factor, giving LCM = 2^2 × 3 × 5 = 60.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N2_REMAINDER_NOT_SUBTRACTED",
+  "misconceptionId": "N2_REMAINDER_NOT_SUBTRACTED",
+  "conceptId": "N2",
+  "question": "Find the largest number that divides 70 and 125, leaving remainders of 5 and 8 respectively.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Divisor divides 70 leaving remainder 5"
+   },
+   {
+    "n": 2,
+    "text": "Divisor divides 125 leaving remainder 8"
+   },
+   {
+    "n": 3,
+    "text": "Divisor must be greater than 8"
+   },
+   {
+    "n": 4,
+    "text": "Required number = HCF(70, 125)"
+   },
+   {
+    "n": 5,
+    "text": "HCF(70, 125) = HCF(2 × 5 × 7, 5^3) = 5"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 5"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Subtract the remainders first and find HCF(70 − 5, 125 − 8) = HCF(65, 117).",
+  "source": "library"
+ },
+ {
+  "id": "lib-N3_CANCEL_NOT_RESTORED",
+  "misconceptionId": "N3_CANCEL_NOT_RESTORED",
+  "conceptId": "N3",
+  "question": "Find the remainder when 28 is divided by 12.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Need R(28 ÷ 12)"
+   },
+   {
+    "n": 2,
+    "text": "Factor out 4: 28/12 = 7/3"
+   },
+   {
+    "n": 3,
+    "text": "R(28 ÷ 12) = R(7 ÷ 3)"
+   },
+   {
+    "n": 4,
+    "text": "7 = 3 × 2 + 1"
+   },
+   {
+    "n": 5,
+    "text": "Remainder = 1"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 1"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Remember that dividing both numbers by 4 scales down the remainder, so you must multiply the remainder of 7 ÷ 3 by 4 to get the original remainder.",
+  "source": "library"
+ },
+ {
+  "id": "lib-N3_CYCLICITY_ZERO_INDEX",
+  "misconceptionId": "N3_CYCLICITY_ZERO_INDEX",
+  "conceptId": "N3",
+  "question": "What is the units digit of the number 2^100?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Find units digit of 2^100"
+   },
+   {
+    "n": 2,
+    "text": "Units digit cycle of 2 is 2, 4, 8, 6 (length 4)"
+   },
+   {
+    "n": 3,
+    "text": "Remainder when 100 is divided by 4: 100 mod 4 = 0"
+   },
+   {
+    "n": 4,
+    "text": "Since remainder is 0, units digit is 2^0 = 1"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 1"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "A remainder of 0 means the exponent completes the full cycle, so you should take the 4th (last) element of the cycle, which is 6 (or 2^4).",
+  "source": "library"
+ },
+ {
+  "id": "lib-N3_NEGATIVE_REMAINDER",
+  "misconceptionId": "N3_NEGATIVE_REMAINDER",
+  "conceptId": "N3",
+  "question": "Find the remainder when 5^99 is divided by 6.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Need Rem[5^99 / 6]"
+   },
+   {
+    "n": 2,
+    "text": "5 ≡ −1 (mod 6) => 5^99 ≡ (−1)^99 = −1 (mod 6)"
+   },
+   {
+    "n": 3,
+    "text": "Remainder cannot be negative, drop sign => Rem = 1"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 1"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "To convert a negative remainder to a standard positive remainder, add the divisor: −1 + 6 = 5.",
+  "source": "library"
+ },
+ {
+  "id": "seed-0-A1_ADD_SUCCESSIVE",
+  "misconceptionId": "A1_ADD_SUCCESSIVE",
+  "conceptId": "A1",
+  "question": "A shirt's price is increased by 30% and then decreased by 10%. What is the net percentage change in its price?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Initial price = 100"
+   },
+   {
+    "n": 2,
+    "text": "Net % change = +30% − 10% = +20%"
+   },
+   {
+    "n": 3,
+    "text": "Final price = 100 + 20% of 100"
+   },
+   {
+    "n": 4,
+    "text": "Final price = 100 + 20 = 120"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 20% increase"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Multiply the successive multiplying factors (1.30 × 0.90 = 1.17) rather than simply adding or subtracting the percentages.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-1-A1_BASE_SWAP",
+  "misconceptionId": "A1_BASE_SWAP",
+  "conceptId": "A1",
+  "question": "Ravi's salary is 50% more than Sunil's. By what percent is Sunil's salary less than Ravi's?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Let Sunil = 100, so Ravi = 150"
+   },
+   {
+    "n": 2,
+    "text": "Difference = 50, percent less = 50 / 100 × 100%"
+   },
+   {
+    "n": 3,
+    "text": "= 50%"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 50%"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Calculate the percentage reduction using Ravi's salary as the base: (50 / 150) × 100% = 33.33%.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-10-A8_SAME_DIR_SUM",
+  "misconceptionId": "A8_SAME_DIR_SUM",
+  "conceptId": "A8",
+  "question": "Two trains 120 m and 180 m long run in the same direction at 90 km/h and 54 km/h. How long does the faster train take to completely pass the slower one?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Relative speed (same dir) = 25 m/s + 15 m/s = 40 m/s"
+   },
+   {
+    "n": 2,
+    "text": "Total distance = 120 + 180 = 300 m"
+   },
+   {
+    "n": 3,
+    "text": "Time = 300 ÷ 40 = 7.5 s"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 7.5 s"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Subtract the speeds instead of adding them when two objects move in the same direction: relative speed = 25 − 15 = 10 m/s.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-11-A8_IGNORE_TRAIN_LENGTH",
+  "misconceptionId": "A8_IGNORE_TRAIN_LENGTH",
+  "conceptId": "A8",
+  "question": "A 150 m long train running at 54 km/h crosses a 300 m long bridge. How long does it take to cross the bridge completely?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Train length = 150 m, Bridge length = 300 m"
+   },
+   {
+    "n": 2,
+    "text": "Speed = 54 km/h = 54 × (5/18) m/s"
+   },
+   {
+    "n": 3,
+    "text": "Speed = 15 m/s"
+   },
+   {
+    "n": 4,
+    "text": "Distance to cross = 300 m"
+   },
+   {
+    "n": 5,
+    "text": "Time = Distance ÷ Speed"
+   },
+   {
+    "n": 6,
+    "text": "Time = 300 ÷ 15 = 20 s"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 20 s"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "To cross the bridge completely, the train must cover both its own length and the bridge length, so Distance should be 150 + 300 = 450 m.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-12-N3_NEGATIVE_REMAINDER",
+  "misconceptionId": "N3_NEGATIVE_REMAINDER",
+  "conceptId": "N3",
+  "question": "Find the remainder when 7^51 is divided by 8.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "7 ≡ −1 (mod 8)"
+   },
+   {
+    "n": 2,
+    "text": "7^51 ≡ (−1)^51 ≡ −1 (mod 8)"
+   },
+   {
+    "n": 3,
+    "text": "Remainder = 1 (ignoring the negative sign)"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 1"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "To convert a negative remainder to a valid positive remainder, add the divisor: −1 + 8 = 7.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-13-L2_LOG_OF_SUM",
+  "misconceptionId": "L2_LOG_OF_SUM",
+  "conceptId": "L2",
+  "question": "Evaluate log_2(16 + 16).",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given expression: log_2(16 + 16)"
+   },
+   {
+    "n": 2,
+    "text": "Here, base = 2 and argument = 16 + 16"
+   },
+   {
+    "n": 3,
+    "text": "Notice 16 = 2^4, so log_2(16) = 4"
+   },
+   {
+    "n": 4,
+    "text": "= log_2(16) + log_2(16)"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 4 + 4 = 8"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "You cannot split the logarithm of a sum; add the terms first to get log_2(32) = 5.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-14-L4_DIVIDE_BY_VARIABLE",
+  "misconceptionId": "L4_DIVIDE_BY_VARIABLE",
+  "conceptId": "L4",
+  "question": "How many real roots does the equation x^3 = 9x have?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "x^3 = 9x"
+   },
+   {
+    "n": 2,
+    "text": "Divide both sides by x: x^2 = 9"
+   },
+   {
+    "n": 3,
+    "text": "x = 3, -3"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 2 roots"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Do not divide by x since x could be 0; instead, rewrite the equation as x^3 - 9x = 0 and factorise it as x(x^2 - 9) = 0.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-15-L5_NEG_NO_FLIP",
+  "misconceptionId": "L5_NEG_NO_FLIP",
+  "conceptId": "L5",
+  "question": "Find the range of x for which 7 − 2x > 15.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "7 − 2x > 15"
+   },
+   {
+    "n": 2,
+    "text": "−2x > 15 − 7 = 8"
+   },
+   {
+    "n": 3,
+    "text": "x > 8 ÷ (−2) = −4"
+   },
+   {
+    "n": 4,
+    "text": "Answer: x > −4"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Remember to flip the inequality sign when dividing by a negative number, giving x < −4.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-16-L6_N_INSTEAD_OF_N_MINUS_1",
+  "misconceptionId": "L6_N_INSTEAD_OF_N_MINUS_1",
+  "conceptId": "L6",
+  "question": "Find the 15th term of the AP 5, 8, 11, ...",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Formula for nth term: T_n = a + n × d"
+   },
+   {
+    "n": 2,
+    "text": "Here, first term a = 5"
+   },
+   {
+    "n": 3,
+    "text": "Common difference d = 8 − 5 = 3"
+   },
+   {
+    "n": 4,
+    "text": "Term number n = 15"
+   },
+   {
+    "n": 5,
+    "text": "T_15 = 5 + 15 × 3"
+   },
+   {
+    "n": 6,
+    "text": "T_15 = 5 + 45"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 50"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Remember that the first term already accounts for one position, so the nth term formula is T_n = a + (n − 1)d, not a + nd.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-17-G2_AREA_RATIO_NOT_SQUARED",
+  "misconceptionId": "G2_AREA_RATIO_NOT_SQUARED",
+  "conceptId": "G2",
+  "question": "Two similar triangles have corresponding sides of 3 cm and 5 cm. If the smaller triangle has an area of 27 sq cm, find the area of the larger one.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Area ratio = side ratio = 3 : 5"
+   },
+   {
+    "n": 2,
+    "text": "Area(large) / Area(small) = 5 / 3"
+   },
+   {
+    "n": 3,
+    "text": "Area(large) = 27 × (5 / 3) = 45"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 45 sq cm"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "Square the side ratio to get the ratio of areas: (3/5)^2 = 9/25.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-18-G3_INSCRIBED_VS_CENTRAL",
+  "misconceptionId": "G3_INSCRIBED_VS_CENTRAL",
+  "conceptId": "G3",
+  "question": "Chord AB of a circle subtends an angle of 80° at the centre O. Find angle ACB, where C is a point on the major arc.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Given: Central angle AOB = 80°"
+   },
+   {
+    "n": 2,
+    "text": "Inscribed angle on same arc has equal measure: ACB = AOB"
+   },
+   {
+    "n": 3,
+    "text": "So ACB = 80°"
+   },
+   {
+    "n": 4,
+    "text": "Let measure of angle ACB be θ"
+   },
+   {
+    "n": 5,
+    "text": "θ = 80°"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 80°"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "The angle subtended at the circumference is half the angle subtended at the centre, so angle ACB should be (1/2) × 80° = 40°.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-19-M2_PERM_FOR_COMB",
+  "misconceptionId": "M2_PERM_FOR_COMB",
+  "conceptId": "M2",
+  "question": "In how many ways can a team of 2 be chosen from 6 people?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total people = 6, team size to select = 2"
+   },
+   {
+    "n": 2,
+    "text": "Ways to choose = 6P2"
+   },
+   {
+    "n": 3,
+    "text": "= 6! / (6 − 2)!"
+   },
+   {
+    "n": 4,
+    "text": "= 6! / 4!"
+   },
+   {
+    "n": 5,
+    "text": "= (6 × 5 × 4!) / 4!"
+   },
+   {
+    "n": 6,
+    "text": "= 6 × 5 = 30"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 30"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Since the order of selecting team members does not matter, you should use combinations (6C2) instead of permutations (6P2).",
+  "source": "seed"
+ },
+ {
+  "id": "seed-2-A3_AVG_OF_AVGS",
+  "misconceptionId": "A3_AVG_OF_AVGS",
+  "conceptId": "A3",
+  "question": "Section A has 40 students with an average of 50 marks and section B has 10 students with an average of 80 marks. Find the average marks of all 50 students.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A has 40 students (avg = 50), B has 10 students (avg = 80)"
+   },
+   {
+    "n": 2,
+    "text": "Combined average = (50 + 80) ÷ 2"
+   },
+   {
+    "n": 3,
+    "text": "Combined average = 130 ÷ 2 = 65"
+   },
+   {
+    "n": 4,
+    "text": "Answer: 65"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Weight the averages by the number of students in each section: (40 × 50 + 10 × 80) ÷ (40 + 10).",
+  "source": "seed"
+ },
+ {
+  "id": "seed-20-M2_OVERCOUNT_IDENTICAL",
+  "misconceptionId": "M2_OVERCOUNT_IDENTICAL",
+  "conceptId": "M2",
+  "question": "How many distinct arrangements of the letters of the word BANANA are there?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Word has 6 letters: 1 B, 3 As, 2 Ns"
+   },
+   {
+    "n": 2,
+    "text": "Total letters n = 6"
+   },
+   {
+    "n": 3,
+    "text": "Distinct arrangements = 6!"
+   },
+   {
+    "n": 4,
+    "text": "= 720"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 720"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Divide 6! by 3! × 2! to account for the identical letters A and N.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-21-M3_ADD_NON_EXCLUSIVE",
+  "misconceptionId": "M3_ADD_NON_EXCLUSIVE",
+  "conceptId": "M3",
+  "question": "A number is chosen at random from 1 to 20. What is the probability that it is a multiple of 2 or a multiple of 5?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "P(mult of 2) = 10/20, P(mult of 5) = 4/20"
+   },
+   {
+    "n": 2,
+    "text": "P(mult of 2 or 5) = 10/20 + 4/20"
+   },
+   {
+    "n": 3,
+    "text": "= (10 + 4) / 20"
+   },
+   {
+    "n": 4,
+    "text": "= 14/20 = 7/10"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 7/10"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Subtract the probability of the overlap (multiples of 10) since 10 and 20 are counted in both sets: P(A or B) = P(A) + P(B) − P(A and B).",
+  "source": "seed"
+ },
+ {
+  "id": "seed-22-M3_DEPENDENT_AS_INDEPENDENT",
+  "misconceptionId": "M3_DEPENDENT_AS_INDEPENDENT",
+  "conceptId": "M3",
+  "question": "A bag has 4 white and 6 black balls. Two balls are drawn one after another without replacement. Find the probability that both are white.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Total balls = 4 + 6 = 10, P(1st ball is white) = 4/10 = 2/5"
+   },
+   {
+    "n": 2,
+    "text": "P(2nd ball is white) = 4/10"
+   },
+   {
+    "n": 3,
+    "text": "P(2nd ball is white) = 2/5"
+   },
+   {
+    "n": 4,
+    "text": "P(both white) = P(1st white) × P(2nd white)"
+   },
+   {
+    "n": 5,
+    "text": "P(both white) = (2/5) × (2/5)"
+   },
+   {
+    "n": 6,
+    "text": "P(both white) = 4/25"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 4/25"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Because the draw is without replacement, one white ball is already gone, so the probability for the second ball being white should be 3/9 instead of 4/10.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-3-A4_PROFIT_ON_SP",
+  "misconceptionId": "A4_PROFIT_ON_SP",
+  "conceptId": "A4",
+  "question": "A trader buys a watch for Rs 600 and sells it for Rs 750. Find his profit percentage.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Profit = SP − CP = 750 − 600 = 150"
+   },
+   {
+    "n": 2,
+    "text": "Profit % = (Profit ÷ SP) × 100"
+   },
+   {
+    "n": 3,
+    "text": "Profit % = (150 ÷ 750) × 100"
+   },
+   {
+    "n": 4,
+    "text": "= (1 ÷ 5) × 100 = 20%"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 20%"
+   }
+  ],
+  "errorLine": 2,
+  "fix": "Calculate profit percentage on the cost price by using (Profit ÷ CP) × 100 instead of dividing by the selling price.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-4-A4_ADD_DISCOUNTS",
+  "misconceptionId": "A4_ADD_DISCOUNTS",
+  "conceptId": "A4",
+  "question": "A jacket marked at Rs 2000 is sold after successive discounts of 25% and 10%. Find the selling price.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Marked Price = Rs 2000"
+   },
+   {
+    "n": 2,
+    "text": "First discount = 25%, Second discount = 10%"
+   },
+   {
+    "n": 3,
+    "text": "Total discount = 25% + 10% = 35%"
+   },
+   {
+    "n": 4,
+    "text": "Answer: Rs 2000 × (1 − 0.35) = Rs 1300"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "Calculate the effective discount as 1 − (1 − 0.25) × (1 − 0.10) = 32.5%, rather than adding the percentages directly.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-5-A5_SI_FOR_CI",
+  "misconceptionId": "A5_SI_FOR_CI",
+  "conceptId": "A5",
+  "question": "Find the compound interest on Rs 5000 at 20% per annum for 2 years, compounded annually.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Annual interest each year = 5000 × 20%"
+   },
+   {
+    "n": 2,
+    "text": "Annual interest = 5000 × 0.20 = 1000"
+   },
+   {
+    "n": 3,
+    "text": "Time period = 2 years"
+   },
+   {
+    "n": 4,
+    "text": "Total interest for 2 years = 1000 × 2"
+   },
+   {
+    "n": 5,
+    "text": "Total interest = 2000"
+   },
+   {
+    "n": 6,
+    "text": "Compound interest = 2000"
+   },
+   {
+    "n": 7,
+    "text": "Answer: Rs 2000"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "For compound interest, calculate each year's interest on the accumulated amount rather than keeping the interest fixed on the original principal every year.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-6-A5_HALFYEARLY_RATE",
+  "misconceptionId": "A5_HALFYEARLY_RATE",
+  "conceptId": "A5",
+  "question": "Find the amount on Rs 8000 at 10% per annum for 1 year, compounded half-yearly.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Rate per half-year = 10%, n = 1 period"
+   },
+   {
+    "n": 2,
+    "text": "A = P × (1 + r/100)^n"
+   },
+   {
+    "n": 3,
+    "text": "A = 8000 × (1 + 10/100)^1"
+   },
+   {
+    "n": 4,
+    "text": "A = 8000 × 1.10"
+   },
+   {
+    "n": 5,
+    "text": "A = 8800"
+   },
+   {
+    "n": 6,
+    "text": "Answer: Rs 8800"
+   }
+  ],
+  "errorLine": 1,
+  "fix": "For half-yearly compounding, divide the annual rate by 2 to get 5% per period and multiply the number of years by 2 to get 2 half-year periods.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-7-A6_ALLIGATION_ON_QUANTITIES",
+  "misconceptionId": "A6_ALLIGATION_ON_QUANTITIES",
+  "conceptId": "A6",
+  "question": "Mixture A has milk and water in the ratio 7:3 and mixture B has them in the ratio 2:3. In what ratio should A and B be mixed to get milk and water in the ratio 3:2?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A has milk:water = 7:3, B has 2:3"
+   },
+   {
+    "n": 2,
+    "text": "Target ratio of milk:water = 3:2"
+   },
+   {
+    "n": 3,
+    "text": "Alligate milk parts: 7 from A, 2 from B, target 3"
+   },
+   {
+    "n": 4,
+    "text": "Difference on left: |2 − 3| = 1"
+   },
+   {
+    "n": 5,
+    "text": "Difference on right: |7 − 3| = 4"
+   },
+   {
+    "n": 6,
+    "text": "Ratio of A to B = 1:4"
+   },
+   {
+    "n": 7,
+    "text": "Answer: 1:4"
+   }
+  ],
+  "errorLine": 3,
+  "fix": "You must use the concentration or fraction of milk (7/10, 2/5, and 3/5) rather than the raw ratio parts in the alligation cross.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-8-A7_ADD_DAYS",
+  "misconceptionId": "A7_ADD_DAYS",
+  "conceptId": "A7",
+  "question": "A can complete a job in 12 days and B can complete it in 24 days. How many days will they take working together?",
+  "lines": [
+   {
+    "n": 1,
+    "text": "A's time = 12 days"
+   },
+   {
+    "n": 2,
+    "text": "B's time = 24 days"
+   },
+   {
+    "n": 3,
+    "text": "Total work = LCM(12, 24) = 24 units"
+   },
+   {
+    "n": 4,
+    "text": "Time taken together = 12 + 24"
+   },
+   {
+    "n": 5,
+    "text": "Combined days = 36"
+   },
+   {
+    "n": 6,
+    "text": "Answer: 36 days"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "You should combine their rates of work (24/12 + 24/24 = 2 + 1 = 3 units/day) rather than adding their individual times.",
+  "source": "seed"
+ },
+ {
+  "id": "seed-9-A8_MEAN_OF_SPEEDS",
+  "misconceptionId": "A8_MEAN_OF_SPEEDS",
+  "conceptId": "A8",
+  "question": "A car goes from P to Q at 30 km/h and returns from Q to P at 60 km/h. Find its average speed for the round trip.",
+  "lines": [
+   {
+    "n": 1,
+    "text": "Distance from P to Q = d km, distance Q to P = d km"
+   },
+   {
+    "n": 2,
+    "text": "Speed 1 = 30 km/h, Speed 2 = 60 km/h"
+   },
+   {
+    "n": 3,
+    "text": "Total distance = d + d = 2d km"
+   },
+   {
+    "n": 4,
+    "text": "Average speed = (30 + 60) ÷ 2 = 45 km/h"
+   },
+   {
+    "n": 5,
+    "text": "Answer: 45 km/h"
+   }
+  ],
+  "errorLine": 4,
+  "fix": "Calculate average speed as total distance divided by total time, 2d ÷ (d/30 + d/60) = 2 × 30 × 60 ÷ (30 + 60) = 40 km/h, instead of taking the simple arithmetic mean.",
+  "source": "seed"
+ }
+]

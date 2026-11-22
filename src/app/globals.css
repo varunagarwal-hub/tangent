@@ -460,3 +460,13 @@
 .katex {
   font-size: 1.04em;
 }
+
+/* ── play ── */
+@keyframes spot-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  [class*="spot-shake"] { animation: none !important; }
+}

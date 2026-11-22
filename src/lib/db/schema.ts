@@ -254,3 +254,17 @@ export const studentQueries = pgTable(
   },
   (t) => [index("student_queries_student_idx").on(t.studentId, t.createdAt), index("student_queries_class_idx").on(t.classId, t.status, t.createdAt)],
 );
+
+/** Scores for the mini-games (Spot the Tangent, CAT speed sprint). Per-round details in `details`. */
+export const gameScores = pgTable(
+  "game_scores",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    studentId: uuid("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+    game: text("game", { enum: ["spot", "sprint"] }).notNull(),
+    score: integer("score").notNull(),
+    details: jsonb("details").$type<Record<string, unknown>>(),
+    createdAt: createdAt(),
+  },
+  (t) => [index("game_scores_student_idx").on(t.studentId, t.game, t.createdAt)],
+);

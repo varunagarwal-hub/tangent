@@ -26,6 +26,7 @@ const STUDENT_NAV = [
   { href: "/map", label: "Map" },
   { href: "/mistakes", label: "Mistakes" },
   { href: "/strategy", label: "Strategy" },
+  { href: "/play", label: "Play" },
 ];
 const TEACHER_NAV = [{ href: "/teacher", label: "Teacher" }];
 
