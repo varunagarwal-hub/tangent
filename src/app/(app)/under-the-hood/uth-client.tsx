@@ -91,6 +91,30 @@ export function UnderTheHoodClient() {
             </div>
           </section>
 
+          <section aria-labelledby="builders-title">
+            <SectionHeading id="builders-title" title="Offline content builders" />
+            <p className="mt-1 max-w-2xl text-sm text-ink-soft">
+              The newer features need no AI at request time. Their content is generated once, checked by a second model, and committed. The same
+              generator → independent verifier pattern as the question bank.
+            </p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {[
+                { name: "Spot the Tangent rounds", out: "105 rounds", how: "Flash rewrites each misconception example as 4–7 lines with the slip on a random line; Pro finds the first wrong line on its own. Kept only when they agree (105/105)." },
+                { name: "Concept cards", out: "27 cards", how: "Flash writes the key idea, formulas, worked example and shortcuts; Pro re-solves the worked example and the card is kept only if the answers match." },
+                { name: "Foundation questions", out: "80 MCQs", how: "Flash writes school-level questions for 8 skills; Pro answers each independently. Options are shown in a fixed shuffled order so the key's position can't be guessed." },
+                { name: "Formula flashcards", out: "130 cards", how: "Built from the concept cards; Pro reviews each concept's set and flags anything wrong or misleading. 5 shortcuts were dropped, from the cards and the flashcards." },
+              ].map((b) => (
+                <li key={b.name} className="paper-card p-4">
+                  <p className="flex items-baseline justify-between gap-2">
+                    <span className="font-semibold text-ink">{b.name}</span>
+                    <span className="font-mono text-xs text-ink-soft">{b.out}</span>
+                  </p>
+                  <p className="mt-1 text-sm leading-relaxed text-ink-soft">{b.how}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <section aria-labelledby="feed-title">
             <SectionHeading id="feed-title" title="Live agent feed" />
             <p className="mt-1 text-sm text-ink-soft">The latest agent runs, refreshed every 15 seconds.</p>

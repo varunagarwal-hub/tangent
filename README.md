@@ -45,6 +45,22 @@ Tangent checks the **reasoning**, not just the answer.
 | Spaced repetition | ts-fsrs cards per concept and per active misconception; due cards fade on the map and feed the review queue |
 | Teacher dashboard with class-wide gaps | `/teacher`: heatmap, misconception leaderboard, lesson plan, override queue, assignment impact |
 
+### Added after submission (22 Nov)
+
+Nine upgrades that turn the diagnosis into a full prep routine. Everything below runs without AI at request time: the content was generated offline and checked by a second model before it was committed.
+
+| Feature | Route | What it does |
+|---|---|---|
+| Spot the Tangent | `/play/spot` | 10-round game: tap the wrong line in someone else's rough work, then name the mistake. 105 rounds; Flash and Pro had to agree on every error line. Your own open misconceptions show up in rounds 2–3, and spotting one counts toward fixing it. |
+| Concept cards | `/learn`, `/learn/[id]` | One card per concept: key idea, formulas, a worked example revealed step by step (re-solved by Pro), the common tangents with fixes, CAT shortcuts. Linked from the map, practice and the Mistake Journal; `/practice?concept=` deep link. |
+| CAT speed sprint | `/play/sprint` | 60-second mental-maths drill (fractions ↔ %, squares, cubes, successive %, discounts, quick multiplication, ratios, remainders) from seeded, unit-tested generators. |
+| Daily checklist + streak | `/today` | Reviews, one contrast question, one game; a real streak from active days; an evening nudge if the checklist is incomplete. |
+| Foundations | `/foundation` | 12-question school-maths check across 8 skills, then 5-question repairs (pass 4) that "unlock" the CAT topics built on them. |
+| Sectional mock | `/mock` | 22 questions, 40 minutes, +3/−1, assembled by CAT area weights; resumable; results with time per question, a Skip Coach debrief and an on-demand Detective per wrong answer. |
+| Road to CAT | `/plan` | Phased plan from today to exam day, sized to the time left; this week's schedule from the planner; a six-month activity heatmap. |
+| Formula flashcards | `/learn/cards` | 130 formula and shortcut cards on the same FSRS engine (Pro dropped 5 misleading ones). |
+| Doubt classes | `/teacher` | Schedule a class from any leaderboard row or lesson-plan group; invited students see it on Today. |
+
 ---
 
 ## Architecture
@@ -124,7 +140,7 @@ Each agent has a Zod input/output schema, a short system prompt in `src/lib/agen
 | Detective: misconception named correctly | **20 / 20** labelled cases (15 misconceptions, incl. 2 right-answer/wrong-reasoning) |
 | Detective: exact error line found | **20 / 20** |
 | Detective: average latency | 3.6s (Gemini Flash) |
-| Verifier rejection rate while building the bank | **~34%** of generated drafts rejected (68 rejections: wrong answer keys, no correct option, typos, impossible numbers) |
+| Verifier rejection rate while building the bank | **≈48%** of generated drafts rejected (984 logged rejections: wrong answer keys, no correct option, typos, impossible numbers) |
 | Question bank | **1,032 verified questions** across all 27 concepts, weighted by CAT frequency (every one re-solved by Gemini Pro before it went in; ≈48% of drafts rejected) |
 
 Honest caveat: the eval set is typed solutions; real handwriting is harder. Run it yourself with `npx tsx scripts/eval-detective.ts` (results land in `data/evals/results.json` and on `/under-the-hood`).
@@ -171,11 +187,15 @@ npm run dev
 
 | Command | What it does |
 |---|---|
-| `npm test` | Unit tests for BKT, Elo, FSRS rating mapping and answer grading |
+| `npm test` | Unit tests for BKT, Elo, FSRS rating mapping, answer grading and the sprint generators |
 | `npx tsx scripts/seed-content.ts` | Generate + verify the question bank into `data/questions.json` (resumable; `--plus=N` tops every concept up by N) |
 | `npx tsx scripts/load-bank.ts --apply` | Add new bank questions to Neon without wiping (skips near-duplicates) |
 | `npx tsx scripts/seed-db.ts` | Wipe and reseed the database (restores the scripted demo state) |
 | `npx tsx scripts/eval-detective.ts` | Score the Detective on the labelled eval set |
+| `npx tsx scripts/build-spot-rounds.ts` | Spot the Tangent rounds (Flash writes, Pro must agree on the error line) → `data/spot-rounds.json` |
+| `npx tsx scripts/build-lessons.ts` | Concept cards (worked examples re-solved by Pro) → `data/lessons.json` |
+| `npx tsx scripts/build-foundation-questions.ts` | Foundation-check MCQs (Pro answers independently) → `data/foundation-questions.json` |
+| `npx tsx scripts/build-flashcards.ts` | Flashcards from the concept cards, Pro-checked → `data/flashcards.json` |
 | `npx tsx scripts/check-gemini.ts` | Smoke-test both Gemini model tiers |
 
 Env vars: `GEMINI_API_KEY`, `GEMINI_MODEL_FAST`, `GEMINI_MODEL_SMART`, `DATABASE_URL`, `BLOB_READ_WRITE_TOKEN` (see `.env.example`). Without a Blob token, photos go straight to Gemini and only the transcription is stored.
