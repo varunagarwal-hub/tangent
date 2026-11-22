@@ -22101,5 +22101,1278 @@
         "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
       }
     ]
+  },
+  {
+    "id": "db98bcd9-19e5-4952-ac23-36734fd87f13",
+    "spec": "A8-x38",
+    "concept_id": "A8",
+    "type": "TITA",
+    "stem": "An e-commerce company delivers express packages between two riverfront hubs, $P$ and $Q$, located along a straight river stretch of distance $72\\text{ km}$. A cargo motorboat takes $3$ hours to deliver packages downstream from $P$ to $Q$, and $4.5$ hours to return upstream from $Q$ to $P$ with returned items. If the boat's engine speed in still water and the river's current speed remain constant throughout, find the speed of the river current in $\\text{km/h}$.",
+    "options": null,
+    "answer": "4",
+    "solution": "1. Downstream speed $v_d = \\frac{72\\text{ km}}{3\\text{ h}} = 24\\text{ km/h}$.\n2. Upstream speed $v_u = \\frac{72\\text{ km}}{4.5\\text{ h}} = 16\\text{ km/h}$.\n3. Let the speed of the boat in still water be $b$ and the speed of the current be $s$. Then $b + s = 24$ and $b - s = 16$.\n4. Subtracting the two equations gives $2s = 24 - 16 = 8$, so $s = \\frac{8}{2} = 4\\text{ km/h}$.\n5. Final answer: 4",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_STREAM_NO_HALVE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "b328c344-9efa-4824-8254-089d546a516d",
+    "spec": "A7-x8",
+    "concept_id": "A7",
+    "type": "TITA",
+    "stem": "A wealth management firm needs to audit the long-term investment portfolios of a high-net-worth family. Two certified portfolio auditors, Vikram and Priya, are assigned to this project. Working alone at his standard pace, Vikram takes $30$ days to audit the entire portfolio, whereas Priya takes $45$ days working alone. The firm starts the audit with Vikram working alone for the first $10$ days. After $10$ days, Priya joins him, but due to coordination and shared resources, both of them work at only $\\frac{5}{6}$ of their respective individual efficiencies. In how many more days from the moment Priya joins will the entire audit be completed?",
+    "options": null,
+    "answer": "14.4",
+    "solution": "1. Let total work = $\\text{LCM}(30, 45) = 90$ units.\n2. Normal efficiency of Vikram = $\\frac{90}{30} = 3$ units/day; normal efficiency of Priya = $\\frac{90}{45} = 2$ units/day.\n3. In the first $10$ days, Vikram alone completes $10 \\times 3 = 30$ units of work.\n4. Remaining work = $90 - 30 = 60$ units.\n5. When Priya joins, both work at $\\frac{5}{6}$ of their normal rates. Their combined daily rate becomes $\\frac{5}{6} \\times (3 + 2) = \\frac{25}{6}$ units/day.\n6. The number of additional days needed is $\\frac{60}{25/6} = \\frac{360}{25} = 14.4$ days.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A7_ADD_DAYS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ac140ee2-51ea-4847-9620-8c3b83f55b7c",
+    "spec": "A6-x18",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A consulting firm initially has $150$ senior consultants whose monthly salary is entirely composed of fixed pay. Under a restructuring plan carried out at the end of each quarter, $30$ consultants are randomly selected, and their pay structure is revised such that their compensation shifts entirely from fixed pay to performance-linked pay, while their total individual monthly salary remains unchanged at ₹$2,00,000$. The total number of consultants in the firm remains constant at $150$ at all times, and any consultant selected in a quarter has their entire pay remain performance-linked thereafter. What is the total monthly amount paid as fixed pay by the firm at the end of $3$ such quarterly revisions?",
+    "options": [
+      "₹$1,20,000$",
+      "₹$1,20,00,000$",
+      "₹$1,53,60,000$",
+      "₹$1,92,00,000$"
+    ],
+    "answer": "₹$1,53,60,000$",
+    "solution": "1. Initially, all $150$ consultants receive only fixed pay. Total initial monthly fixed pay = $150 \\times 2,00,000 = ₹3,00,00,000$.\n2. In each revision, $30$ out of $150$ consultants (a fraction of $\\frac{30}{150} = \\frac{1}{5}$) are chosen randomly from the pool. Thus, the remaining fraction of fixed pay after each revision is $\\left(1 - \\frac{1}{5}\\right) = \\frac{4}{5}$.\n3. After $3$ successive revisions, the remaining fixed pay is given by: Initial Fixed Pay $\\times \\left(1 - \\frac{30}{150}\\right)^3 = 3,00,00,000 \\times \\left(\\frac{4}{5}\\right)^3$.\n4. Calculating the value: $3,00,00,000 \\times \\frac{64}{125} = 240,000 \\times 64 = ₹1,53,60,000$.\n5. Hence, the correct answer is ₹$1,53,60,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_REPLACEMENT_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$1,20,00,000$",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "1824ead0-cf77-4336-8765-6c5fa2056d4d",
+    "spec": "A8-x13",
+    "concept_id": "A8",
+    "type": "MCQ",
+    "stem": "An investment advisor regularly drives along a highway from his home branch to a regional wealth centre. On a certain day, he travels to the wealth centre at a constant speed of $60\\text{ km/h}$. For the return journey along the exact same route, he encounters road work and is forced to drive at a constant speed of $40\\text{ km/h}$. What is his average speed, in $\\text{km/h}$, for the entire round trip?",
+    "options": [
+      "48",
+      "50",
+      "52",
+      "45"
+    ],
+    "answer": "48",
+    "solution": "1. Let the one-way distance between the home branch and the wealth centre be $d\\text{ km}$.\n2. The time taken for the onward journey is $t_1 = \\frac{d}{60}\\text{ hours}$, and for the return journey is $t_2 = \\frac{d}{40}\\text{ hours}$.\n3. The total distance for the round trip is $2d$, and the total time taken is $t_1 + t_2 = \\frac{d}{60} + \\frac{d}{40} = \\frac{2d + 3d}{120} = \\frac{5d}{120} = \\frac{d}{24}\\text{ hours}$.\n4. Therefore, the average speed for the round trip is $\\frac{\\text{Total Distance}}{\\text{Total Time}} = \\frac{2d}{\\frac{d}{24}} = 48\\text{ km/h}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "50",
+        "misconception_id": "A8_MEAN_OF_SPEEDS"
+      }
+    ]
+  },
+  {
+    "id": "3287f457-9da9-4aea-ae74-3eb87d15c0d8",
+    "spec": "N1-x12",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "How many three-digit positive integers leave a remainder of $3$ when divided by $7$, and are also divisible by both $12$ and $18$?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "12"
+    ],
+    "answer": "4",
+    "solution": "1. A number divisible by both $12$ and $18$ must be a multiple of $\\text{lcm}(12, 18) = 36$.\n2. We need $n = 36k$ such that $n \\equiv 3 \\pmod 7$.\n3. Modulo $7$: $36k \\equiv 1k \\equiv k \\pmod 7$. Thus, $k \\equiv 3 \\pmod 7$, which means $k = 7m + 3$ for some integer $m$.\n4. Substituting back: $n = 36(7m + 3) = 252m + 108$.\n5. We are looking for three-digit integers, so $100 \\le n \\le 999$.\n- For $m = 0$: $n = 108$\n- For $m = 1$: $n = 360$\n- For $m = 2$: $n = 612$\n- For $m = 3$: $n = 864$\n- For $m = 4$: $n = 1116 > 999$\n6. Hence, there are $4$ such integers.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N1_DIVISIBLE_BY_PRODUCT",
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "N1_DIVISIBLE_BY_PRODUCT"
+      }
+    ]
+  },
+  {
+    "id": "8b996941-e4da-4b7c-a2dc-e0cc992f92bc",
+    "spec": "N2-x11",
+    "concept_id": "N2",
+    "type": "TITA",
+    "stem": "Two arithmetic progressions, $S_1$ and $S_2$, are given by:\n$S_1: 7, 13, 19, 25, \\dots, 601$\n$S_2: 11, 19, 27, 35, \\dots, 603$\n\nHow many terms are common to both sequences?",
+    "options": null,
+    "answer": "25",
+    "solution": "1. Find the first common term: By inspection, the smallest number appearing in both progressions is $19$.\n2. Determine the common difference of the sequence of shared terms: The common difference of $S_1$ is $d_1 = 6$, and that of $S_2$ is $d_2 = 8$. The common terms form an arithmetic progression with a common difference equal to $\\text{LCM}(6, 8) = 24$.\n3. Establish the general formula for the common terms: $T_k = 19 + (k - 1) \\times 24$.\n4. Determine the range: The common terms cannot exceed the smaller upper limit of the two sequences, which is $\\min(601, 603) = 601$.\n5. Solve for the number of terms $k$:\n$19 + (k - 1) \\times 24 \\le 601$\n$(k - 1) \\times 24 \\le 582$\n$k - 1 \\le \\lfloor 582 / 24 \\rfloor = \\lfloor 24.25 \\rfloor = 24$\n$k \\le 25$.\n\nThus, there are 25 terms common to both sequences.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "697e83d7-ddef-4d9e-a6e2-010f46d8b3e7",
+    "spec": "N3-x18",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "A sequence of numbers is defined by $T_1 = 12$ and $T_n = 12 \times T_{n-1}$ for all integers $n \\ge 2$. Find the remainder when the sum $S = T_1 + T_2 + T_3 + \\dots + T_{73}$ is divided by $13$.",
+    "options": [
+      "12",
+      "1",
+      "0",
+      "6"
+    ],
+    "answer": "12",
+    "solution": "1. Note that $T_n = 12^n$. We need to find the remainder when $S = \\sum_{n=1}^{73} 12^n$ is divided by $13$.\n2. Modulo $13$, we have $12 \\equiv -1 \\pmod{13}$.\n3. Substitute $12 \\equiv -1$ into each term of the series: $T_n \\equiv (-1)^n \\pmod{13}$.\n4. Thus, $S = (-1)^1 + (-1)^2 + (-1)^3 + \\dots + (-1)^{73}$.\n5. The terms alternate between $-1$ and $+1$. For any even number of terms, the sum is $0$. Since there are $73$ terms, the first $72$ terms cancel out in pairs: $S \\equiv (-1)^{73} = -1 \\pmod{13}$.\n6. Since the remainder upon division by $13$ must be non-negative and less than $13$, we convert the negative remainder: $-1 + 13 = 12$.\n7. Therefore, the required remainder is $12$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N3_NEGATIVE_REMAINDER",
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  },
+  {
+    "id": "8c66b6f9-4913-4f90-8fe8-2208e9960c9f",
+    "spec": "N3-x3",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "Let $R$ be the remainder obtained when $2^{98}$ is divided by $96$. Which of the following statements must be true?",
+    "options": [
+      "$R$ is a multiple of $16$",
+      "$R$ is an odd number",
+      "$R$ is less than $30$",
+      "$R$ is a prime number"
+    ],
+    "answer": "$R$ is a multiple of $16$",
+    "solution": "1. Express the division: we need to find $R = 2^{98} \\pmod{96}$.\n2. Factor the divisor: $96 = 32 \\times 3 = 2^5 \\times 3$.\n3. Cancel the common factor of $2^5 = 32$ from both the numerator and denominator:\n   $\\frac{2^{98}}{96} = \\frac{2^5 \\cdot 2^{93}}{2^5 \\cdot 3} = \\frac{2^{93}}{3}$.\n4. Find the remainder of $2^{93}$ when divided by $3$:\n   $2 \\equiv -1 \\pmod 3 \\implies 2^{93} \\equiv (-1)^{93} \\equiv -1 \\equiv 2 \\pmod 3$.\n5. Restore the cancelled factor of $32$ to obtain the true remainder $R$:\n   $R = 2 \\times 32 = 64$.\n6. Check each option with $R = 64$:\n   - $64$ is a multiple of $16$, which is true.\n   - $64$ is not odd, not less than $30$, and not prime.\n\nThus, the statement that must be true is that $R$ is a multiple of $16$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$R$ is a prime number",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "$R$ is less than $30$",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "$R$ is an odd number",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  },
+  {
+    "id": "e1b50f3c-4633-4fed-9eb3-fc219a0d46bb",
+    "spec": "N2-x9",
+    "concept_id": "N2",
+    "type": "MCQ",
+    "stem": "Let $a$ and $b$ be two positive integers such that their highest common factor is $12$ and their lowest common multiple is $720$. How many such ordered pairs $(a, b)$ exist?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": "8",
+    "solution": "1. Let $a = 12x$ and $b = 12y$, where $x$ and $y$ are coprime positive integers, i.e., $\\gcd(x, y) = 1$.\n2. The lowest common multiple is given by $\\text{LCM}(a, b) = 12xy = 720$, which implies $xy = \\frac{720}{12} = 60$.\n3. Prime factorising $60$, we get $60 = 2^2 \\times 3^1 \\times 5^1$.\n4. For $\\gcd(x, y) = 1$, each prime factor component ($2^2$, $3^1$, and $5^1$) must belong entirely to either $x$ or $y$.\n5. With $3$ distinct prime factors, there are $2^3 = 8$ choices to distribute these prime components between $x$ and $y$.\n6. Therefore, there are $8$ distinct ordered pairs $(a, b)$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "4",
+        "misconception_id": "N2_PRODUCT_RULE_3NUMS"
+      },
+      {
+        "option": "16",
+        "misconception_id": "N2_HCF_FOR_LCM"
+      },
+      {
+        "option": "32",
+        "misconception_id": "N2_REMAINDER_NOT_SUBTRACTED"
+      }
+    ]
+  },
+  {
+    "id": "dfb95373-864f-468a-a110-81c8ba9c8ac2",
+    "spec": "N3-x13",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "Let $N = 4^{96}$. Consider the following three statements:\n\nI. The remainder when $N$ is divided by $9$ is $7$.\nII. The remainder when $N$ is divided by $10$ is $6$.\nIII. The remainder when $N$ is divided by $48$ is $16$.\n\nWhich of the following must be true?",
+    "options": [
+      "Only II and III",
+      "Only I and II",
+      "Only I and III",
+      "All I, II, and III"
+    ],
+    "answer": "Only II and III",
+    "solution": "1. For Statement I: $N = 4^{96} = (4^3)^{32} = 64^{32}$. Since $64 = 7 \\times 9 + 1$, $64 \\equiv 1 \\pmod 9$. Thus, $4^{96} \\equiv 1^{32} \\equiv 1 \\pmod 9$. The remainder is $1$, not $7$. Hence, Statement I is false.\n\n2. For Statement II: Powers of $4$ have units digits cycling as $4, 6, 4, 6, \\dots$ for odd and even powers respectively. Since $96$ is even, $4^{96}$ ends in $6$. Thus, the remainder when $N$ is divided by $10$ is $6$. Hence, Statement II is true.\n\n3. For Statement III: We need to find $4^{96} \\pmod{48}$. Notice that $48 = 16 \\times 3 = 4^2 \\times 3$. Dividing both the dividend and divisor by $16 = 4^2$, we consider $4^{94} \\pmod 3$. Since $4 \\equiv 1 \\pmod 3$, $4^{94} \\equiv 1^{94} \\equiv 1 \\pmod 3$. Multiplying back the common factor of $16$, the remainder is $1 \\times 16 = 16$. Hence, Statement III is true.\n\n4. Therefore, only statements II and III are true.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "Only I and II",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      },
+      {
+        "option": "All I, II, and III",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      },
+      {
+        "option": "Only I and III",
+        "misconception_id": "N3_CYCLICITY_ZERO_INDEX"
+      }
+    ]
+  },
+  {
+    "id": "7290dbcb-ee58-4ee8-84e9-c3cc1c771400",
+    "spec": "L1-x13",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "If $x$ is a positive real number such that $\\sqrt{x + 2\\sqrt{x - 1}} + \\sqrt{x - 2\\sqrt{x - 1}} = 4$, then what is the value of $\\sqrt{x^2 + 15}$?",
+    "options": [
+      "$8$",
+      "$\\sqrt{31}$",
+      "$\\sqrt{40}$",
+      "$4 + \\sqrt{15}$"
+    ],
+    "answer": "$\\sqrt{40}$",
+    "solution": "1. Let $u = \\sqrt{x - 1} \\ge 0$. Then $x = u^2 + 1$.\n2. The expression inside the first square root is $x + 2\\sqrt{x-1} = u^2 + 2u + 1 = (u + 1)^2$.\n3. The expression inside the second square root is $x - 2\\sqrt{x-1} = u^2 - 2u + 1 = (u - 1)^2$.\n4. Taking square roots gives $\\sqrt{(u+1)^2} + \\sqrt{(u-1)^2} = (u + 1) + |u - 1| = 4$.\n5. If $0 \\le u < 1$, then $(u+1) + (1-u) = 2 \\ne 4$, so no solution exists in this range.\n6. Thus $u \\ge 1$, which gives $(u+1) + (u-1) = 2u = 4 \\implies u = 2$.\n7. Since $u = 2$, we have $\\sqrt{x-1} = 2 \\implies x - 1 = 4 \\implies x = 5$.\n8. Finally, $\\sqrt{x^2 + 15} = \\sqrt{5^2 + 15} = \\sqrt{25 + 15} = \\sqrt{40}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$8$",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      },
+      {
+        "option": "$4 + \\sqrt{15}$",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      }
+    ]
+  },
+  {
+    "id": "8cb45608-0cb9-41d1-8d4e-7895474aeafb",
+    "spec": "L1-x17",
+    "concept_id": "L1",
+    "type": "TITA",
+    "stem": "If $x = \frac{\\sqrt{7} + \\sqrt{3}}{\\sqrt{7} - \\sqrt{3}}$ and $y = \\frac{\\sqrt{7} - \\sqrt{3}}{\\sqrt{7} + \\sqrt{3}}$, find the value of $x^2 + y^2 - 3xy$.",
+    "options": null,
+    "answer": "20",
+    "solution": "1. Rationalize $x$: $x = \\frac{(\\sqrt{7} + \\sqrt{3})^2}{(\\sqrt{7})^2 - (\\sqrt{3})^2} = \\frac{7 + 3 + 2\\sqrt{21}}{4} = \\frac{10 + 2\\sqrt{21}}{4} = \\frac{5 + \\sqrt{21}}{2}$.\n2. Similarly, $y$ is the reciprocal of $x$, so $y = \\frac{5 - \\sqrt{21}}{2}$.\n3. Calculate the sum and product: $x + y = \\frac{5 + \\sqrt{21}}{2} + \\frac{5 - \\sqrt{21}}{2} = 5$, and $xy = \\frac{25 - 21}{4} = 1$.\n4. Express the required expression in terms of $(x + y)$ and $xy$: $x^2 + y^2 - 3xy = (x + y)^2 - 5xy$.\n5. Substitute the values: $5^2 - 5(1) = 25 - 5 = 20$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "cb9eba29-2e51-49ad-8c1e-3a30a8eb1373",
+    "spec": "L1-x3",
+    "concept_id": "L1",
+    "type": "MCQ",
+    "stem": "If $x = \\sqrt{7 + 4\\sqrt{3}} - \\sqrt{7 - 4\\sqrt{3}}$ and $y = \\sqrt{9 + 4\\sqrt{5}} + \\sqrt{9 - 4\\sqrt{5}}$, find the value of $x^2 + y^2$.",
+    "options": [
+      "28",
+      "32",
+      "16",
+      "20"
+    ],
+    "answer": "32",
+    "solution": "1. Simplify $x$: Notice that $7 \\pm 4\\sqrt{3} = 4 + 3 \\pm 2(2)(\\sqrt{3}) = (2 \\pm \\sqrt{3})^2$.\n2. Since $2 > \\sqrt{3}$, we have $\\sqrt{7 + 4\\sqrt{3}} = 2 + \\sqrt{3}$ and $\\sqrt{7 - 4\\sqrt{3}} = 2 - \\sqrt{3}$.\n3. Thus, $x = (2 + \\sqrt{3}) - (2 - \\sqrt{3}) = 2\\sqrt{3}$, which gives $x^2 = (2\\sqrt{3})^2 = 12$.\n4. Simplify $y$: Notice that $9 \\pm 4\\sqrt{5} = 5 + 4 \\pm 2(2)(\\sqrt{5}) = (\\sqrt{5} \\pm 2)^2$.\n5. Since $\\sqrt{5} > 2$, we have $\\sqrt{9 + 4\\sqrt{5}} = \\sqrt{5} + 2$ and $\\sqrt{9 - 4\\sqrt{5}} = \\sqrt{5} - 2$.\n6. Thus, $y = (\\sqrt{5} + 2) + (\\sqrt{5} - 2) = 2\\sqrt{5}$, which gives $y^2 = (2\\sqrt{5})^2 = 20$.\n7. Therefore, $x^2 + y^2 = 12 + 20 = 32$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "28",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      },
+      {
+        "option": "16",
+        "misconception_id": "L1_ROOT_OF_SUM"
+      }
+    ]
+  },
+  {
+    "id": "3df59a9b-15e6-4f69-8afb-381d45334fbd",
+    "spec": "A8-x8",
+    "concept_id": "A8",
+    "type": "TITA",
+    "stem": "During a multi-day cricket training camp, a fast bowler performs a continuous shuttle run between the bowling crease and the boundary line along a straight path. On his first lap (crease to boundary and back), he runs to the boundary at $15\\text{ km/h}$ and returns to the crease at a different constant speed of $v\\text{ km/h}$. For his second lap, he runs to the boundary at a uniform speed of $20\\text{ km/h}$ and returns to the crease at $30\\text{ km/h}$. If his overall average speed across the two complete laps is $16\\text{ km/h}$, find the value of $v$ (in $\\text{km/h}$).",
+    "options": null,
+    "answer": "10",
+    "solution": "1. Let the one-way distance between the crease and the boundary line be $d\\text{ km}$. A complete lap is a round trip of distance $2d$, so the two complete laps cover a total distance of $4d\\text{ km}$.\n2. The average speed for the second lap can be found using the harmonic mean for equal distances:\n$v_2 = \\frac{2 \\times 20 \\times 30}{20 + 30} = \\frac{1200}{50} = 24\\text{ km/h}$.\n3. The time taken for the second lap of distance $2d$ is $t_2 = \\frac{2d}{24} = \\frac{d}{12}\\text{ hours}$.\n4. For the overall two laps, total distance is $4d$, and the overall average speed is given as $16\\text{ km/h}$. Hence, total time is $T = \\frac{4d}{16} = \\frac{d}{4}\\text{ hours}$.\n5. The time taken for the first lap must be $t_1 = T - t_2 = \\frac{d}{4} - \\frac{d}{12} = \\frac{2d}{12} = \\frac{d}{6}\\text{ hours}$.\n6. On the first lap, the time taken is also the sum of times for the outward and return legs: $t_1 = \\frac{d}{15} + \\frac{d}{v}$.\n7. Equating the two expressions for $t_1$:\n$\\frac{d}{15} + \\frac{d}{v} = \\frac{d}{6} \\implies \\frac{1}{v} = \\frac{1}{6} - \\frac{1}{15} = \\frac{5 - 2}{30} = \\frac{3}{30} = \\frac{1}{10}$.\n8. Therefore, $v = 10$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A8_MEAN_OF_SPEEDS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "fc273dff-a7ea-4211-b1aa-7b5692eff157",
+    "spec": "L1-x23",
+    "concept_id": "L1",
+    "type": "TITA",
+    "stem": "If $x$ is a positive real number such that $\\sqrt[3]{x + 9} - \\sqrt[3]{x - 9} = 3$, find the value of $x^2$.",
+    "options": null,
+    "answer": "80",
+    "solution": "1. Let $a = \\sqrt[3]{x+9}$ and $b = \\sqrt[3]{x-9}$. Then $a - b = 3$ and $a^3 - b^3 = (x+9) - (x-9) = 18$.\n2. Use the algebraic identity $a^3 - b^3 = (a - b)^3 + 3ab(a - b)$.\n3. Substitute the known values: $18 = 3^3 + 3ab(3) \\implies 18 = 27 + 9ab \\implies 9ab = -9 \\implies ab = -1$.\n4. Cubing both sides of $ab = -1$, we get $a^3 b^3 = (-1)^3 = -1$.\n5. Since $a^3 = x + 9$ and $b^3 = x - 9$, $(x + 9)(x - 9) = -1 \\implies x^2 - 81 = -1$.\n6. Thus, $x^2 = 81 - 1 = 80$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "4597adbe-2f16-402a-a3f5-f4408c653422",
+    "spec": "L3-x1",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Consider the system of linear equations in variables $x$ and $y$:\n\n$3x - 2y = 7$\n$kx + 4y = m$\n\nIf the system has no solution, which of the following gives the correct values or conditions for $k$ and $m$?",
+    "options": [
+      "$k = -6$ and $m \\neq -14$",
+      "$k = -6$ and $m = -14$",
+      "$k = 6$ and $m \\neq 14$",
+      "$k = 6$ and $m = 14$"
+    ],
+    "answer": "$k = -6$ and $m \\neq -14$",
+    "solution": "1. For the system $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$ to have no solution (parallel and distinct lines), the condition is $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.\n2. Comparing coefficients: $\\frac{3}{k} = \\frac{-2}{4} = -\\frac{1}{2}$.\n3. Solving for $k$: $\\frac{3}{k} = -\\frac{1}{2} \\implies k = -6$.\n4. For no solution, the constant ratio must not be equal: $\\frac{7}{m} \\neq -\\frac{1}{2} \\implies m \\neq -14$.\n5. Therefore, $k = -6$ and $m \\neq -14$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$k = -6$ and $m = -14$",
+        "misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE"
+      },
+      {
+        "option": "$k = 6$ and $m \\neq 14$",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      }
+    ]
+  },
+  {
+    "id": "80183604-1bf8-4a5a-9586-e10240c554ac",
+    "spec": "N2-x7",
+    "concept_id": "N2",
+    "type": "MCQ",
+    "stem": "The highest common factor (HCF) and lowest common multiple (LCM) of three positive integers $x$, $y$, and $z$ are $6$ and $360$, respectively. If the product of two of these integers is $72$, what is the value of the third integer?",
+    "options": [
+      "30",
+      "120",
+      "180",
+      "360"
+    ],
+    "answer": "360",
+    "solution": "1. Let the two integers whose product is $72$ be $x$ and $y$. Since $\\text{HCF}(x, y, z) = 6$, both $x$ and $y$ must be multiples of $6$.\n2. Let $x = 6a$ and $y = 6b$ for positive integers $a$ and $b$. Then $x y = 36ab = 72$, which gives $ab = 2$. Thus, the set of the two numbers is $\\{6, 12\\}$.\n3. We are given $\\text{LCM}(6, 12, z) = 360$. Expressing the numbers in prime factorisation:\n$6 = 2^1 \\times 3^1$\n$12 = 2^2 \\times 3^1$\n$360 = 2^3 \\times 3^2 \\times 5^1$\n4. In the LCM, the exponent of each prime factor is the maximum of its exponents in $x$, $y$, and $z$:\n- The exponent of $2$ in $360$ is $3$, while the maximum in $6$ and $12$ is $2$. Hence, $z$ must contain $2^3$.\n- The exponent of $3$ in $360$ is $2$, while the maximum in $6$ and $12$ is $1$. Hence, $z$ must contain $3^2$.\n- The exponent of $5$ in $360$ is $1$, while neither $6$ nor $12$ contains $5$. Hence, $z$ must contain $5^1$.\n5. Therefore, $z$ must be a multiple of $2^3 \\times 3^2 \\times 5^1 = 360$. Since $z$ divides the LCM ($360$), we must have $z = 360$.\n6. Finally, $\\text{HCF}(6, 12, 360) = 6$, which satisfies all given conditions. Thus, the third integer is $360$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "30",
+        "misconception_id": "N2_PRODUCT_RULE_3NUMS"
+      }
+    ]
+  },
+  {
+    "id": "252d4667-69f3-4c7c-9c0f-7ca1e12e2ca7",
+    "spec": "N1-x6",
+    "concept_id": "N1",
+    "type": "MCQ",
+    "stem": "Let $n$ be a positive integer whose only prime factors are $2$, $3$, and $5$. The number of positive factors of $n$ that are divisible by $6$ is $36$, the number of positive factors of $n$ divisible by $10$ is $32$, and the number of positive factors of $n$ divisible by $15$ is $30$. What is the total number of positive factors of $n$?",
+    "options": [
+      "24",
+      "48",
+      "60",
+      "72"
+    ],
+    "answer": "60",
+    "solution": "1. Let the prime factorisation of $n$ be $2^a \\times 3^b \\times 5^c$, where $a, b, c$ are positive integers.\n2. A factor is divisible by $6 = 2^1 \\times 3^1$ if the exponent of $2$ is at least $1$ (giving $a$ choices) and the exponent of $3$ is at least $1$ (giving $b$ choices). The exponent of $5$ can range from $0$ to $c$ ($c+1$ choices). Hence, $a \\cdot b \\cdot (c + 1) = 36 \\implies abc + ab = 36$.\n3. Similarly, factors divisible by $10 = 2^1 \\times 5^1$ give $a \\cdot (b + 1) \\cdot c = 32 \\implies abc + ac = 32$.\n4. Factors divisible by $15 = 3^1 \\times 5^1$ give $(a + 1) \\cdot b \\cdot c = 30 \\implies abc + bc = 30$.\n5. Subtracting the equations pairwise:\n- $ab - ac = a(b - c) = 4$\n- $ac - bc = c(a - b) = 2$\n- $ab - bc = b(a - c) = 6$\n6. From $c(a - b) = 2$, since $a, b, c$ are positive integers, either $c = 2, a - b = 1$ or $c = 1, a - b = 2$.\n- If $c = 2$ and $a = b + 1$, substituting into $b(a - c) = 6$ gives $b(b - 1) = 6 \\implies b = 3$, which gives $a = 4$. Checking: $abc + ab = (4)(3)(2) + (4)(3) = 24 + 12 = 36$, which is consistent.\n7. The total number of positive factors of $n$ is $(a + 1)(b + 1)(c + 1) = (4 + 1)(3 + 1)(2 + 1) = 5 \\times 4 \\times 3 = 60$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE",
+    "distractor_misconceptions": [
+      {
+        "option": "24",
+        "misconception_id": "N1_FACTOR_COUNT_NO_PLUS_ONE"
+      }
+    ]
+  },
+  {
+    "id": "31cd1fc5-ad65-468b-99d7-62efd191677f",
+    "spec": "L3-x2",
+    "concept_id": "L3",
+    "type": "TITA",
+    "stem": "Consider the system of linear equations in $x$ and $y$:\n$$(m - 1)x + 6y = 18$$\n$$2x + (m - 2)y = m + 4$$\nwhere $m$ is an integer. Let $S$ be the set of all integer values of $m$ for which the system has no solution. Find the sum of all elements in $S$.",
+    "options": null,
+    "answer": "-2",
+    "solution": "1. For the linear system to have no solution, the coefficients of $x$ and $y$ must be proportional, but not equal to the ratio of the constant terms:\n$\\frac{m - 1}{2} = \frac{6}{m - 2} \\neq \\frac{18}{m + 4}$.\n\n2. Equating the coefficient ratios:\n$(m - 1)(m - 2) = 12 \\implies m^2 - 3m + 2 = 12 \\implies m^2 - 3m - 10 = 0$.\nFactoring gives $(m - 5)(m + 2) = 0$, so $m = 5$ or $m = -2$.\n\n3. Check the constant ratio for each value:\n- For $m = 5$:\n$\\frac{m - 1}{2} = \\frac{4}{2} = 2$,\n$\\frac{6}{m - 2} = \\frac{6}{3} = 2$,\n$\\frac{18}{m + 4} = \\frac{18}{9} = 2$.\nSince all three ratios are equal, $m = 5$ yields infinitely many solutions (coincident lines).\n\n- For $m = -2$:\n$\\frac{m - 1}{2} = \\frac{-3}{2} = -1.5$,\n$\\frac{6}{m - 2} = \\frac{6}{-4} = -1.5$,\n$\\frac{18}{m + 4} = \\frac{18}{2} = 9$.\nHere, $\\frac{-3}{2} = \\frac{-3}{2} \\neq 9$, so the lines are parallel and distinct, meaning there is no solution.\n\n4. Thus, the only integer value of $m$ for which the system has no solution is $m = -2$. The sum of elements in $S$ is $-2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "cea692df-ad17-4490-9625-2b003de536eb",
+    "spec": "L3-x6",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Consider the following system of linear equations in variables $x$ and $y$:\n\n$(k - 2)x + 3y = 6$\n\n$4x + (k + 2)y = k + 8$\n\nLet $S$ denote the set of all real values of $k$ for which this system has infinitely many solutions. What is the number of elements in $S$?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "1",
+    "solution": "1. For the system to have infinitely many solutions, the coefficients must satisfy the ratio condition: $\\frac{k - 2}{4} = \\frac{3}{k + 2} = \\frac{6}{k + 8}$.\n2. Equating the first two ratios: $(k - 2)(k + 2) = 12 \\implies k^2 - 4 = 12 \\implies k^2 = 16 \\implies k = 4$ or $k = -4$.\n3. Test $k = 4$: $\\frac{4 - 2}{4} = \\frac{2}{4} = \\frac{1}{2}$, $\\frac{3}{4 + 2} = \\frac{3}{6} = \\frac{1}{2}$, and $\\frac{6}{4 + 8} = \\frac{6}{12} = \\frac{1}{2}$. Since all three ratios are equal to $\\frac{1}{2}$, $k = 4$ yields infinitely many solutions.\n4. Test $k = -4$: $\\frac{-4 - 2}{4} = -\\frac{3}{2}$ and $\\frac{3}{-4 + 2} = -\\frac{3}{2}$, but the constant ratio is $\\frac{6}{-4 + 8} = \\frac{6}{4} = \\frac{3}{2} \\neq -\\frac{3}{2}$. Hence, for $k = -4$, the lines are parallel and the system has no solution.\n5. Therefore, only $k = 4$ yields infinitely many solutions, meaning the number of elements in $S$ is $1$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE"
+      }
+    ]
+  },
+  {
+    "id": "1c091c30-e73d-4f6b-b2ac-1609e8a0d472",
+    "spec": "L3-x26",
+    "concept_id": "L3",
+    "type": "TITA",
+    "stem": "Consider the system of linear equations in variables $x$ and $y$:\n$(k - 2)x + 3y = k + 1$\n$4x + (k + 2)y = 10$\nFind the number of integral values of $k$ for which the system has no solution.",
+    "options": null,
+    "answer": "1",
+    "solution": "1. For the system $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$ to have no unique solution, the determinant of the coefficients must be zero: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2}$.\n2. Here, $\\frac{k - 2}{4} = \\frac{3}{k + 2} \\implies (k - 2)(k + 2) = 12 \\implies k^2 - 4 = 12 \\implies k^2 = 16$, giving $k = 4$ or $k = -4$.\n3. Test $k = 4$: The equations become $2x + 3y = 5$ and $4x + 6y = 10$. The ratio of coefficients is $\\frac{2}{4} = \\frac{3}{6} = \\frac{5}{10} = \\frac{1}{2}$. Thus, for $k = 4$, the lines are identical and the system has infinitely many solutions.\n4. Test $k = -4$: The equations become $-6x + 3y = -3$ and $4x - 2y = 10$. The ratios are $\\frac{-6}{4} = \\frac{3}{-2} = -\\frac{3}{2}$, but the constant ratio is $\\frac{-3}{10} \\neq -\\frac{3}{2}$. Hence, the lines are parallel and distinct, meaning there is no solution.\n5. Therefore, there is exactly $1$ integral value of $k$ (namely, $k = -4$) for which the system has no solution.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f3aeb6e8-8a03-4817-8914-3ec1fd04ab32",
+    "spec": "L3-x14",
+    "concept_id": "L3",
+    "type": "TITA",
+    "stem": "Consider the system of linear equations in variables $x$ and $y$:\n$(k + 2)x + 3y = 15$\n$4x + 6y = k^2 + 11$\n\nIf the system has no solution, find the value of $k$.",
+    "options": null,
+    "answer": "0",
+    "solution": "1. For a system of two linear equations $a_1 x + b_1 y = c_1$ and $a_2 x + b_2 y = c_2$ to have no solution (parallel and distinct lines), the coefficients of $x$ and $y$ must be in the same ratio, but the constant terms must not be in that same ratio:\n$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$\n\n2. Comparing coefficients:\n$\\frac{k + 2}{4} = \\frac{3}{6} = \\frac{1}{2}$\n$2(k + 2) = 4 \\implies k + 2 = 2 \\implies k = 0$.\n\n3. Check the ratio of constants when $k = 0$:\n$\\frac{c_1}{c_2} = \\frac{15}{0^2 + 11} = \\frac{15}{11}$.\nSince $\\frac{1}{2} \\neq \\frac{15}{11}$, the lines are parallel and distinct, meaning there is no solution.\n\n4. Thus, the unique value of $k$ for which the system has no solution is 0.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "583190e5-0597-483c-8eca-27bf6393879a",
+    "spec": "L3-x27",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Consider the system of linear equations in variables $x$ and $y$:\n$$\\begin{aligned}\n(a + 2)x + 3y &= 2a + 1 \\\\\n4x + (a - 2)y &= 7\n\\end{aligned}$$\nFor how many real values of $a$ does the system have infinitely many solutions?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "infinitely many"
+    ],
+    "answer": "0",
+    "solution": "1. For the system to have infinitely many solutions, the ratio of coefficients must satisfy:\n$\\frac{a + 2}{4} = \\frac{3}{a - 2} = \\frac{2a + 1}{7}$.\n\n2. From $\\frac{a + 2}{4} = \\frac{3}{a - 2}$, cross-multiplying gives $(a + 2)(a - 2) = 12$, which simplifies to $a^2 - 4 = 12$, or $a^2 = 16$. Thus, $a = 4$ or $a = -4$.\n\n3. Test $a = 4$:\n$\\frac{4 + 2}{4} = \\frac{6}{4} = \\frac{3}{2}$.\nCheck the constant ratio: $\\frac{2(4) + 1}{7} = \\frac{9}{7} \\neq \\frac{3}{2}$.\nSo for $a = 4$, the system has no solution.\n\n4. Test $a = -4$:\n$\\frac{-4 + 2}{4} = -\\frac{2}{4} = -\\frac{1}{2}$.\nCheck the constant ratio: $\\frac{2(-4) + 1}{7} = -\\frac{7}{7} = -1 \\neq -\\frac{1}{2}$.\nSo for $a = -4$, the system also has no solution.\n\n5. Neither value of $a$ satisfies the equality with the constant terms. Therefore, there are $0$ real values of $a$ for which the system has infinitely many solutions.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE"
+      }
+    ]
+  },
+  {
+    "id": "78e2d272-ce37-4e47-b47f-a8181a5e95a2",
+    "spec": "L4-x26",
+    "concept_id": "L4",
+    "type": "TITA",
+    "stem": "Let $\\alpha$ and $\\beta$ be the roots of the quadratic equation $x^2 - 12x + 19 = 0$. Consider the quadratic function $f(t) = t^2 - 2(\\alpha + \\beta)t + 3\\alpha\\beta$. Find the minimum value of $f(t)$ for real values of $t$.",
+    "options": null,
+    "answer": "-87",
+    "solution": "1. For the quadratic equation $x^2 - 12x + 19 = 0$, by Vieta's formulas, the sum of roots is $\\alpha + \\beta = -\\frac{-12}{1} = 12$, and the product of roots is $\\alpha\\beta = 19$.\n2. Substitute these into $f(t)$:\n$f(t) = t^2 - 2(12)t + 3(19) = t^2 - 24t + 57$.\n3. The minimum value of a quadratic function $at^2 + bt + c$ with $a > 0$ occurs at $t = -\\frac{b}{2a} = 12$.\n4. Substituting $t = 12$ gives the minimum value:\n$f(12) = 12^2 - 24(12) + 57 = 144 - 288 + 57 = -87$.\n(Note: A student with the misconception of taking $\\alpha + \\beta = \\frac{b}{a} = -12$ would obtain $f(t) = t^2 + 24t + 57$, but its vertex value would still evaluate using $(-12)^2 + 24(-12) + 57 = -87$, unless they incorrectly set up the equation or coefficients. Thus, correctly computing the sum of roots is critical to identifying the correct vertex position and function form).",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L4_SUM_ROOTS_SIGN",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "02218553-76e6-4f2e-8d80-a6ba1d47575f",
+    "spec": "L3-x43",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Consider the system of linear equations in variables $x$ and $y$:\n$(k - 3)x + 4y = 2k - 1$\n$9x + (k + 2)y = 15$\nwhere $k$ is a real parameter. If the system does not have a unique solution, which of the following statements must be true?",
+    "options": [
+      "The system has no solution only when $k = 6$.",
+      "The system has infinitely many solutions for at least one value of $k$.",
+      "The system has no solution for all such values of $k$.",
+      "The system has infinitely many solutions whenever $k = -7$ or $k = 6$."
+    ],
+    "answer": "The system has no solution for all such values of $k$.",
+    "solution": "1. For the system to not have a unique solution, the determinant of coefficients must be zero:\n$(k - 3)(k + 2) - 4(9) = 0 \\implies k^2 - k - 6 - 36 = 0 \\implies k^2 - k - 42 = 0$.\n2. Factoring gives $(k - 7)(k + 6) = 0$, so $k = 7$ or $k = -6$.\n3. Check $k = 7$:\nEq 1: $4x + 4y = 13 \\implies x + y = \\frac{13}{4}$.\nEq 2: $9x + 9y = 15 \\implies x + y = \\frac{15}{9} = \\frac{5}{3}$.\nSince $\\frac{13}{4} \\ne \\frac{5}{3}$, there is no solution for $k = 7$.\n4. Check $k = -6$:\nEq 1: $-9x + 4y = -13 \\implies 9x - 4y = 13$.\nEq 2: $9x - 4y = 15$.\nSince $13 \\ne 15$, there is no solution for $k = -6$.\n5. Therefore, for every value of $k$ where the system does not have a unique solution, it has no solution.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "The system has infinitely many solutions whenever $k = -7$ or $k = 6$.",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      },
+      {
+        "option": "The system has infinitely many solutions for at least one value of $k$.",
+        "misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE"
+      }
+    ]
+  },
+  {
+    "id": "8d9dd646-a5ce-43f5-8fa5-512ce731eb5e",
+    "spec": "L2-x1",
+    "concept_id": "L2",
+    "type": "MCQ",
+    "stem": "The first three terms of a geometric progression are $x - 3$, $x + 1$, and $4x - 2$, where $x$ is a real number. If $S$ denotes the sum of all valid real values of $x$ for which the expression $\\log_2(x - 2) + \\log_2(2x - 1)$ is defined and real, what is the value of $S$?",
+    "options": [
+      "$\\frac{7}{3}$",
+      "$5$",
+      "$\\frac{22}{3}$",
+      "$\\frac{16}{3}$"
+    ],
+    "answer": "$5$",
+    "solution": "1. For the three terms to form a geometric progression, the common ratio must be equal: $(x + 1)^2 = (x - 3)(4x - 2)$.\n2. Expanding both sides: $x^2 + 2x + 1 = 4x^2 - 14x + 6$.\n3. Rearranging into a standard quadratic equation: $3x^2 - 16x + 5 = 0$.\n4. Factoring gives $(3x - 1)(x - 5) = 0$, so $x = \\frac{1}{3}$ or $x = 5$.\n5. For the expression $\\log_2(x - 2) + \\log_2(2x - 1)$ to be defined, the arguments must be strictly positive: $x - 2 > 0 \\implies x > 2$ and $2x - 1 > 0 \\implies x > \\frac{1}{2}$, giving the domain $x > 2$.\n6. Checking the roots: $x = \\frac{1}{3}$ is outside the domain ($< 2$), while $x = 5$ satisfies $x > 2$.\n7. Therefore, the only valid value of $x$ is $5$, so $S = 5$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{16}{3}$",
+        "misconception_id": "L2_IGNORE_DOMAIN"
+      }
+    ]
+  },
+  {
+    "id": "3d5ed0f7-5596-404d-b7b7-bcc12f8b1c40",
+    "spec": "N3-x1",
+    "concept_id": "N3",
+    "type": "MCQ",
+    "stem": "Let $R_1$ be the remainder when $14^{99}$ is divided by $15$, and $R_2$ be the remainder when $2^{102}$ is divided by $24$. Which of the following statements is true?",
+    "options": [
+      "$R_1 > R_2$",
+      "$R_1 < R_2$",
+      "$R_1 = R_2$",
+      "$R_1 + R_2 = 17$"
+    ],
+    "answer": "$R_1 < R_2$",
+    "solution": "1. To find $R_1$: $14 \\equiv -1 \\pmod{15}$. Thus, $14^{99} \\equiv (-1)^{99} \\equiv -1 \\equiv 14 \\pmod{15}$. Hence, $R_1 = 14$.\n2. To find $R_2$: We want the remainder when $2^{102}$ is divided by $24$. Notice that both share a factor of $2^3 = 8$. Dividing both the dividend and divisor by $8$, we evaluate $2^{99} \\pmod 3$.\n3. Since $2 \\equiv -1 \\pmod 3$, $2^{99} \\equiv (-1)^{99} \\equiv -1 \\equiv 2 \\pmod 3$.\n4. Restoring the cancelled factor of $8$, the remainder is $R_2 = 2 \\times 8 = 16$.\n5. Comparing the two quantities, we get $R_1 = 14$ and $R_2 = 16$, which means $R_1 < R_2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$R_1 > R_2$",
+        "misconception_id": "N3_CANCEL_NOT_RESTORED"
+      },
+      {
+        "option": "$R_1 + R_2 = 17$",
+        "misconception_id": "N3_NEGATIVE_REMAINDER"
+      }
+    ]
+  },
+  {
+    "id": "bc1169f0-8f28-4f95-9896-1276439f74be",
+    "spec": "L3-x36",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Find the number of pairs of integers $(x, y)$ that satisfy the equation $5x + 8y = 360$ such that both $x$ and $y$ are positive and $x > y$.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "answer": "5",
+    "solution": "1. We are given $5x + 8y = 360$ with $x, y \\in \\mathbb{Z}^+$ and $x > y$.\n2. Modulo 5: $8y \\equiv 360 \\pmod 5 \\implies 3y \\equiv 0 \\pmod 5$, so $y$ must be a multiple of 5. Let $y = 5k$ for an integer $k$.\n3. Substituting $y = 5k$ into the equation gives $5x + 8(5k) = 360 \\implies x + 8k = 72 \\implies x = 72 - 8k$.\n4. For $x$ and $y$ to be positive: $y > 0 \\implies k \\ge 1$, and $x > 0 \\implies 72 - 8k > 0 \\implies k < 9$.\n5. To satisfy $x > y$: $72 - 8k > 5k \\implies 72 > 13k \\implies k < \\frac{72}{13} \\approx 5.54$.\n6. Therefore, the integer values of $k$ must satisfy $1 \\le k \\le 5$, giving $k \\in \\{1, 2, 3, 4, 5\\}$, which corresponds to exactly 5 pairs.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_SIGN_ON_TRANSPOSE",
+    "distractor_misconceptions": [
+      {
+        "option": "3",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      }
+    ]
+  },
+  {
+    "id": "c5702ed3-1c78-49d2-99ff-3fa1dc116f9e",
+    "spec": "L4-x29",
+    "concept_id": "L4",
+    "type": "TITA",
+    "stem": "Find the sum of all integer values of $x$ that satisfy the equation $(x - 3)(2x + 1) = 9$.",
+    "options": null,
+    "answer": "4",
+    "solution": "1. Expand the given equation: $2x^2 + x - 6x - 3 = 9$, which simplifies to $2x^2 - 5x - 12 = 0$.\n2. Factor the quadratic equation: $2x^2 - 8x + 3x - 12 = 0 \\implies 2x(x - 4) + 3(x - 4) = 0 \\implies (2x + 3)(x - 4) = 0$.\n3. The roots of the equation are $x = 4$ and $x = -\\frac{3}{2}$.\n4. Since $x$ must be an integer, the only valid value is $x = 4$.\n5. Thus, the sum of all integer values of $x$ is 4.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "2a987b6c-f45c-4abb-92cd-0991a51d73e9",
+    "spec": "L2-x7",
+    "concept_id": "L2",
+    "type": "MCQ",
+    "stem": "Find the sum of all real values of $x$ satisfying the equation $\\log_2(x - 3) + \\log_2(x - 1) = 3$.",
+    "options": [
+      "5",
+      "4",
+      "1",
+      "6"
+    ],
+    "answer": "5",
+    "solution": "1. For the logarithmic terms to be defined, we require $x - 3 > 0$ and $x - 1 > 0$, which gives the domain $x > 3$.\n2. Using the product rule for logarithms, $\\log_2((x - 3)(x - 1)) = 3$.\n3. Converting to exponential form, $(x - 3)(x - 1) = 2^3 = 8$.\n4. Expanding the expression gives $x^2 - 4x + 3 = 8$, which simplifies to $x^2 - 4x - 5 = 0$.\n5. Factoring the quadratic yields $(x - 5)(x + 1) = 0$, so $x = 5$ or $x = -1$.\n6. Since $x > 3$, the only valid root is $x = 5$. Thus, the sum of all real solutions is 5.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "4",
+        "misconception_id": "L2_IGNORE_DOMAIN"
+      },
+      {
+        "option": "6",
+        "misconception_id": "L2_LOG_OF_SUM"
+      }
+    ]
+  },
+  {
+    "id": "a927f7d2-f282-4530-ba8b-d08cc175ecd1",
+    "spec": "L6-x3",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "How many terms are common to both the arithmetic progression $17, 24, 31, \\dots, 570$ and the arithmetic progression $19, 29, 39, \\dots, 699$?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "8",
+    "solution": "1. First sequence: $A_n = 17 + 7(n-1)$, with terms $\\le 570$. The common difference is $d_1 = 7$.\n2. Second sequence: $B_m = 19 + 10(m-1)$, with terms $\\le 699$. The common difference is $d_2 = 10$.\n3. A common term $x$ must satisfy $x \\equiv 17 \\equiv 3 \\pmod 7$ and $x \\equiv 19 \\equiv 9 \\pmod{10}$.\n4. Testing values satisfying $x \\equiv 9 \\pmod{10}$: $9, 19, 29, 39, 49, 59, \\dots$ modulo $7$ gives $2, 5, 1, 4, 0, 3, \\dots$\n   So the first common term is $x_1 = 59$.\n5. The common difference of the sequence of common terms is $\\text{lcm}(7, 10) = 70$.\n6. The common terms are given by $T_k = 59 + 70(k-1)$.\n7. The maximum possible value is bounded by $\\min(570, 699) = 570$.\n8. Solve $59 + 70(k-1) \\le 570 \\implies 70(k-1) \\le 511 \\implies k-1 \\le 7.3$, so $k-1 = 7$, giving $k = 8$ terms.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "7",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      },
+      {
+        "option": "9",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      }
+    ]
+  },
+  {
+    "id": "9720aeb5-10e0-44b1-8d28-6e0151bbff97",
+    "spec": "L4-x44",
+    "concept_id": "L4",
+    "type": "TITA",
+    "stem": "Find the sum of all real values of $x$ that satisfy the equation\n$$\\frac{2x + 3}{x - 1} + \\frac{x - 2}{x + 1} = 4$$",
+    "options": null,
+    "answer": "2",
+    "solution": "1. Multiply both sides by $(x - 1)(x + 1) = x^2 - 1$, noting that $x \\neq 1$ and $x \\neq -1$:\n$$(2x + 3)(x + 1) + (x - 2)(x - 1) = 4(x^2 - 1)$$\n\n2. Expand and simplify the left-hand side:\n$$(2x^2 + 5x + 3) + (x^2 - 3x + 2) = 3x^2 + 2x + 5$$\n\n3. Equate the two sides to form a standard quadratic equation:\n$$3x^2 + 2x + 5 = 4x^2 - 4 \\implies x^2 - 2x - 9 = 0$$\n\n4. Check the discriminant:\n$$D = (-2)^2 - 4(1)(-9) = 4 + 36 = 40 > 0$$\nSince neither $x = 1$ nor $x = -1$ satisfies $x^2 - 2x - 9 = 0$, both real roots are valid.\n\n5. For a quadratic equation $ax^2 + bx + c = 0$, the sum of the roots is $-\\frac{b}{a}$. Here, $a = 1$ and $b = -2$:\n$$\\text{Sum of roots} = -\\frac{-2}{1} = 2$$\n\nFinal Answer: 2",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L4_SUM_ROOTS_SIGN",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e2678d9e-aac9-469f-a474-b83626d292de",
+    "spec": "L6-x27",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "How many terms are common to both the arithmetic progressions $17, 21, 25, \\dots, 413$ and $16, 23, 30, \\dots, 422$?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "19"
+    ],
+    "answer": "14",
+    "solution": "1. The first sequence has first term $17$ and common difference $d_1 = 4$. Its terms are of the form $4a + 1$.\n2. The second sequence has first term $16$ and common difference $d_2 = 7$. Its terms are of the form $7b + 2$.\n3. To find the first common term $C_1$, we test values in the second sequence: $16 \\pmod 4 = 0$, $23 \\pmod 4 = 3$, $30 \\pmod 4 = 2$, $37 \\pmod 4 = 1$. Since $37$ is in both sequences and is $\\ge 17$, the first common term is $C_1 = 37$.\n4. The common difference of the shared terms is $\\text{lcm}(d_1, d_2) = \\text{lcm}(4, 7) = 28$.\n5. The last term cannot exceed $\\min(413, 422) = 413$.\n6. Let the number of common terms be $n$. Then, $37 + (n - 1) \\times 28 \\le 413 \\implies 28(n - 1) \\le 376 \\implies n - 1 \\le 13.43$, which gives $n - 1 = 13 \\implies n = 14$.\n7. Therefore, there are $14$ common terms.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "13",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      },
+      {
+        "option": "15",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      }
+    ]
+  },
+  {
+    "id": "102065ff-3e59-4378-9ef8-89796499e756",
+    "spec": "L3-x16",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "Find the number of pairs of integers $(x, y)$ that satisfy the system of linear equations:\n$3x - 4y = 17$\n$5x + 2y = 11$\nwhere $-10 \\le x, y \\le 10$.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": "1",
+    "solution": "1. Multiply the second equation by $2$: $10x + 4y = 22$.\n2. Add this to the first equation ($3x - 4y = 17$): $13x = 39 \\implies x = 3$.\n3. Substitute $x = 3$ into the second equation: $5(3) + 2y = 11 \\implies 15 + 2y = 11$.\n4. Transposing $15$ correctly gives $2y = 11 - 15 = -4 \\implies y = -2$.\n5. Both $x = 3$ and $y = -2$ lie within $[-10, 10]$, yielding exactly $1$ solution pair: $(3, -2)$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L3_SIGN_ON_TRANSPOSE",
+    "distractor_misconceptions": [
+      {
+        "option": "0",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      }
+    ]
+  },
+  {
+    "id": "992b8ad9-92d1-40eb-9190-191aed0f57e1",
+    "spec": "L6-x34",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "An infinite geometric progression has a second term equal to $-12$ and a fifth term equal to $\\frac{32}{9}$. If $S$ denotes the sum of all terms of this progression, which of the following statements is true?",
+    "options": [
+      "$S = 10.8$",
+      "$S = 54.0$",
+      "$S = 16.2$",
+      "$S = 27.0$"
+    ],
+    "answer": "$S = 10.8$",
+    "solution": "1. Let the first term be $a$ and the common ratio be $r$.\n2. We are given $T_2 = a r = -12$ and $T_5 = a r^4 = \\frac{32}{9}$.\n3. Dividing $T_5$ by $T_2$ yields $r^3 = \\frac{32/9}{-12} = -\\frac{8}{27}$, which gives $r = -\\frac{2}{3}$.\n4. Substituting $r = -\\frac{2}{3}$ into $a r = -12$ gives $a = \\frac{-12}{-2/3} = 18$.\n5. The sum of the infinite geometric series is $S = \\frac{a}{1 - r} = \\frac{18}{1 - (-2/3)} = \\frac{18}{5/3} = \\frac{54}{5} = 10.8$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L6_IGNORE_RATIO_SIGN",
+    "distractor_misconceptions": [
+      {
+        "option": "$S = 54.0$",
+        "misconception_id": "L6_IGNORE_RATIO_SIGN"
+      }
+    ]
+  },
+  {
+    "id": "4bb2a744-3cbb-4128-8fc3-5555715c46ac",
+    "spec": "L4-x16",
+    "concept_id": "L4",
+    "type": "MCQ",
+    "stem": "Let $S$ be the set of all real solutions to the equation $(x - 3)(x - 7) = 5$. If the function $f(x)$ is defined as $f(x) = x^2 - 6x + 13$, what is the minimum value of $f(x)$ for $x \\in S$?",
+    "options": [
+      "5",
+      "10",
+      "17",
+      "37"
+    ],
+    "answer": "5",
+    "solution": "1. Expand and rearrange the equation $(x - 3)(x - 7) = 5$ to standard quadratic form:\n$x^2 - 10x + 21 = 5 \\implies x^2 - 10x + 16 = 0$.\n\n2. Factorise the quadratic equation:\n$(x - 2)(x - 8) = 0$, which gives $x = 2$ or $x = 8$. Thus, $S = \\{2, 8\\}$.\n\n3. Evaluate $f(x) = x^2 - 6x + 13$ at each element of $S$:\nFor $x = 2$: $f(2) = 2^2 - 6(2) + 13 = 4 - 12 + 13 = 5$.\nFor $x = 8$: $f(8) = 8^2 - 6(8) + 13 = 64 - 48 + 13 = 29$.\n\n4. The minimum value of $f(x)$ for $x \\in S$ is $\\min(5, 29) = 5$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L4_ZERO_PRODUCT_NONZERO",
+    "distractor_misconceptions": [
+      {
+        "option": "37",
+        "misconception_id": "L4_ZERO_PRODUCT_NONZERO"
+      }
+    ]
+  },
+  {
+    "id": "92d21627-072a-4b33-97d4-d2912aec6491",
+    "spec": "L5-x28",
+    "concept_id": "L5",
+    "type": "MCQ",
+    "stem": "Which of the following intervals represents the complete set of all real values of $x$ satisfying the inequality $\\frac{x + 7}{x - 2} \\le 2$?",
+    "options": [
+      "$(-\\infty, 2) \\cup [11, \\infty)$",
+      "$[11, \\infty)$",
+      "$(-\\infty, 11]$",
+      "$(2, 11]$"
+    ],
+    "answer": "$(-\\infty, 2) \\cup [11, \\infty)$",
+    "solution": "1. Bring all terms to one side to avoid multiplying by an unknown sign: $\\frac{x + 7}{x - 2} - 2 \\le 0$.\n2. Combine over a common denominator: $\\frac{x + 7 - 2(x - 2)}{x - 2} \\le 0 \\implies \\frac{11 - x}{x - 2} \\le 0$.\n3. Multiply the numerator and denominator by $-1$ (flipping the inequality): $\\frac{x - 11}{x - 2} \\ge 0$.\n4. Using a number line (sign test) with critical points at $x = 2$ and $x = 11$, note that the denominator cannot be zero ($x \\ne 2$). The expression is positive for $x < 2$ and $x > 11$, and zero at $x = 11$.\n5. Thus, the solution set is $(-\\infty, 2) \\cup [11, \\infty)$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN",
+    "distractor_misconceptions": [
+      {
+        "option": "$[11, \\infty)$",
+        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
+      },
+      {
+        "option": "$(-\\infty, 11]$",
+        "misconception_id": "L5_NEG_NO_FLIP"
+      }
+    ]
+  },
+  {
+    "id": "eef66758-fab2-4108-84b5-0b910d6372c7",
+    "spec": "L7-x12",
+    "concept_id": "L7",
+    "type": "MCQ",
+    "stem": "Let $f(x) = 3x - 4$ and $g(x) = x^2 + 2x$ for all real numbers $x$. If $a$ is a positive real number such that $g(f(a)) = 35$, what is the value of $a$?",
+    "options": [
+      "1",
+      "3",
+      "$\\\\frac{13}{3}$",
+      "$\\\\frac{11}{3}$"
+    ],
+    "answer": "3",
+    "solution": "1. We are given the equation $g(f(a)) = 35$, where $g(u) = u^2 + 2u$.\n2. Letting $u = f(a)$, the equation becomes $u^2 + 2u - 35 = 0$.\n3. Factoring gives $(u + 7)(u - 5) = 0$, so $u = 5$ or $u = -7$.\n4. Since $f(a) = 3a - 4$, we have either $3a - 4 = 5$ or $3a - 4 = -7$.\n5. Solving these yields $3a = 9 \\implies a = 3$, or $3a = -3 \\implies a = -1$.\n6. Given that $a$ is a positive real number, we select $a = 3$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L7_COMPOSITION_ORDER",
+    "distractor_misconceptions": [
+      {
+        "option": "$\\\\frac{13}{3}$",
+        "misconception_id": "L7_COMPOSITION_ORDER"
+      }
+    ]
+  },
+  {
+    "id": "4cb2c46f-9e11-46c0-a1b3-ae2d64714ea6",
+    "spec": "G1-x14",
+    "concept_id": "G1",
+    "type": "TITA",
+    "stem": "In an artistic geometric pattern, three consecutive angles $\\theta_1$, $\\theta_2$, and $\\theta_3$ form an arithmetic progression in that order. It is given that $\\theta_1 = 24^\\circ$, and $\\theta_3$ is equal to the complement of $\\theta_2$. Find the measure of the supplement of $\\theta_2$ (in degrees).",
+    "options": null,
+    "answer": "142",
+    "solution": "1. Let $d$ be the common difference of the arithmetic progression. Then $\\theta_1 = 24^\\circ$, $\\theta_2 = 24^\\circ + d$, and $\\theta_3 = 24^\\circ + 2d = 2\\theta_2 - 24^\\circ$.\n2. Since $\\theta_3$ is the complement of $\\theta_2$, we have $\\theta_2 + \\theta_3 = 90^\\circ$.\n3. Substitute $\\theta_3 = 2\\theta_2 - 24^\\circ$: $\\theta_2 + (2\\theta_2 - 24^\\circ) = 90^\\circ \\implies 3\\theta_2 = 114^\\circ \\implies \\theta_2 = 38^\\circ$.\n4. The supplement of $\\theta_2$ is $180^\\circ - \\theta_2 = 180^\\circ - 38^\\circ = 142^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G1_COMPLEMENT_SUPPLEMENT_MIX",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "43e23ed4-2fea-4b0e-89e6-1ef9dbc563c3",
+    "spec": "L6-x33",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "An arithmetic progression consists of integers and has common difference $d > 0$. The sum of the first $n$ terms is $420$. If the first term is $3$ and $d$ is also an integer, how many possible values can $n$ take?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "answer": "4",
+    "solution": "1. The sum of the first $n$ terms of an AP is given by $S_n = \\frac{n}{2}[2a + (n - 1)d]$.\n2. Given $S_n = 420$ and $a = 3$, we have $\\frac{n}{2}[6 + (n - 1)d] = 420$, which simplifies to $n[6 + (n - 1)d] = 840$.\n3. From this, $(n - 1)d = \\frac{840}{n} - 6 = \\frac{840 - 6n}{n}$. Since $d$ must be a positive integer ($d \\ge 1$) and $n > 1$ is an integer:\n   - $n$ must be a divisor of $840$.\n   - $6 + (n - 1)d > 6$, meaning $\\frac{840}{n} > 6 \\implies n < 140$.\n   - Also, $n - 1$ must divide $\\frac{840}{n} - 6$, so $d = \\frac{840 - 6n}{n(n - 1)}$ is a positive integer.\n4. Testing divisors $n$ of $840$ where $n > 1$ and $n < 140$:\n   - $n = 2$: $d = \\frac{840 - 12}{2(1)} = 414$ (Integer)\n   - $n = 3$: $d = \\frac{840 - 18}{3(2)} = \\frac{822}{6} = 137$ (Integer)\n   - $n = 4$: $d = \\frac{840 - 24}{4(3)} = \\frac{816}{12} = 68$ (Integer)\n   - $n = 5$: $d = \\frac{840 - 30}{5(4)} = \\frac{810}{20} = 40.5$ (Not integer)\n   - $n = 6$: $d = \\frac{840 - 36}{6(5)} = \\frac{804}{30}$ (Not integer)\n   - $n = 7$: $d = \\frac{840 - 42}{7(6)} = \\frac{798}{42} = 19$ (Integer)\n   - For $n \\ge 8$:\n     - $n = 8$: $d = \\frac{840 - 48}{8(7)} = \\frac{792}{56}$ (Not integer)\n     - $n = 10$: $d = \\frac{840 - 60}{10(9)} = \\frac{780}{90}$ (Not integer)\n     - $n = 12$: $d = \\frac{840 - 72}{12(11)} = \\frac{768}{132}$ (Not integer)\n     - $n = 14$: $d = \\frac{840 - 84}{14(13)} = \\frac{756}{182}$ (Not integer)\n     - $n = 15$: $d = \\frac{840 - 90}{15(14)} = \\frac{750}{210}$ (Not integer)\n     - $n = 20$: $d = \\frac{840 - 120}{20(19)} = \\frac{720}{380}$ (Not integer)\n     - $n = 21$: $d = \\frac{714}{420}$ (Not integer)\n     - $n = 24$: $d = \\frac{696}{552} > 1$ but not integer\n     - For $n \\ge 28$, $n(n - 1) \\ge 28 \\times 27 = 756 > 840 - 6n$, so $0 < d < 1$, which yields no further integer solutions.\n5. Thus, the possible values for $n$ are $2, 3, 4, 7$, giving a total of $4$ possible values.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "5",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      },
+      {
+        "option": "3",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      }
+    ]
+  },
+  {
+    "id": "3e2b6c3f-1163-457b-bb86-b597833ae1b6",
+    "spec": "G1-x8",
+    "concept_id": "G1",
+    "type": "TITA",
+    "stem": "In a convex quadrilateral $PQRS$, side $PQ$ is parallel to side $RS$. The interior angle $\\angle SPQ$ has measure $(5x - 14)^\\circ$, while the interior angle $\\angle PSR$ has measure $(3x + 18)^\\circ$. If $x$ is an integer, find the measure, in degrees, of the acute angle between the straight lines containing sides $PQ$ and $PS$.",
+    "options": null,
+    "answer": "84",
+    "solution": "1. Since $PQ \\parallel RS$, the interior angles $\\angle SPQ$ and $\\angle PSR$ lie on the same side of the transversal line $PS$, making them co-interior angles.\n2. Co-interior angles are supplementary, so $\\angle SPQ + \\angle PSR = 180^\\circ$.\n3. Setting up the equation: $(5x - 14) + (3x + 18) = 180 \\implies 8x + 4 = 180 \\implies 8x = 176 \\implies x = 22$.\n4. The measure of $\\angle SPQ = 5(22) - 14 = 110 - 14 = 96^\\circ$.\n5. The acute angle between the straight lines containing $PQ$ and $PS$ is the angle adjacent to $\\angle SPQ$ on the line, which is $180^\\circ - 96^\\circ = 84^\\circ$ (or simply the measure of $\\angle PSR = 3(22) + 18 = 84^\\circ$).\n6. The final answer is 84.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G1_CO_INTERIOR_EQUAL",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "cd52dac3-a268-4d9e-8599-aae4b2d0d046",
+    "spec": "L6-x37",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "How many terms of the arithmetic progression $12, 19, 26, 33, \\dots, 705$ are divisible by $5$?",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "24"
+    ],
+    "answer": "20",
+    "solution": "1. The given sequence is an arithmetic progression with first term $a = 12$ and common difference $d = 7$. Its general term is $T_n = 12 + (n - 1)7 = 7n + 5$.\n2. The total number of terms $N$ is found from $7N + 5 \\le 705 \\implies 7N \\le 700 \\implies N = 100$.\n3. A term $T_n$ is divisible by $5$ when $7n + 5 \\equiv 0 \\pmod 5$, which simplifies to $7n \\equiv 0 \\pmod 5$, meaning $2n \\equiv 0 \\pmod 5$. Since $\\gcd(2, 5) = 1$, this occurs if and only if $n$ is a multiple of $5$.\n4. For $1 \\le n \\le 100$, the multiples of $5$ are $n = 5, 10, 15, \\dots, 100$.\n5. The number of such terms is $\\frac{100 - 5}{5} + 1 = 20$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "19",
+        "misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE"
+      },
+      {
+        "option": "21",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      }
+    ]
+  },
+  {
+    "id": "d1a65985-858c-44a4-a380-6eb6273730e1",
+    "spec": "G2-x13",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "In $\\triangle ABC$, the points $D$ and $E$ lie on sides $AB$ and $AC$ respectively such that $DE$ is parallel to $BC$. A line parallel to $AB$ is drawn through $E$, intersecting $BC$ at point $F$. If the area of $\\triangle ADE$ is $36\\text{ cm}^2$ and the area of $\\triangle EFC$ is $49\\text{ cm}^2$, what is the area of $\\triangle ABC$, in $\\text{cm}^2$?",
+    "options": [
+      "85",
+      "121",
+      "169",
+      "208"
+    ],
+    "answer": "169",
+    "solution": "1. Since $DE \\parallel BC$ and $EF \\parallel AB$, quadrilateral $BDEF$ is a parallelogram, which means $BD = EF$ and $DE = BF$.\n2. Also, $\\triangle ADE \\sim \\triangle EFC \\sim \\triangle ABC$ because corresponding angles are equal.\n3. The ratio of the areas of similar triangles is the square of the ratio of their corresponding sides. Thus, $\\frac{DE}{FC} = \\sqrt{\\frac{\\text{Area}(\\triangle ADE)}{\\text{Area}(\\triangle EFC)}} = \\sqrt{\\frac{36}{49}} = \\frac{6}{7}$.\n4. For $\\triangle ADE$ and $\\triangle ABC$, corresponding side $BC = BF + FC = DE + FC$. Thus, the ratio of corresponding sides is $\\frac{BC}{DE} = \\frac{DE + FC}{DE} = 1 + \\frac{FC}{DE} = 1 + \\frac{7}{6} = \\frac{13}{6}$.\n5. Therefore, $\\frac{\\text{Area}(\\triangle ABC)}{\\text{Area}(\\triangle ADE)} = \\left(\\frac{13}{6}\\right)^2 = \\frac{169}{36}$.\n6. Hence, $\\text{Area}(\\triangle ABC) = 36 \\times \\frac{169}{36} = 169\\text{ cm}^2$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "121",
+        "misconception_id": "G2_AREA_RATIO_NOT_SQUARED"
+      }
+    ]
+  },
+  {
+    "id": "0d9010c6-2bee-4725-826e-068f35cb63df",
+    "spec": "G2-x34",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "Set $A$ consists of sticks of lengths $4\\text{ cm}$, $7\\text{ cm}$, $10\\text{ cm}$, and $12\\text{ cm}$. Set $B$ consists of sticks of lengths $3\\text{ cm}$, $5\\text{ cm}$, $9\\text{ cm}$, and $14\\text{ cm}$. Let $N_A$ and $N_B$ denote the number of distinct non-degenerate triangles that can be formed by choosing three sticks from Set $A$ and Set $B$, respectively. What is the value of $N_A - N_B$?",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "solution": "1. For Set $A = \\{4, 7, 10, 12\\}$, the total number of ways to choose 3 sticks is $\\binom{4}{3} = 4$.\nWe test the triangle inequality ($a + b > c$) for each triplet:\n- $(4, 7, 10)$: $4 + 7 = 11 > 10$ (Valid)\n- $(4, 7, 12)$: $4 + 7 = 11 < 12$ (Invalid)\n- $(4, 10, 12)$: $4 + 10 = 14 > 12$ (Valid)\n- $(7, 10, 12)$: $7 + 10 = 17 > 12$ (Valid)\nThus, $N_A = 3$.\n\n2. For Set $B = \\{3, 5, 9, 14\\}$, the total number of ways to choose 3 sticks is $\\binom{4}{3} = 4$.\nWe test each triplet:\n- $(3, 5, 9)$: $3 + 5 = 8 < 9$ (Invalid)\n- $(3, 5, 14)$: $3 + 5 = 8 < 14$ (Invalid)\n- $(3, 9, 14)$: $3 + 9 = 12 < 14$ (Invalid)\n- $(5, 9, 14)$: $5 + 9 = 14 = 14$ (Degenerate, not a triangle)\nThus, $N_B = 0$.\n\n3. Therefore, $N_A - N_B = 3 - 0 = 3$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY",
+    "distractor_misconceptions": [
+      {
+        "option": "0",
+        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
+      }
+    ]
+  },
+  {
+    "id": "f30315bd-84aa-4032-a078-c0daeed0c305",
+    "spec": "L5-x3",
+    "concept_id": "L5",
+    "type": "MCQ",
+    "stem": "Find the maximum real value of $x$ that satisfies the inequality $\\frac{|x - 3| - 2}{|x - 3| - 5} \\le 0$.",
+    "options": [
+      "$8$",
+      "Does not exist",
+      "$5$",
+      "$1$"
+    ],
+    "answer": "Does not exist",
+    "solution": "1. Let $y = |x - 3|$. Since $y$ is an absolute value, $y \\ge 0$.\n2. The inequality becomes $\\frac{y - 2}{y - 5} \\le 0$.\n3. For the rational expression to be non-positive, the numerator and denominator must have opposite signs, and the denominator cannot be zero ($y \\ne 5$).\n4. Thus, $2 \\le y < 5$, which translates to $2 \\le |x - 3| < 5$.\n5. From $|x - 3| < 5$, we have $-5 < x - 3 < 5 \\implies -2 < x < 8$.\n6. From $|x - 3| \\ge 2$, we have $x - 3 \\le -2$ or $x - 3 \\ge 2$, meaning $x \\le 1$ or $x \\ge 5$.\n7. Combining these gives $x \\in (-2, 1] \\cup [5, 8)$.\n8. Because the interval is open at $x = 8$ (where the denominator would be $0$), there is no maximum real value of $x$ in the solution set. Therefore, the maximum real value does not exist.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$8$",
+        "misconception_id": "L5_MULTIPLY_UNKNOWN_SIGN"
+      },
+      {
+        "option": "$5$",
+        "misconception_id": "L5_MODULUS_ONE_CASE"
+      },
+      {
+        "option": "$1$",
+        "misconception_id": "L5_NEG_NO_FLIP"
+      }
+    ]
+  },
+  {
+    "id": "cd9e8466-b458-4846-af22-a7bbb2ccf955",
+    "spec": "L6-x11",
+    "concept_id": "L6",
+    "type": "TITA",
+    "stem": "The sum of the first $n$ terms of an arithmetic progression is $130$, and the sum of the next $n$ terms is $330$. If the first term of the progression is $4$, find the value of $n$.",
+    "options": null,
+    "answer": "10",
+    "solution": "1. Let $a$ be the first term and $d$ be the common difference. We are given $a = 4$.\n2. The sum of the first $n$ terms is $S_n = \\frac{n}{2}[2a + (n-1)d] = 130$, so $n[8 + (n-1)d] = 260$, which gives $8n + n(n-1)d = 260$.\n3. In any arithmetic progression, the sum of the second block of $n$ terms exceeds the sum of the first block of $n$ terms by $n^2d$. Thus, $n^2d = 330 - 130 = 200$.\n4. Rewriting $n(n-1)d$ as $n^2d - nd = 200 - nd$, substitute this into the equation from step 2:\n$8n + 200 - nd = 260 \\implies 8n - nd = 60$.\n5. Since $nd = \\frac{200}{n}$, substitute $nd$ into the equation:\n$8n - \\frac{200}{n} = 60 \\implies 8n^2 - 60n - 200 = 0 \\implies 2n^2 - 15n - 50 = 0$.\n6. Factoring gives $(2n + 5)(n - 10) = 0$. Since $n$ must be a positive integer, $n = 10$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "3886f16d-ca90-4f4b-83d1-a4c8beb92bf6",
+    "spec": "L3-x7",
+    "concept_id": "L3",
+    "type": "MCQ",
+    "stem": "For which value(s) of the real constant $k$ does the system of linear equations\n$$(k + 1)x + 3y = 2k + 2$$\n$$4x + (k - 3)y = k + 3$$\nhave infinitely many solutions?",
+    "options": [
+      "$k = 5$ only",
+      "$k = -3$ only",
+      "Both $k = 5$ and $k = -3$",
+      "$k = -5$ only"
+    ],
+    "answer": "$k = 5$ only",
+    "solution": "1. For the system $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$ to have infinitely many solutions, the lines must be coincident: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.\n2. Equating the coefficients of $x$ and $y$: $\\frac{k + 1}{4} = \\frac{3}{k - 3} \\implies (k + 1)(k - 3) = 12 \\implies k^2 - 2k - 15 = 0$.\n3. Factoring the quadratic gives $(k - 5)(k + 3) = 0$, so $k = 5$ or $k = -3$.\n4. Test $k = 5$: $\\frac{6}{4} = \\frac{3}{2} = \\frac{2(5)+2}{5+3} = \\frac{12}{8} = \\frac{3}{2}$. Since all ratios are equal, $k = 5$ yields infinitely many solutions.\n5. Test $k = -3$: $\\frac{-2}{4} = \\frac{3}{-6} = -\\frac{1}{2}$, but the constant term ratio is $\\frac{-4}{0}$, which is undefined, meaning the lines are parallel and distinct (no solution).\n6. Therefore, infinitely many solutions exist for $k = 5$ only.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "Both $k = 5$ and $k = -3$",
+        "misconception_id": "L3_PROPORTIONAL_MEANS_INFINITE"
+      },
+      {
+        "option": "$k = -5$ only",
+        "misconception_id": "L3_SIGN_ON_TRANSPOSE"
+      }
+    ]
+  },
+  {
+    "id": "5c62c8b3-3bd3-46a7-b82f-d8b82e891e3d",
+    "spec": "L6-x38",
+    "concept_id": "L6",
+    "type": "TITA",
+    "stem": "Find the number of terms common to both the arithmetic progression $11, 15, 19, \\dots, 607$ and the arithmetic progression $14, 21, 28, \\dots, 707$.",
+    "options": null,
+    "answer": "21",
+    "solution": "1. The first sequence has terms $a_n = 11 + 4(n-1) = 4n + 7$, so its terms are of the form $x \\equiv 3 \\pmod 4$, with range $11 \\le x \\le 607$.\n2. The second sequence has terms $b_m = 14 + 7(m-1) = 7m + 7$, so its terms are multiples of $7$, with range $14 \\le x \\le 707$.\n3. A common term must satisfy $x \\equiv 0 \\pmod 7$ and $x \\equiv 3 \\pmod 4$. Testing multiples of $7$: $7 \\equiv 3 \\pmod 4$, so the smallest positive integer satisfying both conditions is $7$. However, the first sequence starts at $11$, so we test subsequent terms of the common progression, which has common difference $\\operatorname{lcm}(4, 7) = 28$.\n4. The terms are of the form $28k + 7$ for integers $k \\ge 0$. The first common term $\\ge 11$ is obtained at $k = 1$: $28(1) + 7 = 35$.\n5. The common terms must also not exceed $\\min(607, 707) = 607$. Setting $28k + 7 \\le 607$, we get $28k \\le 600$, which gives $k \\le 21.428...$, so the largest integer $k$ is $21$.\n6. The valid values for $k$ are $1, 2, \\dots, 21$, yielding a total of $21 - 1 + 1 = 21$ terms.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L6_COUNT_TERMS_NO_PLUS_ONE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "284802c1-c4e2-46c9-bf97-7a57a35940f3",
+    "spec": "G5-x11",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid right circular cone of base radius $12\\text{ cm}$ and height $16\\text{ cm}$ is cut parallel to its base into two parts: a smaller cone at the top and a frustum at the bottom. If the volume of the frustum is seven times the volume of the smaller cone, find the curved surface area (in $\\text{cm}^2$) of the frustum. (Take $\\pi = \\frac{22}{7}$)",
+    "options": null,
+    "answer": "565.71",
+    "solution": "1. Let $V_1$ be the volume of the smaller cone and $V_2$ be the volume of the frustum. Given $V_2 = 7V_1$, the total volume of the original cone is $V = V_1 + V_2 = 8V_1$.\n2. Since the smaller cone is geometrically similar to the original cone, the ratio of their volumes is $\\frac{V_1}{V} = \\left(\\frac{h_1}{H}\\right)^3 = \\left(\\frac{r_1}{R}\\right)^3 = \\frac{1}{8}$.\n3. Thus, the linear scale factor is $\\frac{r_1}{R} = \\frac{h_1}{H} = \\sqrt[3]{\\frac{1}{8}} = \\frac{1}{2}$.\n4. For the original cone, radius $R = 12\\text{ cm}$ and height $H = 16\\text{ cm}$, giving slant height $L = \\sqrt{12^2 + 16^2} = 20\\text{ cm}$.\n5. The radius and slant height of the smaller cone are $r_1 = \\frac{12}{2} = 6\\text{ cm}$ and $l_1 = \\frac{20}{2} = 10\\text{ cm}$.\n6. The curved surface area of the frustum is $\\text{CSA}_{\\text{frustum}} = \\pi (R + r_1)(L - l_1) = \\pi (12 + 6)(20 - 10) = 180\\pi\\text{ cm}^2$.\n7. Evaluating with $\\pi = \\frac{22}{7}$: $\\frac{180 \\times 22}{7} = \\frac{3960}{7} \\approx 565.71$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "af0fc7b7-20b8-4c7f-ba77-2add68d63335",
+    "spec": "G5-x17",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid right circular cylinder has base radius $r\\text{ cm}$ and height $h\\text{ cm}$. When its height is increased by $6\\text{ cm}$ keeping the base radius unchanged, its curved surface area increases by $25\\%$. Instead, if its base radius had been increased by $3\\text{ cm}$ keeping the height unchanged, its curved surface area would have increased by $50\\%$. Find the volume of the original cylinder, in $\\text{cm}^3$, divided by $\\pi$.",
+    "options": null,
+    "answer": "864",
+    "solution": "1. Let the original curved surface area be $\\text{CSA}_1 = 2\\pi rh$.\n2. When height increases by $6\\text{ cm}$, the new curved surface area is $2\\pi r(h + 6)$. The fractional increase is $\\frac{6}{h} = 25\\% = \\frac{1}{4}$, which gives $h = 24\\text{ cm}$.\n3. When base radius increases by $3\\text{ cm}$, the new curved surface area is $2\\pi (r + 3)h$. The fractional increase is $\\frac{3}{r} = 50\\% = \\frac{1}{2}$, which gives $r = 6\\text{ cm}$.\n4. The original volume is $V = \\pi r^2 h = \\pi (6^2)(24) = 864\\pi\\text{ cm}^3$.\n5. Therefore, $\\frac{V}{\\pi} = 864$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "dc66bee0-c4fc-417b-9cf3-4e371bdf109c",
+    "spec": "G1-x13",
+    "concept_id": "G1",
+    "type": "MCQ",
+    "stem": "In the figure formed by two parallel lines $L_1$ and $L_2$ cut by a transversal, two co-interior angles are $\\alpha$ and $\\beta$, with $\\alpha < \\beta$. The supplement of $\\alpha$ is three times the complement of $\\alpha$. If the measure of an angle $\\theta$ is equal to the complement of $(\\beta - \\alpha)$, what is the measure of $\\theta$?",
+    "options": [
+      "$0^\\circ$",
+      "$45^\\circ$",
+      "$90^\\circ$",
+      "$135^\\circ$"
+    ],
+    "answer": "$0^\\circ$",
+    "solution": "1. Let $\\alpha$ be an acute angle. The supplement of $\\alpha$ is $180^\\circ - \\alpha$ and the complement of $\\alpha$ is $90^\\circ - \\alpha$.\n2. According to the problem, $180^\\circ - \\alpha = 3(90^\\circ - \\alpha)$. Solving this gives $180^\\circ - \\alpha = 270^\\circ - 3\\alpha \\implies 2\\alpha = 90^\\circ \\implies \\alpha = 45^\\circ$.\n3. Since $\\alpha$ and $\\beta$ are co-interior angles between parallel lines, $\\alpha + \\beta = 180^\\circ$. With $\\alpha = 45^\\circ$, we find $\\beta = 180^\\circ - 45^\\circ = 135^\\circ$.\n4. The difference is $\\beta - \\alpha = 135^\\circ - 45^\\circ = 90^\\circ$.\n5. The complement of $(\\beta - \\alpha)$ is $90^\\circ - 90^\\circ = 0^\\circ$.\n6. Thus, $\\theta = 0^\\circ$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$90^\\circ$",
+        "misconception_id": "G1_CO_INTERIOR_EQUAL"
+      },
+      {
+        "option": "$45^\\circ$",
+        "misconception_id": "G1_COMPLEMENT_SUPPLEMENT_MIX"
+      }
+    ]
+  },
+  {
+    "id": "6c9b578f-4c46-4c52-9d55-4d81a33bd504",
+    "spec": "G6-x8",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, line $L_1$ passes through the points $A(3, 4)$ and $B(5, 10)$. A line $L_2$ is perpendicular to $L_1$ and intersects the $y$-axis at the point $(0, 20)$. If line $L_2$ also passes through the point $(k, 2)$, find the value of $k$.",
+    "options": null,
+    "answer": "54",
+    "solution": "1. Find the slope of line $L_1$: $m_1 = \\frac{10 - 4}{5 - 3} = \\frac{6}{2} = 3$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{3}$.\n3. The equation of $L_2$ with $y$-intercept $(0, 20)$ is $y = -\\frac{1}{3}x + 20$.\n4. Substitute $(k, 2)$ into the equation of $L_2$: $2 = -\\frac{1}{3}k + 20 \\implies \\frac{1}{3}k = 18 \\implies k = 54$.\n\n(Note: A student suffering from G6_SLOPE_INVERTED would compute $m_1 = \\frac{5 - 3}{10 - 4} = \\frac{1}{3}$, leading to $m_2 = -3$ and $k = 6$.)",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "6bcc1876-f8fb-4df3-a583-de7211f8ec34",
+    "spec": "L6-x18",
+    "concept_id": "L6",
+    "type": "MCQ",
+    "stem": "In an arithmetic progression, the sum of the $4^{\\text{th}}$ and $8^{\\text{th}}$ terms is $56$, and the $11^{\\text{th}}$ term is $53$. What is the $25^{\\text{th}}$ term of this progression?",
+    "options": [
+      "123",
+      "128",
+      "133",
+      "118"
+    ],
+    "answer": "123",
+    "solution": "1. Let the first term of the arithmetic progression be $a$ and the common difference be $d$.\n2. The given conditions are:\n   $T_4 + T_8 = (a + 3d) + (a + 7d) = 2a + 10d = 56 \\implies a + 5d = 28$.\n   $T_{11} = a + 10d = 53$.\n3. Subtracting the first equation from the second:\n   $(a + 10d) - (a + 5d) = 53 - 28 \\implies 5d = 25 \\implies d = 5$.\n4. Substituting $d = 5$ into $a + 5d = 28$ gives:\n   $a + 25 = 28 \\implies a = 3$.\n5. The $25^{\\text{th}}$ term is:\n   $T_{25} = a + (25 - 1)d = 3 + 24(5) = 3 + 120 = 123$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1",
+    "distractor_misconceptions": [
+      {
+        "option": "128",
+        "misconception_id": "L6_N_INSTEAD_OF_N_MINUS_1"
+      }
+    ]
+  },
+  {
+    "id": "39597514-65b1-4832-a8c6-6266c1e2ffd1",
+    "spec": "G5-x22",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A craftsman carves a set of three solid wooden cones forming a decorative sequence. For $n \\in \\{1, 2, 3\\}$, the $n$-th cone has a base radius of $3n\\text{ cm}$ and a slant height of $5n\\text{ cm}$. The total volume of wood in all three cones, in $\\text{cm}^3$, is",
+    "options": [
+      "$72\\pi$",
+      "$216\\pi$",
+      "$432\\pi$",
+      "$540\\pi$"
+    ],
+    "answer": "$432\\pi$",
+    "solution": "1. For the $n$-th cone, the base radius is $r_n = 3n\\text{ cm}$ and the slant height is $l_n = 5n\\text{ cm}$.\n2. The vertical height $h_n$ is given by $h_n = \\sqrt{l_n^2 - r_n^2} = \\sqrt{(5n)^2 - (3n)^2} = \\sqrt{16n^2} = 4n\\text{ cm}$.\n3. The volume of the $n$-th cone is $V_n = \\frac{1}{3}\\pi r_n^2 h_n = \\frac{1}{3}\\pi (3n)^2(4n) = 12\\pi n^3\\text{ cm}^3$.\n4. Summing the volumes for $n = 1, 2, 3$:\n$V_{\\text{total}} = 12\\pi (1^3 + 2^3 + 3^3) = 12\\pi (1 + 8 + 27) = 12\\pi \\times 36 = 432\\pi\\text{ cm}^3$.\n\nHence, the correct answer is $432\\pi$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_SLANT_AS_HEIGHT",
+    "distractor_misconceptions": [
+      {
+        "option": "$540\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$72\\pi$",
+        "misconception_id": "G5_VOLUME_SCALES_LINEARLY"
+      }
+    ]
+  },
+  {
+    "id": "7d920399-6c4c-49a1-b6fa-8a551293e0f2",
+    "spec": "M2-x6",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "A metropolitan census bureau has divided a city into $8$ distinct zones. To verify demographic data, the director must form an audit panel by selecting an unranked group of $4$ zones. However, due to administrative protocols, two specific zones—Zone $A$ and Zone $B$—cannot both be audited together in the same panel. In how many different ways can the audit panel of $4$ zones be selected?",
+    "options": [
+      "55",
+      "65",
+      "330",
+      "1320"
+    ],
+    "answer": "55",
+    "solution": "1. The total number of ways to choose an unranked group of $4$ zones out of $8$ without any restriction is $\\binom{8}{4} = \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1} = 70$.\n2. The number of panels containing both Zone $A$ and Zone $B$ requires choosing the remaining $2$ zones from the other $6$ available zones: $\\binom{6}{2} = \\frac{6 \\times 5}{2 \\times 1} = 15$.\n3. Therefore, the number of permissible panels where Zone $A$ and Zone $B$ are not selected together is $70 - 15 = 55$.\n\nHence, the correct answer is 55.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_PERM_FOR_COMB",
+    "distractor_misconceptions": [
+      {
+        "option": "1320",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      }
+    ]
   }
 ]

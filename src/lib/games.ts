@@ -4,6 +4,7 @@ import { db, schema } from "@/lib/db";
 import { getConcept, getMisconception, MISCONCEPTIONS } from "@/lib/content";
 import { activeMisconceptions, masteryMap, stepLifecycle } from "@/lib/repo";
 import roundsData from "../../data/spot-rounds.json";
+import type { SprintCategory, SprintKind } from "@/lib/sprint";
 
 const s = schema;
 
@@ -183,4 +184,37 @@ export async function saveSpotResult(studentId: string, results: SpotRoundResult
     isBest: prevBest == null || score > prevBest,
     credited: credited.map((id) => getMisconception(id)?.name ?? id),
   };
+}
+
+/* ── CAT speed sprint ── */
+
+export interface SprintAnswer { kind: SprintKind; correct: boolean; ms: number }
+
+/** Best sprint score per category (the score is the number answered correctly in 60s). */
+export async function sprintBests(studentId: string): Promise<Record<SprintCategory, number | null>> {
+  const rows = await db
+    .select({ score: s.gameScores.score, details: s.gameScores.details })
+    .from(s.gameScores)
+    .where(and(eq(s.gameScores.studentId, studentId), eq(s.gameScores.game, "sprint")));
+  const out: Record<SprintCategory, number | null> = { all: null, percent: null, squares: null, fractions: null };
+  for (const r of rows) {
+    const c = ((r.details as { category?: SprintCategory } | null)?.category ?? "all") as SprintCategory;
+    if (c in out) out[c] = Math.max(out[c] ?? 0, r.score);
+  }
+  return out;
+}
+
+export async function saveSprintResult(studentId: string, category: SprintCategory, answers: SprintAnswer[]) {
+  const prev = (await sprintBests(studentId))[category];
+  const score = answers.filter((a) => a.correct).length;
+  // per-kind speed and accuracy, kept for "your fraction → % speed improved" nudges later
+  const byKind: Record<string, { n: number; correct: number; ms: number }> = {};
+  for (const a of answers) {
+    const k = (byKind[a.kind] ??= { n: 0, correct: 0, ms: 0 });
+    k.n++;
+    if (a.correct) k.correct++;
+    k.ms += a.ms;
+  }
+  await db.insert(s.gameScores).values({ studentId, game: "sprint", score, details: { category, attempted: answers.length, byKind } });
+  return { score, best: Math.max(score, prev ?? 0), isBest: prev == null || score > prev };
 }

@@ -2902,5 +2902,389 @@
   {
     "spec": "M2-x6",
     "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A8-x13",
+    "reason": "ambiguous (The forward speed is never explicitly stated as a fact, only as a conditional ('If she drives at 45 km/h...'). The solve)"
+  },
+  {
+    "spec": "N1-x12",
+    "reason": "ambiguous (Contradictory conditions: A number cannot leave a remainder of 3 when divided by 5 while simultaneously being divisible )"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "N1-x25",
+    "reason": "ambiguous (The true minimum positive integer satisfying the conditions is 180, which is missing from the options. 240 also satisfie)"
+  },
+  {
+    "spec": "N1-x25",
+    "reason": "ambiguous (The true minimum positive integer satisfying the conditions is 180 (which has 18 factors). 180 is missing from the optio)"
+  },
+  {
+    "spec": "N1-x25",
+    "reason": "answer mismatch (key says 324, independent solve got 144)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (Zero options are correct. Based on the given ratios, A:B:C = 12:15:20. The difference between C and A is 8 units, which )"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (Typo in the question: It states X's new salary equals Z's salary, which yields Y ≈ 49,090.90 (not in options). If it sta)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (The correct calculated answer is ₹30,000, which is not in the options. The options likely assume a B:C ratio of 4:5 (whi)"
+  },
+  {
+    "spec": "N3-x3",
+    "reason": "answer mismatch (key says The sum of the digits of $R$ is $17$., independent solve got R is a multiple of 17.)"
+  },
+  {
+    "spec": "N2-x9",
+    "reason": "ambiguous (The correct answer is 2, which is not among the options. Zero options are correct.)"
+  },
+  {
+    "spec": "N1-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "N1-x23",
+    "reason": "answer mismatch (key says 334, independent solve got 333)"
+  },
+  {
+    "spec": "N1-x23",
+    "reason": "answer mismatch (key says 9, independent solve got 5)"
+  },
+  {
+    "spec": "N3-x13",
+    "reason": "answer mismatch (key says Only I and III, independent solve got Only I and II)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "ambiguous (Contradictory data: The total sum of the middle 30 students is fixed at 2070 (making the average exactly 69, not a varia)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 84, independent solve got 92)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 70, independent solve got 70.4)"
+  },
+  {
+    "spec": "L1-x3",
+    "reason": "ambiguous (The expression for x evaluates to 2\\sqrt{3}, making x + y^2 = 91 + 2\\sqrt{3}, which is not in the options. The question )"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "answer mismatch (key says 16, independent solve got 15)"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "ambiguous (The answer evaluates to a non-terminating decimal (450/23 or approx 19.56), which is inappropriate for a TITA question. )"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "ambiguous (The question setter likely confused '25% more efficient' with 'takes 25% less time'. If Manav took 25% less time than La)"
+  },
+  {
+    "spec": "A8-x8",
+    "reason": "answer mismatch (key says 0.33, independent solve got 1/3)"
+  },
+  {
+    "spec": "A8-x8",
+    "reason": "ambiguous (The resulting quadratic equation (5v^2 - 59v + 80 = 0) has irrational roots (v ≈ 10.24). TITA questions should resolve t)"
+  },
+  {
+    "spec": "L1-x23",
+    "reason": "answer mismatch (key says 6.25, independent solve got 169/12)"
+  },
+  {
+    "spec": "N2-x7",
+    "reason": "ambiguous (There is a typo in the question's data. For the remainders to be valid with any of the options, the first remainder shou)"
+  },
+  {
+    "spec": "N2-x7",
+    "reason": "ambiguous (Contradictory data/Typo. The packed amounts (312, 450, 660) have a GCD of 6, which is not in the options. Option 30 work)"
+  },
+  {
+    "spec": "N1-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "ambiguous (The correct answer is 8.25 lakh, which is missing from the options. The effective investment ratio is 3:4:4 (sum = 11). )"
+  },
+  {
+    "spec": "A7-x23",
+    "reason": "answer mismatch (key says 27000, independent solve got 28500)"
+  },
+  {
+    "spec": "A7-x23",
+    "reason": "ambiguous (The values provided result in a non-integer answer (360000/17 or approx 21176.47), which is unrealistic for a TITA quest)"
+  },
+  {
+    "spec": "A7-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L3-x2",
+    "reason": "ambiguous (The question asks for an integer constant m, but the quadratic equation m^2 - 3m - 16 = 0 yields only irrational roots. )"
+  },
+  {
+    "spec": "L1-x6",
+    "reason": "ambiguous (The correct answer is 119/3, which is not among the options. The question likely has a typo: if the difference was 7 ins)"
+  },
+  {
+    "spec": "L1-x6",
+    "reason": "ambiguous (None of the options are correct. The calculated answer is sqrt(106), but the options are integers. There is likely a typ)"
+  },
+  {
+    "spec": "L1-x6",
+    "reason": "ambiguous (The calculated answer is \\sqrt{281}, which is not among the options. There is likely a typo in the question (e.g., askin)"
+  },
+  {
+    "spec": "N2-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "N2-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "N2-x23",
+    "reason": "ambiguous (Contradictory constraints: The LCM condition requires n to be a multiple of 25. Since 720 is a multiple of 5, HCF(n, 720)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Typo in the total bonus amount. It should be ₹3,42,000 instead of ₹3,36,000 for the ratios to yield an integer value tha)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total bonus ₹6,16,000 is not divisible by the sum of the ratio parts (43). The sum of the intended parts (₹2,10,000 )"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (None of the options are correct. Based on the given numbers, A's bonus evaluates to ₹56,160. The options likely correspo)"
+  },
+  {
+    "spec": "L3-x6",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "L3-x6",
+    "reason": "answer mismatch (key says $1$, independent solve got 0)"
+  },
+  {
+    "spec": "L3-x14",
+    "reason": "ambiguous (There are two valid values for k (6 and -4) that result in the system having no solution. A TITA question should have a )"
+  },
+  {
+    "spec": "L3-x14",
+    "reason": "ambiguous (There are two valid values for k (4 and -4) that result in no solution, making it impossible to provide a single unique )"
+  },
+  {
+    "spec": "L3-x27",
+    "reason": "answer mismatch (key says 1, independent solve got 2)"
+  },
+  {
+    "spec": "L2-x11",
+    "reason": "answer mismatch (key says 10, independent solve got 321/32)"
+  },
+  {
+    "spec": "L2-x11",
+    "reason": "answer mismatch (key says 10, independent solve got 321/32)"
+  },
+  {
+    "spec": "L2-x11",
+    "reason": "ambiguous (The question states x_1 = 4, which makes log_2(x_100) exactly 2, leaving the final expression as 2 + 1/(2^98), which is )"
+  },
+  {
+    "spec": "L2-x1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "answer mismatch (key says 6, independent solve got 8)"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "ambiguous (The question contains a typo in the given values. With HCF = 12, there is exactly 1 possible value for c (240), which me)"
+  },
+  {
+    "spec": "N3-x1",
+    "reason": "ambiguous (The correct answer (32) is not among the given options. The question likely contains a typo in the exponents or bases (e)"
+  },
+  {
+    "spec": "N3-x1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L3-x36",
+    "reason": "answer mismatch (key says 15, independent solve got 14)"
+  },
+  {
+    "spec": "L2-x7",
+    "reason": "ambiguous (None of the options are correct. The equation simplifies to x^2 - 7x + 8 = 0, which has roots (7 ± √17)/2. There is like)"
+  },
+  {
+    "spec": "L2-x7",
+    "reason": "ambiguous (The question contains a typo. The right-hand side of the equation is given as log_2(3x + 1), which leads to an irrationa)"
+  },
+  {
+    "spec": "L3-x16",
+    "reason": "answer mismatch (key says 7, independent solve got 9)"
+  },
+  {
+    "spec": "L3-x16",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "ambiguous (The question explicitly states that a and b are positive integers. However, the only solution that matches the options ()"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "ambiguous (Multiple correct options: both 10 (from a=26, b=10) and 14 (from a=74, b=70) satisfy all conditions and are present in t)"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "ambiguous (The correct answer is 12√2, which is missing from the options. Option A (12) is likely the intended answer due to a calc)"
+  },
+  {
+    "spec": "L4-x16",
+    "reason": "ambiguous (Zero options are correct. The solutions to the equation are x=1 and x=10, which give f(x) values of 29 and 20 respective)"
+  },
+  {
+    "spec": "L5-x28",
+    "reason": "ambiguous (The exact correct mathematical answer is (-1, 3], which is not among the options. Option C incorrectly uses a closed bra)"
+  },
+  {
+    "spec": "N3-x21",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N3-x21",
+    "reason": "ambiguous (The correct value for R1 - R2 is -4, which is not among the options. The question likely contains a typo in either the e)"
+  },
+  {
+    "spec": "N3-x21",
+    "reason": "answer mismatch (key says 0, independent solve got -2)"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "ambiguous (The numbers provided in the question do not yield integer or clean decimal values for the costs of the boxes, resulting )"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "answer mismatch (key says 3, independent solve got 1)"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "answer mismatch (key says 20, independent solve got 10)"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-x37",
+    "reason": "ambiguous (Zero options are correct. All terms in the given AP are odd, so none can be a multiple of 6. The intended question likel)"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "answer mismatch (key says If $a = 2$, the system has infinitely many solutions., independent solve got If a = -5, the system has a unique solution.)"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "ambiguous (Multiple correct options. Both B and C are true statements because the system has infinitely many solutions for both k =)"
+  },
+  {
+    "spec": "L5-x3",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "L5-x3",
+    "reason": "answer mismatch (key says 4, independent solve got 2)"
+  },
+  {
+    "spec": "L6-x11",
+    "reason": "answer mismatch (key says 82, independent solve got 90.25)"
+  },
+  {
+    "spec": "L6-x11",
+    "reason": "answer mismatch (key says 51, independent solve got 66.5)"
+  },
+  {
+    "spec": "L3-x7",
+    "reason": "ambiguous (Zero options are correct for 'a + b'. The correct value is 17 (or -10.5). The options provided likely correspond to a di)"
+  },
+  {
+    "spec": "L3-x7",
+    "reason": "ambiguous (None of the options are correct. The determinant m^2 + m - 18 = 0 yields roots (-1 ± sqrt(73))/2. The options provided d)"
+  },
+  {
+    "spec": "L6-x38",
+    "reason": "answer mismatch (key says 66, independent solve got 67)"
+  },
+  {
+    "spec": "L6-x38",
+    "reason": "answer mismatch (key says 25, independent solve got 0)"
+  },
+  {
+    "spec": "G1-x13",
+    "reason": "ambiguous (None of the given options are correct. The correct ratio is 2/5. There is likely a typo in the problem statement (e.g., )"
+  },
+  {
+    "spec": "L6-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L5-x43",
+    "reason": "ambiguous (The question contains a typo. As written, the minimum valid x is 0, making the maximum value of 12 - 3x equal to 12 (whi)"
+  },
+  {
+    "spec": "L5-x43",
+    "reason": "ambiguous (The maximum value is not actually attained because x = -2 makes the denominator zero. The value 9 is the supremum, not t)"
+  },
+  {
+    "spec": "L5-x43",
+    "reason": "ambiguous (The function has a vertical asymptote at x = 1. As x approaches 1 from the right, f(x) approaches negative infinity, mea)"
   }
 ]
