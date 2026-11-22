@@ -117,7 +117,7 @@ export const attempts = pgTable(
     errorLine: text("error_line"),
     diagnosis: jsonb("diagnosis"),
     agentTrace: jsonb("agent_trace"),
-    mode: text("mode", { enum: ["diagnostic", "practice", "review", "contrast"] }).notNull().default("practice"),
+    mode: text("mode", { enum: ["diagnostic", "practice", "review", "contrast", "mock"] }).notNull().default("practice"),
     createdAt: createdAt(),
   },
   (t) => [
@@ -284,4 +284,20 @@ export const foundationStatus = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [uniqueIndex("foundation_status_student_skill").on(t.studentId, t.skillId)],
+);
+
+/** CAT sectional mocks (QA: 22 questions, 40 minutes). answers/results are keyed by question id. */
+export const mocks = pgTable(
+  "mocks",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    studentId: uuid("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+    questionIds: jsonb("question_ids").$type<string[]>().notNull(),
+    answers: jsonb("answers").$type<Record<string, { answer: string | null; marked: boolean; timeSec: number }>>().notNull().default({}),
+    results: jsonb("results").$type<Record<string, unknown> | null>(),
+    startedAt: timestamp("started_at", { withTimezone: true }).notNull().defaultNow(),
+    submittedAt: timestamp("submitted_at", { withTimezone: true }),
+    score: integer("score"),
+  },
+  (t) => [index("mocks_student_idx").on(t.studentId, t.startedAt.desc())],
 );

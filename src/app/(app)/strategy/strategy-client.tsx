@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { RefreshCw, Timer } from "lucide-react";
@@ -70,7 +71,12 @@ export function StrategyClient() {
             Knowing maths is half of CAT. The other half is knowing <em>which</em> questions to leave. Replayed on your own history, with CAT&apos;s real marking.
           </p>
         </div>
-        <SprintToggle on={sprint} onChange={setSprint} />
+        <div className="flex flex-wrap items-center gap-3">
+          <Link href="/mock" className="inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85">
+            Take a 40-minute sectional mock
+          </Link>
+          <SprintToggle on={sprint} onChange={setSprint} />
+        </div>
       </header>
 
       {!data && !error && (

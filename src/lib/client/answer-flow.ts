@@ -15,7 +15,7 @@ import type {
 export type FlowPhase = "answering" | "grading" | "diagnosing" | "confirm" | "done";
 
 /** Reads an NDJSON stream line by line. */
-async function readNdjson(res: Response, onEvent: (e: DetectiveEvent) => void) {
+export async function readNdjson(res: Response, onEvent: (e: DetectiveEvent) => void) {
   const reader = res.body?.getReader();
   if (!reader) return;
   const dec = new TextDecoder();

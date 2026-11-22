@@ -184,7 +184,7 @@ export interface RecordInput {
   correct: boolean;
   timeSec: number;
   confidence: L.Confidence | null;
-  mode: "diagnostic" | "practice" | "review" | "contrast";
+  mode: "diagnostic" | "practice" | "review" | "contrast" | "mock";
   workText?: string | null;
 }
 

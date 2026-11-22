@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Search, Timer } from "lucide-react";
+import { ArrowRight, ClipboardCheck, Search, Timer } from "lucide-react";
 
 export const metadata: Metadata = { title: "Play · Tangent" };
 
@@ -16,6 +16,12 @@ const GAMES = [
     title: "CAT speed sprint",
     blurb: "60 seconds of mental maths: fractions as %, squares and cubes, successive % changes, quick multiplication.",
     Icon: Timer,
+  },
+  {
+    href: "/mock",
+    title: "CAT sectional mock",
+    blurb: "Not a game: the full QA section. 22 questions, 40 minutes, +3 / −1, then a review and a Skip Coach debrief.",
+    Icon: ClipboardCheck,
   },
 ];
 
