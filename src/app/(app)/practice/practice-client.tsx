@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, BookOpen, CheckCircle2, MessageCircleQuestion, RotateCcw, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -57,7 +58,10 @@ export function PracticeClient() {
       try {
         const qs = new URLSearchParams();
         if (last) qs.set("last", last);
-        if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("mode") === "review") qs.set("mode", "review");
+        const page = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+        if (page?.get("mode") === "review") qs.set("mode", "review");
+        const concept = page?.get("concept");
+        if (concept && /^[A-Z]\d$/.test(concept)) qs.set("concept", concept);
         const res = await fetch(`/api/next${qs.size ? `?${qs}` : ""}`);
         if (!res.ok) throw new Error(String(res.status));
         const a: NextAction = await res.json();
@@ -267,6 +271,11 @@ export function PracticeClient() {
                 <span className="rounded-full border border-mastery-high/40 bg-mastery-high/10 px-3 py-1 text-mastery-high">
                   ✓ Back on the curve: misconception resolved
                 </span>
+              )}
+              {(d.misconceptionName || d.reasoningVerdict === "flawed") && (
+                <Link href={`/learn/${action.conceptId}`} className="rounded-full border px-3 py-1 font-medium hover:bg-accent">
+                  Revise this idea: {action.conceptName} →
+                </Link>
               )}
               {d.novelDescription && <span className="rounded-full border px-3 py-1">New pattern: {d.novelDescription}</span>}
               {d.fewshotFromTeachers > 0 && (

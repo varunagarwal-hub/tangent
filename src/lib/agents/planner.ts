@@ -129,7 +129,7 @@ async function writeWhy(c: Candidate, studentId: string): Promise<{ why: string;
 /** Picks the next best action for a student and a question for it. */
 export async function planNext(
   studentId: string,
-  opts: { lastConceptId?: string | null; exclude?: string[]; mode?: "review" } = {},
+  opts: { lastConceptId?: string | null; exclude?: string[]; mode?: "review"; conceptId?: string | null } = {},
 ): Promise<NextAction | null> {
   const t0 = Date.now();
   let cands = await scoreCandidates(studentId, opts.lastConceptId);
@@ -137,6 +137,11 @@ export async function planNext(
     // review queue: due concepts first, then active misconceptions (their cards are due by design)
     const reviewOnly = cands.filter((c) => c.kind === "review" || c.kind === "contrast_question");
     if (reviewOnly.length) cands = reviewOnly;
+  }
+  if (opts.conceptId && CONCEPTS.some((c) => c.id === opts.conceptId)) {
+    // deep link from a concept card: stay on that concept (keep its best-scored move, if any)
+    const own = cands.filter((c) => c.conceptId === opts.conceptId);
+    cands = own.length ? own : [{ kind: "practice", conceptId: opts.conceptId, score: 0, reason: `You chose to practise ${getConcept(opts.conceptId).name}.` }];
   }
   const exclude = [...(opts.exclude ?? []), ...(await recentQuestionIds(studentId, 20))];
 

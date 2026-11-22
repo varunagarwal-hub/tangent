@@ -45,11 +45,19 @@ async function main() {
       question: z.string().describe("A CAT-level problem (medium difficulty) with a single numeric or short answer. Plain text; use $…$ only for real formulas."),
       steps: z.array(z.string()).describe("3–6 solution steps, each one short sentence, plain text maths (×, ÷, −, ^, √) or $…$"),
       answer: z.string().describe("Final answer only, e.g. '24' or '₹1,350' or '3/8'"),
+      answer_value: z.number().describe("The same answer as a plain decimal number, no units (e.g. 1350, 0.375)"),
     }),
     tangents: z.array(z.object({ misconception_id: z.string(), fix: z.string().describe("One sentence: what to do instead") })),
     shortcuts: z.array(z.object({ title: z.string().describe("3–6 words"), body: z.string().describe("1–2 sentences with a tiny example") })).describe("Exactly 2 CAT shortcuts or tricks"),
   });
-  const Solve = z.object({ working: z.string(), answer: z.string().describe("Final answer only") });
+  const Solve = z.object({
+    working: z.string(),
+    answer: z.string().describe("Final answer only"),
+    answer_value: z.number().describe("The final answer as a plain decimal number, no units or symbols"),
+  });
+  // compare numbers (formatting like 250° vs 250^\circ is not a disagreement), else fall back to text
+  const agree = (card: { answer: string; answer_value: number }, pro: { answer: string; answer_value: number }) =>
+    Math.abs(card.answer_value - pro.answer_value) <= 0.01 * Math.max(1, Math.abs(pro.answer_value)) || answersMatch(pro.answer, card.answer);
 
   const save = () => {
     const order = new Map(concepts.map((c, i) => [c.id, i]));
@@ -80,7 +88,7 @@ async function main() {
             system: "Solve the problem independently and carefully. Give the final answer only in `answer`.",
             prompt: d.example.question, schema: Solve, inputSummary: `lesson check ${c.id}`, temperature: 0.1,
           });
-          if (!answersMatch(v.answer, d.example.answer)) { console.log(`✗ ${c.id} try ${attempt}: card ${d.example.answer} vs pro ${v.answer}`); continue; }
+          if (!agree(d.example, v)) { console.log(`✗ ${c.id} try ${attempt}: card ${d.example.answer} vs pro ${v.answer}`); continue; }
           const ids = new Set(own.map((m) => m.id));
           const tangents = d.tangents.filter((t) => ids.has(t.misconception_id)).map((t) => ({ misconceptionId: t.misconception_id, fix: t.fix.trim() }));
           const lesson: Lesson = {

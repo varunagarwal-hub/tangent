@@ -218,12 +218,20 @@ function DrawerBody({ d, now }: { d: ConceptDetail; now: number }) {
           )}
         </Section>
 
+        <div className="flex flex-wrap gap-2">
         <Link
-          href="/practice"
-          className="inline-flex items-center justify-center gap-2 self-start rounded-lg bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85"
+          href={`/learn/${d.conceptId}`}
+          className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
+        >
+          Read the concept card
+        </Link>
+        <Link
+          href={`/practice?concept=${d.conceptId}`}
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-ink/85"
         >
           Practise this <ArrowRight className="size-4" aria-hidden="true" />
         </Link>
+        </div>
       </div>
     </>
   );

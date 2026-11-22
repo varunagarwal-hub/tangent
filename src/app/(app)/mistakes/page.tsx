@@ -78,11 +78,18 @@ function Entry({ e }: { e: JournalEntry }) {
           <pre className="mt-2 whitespace-pre-wrap font-hand text-xl leading-snug text-ink">{e.example}</pre>
         </details>
       )}
-      {!resolved && (
-        <Link href="/practice" className="mt-4 inline-flex items-center gap-1 text-sm font-medium underline-offset-4 hover:underline">
-          Practise the fix <ArrowRight className="size-3.5" />
-        </Link>
-      )}
+      <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+        {e.conceptId && (
+          <Link href={`/learn/${e.conceptId}`} className="inline-flex items-center gap-1 underline-offset-4 hover:underline">
+            Revise {e.conceptName} <ArrowRight className="size-3.5" />
+          </Link>
+        )}
+        {!resolved && (
+          <Link href={e.conceptId ? `/practice?concept=${e.conceptId}` : "/practice"} className="inline-flex items-center gap-1 underline-offset-4 hover:underline">
+            Practise the fix <ArrowRight className="size-3.5" />
+          </Link>
+        )}
+      </div>
     </li>
   );
 }

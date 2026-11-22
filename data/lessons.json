@@ -65,6 +65,70 @@
   }
  },
  {
+  "conceptId": "A2",
+  "keyIdea": "Ratios represent relative scale, not absolute values; always maintain the common connector when bridging multiple ratios. In CAT, think of ratios as multipliers or base units ($x$) that tie constraints like time, cost, and quantities together.",
+  "formulas": [
+   {
+    "label": "Bridging Ratios",
+    "latex": "A:B = a:b,\\; B:C = c:d \\implies A:B:C = ac : bc : bd"
+   },
+   {
+    "label": "Direct & Inverse Variation",
+    "latex": "y \\propto \\frac{x}{z} \\implies \\frac{y_1 z_1}{x_1} = \\frac{y_2 z_2}{x_2}"
+   },
+   {
+    "label": "Componendo and Dividendo",
+    "latex": "\\frac{a}{b} = \\frac{c}{d} \\implies \\frac{a+b}{a-b} = \\frac{c+d}{c-d}"
+   },
+   {
+    "label": "Partnership Profit Ratio",
+    "latex": "\\frac{P_A}{P_B} = \\frac{C_A \\times T_A}{C_B \\times T_B}"
+   }
+  ],
+  "example": {
+   "question": "A and B start a business. A invests ₹6,000 for 8 months and B invests ₹8,000 for 9 months. If the total annual profit is ₹36,000, what is A's share?",
+   "steps": [
+    "Find profit ratio using Investment × Time: $P_A : P_B = (6000 \\times 8) : (8000 \\times 9)$.",
+    "Simplify the product terms: $48,000 : 72,000 = 2 : 3$.",
+    "Total parts equal $2 + 3 = 5$ parts.",
+    "Calculate A's share: $(2 / 5) \\times ₹36,000 = ₹14,400$."
+   ],
+   "answer": "₹14,400"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "A2_CHAIN_WITHOUT_LCM",
+    "fix": "Equalize the common term across ratios by multiplying with appropriate factors using LCM before combining them into a single continuous ratio."
+   },
+   {
+    "misconceptionId": "A2_INVERT_WHEN_COMBINING",
+    "fix": "Cross-multiply variables to isolate the ratio: if $2A = 3B$, then $A/B = 3/2$, swapping the numerical coefficients."
+   },
+   {
+    "misconceptionId": "A2_ADD_TO_RATIO",
+    "fix": "Set up an algebraic equation with an unknown multiplier $x$ (e.g., $(ax + k)/(bx + k)$) because adding a constant alters the ratio."
+   },
+   {
+    "misconceptionId": "A2_PARTNERSHIP_IGNORE_TIME",
+    "fix": "Always multiply each partner's capital by their active investment duration to determine the true profit-sharing ratio."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Cross-Multiplication for Added Constants",
+    "body": "When ratio $a:b$ becomes $c:d$ after adding $k$ to both terms, find $1\\text{ unit} = \\frac{k|c - d|}{|ad - bc|}$. Example: $2:3$ becomes $3:4$ after adding 5, so $1\\text{ unit} = \\frac{5|3 - 4|}{|8 - 9|} = 5$."
+   },
+   {
+    "title": "N-Method for Combining Ratios",
+    "body": "To combine $A:B = a:b$ and $B:C = c:d$, write $A:B:C$ directly as $a\\times c : b\\times c : b\\times d$. Example: $2:3$ and $4:5$ yields $2\\times 4 : 3\\times 4 : 3\\times 5 = 8:12:15$."
+   }
+  ],
+  "verified": {
+   "answer": "₹14,400",
+   "by": "pro"
+  }
+ },
+ {
   "conceptId": "A3",
   "keyIdea": "Treat the average as an equal distribution balance point, not just a formula for division. Any change in total is absorbed across the entire group, meaning net deviation from the true average must always equal zero. In CAT, tracking deviations from an assumed mean is almost always faster than recalculating large sums.",
   "formulas": [
@@ -870,6 +934,716 @@
   ],
   "verified": {
    "answer": "32",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L5",
+  "keyIdea": "Inequalities represent ranges, not fixed points; always preserve the direction of comparison by testing critical points on a number line (wavy curve method). Never cross-multiply by variable expressions without fixing their sign, and view $|x - a|$ geometrically as the distance between $x$ and $a$.",
+  "formulas": [
+   {
+    "label": "Modulus Range (Less Than)",
+    "latex": "|x - a| \\le k \\iff a - k \\le x \\le a + k"
+   },
+   {
+    "label": "Modulus Range (Greater Than)",
+    "latex": "|x - a| \\ge k \\iff x \\le a - k \\text{ or } x \\ge a + k"
+   },
+   {
+    "label": "Triangle Inequality",
+    "latex": "||a| - |b|| \\le |a \\pm b| \\le |a| + |b|"
+   },
+   {
+    "label": "AM-GM Inequality",
+    "latex": "\\frac{a + b}{2} \\ge \\sqrt{ab} \\quad (a, b > 0)"
+   }
+  ],
+  "example": {
+   "question": "Find the number of integral values of x satisfying $|2x - 3| \\le 7$.",
+   "steps": [
+    "Expand the absolute value: $-7 \\le 2x - 3 \\le 7$.",
+    "Add 3 to all parts: $-4 \\le 2x \\le 10$.",
+    "Divide by 2: $-2 \\le x \\le 5$.",
+    "List the valid integers: $-2, -1, 0, 1, 2, 3, 4, 5$.",
+    "Count the total integers: $5 - (-2) + 1 = 8$."
+   ],
+   "answer": "8"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L5_NEG_NO_FLIP",
+    "fix": "Reverse the inequality sign immediately whenever multiplying or dividing both sides by any negative quantity."
+   },
+   {
+    "misconceptionId": "L5_MODULUS_ONE_CASE",
+    "fix": "Always split $|f(x)| \\le k$ into $-k \\le f(x) \\le k$ to capture both the positive and negative branches."
+   },
+   {
+    "misconceptionId": "L5_MULTIPLY_UNKNOWN_SIGN",
+    "fix": "Bring all terms to one side to get zero, find critical points, and determine signs rather than cross-multiplying by variables."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Distance Interpretation of Modulus",
+    "body": "Interpret $|x - a| + |x - b|$ as the total distance from $x$ to $a$ and $b$; the minimum value is always $|a - b|$, achieved at any point between $a$ and $b$."
+   },
+   {
+    "title": "Square Instead of Splitting Cases",
+    "body": "For $|A| \\le |B|$, simplify directly to $(A - B)(A + B) \\le 0$ because both sides are non-negative, completely bypassing case analysis."
+   }
+  ],
+  "verified": {
+   "answer": "8",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L6",
+  "keyIdea": "Sequences in CAT are entirely governed by constant differences (AP) or constant multipliers (GP). Instead of mechanical expansions, look for symmetry: in an AP, terms equidistant from the ends have an equal sum, and in a GP, they have an equal product.",
+  "formulas": [
+   {
+    "label": "nth term of an AP",
+    "latex": "T_n = a + (n - 1)d"
+   },
+   {
+    "label": "Sum of n terms of an AP",
+    "latex": "S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right) = \\frac{n}{2}(a + l)"
+   },
+   {
+    "label": "nth term of a GP",
+    "latex": "T_n = a r^{n-1}"
+   },
+   {
+    "label": "Sum of an infinite GP (|r| < 1)",
+    "latex": "S_\\infty = \\frac{a}{1 - r}"
+   }
+  ],
+  "example": {
+   "question": "The 3rd term of an AP is 13 and the 9th term is 37. Find the sum of the first 12 terms of this progression.",
+   "steps": [
+    "Let the first term be $a$ and common difference be $d$.",
+    "Difference between terms: $T_9 - T_3 = (9 - 3)d \\implies 37 - 13 = 6d$, so $d = 4$.",
+    "Find first term: $a = T_3 - 2d = 13 - 2(4) = 5$.",
+    "Compute sum: $S_{12} = \\frac{12}{2}[2(5) + (12 - 1)4] = 6[10 + 44] = 6 \\times 54 = 324$."
+   ],
+   "answer": "324"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L6_N_INSTEAD_OF_N_MINUS_1",
+    "fix": "Always use $(n - 1)$ steps from the start: $T_n = a + (n - 1)d$ and $T_n = a r^{n-1}$, because the first term requires 0 steps."
+   },
+   {
+    "misconceptionId": "L6_COUNT_TERMS_NO_PLUS_ONE",
+    "fix": "Remember that $(l - a)/d$ only counts the intervals, so add 1 to get the total number of terms: $n = \\frac{l - a}{d} + 1$."
+   },
+   {
+    "misconceptionId": "L6_IGNORE_RATIO_SIGN",
+    "fix": "Preserve negative signs when computing $r = T_{k+1}/T_k$; an alternating series has a negative ratio that directly affects formulas like $S_\\infty = \\frac{a}{1 - r}$."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "AP Sum via Middle Term",
+    "body": "For an odd number of terms in an AP, Sum = (Number of terms) × (Middle term). For example, the sum of 5 terms with middle term 14 is simply 5 × 14 = 70."
+   },
+   {
+    "title": "Equidistant Pairing in AP",
+    "body": "The sum of the $k$-th term from the beginning and $k$-th term from the end is always constant and equal to $a + l$. Hence, $T_1 + T_n = T_2 + T_{n-1} = 2 \\times T_{\\text{avg}}$."
+   }
+  ],
+  "verified": {
+   "answer": "324",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "L7",
+  "keyIdea": "In CAT, functions are input-output machines where domain, range, and transformations govern behavior. Always evaluate composite functions from the inside out and visualize algebraic changes to inputs as inverse horizontal movements on the graph.",
+  "formulas": [
+   {
+    "label": "Horizontal Shift",
+    "latex": "y = f(x - h) \\implies \\text{Shift right by } h \\text{ units (if } h > 0\\text{)}"
+   },
+   {
+    "label": "Vertical Shift",
+    "latex": "y = f(x) + k \\implies \\text{Shift up by } k \\text{ units (if } k > 0\\text{)}"
+   },
+   {
+    "label": "Reflection in Axes",
+    "latex": "y = f(-x) \\implies \\text{Reflection over } y\\text{-axis}; \\quad y = -f(x) \\implies \\text{Reflection over } x\\text{-axis}"
+   },
+   {
+    "label": "Composite Function",
+    "latex": "(f \\circ g)(x) = f(g(x))"
+   }
+  ],
+  "example": {
+   "question": "If $f(x) = 2x + 3$ and $g(x) = x^2 - 1$, find the sum of all real values of $x$ for which $f(g(x)) = g(f(x))$.",
+   "steps": [
+    "Find $f(g(x)) = 2(x^2 - 1) + 3 = 2x^2 + 1$.",
+    "Find $g(f(x)) = (2x + 3)^2 - 1 = 4x^2 + 12x + 8$.",
+    "Equate the two: $2x^2 + 1 = 4x^2 + 12x + 8$, which simplifies to $2x^2 + 12x + 7 = 0$.",
+    "Check discriminant: $D = 12^2 - 4(2)(7) = 144 - 56 = 88 > 0$, so both roots are real.",
+    "Sum of roots is $-b/a = -12/2 = -6$."
+   ],
+   "answer": "-6"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "L7_COMPOSITION_ORDER",
+    "fix": "Always resolve the innermost parentheses first: evaluate $u = g(x)$ and then compute $f(u)$."
+   },
+   {
+    "misconceptionId": "L7_SHIFT_DIRECTION",
+    "fix": "Set the inside argument to zero to find the new reference center: $x - h = 0 \\implies x = +h$, which moves the graph right."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Symmetry and Root Centering",
+    "body": "For any symmetric function like $|x - a| + |x - b|$ or parabolas, the minimum or vertex always occurs at the midpoint $x = (a + b)/2$."
+   },
+   {
+    "title": "Functional Equation Value Substitution",
+    "body": "Instead of solving algebraically for $f(x)$, substitute small strategic values like $x = 0, 1$ or $-1$ to establish recurrence or cycles quickly."
+   }
+  ],
+  "verified": {
+   "answer": "-6",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G1",
+  "keyIdea": "Lines and angles form the backbone of geometry in CAT, where nearly every complex polygon problem boils down to parallel lines and angle chasing. Whenever you spot parallel lines crossed by a transversal, look for Z-shapes (alternate angles equal) and C/U-shapes (co-interior angles adding to 180°). If a problem seems stuck, draw an auxiliary line parallel to the given lines through sharp vertices.",
+  "formulas": [
+   {
+    "label": "Linear Pair of Angles",
+    "latex": "\\angle A + \\angle B = 180^\\circ"
+   },
+   {
+    "label": "Supplementary Angles Sum",
+    "latex": "\\theta_1 + \\theta_2 = 180^\\circ"
+   },
+   {
+    "label": "Complementary Angles Sum",
+    "latex": "\\alpha + \\beta = 90^\\circ"
+   },
+   {
+    "label": "Co-interior (Consecutive Interior) Angles",
+    "latex": "\\angle 1 + \\angle 2 = 180^\\circ"
+   }
+  ],
+  "example": {
+   "question": "In the figure, two parallel lines $L_1$ and $L_2$ are given. A point P lies between them such that the angle formed between $L_1$ and line segment PA is 35°, and the angle formed between $L_2$ and line segment PB is 45°. If the reflex angle ∠APB is measured, what is its value in degrees?",
+   "steps": [
+    "Draw an auxiliary line through P parallel to both $L_1$ and $L_2$.",
+    "The line splits $\\angle APB$ into two alternate interior angles: $35^\\circ$ and $45^\\circ$.",
+    "Calculate interior $\\angle APB = 35^\\circ + 45^\\circ = 80^\\circ$.",
+    "Find the reflex angle by subtracting the interior angle from $360^\\circ$: $360^\\circ - 80^\\circ = 280^\\circ$."
+   ],
+   "answer": "280°"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G1_CO_INTERIOR_EQUAL",
+    "fix": "Remember that interior angles on the same side form a 'C' shape and sum to 180°, whereas only alternate angles (forming a 'Z' shape) are equal."
+   },
+   {
+    "misconceptionId": "G1_COMPLEMENT_SUPPLEMENT_MIX",
+    "fix": "Use the alphabetical trick: 'C' comes before 'S', just as 90° comes before 180°, so Complementary sums to 90° and Supplementary sums to 180°."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Arrowhead or Zig-Zag Rule",
+    "body": "For any zig-zag line between two parallel tracks, the sum of left-pointing angles equals the sum of right-pointing angles. E.g., if sharp bends point left at $30^\\circ$ and $40^\\circ$, the single rightward angle between them is $30^\\circ + 40^\\circ = 70^\\circ$."
+   },
+   {
+    "title": "Angle Bisectors of Co-Interior Angles",
+    "body": "The angle bisectors of two co-interior angles between parallel lines always meet at a right angle (90°). Since $2x + 2y = 180^\\circ$, the bisected halves satisfy $x + y = 90^\\circ$, forcing the third angle in the resulting triangle to be $90^\\circ$."
+   }
+  ],
+  "verified": {
+   "answer": "280^\\circ",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G2",
+  "keyIdea": "Mastering CAT triangle questions hinges on identifying similarity, using area ratios by common height or angle, and applying the triangle inequality. Always check side constraints first before calculating areas or missing lengths. Treat similarity as a scale factor multiplier on sides, which squares for areas.",
+  "formulas": [
+   {
+    "label": "Triangle Inequality",
+    "latex": "|a - b| < c < a + b"
+   },
+   {
+    "label": "Area via Sine Rule",
+    "latex": "\\Delta = \\frac{1}{2}ab\\sin C"
+   },
+   {
+    "label": "Heron's Formula",
+    "latex": "\\Delta = \\sqrt{s(s-a)(s-b)(s-c)}, \\quad s = \\frac{a+b+c}{2}"
+   },
+   {
+    "label": "Area Ratio of Similar Triangles",
+    "latex": "\\frac{\\Delta_1}{\\Delta_2} = \\left(\\frac{s_1}{s_2}\\right)^2"
+   }
+  ],
+  "example": {
+   "question": "In a triangle ABC, points D and E lie on sides AB and AC respectively such that DE is parallel to BC. If AD:DB = 2:3 and the area of triangle ADE is 16 sq cm, find the area of trapezium BDEC.",
+   "steps": [
+    "Since DE is parallel to BC, triangle ADE is similar to triangle ABC.",
+    "The side ratio is AD/AB = 2/(2 + 3) = 2/5.",
+    "The ratio of their areas is Area(ADE)/Area(ABC) = (2/5)^2 = 4/25.",
+    "Given Area(ADE) = 16, Area(ABC) = 16 × (25/4) = 100 sq cm.",
+    "Area of trapezium BDEC = Area(ABC) − Area(ADE) = 100 − 16 = 84 sq cm."
+   ],
+   "answer": "84 sq cm"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G2_AREA_RATIO_NOT_SQUARED",
+    "fix": "Always square the linear scale factor to find the area ratio of similar triangles."
+   },
+   {
+    "misconceptionId": "G2_HYPOTENUSE_AS_LEG",
+    "fix": "Subtract the square of the known leg from the hypotenuse's square before taking the square root."
+   },
+   {
+    "misconceptionId": "G2_IGNORE_TRIANGLE_INEQUALITY",
+    "fix": "Verify that the sum of the two shorter sides is strictly greater than the longest side before forming a triangle."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Median Splits Area in Half",
+    "body": "Any median divides a triangle into two triangles of equal area; for instance, if AD is a median of triangle ABC, Area(ABD) = Area(ADC)."
+   },
+   {
+    "title": "Integer Sides from Two Sides",
+    "body": "Given two sides a and b, the number of possible integer values for the third side is always 2 × min(a, b) − 1. For sides 5 and 9, count = 2(5) − 1 = 9."
+   }
+  ],
+  "verified": {
+   "answer": "84",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G3",
+  "keyIdea": "Circles in CAT test chord-radius right triangles, cyclic quadrilateral angle rules, and power of a point rather than messy coordinate formulas. Always drop a perpendicular from the centre to a chord or draw a radius to a point of tangency—it instantly creates a solvable right triangle.",
+  "formulas": [
+   {
+    "label": "Inscribed Angle Theorem",
+    "latex": "\\theta_{\\text{central}} = 2 \\times \\theta_{\\text{circumference}}"
+   },
+   {
+    "label": "Tangent-Radius Perpendicularity",
+    "latex": "L_{\\text{tangent}} = \\sqrt{d^2 - r^2}"
+   },
+   {
+    "label": "Tangent-Secant Theorem",
+    "latex": "PT^2 = PA \\times PB"
+   },
+   {
+    "label": "Intersecting Chords Theorem",
+    "latex": "PA \\times PB = PC \\times PD"
+   }
+  ],
+  "example": {
+   "question": "A point P is at a distance of 13 cm from the centre O of a circle of radius 5 cm. A secant line from P intersects the circle at points A and B such that the outer segment PA = 9 cm. What is the length of chord AB (in cm)?",
+   "steps": [
+    "Let PT be the tangent from P to the circle, forming right-angled triangle OTP with angle OTP = 90°.",
+    "Calculate PT^2 = OP^2 - r^2 = 13^2 - 5^2 = 169 - 25 = 144.",
+    "By the tangent-secant theorem, PT^2 = PA × PB, so 144 = 9 × PB.",
+    "Solving gives PB = 144 ÷ 9 = 16 cm.",
+    "The chord length is AB = PB − PA = 16 − 9 = 7 cm."
+   ],
+   "answer": "7"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G3_INSCRIBED_VS_CENTRAL",
+    "fix": "Always remember the centre sees a bigger angle: angle at centre = 2 × angle at circumference subtended by the same arc."
+   },
+   {
+    "misconceptionId": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "fix": "Never linearly subtract distance and radius; connect the centre to the point of contact to form a right triangle and use Pythagoras: tangent = √(d² − r²)."
+   },
+   {
+    "misconceptionId": "G3_CYCLIC_OPPOSITE_EQUAL",
+    "fix": "Opposite angles of a cyclic quadrilateral sum to 180° (supplementary), so set A + C = 180°, never A = C unless it is an isosceles trapezium or rectangle."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Chord Midpoint Right Triangle",
+    "body": "A perpendicular from the centre bisects the chord, instantly giving the Pythagorean triplet r² = d² + (c/2)². For radius 10 and chord 16, distance from centre is √(10² − 8²) = 6."
+   },
+   {
+    "title": "Ptolemy's Theorem for Cyclic Quads",
+    "body": "For cyclic quadrilateral ABCD, product of diagonals equals sum of products of opposite sides: AC × BD = AB × CD + BC × AD."
+   }
+  ],
+  "verified": {
+   "answer": "7",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G4",
+  "keyIdea": "Polygons and quadrilaterals are easiest to decode by breaking them into triangles and exploiting symmetry. Focus on exterior angles summing to 360° for any convex polygon, and treat special quadrilaterals as paired triangles with shared diagonals. Mastering properties of diagonals—orthogonality, bisection, and length relationships—unlocks almost every CAT question in this topic.",
+  "formulas": [
+   {
+    "label": "Number of diagonals in an n-gon",
+    "latex": "D = \\frac{n(n - 3)}{2}"
+   },
+   {
+    "label": "Sum of interior angles of an n-gon",
+    "latex": "S_i = (n - 2) \\times 180^\\circ"
+   },
+   {
+    "label": "Area of a rhombus",
+    "latex": "\\text{Area} = \\frac{1}{2} d_1 d_2 = a^2 \\sin\\theta"
+   },
+   {
+    "label": "Relation between diagonals and sides of a rhombus",
+    "latex": "4a^2 = d_1^2 + d_2^2"
+   },
+   {
+    "label": "Area of a trapezium",
+    "latex": "\\text{Area} = \\frac{1}{2}(a + b)h"
+   }
+  ],
+  "example": {
+   "question": "A regular polygon has the ratio of its interior angle to its exterior angle as 7 : 2. If the length of each side is 6 cm, find the total number of diagonals in this polygon.",
+   "steps": [
+    "Let interior angle be 7x and exterior angle be 2x, so 7x + 2x = 180°, which gives x = 20°.",
+    "The exterior angle is 2 × 20° = 40°.",
+    "Number of sides n = 360° / 40° = 9.",
+    "Number of diagonals = n(n − 3) / 2 = 9(9 − 3) / 2 = 9 × 6 / 2 = 27."
+   ],
+   "answer": "27"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G4_DIAGONALS_NC2",
+    "fix": "Always subtract the n boundary sides from the total vertex pairs: use nC2 − n = n(n − 3)/2 instead of plain nC2."
+   },
+   {
+    "misconceptionId": "G4_RHOMBUS_NO_HALF",
+    "fix": "Remember that orthogonal diagonals form a rectangle of area d1 × d2, so the inscribed rhombus is exactly half: (1/2) × d1 × d2."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Exterior angle path for regular polygons",
+    "body": "Never compute side counts via interior angles; directly use n = 360° / (Exterior Angle). E.g., if interior is 150°, exterior is 30°, giving n = 360 / 30 = 12 instantly."
+   },
+   {
+    "title": "Trapezium diagonal-area four-triangle rule",
+    "body": "Diagonals divide a trapezium into four triangles; the non-parallel triangular flanks have equal area √A1·A2 where A1, A2 are areas of top and bottom triangles. E.g., if base triangles have areas 4 and 9, each side triangle has area √(4 × 9) = 6."
+   }
+  ],
+  "verified": {
+   "answer": "27",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G5",
+  "keyIdea": "Mensuration in CAT is primarily a game of ratios, standard 3D dissection, and scaling. Always track whether a solid is open or closed, and remember that when linear dimensions scale by factor k, surface area scales by k² and volume scales by k³.",
+  "formulas": [
+   {
+    "label": "Cylinder TSA and Volume",
+    "latex": "\\text{TSA} = 2\\pi r(r + h), \\quad V = \\pi r^2 h"
+   },
+   {
+    "label": "Cone Slant Height and Volume",
+    "latex": "l = \\sqrt{r^2 + h^2}, \\quad V = \\frac{1}{3}\\pi r^2 h, \\quad \\text{CSA} = \\pi r l"
+   },
+   {
+    "label": "Sphere Area and Volume",
+    "latex": "\\text{Area} = 4\\pi r^2, \\quad V = \\frac{4}{3}\\pi r^3"
+   },
+   {
+    "label": "Frustum Volume",
+    "latex": "V = \\frac{1}{3}\\pi h (R^2 + r^2 + Rr)"
+   }
+  ],
+  "example": {
+   "question": "A solid metallic cone of radius 6 cm and slant height 10 cm is melted and recast into solid spheres of radius 2 cm each. How many complete spheres can be formed?",
+   "steps": [
+    "Find vertical height of cone: $h = \\sqrt{10^2 - 6^2} = \\sqrt{64} = 8$ cm.",
+    "Calculate cone volume: $V_{\\text{cone}} = \\frac{1}{3} \\times \\pi \\times 6^2 \\times 8 = 96\\pi$ cm³.",
+    "Calculate single sphere volume: $V_{\\text{sphere}} = \\frac{4}{3} \\times \\pi \\times 2^3 = \\frac{32\\pi}{3}$ cm³.",
+    "Compute number of spheres: $N = \\frac{96\\pi}{(32\\pi / 3)} = \\frac{96 \\times 3}{32} = 9$."
+   ],
+   "answer": "9"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G5_CSA_VS_TSA",
+    "fix": "Check whether the solid is open or closed; always add the base boundary areas (like $2\\pi r^2$ for a closed cylinder) when total surface area is required."
+   },
+   {
+    "misconceptionId": "G5_VOLUME_SCALES_LINEARLY",
+    "fix": "Always scale volume by the cube of the linear factor ($k^3$) and surface area by the square ($k^2$) for similar geometric solids."
+   },
+   {
+    "misconceptionId": "G5_SLANT_AS_HEIGHT",
+    "fix": "Substitute vertical height $h = \\sqrt{l^2 - r^2}$ in volume formulas, reserving slant height $l$ strictly for curved surface area calculations."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Divisibility by 11 and 7",
+    "body": "Since $\\pi \\approx 22/7$, final numeric values of curved areas or volumes involving $\\pi$ are usually multiples of 11; test options for 11-divisibility unless $\\pi$ is kept unexpanded."
+   },
+   {
+    "title": "Ratio of Cut Solids",
+    "body": "If a cone is sliced parallel to the base at ratio $1:2$ of height from the vertex, the volumes of top cone and full cone are $1^3 : 2^3 = 1:8$, making the frustum's share 7/8 immediately."
+   }
+  ],
+  "verified": {
+   "answer": "9",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "G6",
+  "keyIdea": "Treat coordinate geometry in CAT as algebra applied to pictures: every line is an equation, intersections are systems of equations, and distances are just the Pythagorean theorem. Most CAT problems hinge on slope relationships (parallel vs perpendicular) and area of figures using vertex coordinates rather than tedious plotting.",
+  "formulas": [
+   {
+    "label": "Slope of a Line",
+    "latex": "m = \\frac{y_2 - y_1}{x_2 - x_1}"
+   },
+   {
+    "label": "Perpendicular Lines Condition",
+    "latex": "m_1 \\times m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}"
+   },
+   {
+    "label": "Perpendicular Distance from Point to Line",
+    "latex": "d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}"
+   },
+   {
+    "label": "Area of Triangle (Shoelace Formula)",
+    "latex": "\\text{Area} = \\frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|"
+   }
+  ],
+  "example": {
+   "question": "Find the value of $k$ such that the line passing through $(2, 3)$ and $(5, k)$ is perpendicular to the line $3x + 4y = 12$.",
+   "steps": [
+    "Rewrite $3x + 4y = 12$ in slope-intercept form $y = -\\frac{3}{4}x + 3$, giving slope $m_1 = -\\frac{3}{4}$.",
+    "Perpendicular slope must satisfy $m_1 \\times m_2 = -1$, so $m_2 = -\\frac{1}{-3/4} = \\frac{4}{3}$.",
+    "Calculate slope between $(2, 3)$ and $(5, k)$ as $\\frac{k - 3}{5 - 2} = \\frac{k - 3}{3}$.",
+    "Equate $\\frac{k - 3}{3} = \\frac{4}{3}$, giving $k - 3 = 4$, so $k = 7$."
+   ],
+   "answer": "7"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "G6_SLOPE_INVERTED",
+    "fix": "Always compute vertical change over horizontal change: $m = \\frac{\\Delta y}{\\Delta x}$, never the reciprocal."
+   },
+   {
+    "misconceptionId": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "fix": "Take the negative reciprocal (flip both the sign and the fraction), so if $m = \\frac{2}{3}$, the perpendicular slope is $-\\frac{3}{2}$."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Shift Origin for Fast Triangle Area",
+    "body": "Translate one vertex to $(0, 0)$ by subtracting its coordinates from the other two $(x_1, y_1)$ and $(x_2, y_2)$; then $\\text{Area} = \\frac{1}{2}|x_1 y_2 - x_2 y_1|$. For example, vertices $(1,1), (4,5), (2,7)$ shifted by $(-1,-1)$ become $(0,0), (3,4), (1,6)$, giving Area $= \\frac{1}{2}|3(6) - 4(1)| = 7$."
+   },
+   {
+    "title": "Quick Perpendicular Line Equation",
+    "body": "To find a perpendicular line to $Ax + By + C = 0$, swap coefficients and negate one: $Bx - Ay + k = 0$, then plug in the given point to find $k$. For $3x + 4y = 12$, any perpendicular line has the form $4x - 3y = k$."
+   }
+  ],
+  "verified": {
+   "answer": "7",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "M1",
+  "keyIdea": "Venn diagrams in CAT are essentially accounting problems where elements are categorized by the exact number of sets they belong to. Instead of memorizing unwieldy inclusion-exclusion formulas, break the universe into disjoint components: Exactly 1, Exactly 2, Exactly 3, and None. Total elements sum to $E_1 + E_2 + E_3 + \\text{None}$, while the sum of individual set sizes counts each element by the number of sets it belongs to: $\\sum n(A) = E_1 + 2E_2 + 3E_3$.",
+  "formulas": [
+   {
+    "label": "Inclusion-Exclusion Principle (3 Sets)",
+    "latex": "n(A \\cup B \\cup C) = \\sum n(A) - \\sum n(A \\cap B) + n(A \\cap B \\cap C)"
+   },
+   {
+    "label": "Total Elements via Disjoint Regions",
+    "latex": "n(A \\cup B \\cup C) = E_1 + E_2 + E_3"
+   },
+   {
+    "label": "Sum of Set Sizes",
+    "latex": "n(A) + n(B) + n(C) = E_1 + 2E_2 + 3E_3"
+   },
+   {
+    "label": "Exactly Two via Pairwise Intersections",
+    "latex": "E_2 = \\sum n(A \\cap B) - 3n(A \\cap B \\cap C)"
+   }
+  ],
+  "example": {
+   "question": "In a batch of 120 CAT aspirants, 65 read Quants, 55 read DILR, and 50 read VARC. Every student reads at least one section. If 15 students read all three sections, find the number of students who read exactly two sections.",
+   "steps": [
+    "Let total students $n(A \\cup B \\cup C) = 120$, with None = 0 and $E_3 = 15$.",
+    "Total union satisfies $E_1 + E_2 + 15 = 120$, which simplifies to $E_1 + E_2 = 105$.",
+    "Sum of individual sets is $65 + 55 + 50 = 170$, meaning $E_1 + 2E_2 + 3(15) = 170$.",
+    "Thus, $E_1 + 2E_2 = 170 - 45 = 125$.",
+    "Subtracting the two equations gives $(E_1 + 2E_2) - (E_1 + E_2) = 125 - 105 = 20$."
+   ],
+   "answer": "20"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "M1_FORGET_TRIPLE",
+    "fix": "Always append $+ n(A \\cap B \\cap C)$ because subtracting all pairwise overlaps removes the triple-overlap elements thrice after they were added thrice, leaving net zero inclusion."
+   },
+   {
+    "misconceptionId": "M1_EXACTLY_TWO_PAIRWISE",
+    "fix": "Deduct $3 \\times n(A \\cap B \\cap C)$ from the sum of all pairwise overlaps, since the central region is embedded in each of the three pair intersections."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "The Net Overlap Difference Formula",
+    "body": "Subtract the total union from the sum of individual sets to directly obtain $E_2 + 2E_3$. For example, if $\\sum n(A) = 150$ and Union = 100, then $E_2 + 2E_3 = 50$ immediately."
+   },
+   {
+    "title": "Bounding Maxima and Minima",
+    "body": "To minimize the intersection of two sets $A$ and $B$, use $\\max(0, n(A) + n(B) - \\text{Total})$. For instance, if 70% drink tea and 80% drink coffee in a group of 100%, at least $70 + 80 - 100 = 50\\%$ drink both."
+   }
+  ],
+  "verified": {
+   "answer": "20",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "M2",
+  "keyIdea": "Permutations and Combinations come down to a single decision: does sequence define a new outcome or just reorder the same one? If changing the order creates a distinct scenario (like ranks, words, or digit codes), arrange via permutations; if the collective group remains identical regardless of internal order (like teams or handshakes), select via combinations.",
+  "formulas": [
+   {
+    "label": "Combinations (Selection)",
+    "latex": "{}^nC_r = \\frac{n!}{r!(n - r)!}"
+   },
+   {
+    "label": "Permutations with Identical Items",
+    "latex": "\\frac{n!}{p! \\cdot q! \\cdot r!}"
+   },
+   {
+    "label": "Circular Permutation",
+    "latex": "(n - 1)!"
+   },
+   {
+    "label": "Distribution into Groups (Distinct Items)",
+    "latex": "\\frac{(p + q + r)!}{p! \\cdot q! \\cdot r!}"
+   }
+  ],
+  "example": {
+   "question": "In how many ways can 5 boys and 4 girls be seated around a circular table such that no two girls sit together?",
+   "steps": [
+    "Fix the 5 boys around the circular table first in (5 − 1)! = 4! = 24 ways.",
+    "The 5 seated boys create 5 distinct spaces between them.",
+    "To ensure no two girls sit together, place the 4 girls into these 5 available distinct spaces.",
+    "The number of ways to choose spaces and seat the girls is 5P4 = 120 ways.",
+    "Total arrangements = 24 × 120 = 2,880."
+   ],
+   "answer": "2,880"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "M2_PERM_FOR_COMB",
+    "fix": "Always check if swapping members changes the outcome; if not, divide out internal ordering by using combinations (${}^nC_r$) instead of arrangements (${}^nP_r$)."
+   },
+   {
+    "misconceptionId": "M2_OVERCOUNT_IDENTICAL",
+    "fix": "Divide the total factorial $n!$ by the factorial of the frequency of each repeated element to eliminate duplicate arrangements."
+   },
+   {
+    "misconceptionId": "M2_CIRCULAR_AS_LINEAR",
+    "fix": "Fix one reference item to eliminate rotational symmetry, leaving $(n - 1)!$ ways to arrange the remaining distinct items."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Gap Method for Non-Adjacent Items",
+    "body": "Arrange the unrestricted elements first, then place the restricted elements into the gaps created between them. For instance, seating 3 girls among 4 boys uses the 5 gaps created by the boys: $4! \\times {}^5P_3$."
+   },
+   {
+    "title": "Stars and Bars for Identical Items",
+    "body": "The number of non-negative integer solutions to $x_1 + x_2 + \\dots + x_r = n$ is ${}^{n+r-1}C_{r-1}$. For distributing 10 identical toffees among 3 kids, the ways are ${}^{10+3-1}C_{3-1} = {}^{12}C_2 = 66$."
+   }
+  ],
+  "verified": {
+   "answer": "2880",
+   "by": "pro"
+  }
+ },
+ {
+  "conceptId": "M3",
+  "keyIdea": "Probability in CAT is fundamentally smart counting: Favourable Cases divided by Total Cases. Do not rush into formulas; always define your sample space with equally likely elementary outcomes before calculating. When direct counting feels overwhelming, pivot immediately to the complementary event, P(E) = 1 - P(E').",
+  "formulas": [
+   {
+    "label": "Addition Rule for Any Two Events",
+    "latex": "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)"
+   },
+   {
+    "label": "Conditional Probability",
+    "latex": "P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}"
+   },
+   {
+    "label": "Independent Events",
+    "latex": "P(A \\cap B) = P(A) \\times P(B)"
+   },
+   {
+    "label": "Complementary Probability",
+    "latex": "P(A') = 1 - P(A)"
+   }
+  ],
+  "example": {
+   "question": "A bag contains 5 red and 4 green balls. Three balls are drawn at random one after another without replacement. What is the probability that at least one green ball is drawn?",
+   "steps": [
+    "Total balls = 9; target event is 'at least 1 green ball'.",
+    "Find the complementary event: drawing all 3 red balls without replacement.",
+    "P(All 3 Red) = (5/9) × (4/8) × (3/7) = 60/504 = 5/42.",
+    "Calculate P(At least 1 green) = 1 − P(All 3 Red) = 1 − 5/42 = 37/42."
+   ],
+   "answer": "37/42"
+  },
+  "tangents": [
+   {
+    "misconceptionId": "M3_ADD_NON_EXCLUSIVE",
+    "fix": "Check if events can occur simultaneously, and always subtract the intersection P(A ∩ B) when applying the addition rule."
+   },
+   {
+    "misconceptionId": "M3_DEPENDENT_AS_INDEPENDENT",
+    "fix": "Reduce both the numerator and the denominator on successive draws when items are selected without replacement."
+   },
+   {
+    "misconceptionId": "M3_OUTCOMES_NOT_EQUALLY_LIKELY",
+    "fix": "Break macro-outcomes down into fundamental, equally likely micro-states, such as tracking ordered pairs (a, b) rather than just the sum for two dice."
+   }
+  ],
+  "shortcuts": [
+   {
+    "title": "Complement Rule for At Least",
+    "body": "Whenever a question asks for 'at least one', calculate 1 - P(none). For example, the probability of at least one head in 4 tosses is 1 - (1/2)^4 = 15/16."
+   },
+   {
+    "title": "Symmetry in Sequential Draws",
+    "body": "Without replacement, the unconditional probability of an item appearing on the k-th draw is identical to that on the 1st draw. For 3 white and 7 black balls, P(3rd ball is white) is simply 3/10."
+   }
+  ],
+  "verified": {
+   "answer": "37/42",
    "by": "pro"
   }
  }

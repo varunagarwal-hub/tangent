@@ -18,7 +18,8 @@ export async function GET(req: Request) {
   if (!rl.ok) return tooMany(rl.retryAfter);
 
   const mode = url.searchParams.get("mode") === "review" ? ("review" as const) : undefined;
-  const action = await planNext(studentId, { lastConceptId, exclude, mode });
+  const conceptId = url.searchParams.get("concept");
+  const action = await planNext(studentId, { lastConceptId, exclude, mode, conceptId });
   if (!action) return Response.json({ error: "no question available" }, { status: 404 });
 
   after(async () => {

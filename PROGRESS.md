@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 915 questions live; 95 specs left (`npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Phase 11 (nine Curio-inspired upgrades): #1 Spot the Tangent done; next #2 concept cards. Specs, order and ground rules in ../HANDOFF.md → "Next build".**
+Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 915 questions live; 95 specs left (`npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Phase 11 (nine Curio-inspired upgrades): #1 Spot the Tangent and #2 concept cards done; next #3 CAT speed sprint. Specs, order and ground rules in ../HANDOFF.md → "Next build".**
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -113,7 +113,7 @@ Last updated: 22 Nov ~17:00 IST, project SUBMITTED (team gamma_pass). Phase 10: 
 
 ### Phase 11 — Curio-inspired upgrades (specs in ../HANDOFF.md)
 - [x] 1. Spot the Tangent game (`/play/spot`, hub `/play`, "Play" in the student nav). Rounds are pre-built offline (`scripts/build-spot-rounds.ts` → `data/spot-rounds.json`, no AI at runtime): Flash rewrites each misconception example / seed wrong solution as 4–7 lines with the slip on a RANDOM line (v1 had the slip on line 2 in 83/103 rounds, so "always tap 2" won), Pro independently finds the first wrong line, kept only if they agree. Game: 10 rounds, student's active misconceptions in rounds 2–3, rest weighted to weak concepts, never the same misconception twice; tap the line (+10 / +5 second try), name it from 3 (+10). Red-pen rough-notation circle on the line. Scores in `game_scores` (cascade → Reset demo clears). Spotting + naming one of your OWN active misconceptions = a clean answer in the Mistake Journal (`stepLifecycle clean_correct`), max once per misconception per IST day. `x^2` → `x²` when served (`prettyPowers`).
-- [ ] 2. Concept cards (`/learn`, `/learn/[conceptId]`)
+- [x] 2. Concept cards (`/learn`, `/learn/[conceptId]`, "Learn" in the student nav). `scripts/build-lessons.ts` → `data/lessons.json` (27 cards, no runtime AI): Flash writes key idea, 3–5 KaTeX formulas, a worked example, one fix per misconception, 2 shortcuts; Pro re-solves the example and the card is kept only if the answers agree (compared as numbers, so `250°` vs `250^\circ` isn't a disagreement; G1 needed a rebuild). All 469 maths expressions render in KaTeX. Index sorts by area or weakest first (mastery from `/api/map`); card page shows your mastery + open tangents (`/api/concept/[id]`), worked example revealed step by step. New `?concept=` deep link: `/practice?concept=A1` → `/api/next?concept=` → planner keeps that concept (its best-scored move, else plain practice). Linked from the map drawer ("Read the concept card"; "Practise this" now deep-links), practice after a diagnosis ("Revise this idea"), and each Mistake Journal entry.
 - [ ] 3. CAT speed sprint (`/play/sprint`)
 - [ ] 4. Daily checklist + streak nudge (`/today`)
 - [ ] 5. Foundation check → repair (`/foundation`)
