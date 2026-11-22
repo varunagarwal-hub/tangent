@@ -578,5 +578,229 @@
   {
     "spec": "A4-x20",
     "reason": "ambiguous (1. 'After adding packaging and shipping' implies additional costs were incurred, but their values are not provided, mean)"
+  },
+  {
+    "spec": "A4-x11",
+    "reason": "ambiguous (The numbers provided in the question do not yield an integer answer for the cost price (it results in 363000/7 or approx)"
+  },
+  {
+    "spec": "A4-x11",
+    "reason": "ambiguous (The values provided in the question result in a non-integer answer (228000/7), which is highly unrealistic for a TITA qu)"
+  },
+  {
+    "spec": "N2-0",
+    "reason": "ambiguous (The question is mathematically flawed. The GCD of 132 and 234 is 6, but a divisor of 6 cannot leave remainders of 7 and )"
+  },
+  {
+    "spec": "A2-x18",
+    "reason": "answer key is not one of the options"
+  },
+  {
+    "spec": "A2-x8",
+    "reason": "ambiguous (The total number of orders (3050) is not a multiple of the sum of the ratio parts (83). This results in non-integer valu)"
+  },
+  {
+    "spec": "A2-x8",
+    "reason": "ambiguous (The difference between South and North zones (23 units) does not evenly divide the given difference of 1050. This result)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The total number of containers (445) is not divisible by the sum of the ratio parts (31), resulting in a non-integer num)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (The problem contains contradictory numbers/typos. The exact answer based on the text is 10500/43 (approx 244.19), which )"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "answer mismatch (key says ₹1,50,000, independent solve got ₹1,60,000)"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (The given ratios result in a total of 31 parts, which does not divide the total population (2,25,000) evenly, leading to)"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (The sum of the ratio parts (9 + 12 + 10 = 31) does not divide the total population (2,70,000) evenly, resulting in a non)"
+  },
+  {
+    "spec": "A2-x24",
+    "reason": "ambiguous (Typo in the total population (3,70,000 is not divisible by 31). It was likely intended to be 3,72,000 (which gives 1,08,)"
+  },
+  {
+    "spec": "A2-x28",
+    "reason": "answer mismatch (key says $4 : 5$, independent solve got $9 : 11$)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (Zero options are correct. The calculated total salary is 237,333.33, which is not in the options. The author likely inte)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (The given values lead to the equation 15x + 25000 = 20x + 30000, which yields x = -1000 (negative salaries). The questio)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "ambiguous (The total number of orders (3380) is not a multiple of 17, which results in a non-integer (fractional) number of orders.)"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "ambiguous (The total number of orders (3360) is not divisible by the sum of the ratio parts (31). This results in a non-integer num)"
+  },
+  {
+    "spec": "A2-x26",
+    "reason": "ambiguous (The numbers provided in the question result in a non-integer number of orders (9900/17), which is unrealistic. The total)"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "answer mismatch (key says 8,820, independent solve got 10,620)"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "ambiguous (Typo in the question: '1,260 more votes' leads to exactly 11,805 registered voters (which is not in the options). If it )"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "answer mismatch (key says 480, independent solve got 1020/7)"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x23",
+    "reason": "answer mismatch (key says 15000, independent solve got 13000)"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "ambiguous (The given numbers result in a non-integer value for the number of runs scored, which is unrealistic for cricket.)"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "answer mismatch (key says 555, independent solve got 333)"
+  },
+  {
+    "spec": "A2-x32",
+    "reason": "ambiguous (Unrealistic numbers: The difference in ratio units is 11, but the given run difference is 153. Since 153 is not divisibl)"
+  },
+  {
+    "spec": "A3-x17",
+    "reason": "ambiguous (The final answer is a non-terminating decimal (71.3777...), which is highly unusual and problematic for a TITA (Type In )"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "ambiguous (The sum of the ratio parts is 31, but the total quantity (3900) is not divisible by 31. This leads to a non-integer answ)"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "ambiguous (The values provided do not yield an integer answer. The sum of the ratio parts is 31, but the total weight (4800) is not)"
+  },
+  {
+    "spec": "A2-x35",
+    "reason": "ambiguous (The total 3900 is not divisible by the sum of the ratio parts (59), leading to a non-integer answer which is highly unus)"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "ambiguous (The given numbers lead to a non-integer number of students (n = 194/3 = 64.66...). There is likely a typo in the problem)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "ambiguous (Contradictory data: The sum of the removed 10 students' scores must be 680 for the average to remain unchanged at 68, bu)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 97, independent solve got 96.75)"
+  },
+  {
+    "spec": "A4-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x37",
+    "reason": "ambiguous (Missing data: The exact fraction pooled into the mutual fund is not provided. The phrase 'a fixed fraction' is almost ce)"
+  },
+  {
+    "spec": "A2-x37",
+    "reason": "ambiguous (None of the options are correct. The mathematically correct answer is ₹82,600. Option A (₹96,600) is likely the result o)"
+  },
+  {
+    "spec": "A5-x3",
+    "reason": "more than one option equals the answer"
+  },
+  {
+    "spec": "A5-x1",
+    "reason": "ambiguous (The exact difference is ₹550.80, but the closest option is ₹550.00. This discrepancy is likely due to the author roundin)"
+  },
+  {
+    "spec": "A5-x8",
+    "reason": "answer mismatch (key says 18000, independent solve got 16000)"
+  },
+  {
+    "spec": "A5-x7",
+    "reason": "ambiguous (The exact mathematical answer is ₹550.80, which is not among the options. Option A (₹550) is an approximation.)"
+  },
+  {
+    "spec": "A5-x21",
+    "reason": "ambiguous (The exact calculated increase is 34,719.24. Option B (34,721) is off by approximately 1.76, indicating a slight calculat)"
+  },
+  {
+    "spec": "A5-x13",
+    "reason": "ambiguous (The correct answer is ₹49,600, which is missing from the options. The author likely made a mathematical error by using 3)"
+  },
+  {
+    "spec": "A5-x11",
+    "reason": "answer mismatch (key says 8100, independent solve got 9000)"
+  },
+  {
+    "spec": "A5-x11",
+    "reason": "ambiguous (The numbers provided do not yield an integer solution (y = 10450 / 0.41 ≈ 25487.80). The author likely intended for the )"
+  },
+  {
+    "spec": "A5-x11",
+    "reason": "ambiguous (Contradictory data/Typo: The calculated investment in the CI scheme (2,40,000) exceeds the total available fund (2,00,00)"
+  },
+  {
+    "spec": "A6-x3",
+    "reason": "ambiguous (None of the options are correct for the numbers provided. The calculated answer is ₹2,80,000. The total value ₹13,57,200)"
+  },
+  {
+    "spec": "A6-x11",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A6-x12",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "A5-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A6-x8",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A6-x8",
+    "reason": "ambiguous (The total population (3,50,000) is not divisible by 3, resulting in a non-integer number of people, which is unrealistic)"
   }
 ]

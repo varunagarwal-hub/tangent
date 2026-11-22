@@ -6284,5 +6284,1482 @@
         "misconception_id": "A4_PROFIT_ON_SP"
       }
     ]
+  },
+  {
+    "id": "e9d3d37d-1488-450b-813a-04c8b9bf2b59",
+    "spec": "A4-x25",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A real estate investor acquired a commercial office space at a cost price of ₹$60$ lakh. To attract corporate tenants quickly, he listed the property at an asking price $30\\%$ above his acquisition cost, but subsequently agreed to a sale after offering a discount of $10\\%$ on the asking price. What was the investor's actual percentage profit on this transaction?",
+    "options": [
+      "$17\\%$",
+      "$20\\%$",
+      "$14.5\\%$",
+      "$21\\%$"
+    ],
+    "answer": "$17\\%$",
+    "solution": "1. Acquisition cost (Cost Price, CP) = ₹$60$ lakh.\n2. Marked Price (MP) with a $30\\%$ markup = $60 \\times 1.30 = ₹78$ lakh.\n3. Selling Price (SP) after a $10\\%$ discount on MP = $78 \\times (1 - 0.10) = 78 \\times 0.90 = ₹70.2$ lakh.\n4. Profit = $\\text{SP} - \\text{CP} = 70.2 - 60 = ₹10.2$ lakh.\n5. Profit percentage = $\\frac{10.2}{60} \\times 100 = 17\\%$.\nAlternatively, net percentage change = $30 - 10 - \\frac{30 \\times 10}{100} = 20 - 3 = 17\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$20\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$14.5\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "19738a1c-b9de-4415-bab0-0c3246fd6a8b",
+    "spec": "A4-x11",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An investor bought two residential properties, A and B, for a total of ₹$90,00,000$. After holding them for a year, he sold property A at a profit of $25\\%$ and property B at a loss of $15\\%$. If his overall profit from the combined sale was ₹$6,50,000$, find the cost price (in ₹) of property A.",
+    "options": null,
+    "answer": "5000000",
+    "solution": "1. Let the cost price of property A be ₹$C_A$ and that of property B be ₹$C_B$.\n2. We are given $C_A + C_B = 90,00,000$.\n3. The net profit is obtained from the profit on A and the loss on B: $0.25 C_A - 0.15 C_B = 6,50,000$.\n4. Multiply the second equation by $20$ to clear decimals: $5 C_A - 3 C_B = 1,30,00,000$.\n5. From the first equation, $3 C_A + 3 C_B = 2,70,00,000$.\n6. Adding the two equations: $8 C_A = 4,00,00,000 \\implies C_A = 50,00,000$.\n7. Thus, the cost price of property A is 5000000.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "09e4990f-502d-417c-81da-536a4a95669a",
+    "spec": "A4-x26",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An analytics firm bills a client for contract developers based on reported working hours. Due to a software tracking error, for every $45$ hours an employee actually works, the portal logs and bills the client for $50$ hours. Additionally, during an annual pay revision, the firm raised the hourly billing rate charged to the client by $8\\%$. If the hourly wage paid to the employees remained unchanged, find the overall percentage increase in the firm's gross revenue per actual hour worked.",
+    "options": null,
+    "answer": "20",
+    "solution": "1. Let the original hourly billing rate charged to the client be $R$ per billed hour, and let $T$ be the actual number of hours worked.\n2. For every $45$ actual hours worked, the firm bills for $50$ hours. Thus, for each actual hour worked, the firm bills $\\frac{50}{45} = \\frac{10}{9}$ hours.\n3. Initially, revenue per actual hour worked was $\\frac{10}{9} \\times R$.\n4. After the pay revision, the billing rate per billed hour increased by $8\\%$, becoming $1.08 R = \\frac{27}{25} R$.\n5. The new revenue per actual hour worked is $\\frac{10}{9} \\times 1.08 R = \\frac{10}{9} \\times \\frac{27}{25} R = \\frac{6}{5} R = 1.20 R$.\n6. Compared to the standard base rate $R$, or taking the percentage gain of the billed revenue relative to the true time worked, the billed factor is $\\frac{10}{9} \\times 1.08 = 1.20$, which represents an effective revenue of $1.20$ times the standard rate per actual hour worked, giving an effective increase of $20\\%$.\n7. Therefore, the required percentage is 20.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_FALSE_WEIGHT_BASE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "4d41624f-e13a-4266-b4b3-8326d7d495af",
+    "spec": "A2-x6",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "During a multi-year municipal census drive, two private surveying agencies, Agency $P$ and Agency $Q$, were contracted to enumerate households across different city wards. Agency $P$ deployed $45$ field enumerators who worked consistently for $8$ months. Agency $Q$ deployed $75$ field enumerators who worked for $4$ months. The municipal corporation allocated a performance-based bonus pool of ₹$16,50,000$ to be distributed between the two agencies in proportion to their total surveyor-months of effort. What was the share of Agency $P$ from this bonus pool?",
+    "options": [
+      "₹6,18,750",
+      "₹9,00,000",
+      "₹9,90,000",
+      "₹7,50,000"
+    ],
+    "answer": "₹9,00,000",
+    "solution": "1. Calculate the total effort (enumerator-months) for each agency:\nAgency $P = 45 \\times 8 = 360$ enumerator-months.\nAgency $Q = 75 \\times 4 = 300$ enumerator-months.\n\n2. Determine the ratio of distribution:\nRatio $P : Q = 360 : 300 = 6 : 5$.\n\n3. Calculate Agency $P$'s share:\n$\\text{Share of } P = \\frac{6}{6 + 5} \\times 16,50,000 = \\frac{6}{11} \\times 16,50,000 = 6 \\times 1,50,000 = ₹9,00,000$.\n\nHence, the correct share is ₹$9,00,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_PARTNERSHIP_IGNORE_TIME",
+    "distractor_misconceptions": [
+      {
+        "option": "₹6,18,750",
+        "misconception_id": "A2_PARTNERSHIP_IGNORE_TIME"
+      }
+    ]
+  },
+  {
+    "id": "2486562c-6a56-4c41-a264-294e029b7ff3",
+    "spec": "N2-0",
+    "concept_id": "N2",
+    "type": "MCQ",
+    "stem": "Find the greatest positive integer that divides $285$ and $1249$, leaving remainders of $9$ and $7$ respectively.",
+    "options": [
+      "138",
+      "23",
+      "69",
+      "1"
+    ],
+    "answer": "138",
+    "solution": "1. If the required number $d$ divides $285$ leaving a remainder of $9$, then $d$ must be a factor of $285 - 9 = 276$, with $d > 9$.\n2. If $d$ divides $1249$ leaving a remainder of $7$, then $d$ must be a factor of $1249 - 7 = 1242$, with $d > 7$.\n3. To find the greatest such integer, we compute the Highest Common Factor (HCF) of $276$ and $1242$.\n4. Prime factorisation: $276 = 2^2 \\times 3 \\times 23$ and $1242 = 2 \\times 3^3 \\times 23$.\n5. $\\text{HCF}(276, 1242) = 2 \\times 3 \\times 23 = 138$.\n6. Since $138 > 9$, it satisfies all conditions. Thus, the greatest number is $138$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "N2_REMAINDER_NOT_SUBTRACTED"
+      }
+    ]
+  },
+  {
+    "id": "5f69811c-bc1c-49be-a49e-5f4662f234fc",
+    "spec": "A2-x18",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "A university department divided an annual research grant of ₹$4,80,000$ among three student projects: $X$, $Y$, and $Z$. Project $Z$ received a fixed grant of ₹$1,60,000$, while the remaining amount was shared between projects $X$ and $Y$ such that three times the amount allocated to project $X$ was equal to five times the amount allocated to project $Y$. How much grant did project $X$ receive?",
+    "options": [
+      "₹1,20,000",
+      "₹1,60,000",
+      "₹2,00,000",
+      "₹2,40,000"
+    ],
+    "answer": "₹2,00,000",
+    "solution": "1. The remaining grant shared between projects $X$ and $Y$ is ₹$4,80,000 - 1,60,000 =$ ₹$3,20,000$.\n2. We are given $3X = 5Y$, which implies $\\frac{X}{Y} = \\frac{5}{3}$, meaning the ratio of the grant of $X$ to that of $Y$ is $5 : 3$.\n3. The share of project $X$ is $\\frac{5}{5 + 3} \\times 3,20,000 = \\frac{5}{8} \\times 3,20,000 =$ ₹$2,00,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_INVERT_WHEN_COMBINING",
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,20,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "e2218184-73be-4594-bf13-203018044602",
+    "spec": "A2-x8",
+    "concept_id": "A2",
+    "type": "TITA",
+    "stem": "An e-commerce fulfilment centre processes orders across three delivery zones: North, Central, and South. On a particular day, the ratio of the number of orders delivered in the North zone to that in the Central zone was $4 : 5$, while the ratio of the number of orders delivered in the Central zone to that in the South zone was $6 : 7$. If the number of orders delivered in the South zone exceeded the number of orders delivered in the North zone by $880$, what was the total number of orders processed across all three zones combined on that day?",
+    "options": null,
+    "answer": "7120",
+    "solution": "1. Let $N$, $C$, and $S$ represent the number of orders delivered in the North, Central, and South zones, respectively.\n2. We are given $N : C = 4 : 5$ and $C : S = 6 : 7$. To combine these into a continuous ratio $N : C : S$, we equate the value for the common term $C$ using the LCM of $5$ and $6$, which is $30$.\n3. Multiplying $N : C$ by $6$ gives $N : C = 24 : 30$.\n4. Multiplying $C : S$ by $5$ gives $C : S = 30 : 35$.\n5. Therefore, $N : C : S = 24 : 30 : 35$.\n6. Let $N = 24k$, $C = 30k$, and $S = 35k$ for some positive multiplier $k$.\n7. We are given that $S - N = 880$, so $35k - 24k = 11k = 880$, which gives $k = 80$.\n8. The total number of orders is $N + C + S = (24 + 30 + 35)k = 89k = 89 \\times 80 = 7120$.\n\nFinal Answer: 7120",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_CHAIN_WITHOUT_LCM",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "2e47755c-ba96-4fb6-8e27-2e7b2981a8df",
+    "spec": "A2-x28",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "At the beginning of a financial quarter, a small manufacturing firm allocated its operating funds between two expense heads, Raw Materials and Logistics, in the ratio $5 : 3$. By the end of the quarter, an unexpected flat compliance surcharge of ₹$40,000$ was added to both heads, while no other spending occurred. If the initial total allocation for these two heads combined was ₹$3,20,000$, what is the new ratio of the funds in Raw Materials to Logistics?",
+    "options": [
+      "$5 : 3$",
+      "$3 : 2$",
+      "$12 : 7$",
+      "$7 : 4$"
+    ],
+    "answer": "$3 : 2$",
+    "solution": "1. The initial total funds are ₹$3,20,000$, split between Raw Materials and Logistics in the ratio $5 : 3$.\n2. Initial allocation for Raw Materials $= \\frac{5}{8} \\times 3,20,000 = ₹2,00,000$.\n3. Initial allocation for Logistics $= \\frac{3}{8} \\times 3,20,000 = ₹1,20,000$.\n4. After adding ₹$40,000$ to each head:\nNew Raw Materials $= 2,00,000 + 40,000 = ₹2,40,000$.\nNew Logistics $= 1,20,000 + 40,000 = ₹1,60,000$.\n5. New ratio $= \\frac{2,40,000}{1,60,000} = \\frac{24}{16} = 3 : 2$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A2_ADD_TO_RATIO",
+    "distractor_misconceptions": [
+      {
+        "option": "$5 : 3$",
+        "misconception_id": "A2_ADD_TO_RATIO"
+      }
+    ]
+  },
+  {
+    "id": "ec5a305b-a216-4aad-a01e-45c66ec85737",
+    "spec": "A4-x3",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A boutique owner marks up the price of an imported designer jacket by $60\\%$ above its cost price. During an annual clearance sale, she offers two successive discounts of $20\\%$ and $10\\%$ on the marked price. If she realizes an overall profit of ₹$2,280$ on the sale of the jacket, what was its cost price?",
+    "options": [
+      "₹15,000",
+      "₹15,200",
+      "₹7,600",
+      "₹12,720"
+    ],
+    "answer": "₹15,000",
+    "solution": "1. Let the cost price ($CP$) of the jacket be ₹$x$.\n2. The marked price ($MP$) after a $60\\%$ markup is $MP = 1.6x$.\n3. Applying successive discounts of $20\\%$ and $10\\%$, the selling price ($SP$) is:\n$SP = 1.6x \\times (1 - 0.20) \\times (1 - 0.10) = 1.6x \\times 0.80 \\times 0.90 = 1.6x \\times 0.72 = 1.152x$.\n4. The profit earned is $SP - CP = 1.152x - x = 0.152x$.\n5. Setting $0.152x = 2280$, we find:\n$x = \\frac{2280}{0.152} = \\frac{2280000}{152} = 15000$.\nThus, the cost price was ₹$15,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹15,200",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      },
+      {
+        "option": "₹7,600",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "₹12,720",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "55fe2b6b-34fa-46c0-b807-f49e94153f0d",
+    "spec": "A3-x17",
+    "concept_id": "A3",
+    "type": "TITA",
+    "stem": "In an examination, the average marks obtained by a class of $40$ students was calculated to be $65$. It was later discovered that two errors were made: the marks of one student were incorrectly recorded as $84$ instead of $48$, and the marks of another student were incorrectly recorded as $36$ instead of $72$. Additionally, the marks of two candidates who had been initially left out, scoring $60$ and $70$, were to be included. What is the correct average marks of the class, considering all $42$ students?",
+    "options": null,
+    "answer": "65",
+    "solution": "1. Find the initial total marks recorded for the $40$ students: $\\text{Initial total} = 40 \\times 65 = 2600$.\n2. Adjust for the two incorrect entries: the first student's marks change by $48 - 84 = -36$, and the second student's marks change by $72 - 36 = +36$. The net change in the total from these corrections is $-36 + 36 = 0$.\n3. Add the marks of the two newly included students: $\\text{New total} = 2600 + 60 + 70 = 2730$.\n4. Compute the final average for the $40 + 2 = 42$ students: $\\frac{2730}{42} = 65$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "805afe42-80dd-447b-a246-be889a0216c2",
+    "spec": "A4-x29",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An investor purchased gold bonds worth ₹$80,000$ and silver bullion worth ₹$40,000$. Six months later, she liquidated the gold bonds at a profit of $15\\%$ and the silver bullion at a loss of $10\\%$. What was her overall percentage profit on the total investment?",
+    "options": null,
+    "answer": "6.67",
+    "solution": "1. Find the total initial investment: ₹$80,000 + ₹40,000 = ₹1,20,000$.\n2. Calculate the profit from the gold bonds: $15\\% \\text{ of } 80,000 = 0.15 \\times 80,000 = ₹12,000$.\n3. Calculate the loss from the silver bullion: $10\\% \\text{ of } 40,000 = 0.10 \\times 40,000 = ₹4,000$.\n4. Determine the net profit: ₹$12,000 - ₹4,000 = ₹8,000$.\n5. Calculate the overall percentage profit: $\\frac{8,000}{1,20,000} \\times 100 = \\frac{80}{12} = \\frac{20}{3}\\% \\approx 6.67\\%$.\n\nFinal Answer: 6.67",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "26bfa8f1-b60a-4cd1-84ee-5b40f3d16d67",
+    "spec": "A4-x28",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "During a college technology festival, the robotics club auctioned two custom drones, model Alpha and model Beta, selling each for ₹$28,800$. On model Alpha, the club made a profit of $20\\%$, whereas on model Beta, they incurred a loss of $20\\%$. Later, the club sold a third drone, model Gamma, which had a cost price of ₹$35,000$, at a profit of $12\\%$. Across all three transactions combined, what was the club's overall net profit or loss?",
+    "options": [
+      "Profit of ₹$4,200$",
+      "Profit of ₹$1,800$",
+      "Profit of ₹$2,400$",
+      "Profit of ₹$6,600$"
+    ],
+    "answer": "Profit of ₹$1,800$",
+    "solution": "1. For model Alpha, $\\text{SP} = ₹28,800$ with a $20\\%$ profit. Thus, $\\text{CP}_{\\text{Alpha}} = \\frac{28,800}{1.20} = ₹24,000$. Profit on Alpha $= 28,800 - 24,000 = ₹4,800$.\n2. For model Beta, $\\text{SP} = ₹28,800$ with a $20\\%$ loss. Thus, $\\text{CP}_{\\text{Beta}} = \\frac{28,800}{0.80} = ₹36,000$. Loss on Beta $= 36,000 - 28,800 = ₹7,200$.\n3. Combined net loss on Alpha and Beta $= 7,200 - 4,800 = ₹2,400$.\n4. For model Gamma, $\\text{CP} = ₹35,000$ and profit percentage $= 12\\%$. Profit on Gamma $= 0.12 \\times 35,000 = ₹4,200$.\n5. Overall net outcome $= ₹4,200 - ₹2,400 = \\text{Profit of } ₹1,800$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_SAME_SP_NO_LOSS",
+    "distractor_misconceptions": [
+      {
+        "option": "Profit of ₹$4,200$",
+        "misconception_id": "A4_SAME_SP_NO_LOSS"
+      },
+      {
+        "option": "Profit of ₹$6,600$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "394361ef-d486-423e-baaa-788f521f1b83",
+    "spec": "A4-x30",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A transport fleet owner purchases bio-diesel in bulk at ₹$75$ per litre. To manage fleet running costs, he dispenses it to contracted logistics drivers at ₹$100$ per litre. What is his profit percentage on the bio-diesel dispensed?",
+    "options": [
+      "$25\\%$",
+      "$33\\frac{1}{3}\\%$",
+      "$20\\%$",
+      "$30\\%$"
+    ],
+    "answer": "$33\\frac{1}{3}\\%$",
+    "solution": "1. Identify Cost Price (CP) and Selling Price (SP): $\\text{CP} = ₹75$ per litre and $\\text{SP} = ₹100$ per litre.\n2. Compute profit per litre: $\\text{Profit} = \\text{SP} - \\text{CP} = 100 - 75 = ₹25$.\n3. Calculate profit percentage on CP: $\\text{Profit}\\% = \\left(\\frac{25}{75}\\right) \\times 100 = 33\\frac{1}{3}\\%$.\n\nHence, the correct answer is $33\\frac{1}{3}\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_PROFIT_ON_SP",
+    "distractor_misconceptions": [
+      {
+        "option": "$25\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "d42c5d02-9b23-4faf-9f23-40b81eef920e",
+    "spec": "A4-x31",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A political campaign agency prints promotional badges for an upcoming election. The agency marks the price of each badge $40\\%$ above its production cost. To attract bulk orders from constituency offices, the agency offers an initial discount of $15\\%$, followed by an additional prompt-payment discount of $10\\%$ on the reduced price. If an office purchases a bulk consignment of badges for ₹$32,130$, what was the total production cost of this consignment?",
+    "options": [
+      "₹29,750",
+      "₹30,000",
+      "₹34,000",
+      "₹35,000"
+    ],
+    "answer": "₹30,000",
+    "solution": "1. Let the total production cost be $C$.\n2. The marked price is $M = 1.40C$.\n3. With successive discounts of $15\\%$ and $10\\%$, the selling price is given by $S = M \\times (1 - 0.15) \\times (1 - 0.10) = 1.40C \\times 0.85 \\times 0.90$.\n4. Calculate the multiplier: $1.40 \\times 0.85 = 1.19$, and $1.19 \\times 0.90 = 1.071$.\n5. Therefore, $1.071C = 32,130$, which gives $C = \\frac{32,130}{1.071} = 30,000$.\n6. The total production cost is ₹$30,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹29,750",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      },
+      {
+        "option": "₹34,000",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      },
+      {
+        "option": "₹35,000",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      }
+    ]
+  },
+  {
+    "id": "94f59c18-5ab1-4347-b84d-78a52de055f0",
+    "spec": "A4-x32",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A textile factory manufactures industrial workwear jackets at a cost price of ₹$1,200$ each. The factory manager marks up the list price of each jacket by $50\\%$ above its cost price. For a bulk order from an engineering firm, the manager offers two successive discounts of $20\\%$ and $10\\%$ on the list price. What is the profit earned by the factory on each jacket, in ₹?",
+    "options": null,
+    "answer": "96",
+    "solution": "1. Find the cost price (CP) and list price (marked price, MP):\n$\\text{CP} = ₹1,200$\n$\\text{MP} = 1,200 \\times \\left(1 + \\frac{50}{100}\\right) = ₹1,800$.\n\n2. Compute the final selling price (SP) after the successive discounts of $20\\%$ and $10\\%$:\n$\\text{SP} = 1,800 \\times (1 - 0.20) \\times (1 - 0.10) = 1,800 \\times 0.80 \\times 0.90 = 1,800 \\times 0.72 = ₹1,296$.\n\n3. Calculate the profit per jacket:\n$\\text{Profit} = \\text{SP} - \\text{CP} = 1,296 - 1,200 = 96$.\n\n(Note: Under the misconception A4_ADD_DISCOUNTS, one would add $20\\% + 10\\% = 30\\%$ discount, giving $\\text{SP} = 1,800 \\times 0.70 = ₹1,260$ and a profit of ₹$60$.)",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_ADD_DISCOUNTS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "b0cc88f0-f78e-4c29-9766-6de79a385073",
+    "spec": "A4-x34",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A municipal corporation commissioned a data agency to conduct a demographic census of a metropolitan city. The agency estimated its total operation cost at ₹$80$ lakh. To quote a tender value, the agency marked up this estimated cost by $25\\%$. However, during negotiations with the municipal committee, the agency agreed to offer a discount of $20\\%$ on the quoted tender price. What was the agency's net profit or loss percentage on the estimated operation cost?",
+    "options": [
+      "$5\\%$ profit",
+      "No profit, no loss",
+      "$4\\%$ loss",
+      "$5\\%$ loss"
+    ],
+    "answer": "No profit, no loss",
+    "solution": "1. Estimated operation cost (Cost Price, CP) = ₹$80$ lakh.\n2. Quoted tender price (Marked Price, MP) after a $25\\%$ markup = $80 \\times \\left(1 + \\frac{25}{100}\\right) = 80 \\times 1.25 =$ ₹$100$ lakh.\n3. Final agreed price (Selling Price, SP) after a $20\\%$ discount on MP = $100 \\times \\left(1 - \\frac{20}{100}\\right) = 100 \\times 0.80 =$ ₹$80$ lakh.\n4. Since $\\text{SP} = \\text{CP} =$ ₹$80$ lakh, there is no profit and no loss ($0\\%$).\n\nFinal Answer: No profit, no loss",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_MARKUP_MINUS_DISCOUNT",
+    "distractor_misconceptions": [
+      {
+        "option": "$5\\%$ profit",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      }
+    ]
+  },
+  {
+    "id": "7a95717d-6a4b-44fd-89fb-cfa555c52415",
+    "spec": "A4-x35",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "A chef prepares a signature spice blend by mixing two varieties of pepper, A and B. Variety A costs ₹$300$ per kg and variety B costs ₹$450$ per kg. He mixes them in the ratio $3 : 2$ by weight. If he sells the entire blend at ₹$468$ per kg, find his profit percentage.",
+    "options": null,
+    "answer": "30",
+    "solution": "1. Let the chef mix $3\\text{ kg}$ of variety A and $2\\text{ kg}$ of variety B, making a total of $5\\text{ kg}$ of the blend.\n2. Total cost price $= (3 \\times 300) + (2 \\times 450) = 900 + 900 = ₹1,800$.\n3. Cost price per kg of the blend $= \\frac{1,800}{5} = ₹360$.\n4. Selling price per kg $= ₹468$.\n5. Profit per kg $= 468 - 360 = ₹108$.\n6. Profit percentage $= \\left(\\frac{108}{360}\\right) \\times 100 = 30\\%$.\nFinal Answer: 30",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "bc4d7ec1-750e-4d5a-ad2c-a49c1e9d7b49",
+    "spec": "A4-x33",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A supplier supplies water tanks to housing societies. He marks the catalogue price of each tank $50\\%$ above its manufacturing cost. During a festival promotion, he offers two successive discounts of $20\\%$ and $10\\%$ on the catalogue price. Additionally, by using an altered volume measurement gauge, he supplies a tank with an actual capacity that is $10\\%$ less than the stated capacity, while charging the customer based on the stated capacity (the manufacturing cost is strictly proportional to the actual volume). Find the supplier's actual overall profit percentage on the transaction.",
+    "options": [
+      "20%",
+      "8%",
+      "18%",
+      "28%"
+    ],
+    "answer": "20%",
+    "solution": "1. Let the manufacturing cost of a tank of stated capacity be ₹$100$.\n2. The marked catalogue price is $50\\%$ above the cost: $\\text{Marked Price (MP)} = 100 \\times 1.50 = ₹150$.\n3. Applying successive discounts of $20\\%$ and $10\\%$:\n$\\text{Selling Price (SP)} = 150 \\times (1 - 0.20) \\times (1 - 0.10) = 150 \\times 0.80 \\times 0.90 = ₹108$.\n4. Because the tank supplied has $10\\%$ less capacity than stated, the actual cost incurred by the supplier is $90\\%$ of ₹$100$, which is ₹$90$.\n5. Profit $= \\text{SP} - \\text{Actual Cost} = 108 - 90 = ₹18$.\n6. Overall profit percentage $= \\left(\\frac{18}{90}\\right) \\times 100 = 20\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "18%",
+        "misconception_id": "A4_FALSE_WEIGHT_BASE"
+      },
+      {
+        "option": "8%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      },
+      {
+        "option": "28%",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "96cd7de8-fac5-4018-ae7c-702ffc3f46cf",
+    "spec": "A4-x38",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "An electronics retailer liquidates two high-end commercial printers at an identical selling price of ₹$1,44,000$ each. On the first printer, the retailer makes a profit of $20\\%$, while on the second printer, he incurs a loss of $20\\%$. Find the absolute value of the net overall profit or loss (in ₹) incurred by the retailer across the combined transaction.",
+    "options": null,
+    "answer": "12000",
+    "solution": "1. Let $CP_1$ and $CP_2$ be the cost prices of the first and second printers, respectively.\n2. For the first printer: $SP_1 = 1.20 \\times CP_1 = 1,44,000 \\implies CP_1 = \\frac{1,44,000}{1.20} = ₹1,20,000$.\n3. For the second printer: $SP_2 = 0.80 \\times CP_2 = 1,44,000 \\implies CP_2 = \\frac{1,44,000}{0.80} = ₹1,80,000$.\n4. Total Cost Price $= CP_1 + CP_2 = 1,20,000 + 1,80,000 = ₹3,00,000$.\n5. Total Selling Price $= 1,44,000 + 1,44,000 = ₹2,88,000$.\n6. Net Loss $= 3,00,000 - 2,88,000 = ₹12,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_SAME_SP_NO_LOSS",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "ff144102-784c-44cb-8e8d-6bf1dfd27512",
+    "spec": "A4-x36",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "An online gourmet grocery seller procures premium basmati rice at ₹$120$ per kg. On the web portal, the price is listed at a markup of $20\\%$ above the cost price, but an introductory discount of $10\\%$ is applied at checkout. Additionally, the automated packaging machine is faulty and dispenses only $850$ grams into every bag labelled and sold as $1$ kg. What is the seller's actual overall profit percentage on each bag sold?",
+    "options": [
+      "18%",
+      "23%",
+      "27.06%",
+      "20%"
+    ],
+    "answer": "27.06%",
+    "solution": "1. Let the cost price per gram be ₹$\\frac{120}{1000} = ₹0.12$.\n2. The cost price of the quantity actually delivered ($850$ g) is $850 \\times 0.12 = ₹102$.\n3. The listed price for $1$ kg is $120 \\times 1.20 = ₹144$.\n4. After a $10\\%$ discount, the selling price charged to the customer is $144 \\times 0.90 = ₹129.60$.\n5. The actual profit earned on each bag is $₹129.60 - ₹102 = ₹27.60$.\n6. Overall profit percentage $= \\frac{27.60}{102} \\times 100\\% \\approx 27.06\\%$.\n\n(Note: A student committing the false-weight base error computes cost on $1000$ g as ₹$120$ and calculates profit on false base: $\\frac{129.60 - 120}{120} + \\frac{150}{1000} = 8\\% + 15\\% = 23\\%$).",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A4_FALSE_WEIGHT_BASE",
+    "distractor_misconceptions": [
+      {
+        "option": "23%",
+        "misconception_id": "A4_FALSE_WEIGHT_BASE"
+      }
+    ]
+  },
+  {
+    "id": "477a7a4b-fdf3-4329-bc2d-1d7a6a535a71",
+    "spec": "A4-x37",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A private travel operator runs a luxury interstate bus service. The total operating cost per passenger seat is ₹$1,600$. The operator lists the ticket at a marked price that is $40\\%$ above the operating cost. During a festival season, an online booking platform offers two successive discounts of $15\\%$ and $10\\%$ on the marked price of the ticket. What is the operator's actual profit percentage on each seat sold through this platform?",
+    "options": [
+      "$7.1\\%$",
+      "$15.0\\%$",
+      "$6.63\\%$",
+      "$19.0\\%$"
+    ],
+    "answer": "$7.1\\%$",
+    "solution": "1. Let Cost Price per seat $\\text{CP} = ₹1,600$.\n2. The marked price is $40\\%$ above $\\text{CP}$, so $\\text{MP} = 1,600 \\times 1.40 = ₹2,240$.\n3. Two successive discounts of $15\\%$ and $10\\%$ are offered. The effective selling price is:\n$\\text{SP} = 2,240 \\times (1 - 0.15) \\times (1 - 0.10) = 2,240 \\times 0.85 \\times 0.90 = ₹1,713.60$.\n4. Profit made per seat = $\\text{SP} - \\text{CP} = 1,713.60 - 1,600 = ₹113.60$.\n5. Profit percentage = $\\frac{113.60}{1,600} \\times 100\\% = 7.1\\%$.\n\nAlternatively, overall multiplier on CP = $1.40 \\times 0.85 \\times 0.90 = 1.071$, which corresponds to a $7.1\\%$ profit.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$15.0\\%$",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "$6.63\\%$",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      },
+      {
+        "option": "$19.0\\%$",
+        "misconception_id": "A4_ADD_DISCOUNTS"
+      }
+    ]
+  },
+  {
+    "id": "cf24d730-aef9-4f35-b2be-f6f2b924c92c",
+    "spec": "A4-x39",
+    "concept_id": "A4",
+    "type": "MCQ",
+    "stem": "A retail electronics store owner marks up the price of a smartwatch by $50\\%$ above its cost price. During a weekend festive sale, he offers a flat discount of $20\\%$ on the marked price. What is his actual profit percentage on the sale of the smartwatch?",
+    "options": [
+      "30%",
+      "20%",
+      "25%",
+      "16.67%"
+    ],
+    "answer": "20%",
+    "solution": "1. Let the cost price of the smartwatch be ₹$100$.\n2. With a markup of $50\\%$, the marked price becomes $100 + 0.50 \\times 100 = ₹150$.\n3. A discount of $20\\%$ on the marked price gives a selling price of $150 \\times (1 - 0.20) = 150 \\times 0.80 = ₹120$.\n4. Profit $= ₹120 - ₹100 = ₹20$, which corresponds to a profit percentage of $\\frac{20}{100} \\times 100\\% = 20\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "30%",
+        "misconception_id": "A4_MARKUP_MINUS_DISCOUNT"
+      },
+      {
+        "option": "16.67%",
+        "misconception_id": "A4_PROFIT_ON_SP"
+      }
+    ]
+  },
+  {
+    "id": "90f147a6-e36b-4ac3-8549-adff312d7b69",
+    "spec": "A5-x0",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A political campaign committee sets aside a contingency fund of ₹$50,000$ to prepare for an upcoming local election in $3$ years. The fund is placed in a special bank account yielding $10\\%$ per annum interest, compounded annually. What is the total interest earned on this fund at the end of the $3$-year period?",
+    "options": [
+      "₹$15,000$",
+      "₹$16,550$",
+      "₹$66,550$",
+      "₹$18,205$"
+    ],
+    "answer": "₹$16,550$",
+    "solution": "1. The principal amount is $P = ₹50,000$, the annual interest rate is $r = 10\\%$, and the time period is $n = 3$ years.\n2. Since the interest is compounded annually, the total amount after $3$ years is given by $A = P\\left(1 + \\frac{r}{100}\\right)^n = 50,000 \\times (1.1)^3 = 50,000 \\times 1.331 = ₹66,550$.\n3. The total compound interest earned is $\\text{CI} = A - P = 66,550 - 50,000 = ₹16,550$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_SI_FOR_CI",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$15,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      }
+    ]
+  },
+  {
+    "id": "d042d18d-8ae9-4cdf-abb0-94a3a11b879f",
+    "spec": "A4-x23",
+    "concept_id": "A4",
+    "type": "TITA",
+    "stem": "During a cultural festival, a merchandise stall procures souvenir badges at ₹$40$ each. The stall manager marks up the selling price such that after offering a discount of $10\\%$ on the marked price, she still makes a profit of $35\\%$. On the final evening, to clear remaining stock, she offers an additional promotional discount of $12$ badges free with every purchase of $48$ badges, while keeping the marked price and the regular $10\\%$ discount per purchased badge unchanged. If a customer takes advantage of this final evening offer and takes $60$ badges in total, find the profit percentage earned by the stall manager on this transaction.",
+    "options": null,
+    "answer": "8",
+    "solution": "1. Let cost price ($CP$) per badge = ₹$40$.\n2. Normal selling price per badge after a $10\\%$ discount yields $35\\%$ profit: $SP_1 = 40 \\times 1.35 = ₹54$.\n3. Since $SP_1 = 0.90 \\times MP$, Marked Price ($MP$) per badge = $\\frac{54}{0.90} = ₹60$.\n4. On the final evening, the customer buys $48$ badges and receives $12$ free, taking a total of $60$ badges.\n5. The customer pays for $48$ badges at the discounted price $SP_1 = ₹54$ each. Total revenue = $48 \\times 54 = ₹2,592$.\n6. The total cost to the stall manager for all $60$ badges taken = $60 \\times 40 = ₹2,400$.\n7. Profit earned = $2,592 - 2,400 = ₹192$.\n8. Profit percentage = $\\frac{192}{2,400} \\times 100 = 8\\%$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "7ae6381c-847b-4ab7-912c-b54d98a4a4da",
+    "spec": "A5-x2",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "A chemical solution in an industrial water treatment tank expands in volume at a compound rate equivalent to $12\\%$ per annum. Initially, the tank contains $25,000$ litres of the solution. If the volume expands compounded half-yearly, find the total increase in the volume of the solution (in litres) at the end of $1$ year.",
+    "options": null,
+    "answer": "3090",
+    "solution": "1. The initial volume is $P = 25,000$ litres.\n2. The nominal annual expansion rate is $12\\%$, compounded half-yearly. Therefore, the effective rate per half-year is $r = \\frac{12\\%}{2} = 6\\%$, and the number of compounding periods in $1$ year is $n = 2$.\n3. The volume after $1$ year is given by $A = 25000 \\left(1 + \\frac{6}{100}\\right)^2 = 25000 \\times (1.06)^2 = 25000 \\times 1.1236 = 28,090$ litres.\n4. The total increase in volume is $28,090 - 25,000 = 3,090$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_HALFYEARLY_RATE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "9856b68e-7f18-4656-9f10-2fdf070e3058",
+    "spec": "A5-x4",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A central kitchen procures premium spice mixtures through financing. The supplier offers two credit options on an invoice value of ₹$15,000$ for a term of $3$ years at an interest rate of $20\\%$ per annum: Option A charges simple interest, while Option B charges interest compounded annually. What is the difference in the total interest payable between Option B and Option A at the end of $3$ years?",
+    "options": [
+      "₹$600$",
+      "₹$1,800$",
+      "₹$1,920$",
+      "₹$3,000$"
+    ],
+    "answer": "₹$1,920$",
+    "solution": "1. Simple Interest (SI) for $3$ years:\n   $\\text{SI} = \\frac{P \\times r \\times t}{100} = \\frac{15000 \\times 20 \\times 3}{100} = ₹9,000$.\n\n2. Compound Interest (CI) for $3$ years:\n   $\\text{Amount} = P \\left(1 + \\frac{r}{100}\\right)^3 = 15000 \\times (1.2)^3 = 15000 \\times 1.728 = ₹25,920$.\n   $\\text{CI} = 25920 - 15000 = ₹10,920$.\n\n3. Difference between CI and SI:\n   $\\text{Difference} = 10,920 - 9,000 = ₹1,920$.\n\n   (Alternatively, using the formula for 3 years: $\\text{Difference} = P \\left(\\frac{r}{100}\\right)^2 \\left(3 + \\frac{r}{100}\\right) = 15000 \\times (0.2)^2 \\times (3.2) = 15000 \\times 0.04 \\times 3.2 = 600 \\times 3.2 = ₹1,920$).\n\n4. Thus, the required difference is ₹$1,920$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_DIFF_2YR_FORMULA",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$600$",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹$1,800$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "8a8c994e-8791-42df-b574-de6bf9727a4a",
+    "spec": "A5-x5",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "An online delivery startup created an emergency reserve of ₹$75,000$ to handle festive demand surges. The fund is placed in a bank deposit earning interest at $8\\%$ per annum, compounded annually. What is the total interest (in ₹) accrued on this reserve at the end of $2$ years?",
+    "options": null,
+    "answer": "12480",
+    "solution": "1. Principal $P = 75,000$, annual interest rate $r = 8\\%$, and time $t = 2$ years.\n2. The total amount after $2$ years is given by $A = P\\left(1 + \\frac{r}{100}\\right)^2 = 75,000 \\times (1.08)^2$.\n3. Calculate $(1.08)^2 = 1.1664$.\n4. $A = 75,000 \\times 1.1664 = 87,480$.\n5. Compound Interest accrued is $CI = A - P = 87,480 - 75,000 = 12,480$.\n6. The final answer is 12480.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "5cfab9de-9930-401d-b76d-f13c59d958b3",
+    "spec": "A2-x37",
+    "concept_id": "A2",
+    "type": "MCQ",
+    "stem": "Three professionals, $P$, $Q$, and $R$, pool a portion of their annual savings into a mutual fund. The ratio of the savings invested by $P$ to that by $Q$ is $3 : 4$, and the ratio of the savings invested by $Q$ to that by $R$ is $5 : 6$. If the total amount invested by all three together is ₹$2,95,000$, what is the amount invested by $R$?",
+    "options": [
+      "₹1,20,000",
+      "₹1,36,154",
+      "₹1,00,000",
+      "₹1,06,200"
+    ],
+    "answer": "₹1,20,000",
+    "solution": "1. Express the investments in a unified ratio: $P : Q = 3 : 4$ and $Q : R = 5 : 6$.\n2. To combine the ratios, equate the term for $Q$ by finding the LCM of $4$ and $5$, which is $20$:\n$P : Q = 15 : 20$ and $Q : R = 20 : 24$.\n3. Thus, $P : Q : R = 15 : 20 : 24$.\n4. The total ratio parts $= 15 + 20 + 24 = 59$.\n5. Value of $1$ part $= \\frac{2,95,000}{59} = ₹5,000$.\n6. Amount invested by $R = 24 \\times 5,000 = ₹1,20,000$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,36,154",
+        "misconception_id": "A2_CHAIN_WITHOUT_LCM"
+      },
+      {
+        "option": "₹1,00,000",
+        "misconception_id": "A2_INVERT_WHEN_COMBINING"
+      }
+    ]
+  },
+  {
+    "id": "e4adb8d5-cb7b-40a1-9e5d-e6d1047779fe",
+    "spec": "A5-x3",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "According to official census records, the population of a township was recorded at the end of $2020$ and again at the end of $2023$. The population grew at a constant annual compound rate of $r\\%$ throughout this period. If the population increase during the year $2022$ was $44,000$ and the population increase during the year $2023$ was $48,400$, what was the population of the township at the end of $2020$?",
+    "options": [
+      "3,63,636",
+      "4,00,000",
+      "4,40,000",
+      "4,84,000"
+    ],
+    "answer": "4,00,000",
+    "solution": "1. Let $P$ be the population at the end of $2020$, and let $r$ be the annual compound growth rate as a decimal.\n2. The increase in population during year $n$ (where $n=1$ is 2021) is given by $I_n = P(1+r)^{n-1} \\times r$.\n3. For $2022$ ($n=2$): $I_2 = P(1+r)r = 44,000$.\n4. For $2023$ ($n=3$): $I_3 = P(1+r)^2 r = 48,400$.\n5. Dividing $I_3$ by $I_2$: $\\frac{I_3}{I_2} = 1+r = \\frac{48,400}{44,000} = 1.10$, which gives $r = 0.10$ or $10\\%$.\n6. Using $I_2 = P(1+0.10)(0.10) = 44,000$:\n$P \\times 1.10 \\times 0.10 = 44,000 \\implies 0.11 P = 44,000 \\implies P = \\frac{44,000}{0.11} = 4,00,000$.\n7. Thus, the population at the end of $2020$ was $4,00,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "4,40,000",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "4,84,000",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "f505b2e2-34d0-4700-b440-1b4a0fa529dc",
+    "spec": "A5-x6",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A logistics firm is upgrading its fleet of freight trucks. To finance a future procurement of high-capacity carrier trailers, a capital fund is invested at a fixed annual rate compounded annually. Under this investment scheme, the fund grows to $2.25$ times its initial value in $6$ years. If the cost of the fleet expansion requires the fund to grow to $\\frac{243}{32}$ times its initial value, how many years from the start of the investment will it take to reach this required amount?",
+    "options": [
+      "15",
+      "20",
+      "18",
+      "24"
+    ],
+    "answer": "15",
+    "solution": "1. Let the annual compounding growth factor be $r$, such that in $t$ years an amount grows by a factor of $(1 + r)^t$.\n2. We are given that in $6$ years, the fund grows to $2.25$ times its initial value: $(1 + r)^6 = 2.25 = \\frac{9}{4} = \\left(\\frac{3}{2}\\right)^2$.\n3. Taking the square root on both sides: $(1 + r)^3 = \\frac{3}{2}$.\n4. The required growth multiple is $\\frac{243}{32} = \\left(\\frac{3}{2}\\right)^5$.\n5. Expressing this in terms of the compounding factor: $\\left(\\frac{3}{2}\\right)^5 = \\left((1 + r)^3\\right)^5 = (1 + r)^{15}$.\n6. Therefore, the required time is $15$ years.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_LINEAR_SCALING",
+    "distractor_misconceptions": [
+      {
+        "option": "20",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "6a7105de-7c13-43c8-a261-8e4e1533a70e",
+    "spec": "A5-x9",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "To fund a special coaching scholarship for top scorers in an entrance exam, an educational institute deposited ₹$50,000$ in a bank scheme offering an interest rate of $12\\%$ per annum for $1$ year, compounded half-yearly. How much total interest will the scholarship fund earn over this $1$-year period?",
+    "options": [
+      "₹$6,000$",
+      "₹$6,180$",
+      "₹$12,720$",
+      "₹$12,000$"
+    ],
+    "answer": "₹$6,180$",
+    "solution": "1. The principal amount is $P = ₹50,000$, the annual rate is $R = 12\\%$, and the period is $T = 1$ year.\n2. Since interest is compounded half-yearly, the rate per half-year is $r = \\frac{12\\%}{2} = 6\\%$, and the number of compounding periods is $n = 1 \\times 2 = 2$.\n3. The total amount accumulated is $A = P\\left(1 + \\frac{r}{100}\\right)^n = 50000 \\times (1.06)^2 = 50000 \\times 1.1236 = ₹56,180$.\n4. Therefore, the compound interest earned is $CI = A - P = 56,180 - 50,000 = ₹6,180$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$6,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$12,720$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      },
+      {
+        "option": "₹$12,000$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "cc969a4e-703f-4173-bbe1-c2ec7fbd4ebd",
+    "spec": "A5-x10",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "To organize a cultural festival, a college committee deposits a sponsorship fund of ₹$20,000$ in a special bank account for $1$ year. The bank offers an interest rate of $12\\%$ per annum, with interest compounded half-yearly. What is the total interest earned by the committee at the end of the year?",
+    "options": [
+      "₹$2,400$",
+      "₹$2,472$",
+      "₹$4,800$",
+      "₹$5,088$"
+    ],
+    "answer": "₹$2,472$",
+    "solution": "1. For half-yearly compounding over $1$ year, the effective periodic interest rate is $r = \\frac{12\\%}{2} = 6\\%$, and the number of compounding periods is $n = 1 \\times 2 = 2$.\n2. The total amount accumulated is $A = 20000 \\times \\left(1 + \\frac{6}{100}\\right)^2 = 20000 \\times 1.06^2 = 20000 \\times 1.1236 = ₹22,472$.\n3. The total interest earned is $22,472 - 20,000 = ₹2,472$.\n\nHence, the correct answer is ₹$2,472$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_HALFYEARLY_RATE",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$2,400$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$5,088$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "8e0ec9b9-610e-4844-977e-4f2d179335d3",
+    "spec": "A5-x1",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A manufacturing firm borrows a capital of ₹$50,000$ to expand factory production. The loan is borrowed for $18$ months at an interest rate of $20\\%$ per annum. What is the difference between the compound interest accrued when compounded semi-annually and the simple interest on the same sum for the same duration?",
+    "options": [
+      "₹1,500",
+      "₹1,550",
+      "₹2,000",
+      "₹3,205"
+    ],
+    "answer": "₹1,550",
+    "solution": "1. Time period $T = 18$ months $= 1.5$ years, and rate $R = 20\\%$ per annum.\n2. Simple Interest (SI): $\\text{SI} = \\frac{P \\times R \\times T}{100} = \\frac{50000 \\times 20 \\times 1.5}{100} = ₹15,000$.\n3. Compound Interest compounded semi-annually: The half-yearly rate is $r = \\frac{20\\%}{2} = 10\\%$, and the number of periods is $n = 1.5 \\times 2 = 3$.\n4. Amount $A = 50000 \\times \\left(1 + \\frac{10}{100}\\right)^3 = 50000 \\times 1.331 = ₹66,550$.\n5. Compound Interest (CI): $\\text{CI} = 66550 - 50000 = ₹16,550$.\n6. Difference $= \\text{CI} - \\text{SI} = 16550 - 15000 = ₹1,550$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹1,500",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹2,000",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      },
+      {
+        "option": "₹3,205",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "94079d88-92cd-439d-acda-07449cb168f0",
+    "spec": "A5-x14",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "An agricultural cooperative invests a reserve fund of ₹$1,20,000$ derived from grain harvests into a rural development scheme that offers a fixed annual rate of interest compounded annually. Under this scheme, the value of the investment grows to $3$ times the initial amount in $6$ years. If the rate of interest remains unchanged, find the total number of years from the start of the investment it will take for the fund's value to grow to $27$ times the initial amount.",
+    "options": null,
+    "answer": "18",
+    "solution": "1. Let the annual compounding growth factor be $(1 + r)$.\n2. Given that the investment triples in $6$ years, $(1 + r)^6 = 3$.\n3. To reach $27$ times the original value, we need $(1 + r)^T = 27 = 3^3$.\n4. Substituting $3 = (1 + r)^6$, we get $(1 + r)^T = ((1 + r)^6)^3 = (1 + r)^{18}$.\n5. Thus, $T = 18$ years.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_LINEAR_SCALING",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "58cac1be-93b1-46b8-b15e-4f6977aa805a",
+    "spec": "A5-x12",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A commercial property developer received an advance lease deposit of ₹$2,50,000$ from a tenant for a tenure of $3$ years. The terms state that the deposit yields an annual return of $8\\%$. The developer compares the total earnings if the amount is invested at compound interest, compounded annually, versus simple interest at the same rate. What is the difference between the compound interest and simple interest earned over the $3$-year period?",
+    "options": [
+      "₹$1,600$",
+      "₹$4,800$",
+      "₹$4,928$",
+      "₹$6,400$"
+    ],
+    "answer": "₹$4,928$",
+    "solution": "1. Let $P = 2,50,000$, $r = 8\\%$, and $n = 3$ years.\n2. Simple Interest for $3$ years: $\\text{SI} = \\frac{P \\times r \\times 3}{100} = \\frac{250000 \\times 8 \\times 3}{100} = ₹60,000$.\n3. Compound Interest for $3$ years: $\\text{Amount} = P\\left(1 + \\frac{r}{100}\\right)^3 = 250000 \\times (1.08)^3 = 250000 \\times 1.259712 = ₹3,14,928$.\n4. $\\text{CI} = 3,14,928 - 2,50,000 = ₹64,928$.\n5. $\\text{Difference} = \\text{CI} - \\text{SI} = 64,928 - 60,000 = ₹4,928$.\n(Using formula: $\\text{Difference} = P\\left(\\frac{r}{100}\\right)^2 \\left(3 + \\frac{r}{100}\\right) = 250000 \\times 0.0064 \\times 3.08 = 1600 \\times 3.08 = ₹4,928$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_DIFF_2YR_FORMULA",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$1,600$",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹$4,800$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "49ad96f4-8efc-486d-a004-62dca340032b",
+    "spec": "A5-x8",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "A consumer electronics store offers a high-end television set on credit. The customer makes a down payment of ₹$12,000$ and agrees to pay the remaining balance in three equal annual instalments of ₹$27,000$ each, payable at the end of the first, second, and third years. The store charges interest at $20\\%$ per annum, compounded annually on the outstanding balance. What is the cash price (in ₹) of the television set?",
+    "options": null,
+    "answer": "68875",
+    "solution": "1. Let $P$ be the unpaid balance (the cash price minus down payment) at the time of purchase.\n2. The instalments of ₹$27,000$ paid at the end of years 1, 2, and 3 must equal the present value of these payments discounted at $20\\%$ compounded annually.\n3. Present value $P = \\frac{27000}{1.2} + \\frac{27000}{(1.2)^2} + \\frac{27000}{(1.2)^3}$.\n4. Simplifying the terms:\n   - $\\frac{27000}{1.2} = 22,500$\n   - $\\frac{27000}{1.44} = \\frac{22500}{1.2} = 18,750$\n   - $\\frac{27000}{1.728} = \\frac{18750}{1.2} = 15,625$\n5. Summing the present values: $P = 22,500 + 18,750 + 15,625 = 56,875$.\n6. Cash price = Down payment $+ P = 12,000 + 56,875 = 68,875$.\n\nFinal Answer: 68875",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_SI_FOR_CI",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c9630cf6-8766-4d6f-bc89-e5704e0dba01",
+    "spec": "A5-x7",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A small textile enterprise deposits ₹$50,000$ in a working capital reserve account for $1.5$ years. The bank offers an interest rate of $12\\%$ per annum, compounded half-yearly. At the end of the term, how much more interest does the enterprise earn compared to an account that offers the same annual rate under simple interest?",
+    "options": [
+      "₹9,550.80",
+      "₹550.80",
+      "₹540.00",
+      "₹900.00"
+    ],
+    "answer": "₹550.80",
+    "solution": "1. Under simple interest at $12\\%$ per annum for $1.5$ years, the interest earned is:\n$$\\text{SI} = 50,000 \\times \\frac{12}{100} \\times 1.5 = ₹9,000$$\n2. Under compound interest compounded half-yearly, the rate per half-year is $r = \\frac{12\\%}{2} = 6\\%$, and the number of periods is $n = 1.5 \\times 2 = 3$.\n3. The accumulated amount is:\n$$A = 50,000 \\times (1 + 0.06)^3 = 50,000 \\times 1.191016 = ₹59,550.80$$\n4. The compound interest is:\n$$\\text{CI} = 59,550.80 - 50,000 = ₹9,550.80$$\n5. The difference between the compound interest and simple interest is:\n$$\\text{Difference} = 9,550.80 - 9,000 = ₹550.80$$\nThus, the enterprise earns ₹$550.80$ more interest.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹9,550.80",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹540.00",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹900.00",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "59a75311-2bcb-4777-8fa7-1724d9e37f52",
+    "spec": "A5-x15",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A college student council deposits a reserve fund of ₹$40,000$ in a fixed deposit scheme for $1$ year to purchase audio equipment for the annual campus fest. The deposit pays an interest rate of $12\\%$ per annum, compounded half-yearly. What is the total interest earned by the council at the end of the year?",
+    "options": [
+      "₹$4,800$",
+      "₹$4,944$",
+      "₹$5,088$",
+      "₹$9,744$"
+    ],
+    "answer": "₹$4,944$",
+    "solution": "1. For half-yearly compounding, the period is $n = 2$ half-years and the effective rate per half-year is $r = \\frac{12\\%}{2} = 6\\%$.\n2. The total amount after $1$ year is $A = 40,000 \\times \\left(1 + \\frac{6}{100}\\right)^2 = 40,000 \\times 1.06^2 = 40,000 \\times 1.1236 = ₹44,944$.\n3. The interest earned is $CI = A - P = 44,944 - 40,000 = ₹4,944$.\n4. Therefore, the total interest earned is ₹$4,944$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$4,800$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$9,744$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "e68f850e-6b6e-4b89-bc2a-53697c868ea7",
+    "spec": "A5-x17",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "A transport company sets up a fuel-hedging reserve of ₹$40,000$ to cushion against rising diesel costs over the next $18$ months. The reserve is deposited in a financial institution that offers an interest rate of $20\\%$ per annum, compounded semi-annually. At the end of $18$ months, the entire accumulated amount (principal plus compound interest) is utilized to buy diesel at a contracted bulk rate of ₹$88$ per litre. If the company's delivery trucks have an average mileage of $4$ km per litre, find the total distance, in km, that these trucks can cover using the procured diesel.",
+    "options": null,
+    "answer": "2420",
+    "solution": "1. The principal amount is $P = ₹40,000$, annual interest rate is $R = 20\\%$, compounded semi-annually, so the semi-annual rate is $r = \\frac{20\\%}{2} = 10\\%$.\n2. The tenure is $18$ months, which corresponds to $n = \\frac{18}{6} = 3$ compounding periods.\n3. The accumulated amount after $18$ months is:\n$A = 40,000 \\times \\left(1 + \\frac{10}{100}\\right)^3 = 40,000 \\times 1.331 = ₹53,240$.\n4. At the rate of ₹$88$ per litre, the total volume of diesel purchased is:\n$\\text{Volume} = \\frac{53,240}{88} = 605\\text{ litres}$.\n5. Since the trucks have a mileage of $4$ km per litre, the total distance covered is:\n$\\text{Distance} = 605 \\times 4 = 2420\\text{ km}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f5ad412b-eb68-4e40-b064-3cac0dbd4e9a",
+    "spec": "A5-x19",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A textile factory sets aside ₹$80,000$ in a reserve account to replace machinery parts after $1$ year. The bank offers an interest rate of $20\\%$ per annum compounded half-yearly. How much total interest will the factory earn at the end of the year?",
+    "options": [
+      "₹$16,000$",
+      "₹$16,800$",
+      "₹$32,000$",
+      "₹$35,200$"
+    ],
+    "answer": "₹$16,800$",
+    "solution": "1. Principal $P = ₹80,000$, annual interest rate $R = 20\\%$, tenure $T = 1$ year.\n2. Compounding is half-yearly, so the periodic rate $r = \\frac{20\\%}{2} = 10\\%$ per half-year, and the number of periods $n = 1 \\times 2 = 2$.\n3. The accumulated amount after $1$ year is $A = 80000 \\times \\left(1 + \\frac{10}{100}\\right)^2 = 80000 \\times 1.21 = ₹96,800$.\n4. Compound interest earned $= A - P = 96,800 - 80,000 = ₹16,800$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹$16,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$35,200$",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "2516d0d9-e461-4356-b71c-d62309ff70ae",
+    "spec": "A5-x18",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "In a municipal constituency, the registered voter count was exactly $40,000$ at the start of a multi-phase election campaign. Over an $18$-month outreach period, the voter base grew at a nominal annual rate of $20\\%$, compounded semi-annually. Concurrently, a rival political party estimated the voter growth using simple annual interest at the same rate of $20\\%$ per annum for the entire $18$-month duration. What is the difference between the actual increase in registered voters and the rival party's projected increase in registered voters over this period?",
+    "options": [
+      "1,240",
+      "13,240",
+      "12,000",
+      "15,680"
+    ],
+    "answer": "1,240",
+    "solution": "1. The time period is $18$ months, which equals $1.5$ years or $n = 3$ half-year periods.\n2. The nominal annual compound interest rate is $20\\%$ compounded semi-annually, so the rate per semi-annual period is $r = \\frac{20\\%}{2} = 10\\%$.\n3. The actual voter count after $18$ months is $40,000 \\times \\left(1 + \\frac{10}{100}\\right)^3 = 40,000 \\times 1.331 = 53,240$.\n4. Thus, the actual increase in registered voters is $53,240 - 40,000 = 13,240$.\n5. The rival party's projected increase based on simple interest at $20\\%$ p.a. for $1.5$ years is $40,000 \\times 0.20 \\times 1.5 = 12,000$.\n6. The difference between the actual increase and the projected increase is $13,240 - 12,000 = 1,240$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_HALFYEARLY_RATE",
+    "distractor_misconceptions": [
+      {
+        "option": "15,680",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      },
+      {
+        "option": "13,240",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "12,000",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "0541c422-ed46-47b4-a534-ce1b7223e709",
+    "spec": "A5-x20",
+    "concept_id": "A5",
+    "type": "TITA",
+    "stem": "A housing society sets aside a maintenance fund of ₹$25,000$ to replace its community water tanks and pipeline network after $3$ years. The society evaluates two financial instruments for this amount, both offering an annual interest rate of $10\\%$. Scheme A offers simple interest, while Scheme B offers interest compounded annually. Find the absolute difference (in ₹) between the total interest earned from Scheme B and Scheme A at the end of $3$ years.",
+    "options": null,
+    "answer": "775",
+    "solution": "1. Simple Interest (Scheme A) for $3$ years:\n$\\text{SI} = \\frac{P \\times R \\times T}{100} = \\frac{25000 \\times 10 \\times 3}{100} = ₹7,500$.\n\n2. Compound Interest (Scheme B) for $3$ years:\n$\\text{Amount} = 25000 \\times \\left(1 + \\frac{10}{100}\\right)^3 = 25000 \\times 1.331 = ₹33,275$.\n$\\text{CI} = 33275 - 25000 = ₹8,275$.\n\n3. Absolute difference between Scheme B and Scheme A:\n$\\text{Difference} = 8275 - 7500 = ₹775$.\n\n(Alternatively, using the standard formula for $3$ years: $\\text{CI} - \\text{SI} = P\\left(\\frac{R}{100}\\right)^2 \\left(3 + \\frac{R}{100}\\right) = 25000 \\times 0.01 \\times 3.1 = ₹775$. Note: Using the incorrect 2-year shortcut $P(R/100)^2$ yields $250$.)\n\nFinal Answer: 775",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_DIFF_2YR_FORMULA",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "593c0d06-32f2-4ab6-ac1f-b319edbde012",
+    "spec": "A5-x22",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "A bakery chain invests an operational capital fund of ₹$1,50,000$ to procure advanced mixing and kneading equipment for its central kitchen. Under the bank's special commercial scheme, the invested amount compounds annually at a constant interest rate and grows to ₹$3,00,000$ in $4$ years. Assuming the rate of interest remains unchanged, how many years from the initial deposit will it take for this fund to grow to ₹$24,00,000$?",
+    "options": [
+      "16 years",
+      "24 years",
+      "32 years",
+      "60 years"
+    ],
+    "answer": "16 years",
+    "solution": "1. The initial principal is ₹$1,50,000$, and it grows to ₹$3,00,000$ in $4$ years. Thus, the money doubles ($2$ times) every $4$ years.\n2. The target amount is ₹$24,00,000$, which is $\\frac{24,00,000}{1,50,000} = 16$ times the original principal.\n3. Since compounding multiplies the principal repeatedly, we express $16$ as a power of the doubling factor: $16 = 2^4$.\n4. Therefore, it requires $4$ doubling periods: $4 \\times 4 = 16$ years.\n5. The fund will reach ₹$24,00,000$ in 16 years.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_CI_LINEAR_SCALING",
+    "distractor_misconceptions": [
+      {
+        "option": "32 years",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      },
+      {
+        "option": "60 years",
+        "misconception_id": "A5_SI_FOR_CI"
+      }
+    ]
+  },
+  {
+    "id": "67f42678-dd79-489d-8921-2e6963deed68",
+    "spec": "A6-x0",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "In an IT firm, employees are categorized as either developers or analysts. In branch $A$, the ratio of the number of developers to analysts is $4 : 1$. In branch $B$, the ratio of the number of developers to analysts is $1 : 1$. When the staff of both branches are combined to form a new division, the ratio of developers to analysts becomes $3 : 2$. What is the ratio of the total number of employees in branch $A$ to that in branch $B$?",
+    "options": [
+      "$1 : 2$",
+      "$2 : 1$",
+      "$1 : 1$",
+      "$2 : 3$"
+    ],
+    "answer": "$1 : 2$",
+    "solution": "1. Express the developer concentration as a fraction of the total staff for each branch:\n- Branch $A$: $\\frac{4}{4 + 1} = \\frac{4}{5} = 0.8$\n- Branch $B$: $\\frac{1}{1 + 1} = \\frac{1}{2} = 0.5$\n- Combined division: $\\frac{3}{3 + 2} = \\frac{3}{5} = 0.6$\n\n2. Apply the rule of alligation on these concentrations:\n- Difference for Branch $A$: $|0.6 - 0.5| = 0.1$\n- Difference for Branch $B$: $|0.8 - 0.6| = 0.2$\n\n3. The ratio of total employees in Branch $A$ to Branch $B$ is $0.1 : 0.2 = 1 : 2$.\n\nHence, the correct answer is $1 : 2$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_ON_QUANTITIES",
+    "distractor_misconceptions": [
+      {
+        "option": "$2 : 1$",
+        "misconception_id": "A6_ALLIGATION_ON_QUANTITIES"
+      },
+      {
+        "option": "$2 : 1$",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "e9861a72-a61b-4f4f-9592-a73539036934",
+    "spec": "A6-x2",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "A chemistry laboratory in a college has a container filled with $50$ litres of pure alcohol. A lab assistant withdraws $10$ litres of alcohol and replaces it with distilled water. After thoroughly mixing, $10$ litres of the mixture is again removed and replaced with distilled water, and this replacement operation is carried out once more (for a total of $3$ operations). Find the quantity of pure alcohol (in litres) remaining in the container.",
+    "options": null,
+    "answer": "25.6",
+    "solution": "1. The initial volume of pure alcohol in the container is $V = 50$ litres.\n2. In each operation, $x = 10$ litres of the liquid is drawn out and replaced with water. Thus, the fraction of the existing alcohol retained after each operation is $1 - \\frac{x}{V} = 1 - \\frac{10}{50} = 1 - 0.2 = 0.8$.\n3. After $n = 3$ successive operations, the remaining quantity of pure alcohol is given by $V \\left(1 - \\frac{x}{V}\\right)^n = 50 \\times (0.8)^3$.\n4. Calculating this gives $50 \\times 0.512 = 25.6$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_REPLACEMENT_LINEAR",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "57fdb887-895d-480d-b687-4d6ca295ea73",
+    "spec": "A6-x1",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A farmer harvested two varieties of wheat, Sharbati and Lokwan, costing him ₹$32$ per kg and ₹$48$ per kg to produce, respectively. He blended the two varieties to create a mixture weighing $120$ kg and sold the entire lot at ₹$50.40$ per kg, making an overall profit of $20\\%$. What quantity of the Sharbati variety was used in the mixture?",
+    "options": [
+      "45 kg",
+      "75 kg",
+      "40 kg",
+      "80 kg"
+    ],
+    "answer": "45 kg",
+    "solution": "1. Find the cost price (CP) per kg of the mixture from the selling price (SP) and profit percentage:\n$\\text{CP} = \\frac{50.40}{1 + 0.20} = \\frac{50.40}{1.2} = ₹42$ per kg.\n2. Apply the rule of alligation between Sharbati (₹$32$) and Lokwan (₹$48$):\n$\\text{Ratio of Sharbati to Lokwan} = \\frac{48 - 42}{42 - 32} = \\frac{6}{10} = 3 : 5$.\n3. Find the quantity of Sharbati in the total $120$ kg mixture:\n$\\text{Quantity of Sharbati} = \\frac{3}{3 + 5} \\times 120 = \\frac{3}{8} \\times 120 = 45$ kg.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "75 kg",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      },
+      {
+        "option": "40 kg",
+        "misconception_id": "A6_SP_AS_MEAN"
+      }
+    ]
+  },
+  {
+    "id": "7e2018e0-e378-47f2-9583-1c90ec408692",
+    "spec": "A6-x4",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A logistics company blends standard diesel costing ₹$88$ per litre with a premium synthetic fuel additive costing ₹$144$ per litre. The resulting fuel blend costs ₹$96$ per litre. A fleet truck requires $70$ litres of this fuel blend to complete a round trip. What volume of the premium additive is present in the truck's tank?",
+    "options": [
+      "10 litres",
+      "14 litres",
+      "56 litres",
+      "60 litres"
+    ],
+    "answer": "10 litres",
+    "solution": "1. Let $V_S$ and $V_P$ be the volumes of standard diesel and premium additive respectively.\n2. By the rule of alligation, the ratio of standard diesel to premium additive is:\n$\\frac{V_S}{V_P} = \\frac{144 - 96}{96 - 88} = \\frac{48}{8} = \\frac{6}{1}$.\n3. The total volume of the mixture is $70$ litres, corresponding to $6 + 1 = 7$ parts.\n4. Therefore, the volume of premium additive $V_P = \\frac{1}{7} \\times 70 = 10$ litres.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_REVERSED",
+    "distractor_misconceptions": [
+      {
+        "option": "60 litres",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "1570dd98-2736-44ff-b42e-f2080496222d",
+    "spec": "A5-x21",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "According to municipal survey data, the population of a newly developing satellite town grew at a rate of $20\\%$ per annum compounded half-yearly. At the beginning of $2021$, the town had a population of $1,60,000$. What was the net increase in the population of the town after $1.5$ years?",
+    "options": [
+      "52,960",
+      "48,000",
+      "1,15,840",
+      "35,307"
+    ],
+    "answer": "52,960",
+    "solution": "1. The growth rate is $20\\%$ per annum compounded half-yearly. Therefore, the semi-annual rate of growth is $r = \\frac{20\\%}{2} = 10\\%$.\n2. Over a duration of $1.5$ years, the number of half-yearly cycles is $n = 1.5 \\times 2 = 3$.\n3. The population after $1.5$ years is given by $P = 1,60,000 \\times \\left(1 + \\frac{10}{100}\\right)^3 = 1,60,000 \\times 1.331 = 2,12,960$.\n4. Net increase in population $= 2,12,960 - 1,60,000 = 52,960$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "48,000",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "1,15,840",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      },
+      {
+        "option": "35,307",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "ef3ae3ad-64f2-408a-834a-9943d9eac5b0",
+    "spec": "A5-x13",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "An executive's basic salary undergoes regular revisions over a span of $1.5$ years. The company offers two pay revision structures on an initial annual basic salary of ₹$16,00,000$:\n\nStructure I: Revisions are compounded half-yearly at an annual increment rate of $20\\%$.\n\nStructure II: Revisions are credited as simple increments at the same annual rate of $20\\%$.\n\nWhat is the difference between the final basic salary at the end of $1.5$ years under Structure I and the final basic salary under Structure II?",
+    "options": [
+      "₹50,000",
+      "₹49,600",
+      "₹48,000",
+      "₹0"
+    ],
+    "answer": "₹49,600",
+    "solution": "1. Under Structure I, compounding occurs half-yearly at $20\\%$ per annum for $1.5$ years.\n- Rate per half-year: $r = \\frac{20\\%}{2} = 10\\%$.\n- Number of conversion periods: $n = 1.5 \\times 2 = 3$.\n- Final salary under Structure I = $16,00,000 \\times (1 + 0.10)^3 = 16,00,000 \\times 1.331 = ₹21,29,600$.\n\n2. Under Structure II, simple increment is applied at $20\\%$ per annum for $1.5$ years.\n- Total simple increment percentage = $20\\% \\times 1.5 = 30\\%$.\n- Final salary under Structure II = $16,00,000 \\times (1 + 0.30) = ₹20,80,000$.\n\n3. Difference between the two salaries = $21,29,600 - 20,80,000 = ₹49,600$.\n\nAlternatively, using the difference formula for 3 half-years at $10\\%$:\nDifference = $P \\cdot r^2(3 + r) = 16,00,000 \\times (0.1)^2 \\times (3 + 0.1) = 16,00,000 \\times 0.01 \\times 3.1 = 16,000 \\times 3.1 = ₹49,600$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹48,000",
+        "misconception_id": "A5_CI_DIFF_2YR_FORMULA"
+      },
+      {
+        "option": "₹0",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹50,000",
+        "misconception_id": "A5_HALFYEARLY_RATE"
+      }
+    ]
+  },
+  {
+    "id": "7a4748c2-6710-400a-93a0-53e0ca791b5b",
+    "spec": "A6-x5",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "In an election between two candidates in a constituency consisting of rural and urban polling regions, a total of $1,20,000$ votes were polled. The winning candidate secured $65\\%$ of the votes polled in the rural region and $45\\%$ of the votes polled in the urban region. If the winning candidate secured $53\\%$ of the overall votes polled in the constituency, how many votes were polled in the urban region?",
+    "options": null,
+    "answer": "72000",
+    "solution": "1. Let $R$ and $U$ be the number of votes polled in the rural and urban regions, respectively.\n2. The percentage of votes for the winning candidate is $65\\%$ in the rural region, $45\\%$ in the urban region, and $53\\%$ overall.\n3. Using the rule of alligation:\n$\\frac{R}{U} = \\frac{53 - 45}{65 - 53} = \\frac{8}{12} = \\frac{2}{3}$.\n4. The total number of votes polled is $R + U = 1,20,000$.\n5. Therefore, the number of votes polled in the urban region is $U = \\frac{3}{2 + 3} \\times 1,20,000 = \\frac{3}{5} \\times 1,20,000 = 72,000$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "4069c89f-3e36-476a-9147-a97a88b4942f",
+    "spec": "A6-x6",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A chemical plant manufactures an industrial lubricant by blending two base oils, $X$ and $Y$, costing ₹$140$ per litre and ₹$215$ per litre, respectively. The resulting blend is packed and sold at ₹$216$ per litre, yielding a profit of $20\\%$ on the total production cost. In a production run of $4500$ litres of this lubricant blend, what is the volume (in litres) of base oil $X$ used?",
+    "options": [
+      "1500",
+      "2100",
+      "2400",
+      "3000"
+    ],
+    "answer": "2100",
+    "solution": "1. Find the cost price (CP) per litre of the blend:\n$\\text{CP} = \\frac{\\text{SP}}{1 + \\text{profit\\%}} = \\frac{216}{1.20} = ₹180$ per litre.\n\n2. Use the rule of alligation to find the ratio of $X$ to $Y$:\nCost of $X = 140$, Cost of $Y = 215$, Mean CP $= 180$.\nRatio of $X : Y = (215 - 180) : (180 - 140) = 35 : 40 = 7 : 8$.\n\n3. Calculate the volume of base oil $X$ in the $4500$-litre blend:\n$\\text{Volume of } X = \\frac{7}{7 + 8} \\times 4500 = \\frac{7}{15} \\times 4500 = 2100$ litres.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_SP_AS_MEAN",
+    "distractor_misconceptions": [
+      {
+        "option": "3000",
+        "misconception_id": "A6_SP_AS_MEAN"
+      },
+      {
+        "option": "2400",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "60140aa2-664d-432c-97e1-e40e57dbb835",
+    "spec": "A6-x9",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A chef mixes two grades of cooking oil, Grade A costing ₹$140$ per litre and Grade B costing ₹$200$ per litre. He sells the blended oil at a price of ₹$207$ per litre, making a profit of $15\\%$. In what ratio by volume should Grade A and Grade B oils be mixed?",
+    "options": [
+      "1 : 2",
+      "2 : 1",
+      "1 : 6",
+      "7 : 67"
+    ],
+    "answer": "1 : 2",
+    "solution": "1. Find the cost price (CP) of the mixture per litre:\nSelling price = ₹$207$ at $15\\%$ profit, so $\\text{CP} = \\frac{207}{1 + 0.15} = \\frac{207}{1.15} = ₹180$.\n2. Apply the rule of alligation with CP of Grade A (₹$140$), CP of Grade B (₹$200$), and Mean CP (₹$180$):\nDifference for Grade A part = $200 - 180 = 20$.\nDifference for Grade B part = $180 - 140 = 40$.\n3. Therefore, Ratio of Grade A to Grade B = $20 : 40 = 1 : 2$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "2 : 1",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      },
+      {
+        "option": "1 : 6",
+        "misconception_id": "A6_SP_AS_MEAN"
+      }
+    ]
+  },
+  {
+    "id": "1ae7776a-ca0f-4b42-ad16-697d12190de7",
+    "spec": "A6-x10",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "An online delivery hub stores $50$ litres of pure liquid sanitizer in a dispensing barrel. To prepare diluted sanitizer for daily warehouse hygiene, an attendant removes $10$ litres of the liquid from the barrel and replaces it with water, mixing it thoroughly. This complete process of removing $10$ litres of the mixture and replacing it with water is repeated two more times (for a total of $3$ operations). How many litres of pure sanitizer remain in the barrel after the third operation?",
+    "options": [
+      "20 litres",
+      "24.5 litres",
+      "25.6 litres",
+      "32 litres"
+    ],
+    "answer": "25.6 litres",
+    "solution": "1. Initially, the volume of pure sanitizer is $V = 50$ litres, and the volume removed and replaced each time is $x = 10$ litres.\n2. In each replacement, a fraction $\\frac{x}{V} = \\frac{10}{50} = \\frac{1}{5}$ of the mixture is removed, leaving behind $1 - \\frac{1}{5} = \\frac{4}{5}$ of the sanitizer present before the operation.\n3. After $n = 3$ operations, the amount of pure sanitizer remaining is $50 \\times \\left(1 - \\frac{10}{50}\\right)^3 = 50 \\times \\left(\\frac{4}{5}\\right)^3 = 50 \\times \\frac{64}{125} = 25.6$ litres.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_REPLACEMENT_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "20 litres",
+        "misconception_id": "A6_REPLACEMENT_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "e2ea464b-7253-49f1-8013-ed925336a3ed",
+    "spec": "A6-x3",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "An investor allocates a total corpus of ₹$12,00,000$ between two portfolios, Equity and Debt. After one year, the Equity portfolio yielded a return of $18\\%$, while the Debt portfolio yielded a return of $8\\%$. The investor then sold the entire combined portfolio for a total value of ₹$13,44,000$. What was the amount invested in the Debt portfolio?",
+    "options": [
+      "₹4,80,000",
+      "₹7,20,000",
+      "₹8,00,000",
+      "₹4,00,000"
+    ],
+    "answer": "₹7,20,000",
+    "solution": "1. The initial total investment is ₹$12,00,000$ and the final total value is ₹$13,44,000$.\n2. Total return earned = ₹$13,44,000 - 12,00,000 =$ ₹$1,44,000$.\n3. Overall return percentage $= \\frac{1,44,000}{12,00,000} \\times 100 = 12\\%$.\n4. Using the rule of alligation for returns:\n   Equity ($18\\%$) vs Debt ($8\\%$), with mean return = $12\\%$.\n   Ratio of Equity : Debt $= (12 - 8) : (18 - 12) = 4 : 6 = 2 : 3$.\n5. Amount invested in Debt $= \\frac{3}{2 + 3} \\times 12,00,000 = \\frac{3}{5} \\times 12,00,000 =$ ₹$7,20,000$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "₹4,80,000",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "d1694953-e101-45e9-b173-f29a146383bd",
+    "spec": "A6-x11",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "A passenger traveled a total distance of $420$ km in $7$ hours, partly by a passenger train running at an average speed of $45$ km/h and the remaining partly by a road cab running at an average speed of $80$ km/h. Find the distance, in km, traveled by road cab.",
+    "options": null,
+    "answer": "240",
+    "solution": "1. Overall average speed for the entire journey = $\\frac{420}{7} = 60$ km/h.\n2. By the rule of alligation on speeds (with respect to travel time):\n- Train speed = $45$ km/h\n- Cab speed = $80$ km/h\n- Average speed = $60$ km/h\nRatio of time spent on train to time spent on cab = $(80 - 60) : (60 - 45) = 20 : 15 = 4 : 3$.\n3. Total travel time is $7$ hours, so the time spent in the cab is $\\frac{3}{4 + 3} \\times 7 = 3$ hours.\n4. Distance traveled by cab = $\\text{speed} \\times \\text{time} = 80 \\times 3 = 240$ km.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "526af47b-1c79-45fa-9a70-a8bdcf5f36a9",
+    "spec": "A6-x12",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A small artisanal soap business blends two base oils, palm oil costing ₹$80$ per litre and almond oil costing ₹$260$ per litre, to make a signature soap mixture costing ₹$125$ per litre. If the business used $27$ litres of palm oil in the latest batch, how many litres of almond oil were used?",
+    "options": [
+      "$9$ litres",
+      "$81$ litres",
+      "$15$ litres",
+      "$36$ litres"
+    ],
+    "answer": "$9$ litres",
+    "solution": "1. Let $P$ be the volume of palm oil (costing ₹$80$/L) and $A$ be the volume of almond oil (costing ₹$260$/L).\n2. Using the rule of alligation, the ratio of palm oil to almond oil is given by the ratio of their differences from the mean price (₹$125$/L):\n$$\\frac{P}{A} = \\frac{260 - 125}{125 - 80} = \\frac{135}{45} = \\frac{3}{1}$$\n3. Given $P = 27$ litres, we have:\n$$A = \\frac{27}{3} = 9\\text{ litres}$$\n4. Thus, $9$ litres of almond oil were used.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_REVERSED",
+    "distractor_misconceptions": [
+      {
+        "option": "$81$ litres",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      }
+    ]
+  },
+  {
+    "id": "007126f9-4b3d-41db-9b2f-6e316500e567",
+    "spec": "A6-x15",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "During a Diwali food festival, a sweet vendor blends two varieties of ghee: cow ghee costing ₹$450$ per kg and buffalo ghee costing ₹$600$ per kg. The vendor sells the blended mixture at ₹$624$ per kg, making a profit of $20\\%$. In what ratio by weight does the vendor mix the cow ghee and the buffalo ghee?",
+    "options": [
+      "4 : 7",
+      "7 : 4",
+      "8 : 7",
+      "7 : 8"
+    ],
+    "answer": "8 : 7",
+    "solution": "1. Find the cost price ($CP$) per kg of the mixture: Since Selling Price ($SP$) = ₹$624$ at a profit of $20\\%$, we have $1.2 \\times CP = 624$, which gives $CP = \\frac{624}{1.2} = ₹520$ per kg.\n2. Apply the rule of alligation with prices of cow ghee (₹$450$), buffalo ghee (₹$600$), and the mixture (₹$520$):\n$$\\frac{\\text{Quantity of cow ghee}}{\\text{Quantity of buffalo ghee}} = \\frac{600 - 520}{520 - 450} = \\frac{80}{70} = \\frac{8}{7}$$\n3. Hence, the required ratio is $8 : 7$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "7 : 8",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      },
+      {
+        "option": "4 : 7",
+        "misconception_id": "A6_SP_AS_MEAN"
+      }
+    ]
+  },
+  {
+    "id": "126a81e1-81ce-4e0e-b544-57b589aadb2e",
+    "spec": "A6-x14",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "An educational coaching institute sells two types of mock exam test-series packages: Standard and Premium. The cost incurred by the institute to prepare and evaluate a Standard package is ₹$350$, while for a Premium package it is ₹$500$. In a particular month, the institute bundled and sold a total of $180$ packages (consisting of both types) at a uniform selling price of ₹$480$ per package, making an overall profit of $20\\%$ on the total cost. How many Standard packages were sold in that month?",
+    "options": null,
+    "answer": "120",
+    "solution": "1. Find the cost price (CP) per package of the combined mixture:\n$\\text{CP} = \\frac{\\text{SP}}{1 + \\text{Profit}\\%} = \\frac{480}{1 + 0.20} = \\frac{480}{1.2} = ₹400$.\n\n2. Use the rule of alligation with the cost prices:\n- Cost of Standard package = ₹$350$\n- Cost of Premium package = ₹$500$\n- Mean cost = ₹$400$\n\nRatio of Standard to Premium packages = $(500 - 400) : (400 - 350) = 100 : 50 = 2 : 1$.\n\n3. Calculate the number of Standard packages from the total of $180$ packages:\n$\\text{Standard packages} = \\frac{2}{2 + 1} \\times 180 = \\frac{2}{3} \\times 180 = 120$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_SP_AS_MEAN",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "1315d4ea-5bce-4a7a-b7d5-f3bd62c52bb2",
+    "spec": "A5-x16",
+    "concept_id": "A5",
+    "type": "MCQ",
+    "stem": "Vikram invested a certain sum in a portfolio where interest is compounded annually. The interest earned by the investment in the third year alone was ₹$4,320$, and the interest earned in the fourth year alone was ₹$5,184$. If he had invested the same principal amount for $3$ years in a scheme that offers the same annual rate of interest, find the total interest he would earn in those $3$ years under the original compound interest scheme.",
+    "options": [
+      "₹$10,920$",
+      "₹$9,000$",
+      "₹$15,000$",
+      "₹$12,000$"
+    ],
+    "answer": "₹$10,920$",
+    "solution": "1. Let the annual interest rate be $r$ and the principal be $P$.\n2. The interest earned in year $n+1$ is $1+r$ times the interest earned in year $n$. Thus, $1 + r = \\frac{5,184}{4,320} = 1.20$, which gives $r = 20\\%$ per annum.\n3. The interest in the third year alone is given by $P(1+r)^2 \\times r = 4,320$.\n4. Substituting $r = 0.20$: $P \\times (1.20)^2 \\times 0.20 = 4,320 \\implies P \\times 1.44 \\times 0.20 = 4,320 \\implies P \\times 0.288 = 4,320 \\implies P = \\frac{4,320}{0.288} = ₹15,000$.\n5. Under compound interest for $3$ years, the total interest earned is $P[(1+r)^3 - 1] = 15,000[(1.20)^3 - 1] = 15,000(1.728 - 1) = 15,000 \\times 0.728 = ₹10,920$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A5_SI_FOR_CI",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$9,000$",
+        "misconception_id": "A5_SI_FOR_CI"
+      },
+      {
+        "option": "₹$15,000$",
+        "misconception_id": "A5_CI_LINEAR_SCALING"
+      }
+    ]
+  },
+  {
+    "id": "f32ebb5b-3e4c-4de9-90e5-a549372cda43",
+    "spec": "A6-x8",
+    "concept_id": "A6",
+    "type": "TITA",
+    "stem": "In a municipal district consisting of two zones, North and South, the residents are categorized as either employed or unemployed. In the North zone, the ratio of employed to unemployed residents is $3 : 1$. In the South zone, the ratio of employed to unemployed residents is $2 : 3$. When the data from both zones are combined, the overall ratio of employed to unemployed residents in the district becomes $1 : 1$. If the total population of the North zone is $1,40,000$, find the total population of the South zone.",
+    "options": null,
+    "answer": "350000",
+    "solution": "1. Express the proportion of employed residents in each zone as a fraction of the zone's total population:\n- North zone: Employed fraction $= \\frac{3}{3 + 1} = \\frac{3}{4} = 0.75$.\n- South zone: Employed fraction $= \\frac{2}{2 + 3} = \\frac{2}{5} = 0.40$.\n- Combined district: Employed fraction $= \\frac{1}{1 + 1} = \\frac{1}{2} = 0.50$.\n\n2. Apply the rule of alligation on the fractions:\n- Difference for North: $|0.50 - 0.40| = 0.10 = \\frac{1}{10}$.\n- Difference for South: $|0.75 - 0.50| = 0.25 = \\frac{1}{4}$.\n\n3. The ratio of the population of the North zone to the South zone is:\n$$\\frac{\\text{Population of North}}{\\text{Population of South}} = \\frac{0.10}{0.25} = \\frac{2}{5}$$\n\n4. Given that the population of the North zone is $1,40,000$:\n$$\\text{Population of South} = 1,40,000 \\times \\frac{5}{2} = 3,50,000$$\n\n(Note: An erroneous application of alligation directly on the ratio parts $3$, $2$, and $1$ would give an incorrect ratio of $(1 - 2) : (3 - 1)$, which is meaningless/erroneous).",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "A6_ALLIGATION_ON_QUANTITIES",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "31adb993-62ff-4db3-ad56-5f51349fe8d7",
+    "spec": "A6-x19",
+    "concept_id": "A6",
+    "type": "MCQ",
+    "stem": "A farmer harvested two varieties of pulses, Desi Chana and Kabuli Chana, costing him ₹$60$ per kg and ₹$85$ per kg to produce, respectively. He blended the two varieties and sold the mixture at ₹$84$ per kg, thereby earning a profit of $20\\%$. In what ratio by weight did he mix the Desi Chana and Kabuli Chana?",
+    "options": [
+      "$3 : 2$",
+      "$2 : 3$",
+      "$1 : 24$",
+      "$5 : 24$"
+    ],
+    "answer": "$3 : 2$",
+    "solution": "1. The selling price of the mixture is ₹$84$ per kg with a profit of $20\\%$.\n2. The cost price (mean price) of the mixture is $\\frac{84}{1 + 0.20} = \\frac{84}{1.2} = ₹70$ per kg.\n3. Using the rule of alligation:\nDesi Chana cost = ₹$60$, Kabuli Chana cost = ₹$85$, Mean cost = ₹$70$.\nRatio of Desi to Kabuli = $(85 - 70) : (70 - 60) = 15 : 10 = 3 : 2$.\n4. Thus, the correct ratio is $3 : 2$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$2 : 3$",
+        "misconception_id": "A6_ALLIGATION_REVERSED"
+      },
+      {
+        "option": "$1 : 24$",
+        "misconception_id": "A6_SP_AS_MEAN"
+      }
+    ]
   }
 ]

@@ -18,7 +18,7 @@ const CONCEPT_LIST: { id: string; area: string; weight: number }[] = JSON.parse(
 const ANCHOR_COUNT: Record<string, number> = (JSON.parse(readFileSync("data/anchor-questions.json", "utf8")) as { concept_id: string }[]).reduce(
   (m, q) => ({ ...m, [q.concept_id]: (m[q.concept_id] ?? 0) + 1 }), {} as Record<string, number>);
 const REJ = "data/questions-rejections.json";
-const CONCURRENCY = 6;
+const CONCURRENCY = 18;
 
 type Band = "easy" | "medium" | "hard";
 interface Spec {
