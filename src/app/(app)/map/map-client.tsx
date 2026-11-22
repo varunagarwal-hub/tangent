@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { AreaNode, ConceptNode, NODE_H, NODE_W, type AreaFlowNode, type ConceptFlowNode } from "@/components/tangent/map/concept-node";
 import { InkEdge, type InkFlowEdge } from "@/components/tangent/map/ink-edge";
 import { ConceptDrawer } from "@/components/tangent/map/concept-drawer";
+import { FoundationRow } from "@/components/tangent/map/foundation-row";
 import { AREAS, isDue, layoutMap, summarize } from "@/components/tangent/map/layout";
 import { cn } from "@/lib/utils";
 import { PageIntro } from "@/components/tangent/page-intro";
@@ -102,6 +103,7 @@ export function MapClient() {
       </div>
 
       <Legend />
+      <FoundationRow />
     </div>
   );
 }

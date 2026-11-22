@@ -52,6 +52,9 @@ export function LearnIndex({ lessons }: { lessons: Item[] }) {
           The key idea, the formulas, a worked example you reveal one step at a time, the tangents students usually go off on, and two CAT shortcuts.
           Every worked example was re-solved by a second model before it went in.
         </p>
+        <Link href="/foundation" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-ink-soft underline-offset-4 hover:text-ink hover:underline">
+          Rusty on school maths? Check your foundations <ArrowRight className="size-3.5" />
+        </Link>
       </header>
 
       <div className="flex flex-wrap items-center justify-between gap-3">

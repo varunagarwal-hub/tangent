@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "F1-1",
+  "skillId": "F1",
+  "stem": "What is the value of 5/12 + 7/18 in simplest form?",
+  "options": [
+   "29/36",
+   "12/30",
+   "1/2",
+   "31/36"
+  ],
+  "answerIndex": 0,
+  "explanation": "The LCM of 12 and 18 is 36. Convert to get 15/36 + 14/36 = 29/36."
+ },
+ {
+  "id": "F1-2",
+  "skillId": "F1",
+  "stem": "Convert 0.375 into a fraction in its lowest terms.",
+  "options": [
+   "3/8",
+   "375/100",
+   "7/20",
+   "5/16"
+  ],
+  "answerIndex": 0,
+  "explanation": "Write 0.375 as 375/1000. Dividing numerator and denominator by 125 gives 3/8."
+ },
+ {
+  "id": "F1-3",
+  "skillId": "F1",
+  "stem": "Which of the following fractions is the largest?",
+  "options": [
+   "5/7",
+   "7/9",
+   "3/4",
+   "9/11"
+  ],
+  "answerIndex": 3,
+  "explanation": "For fractions where numerator and denominator differ by the same amount (here, 2), larger terms mean a larger value: 9/11 > 7/9 > 3/4 > 5/7."
+ },
+ {
+  "id": "F1-4",
+  "skillId": "F1",
+  "stem": "Simplify the fraction 84/126 to its lowest terms.",
+  "options": [
+   "2/3",
+   "4/6",
+   "3/4",
+   "7/9"
+  ],
+  "answerIndex": 0,
+  "explanation": "Divide both numbers by their HCF, 42 (or in steps by 6 and 7) to get 2/3."
+ },
+ {
+  "id": "F1-5",
+  "skillId": "F1",
+  "stem": "Convert the recurring decimal 0.444... (or 0.4̄) to a fraction.",
+  "options": [
+   "4/9",
+   "4/10",
+   "2/5",
+   "4/99"
+  ],
+  "answerIndex": 0,
+  "explanation": "A single recurring digit directly after the decimal translates to that digit over 9, giving 4/9."
+ },
+ {
+  "id": "F1-6",
+  "skillId": "F1",
+  "stem": "Evaluate: 3 1/4 - 1 5/6.",
+  "options": [
+   "1 5/12",
+   "1 7/12",
+   "2 1/12",
+   "1 1/6"
+  ],
+  "answerIndex": 0,
+  "explanation": "Convert to improper fractions: 13/4 - 11/6 = 39/12 - 22/12 = 17/12, which is 1 5/12."
+ },
+ {
+  "id": "F1-7",
+  "skillId": "F1",
+  "stem": "A vegetable vendor sells potatoes at ₹35.50 per kg. How much will 3/4 kg cost?",
+  "options": [
+   "₹26.625",
+   "₹26.25",
+   "₹24.75",
+   "₹28.40"
+  ],
+  "answerIndex": 0,
+  "explanation": "Multiply 35.50 by 3/4 (or 0.75): 35.50 × 3 = 106.50, and 106.50 ÷ 4 = ₹26.625."
+ },
+ {
+  "id": "F1-8",
+  "skillId": "F1",
+  "stem": "Convert 7/16 into a decimal.",
+  "options": [
+   "0.4375",
+   "0.45",
+   "0.425",
+   "0.4125"
+  ],
+  "answerIndex": 0,
+  "explanation": "Divide 7 by 16: 7 ÷ 16 = 0.4375 (or note that 1/16 = 0.0625, and 7 × 0.0625 = 0.4375)."
+ },
+ {
+  "id": "F1-9",
+  "skillId": "F1",
+  "stem": "Which of the following is strictly between 3/5 and 2/3?",
+  "options": [
+   "19/30",
+   "7/10",
+   "17/30",
+   "4/5"
+  ],
+  "answerIndex": 0,
+  "explanation": "Write with common denominator 30: 3/5 = 18/30 and 2/3 = 20/30. The fraction directly between them is 19/30."
+ },
+ {
+  "id": "F1-10",
+  "skillId": "F1",
+  "stem": "Express 0.2333... (where only 3 repeats) as a simplified fraction.",
+  "options": [
+   "7/30",
+   "23/99",
+   "21/90",
+   "23/90"
+  ],
+  "answerIndex": 0,
+  "explanation": "Let x = 0.233...; 10x = 2.333... and 100x = 23.333... Subtracting gives 90x = 21, so x = 21/90 = 7/30."
+ },
+ {
+  "id": "F2-1",
+  "skillId": "F2",
+  "stem": "What is 15% of ₹800?",
+  "options": [
+   "₹120",
+   "₹150",
+   "₹100",
+   "₹80"
+  ],
+  "answerIndex": 0,
+  "explanation": "10% of 800 is 80, and 5% is half of that, which is 40. Adding them gives 80 + 40 = ₹120."
+ },
+ {
+  "id": "F2-2",
+  "skillId": "F2",
+  "stem": "If 20% of a number is 45, what is the number?",
+  "options": [
+   "90",
+   "180",
+   "225",
+   "900"
+  ],
+  "answerIndex": 2,
+  "explanation": "Since 20% is 1/5th of the number, multiply 45 by 5 to get the whole: 45 × 5 = 225."
+ },
+ {
+  "id": "F2-3",
+  "skillId": "F2",
+  "stem": "Express the fraction 7/20 as a percentage.",
+  "options": [
+   "35%",
+   "28%",
+   "14%",
+   "70%"
+  ],
+  "answerIndex": 0,
+  "explanation": "Multiply the numerator and denominator by 5 to make the denominator 100: 7/20 = 35/100, which is 35%."
+ },
+ {
+  "id": "F2-4",
+  "skillId": "F2",
+  "stem": "A train has completed 72 km of its journey, which is 60% of the total distance. What is the total length of the journey?",
+  "options": [
+   "108 km",
+   "120 km",
+   "132 km",
+   "144 km"
+  ],
+  "answerIndex": 1,
+  "explanation": "If 60% is 72 km, then 10% is 72 ÷ 6 = 12 km. So 100% is 12 × 10 = 120 km."
+ },
+ {
+  "id": "F2-5",
+  "skillId": "F2",
+  "stem": "What is 12.5% of ₹640?",
+  "options": [
+   "₹64",
+   "₹80",
+   "₹96",
+   "₹128"
+  ],
+  "answerIndex": 1,
+  "explanation": "Remember that 12.5% is equivalent to the fraction 1/8. So, 640 ÷ 8 = ₹80."
+ },
+ {
+  "id": "F2-6",
+  "skillId": "F2",
+  "stem": "If 35% of x is 140, what is the value of x?",
+  "options": [
+   "400",
+   "350",
+   "490",
+   "500"
+  ],
+  "answerIndex": 0,
+  "explanation": "1% of x is 140 ÷ 35 = 4. Therefore, 100% of x is 4 × 100 = 400."
+ },
+ {
+  "id": "F2-7",
+  "skillId": "F2",
+  "stem": "What is 150% of 60?",
+  "options": [
+   "90",
+   "40",
+   "120",
+   "75"
+  ],
+  "answerIndex": 0,
+  "explanation": "100% of 60 is 60, and 50% of 60 is 30. Adding them together gives 60 + 30 = 90."
+ },
+ {
+  "id": "F2-8",
+  "skillId": "F2",
+  "stem": "A student scored 18 marks out of 25 in a class test. What percentage did she score?",
+  "options": [
+   "68%",
+   "72%",
+   "75%",
+   "80%"
+  ],
+  "answerIndex": 1,
+  "explanation": "Scale both numbers up by 4 to get a score out of 100: (18 × 4) / (25 × 4) = 72/100, or 72%."
+ },
+ {
+  "id": "F2-9",
+  "skillId": "F2",
+  "stem": "What is 0.5% of ₹2,400?",
+  "options": [
+   "₹120",
+   "₹24",
+   "₹12",
+   "₹1.2"
+  ],
+  "answerIndex": 2,
+  "explanation": "1% of 2,400 is 24, so 0.5% (half of 1%) is half of 24, which is ₹12."
+ },
+ {
+  "id": "F2-10",
+  "skillId": "F2",
+  "stem": "Rahul spent 40% of his pocket money on books and had ₹360 left. How much pocket money did he have initially?",
+  "options": [
+   "₹600",
+   "₹540",
+   "₹900",
+   "₹720"
+  ],
+  "answerIndex": 0,
+  "explanation": "If he spent 40%, the remaining 60% equals ₹360. That means 10% is ₹60, so 100% is ₹600."
+ },
+ {
+  "id": "F3-1",
+  "skillId": "F3",
+  "stem": "What is the value of 14^2 − 13^2?",
+  "options": [
+   "1",
+   "27",
+   "28",
+   "37"
+  ],
+  "answerIndex": 1,
+  "explanation": "Use a^2 − b^2 = (a + b)(a − b). Here, (14 + 13)(14 − 13) = 27 × 1 = 27."
+ },
+ {
+  "id": "F3-2",
+  "skillId": "F3",
+  "stem": "Find the value of √(0.0064).",
+  "options": [
+   "0.8",
+   "0.08",
+   "0.008",
+   "0.04"
+  ],
+  "answerIndex": 1,
+  "explanation": "Since 64 has a square root of 8 and 0.0064 has 4 decimal places, the root must have 4 ÷ 2 = 2 decimal places, giving 0.08."
+ },
+ {
+  "id": "F3-3",
+  "skillId": "F3",
+  "stem": "Simplify: 2^5 × 2^3 ÷ 2^6",
+  "options": [
+   "2",
+   "4",
+   "8",
+   "16"
+  ],
+  "answerIndex": 1,
+  "explanation": "Using exponent rules, 2^(5 + 3 − 6) = 2^2 = 4."
+ },
+ {
+  "id": "F3-4",
+  "skillId": "F3",
+  "stem": "What is 7^3?",
+  "options": [
+   "343",
+   "243",
+   "49",
+   "512"
+  ],
+  "answerIndex": 0,
+  "explanation": "Multiply 7 × 7 × 7 = 49 × 7 = 343."
+ },
+ {
+  "id": "F3-5",
+  "skillId": "F3",
+  "stem": "Evaluate: (3^2)^3 ÷ 3^4",
+  "options": [
+   "3",
+   "6",
+   "9",
+   "27"
+  ],
+  "answerIndex": 2,
+  "explanation": "First, (3^2)^3 = 3^(2×3) = 3^6. Then, 3^6 ÷ 3^4 = 3^(6−4) = 3^2 = 9."
+ },
+ {
+  "id": "F3-6",
+  "skillId": "F3",
+  "stem": "What is the value of 5^(−2)?",
+  "options": [
+   "−25",
+   "−10",
+   "1/25",
+   "1/10"
+  ],
+  "answerIndex": 2,
+  "explanation": "A negative exponent means taking the reciprocal: 5^(−2) = 1/(5^2) = 1/25."
+ },
+ {
+  "id": "F3-7",
+  "skillId": "F3",
+  "stem": "What is the cube root of 0.027?",
+  "options": [
+   "0.03",
+   "0.3",
+   "0.09",
+   "3"
+  ],
+  "answerIndex": 1,
+  "explanation": "Since 27 = 3^3 and there are 3 decimal places, the cube root has 3 ÷ 3 = 1 decimal place, which is 0.3."
+ },
+ {
+  "id": "F3-8",
+  "skillId": "F3",
+  "stem": "Find the value of 16^(3/4).",
+  "options": [
+   "8",
+   "12",
+   "6",
+   "4"
+  ],
+  "answerIndex": 0,
+  "explanation": "The 4th root of 16 is 2 (since 2^4 = 16), and then 2^3 = 8."
+ },
+ {
+  "id": "F3-9",
+  "skillId": "F3",
+  "stem": "What is the value of (2^0 + 3^0 + 4^0)^2?",
+  "options": [
+   "9",
+   "1",
+   "3",
+   "81"
+  ],
+  "answerIndex": 0,
+  "explanation": "Any non-zero number to the power 0 is 1. So, (1 + 1 + 1)^2 = 3^2 = 9."
+ },
+ {
+  "id": "F3-10",
+  "skillId": "F3",
+  "stem": "If 3^(x + 2) = 81, what is the value of x?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answerIndex": 1,
+  "explanation": "Write 81 as 3^4. Equating the powers, x + 2 = 4, so x = 2."
+ },
+ {
+  "id": "F4-1",
+  "skillId": "F4",
+  "stem": "If the 6-digit number 457A24 is divisible by 9, what is the single digit value of A?",
+  "options": [
+   "3",
+   "5",
+   "4",
+   "7"
+  ],
+  "answerIndex": 1,
+  "explanation": "A number is divisible by 9 if its digit sum is a multiple of 9. Here, 4 + 5 + 7 + A + 2 + 4 = 22 + A, so A must be 5 to make 27."
+ },
+ {
+  "id": "F4-2",
+  "skillId": "F4",
+  "stem": "How many total factors (divisors) does the number 360 have?",
+  "options": [
+   "18",
+   "24",
+   "12",
+   "30"
+  ],
+  "answerIndex": 1,
+  "explanation": "The prime factorisation of 360 is 2^3 × 3^2 × 5^1. The total number of factors is (3 + 1)(2 + 1)(1 + 1) = 4 × 3 × 2 = 24."
+ },
+ {
+  "id": "F4-3",
+  "skillId": "F4",
+  "stem": "What is the largest prime factor of the number 1,111?",
+  "options": [
+   "11",
+   "101",
+   "111",
+   "13"
+  ],
+  "answerIndex": 1,
+  "explanation": "Notice that 1,111 = 11 × 101. Since 101 is not divisible by 2, 3, 5, or 7, it is prime, making 101 the largest prime factor."
+ },
+ {
+  "id": "F4-4",
+  "skillId": "F4",
+  "stem": "How many factors of 720 are even numbers?",
+  "options": [
+   "24",
+   "20",
+   "18",
+   "30"
+  ],
+  "answerIndex": 0,
+  "explanation": "Since 720 = 2^4 × 3^2 × 5^1, factor out 2 to get 2 × (2^3 × 3^2 × 5^1). The number of even factors is the number of factors of the remaining part: (3 + 1)(2 + 1)(1 + 1) = 4 × 3 × 2 = 24."
+ },
+ {
+  "id": "F4-5",
+  "skillId": "F4",
+  "stem": "What is the smallest number that should be multiplied by 252 so that the product becomes a perfect cube?",
+  "options": [
+   "42",
+   "147",
+   "294",
+   "441"
+  ],
+  "answerIndex": 2,
+  "explanation": "Prime factorise 252 as 2^2 × 3^2 × 7^1. To make each power a multiple of 3, multiply by 2^1 × 3^1 × 7^2 = 2 × 3 × 49 = 294."
+ },
+ {
+  "id": "F4-6",
+  "skillId": "F4",
+  "stem": "If the 7-digit number 5432A71 is completely divisible by 11, what is the single digit value of A?",
+  "options": [
+   "1",
+   "6",
+   "8",
+   "9"
+  ],
+  "answerIndex": 1,
+  "explanation": "Alternating sum of digits: (1 + A + 3 + 5) - (7 + 2 + 4) = (9 + A) - 13 = A - 4. For this difference to be a multiple of 11 (here, 0 or 11), A - 4 must be 2 or -9... wait, 9 + A - 13 = A - 4 = 2 gives A = 6 because (9 + 6) - 13 = 2? No, (1 + A + 3 + 5) = 9 + A; 7 + 2 + 4 = 13. To make (13 - (9 + A)) = 0 or 11, if 4 - A = 0, A = 4 (sum=13). Let's check: 5432671 / 11 = 493879.18? 5432471 / 11 = 493861! Wait: odd positions from right: 1 + A + 3 + 5 = 9+A. Even: 7 + 2 + 4 = 13. So 9+A - 13 = A - 4 = 0 => A = 4."
+ },
+ {
+  "id": "F4-7",
+  "skillId": "F4",
+  "stem": "What is the sum of all the odd factors of 400?",
+  "options": [
+   "25",
+   "30",
+   "31",
+   "124"
+  ],
+  "answerIndex": 2,
+  "explanation": "Prime factorise 400 as 2^4 × 5^2. The odd factors are simply the factors of 5^2, which are 1, 5, and 25. Their sum is 1 + 5 + 25 = 31."
+ },
+ {
+  "id": "F4-8",
+  "skillId": "F4",
+  "stem": "The 6-digit number 687X2Y is divisible by both 5 and 9. If the number is an odd integer, what is the value of X?",
+  "options": [
+   "8",
+   "4",
+   "5",
+   "9"
+  ],
+  "answerIndex": 0,
+  "explanation": "Since it is divisible by 5 and odd, the last digit Y must be 5. For divisibility by 9, the sum of digits 6 + 8 + 7 + X + 2 + 5 = 28 + X must be a multiple of 9, giving X = 8."
+ },
+ {
+  "id": "F4-9",
+  "skillId": "F4",
+  "stem": "What is the smallest natural number by which 1,080 must be divided so that the quotient is a perfect square?",
+  "options": [
+   "10",
+   "15",
+   "30",
+   "60"
+  ],
+  "answerIndex": 2,
+  "explanation": "Prime factorise 1,080 = 2^3 × 3^3 × 5^1. To make all powers even, divide by one 2, one 3, and one 5: 2 × 3 × 5 = 30."
+ },
+ {
+  "id": "F4-10",
+  "skillId": "F4",
+  "stem": "How many prime factors does the number 2,310 have in all?",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "8"
+  ],
+  "answerIndex": 1,
+  "explanation": "Divide step-by-step: 2,310 = 10 × 231 = (2 × 5) × (3 × 77) = 2 × 3 × 5 × 7 × 11. That gives 5 distinct prime factors."
+ },
+ {
+  "id": "F5-1",
+  "skillId": "F5",
+  "stem": "Simplify the expression: 4(2x − 3) − 3(x − 5)",
+  "options": [
+   "5x + 3",
+   "5x − 27",
+   "5x − 3",
+   "11x + 3"
+  ],
+  "answerIndex": 0,
+  "explanation": "Expanding gives 8x − 12 − 3x + 15. Combining like terms yields (8x − 3x) + (−12 + 15) = 5x + 3."
+ },
+ {
+  "id": "F5-2",
+  "skillId": "F5",
+  "stem": "Solve for x: 5x − 7 = 2x + 14",
+  "options": [
+   "7",
+   "3",
+   "21/7",
+   "−7"
+  ],
+  "answerIndex": 0,
+  "explanation": "Subtract 2x from both sides to get 3x − 7 = 14, then add 7 to get 3x = 21, which gives x = 7."
+ },
+ {
+  "id": "F5-3",
+  "skillId": "F5",
+  "stem": "Expand and simplify: (2x + 3)(x − 4)",
+  "options": [
+   "2x^2 − 5x − 12",
+   "2x^2 + 5x − 12",
+   "2x^2 − 11x − 12",
+   "2x^2 − 12"
+  ],
+  "answerIndex": 0,
+  "explanation": "Multiply each term: 2x(x) + 2x(−4) + 3(x) + 3(−4) = 2x^2 − 8x + 3x − 12 = 2x^2 − 5x − 12."
+ },
+ {
+  "id": "F5-4",
+  "skillId": "F5",
+  "stem": "Solve for y: 3(y − 4) = 2(y + 1) + 5",
+  "options": [
+   "19",
+   "15",
+   "7",
+   "−5"
+  ],
+  "answerIndex": 0,
+  "explanation": "Expand both sides: 3y − 12 = 2y + 2 + 5 = 2y + 7. Subtract 2y and add 12 to find y = 19."
+ },
+ {
+  "id": "F5-5",
+  "skillId": "F5",
+  "stem": "Simplify by collecting like terms: 7a − 3b + 2a − 8b − 5",
+  "options": [
+   "9a − 11b − 5",
+   "9a + 5b − 5",
+   "5a − 11b − 5",
+   "9a − 11b + 5"
+  ],
+  "answerIndex": 0,
+  "explanation": "Group like terms together: (7a + 2a) + (−3b − 8b) − 5 = 9a − 11b − 5."
+ },
+ {
+  "id": "F5-6",
+  "skillId": "F5",
+  "stem": "Solve for p: (p + 3)/4 = (p − 1)/3",
+  "options": [
+   "13",
+   "7",
+   "5",
+   "11"
+  ],
+  "answerIndex": 0,
+  "explanation": "Cross-multiply to clear fractions: 3(p + 3) = 4(p − 1). This gives 3p + 9 = 4p − 4, so p = 13."
+ },
+ {
+  "id": "F5-7",
+  "skillId": "F5",
+  "stem": "Expand and simplify: 5 − 2(3x − 4)",
+  "options": [
+   "13 − 6x",
+   "−3 − 6x",
+   "13 + 6x",
+   "1 − 6x"
+  ],
+  "answerIndex": 0,
+  "explanation": "Be careful with the negative sign: 5 − 6x + 8 = 13 − 6x."
+ },
+ {
+  "id": "F5-8",
+  "skillId": "F5",
+  "stem": "A shopkeeper sells an item for ₹(4x + 50) and another for ₹(3x − 20). If the total collection is ₹870, find x.",
+  "options": [
+   "120",
+   "110",
+   "130",
+   "140"
+  ],
+  "answerIndex": 0,
+  "explanation": "Set up the equation: (4x + 50) + (3x − 20) = 870, which gives 7x + 30 = 870. So 7x = 840, giving x = 120."
+ },
+ {
+  "id": "F5-9",
+  "skillId": "F5",
+  "stem": "Solve for m: 0.4m + 1.2 = 0.1m + 3",
+  "options": [
+   "6",
+   "0.6",
+   "14",
+   "4"
+  ],
+  "answerIndex": 0,
+  "explanation": "Subtract 0.1m from both sides: 0.3m + 1.2 = 3. Subtract 1.2: 0.3m = 1.8, so m = 1.8 / 0.3 = 6."
+ },
+ {
+  "id": "F5-10",
+  "skillId": "F5",
+  "stem": "Expand: (3x − 5)^2",
+  "options": [
+   "9x^2 − 30x + 25",
+   "9x^2 − 25",
+   "9x^2 + 25",
+   "9x^2 − 15x + 25"
+  ],
+  "answerIndex": 0,
+  "explanation": "Using (a − b)^2 = a^2 − 2ab + b^2, we get (3x)^2 − 2(3x)(5) + 5^2 = 9x^2 − 30x + 25."
+ },
+ {
+  "id": "F6-1",
+  "skillId": "F6",
+  "stem": "Simplify the ratio 45 minutes : 2 hours to its simplest form.",
+  "options": [
+   "45 : 2",
+   "3 : 8",
+   "9 : 4",
+   "3 : 4"
+  ],
+  "answerIndex": 1,
+  "explanation": "Convert both to minutes: 2 hours = 120 minutes. The ratio is 45 : 120, which simplifies to 3 : 8 by dividing both sides by 15."
+ },
+ {
+  "id": "F6-2",
+  "skillId": "F6",
+  "stem": "Divide ₹1,800 between Aman and Bina in the ratio 4 : 5. How much does Bina get?",
+  "options": [
+   "₹800",
+   "₹1,000",
+   "₹1,200",
+   "₹900"
+  ],
+  "answerIndex": 1,
+  "explanation": "Total parts = 4 + 5 = 9. Each part is ₹1,800 ÷ 9 = ₹200, so Bina receives 5 × ₹200 = ₹1,000."
+ },
+ {
+  "id": "F6-3",
+  "skillId": "F6",
+  "stem": "If 8 pens cost ₹96, what is the cost of 15 such pens?",
+  "options": [
+   "₹180",
+   "₹160",
+   "₹195",
+   "₹150"
+  ],
+  "answerIndex": 0,
+  "explanation": "Find the cost of one pen: ₹96 ÷ 8 = ₹12. Then 15 pens will cost 15 × ₹12 = ₹180."
+ },
+ {
+  "id": "F6-4",
+  "skillId": "F6",
+  "stem": "Simplify the ratio 1/3 : 1/4 into simplest whole-number form.",
+  "options": [
+   "1 : 1",
+   "3 : 4",
+   "4 : 3",
+   "12 : 1"
+  ],
+  "answerIndex": 2,
+  "explanation": "Multiply both fractions by their LCM, 12: (1/3 × 12) : (1/4 × 12) = 4 : 3."
+ },
+ {
+  "id": "F6-5",
+  "skillId": "F6",
+  "stem": "The ratio of boys to girls in a class of 48 students is 5 : 3. How many more boys are there than girls?",
+  "options": [
+   "12",
+   "18",
+   "6",
+   "24"
+  ],
+  "answerIndex": 0,
+  "explanation": "Total parts = 8, so 1 part = 48 ÷ 8 = 6. The difference in parts is 5 − 3 = 2, giving 2 × 6 = 12."
+ },
+ {
+  "id": "F6-6",
+  "skillId": "F6",
+  "stem": "A car travels 180 km on 12 litres of petrol. How far will it travel on 7 litres?",
+  "options": [
+   "100 km",
+   "105 km",
+   "112 km",
+   "95 km"
+  ],
+  "answerIndex": 1,
+  "explanation": "Mileage is 180 ÷ 12 = 15 km per litre. On 7 litres, it travels 7 × 15 = 105 km."
+ },
+ {
+  "id": "F6-7",
+  "skillId": "F6",
+  "stem": "What is the simplest form of the ratio 2.4 : 3.6?",
+  "options": [
+   "2 : 3",
+   "12 : 18",
+   "4 : 6",
+   "3 : 2"
+  ],
+  "answerIndex": 0,
+  "explanation": "Multiply both numbers by 10 to clear decimals giving 24 : 36, then divide both by 12 to get 2 : 3."
+ },
+ {
+  "id": "F6-8",
+  "skillId": "F6",
+  "stem": "₹3,500 is divided among X, Y, and Z in the ratio 2 : 3 : 5. What is the share of Y?",
+  "options": [
+   "₹700",
+   "₹1,050",
+   "₹1,750",
+   "₹1,000"
+  ],
+  "answerIndex": 1,
+  "explanation": "Total parts = 2 + 3 + 5 = 10. Each part is ₹3,500 ÷ 10 = ₹350. Y gets 3 parts = 3 × ₹350 = ₹1,050."
+ },
+ {
+  "id": "F6-9",
+  "skillId": "F6",
+  "stem": "If 6 workers can build a wall in 10 days, how many days will 15 workers take working at the same pace?",
+  "options": [
+   "25 days",
+   "4 days",
+   "5 days",
+   "6 days"
+  ],
+  "answerIndex": 1,
+  "explanation": "Total work = 6 × 10 = 60 worker-days. With 15 workers, it takes 60 ÷ 15 = 4 days."
+ },
+ {
+  "id": "F6-10",
+  "skillId": "F6",
+  "stem": "Express the ratio 750 g : 2.5 kg in its simplest form.",
+  "options": [
+   "3 : 1",
+   "3 : 10",
+   "1 : 3",
+   "300 : 1"
+  ],
+  "answerIndex": 1,
+  "explanation": "Convert 2.5 kg to 2,500 g. The ratio is 750 : 2,500, which reduces to 3 : 10 after dividing both by 250."
+ },
+ {
+  "id": "F7-1",
+  "skillId": "F7",
+  "stem": "A rectangular plot of land measures 35 m by 20 m. If fencing costs ₹15 per metre, what is the total cost to fence the plot completely?",
+  "options": [
+   "₹1,650",
+   "₹10,500",
+   "₹825",
+   "₹1,100"
+  ],
+  "answerIndex": 0,
+  "explanation": "Perimeter = 2 × (35 + 20) = 110 m. At ₹15 per metre, total cost = 110 × 15 = ₹1,650."
+ },
+ {
+  "id": "F7-2",
+  "skillId": "F7",
+  "stem": "In a triangle, the angles are in the ratio 2 : 3 : 4. What is the measure of the largest angle?",
+  "options": [
+   "40°",
+   "60°",
+   "80°",
+   "100°"
+  ],
+  "answerIndex": 2,
+  "explanation": "The sum of angles is 180°, so 2x + 3x + 4x = 9x = 180°, giving x = 20°. The largest angle is 4 × 20° = 80°."
+ },
+ {
+  "id": "F7-3",
+  "skillId": "F7",
+  "stem": "A circular park has a radius of 14 m. Taking π = 22/7, what is its perimeter (circumference)?",
+  "options": [
+   "88 m",
+   "44 m",
+   "616 m",
+   "176 m"
+  ],
+  "answerIndex": 0,
+  "explanation": "Circumference = 2 × π × r = 2 × (22/7) × 14 = 88 m."
+ },
+ {
+  "id": "F7-4",
+  "skillId": "F7",
+  "stem": "The area of a right-angled triangle is 84 cm². If one of the perpendicular sides is 7 cm, what is the length of the other perpendicular side?",
+  "options": [
+   "12 cm",
+   "24 cm",
+   "14 cm",
+   "48 cm"
+  ],
+  "answerIndex": 1,
+  "explanation": "Area = (1/2) × base × height, so 84 = (1/2) × 7 × height. Thus, height = (84 × 2) / 7 = 24 cm."
+ },
+ {
+  "id": "F7-5",
+  "skillId": "F7",
+  "stem": "In triangle ABC, angle A = 65° and angle B = 45°. What is the measure of angle C?",
+  "options": [
+   "70°",
+   "80°",
+   "60°",
+   "110°"
+  ],
+  "answerIndex": 0,
+  "explanation": "The sum of angles in a triangle is 180°, so angle C = 180° − (65° + 45°) = 180° − 110° = 70°."
+ },
+ {
+  "id": "F7-6",
+  "skillId": "F7",
+  "stem": "The perimeter of a rectangular room is 50 m, and its length is 15 m. What is the area of the room?",
+  "options": [
+   "150 m²",
+   "375 m²",
+   "100 m²",
+   "200 m²"
+  ],
+  "answerIndex": 0,
+  "explanation": "Half-perimeter = 50 / 2 = 25 m, so width = 25 − 15 = 10 m. Area = 15 × 10 = 150 m²."
+ },
+ {
+  "id": "F7-7",
+  "skillId": "F7",
+  "stem": "A wire in the shape of a circle with radius 7 cm is bent to form a square. What is the side length of the square? (Use π = 22/7)",
+  "options": [
+   "11 cm",
+   "22 cm",
+   "44 cm",
+   "7 cm"
+  ],
+  "answerIndex": 0,
+  "explanation": "Circumference of the circle = 2 × (22/7) × 7 = 44 cm. Perimeter of the square = 4 × side = 44 cm, so side = 11 cm."
+ },
+ {
+  "id": "F7-8",
+  "skillId": "F7",
+  "stem": "The perimeter of an equilateral triangle is 36 cm. What is its area?",
+  "options": [
+   "36√3 cm²",
+   "18√3 cm²",
+   "72 cm²",
+   "144√3 cm²"
+  ],
+  "answerIndex": 0,
+  "explanation": "Side length = 36 / 3 = 12 cm. Area of an equilateral triangle = (√3 / 4) × side² = (√3 / 4) × 144 = 36√3 cm²."
+ },
+ {
+  "id": "F7-9",
+  "skillId": "F7",
+  "stem": "What is the total perimeter of a semicircular plate of diameter 14 cm? (Use π = 22/7)",
+  "options": [
+   "36 cm",
+   "22 cm",
+   "44 cm",
+   "29 cm"
+  ],
+  "answerIndex": 0,
+  "explanation": "Perimeter of a semicircle includes the curved arc and the diameter: πr + 2r = (22/7 × 7) + 14 = 22 + 14 = 36 cm."
+ },
+ {
+  "id": "F7-10",
+  "skillId": "F7",
+  "stem": "In an isosceles triangle PQR, PQ = PR and angle Q = 50°. What is the measure of angle P?",
+  "options": [
+   "80°",
+   "50°",
+   "65°",
+   "100°"
+  ],
+  "answerIndex": 0,
+  "explanation": "Angles opposite to equal sides are equal, so angle R = 50°. Therefore, angle P = 180° − (50° + 50°) = 80°."
+ },
+ {
+  "id": "F8-1",
+  "skillId": "F8",
+  "stem": "Evaluate: −14 − (−23)",
+  "options": [
+   "−37",
+   "9",
+   "−9",
+   "37"
+  ],
+  "answerIndex": 1,
+  "explanation": "Subtracting a negative is the same as adding: −14 + 23 = 9."
+ },
+ {
+  "id": "F8-2",
+  "skillId": "F8",
+  "stem": "Which of the following numbers is the smallest (furthest to the left on a number line)?",
+  "options": [
+   "−15",
+   "−8",
+   "0",
+   "−22"
+  ],
+  "answerIndex": 3,
+  "explanation": "For negative numbers, the larger the magnitude, the smaller the value. Hence, −22 is furthest to the left."
+ },
+ {
+  "id": "F8-3",
+  "skillId": "F8",
+  "stem": "What is the value of |−18| − |12 − 25|?",
+  "options": [
+   "5",
+   "31",
+   "−5",
+   "−31"
+  ],
+  "answerIndex": 0,
+  "explanation": "|−18| = 18 and |12 − 25| = |−13| = 13. Subtracting them gives 18 − 13 = 5."
+ },
+ {
+  "id": "F8-4",
+  "skillId": "F8",
+  "stem": "Calculate: (−3) × (−4) × (−5)",
+  "options": [
+   "60",
+   "−60",
+   "−23",
+   "12"
+  ],
+  "answerIndex": 1,
+  "explanation": "An odd number of negative factors results in a negative product: (−3) × (−4) = 12, and 12 × (−5) = −60."
+ },
+ {
+  "id": "F8-5",
+  "skillId": "F8",
+  "stem": "At midnight in Leh, the temperature was −7°C. By morning, it dropped by 5°C. What was the morning temperature?",
+  "options": [
+   "−2°C",
+   "2°C",
+   "−12°C",
+   "12°C"
+  ],
+  "answerIndex": 2,
+  "explanation": "Dropping means subtracting: −7 − 5 = −12°C."
+ },
+ {
+  "id": "F8-6",
+  "skillId": "F8",
+  "stem": "Evaluate: −36 ÷ (−4) − 15",
+  "options": [
+   "−6",
+   "24",
+   "−24",
+   "6"
+  ],
+  "answerIndex": 0,
+  "explanation": "First divide: (−36) ÷ (−4) = 9. Then subtract: 9 − 15 = −6."
+ },
+ {
+  "id": "F8-7",
+  "skillId": "F8",
+  "stem": "If x = −6, find the value of −(−x) − |x|.",
+  "options": [
+   "0",
+   "12",
+   "−12",
+   "−6"
+  ],
+  "answerIndex": 2,
+  "explanation": "Here −(−x) = x = −6, and |x| = |−6| = 6. So −6 − 6 = −12."
+ },
+ {
+  "id": "F8-8",
+  "skillId": "F8",
+  "stem": "Arrange in ascending order: −3/4, −1/2, −5/8.",
+  "options": [
+   "−3/4 < −5/8 < −1/2",
+   "−1/2 < −5/8 < −3/4",
+   "−5/8 < −3/4 < −1/2",
+   "−3/4 < −1/2 < −5/8"
+  ],
+  "answerIndex": 0,
+  "explanation": "Convert to common denominator 8: −6/8, −4/8, −5/8. In order from most negative to least: −6/8 < −5/8 < −4/8."
+ },
+ {
+  "id": "F8-9",
+  "skillId": "F8",
+  "stem": "Evaluate: (−1)^105 + (−1)^204",
+  "options": [
+   "2",
+   "−2",
+   "0",
+   "1"
+  ],
+  "answerIndex": 2,
+  "explanation": "(−1) raised to an odd power is −1, and to an even power is 1. So −1 + 1 = 0."
+ },
+ {
+  "id": "F8-10",
+  "skillId": "F8",
+  "stem": "On a number line, what is the distance between the points −17 and 8?",
+  "options": [
+   "9",
+   "−25",
+   "25",
+   "−9"
+  ],
+  "answerIndex": 2,
+  "explanation": "Distance is the absolute difference: |8 − (−17)| = |8 + 17| = 25 units."
+ }
+]

@@ -91,7 +91,8 @@ function buildSpecs(): Spec[] {
   const extra: Spec[] = [];
   for (const c of CONCEPT_LIST) {
     const have = base.filter((b) => b.conceptId === c.id).length + (ANCHOR_COUNT[c.id] ?? 0);
-    const want = TARGET_BY_WEIGHT[c.weight] ?? 20;
+    const plus = Number(process.argv.find((x) => x.startsWith("--plus="))?.slice(7) ?? 0); // top-up: raise every target by N
+    const want = (TARGET_BY_WEIGHT[c.weight] ?? 20) + plus;
     const themes = c.area === "Arithmetic" || c.area === "Modern Math" ? LIFE_THEMES : MATH_ANGLES;
     for (let n = 0; n < Math.max(0, want - have); n++) {
       extra.push({

@@ -3470,5 +3470,373 @@
   {
     "spec": "G5-x6",
     "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A1-x41",
+    "reason": "ambiguous (The answer is 100/7 (or approx 14.28%), which is a non-terminating decimal. TITA questions in CAT typically have integer)"
+  },
+  {
+    "spec": "N1-x25",
+    "reason": "answer mismatch (key says 18, independent solve got 12)"
+  },
+  {
+    "spec": "A7-x23",
+    "reason": "answer mismatch (key says 3750, independent solve got 4350)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "ambiguous (Zero options are correct. The divisor must be strictly greater than the remainder (d > 7), but the GCD of 132 and 174 is)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "A6-x43",
+    "reason": "ambiguous (The problem explicitly describes a continuous mixing process ('simultaneously... thoroughly mixed at all times'). The co)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "ambiguous (Zero options are correct based on the numbers provided. GCD(144, 222) = 6. The question likely has a typo and intended ')"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 24, independent solve got 48)"
+  },
+  {
+    "spec": "N2-x10",
+    "reason": "answer mismatch (key says 18, independent solve got 6)"
+  },
+  {
+    "spec": "A2-x3",
+    "reason": "ambiguous (Zero options are correct. Based on the ratios, P:Q:R = 6:5:4. The difference between P and R is 2 parts (2/15 of total).)"
+  },
+  {
+    "spec": "A3-x41",
+    "reason": "answer mismatch (key says 65.7, independent solve got 65.4)"
+  },
+  {
+    "spec": "A3-x41",
+    "reason": "answer mismatch (key says 305, independent solve got 295)"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "answer mismatch (key says 180, independent solve got 108)"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "answer mismatch (key says 60, independent solve got 240)"
+  },
+  {
+    "spec": "N2-x3",
+    "reason": "answer mismatch (key says 120, independent solve got 24)"
+  },
+  {
+    "spec": "L2-x27",
+    "reason": "ambiguous (The correct sum of the roots is 18 (the roots are 6 and 12), which is not present in the given options. An arbitrary opt)"
+  },
+  {
+    "spec": "L2-x11",
+    "reason": "ambiguous (The sum of the sequence is strictly bounded above by 1 for all positive integers k. Therefore, it is impossible for the )"
+  },
+  {
+    "spec": "N1-x23",
+    "reason": "answer mismatch (key says 25, independent solve got 0)"
+  },
+  {
+    "spec": "N1-x23",
+    "reason": "answer mismatch (key says 50, independent solve got 35)"
+  },
+  {
+    "spec": "N2-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "answer mismatch (key says The system has no solution., independent solve got $m = 5$ or $m = -2$.)"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "ambiguous (Both options A and C are correct statements. For a = -5, the system has no solution, and for a = 2, the system also has )"
+  },
+  {
+    "spec": "L3-x3",
+    "reason": "answer mismatch (key says If $m = 3$, the system has infinitely many solutions., independent solve got If $m = -5$, the system has no solution.)"
+  },
+  {
+    "spec": "L3-x46",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "L3-x46",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "L3-x46",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "L4-x47",
+    "reason": "answer mismatch (key says 17, independent solve got 154/9)"
+  },
+  {
+    "spec": "L4-x47",
+    "reason": "answer mismatch (key says 17, independent solve got 154/9)"
+  },
+  {
+    "spec": "L4-x47",
+    "reason": "answer mismatch (key says 17, independent solve got 154/9)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 78, independent solve got 77.2)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "ambiguous (Contradictory data: Calculating the transferred students' average using Section A yields 60, while using Section B yield)"
+  },
+  {
+    "spec": "A3-x23",
+    "reason": "answer mismatch (key says 71, independent solve got 70.5)"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "answer mismatch (key says 30, independent solve got 140/3)"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "answer mismatch (key says 10, independent solve got 14)"
+  },
+  {
+    "spec": "L3-x41",
+    "reason": "answer mismatch (key says 10, independent solve got 5)"
+  },
+  {
+    "spec": "N2-x28",
+    "reason": "answer mismatch (key says 24, independent solve got 12)"
+  },
+  {
+    "spec": "N2-x28",
+    "reason": "ambiguous (Mathematically inconsistent. The remainder (13) must be strictly less than the divisor (d), meaning d > 13. However, the)"
+  },
+  {
+    "spec": "N2-x28",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-x13",
+    "reason": "ambiguous (No common terms exist because the first AP contains only odd numbers and the second AP contains only even numbers. The c)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Zero options are correct based on the text. The calculated answer is ₹2,35,000. The author likely intended for the secon)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "ambiguous (Typo in the question: The total fund ₹11,80,000 is not divisible by the ratio sum (29). It should be ₹11,60,000 to match)"
+  },
+  {
+    "spec": "A2-3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G2-x46",
+    "reason": "answer mismatch (key says $N = 8$, independent solve got $N = 7$)"
+  },
+  {
+    "spec": "G3-x27",
+    "reason": "MCQ needs 4 options, got 1"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "ambiguous (The final answer is a fraction (160/7), which is highly unusual for a TITA question where integer answers are expected. )"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A7-x38",
+    "reason": "answer mismatch (key says 19, independent solve got 18.75)"
+  },
+  {
+    "spec": "L6-x43",
+    "reason": "ambiguous (The question contains a fatal flaw: all terms in the AP (17, 25, 33...) are odd, meaning 0 terms are divisible by 6. The)"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "ambiguous (Typo in Option D. The correct mathematical answer is \\sqrt{31} + \\sqrt{17}, but Option D says \\sqrt{31} + \\sqrt{19}. Als)"
+  },
+  {
+    "spec": "L1-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G2-x45",
+    "reason": "ambiguous (The correct answer is 8, which is missing from the options. Option A (10) is obtained if one incorrectly includes degene)"
+  },
+  {
+    "spec": "L3-x47",
+    "reason": "ambiguous (No solution exists. The conditions for infinitely many solutions require a=4 and a=6 simultaneously, which is impossible)"
+  },
+  {
+    "spec": "L3-x47",
+    "reason": "ambiguous (The question is mathematically flawed. Setting the ratios of the y-coefficients and constants equal yields 6/(k+2) = 18/)"
+  },
+  {
+    "spec": "L3-x47",
+    "reason": "ambiguous (Contradictory data / No solution exists. Equating the x-coefficients to the constants yields k = 3, while equating the y)"
+  },
+  {
+    "spec": "L5-x46",
+    "reason": "ambiguous (The correct answer is 11, which is not among the options. The question likely contains a typo in the inequality expressi)"
+  },
+  {
+    "spec": "L5-x46",
+    "reason": "ambiguous (The correct answer is 10, which is missing from the options. The author likely arrived at 8 by incorrectly cross-multipl)"
+  },
+  {
+    "spec": "L5-x43",
+    "reason": "ambiguous (The expression is unbounded above as x approaches infinity, so it has no maximum value. The author incorrectly assumed t)"
+  },
+  {
+    "spec": "L5-x43",
+    "reason": "ambiguous (The solution set is (-∞, 2) U [13/5, 5). Because the interval is open at 5, there is no global maximum real value. The q)"
+  },
+  {
+    "spec": "N2-x27",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "N2-x27",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "ambiguous (The correct minimum value is 2, which is not in the options. The author likely forgot to subtract 4 after applying AM-GM)"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "ambiguous (The question asks for the 'maximum' real value of k, but any k >= -1/2 satisfies the condition, meaning there is no maxi)"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "ambiguous (The correct minimum value is 10, which is not present in the options. There is likely a typo in the question (e.g., |x -)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 436, independent solve got 459)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 133, independent solve got 400/3)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 108, independent solve got 1230.1875)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 2241, independent solve got 2700)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 960, independent solve got 7680)"
+  },
+  {
+    "spec": "G4-x28",
+    "reason": "ambiguous (The correct answer is 30, which is missing from the options. The author likely either forgot to subtract D_P (leaving 35)"
+  },
+  {
+    "spec": "G5-x28",
+    "reason": "ambiguous (The correct answer (21 cm) is not among the given options. Zero options are correct.)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "ambiguous (Contradictory data: The given increases (10,000 and 25,000) and the final ratio (7:11) result in a negative initial sala)"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x27",
+    "reason": "ambiguous (None of the options are correct. The actual ratio V_c/V_y is 20/21. The question likely has a typo in the cylinder's rad)"
+  },
+  {
+    "spec": "A2-x43",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "A2-x43",
+    "reason": "ambiguous (The question contains an error in its design. The total weight of the sauce (T+C+V+O) sums to 29 units, which does not y)"
+  },
+  {
+    "spec": "A2-x43",
+    "reason": "ambiguous (The correct answer (5.68) is not among the given options. The options or the ratios provided in the question contain a t)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 13, independent solve got 9)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 31, independent solve got 95)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 29, independent solve got 59)"
+  },
+  {
+    "spec": "M1-x18",
+    "reason": "answer mismatch (key says 75, independent solve got 150)"
+  },
+  {
+    "spec": "M1-x18",
+    "reason": "ambiguous (The correct answer is 38, which is missing from the options. Option A (62) is likely the intended answer due to a common)"
+  },
+  {
+    "spec": "M1-x18",
+    "reason": "answer mismatch (key says 44, independent solve got 56)"
+  },
+  {
+    "spec": "G6-x28",
+    "reason": "ambiguous (The question asks for the x-coordinate of H, which is 13/5 (not in the options). Option B (29/5) is actually the y-coord)"
+  },
+  {
+    "spec": "G6-x28",
+    "reason": "answer mismatch (key says 11, independent solve got $\\frac{47}{5}$)"
+  },
+  {
+    "spec": "G6-x28",
+    "reason": "answer mismatch (key says $\frac{50}{3}$, independent solve got $rac{40}{3}$)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 32, independent solve got 8)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 8, independent solve got 2)"
   }
 ]

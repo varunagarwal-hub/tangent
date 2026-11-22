@@ -16,6 +16,7 @@ import {
   index,
   primaryKey,
   unique,
+  uniqueIndex,
   check,
   type AnyPgColumn,
 } from "drizzle-orm/pg-core";
@@ -267,4 +268,20 @@ export const gameScores = pgTable(
     createdAt: createdAt(),
   },
   (t) => [index("game_scores_student_idx").on(t.studentId, t.game, t.createdAt)],
+);
+
+/** Foundation skills (data/foundations.json, F1–F8): result of the check and of repair sets. */
+export const foundationStatus = pgTable(
+  "foundation_status",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    studentId: uuid("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+    skillId: text("skill_id").notNull(),
+    status: text("status", { enum: ["solid", "shaky", "repaired"] }).notNull(),
+    checkCorrect: integer("check_correct").notNull().default(0),
+    checkTotal: integer("check_total").notNull().default(0),
+    repairAttempts: integer("repair_attempts").notNull().default(0),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [uniqueIndex("foundation_status_student_skill").on(t.studentId, t.skillId)],
 );

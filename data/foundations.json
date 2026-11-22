@@ -1,0 +1,10 @@
+[
+ { "id": "F1", "name": "Fractions & decimals", "description": "Adding, comparing and simplifying fractions; converting between fractions and decimals.", "prerequisites": [], "unlocks": ["A1", "A2", "A3", "A6", "M3"] },
+ { "id": "F2", "name": "Percentage basics", "description": "What a percentage means, x% of y, and finding the whole from a part.", "prerequisites": ["F1"], "unlocks": ["A1", "A4", "A5"] },
+ { "id": "F3", "name": "Squares, roots & powers", "description": "Squares and cubes of small numbers, square roots, and the basic laws of exponents.", "prerequisites": [], "unlocks": ["L1", "L2", "G2", "G5"] },
+ { "id": "F4", "name": "Divisibility & factors", "description": "Divisibility rules, prime factorisation, factors and multiples.", "prerequisites": [], "unlocks": ["N1", "N2", "N3"] },
+ { "id": "F5", "name": "Basic algebra", "description": "Expanding brackets, collecting like terms, and solving a one-variable equation.", "prerequisites": ["F1"], "unlocks": ["L3", "L4", "L5", "L6"] },
+ { "id": "F6", "name": "Ratio basics", "description": "Simplifying a ratio, splitting an amount in a ratio, and unitary method.", "prerequisites": ["F1"], "unlocks": ["A2", "A6", "A7", "A8"] },
+ { "id": "F7", "name": "Area & perimeter", "description": "Perimeter and area of rectangles, triangles and circles; angles in a triangle.", "prerequisites": ["F3"], "unlocks": ["G1", "G2", "G4", "G5"] },
+ { "id": "F8", "name": "Signs & the number line", "description": "Negative numbers, ordering on a number line, absolute value, and sign rules.", "prerequisites": [], "unlocks": ["L5", "L7", "N1", "G6"] }
+]

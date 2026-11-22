@@ -17,7 +17,7 @@ export default function OnboardingPage() {
   const [minutes, setMinutes] = useState(60);
   const [saving, setSaving] = useState(false);
 
-  async function finish() {
+  async function finish(next: "/diagnostic" | "/foundation" = "/diagnostic") {
     setSaving(true);
     try {
       await fetch("/api/profile", {
@@ -26,7 +26,7 @@ export default function OnboardingPage() {
         body: JSON.stringify({ name: name.trim() || undefined, targetPercentile: target, examDate, dailyMinutes: minutes }),
       });
     } finally {
-      router.push("/diagnostic");
+      router.push(next);
     }
   }
 
@@ -117,9 +117,14 @@ export default function OnboardingPage() {
               Next <ArrowRight className="size-4" />
             </Button>
           ) : (
-            <Button onClick={finish} disabled={saving}>
-              Start the diagnostic <ArrowRight className="size-4" />
-            </Button>
+            <div className="flex flex-col items-end gap-2">
+              <Button onClick={() => finish()} disabled={saving}>
+                Start the diagnostic <ArrowRight className="size-4" />
+              </Button>
+              <button type="button" onClick={() => finish("/foundation")} disabled={saving} className="text-sm text-ink-soft underline-offset-4 hover:text-ink hover:underline">
+                Rusty on school maths? Do a 10-minute foundation check first
+              </button>
+            </div>
           )}
         </div>
       </div>
