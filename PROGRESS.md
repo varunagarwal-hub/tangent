@@ -1,6 +1,6 @@
 # Tangent — Progress
 
-Last updated: 22 Nov — project SUBMITTED (team gamma_pass). Phase 10 in progress: per-student question pool done + deployed; bank expansion paused at 186/1,030 — resume with `npx tsx scripts/seed-content.ts`, then `npx tsx scripts/load-bank.ts --apply`. Non-code assets and next steps: ../HANDOFF.md.
+Last updated: 22 Nov ~11:30 IST, project SUBMITTED (team gamma_pass). Phase 10: bank expansion running (735/~1,030 verified; resume with `npx tsx scripts/seed-content.ts`, never two runs at once; then `npx tsx scripts/load-bank.ts --apply`). **Next: Phase 11, nine Curio-inspired upgrades (Spot the Tangent, concept cards, speed sprint, daily checklist, foundation repair, CAT mock, Road to CAT, flashcards, doubt classes). Full specs, order and ground rules in ../HANDOFF.md → "Next build".**
 
 ## Done
 ### Phase 0 — Setup ✅
@@ -110,6 +110,17 @@ Last updated: 22 Nov — project SUBMITTED (team gamma_pass). Phase 10 in progre
 - [x] README written (problem, solution, 7 requirements map, architecture, agents, algorithms, loops, eval, demo path, stack, setup)
 - [x] Final deploy + live check (tangent-chi-seven.vercel.app, ~8:10 PM): all routes load (/, today, practice, diagnostic, map, reveal, mistakes, strategy, teacher, under-the-hood, onboarding, 404); no horizontal overflow at 375px on any. Live practice: verdict 260ms, Detective 3.6s (line 2, A1_ADD_SUCCESSIVE, 99%). Live lesson plan 12s. Neon reseeded afterwards.
 - [x] Skip Coach: when no mastery cut-off helps, says so plainly instead of "above 0% mastery would have scored +0"
+
+### Phase 11 — Curio-inspired upgrades (not started; specs in ../HANDOFF.md)
+- [ ] 1. Spot the Tangent game (`/play/spot`)
+- [ ] 2. Concept cards (`/learn`, `/learn/[conceptId]`)
+- [ ] 3. CAT speed sprint (`/play/sprint`)
+- [ ] 4. Daily checklist + streak nudge (`/today`)
+- [ ] 5. Foundation check → repair (`/foundation`)
+- [ ] 6. CAT sectional mock (`/mock`)
+- [ ] 7. Road to CAT plan + activity heatmap (`/plan`)
+- [ ] 8. Formula & shortcut flashcards (`/learn/cards`)
+- [ ] 9. Teacher: schedule a doubt class (`/teacher`)
 
 ## Known bugs
 - Instant grading is ~350–400ms (target <200ms): several sequential Neon HTTP round-trips.
