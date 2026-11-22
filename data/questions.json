@@ -18384,5 +18384,2641 @@
         "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
       }
     ]
+  },
+  {
+    "id": "2c7a61ab-b6ca-466c-bf51-30a229200ae8",
+    "spec": "G3-x8",
+    "concept_id": "G3",
+    "type": "TITA",
+    "stem": "A sequence of circles $C_1, C_2, C_3, \\dots, C_{10}$ is drawn in a plane, all sharing the same centre $O$. The radius of circle $C_n$ is $r_n = 2n$ cm for each $n \\in \\{1, 2, \\dots, 10\\}$. A straight line passing through $O$ contains a point $P$ such that $OP = 50$ cm. From $P$, a tangent line segment is drawn to each circle $C_n$, touching $C_n$ at point $T_n$. If $S = \\sum_{n=1}^{10} PT_n^2$, find the value of $\\frac{S}{100}$.",
+    "options": null,
+    "answer": "234.6",
+    "solution": "1. For any circle $C_n$, the radius $OT_n$ is perpendicular to the tangent $PT_n$ at the point of contact $T_n$.\n2. In right-angled triangle $OPT_n$, by the Pythagorean theorem:\n$PT_n^2 = OP^2 - OT_n^2 = 50^2 - r_n^2 = 2500 - (2n)^2 = 2500 - 4n^2$.\n(Note: If one mistakenly treats the tangent length as simply the distance minus the radius, i.e., $OP - r_n = 50 - 2n$, the values would be completely different.)\n3. Summing $PT_n^2$ from $n = 1$ to $10$:\n$S = \\sum_{n=1}^{10} (2500 - 4n^2) = 10 \\times 2500 - 4 \\sum_{n=1}^{10} n^2$.\n4. Using $\\sum_{n=1}^{10} n^2 = \\frac{10 \\times 11 \\times 21}{6} = 385$:\n$S = 25000 - 4(385) = 25000 - 1540 = 23460$.\n5. Therefore, $\\frac{S}{100} = \\frac{23460}{100} = 234.6$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "8cc318c0-ea32-45e3-8116-2f7797347a48",
+    "spec": "G3-x14",
+    "concept_id": "G3",
+    "type": "TITA",
+    "stem": "From an external point $P$, a tangent is drawn to touch a circle at point $T$. The centre of the circle is $O$, and the radius of the circle is $9\\text{ cm}$. A straight line from $P$ passes through $O$ and intersects the circle at points $A$ and $B$, such that $A$ lies between $P$ and $O$. If the shortest distance from $P$ to the circle is $6\\text{ cm}$, find the length of the tangent segment $PT$ (in cm).",
+    "options": null,
+    "answer": "12",
+    "solution": "1. The shortest distance from external point $P$ to the circle is $PA = 6\\text{ cm}$.\n2. The distance from $P$ to the centre $O$ is $PO = PA + r = 6 + 9 = 15\\text{ cm}$.\n3. The radius $OT$ is perpendicular to the tangent $PT$ at the point of contact $T$, making $\\triangle PTO$ a right-angled triangle with hypotenuse $PO$.\n4. By the Pythagorean theorem, $PT = \\sqrt{PO^2 - OT^2} = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "316dabfa-6b41-4571-880b-54f94ad2be6d",
+    "spec": "G3-x15",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, points $A$ and $B$ lie on the circumference. Tangents to the circle at points $A$ and $B$ intersect at an external point $P$. If $\\angle APB = 44^\\circ$, and $C$ is a point on the major arc $AB$, what is the measure of $\\angle ACB$?",
+    "options": [
+      "$44^\\circ$",
+      "$68^\\circ$",
+      "$136^\\circ$",
+      "$272^\\circ$"
+    ],
+    "answer": "$68^\\circ$",
+    "solution": "1. In quadrilateral $OAPB$, radius $OA \\perp PA$ and radius $OB \\perp PB$, so $\\angle OAP = \\angle OBP = 90^\\circ$.\n2. The sum of angles in quadrilateral $OAPB$ is $360^\\circ$, so the central angle is $\\angle AOB = 180^\\circ - \\angle APB = 180^\\circ - 44^\\circ = 136^\\circ$.\n3. The inscribed angle $\\angle ACB$ subtended by minor arc $AB$ at the circumference is half the central angle: $\\angle ACB = \\frac{1}{2} \\times \\angle AOB = \\frac{136^\\circ}{2} = 68^\\circ$.\n\nHence, the correct answer is $68^\\circ$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$136^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$44^\\circ$",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "$272^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "9de9cc83-10ed-431a-a78a-0322d45a735a",
+    "spec": "G3-x9",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, chord $AB$ subtends an angle of $100^\\circ$ at $O$. A point $P$, distinct from $A$ and $B$, is chosen on the circumference of the circle. What is the maximum possible value of $\\angle APB$?",
+    "options": [
+      "$130^\\circ$",
+      "$100^\\circ$",
+      "$80^\\circ$",
+      "$50^\\circ$"
+    ],
+    "answer": "$130^\\circ$",
+    "solution": "1. Point $P$ can lie either on the major arc $AB$ or on the minor arc $AB$.\n2. If $P$ lies on the major arc, the angle subtended at the circumference is half the central angle: $\\angle APB = \\frac{1}{2} \\times 100^\\circ = 50^\\circ$.\n3. If $P$ lies on the minor arc, it forms a cyclic quadrilateral with any point $Q$ on the major arc. Since opposite angles of a cyclic quadrilateral sum to $180^\\circ$, $\\angle APB = 180^\\circ - 50^\\circ = 130^\\circ$.\n4. Comparing the two possible values, the maximum possible value of $\\angle APB$ is $130^\\circ$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$100^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$80^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$50^\\circ$",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      }
+    ]
+  },
+  {
+    "id": "21e18d50-2bb0-4ff9-b475-010439376a2f",
+    "spec": "G3-x2",
+    "concept_id": "G3",
+    "type": "TITA",
+    "stem": "From an external point $P$, a tangent is drawn to a circle with centre $O$ and radius $9\\text{ cm}$, touching the circle at point $T$. A straight line passing through $P$ and $O$ intersects the circle at points $A$ and $B$, such that $A$ lies between $P$ and $O$. If $PA = 6\\text{ cm}$, find the length (in $\\text{cm}$) of the tangent segment $PT$.",
+    "options": null,
+    "answer": "12",
+    "solution": "1. The radius of the circle is $r = 9\\text{ cm}$.\n2. The distance from the external point $P$ to the centre $O$ is $PO = PA + AO = 6 + 9 = 15\\text{ cm}$.\n3. Since the tangent $PT$ is perpendicular to the radius $OT$ at the point of contact $T$, triangle $PTO$ is a right-angled triangle with hypotenuse $PO$.\n4. Applying the Pythagorean theorem: $PT = \\sqrt{PO^2 - OT^2} = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "cdef8e80-bac8-48a3-9ebb-9a1b21c87e4f",
+    "spec": "G2-x39",
+    "concept_id": "G2",
+    "type": "MCQ",
+    "stem": "The lengths of two sides of a triangle are $8\\text{ cm}$ and $15\\text{ cm}$, and the third side has an integer length $x\\text{ cm}$. How many such distinct triangles are possible?",
+    "options": [
+      "15",
+      "16",
+      "22",
+      "23"
+    ],
+    "answer": "15",
+    "solution": "1. For any triangle with side lengths $a$, $b$, and $c$, the triangle inequality requires $|a - b| < c < a + b$.\n2. Here, the two known sides are $8\\text{ cm}$ and $15\\text{ cm}$, so the third side $x$ must satisfy $|15 - 8| < x < 15 + 8$.\n3. This gives $7 < x < 23$.\n4. Since $x$ is an integer, $x$ can take any value from $8$ to $22$, inclusive.\n5. The number of such integer values is $22 - 8 + 1 = 15$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "22",
+        "misconception_id": "G2_IGNORE_TRIANGLE_INEQUALITY"
+      }
+    ]
+  },
+  {
+    "id": "a4285c4f-b566-4f79-8467-f30ac162f419",
+    "spec": "G3-x20",
+    "concept_id": "G3",
+    "type": "TITA",
+    "stem": "A straight metal rod $AB$ is placed on a flat sheet such that end $A$ touches the circumference of a circular disc of radius $10\\text{ cm}$ tangentially. The distance from end $B$ to the centre of the circular disc is $26\\text{ cm}$. Find the length of the rod $AB$ (in cm).",
+    "options": null,
+    "answer": "24",
+    "solution": "1. Let $O$ be the centre of the circular disc and $A$ be the point of tangency on its circumference. Thus, the radius $OA = 10\\text{ cm}$.\n2. Since the rod $AB$ is tangent to the circle at point $A$, the radius $OA$ is perpendicular to $AB$, making $\\angle OAB = 90^\\circ$.\n3. In right-angled triangle $OAB$, by the Pythagorean theorem:\n$AB^2 + OA^2 = OB^2$\n$AB^2 + 10^2 = 26^2$\n$AB = \\sqrt{26^2 - 10^2} = \\sqrt{676 - 100} = \\sqrt{576} = 24\\text{ cm}$.\n4. Thus, the correct answer is 24.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "24091b6f-cb9f-4039-bf5c-c5b8f20bddcc",
+    "spec": "G3-x19",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, two chords $AB$ and $CD$ are perpendicular to each other and intersect at an internal point $P$. The radius of the circle is $10\\text{ cm}$, and the distance from $O$ to $P$ is $6\\text{ cm}$. What is the minimum possible value of the length of chord $AB$?",
+    "options": [
+      "12 cm",
+      "14 cm",
+      "16 cm",
+      "8 cm"
+    ],
+    "answer": "16 cm",
+    "solution": "1. Let $M$ be the midpoint of chord $AB$, so $OM \\perp AB$.\n2. The triangle $OMP$ is a right-angled triangle at $M$ because $OM \\perp AB$ and $P$ lies on the line containing chord $AB$.\n3. In right-angled triangle $OMP$, the hypotenuse is $OP = 6\\text{ cm}$, which implies $OM \\le OP = 6\\text{ cm}$.\n4. The length of chord $AB$ is given by $2\\sqrt{R^2 - OM^2} = 2\\sqrt{10^2 - OM^2}$.\n5. To minimise the length of chord $AB$, we must maximise the distance $OM$. The maximum value of $OM$ is $OP = 6\\text{ cm}$ (occurring when $P$ coincides with $M$, meaning $OP \\perp AB$).\n6. Thus, the minimum length of chord $AB = 2\\sqrt{10^2 - 6^2} = 2\\sqrt{64} = 16\\text{ cm}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "8 cm",
+        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
+      }
+    ]
+  },
+  {
+    "id": "3a2721ae-b16a-41c0-b4ed-9918e5b7edfd",
+    "spec": "G3-x12",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, points $A$, $B$, and $C$ lie on the circumference such that $\\angle OAB = 28^\\circ$ and $\\angle OCB = 36^\\circ$. If the centre $O$ lies strictly in the interior of $\\triangle ABC$, find the measure of $\\angle AOC$.",
+    "options": [
+      "64°",
+      "128°",
+      "232°",
+      "32°"
+    ],
+    "answer": "128°",
+    "solution": "1. In $\\triangle OAB$, $OA = OB$ as they are radii of the circle. Thus, $\\angle OBA = \\angle OAB = 28^\\circ$.\n2. In $\\triangle OBC$, $OB = OC$ as they are radii. Thus, $\\angle OBC = \\angle OCB = 36^\\circ$.\n3. Since $O$ lies in the interior of $\\triangle ABC$, $\\angle ABC = \\angle OBA + \\angle OBC = 28^\\circ + 36^\\circ = 64^\\circ$.\n4. The angle subtended by arc $AC$ at the centre is twice the angle subtended at the circumference on the same arc. Therefore, $\\angle AOC = 2 \\times \\angle ABC = 2 \\times 64^\\circ = 128^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "distractor_misconceptions": [
+      {
+        "option": "64°",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "32°",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "ab749ab9-3767-4e0b-b3b0-90b33183d50a",
+    "spec": "G3-x7",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "Tangents are drawn from an external point $P$ to a circle with centre $O$, touching the circle at points $A$ and $B$. A point $C$ lies on the major arc $AB$, and a point $D$ lies on the minor arc $AB$. If $\\angle APB = 56^\\circ$, what is the measure of $\\angle ADB$?",
+    "options": [
+      "$118^\\circ$",
+      "$62^\\circ$",
+      "$124^\\circ$",
+      "$56^\\circ$"
+    ],
+    "answer": "$118^\\circ$",
+    "solution": "1. In quadrilateral $PAOB$, the radii $OA$ and $OB$ are perpendicular to tangents $PA$ and $PB$ respectively, so $\\angle OAP = \\angle OBP = 90^\\circ$.\n2. Therefore, $\\angle AOB = 180^\\circ - \\angle APB = 180^\\circ - 56^\\circ = 124^\\circ$.\n3. Point $C$ lies on the major arc $AB$, so the inscribed angle $\\angle ACB = \\frac{1}{2}\\angle AOB = \\frac{124^\\circ}{2} = 62^\\circ$.\n4. Quadrilateral $ACBD$ is cyclic, which means opposite angles sum to $180^\\circ$. Hence, $\\angle ADB = 180^\\circ - \\angle ACB = 180^\\circ - 62^\\circ = 118^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$62^\\circ$",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "$124^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$56^\\circ$",
+        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
+      }
+    ]
+  },
+  {
+    "id": "4ad76e7f-46e4-402d-b7f0-0ff390dfcf25",
+    "spec": "G3-x25",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, points $A$, $B$, and $C$ lie on the circumference such that $\\angle BAC = 52^\\circ$. Tangents drawn to the circle at points $B$ and $C$ meet at an external point $P$. What is the measure of $\\angle BPC$?",
+    "options": [
+      "$52^\\circ$",
+      "$76^\\circ$",
+      "$104^\\circ$",
+      "$128^\\circ$"
+    ],
+    "answer": "$76^\\circ$",
+    "solution": "1. The angle subtended by arc $BC$ at the centre $O$ is twice the angle subtended at the circumference: $\\angle BOC = 2 \\times \\angle BAC = 2 \\times 52^\\circ = 104^\\circ$.\n2. The tangents $PB$ and $PC$ are perpendicular to the radii $OB$ and $OC$ respectively, so $\\angle PBO = \\angle PCO = 90^\\circ$.\n3. In quadrilateral $OBPC$, the sum of angles is $360^\\circ$, giving $\\angle BPC = 180^\\circ - \\angle BOC = 180^\\circ - 104^\\circ = 76^\\circ$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$128^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$104^\\circ$",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      }
+    ]
+  },
+  {
+    "id": "56c84a3b-0a47-4171-9b93-724924020c80",
+    "spec": "G3-x24",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, chords $AB$ and $AC$ are drawn such that $\\angle BAC = 40^\\circ$. Points $B$ and $C$ lie on the circumference, and chord $BC$ does not pass through $O$. What is the measure of $\\angle OBC$?",
+    "options": [
+      "$50^\\circ$",
+      "$40^\\circ$",
+      "$20^\\circ$",
+      "$70^\\circ$"
+    ],
+    "answer": "$50^\\circ$",
+    "solution": "1. Arc $BC$ subtends $\\angle BAC = 40^\\circ$ at the circumference.\n2. The angle subtended by the same arc at the centre is $\\angle BOC = 2 \\times \\angle BAC = 2 \\times 40^\\circ = 80^\\circ$.\n3. In $\\triangle OBC$, $OB = OC$ as both are radii of the circle, making $\\triangle OBC$ isosceles with $\\angle OBC = \\angle OCB$.\n4. Therefore, $\\angle OBC = \\frac{180^\\circ - \\angle BOC}{2} = \\frac{180^\\circ - 80^\\circ}{2} = 50^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "distractor_misconceptions": [
+      {
+        "option": "$70^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "48f66a9a-ef9a-45a1-a17e-4a61cdda5f59",
+    "spec": "G2-x14",
+    "concept_id": "G2",
+    "type": "TITA",
+    "stem": "A straight wire of length $50\\text{ cm}$ is tied from the top of a vertical tent pole to a peg fixed in the ground, $40\\text{ cm}$ away from the foot of the pole. A second wire is tied from the top of the same pole to another peg on the level ground, located $16\\text{ cm}$ from the foot of the pole in the opposite direction. Find the length (in $\\text{cm}$) of the second wire.",
+    "options": null,
+    "answer": "34",
+    "solution": "1. Let the height of the vertical pole be $h\\text{ cm}$. The pole, the ground, and the first wire form a right-angled triangle with hypotenuse $50\\text{ cm}$ and one leg $40\\text{ cm}$.\n2. Using the Pythagorean theorem: $h^2 + 40^2 = 50^2 \\implies h^2 = 2500 - 1600 = 900$, so $h = 30\\text{ cm}$.\n3. The second wire, the pole, and the second ground distance form another right-angled triangle with legs $h = 30\\text{ cm}$ and $d_2 = 16\\text{ cm}$.\n4. The length of the second wire $L$ is given by $L = \\sqrt{30^2 + 16^2} = \\sqrt{900 + 256} = \\sqrt{1156} = 34\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G2_HYPOTENUSE_AS_LEG",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "31416a40-d720-4d97-b858-52052b0445a7",
+    "spec": "G4-x0",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "The sum of all interior angles of a convex polygon is $1080^\\circ$. Which of the following statements must be true?",
+    "options": [
+      "The total number of diagonals in the polygon is $20$.",
+      "The polygon has exactly $6$ vertices.",
+      "The total number of diagonals in the polygon is $28$.",
+      "The sum of all exterior angles of the polygon is $540^\\circ$."
+    ],
+    "answer": "The total number of diagonals in the polygon is $20$.",
+    "solution": "1. The sum of the interior angles of an $n$-sided convex polygon is given by $(n - 2) \\times 180^\\circ$.\n2. Setting $(n - 2) \\times 180^\\circ = 1080^\\circ$, we get $n - 2 = 6$, which gives $n = 8$ sides (and vertices).\n3. The total number of diagonals of an $n$-sided polygon is $\\frac{n(n - 3)}{2}$. For $n = 8$, this is $\\frac{8 \\times 5}{2} = 20$.\n4. Thus, the statement that the polygon has $20$ diagonals must be true.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "The total number of diagonals in the polygon is $28$.",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "7a67d613-e5f5-406f-801e-aa5ea86dbe37",
+    "spec": "G3-x22",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle, $ABCD$ is a cyclic quadrilateral. The side $AB$ is extended past $B$ to a point $E$. It is given that $\\angle ADC = (2x + 10)^\\circ$ and $\\angle ABC = (3x - 15)^\\circ$. What is the measure of the exterior angle $\\angle CBE$?",
+    "options": [
+      "75°",
+      "84°",
+      "96°",
+      "105°"
+    ],
+    "answer": "84°",
+    "solution": "1. In a cyclic quadrilateral, opposite angles are supplementary, so $\\angle ADC + \\angle ABC = 180^\\circ$.\n2. Substituting the given expressions: $(2x + 10)^\\circ + (3x - 15)^\\circ = 180^\\circ \\implies 5x - 5 = 180 \\implies 5x = 185 \\implies x = 37$.\n3. Therefore, $\\angle ADC = 2(37) + 10 = 84^\\circ$ and $\\angle ABC = 3(37) - 15 = 96^\\circ$.\n4. The exterior angle $\\angle CBE$ forms a linear pair with $\\angle ABC$, so $\\angle CBE = 180^\\circ - \\angle ABC = 180^\\circ - 96^\\circ = 84^\\circ$ (which is also directly equal to the interior opposite angle $\\angle ADC$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL",
+    "distractor_misconceptions": [
+      {
+        "option": "120°",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "96°",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      }
+    ]
+  },
+  {
+    "id": "73d2c0bd-d771-4847-8543-e1094c8393f1",
+    "spec": "G4-x1",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "The difference between each interior angle and each exterior angle of a regular polygon is $108^\\circ$. What is the total number of diagonals in this polygon?",
+    "options": [
+      "35",
+      "45",
+      "20",
+      "54"
+    ],
+    "answer": "35",
+    "solution": "1. Let $I$ and $E$ be the interior and exterior angles of the regular polygon, respectively.\n2. Since $I + E = 180^\\circ$ and $I - E = 108^\\circ$, adding the two equations gives $2I = 288^\\circ \\implies I = 144^\\circ$, which means $E = 180^\\circ - 144^\\circ = 36^\\circ$.\n3. The number of sides $n = \\frac{360^\\circ}{E} = \\frac{360^\\circ}{36^\\circ} = 10$.\n4. The number of diagonals in an $n$-sided polygon is given by $\\frac{n(n - 3)}{2} = \\frac{10 \\times 7}{2} = 35$.\n\nHence, the correct answer is 35.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "45",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "2070259d-fcd5-4711-a6c5-b673ca719755",
+    "spec": "G4-x2",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "A plot of land is in the shape of a rhombus whose perimeter is $100\\text{ m}$. One of its diagonals measures $40\\text{ m}$. Find the area of the plot in square metres.",
+    "options": null,
+    "answer": "600",
+    "solution": "1. The perimeter of the rhombus is $100\\text{ m}$, so each side $s = \\frac{100}{4} = 25\\text{ m}$.\n2. The diagonals of a rhombus bisect each other at right angles. Let the diagonals be $d_1 = 40\\text{ m}$ and $d_2$.\n3. In one of the right triangles formed by the semi-diagonals, we have $(\\frac{d_1}{2})^2 + (\\frac{d_2}{2})^2 = s^2$, which gives $20^2 + (\\frac{d_2}{2})^2 = 25^2$.\n4. Thus, $(\\frac{d_2}{2})^2 = 625 - 400 = 225 \\implies \\frac{d_2}{2} = 15\\text{ m} \\implies d_2 = 30\\text{ m}$.\n5. The area of the rhombus is $\\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 40 \\times 30 = 600\\text{ sq m}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "81184045-74db-44eb-b0a9-b098f041cfa4",
+    "spec": "G4-x4",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "The sum of the interior angles of a convex polygon exceeds the sum of its exterior angles by $900^\\circ$. What is the total number of diagonals in this polygon?",
+    "options": [
+      "20",
+      "27",
+      "36",
+      "14"
+    ],
+    "answer": "27",
+    "solution": "1. The sum of the exterior angles of any convex polygon is $360^\\circ$.\n2. The sum of the interior angles of an $n$-sided polygon is $(n - 2) \\times 180^\\circ$.\n3. According to the question, $(n - 2) \\times 180^\\circ - 360^\\circ = 900^\\circ \\implies (n - 2) \\times 180^\\circ = 1260^\\circ \\implies n - 2 = 7 \\implies n = 9$.\n4. The total number of diagonals in an $n$-sided polygon is given by $\\frac{n(n - 3)}{2} = \\frac{9 \\times 6}{2} = 27$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "36",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "7044616b-bca8-49f2-bf83-33ce4added89",
+    "spec": "G4-x7",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "In a rhombus $ABCD$, the perimeter is $52\\text{ cm}$ and the difference between the lengths of the two diagonals is $14\\text{ cm}$. What is the area of the rhombus?",
+    "options": [
+      "240 sq cm",
+      "120 sq cm",
+      "119 sq cm",
+      "96 sq cm"
+    ],
+    "answer": "120 sq cm",
+    "solution": "1. Let the side length of the rhombus be $a$. The perimeter is $4a = 52\\text{ cm}$, so $a = 13\\text{ cm}$.\n2. Let the lengths of the two diagonals be $d_1$ and $d_2$ with $d_1 > d_2$. We are given $d_1 - d_2 = 14$.\n3. The diagonals of a rhombus bisect each other at right angles, so $(\\frac{d_1}{2})^2 + (\\frac{d_2}{2})^2 = a^2 = 13^2 = 169$, which gives $d_1^2 + d_2^2 = 4 \\times 169 = 676$.\n4. Using the identity $(d_1 - d_2)^2 = d_1^2 + d_2^2 - 2d_1d_2$:\n$14^2 = 676 - 2d_1d_2 \\implies 196 = 676 - 2d_1d_2 \\implies 2d_1d_2 = 480 \\implies d_1d_2 = 240$.\n5. The area of the rhombus is $\\frac{1}{2} d_1 d_2 = \\frac{1}{2} \\times 240 = 120\\text{ sq cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "240 sq cm",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "b6e7e143-7018-40fb-b1a4-3236c3241de6",
+    "spec": "G4-x9",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A regular polygon has each exterior angle measuring $36^\\circ$. What is the total number of diagonals that can be drawn in this polygon?",
+    "options": [
+      "35",
+      "45",
+      "70",
+      "20"
+    ],
+    "answer": "35",
+    "solution": "1. For any regular polygon, the sum of all exterior angles is $360^\\circ$. Since each exterior angle is $36^\\circ$, the number of sides $n = \\frac{360^\\circ}{36^\\circ} = 10$.\n2. The number of diagonals of an $n$-sided polygon is given by $\\frac{n(n - 3)}{2}$.\n3. Substituting $n = 10$: $\\text{Number of diagonals} = \\frac{10 \\times 7}{2} = 35$.\n\nHence, the correct answer is 35.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "45",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "c571b647-14b4-4977-a4ce-d95febc70d64",
+    "spec": "G3-x21",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, chords $AB$ and $AC$ are drawn such that $\\angle BAC = 50^\\circ$. Tangents are drawn to the circle at points $B$ and $C$, intersecting each other at an external point $P$. Consider the following two quantities:\n\nQuantity A: The measure of $\\angle BPC$\nQuantity B: $75^\\circ$\n\nWhich of the following statements is true?",
+    "options": [
+      "Quantity A is greater than Quantity B",
+      "Quantity A is less than Quantity B",
+      "Quantity A is equal to Quantity B",
+      "The relationship cannot be determined from the given information"
+    ],
+    "answer": "Quantity A is greater than Quantity B",
+    "solution": "1. The angle subtended by the arc $BC$ at the circumference is $\\angle BAC = 50^\\circ$.\n2. The angle subtended by the same arc $BC$ at the centre $O$ is $\\angle BOC = 2 \\times \\angle BAC = 2 \\times 50^\\circ = 100^\\circ$.\n3. The tangents $PB$ and $PC$ meet the radii $OB$ and $OC$ at right angles, so $\\angle PBO = \\angle PCO = 90^\\circ$.\n4. In the quadrilateral $OBPC$, the sum of interior angles is $360^\\circ$. Therefore, $\\angle BPC + \\angle BOC = 180^\\circ$, which gives $\\angle BPC = 180^\\circ - 100^\\circ = 80^\\circ$.\n5. Thus, Quantity A is $80^\\circ$, which is greater than Quantity B ($75^\\circ$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "Quantity A is less than Quantity B",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "Quantity A is equal to Quantity B",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "The relationship cannot be determined from the given information",
+        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
+      }
+    ]
+  },
+  {
+    "id": "55db506e-67d6-4a67-ae79-9d186cfc44b4",
+    "spec": "G4-x10",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A floral design on a floor is made up of a rhombus whose diagonals measure $16\\text{ cm}$ and $12\\text{ cm}$. Which of the following statements must be true regarding the area of this rhombus?",
+    "options": [
+      "The area is $192\\text{ cm}^2$",
+      "The area is $96\\text{ cm}^2$",
+      "The area is $48\\text{ cm}^2$",
+      "The area is $144\\text{ cm}^2$"
+    ],
+    "answer": "The area is $96\\text{ cm}^2$",
+    "solution": "1. The area of a rhombus with diagonals $d_1$ and $d_2$ is given by $\\text{Area} = \\frac{1}{2} \\times d_1 \\times d_2$.\n2. Substituting the given values, $\\text{Area} = \\frac{1}{2} \\times 16 \\times 12 = 96\\text{ cm}^2$.\n3. Therefore, the area is $96\\text{ cm}^2$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": [
+      {
+        "option": "The area is $192\\text{ cm}^2$",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "9593a1a1-0d78-4b1f-a37c-813e9c6caef8",
+    "spec": "G4-x12",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A security firm designs an electronic fence around a perimeter shaped as a convex polygon. To monitor the area, laser beams are installed connecting every non-adjacent pair of sensor posts situated at the vertices of the polygon. If the sum of all interior angles of this polygon is $1260^\\circ$, how many laser beams are installed?",
+    "options": [
+      "27",
+      "36",
+      "45",
+      "54"
+    ],
+    "answer": "27",
+    "solution": "1. The sum of the interior angles of an $n$-sided convex polygon is given by $(n - 2) \\times 180^\\circ$.\n2. Given $(n - 2) \\times 180^\\circ = 1260^\\circ$, we have $n - 2 = \\frac{1260}{180} = 7$, which gives $n = 9$ vertices.\n3. Laser beams are installed connecting non-adjacent vertices, which corresponds precisely to the diagonals of the polygon.\n4. The number of diagonals of an $n$-gon is $\\frac{n(n - 3)}{2}$. For $n = 9$, this is $\\frac{9 \\times 6}{2} = 27$.\n5. Therefore, the number of laser beams installed is 27.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "36",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "1db94639-967e-42bb-a733-2f1a6075061c",
+    "spec": "G4-x11",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "The interior angles of a convex polygon form an arithmetic progression. The smallest interior angle is $120^\\circ$ and the common difference is $5^\\circ$. Find the number of diagonals in this polygon.",
+    "options": null,
+    "answer": "27",
+    "solution": "1. Let $n$ be the number of sides of the polygon.\n2. The sum of the interior angles of an $n$-sided convex polygon is $(n - 2) \\times 180^\\circ$.\n3. Since the interior angles form an arithmetic progression with first term $a = 120^\\circ$ and common difference $d = 5^\\circ$, their sum is given by:\n$S_n = \\frac{n}{2} [2(120) + (n - 1)5] = \\frac{n}{2} (235 + 5n)$.\n4. Equating the two expressions for the sum:\n$\\frac{n}{2} (235 + 5n) = (n - 2) \\times 180$\n$n(47 + n) = (n - 2) \\times 72$\n$n^2 + 47n = 72n - 144$\n$n^2 - 25n + 144 = 0$\n$(n - 9)(n - 16) = 0$.\n5. If $n = 16$, the largest interior angle would be $a_{16} = 120 + 15 \\times 5 = 195^\\circ > 180^\\circ$, which is impossible for a convex polygon. Thus, $n = 9$.\n6. The number of diagonals in an $n$-sided polygon is $\\frac{n(n - 3)}{2}$. For $n = 9$:\nNumber of diagonals = $\\frac{9 \\times 6}{2} = 27$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e0b066d1-5954-442a-b5b6-104dae41b655",
+    "spec": "G3-x4",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a cyclic quadrilateral $ABCD$, $\\angle A = (2x + 10)^\\circ$ and $\\angle C = (3x - 15)^\\circ$. If the measure of $\\angle B$ is twice that of $\\angle D$, what is the measure of the largest interior angle of the quadrilateral?",
+    "options": [
+      "84°",
+      "120°",
+      "105°",
+      "130°"
+    ],
+    "answer": "120°",
+    "solution": "1. Opposite angles of a cyclic quadrilateral sum to $180^\\circ$.\n2. For angles $A$ and $C$: $(2x + 10)^\\circ + (3x - 15)^\\circ = 180^\\circ \\implies 5x - 5 = 180 \\implies 5x = 185 \\implies x = 37$.\n3. Then, $\\angle A = 2(37) + 10 = 84^\\circ$ and $\\angle C = 180^\\circ - 84^\\circ = 96^\\circ$.\n4. For angles $B$ and $D$, we are given $\\angle B = 2\\angle D$ and $\\angle B + \\angle D = 180^\\circ$.\n5. Thus, $3\\angle D = 180^\\circ \\implies \\angle D = 60^\\circ$, which gives $\\angle B = 120^\\circ$.\n6. The four angles are $84^\\circ, 120^\\circ, 96^\\circ,$ and $60^\\circ$. The largest angle is $120^\\circ$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL",
+    "distractor_misconceptions": [
+      {
+        "option": "130°",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      }
+    ]
+  },
+  {
+    "id": "5fd58034-dcee-427d-b44a-7955721c9252",
+    "spec": "G4-x14",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "The side of a rhombus is $25\\text{ cm}$ and the sum of the lengths of its diagonals is $62\\text{ cm}$. Find the area of the rhombus (in $\\text{cm}^2$).",
+    "options": null,
+    "answer": "336",
+    "solution": "1. Let the diagonals of the rhombus be $d_1$ and $d_2$, and its side length be $a = 25\\text{ cm}$.\n2. The diagonals of a rhombus bisect each other at right angles, so $(\\frac{d_1}{2})^2 + (\\frac{d_2}{2})^2 = a^2$, which simplifies to $d_1^2 + d_2^2 = 4a^2 = 4 \\times 25^2 = 2500$.\n3. We are given $d_1 + d_2 = 62$. Squaring both sides gives $(d_1 + d_2)^2 = d_1^2 + d_2^2 + 2d_1 d_2 = 62^2 = 3844$.\n4. Substituting $d_1^2 + d_2^2 = 2500$: $2500 + 2d_1 d_2 = 3844 \\implies 2d_1 d_2 = 1344 \\implies d_1 d_2 = 672$.\n5. The area of the rhombus is given by $\\frac{1}{2} d_1 d_2 = \\frac{1}{2} \\times 672 = 336\\text{ cm}^2$.\n\nFinal Answer: 336",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c82899e1-d588-4746-823d-e0f6925756fa",
+    "spec": "G3-x16",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a cyclic quadrilateral $ABCD$, the measures of the angles in degrees are given by $\\angle A = 2x^2 - 10^\\circ$, $\\angle B = 3y + 20^\\circ$, $\\angle C = 5x + 10^\\circ$, and $\\angle D = 4y - 15^\\circ$, where $x$ and $y$ are real numbers. How many pairs of real numbers $(x, y)$ yield a non-degenerate convex quadrilateral $ABCD$?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "1",
+    "solution": "1. In a cyclic quadrilateral, opposite angles are supplementary: $\\angle A + \\angle C = 180^\\circ$ and $\\angle B + \\angle D = 180^\\circ$.\n2. For angles $B$ and $D$: $(3y + 20^\\circ) + (4y - 15^\\circ) = 180^\\circ \\implies 7y + 5 = 180 \\implies 7y = 175 \\implies y = 25$. Then $\\angle B = 3(25) + 20 = 95^\\circ$ and $\\angle D = 4(25) - 15 = 85^\\circ$, which are strictly between $0^\\circ$ and $180^\\circ$.\n3. For angles $A$ and $C$: $(2x^2 - 10) + (5x + 10) = 180 \\implies 2x^2 + 5x - 180 = 0$. Factoring the quadratic: $(2x - 15)(x + 12) = 0$, giving $x = 7.5$ or $x = -12$.\n4. Check validity of angle measures ($0^\\circ < \\angle A, \\angle C < 180^\\circ$):\n- If $x = 7.5$: $\\angle A = 2(7.5)^2 - 10 = 112.5 - 10 = 102.5^\\circ$ and $\\angle C = 5(7.5) + 10 = 47.5^\\circ$. Both are strictly positive and less than $180^\\circ$, so $x = 7.5$ is valid.\n- If $x = -12$: $\\angle C = 5(-12) + 10 = -50^\\circ < 0^\\circ$, which is invalid for a quadrilateral.\n5. Therefore, there is exactly $1$ valid pair $(x, y) = (7.5, 25)$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL",
+    "distractor_misconceptions": [
+      {
+        "option": "0",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      }
+    ]
+  },
+  {
+    "id": "d3826bc9-7955-4715-b4db-f446a718f988",
+    "spec": "G3-x18",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "Points $A_0, A_1, A_2, \\dots, A_6$ are arranged in clockwise order on the circumference of a circle with centre $O$. The lengths of the consecutive arcs $A_0 A_1, A_1 A_2, \\dots, A_5 A_6$ form an arithmetic progression such that the central angle subtended by arc $A_k A_{k+1}$ is $\\theta_k = (10 + 4k)^\\circ$ for each $k \\in \\{0, 1, 2, 3, 4, 5\\}$. A point $P$ is chosen on the remaining minor arc $A_6 A_0$. If line segments are drawn from $P$ to each of the points $A_0, A_1, \\dots, A_6$, let $\\alpha_k = \\angle A_k P A_{k+1}$ for $0 \\le k \\le 5$. What is the value of $\\sum_{k=0}^{5} \\alpha_k$?",
+    "options": [
+      "$60^\\circ$",
+      "$120^\\circ$",
+      "$140^\\circ$",
+      "$240^\\circ$"
+    ],
+    "answer": "$60^\\circ$",
+    "solution": "1. The central angle subtended by each consecutive arc $A_k A_{k+1}$ is $\\theta_k = (10 + 4k)^\\circ$ for $k = 0, 1, \\dots, 5$.\n2. The total central angle subtended by the major arc $A_0 A_6$ spanning through points $A_1, A_2, \\dots, A_5$ is $\\sum_{k=0}^{5} \\theta_k = \\sum_{k=0}^{5} (10 + 4k) = 6 \\times 10 + 4 \\times \\frac{5 \\times 6}{2} = 60 + 60 = 120^\\circ$.\n3. Since point $P$ lies on the minor arc $A_6 A_0$, each angle $\\alpha_k = \\angle A_k P A_{k+1}$ is an inscribed angle subtended by the arc $A_k A_{k+1}$.\n4. By the inscribed angle theorem, an angle subtended by an arc at the circumference is half the angle subtended by the same arc at the centre: $\\alpha_k = \\frac{1}{2} \\theta_k$.\n5. Therefore, $\\sum_{k=0}^{5} \\alpha_k = \\frac{1}{2} \\sum_{k=0}^{5} \\theta_k = \\frac{1}{2} \\times 120^\\circ = 60^\\circ$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "distractor_misconceptions": [
+      {
+        "option": "$120^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "$240^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "cbb6670c-6791-4651-b8f8-5987ba6de086",
+    "spec": "G4-x17",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "The ratio of the number of sides of two regular polygons is $3 : 4$, and the ratio of the measures of their interior angles is $8 : 9$. If the polygon with more sides has $N$ diagonals, find the value of $N$.",
+    "options": null,
+    "answer": "20",
+    "solution": "1. Let the number of sides of the two regular polygons be $3k$ and $4k$, where $k \\ge 1$ is an integer.\n2. The interior angle of a regular polygon with $n$ sides is given by $\\frac{(n-2) \\times 180^\\circ}{n}$.\n3. The ratio of their interior angles is:\n$\\frac{\\frac{3k - 2}{3k}}{\\frac{4k - 2}{4k}} = \\frac{8}{9}$\n$\\frac{4(3k - 2)}{3(4k - 2)} = \\frac{8}{9}$\n$\\frac{3k - 2}{4k - 2} = \\frac{8}{9} \\times \\frac{3}{4} = \\frac{2}{3}$\n4. Cross-multiplying gives:\n$3(3k - 2) = 2(4k - 2)$\n$9k - 6 = 8k - 4 \\implies k = 2$.\n5. Therefore, the number of sides of the larger polygon is $4k = 4(2) = 8$.\n6. The number of diagonals $N$ in an $n$-sided polygon is $\\frac{n(n-3)}{2}$. For $n = 8$:\n$N = \\frac{8 \\times (8 - 3)}{2} = \\frac{8 \\times 5}{2} = 20$.\n7. The final answer is 20.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "2a0df4c4-70fb-4c4b-b924-9a8adf1b0f52",
+    "spec": "G4-x8",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "Two regular polygons, $A$ and $B$, have their number of sides in the ratio $1 : 2$. If each interior angle of polygon $B$ exceeds each interior angle of polygon $A$ by $15^\\circ$, find the total number of diagonals of polygon $B$.",
+    "options": null,
+    "answer": "252",
+    "solution": "1. Let the number of sides of polygon $A$ be $n$ and that of polygon $B$ be $2n$.\n2. The exterior angle of polygon $A$ is $\\frac{360^\\circ}{n}$ and that of polygon $B$ is $\\frac{360^\\circ}{2n} = \\frac{180^\\circ}{n}$.\n3. The difference between interior angles equals the difference between exterior angles in reverse order:\n$\\frac{360^\\circ}{n} - \\frac{180^\\circ}{n} = 15^\\circ$\n$\\frac{180^\\circ}{n} = 15^\\circ \\implies n = 12$.\n4. Thus, polygon $B$ has $2n = 24$ sides.\n5. The total number of diagonals in a polygon with $m$ sides is given by $\\frac{m(m - 3)}{2}$.\nFor $m = 24$, the number of diagonals is $\\frac{24 \\times (24 - 3)}{2} = \\frac{24 \\times 21}{2} = 12 \\times 21 = 252$.\n(Note: Using $\\binom{24}{2} = 276$ mistakenly includes the 24 sides as diagonals.)",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "027bef3a-8cee-4fda-a79f-de7531002956",
+    "spec": "G4-x18",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A plot of land is divided into two separate sections: Section A is a rectangle with length $24\\text{ m}$ and width $14\\text{ m}$, while Section B is a rhombus whose perimeter is $100\\text{ m}$ and one of its diagonals is $30\\text{ m}$. By how many square metres does the area of Section A exceed or fall short of the area of Section B?",
+    "options": [
+      "Section A is larger by $264\\text{ sq m}$",
+      "Section B is larger by $264\\text{ sq m}$",
+      "Section B is larger by $864\\text{ sq m}$",
+      "Section A is larger by $864\\text{ sq m}$"
+    ],
+    "answer": "Section B is larger by $264\\text{ sq m}$",
+    "solution": "1. Find the area of Section A: $\\text{Area}_A = 24 \\times 14 = 336\\text{ sq m}$.\n2. For Section B (the rhombus), the perimeter is $100\\text{ m}$, so each side $s = \\frac{100}{4} = 25\\text{ m}$.\n3. The diagonals of a rhombus bisect each other at right angles. Given one diagonal $d_1 = 30\\text{ m}$, half of it is $15\\text{ m}$.\n4. Using Pythagoras' theorem on one of the four right-angled triangles: $(\\frac{d_2}{2})^2 + 15^2 = 25^2 \\implies (\\frac{d_2}{2})^2 = 625 - 225 = 400 \\implies \\frac{d_2}{2} = 20\\text{ m}$, so $d_2 = 40\\text{ m}$.\n5. The area of the rhombus is $\\text{Area}_B = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 30 \\times 40 = 600\\text{ sq m}$.\n6. Comparing the two areas: $\\text{Area}_B - \\text{Area}_A = 600 - 336 = 264\\text{ sq m}$, so Section B is larger by $264\\text{ sq m}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": [
+      {
+        "option": "Section B is larger by $864\\text{ sq m}$",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "4f008cab-24c7-496b-b36a-89eb80f4e06d",
+    "spec": "G4-x19",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "In a convex polygon, the sum of all interior angles is $1260^\\circ$. What is the total number of diagonals that can be drawn in this polygon?",
+    "options": [
+      "27",
+      "36",
+      "54",
+      "20"
+    ],
+    "answer": "27",
+    "solution": "1. The sum of the interior angles of an $n$-sided convex polygon is given by $(n - 2) \\times 180^\\circ$.\n2. Set $(n - 2) \\times 180^\\circ = 1260^\\circ$, which gives $n - 2 = \\frac{1260}{180} = 7$, so $n = 9$.\n3. The number of diagonals of an $n$-sided polygon is $\\frac{n(n - 3)}{2}$.\n4. Substituting $n = 9$, the number of diagonals is $\\frac{9 \\times 6}{2} = 27$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "36",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "c39ebade-e6d7-4dfd-9b2e-c5d223a6865f",
+    "spec": "G4-x5",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "The interior angles of a convex polygon with $n$ sides form an arithmetic progression. The smallest interior angle is $120^\\circ$ and the common difference is $5^\\circ$. Find the value of $n$.",
+    "options": null,
+    "answer": "9",
+    "solution": "1. The sum of interior angles of an $n$-sided convex polygon is given by $S_n = (n - 2) \\times 180^\\circ$.\n2. The angles form an arithmetic progression with first term $a = 120^\\circ$ and common difference $d = 5^\\circ$. The sum of an AP of $n$ terms is $S_n = \\frac{n}{2} [2a + (n - 1)d] = \\frac{n}{2} [240 + 5(n - 1)] = \\frac{n}{2} (5n + 235)$.\n3. Equating the two expressions for the sum:\n$\\frac{n}{2} (5n + 235) = 180(n - 2)$\n$5n^2 + 235n = 360n - 720$\n$5n^2 - 125n + 720 = 0$\n$n^2 - 25n + 144 = 0$\n4. Factoring the quadratic equation gives $(n - 9)(n - 16) = 0$, which yields $n = 9$ or $n = 16$.\n5. For a convex polygon, each interior angle must be less than $180^\\circ$. If $n = 16$, the largest angle is $a_{16} = 120^\\circ + 15 \\times 5^\\circ = 195^\\circ > 180^\\circ$, which is not possible for a convex polygon. For $n = 9$, the largest angle is $a_9 = 120^\\circ + 8 \\times 5^\\circ = 160^\\circ < 180^\\circ$.\n6. Therefore, $n = 9$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "6386afc1-1a09-4a49-aeb1-68226a71e164",
+    "spec": "G4-x20",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "In a regular polygon, the ratio of an exterior angle to an interior angle is $1 : 5$. Find the total number of diagonals that can be drawn in this polygon.",
+    "options": null,
+    "answer": "54",
+    "solution": "1. Let the exterior angle be $x$ and the interior angle be $5x$.\n2. Since the interior and exterior angles are supplementary, $x + 5x = 180^\\circ \\implies 6x = 180^\\circ \\implies x = 30^\\circ$.\n3. The number of sides $n$ of a regular polygon with exterior angle $30^\\circ$ is $n = \\frac{360^\\circ}{30^\\circ} = 12$.\n4. The total number of diagonals in an $n$-gon is given by $\\frac{n(n - 3)}{2}$. For $n = 12$, this is $\\frac{12 \\times (12 - 3)}{2} = \\frac{12 \\times 9}{2} = 54$.\n\nFinal Answer: 54",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "13ea0e33-7663-4d54-aa3c-c07e1c83d0eb",
+    "spec": "G2-x23",
+    "concept_id": "G2",
+    "type": "TITA",
+    "stem": "In $\\triangle ABC$, the side lengths are $AB = AC = 25\\text{ cm}$ and $BC = 41\\text{ cm}$. A point $D$ is chosen on the side $BC$ such that $CD = 25\\text{ cm}$. Find the length of the segment $AD$ in $\\text{ cm}$.",
+    "options": null,
+    "answer": "15",
+    "solution": "1. Using the Law of Cosines in $\\triangle ABC$ for $\\angle C$:\n$$\\cos C = \\frac{AC^2 + BC^2 - AB^2}{2 \\cdot AC \\cdot BC} = \\frac{25^2 + 41^2 - 25^2}{2 \\times 25 \\times 41} = \\frac{41^2}{2 \\times 25 \\times 41} = \\frac{41}{50}$$\n\n2. Now apply the Law of Cosines in $\\triangle ACD$, where $AC = 25\\text{ cm}$ and $CD = 25\\text{ cm}$:\n$$AD^2 = AC^2 + CD^2 - 2 \\cdot AC \\cdot CD \\cos C$$\n$$AD^2 = 25^2 + 25^2 - 2(25)(25)\\left(\\frac{41}{50}\\right)$$\n$$AD^2 = 625 + 625 - 1250 \\times \\frac{41}{50} = 1250 - 1025 = 225$$\n\n3. Taking the square root, $AD = \\sqrt{225} = 15\\text{ cm}$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "880cb5ce-e2ca-4a7a-8192-c88e855009e2",
+    "spec": "G3-x17",
+    "concept_id": "G3",
+    "type": "TITA",
+    "stem": "From an external point $P$, two tangents $PA$ and $PB$ are drawn to a circle with centre $O$ and radius $15\\text{ cm}$, touching the circle at $A$ and $B$ respectively. The chord $AB$ intersects the line segment $OP$ at point $M$. If $PM = 16\\text{ cm}$, find the length of the chord $AB$ (in $\\text{cm}$).",
+    "options": null,
+    "answer": "24",
+    "solution": "1. Since $PA$ is tangent to the circle at $A$, radius $OA \\perp PA$, making $\\triangle OAP$ a right-angled triangle at $A$.\n2. By symmetry of tangents from an external point, $OP$ is the perpendicular bisector of chord $AB$. Therefore, $AM \\perp OP$ and $AB = 2 \\times AM$.\n3. In right-angled $\\triangle OAP$ with altitude $AM$ to the hypotenuse $OP$, we have $OA^2 = OM \\times OP$.\n4. Let $OM = x\\text{ cm}$. Since $PM = 16\\text{ cm}$, $OP = x + 16$. Given $OA = 15\\text{ cm}$:\n$15^2 = x(x + 16) \\implies x^2 + 16x - 225 = 0$\n5. Factoring the quadratic equation gives $(x + 25)(x - 9) = 0$. Since length must be positive, $x = OM = 9\\text{ cm}$.\n6. In right-angled $\\triangle OMA$:\n$AM = \\sqrt{OA^2 - OM^2} = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12\\text{ cm}$.\n7. Therefore, the length of chord $AB = 2 \\times AM = 2 \\times 12 = 24\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "742b1a08-9d4d-4e57-8081-b9817c35bcbc",
+    "spec": "G4-x6",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A rhombus $ABCD$ has a perimeter of $52\\text{ cm}$. The lengths of its diagonals $d_1$ and $d_2$ are integers (in cm) such that $d_1 > d_2$. What is the maximum possible area (in $\\text{cm}^2$) of the rhombus?",
+    "options": [
+      "120",
+      "168",
+      "240",
+      "336"
+    ],
+    "answer": "120",
+    "solution": "1. Let side length of the rhombus be $s$. The perimeter is $4s = 52\\text{ cm}$, so $s = 13\\text{ cm}$.\n2. The diagonals of a rhombus are perpendicular bisectors of each other. Thus, $(\\frac{d_1}{2})^2 + (\\frac{d_2}{2})^2 = s^2 = 13^2 = 169$, which gives $d_1^2 + d_2^2 = 4 \\times 169 = 676$.\n3. Since $d_1$ and $d_2$ are integers and $d_1 > d_2$, the half-diagonals $\\frac{d_1}{2}$ and $\\frac{d_2}{2}$ can either be integers or half-integers. For $d_1^2 + d_2^2 = 676$, possible integer pairs $(d_1, d_2)$ with $d_1 > d_2$ are:\n- If $\\frac{d_1}{2}, \\frac{d_2}{2}$ are integers: $x^2 + y^2 = 169 \\implies \\{x, y\\} = \\{12, 5\\}$, so $d_1 = 24, d_2 = 10$.\n- Check if there are other integer solutions to $d_1^2 + d_2^2 = 676$: Since $676 = 26^2$, primitive Pythagorean triples for hypotenuse dividing 26 are $(5, 12, 13) \\implies (10, 24, 26)$. Thus the only non-zero integer solution with $d_1 > d_2$ is $(24, 10)$.\n4. The area of the rhombus is $\\frac{1}{2} d_1 d_2 = \\frac{1}{2} \\times 24 \\times 10 = 120\\text{ cm}^2$.\n5. Hence, the maximum possible area is $120\\text{ cm}^2$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": [
+      {
+        "option": "240",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "7022ed31-2637-4cb6-a5e2-1654bfb141ac",
+    "spec": "G4-x24",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "In a regular polygon, the measure of each interior angle is five times the measure of each exterior angle. What is the total number of diagonals that can be drawn in this polygon?",
+    "options": [
+      "54",
+      "66",
+      "48",
+      "60"
+    ],
+    "answer": "54",
+    "solution": "1. Let the measure of each exterior angle be $x$. Then each interior angle is $5x$.\n2. Since the interior and exterior angles at any vertex sum to $180^\\circ$, we have $x + 5x = 180^\\circ \\implies 6x = 180^\\circ \\implies x = 30^\\circ$.\n3. The number of sides $n$ of the regular polygon is $\\frac{360^\\circ}{x} = \\frac{360^\\circ}{30^\\circ} = 12$.\n4. The total number of diagonals of an $n$-sided polygon is given by $\\frac{n(n - 3)}{2} = \\frac{12 \\times 9}{2} = 54$.\n5. Hence, the correct answer is 54.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "66",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "336ef1a0-f011-4ef9-b856-da585bfb88e6",
+    "spec": "G4-x22",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A tile manufacturer designs a rhombus-shaped decorative tile. The perimeter of the tile is $68\\text{ cm}$, and the difference between the lengths of its two diagonals is $14\\text{ cm}$. What is the area of the tile (in $\\text{cm}^2$)?",
+    "options": [
+      "120",
+      "240",
+      "480",
+      "289"
+    ],
+    "answer": "240",
+    "solution": "1. Let the side length of the rhombus be $s$, and the lengths of the diagonals be $d_1$ and $d_2$ with $d_1 > d_2$.\n2. The perimeter is $4s = 68\\text{ cm}$, so $s = 17\\text{ cm}$.\n3. The diagonals of a rhombus are perpendicular bisectors of each other, satisfying $\\left(\\frac{d_1}{2}\\right)^2 + \\left(\\frac{d_2}{2}\\right)^2 = s^2$, which simplifies to $d_1^2 + d_2^2 = 4s^2 = 4 \\times 17^2 = 4 \\times 289 = 1156$.\n4. We are given $d_1 - d_2 = 14$. Squaring both sides: $(d_1 - d_2)^2 = d_1^2 + d_2^2 - 2d_1 d_2 = 14^2 = 196$.\n5. Substitute $d_1^2 + d_2^2 = 1156$: $1156 - 2d_1 d_2 = 196 \\implies 2d_1 d_2 = 960 \\implies d_1 d_2 = 480$.\n6. The area of the rhombus is $\\frac{1}{2} d_1 d_2 = \\frac{1}{2} \\times 480 = 240\\text{ cm}^2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": [
+      {
+        "option": "480",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "c7e982b4-4879-433a-a69c-408e48adf567",
+    "spec": "G4-x25",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "A sequence of convex polygons $P_1, P_2, P_3, \\dots$ is constructed such that polygon $P_k$ has $(k + 2)$ sides. An architect wants to place non-overlapping straight light strips along all the diagonals of polygon $P_{10}$. How many light strips are needed for $P_{10}$?",
+    "options": [
+      "54",
+      "66",
+      "108",
+      "44"
+    ],
+    "answer": "54",
+    "solution": "1. For $k = 10$, the number of sides $n$ of polygon $P_{10}$ is $10 + 2 = 12$.\n2. The number of diagonals in an $n$-sided convex polygon is given by $\\frac{n(n - 3)}{2}$.\n3. Substituting $n = 12$ gives $\\frac{12 \\times (12 - 3)}{2} = \\frac{12 \\times 9}{2} = 54$.\n4. Thus, 54 light strips are needed.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "66",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "55488ca7-3f15-4a65-8c08-ea357ffb3bd8",
+    "spec": "G4-x26",
+    "concept_id": "G4",
+    "type": "TITA",
+    "stem": "The sum of the lengths of the two diagonals of a rhombus is $40\\text{ cm}$. What is the maximum possible area of the rhombus in $\\text{cm}^2$?",
+    "options": null,
+    "answer": "200",
+    "solution": "1. Let the lengths of the diagonals of the rhombus be $d_1$ and $d_2$.\n2. We are given $d_1 + d_2 = 40\\text{ cm}$.\n3. The area of a rhombus is given by $\\text{Area} = \\frac{1}{2} d_1 d_2$.\n4. By the AM-GM inequality, the product $d_1 d_2$ is maximized when $d_1 = d_2 = \\frac{40}{2} = 20\\text{ cm}$.\n5. Thus, the maximum product is $d_1 d_2 = 20 \\times 20 = 400$.\n6. Therefore, the maximum area is $\\frac{1}{2} \\times 400 = 200\\text{ cm}^2$.\n\nFinal Answer: 200",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_RHOMBUS_NO_HALF",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "d7afcf2c-6f1a-4e66-94ed-dd4e31f8e641",
+    "spec": "G5-x0",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A closed storage drum in the shape of a right circular cylinder has a diameter of $14\\text{ m}$ and a height of $8\\text{ m}$. The entire outer surface of the drum is to be painted at the rate of ₹$25$ per square metre. Taking $\\pi = \\frac{22}{7}$, what is the total cost of painting the drum?",
+    "options": [
+      "₹$8,800$",
+      "₹$12,650$",
+      "₹$16,500$",
+      "₹$17,600$"
+    ],
+    "answer": "₹$16,500$",
+    "solution": "1. The radius of the cylinder is $r = \\frac{14}{2} = 7\\text{ m}$ and the height is $h = 8\\text{ m}$.\n2. Since the drum is closed, the total surface area to be painted includes the curved surface and both circular ends: $\\text{TSA} = 2\\pi r(r + h) = 2 \\times \\frac{22}{7} \\times 7 \\times (7 + 8) = 44 \\times 15 = 660\\text{ m}^2$.\n3. The total cost of painting at ₹$25$ per $\\text{m}^2$ is $660 \\times 25 = ₹16,500$.\nHence, the correct answer is ₹$16,500$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_CSA_VS_TSA",
+    "distractor_misconceptions": [
+      {
+        "option": "₹$8,800$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "16c04168-91a4-4715-80bb-699e078aea69",
+    "spec": "G5-x4",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A conical tent is to be set up such that the radius of its circular base is $10\\text{ m}$ and the length of the canvas running along its sloping side from the apex to the ground is $26\\text{ m}$. What is the volume of air enclosed inside the tent?",
+    "options": [
+      "$800\\pi\\text{ m}^3$",
+      "$\\frac{2600\\pi}{3}\\text{ m}^3$",
+      "$2400\\pi\\text{ m}^3$",
+      "$2600\\pi\\text{ m}^3$"
+    ],
+    "answer": "$800\\pi\\text{ m}^3$",
+    "solution": "1. The base radius of the cone is $r = 10\\text{ m}$ and the slant height is $l = 26\\text{ m}$.\n2. The vertical height $h$ is found using Pythagoras' theorem: $h = \\sqrt{l^2 - r^2} = \\sqrt{26^2 - 10^2} = \\sqrt{676 - 100} = \\sqrt{576} = 24\\text{ m}$.\n3. The volume of air enclosed in the cone is given by $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (10^2)(24) = 800\\pi\\text{ m}^3$.\n4. Hence, the correct answer is $800\\pi\\text{ m}^3$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_SLANT_AS_HEIGHT",
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{2600\\pi}{3}\\text{ m}^3$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "3ab98280-62a3-49dd-b953-6944610942b8",
+    "spec": "G5-x7",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone $C$ has base radius $r = 6\\text{ cm}$ and slant height $l = 10\\text{ cm}$. A smaller cone is formed by scaling down all linear dimensions of $C$ by a factor of $\\frac{1}{2}$. If $V$ denotes the volume (in $\\text{cm}^3$) and $A$ denotes the total surface area (in $\\text{cm}^2$) of this smaller cone, which of the following is true?",
+    "options": [
+      "$V = 12\\pi$ and $A = 24\\pi$",
+      "$V = 12\\pi$ and $A = 36\\pi$",
+      "$V = 15\\pi$ and $A = 24\\pi$",
+      "$V = 48\\pi$ and $A = 48\\pi$"
+    ],
+    "answer": "$V = 12\\pi$ and $A = 24\\pi$",
+    "solution": "1. For the original cone $C$, radius $R = 6\\text{ cm}$ and slant height $L = 10\\text{ cm}$. Its vertical height is $H = \\sqrt{10^2 - 6^2} = 8\\text{ cm}$.\n2. The smaller cone has all linear dimensions scaled by $\\frac{1}{2}$, so its radius is $r = 3\\text{ cm}$, vertical height is $h = 4\\text{ cm}$, and slant height is $l = 5\\text{ cm}$.\n3. The volume of the smaller cone is $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (3^2)(4) = 12\\pi\\text{ cm}^3$.\n4. The total surface area of the smaller cone is $A = \\pi r l + \\pi r^2 = \\pi (3)(5) + \\pi (3^2) = 15\\pi + 9\\pi = 24\\pi\\text{ cm}^2$.\n5. Therefore, $V = 12\\pi$ and $A = 24\\pi$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$V = 12\\pi$ and $A = 36\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      },
+      {
+        "option": "$V = 15\\pi$ and $A = 24\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$V = 48\\pi$ and $A = 48\\pi$",
+        "misconception_id": "G5_VOLUME_SCALES_LINEARLY"
+      }
+    ]
+  },
+  {
+    "id": "7f6aa446-ef86-4304-8841-7add44446e1f",
+    "spec": "G5-x10",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "An inverted conical party hat made of paper has a base circumference of $10\\pi\\text{ cm}$ and a slant height of $13\\text{ cm}$. Find the internal volume of air contained within the hat (in $\\text{cm}^3$).",
+    "options": [
+      "$100\\pi$",
+      "$\\frac{325\\pi}{3}$",
+      "$120\\pi$",
+      "$300\\pi$"
+    ],
+    "answer": "$100\\pi$",
+    "solution": "1. Find the base radius $r$: $2\\pi r = 10\\pi \\implies r = 5\\text{ cm}$.\n2. Find the vertical height $h$ using the Pythagorean theorem with slant height $l = 13\\text{ cm}$: $h = \\sqrt{l^2 - r^2} = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}$.\n3. Calculate the volume: $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (5^2)(12) = 100\\pi\\text{ cm}^3$.\n4. The correct volume is $100\\pi$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_SLANT_AS_HEIGHT",
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{325\\pi}{3}$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "26ea8af3-c34f-40b9-9ed6-69be09b763a7",
+    "spec": "G5-x3",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A right circular cylinder is to be inscribed inside a solid right circular cone of base radius $12\\text{ cm}$ and slant height $20\\text{ cm}$, such that the base of the cylinder lies on the base of the cone. What is the maximum possible curved surface area (in $\\text{cm}^2$) of the cylinder?",
+    "options": [
+      "$96\\pi$",
+      "$120\\pi$",
+      "$168\\pi$",
+      "$192\\pi$"
+    ],
+    "answer": "$96\\pi$",
+    "solution": "1. Find the vertical height $H$ of the cone using the Pythagorean theorem:\n$H = \\sqrt{20^2 - 12^2} = \\sqrt{400 - 144} = \\sqrt{256} = 16\\text{ cm}$.\n\n2. Let the inscribed cylinder have radius $r$ and height $h$. By similar triangles:\n$\\frac{H - h}{H} = \\frac{r}{R} \\implies h = 16\\left(1 - \\frac{r}{12}\\right)$.\n\n3. The curved surface area ($S$) of the cylinder is:\n$S = 2\\pi r h = 2\\pi r \\times 16\\left(1 - \\frac{r}{12}\\right) = 32\\pi \\left(r - \\frac{r^2}{12}\\right)$.\n\n4. To maximize $f(r) = r - \\frac{r^2}{12}$, take the derivative and set to zero:\n$1 - \\frac{r}{6} = 0 \\implies r = 6\\text{ cm}$.\n\n5. At $r = 6\\text{ cm}$, the height is $h = 16\\left(1 - \\frac{6}{12}\\right) = 8\\text{ cm}$.\n\n6. The maximum curved surface area is:\n$S_{\\text{max}} = 2\\pi (6)(8) = 96\\pi\\text{ cm}^2$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$120\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$168\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "8d42e5cb-b691-4a1f-ae71-7de38964340a",
+    "spec": "G5-x8",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid metallic sphere of radius $R$ is recast into a set of identical smaller solid spheres, each of radius $r$. The total surface area of all the smaller spheres combined is $4$ times the surface area of the original sphere. If the total volume of all the smaller spheres is $864\\text{ cm}^3$, find the volume of each smaller sphere in $\\text{cm}^3$.",
+    "options": null,
+    "answer": "13.5",
+    "solution": "1. Let $n$ be the number of smaller spheres. Since the original sphere is recast into $n$ smaller spheres without loss of metal, the total volume remains constant: $n \\times \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi R^3 = 864\\text{ cm}^3$.\n2. The ratio of volumes gives $n \\left(\\frac{r}{R}\\right)^3 = 1$, or $\\frac{R}{r} = n^{1/3}$.\n3. The total surface area of the $n$ smaller spheres is $n \\times 4\\pi r^2$, and the surface area of the original sphere is $4\\pi R^2$. We are given that $\\frac{n \\times 4\\pi r^2}{4\\pi R^2} = 4$, which simplifies to $n \\left(\\frac{r}{R}\\right)^2 = 4$.\n4. Substituting $\\frac{r}{R} = n^{-1/3}$ into the surface area equation gives $n \\times n^{-2/3} = 4 \\implies n^{1/3} = 4 \\implies n = 4^3 = 64$.\n5. Therefore, the volume of each smaller sphere is $\\frac{864}{n} = \\frac{864}{64} = 13.5\\text{ cm}^3$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_VOLUME_SCALES_LINEARLY",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "485a4314-0299-4047-ad33-81282f14d267",
+    "spec": "G5-x1",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone has a base radius of $6\\text{ cm}$ and a slant height of $10\\text{ cm}$. A hollow cylinder has the same base radius and the same height as the cone. Find the difference between the total surface area of the solid cone and the curved surface area of the hollow cylinder (in $\\text{cm}^2$).",
+    "options": [
+      "$0$",
+      "$36\\pi$",
+      "$96\\pi$",
+      "$60\\pi$"
+    ],
+    "answer": "$0$",
+    "solution": "1. For the cone, the base radius is $r = 6\\text{ cm}$ and the slant height is $l = 10\\text{ cm}$.\n2. The vertical height of the cone is $h = \\sqrt{l^2 - r^2} = \\sqrt{10^2 - 6^2} = \\sqrt{64} = 8\\text{ cm}$.\n3. The total surface area (TSA) of the solid cone is $\\pi r l + \\pi r^2 = \\pi(6)(10) + \\pi(6^2) = 60\\pi + 36\\pi = 96\\pi\\text{ cm}^2$.\n4. The cylinder has the same radius $r = 6\\text{ cm}$ and height $h = 8\\text{ cm}$.\n5. The curved surface area (CSA) of the cylinder is $2\\pi r h = 2\\pi(6)(8) = 96\\pi\\text{ cm}^2$.\n6. The difference between the two areas is $96\\pi - 96\\pi = 0\\text{ cm}^2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$36\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      },
+      {
+        "option": "$96\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      },
+      {
+        "option": "$60\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "5322d4f3-da11-4d93-8475-c8767957f769",
+    "spec": "G3-x6",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "Let $C$ be a circle with centre $O$. A distinct point $P$ is chosen on the circumference of $C$ such that $\\angle APB = \\theta$, where $A$ and $B$ are fixed points on $C$ that subtend an angle of $140^\\circ$ at the centre $O$. How many integer values of $\\theta$ (in degrees) are possible for different positions of $P$ on the circle (excluding $A$ and $B$)?",
+    "options": [
+      "1",
+      "2",
+      "70",
+      "140"
+    ],
+    "answer": "2",
+    "solution": "1. The points $A$ and $B$ divide the circle into two arcs: a major arc and a minor arc.\n2. The minor arc subtends a central angle of $140^\\circ$, so any point $P$ lying on the major arc subtends an inscribed angle of $\\theta = \\frac{140^\\circ}{2} = 70^\\circ$.\n3. The major arc subtends a central reflex angle of $360^\\circ - 140^\\circ = 220^\\circ$, so any point $P$ lying on the minor arc subtends an inscribed angle of $\\theta = \\frac{220^\\circ}{2} = 110^\\circ$ (or via cyclic quadrilateral properties, $180^\\circ - 70^\\circ = 110^\\circ$).\n4. Thus, as $P$ moves along the circle, $\\theta$ takes only two distinct values: $70^\\circ$ and $110^\\circ$, both of which are integers.\n5. Therefore, the number of possible integer values for $\\theta$ is 2.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G3_INSCRIBED_VS_CENTRAL",
+    "distractor_misconceptions": [
+      {
+        "option": "1",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "70",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      },
+      {
+        "option": "140",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "bd076075-b78f-41e5-b37d-f3cf4f24d74f",
+    "spec": "G5-x14",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid metallic sphere of radius $12\\text{ cm}$ is melted and recast into a certain number of identical smaller solid spheres. If the total surface area of all the smaller spheres combined is $3$ times the surface area of the original sphere, find the radius (in $\\text{cm}$) of each smaller sphere.",
+    "options": null,
+    "answer": "4",
+    "solution": "1. Let $R = 12\\text{ cm}$ be the radius of the original sphere, $r$ be the radius of each smaller sphere, and $n$ be the number of smaller spheres.\n2. Since the total volume is conserved during melting and recasting:\n$n \\times \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi R^3 \\implies n r^3 = R^3$.\n3. The total surface area of the smaller spheres is $3$ times that of the original sphere:\n$n \\times 4\\pi r^2 = 3 \\times 4\\pi R^2 \\implies n r^2 = 3 R^2$.\n4. Divide the volume equation $n r^3 = R^3$ by the surface area equation $n r^2 = 3 R^2$:\n$\\frac{n r^3}{n r^2} = \\frac{R^3}{3 R^2} \\implies r = \\frac{R}{3}$.\n5. Given $R = 12\\text{ cm}$, we have $r = \\frac{12}{3} = 4\\text{ cm}$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_VOLUME_SCALES_LINEARLY",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "0118402d-3728-4a2d-969e-1c7371f33f1e",
+    "spec": "G5-x15",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cylinder and a solid right circular cone have identical base radii of $5\\text{ cm}$. The height of the cylinder is $10\\text{ cm}$, while the slant height of the cone is $13\\text{ cm}$. What is the ratio of the total surface area of the cylinder to the total surface area of the cone?",
+    "options": [
+      "5 : 3",
+      "25 : 13",
+      "4 : 3",
+      "5 : 2"
+    ],
+    "answer": "5 : 3",
+    "solution": "1. For the cylinder, radius $r = 5\\text{ cm}$ and height $h_c = 10\\text{ cm}$.\\nTotal surface area of the cylinder $\\text{TSA}_{\\text{cyl}} = 2\\pi r(h_c + r) = 2\\pi \\times 5 \\times (10 + 5) = 150\\pi\\text{ cm}^2$.\\n\\n2. For the cone, radius $r = 5\\text{ cm}$ and slant height $l = 13\\text{ cm}$.\\nTotal surface area of the cone $\\text{TSA}_{\\text{cone}} = \\pi r(l + r) = \\pi \\times 5 \\times (13 + 5) = 90\\pi\\text{ cm}^2$.\\n\\n3. Ratio of their total surface areas is $\\frac{\\text{TSA}_{\\text{cyl}}}{\\text{TSA}_{\\text{cone}}} = \\frac{150\\pi}{90\\pi} = \\frac{15}{9} = \\frac{5}{3}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25 : 13",
+        "misconception_id": "G5_CSA_VS_TSA"
+      },
+      {
+        "option": "4 : 3",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "cc9a1d64-d0f5-465e-955d-f1c3472c4803",
+    "spec": "G4-x15",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "In an architectural mosaic, a sequence of convex polygons is constructed such that each polygon has one more side than the preceding one. The third polygon in the sequence has $10$ sides. How many diagonals can be drawn in the fourth polygon of this sequence?",
+    "options": [
+      "44",
+      "55",
+      "35",
+      "66"
+    ],
+    "answer": "44",
+    "solution": "1. The number of sides of the polygons form a sequence with a common difference of $1$.\n2. The third polygon has $10$ sides, so the fourth polygon has $n = 10 + 1 = 11$ sides.\n3. The number of diagonals in an $n$-sided convex polygon is given by the formula $\\frac{n(n - 3)}{2}$.\n4. Substituting $n = 11$: $\\frac{11 \\times (11 - 3)}{2} = \\frac{11 \\times 8}{2} = 44$.\n5. Therefore, the fourth polygon has $44$ diagonals.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "55",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "8e24360b-1871-4da9-be52-ba63f7b9a147",
+    "spec": "G5-x19",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A circus tent is in the shape of a right circular cone. The radius of the base is $15\\text{ m}$ and the slant height along the canvas is $25\\text{ m}$. The circus management wishes to estimate the volume of air enclosed inside the tent to arrange adequate cooling. What is the total volume of air enclosed inside the tent, in $\\text{m}^3$?",
+    "options": [
+      "$1500\\pi$",
+      "$1875\\pi$",
+      "$375\\pi$",
+      "$600\\pi$"
+    ],
+    "answer": "$1500\\pi$",
+    "solution": "1. The base radius of the conical tent is $r = 15\\text{ m}$ and the slant height is $l = 25\\text{ m}$.\n2. The vertical height $h$ is given by the Pythagorean relation $h = \\sqrt{l^2 - r^2} = \\sqrt{25^2 - 15^2} = \\sqrt{625 - 225} = \\sqrt{400} = 20\\text{ m}$.\n3. The volume of air enclosed in the cone is $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (15^2)(20) = \\frac{1}{3}\\pi (225)(20) = 1500\\pi\\text{ m}^3$.\n4. Hence, the correct answer is $1500\\pi$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$1875\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$375\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "77b0547d-9cf1-4360-b5d1-3b7272ac4bca",
+    "spec": "G3-x3",
+    "concept_id": "G3",
+    "type": "MCQ",
+    "stem": "In a circle with centre $O$, $AB$ is a diameter. Points $C$ and $D$ lie on the circle such that $C$ and $D$ lie on opposite sides of the diameter $AB$. Line segment $CD$ intersects diameter $AB$ at point $E$ inside the circle. The tangent to the circle at point $C$ intersects the extension of $AB$ (beyond $B$) at point $P$. If $\\angle APC = 32^\\circ$ and $\\angle BCD = 24^\\circ$, which of the following statements must be true?",
+    "options": [
+      "$\\angle ADC = 61^\\circ$",
+      "$\\angle ADC = 59^\\circ$",
+      "$\\angle ADC = 66^\\circ$",
+      "$\\angle ADC = 119^\\circ$"
+    ],
+    "answer": "$\\angle ADC = 61^\\circ$",
+    "solution": "1. In right-angled triangle $OCP$, $OC$ is a radius and $PC$ is tangent at $C$, so $\\angle OCP = 90^\\circ$.\n2. Since $\\angle APC = 32^\\circ$, we have $\\angle COP = 90^\\circ - 32^\\circ = 58^\\circ$.\n3. The central angle subtended by arc $BC$ is $\\angle BOC = \\angle COP = 58^\\circ$.\n4. Therefore, the angle subtended by arc $BC$ at point $A$ on the circumference is $\\angle BAC = \\frac{1}{2} \\times \\angle BOC = \\frac{58^\\circ}{2} = 29^\\circ$.\n5. Since $AB$ is a diameter, $\\angle ACB = 90^\\circ$. In right triangle $ABC$, $\\angle ABC = 90^\\circ - \\angle BAC = 90^\\circ - 29^\\circ = 61^\\circ$.\n6. Alternatively, $ADBC$ is a cyclic quadrilateral. Angle $\\angle ACD = \\angle ACB - \\angle BCD = 90^\\circ - 24^\\circ = 66^\\circ$ (or directly, the angle subtended by arc $AC$ at $D$ is $\\angle ADC = \\angle ABC = 61^\\circ$, since both subtend chord $AC$).\n7. Thus, $\\angle ADC = 61^\\circ$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\\angle ADC = 59^\\circ$",
+        "misconception_id": "G3_TANGENT_NO_RIGHT_ANGLE"
+      },
+      {
+        "option": "$\\angle ADC = 119^\\circ$",
+        "misconception_id": "G3_CYCLIC_OPPOSITE_EQUAL"
+      },
+      {
+        "option": "$\\angle ADC = 66^\\circ$",
+        "misconception_id": "G3_INSCRIBED_VS_CENTRAL"
+      }
+    ]
+  },
+  {
+    "id": "7a9c6872-2fc7-4538-9c9a-9008696a494a",
+    "spec": "G5-x20",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid metallic block in the shape of a cube has edge length $24\\text{ cm}$. It is melted down completely and recast into smaller identical solid cubes, each having an edge length of $6\\text{ cm}$. Assuming no loss of metal in the process, find the total number of smaller cubes obtained.",
+    "options": null,
+    "answer": "64",
+    "solution": "1. The volume of a cube with edge length $a$ is given by $V = a^3$.\n2. The volume of the original cube is $V_1 = 24^3 = 13824\\text{ cm}^3$.\n3. The volume of each smaller cube is $V_2 = 6^3 = 216\\text{ cm}^3$.\n4. The number of smaller cubes obtained is $\\frac{V_1}{V_2} = \\left(\\frac{24}{6}\\right)^3 = 4^3 = 64$.\n5. Therefore, the total number of smaller cubes is 64.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_VOLUME_SCALES_LINEARLY",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "a3139449-0665-46de-a1a3-69d346f235f6",
+    "spec": "G4-x21",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "In a rhombus $PQRS$, the perimeter is $40\\text{ cm}$ and the length of diagonal $PR$ is $16\\text{ cm}$. Find the area of the rhombus (in $\\text{cm}^2$).",
+    "options": [
+      "48",
+      "96",
+      "120",
+      "192"
+    ],
+    "answer": "96",
+    "solution": "1. Perimeter of the rhombus $= 40\\text{ cm}$, so side length $a = \\frac{40}{4} = 10\\text{ cm}$.\n2. The diagonals of a rhombus bisect each other at right angles. Let the diagonals be $d_1 = PR = 16\\text{ cm}$ and $d_2 = QS$.\n3. Using the right triangle formed by half-diagonals and a side: $\\left(\\frac{d_1}{2}\\right)^2 + \\left(\\frac{d_2}{2}\\right)^2 = a^2 \\implies 8^2 + \\left(\\frac{d_2}{2}\\right)^2 = 10^2$.\n4. $\\left(\\frac{d_2}{2}\\right)^2 = 100 - 64 = 36 \\implies \\frac{d_2}{2} = 6 \\implies d_2 = 12\\text{ cm}$.\n5. Area of the rhombus $= \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 16 \\times 12 = 96\\text{ cm}^2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "192",
+        "misconception_id": "G4_RHOMBUS_NO_HALF"
+      }
+    ]
+  },
+  {
+    "id": "94d4ed3a-a8d1-43c8-a7db-6058bbd5c683",
+    "spec": "G4-x16",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "The interior angles of a convex polygon are in an arithmetic progression. The common difference of this progression is $4^\\circ$ and the largest interior angle is $172^\\circ$. What is the total number of diagonals in this polygon?",
+    "options": [
+      "35",
+      "54",
+      "65",
+      "77"
+    ],
+    "answer": "54",
+    "solution": "1. Let $n$ be the number of sides of the convex polygon. The exterior angles also form an arithmetic progression. Since the largest interior angle is $172^\\circ$, the smallest exterior angle is $180^\\circ - 172^\\circ = 8^\\circ$.\n2. Because interior angles increase with a common difference of $+4^\\circ$, exterior angles decrease with a common difference of $-4^\\circ$, or reading from smallest to largest, the exterior angles have first term $a = 8^\\circ$ and common difference $d = 4^\\circ$.\n3. The sum of all exterior angles of any convex polygon is $360^\\circ$. Therefore, $\\frac{n}{2}[2(8) + (n-1)4] = 360 \\implies \\frac{n}{2}[16 + 4n - 4] = 360 \\implies \\frac{n}{2}(4n + 12) = 360 \\implies 2n(n + 3) = 360 \\implies n(n + 3) = 180$.\n4. Solving $n^2 + 3n - 180 = 0$, we factor $(n + 15)(n - 12) = 0$. Since $n > 0$, we have $n = 12$.\n5. The number of diagonals in an $n$-gon is given by $\\frac{n(n - 3)}{2}$. For $n = 12$, the number of diagonals is $\\frac{12 \\times 9}{2} = 54$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G4_DIAGONALS_NC2",
+    "distractor_misconceptions": [
+      {
+        "option": "65",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "d274d504-3ecd-4e8f-a350-fddda56b3745",
+    "spec": "G4-x13",
+    "concept_id": "G4",
+    "type": "MCQ",
+    "stem": "For a convex polygon with $n$ vertices ($n \\ge 3$), let $D(n)$ denote the number of diagonals. How many integers $n$ exist such that the total number of line segments connecting pairs of vertices of the polygon is a multiple of the number of sides, and $n \\le 50$?",
+    "options": [
+      "24",
+      "23",
+      "47",
+      "48"
+    ],
+    "answer": "24",
+    "solution": "1. The total number of line segments connecting pairs of vertices in an $n$-sided convex polygon is $\\binom{n}{2} = \\frac{n(n - 1)}{2}$.\n2. The number of sides of the polygon is $n$.\n3. The condition states that $\\frac{n(n - 1)}{2}$ is an integer multiple of $n$. That is, $\\frac{n(n - 1)}{2} = k \\cdot n$ for some positive integer $k$.\n4. Dividing both sides by $n$ (since $n \\ge 3 > 0$): $\\frac{n - 1}{2} = k$, which means $n - 1$ must be an even integer, so $n$ must be an odd integer.\n5. We are given $3 \\le n \\le 50$. The odd integers in this range are $3, 5, 7, \\dots, 49$.\n6. The number of terms is $\\frac{49 - 3}{2} + 1 = 23 + 1 = 24$.\n7. Thus, there are 24 such integers.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "23",
+        "misconception_id": "G4_DIAGONALS_NC2"
+      }
+    ]
+  },
+  {
+    "id": "59f36390-38be-4aff-b729-b13bfa4226c8",
+    "spec": "G5-x23",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A rectangular sheet of metal of dimensions $24\\text{ cm} \\times 15\\text{ cm}$ is used to make an open rectangular box by cutting out equal squares of side $x\\text{ cm}$ from each of the four corners and folding up the sides. If $x$ is chosen such that the volume of the box is maximized, what is this maximum volume in $\\text{cm}^3$?",
+    "options": null,
+    "answer": "486",
+    "solution": "1. When squares of side $x$ are removed from each of the four corners, the dimensions of the open box formed by folding up the flaps are: length $= 24 - 2x$, width $= 15 - 2x$, and height $= x$, where $0 < x < 7.5$.\n2. The volume of the box is given by $V(x) = x(24 - 2x)(15 - 2x) = x(360 - 78x + 4x^2) = 4x^3 - 78x^2 + 360x$.\n3. To find the maximum volume, take the derivative with respect to $x$ and equate to zero: $V'(x) = 12x^2 - 156x + 360 = 0 \\implies x^2 - 13x + 30 = 0$.\n4. Factoring the quadratic equation gives $(x - 3)(x - 10) = 0$. Since $x < 7.5$, we have $x = 3$.\n5. Substitute $x = 3$ into the volume formula: $V(3) = 3 \\times (24 - 6) \\times (15 - 6) = 3 \\times 18 \\times 9 = 486\\text{ cm}^3$.\n6. Thus, the maximum volume is 486.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "cd6c6298-633f-4d66-ad84-4524b99e56b0",
+    "spec": "G6-x2",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, line $L_1$ is given by $4x - y = 7$. Line $L_2$ is perpendicular to $L_1$ and passes through the point $(8, 5)$. If the $y$-intercept of $L_1$ is $c_1$ and the $y$-intercept of $L_2$ is $c_2$, find the value of $c_2 - c_1$.",
+    "options": null,
+    "answer": "14",
+    "solution": "1. Write $L_1$ in slope-intercept form: $y = 4x - 7$. Thus, the slope of $L_1$ is $m_1 = 4$, and its $y$-intercept is $c_1 = -7$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{4}$.\n3. Using the point $(8, 5)$ for $L_2$, the equation is $y - 5 = -\\frac{1}{4}(x - 8)$, which simplifies to $y = -\\frac{1}{4}x + 2 + 5 = -\\frac{1}{4}x + 7$. Thus, the $y$-intercept of $L_2$ is $c_2 = 7$.\n4. Compute $c_2 - c_1 = 7 - (-7) = 14$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "9ffd974c-d05f-4ff4-bbd6-e7a407d43e8a",
+    "spec": "G6-x1",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the Cartesian coordinate plane, a line $L_1$ passes through the points $P(2, -1)$ and $Q(8, 7)$. Another line $L_2$ is perpendicular to $L_1$ and passes through the point $R(k, 5)$. If the $y$-intercept of $L_2$ is $11$, then what is the value of $k$?",
+    "options": [
+      "8",
+      "4",
+      "-4",
+      "$\frac{9}{2}$"
+    ],
+    "answer": "8",
+    "solution": "1. Find the slope of $L_1$: $m_1 = \\frac{7 - (-1)}{8 - 2} = \\frac{8}{6} = \\frac{4}{3}$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope $m_2$ satisfies $m_1 \\cdot m_2 = -1$. Thus, $m_2 = -\\frac{3}{4}$.\n3. The equation of $L_2$, with slope $-\\frac{3}{4}$ and $y$-intercept $11$, is $y = -\\frac{3}{4}x + 11$.\n4. Since $R(k, 5)$ lies on $L_2$, substitute $(k, 5)$ into the equation: $5 = -\\frac{3}{4}k + 11 \\implies -6 = -\\frac{3}{4}k \\implies k = 8$.\n5. Thus, the correct value is 8.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\frac{9}{2}$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "-4",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "0eceb6d3-b16c-4300-8498-bd3a1f55d4df",
+    "spec": "G6-x4",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line $L_1$ passes through the origin $(0, 0)$ and the point $P(2, 6)$. A second line $L_2$ is perpendicular to $L_1$ and passes through the point $Q(9, 5)$. If the line $L_2$ intersects the $x$-axis at the point $(k, 0)$, what is the value of $k$?",
+    "options": [
+      "24",
+      "-6",
+      "4",
+      "-4"
+    ],
+    "answer": "24",
+    "solution": "1. The slope of $L_1$ is $m_1 = \\frac{6 - 0}{2 - 0} = 3$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{3}$.\n3. The equation of $L_2$ passing through $(9, 5)$ is $y - 5 = -\\frac{1}{3}(x - 9)$.\n4. For the $x$-intercept $(k, 0)$, set $y = 0$: $0 - 5 = -\\frac{1}{3}(k - 9) \\implies -5 = -\\frac{1}{3}(k - 9) \\implies 15 = k - 9 \\implies k = 24$.\n5. Therefore, the value of $k$ is $24$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "-6",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      },
+      {
+        "option": "4",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      }
+    ]
+  },
+  {
+    "id": "796a0e78-38a8-4389-9e16-baf87db8a3d2",
+    "spec": "G6-x3",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line $L_1$ passes through the points $A(2, 5)$ and $B(6, 17)$. A line $L_2$ is perpendicular to $L_1$ and intersects $L_1$ at a point $P(x_0, y_0)$ having integer coordinates, where $2 \\le x_0 \\le 6$. If $L_2$ also passes through an integer point $(k, 0)$ on the $x$-axis, how many possible integer values can $k$ take?",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "answer": "5",
+    "solution": "1. Find the slope of $L_1$: $m_1 = \\frac{17 - 5}{6 - 2} = \\frac{12}{4} = 3$.\n2. The equation of $L_1$ is $y - 5 = 3(x - 2) \\implies y = 3x - 1$.\n3. The point $P(x_0, y_0)$ lies on $L_1$ with $x_0 \\in \\{2, 3, 4, 5, 6\\}$. For each integer $x_0$, $y_0 = 3x_0 - 1$ is automatically an integer. Thus, there are 5 possible integer points $P$ on this segment: $(2, 5), (3, 8), (4, 11), (5, 14), (6, 17)$.\n4. Since $L_2 \\perp L_1$, the slope of $L_2$ is $m_2 = -\\frac{1}{3}$.\n5. The line $L_2$ passes through $P(x_0, y_0)$ and $(k, 0)$. Its equation gives: $0 - y_0 = -\\frac{1}{3}(k - x_0) \\implies k - x_0 = 3y_0 \\implies k = x_0 + 3y_0$.\n6. Substitute $y_0 = 3x_0 - 1$: $k = x_0 + 3(3x_0 - 1) = 10x_0 - 3$.\n7. Since each $x_0 \\in \\{2, 3, 4, 5, 6\\}$ yields a unique integer $k$ ($17, 27, 37, 47, 57$), there are 5 possible integer values for $k$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "2",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "3",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "ef89903d-d195-4701-9d61-e73aecaeaede",
+    "spec": "G5-x9",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid wooden conical toy has a base radius of $5\\text{ cm}$ and a slant height of $13\\text{ cm}$. What is the volume of wood used to make the toy (in $\\text{cm}^3$)?",
+    "options": [
+      "$100\\pi$",
+      "$\\frac{325\\pi}{3}$",
+      "$300\\pi$",
+      "$325\\pi$"
+    ],
+    "answer": "$100\\pi$",
+    "solution": "1. For a right circular cone, the relation between vertical height $h$, radius $r$, and slant height $l$ is $h = \\sqrt{l^2 - r^2}$.\n2. Given $r = 5\\text{ cm}$ and $l = 13\\text{ cm}$, we have $h = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}$.\n3. The volume of the cone is given by $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (5^2)(12) = \\frac{1}{3}\\pi (25)(12) = 100\\pi\\text{ cm}^3$.\n4. Hence, the correct answer is $100\\pi$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{325\\pi}{3}$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      }
+    ]
+  },
+  {
+    "id": "3c3b5f27-ae77-49ca-a6ca-bc2a25e183df",
+    "spec": "G5-x5",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A solid metallic right circular cylinder has a base radius of $6\\text{ cm}$ and a height of $10\\text{ cm}$. A solid metallic sphere has a radius of $6\\text{ cm}$. If $A$ represents the total surface area of the cylinder in $\\text{cm}^2$ and $B$ represents the surface area of the sphere in $\\text{cm}^2$, find the absolute difference, $|A - B|$, in terms of $\\pi$ (that is, calculate $\\frac{|A - B|}{\\pi}$).",
+    "options": null,
+    "answer": "48",
+    "solution": "1. The total surface area of a solid right circular cylinder with radius $r = 6\\text{ cm}$ and height $h = 10\\text{ cm}$ is given by:\n$A = 2\\pi r(r + h) = 2\\pi(6)(6 + 10) = 12\\pi \\times 16 = 192\\pi\\text{ cm}^2$.\n\n2. The surface area of a solid sphere with radius $R = 6\\text{ cm}$ is given by:\n$B = 4\\pi R^2 = 4\\pi(6^2) = 4\\pi \\times 36 = 144\\pi\\text{ cm}^2$.\n\n3. The absolute difference between their surface areas is:\n$|A - B| = |192\\pi - 144\\pi| = 48\\pi\\text{ cm}^2$.\n\n4. Therefore, $\\frac{|A - B|}{\\pi} = 48$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "594c1f75-f524-4fd2-890e-5bd182dbb971",
+    "spec": "G5-x24",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cylinder has a height of $10\\text{ cm}$ and a volume of $1540\\text{ cm}^3$. The cost of polishing its entire outer surface at the rate of ₹$1.50$ per $\\text{cm}^2$ is (Take $\\pi = \\frac{22}{7}$):",
+    "options": [
+      "₹1122",
+      "₹660",
+      "₹891",
+      "₹1056"
+    ],
+    "answer": "₹1122",
+    "solution": "1. Find the base radius $r$ using volume: $V = \\pi r^2 h \\implies 1540 = \\frac{22}{7} \\times r^2 \\times 10 \\implies r^2 = \\frac{154}{22} \\times 7 = 49 \\implies r = 7\\text{ cm}$.\n2. The entire outer surface of a solid cylinder is its total surface area (TSA): $\\text{TSA} = 2\\pi r(h + r) = 2 \\times \\frac{22}{7} \\times 7 \\times (10 + 7) = 44 \\times 17 = 748\\text{ cm}^2$.\n3. Calculate the total cost: $\\text{Cost} = 748 \\times 1.50 = \\text{₹}1122$.\n4. Thus, the correct answer is ₹1122.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_CSA_VS_TSA",
+    "distractor_misconceptions": [
+      {
+        "option": "₹660",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "87b58c96-39b9-4ec4-aab1-124df05f16ea",
+    "spec": "G5-x12",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A manufacturing unit produces closed cylindrical metallic canisters in a sequence of three increasing sizes: Small, Medium, and Large. For each canister, the height is twice the base radius. The base radii of the Small, Medium, and Large canisters form an arithmetic progression with a common difference of $3.5\\text{ cm}$. If the radius of the Small canister is $3.5\\text{ cm}$, what is the total exterior surface area (in $\\text{cm}^2$) that needs to be electroplated for one Large canister? (Take $\\pi = \\frac{22}{7}$)",
+    "options": [
+      "2079",
+      "1386",
+      "1617",
+      "693"
+    ],
+    "answer": "2079",
+    "solution": "1. The base radii form an arithmetic progression with first term $r_1 = 3.5\\text{ cm}$ and common difference $d = 3.5\\text{ cm}$.\n2. The radius of the Large canister is $r_3 = r_1 + 2d = 3.5 + 2(3.5) = 10.5\\text{ cm}$.\n3. The height of the Large canister is $h = 2r_3 = 2 \\times 10.5 = 21\\text{ cm}$.\n4. Since the canister is closed, the total exterior surface area to be electroplated is the total surface area: $\\text{TSA} = 2\\pi r_3(r_3 + h) = 2\\pi r_3(3r_3) = 6\\pi r_3^2$.\n5. Substituting $r_3 = \\frac{21}{2}\\text{ cm}$: $\\text{TSA} = 6 \\times \\frac{22}{7} \\times \\left(\\frac{21}{2}\\right)^2 = 6 \\times \\frac{22}{7} \\times \\frac{441}{4} = 6 \\times 22 \\times \\frac{63}{4} = 3 \\times 11 \\times 63 = 2079\\text{ cm}^2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_CSA_VS_TSA",
+    "distractor_misconceptions": [
+      {
+        "option": "1386",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "564cba00-aa67-4af5-b175-7557949fcd48",
+    "spec": "G6-x6",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a pipeline runs along the line joining the points $A(-1, 2)$ and $B(2, 8)$. An inspection station is located at $P(6, 7)$. A technician needs to lay a straight connecting path from $P$ that meets the pipeline at right angles. If this path intersects the $x$-axis at point $Q(k, 0)$, what is the value of $k$?",
+    "options": [
+      "20",
+      "$\frac{19}{2}$",
+      "$\frac{5}{2}$",
+      "$\frac{17}{2}$"
+    ],
+    "answer": "20",
+    "solution": "1. Slope of line $AB$ is $m = \\frac{8 - 2}{2 - (-1)} = \\frac{6}{3} = 2$.\n2. Since the connecting path is perpendicular to the pipeline, its slope is $m_{\\perp} = -\\frac{1}{m} = -\\frac{1}{2}$.\n3. The equation of the path passing through $P(6, 7)$ is $y - 7 = -\\frac{1}{2}(x - 6)$.\n4. To find the $x$-intercept $Q(k, 0)$, set $y = 0$: $0 - 7 = -\\frac{1}{2}(k - 6) \\implies -7 = -\\frac{1}{2}(k - 6) \\implies k - 6 = 14 \\implies k = 20$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": [
+      {
+        "option": "$\frac{19}{2}$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "$\frac{5}{2}$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "106c57a4-35e1-4c17-aaf1-ca714bafadd5",
+    "spec": "G6-x7",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the coordinate plane, let $A$ be the point $(2, 5)$ and $B$ be the point $(8, 17)$. A line $L$ is perpendicular to the line segment $AB$ and passes through the point $(k, 3)$, where $k$ is an integer. If the $y$-intercept of $L$ is an integer strictly between $-10$ and $20$, how many possible values can $k$ take?",
+    "options": [
+      "29",
+      "59",
+      "15",
+      "30"
+    ],
+    "answer": "29",
+    "solution": "1. Slope of line segment $AB = \\frac{17 - 5}{8 - 2} = \\frac{12}{6} = 2$.\n2. The line $L$ is perpendicular to $AB$, so its slope is $m = -\\frac{1}{2}$.\n3. The equation of line $L$ passing through $(k, 3)$ is $y - 3 = -\\frac{1}{2}(x - k)$, which gives $y = -\\frac{1}{2}x + \\frac{k}{2} + 3$.\n4. The $y$-intercept is $c = \\frac{k}{2} + 3$. For $c$ to be an integer, $k$ must be an even integer.\n5. We are given $-10 < c < 20$, which means $-10 < \\frac{k}{2} + 3 < 20$, or $-13 < \\frac{k}{2} < 17$, leading to $-26 < k < 34$.\n6. The integer $c$ can take any integer value from $-9$ to $19$, inclusive. Since each integer value of $c$ corresponds to a unique even integer $k = 2(c - 3)$, the number of possible values of $k$ is $19 - (-9) + 1 = 29$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "59",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "15",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "13518481-0ead-448f-8ac7-9ea3fa3f146f",
+    "spec": "G6-x12",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, line $L_1$ passes through $A(1, 2)$ and $B(3, 8)$, while line $L_2$ passes through $P(2, 1)$ and $Q(6, k)$. If the slope of $L_1$ is twice the slope of $L_2$, what is the value of $k$?",
+    "options": [
+      "7",
+      "4",
+      "$\frac{11}{3}$",
+      "$\frac{7}{3}$"
+    ],
+    "answer": "7",
+    "solution": "1. Slope of line $L_1$ is $m_1 = \\frac{8 - 2}{3 - 1} = \\frac{6}{2} = 3$.\n2. Since $m_1 = 2 \\times m_2$, the slope of $L_2$ is $m_2 = \\frac{3}{2}$.\n3. Using points $P(2, 1)$ and $Q(6, k)$, the slope of $L_2$ is $\\frac{k - 1}{6 - 2} = \\frac{k - 1}{4}$.\n4. Equating the two expressions for $m_2$: $\\frac{k - 1}{4} = \\frac{3}{2} \\implies k - 1 = 6 \\implies k = 7$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "$\frac{11}{3}$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "4351847d-6598-4adc-81da-e7b7c9398b64",
+    "spec": "G6-x14",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, a line $L_1$ has the equation $3x - y = 5$. A line $L_2$ is perpendicular to $L_1$ and passes through the point $(6, 4)$. If the $y$-intercept of $L_2$ is $c$, find the value of $c$.",
+    "options": null,
+    "answer": "6",
+    "solution": "1. Express $L_1$ in slope-intercept form: $y = 3x - 5$. The slope of $L_1$ is $m_1 = 3$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope $m_2$ satisfies $m_1 \\times m_2 = -1$. Therefore, $m_2 = -\\frac{1}{3}$.\n3. The equation of $L_2$ passing through $(6, 4)$ is $y - 4 = -\\frac{1}{3}(x - 6)$, which simplifies to $y = -\\frac{1}{3}x + 2 + 4$, or $y = -\\frac{1}{3}x + 6$.\n4. The $y$-intercept of $L_2$ is obtained by setting $x = 0$, giving $c = 6$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "c707e37e-03a4-4e57-881c-2084b1cbd86a",
+    "spec": "G6-x15",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line segment joins the points $P(1, 3)$ and $Q(5, 11)$. A second line, $L$, is perpendicular to $PQ$ and passes through the midpoint of $PQ$. Find the $y$-intercept of line $L$.",
+    "options": [
+      "$8.5$",
+      "$13$",
+      "$19$",
+      "$-1$"
+    ],
+    "answer": "$8.5$",
+    "solution": "1. Find the slope of segment $PQ$: $m_{PQ} = \\frac{11 - 3}{5 - 1} = \\frac{8}{4} = 2$.\n2. The line $L$ is perpendicular to $PQ$, so its slope is $m_L = -\\frac{1}{2} = -0.5$.\n3. The midpoint of $PQ$ is $M\\left(\\frac{1+5}{2}, \\frac{3+11}{2}\\right) = (3, 7)$.\n4. The equation of line $L$ in point-slope form is $y - 7 = -0.5(x - 3) \\implies y = -0.5x + 1.5 + 7 = -0.5x + 8.5$.\n5. Thus, the $y$-intercept is $8.5$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$13$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "$-1$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "c107716a-aae7-45a0-bfc6-19c40e80c068",
+    "spec": "G6-x5",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "The line segment joining the points $A(-3, 2)$ and $B(9, 10)$ is divided internally by a point $P(k, 6)$ in the ratio $m : n$. Find the value of $k$.",
+    "options": null,
+    "answer": "3",
+    "solution": "1. Let point $P(k, 6)$ divide the line segment joining $A(-3, 2)$ and $B(9, 10)$ in the ratio $r : 1$, where $r = \\frac{m}{n}$.\n2. Using the section formula for the $y$-coordinate:\n$y = \\frac{r \\cdot y_2 + 1 \\cdot y_1}{r + 1} \\implies 6 = \\frac{r(10) + 1(2)}{r + 1}$.\n3. Solving for $r$:\n$6(r + 1) = 10r + 2 \\implies 6r + 6 = 10r + 2 \\implies 4r = 4 \\implies r = 1$.\nThus, $P$ is the midpoint of $AB$.\n4. Using the section formula for the $x$-coordinate with $r = 1$:\n$k = \\frac{1(-3) + 1(9)}{1 + 1} = \\frac{6}{2} = 3$.\nTherefore, the value of $k$ is 3.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "750d3caf-3ef3-4d8b-ac18-425074b1ece0",
+    "spec": "G6-x0",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "Point $A$ has coordinates $(2, 1)$ and point $B$ lies on the line segment joining $(4, 7)$ and $(8, 19)$. What is the minimum possible slope of the line passing through point $A$ and point $B$?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$3$",
+      "$\\frac{1}{2}$",
+      "$2$"
+    ],
+    "answer": "$3$",
+    "solution": "1. Let $B$ be a point on the line segment joining $P(4, 7)$ and $Q(8, 19)$. First, note that the line passing through $P$ and $Q$ has slope $m_{PQ} = \\frac{19 - 7}{8 - 4} = \\frac{12}{4} = 3$. Its equation is $y - 7 = 3(x - 4) \\implies y = 3x - 5$ for $x \\in [4, 8]$.\n2. Any point $B$ on this segment can be written as $(x, 3x - 5)$, where $4 \\le x \\le 8$.\n3. The slope $m$ of the line joining $A(2, 1)$ and $B(x, 3x - 5)$ is given by:\n$m = \\frac{(3x - 5) - 1}{x - 2} = \\frac{3x - 6}{x - 2} = \\frac{3(x - 2)}{x - 2} = 3$ for all $x \\in [4, 8]$.\n4. Since the slope is constant and equal to $3$ for every position of $B$ along the segment, the minimum possible slope is $3$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "$\\frac{1}{3}$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "3e2862b5-81af-47ff-b926-a78609dc3b0d",
+    "spec": "G6-x18",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a triangle has vertices at $O(0, 0)$, $A(4, 12)$, and a point $B$ lying on the $x$-axis. If the line segment $AB$ is perpendicular to the side $OA$, what is the area of triangle $OAB$ in square units?",
+    "options": [
+      "240",
+      "24",
+      "80",
+      "48"
+    ],
+    "answer": "240",
+    "solution": "1. The slope of $OA$ is $m_1 = \\frac{12 - 0}{4 - 0} = 3$.\n2. Since $AB \\perp OA$, the slope of line $AB$ must be $m_2 = -\\frac{1}{m_1} = -\\frac{1}{3}$.\n3. The equation of line $AB$ passing through $A(4, 12)$ is $y - 12 = -\\frac{1}{3}(x - 4)$, which simplifies to $x + 3y = 40$.\n4. Point $B$ lies on the $x$-axis ($y = 0$), so substituting $y = 0$ gives $x = 40$. Thus, $B = (40, 0)$.\n5. The base of $\\triangle OAB$ on the $x$-axis is $OB = 40$, and the altitude to this base is the $y$-coordinate of $A$, which is $12$.\n6. Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 40 \\times 12 = 240$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": [
+      {
+        "option": "48",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "80",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "84bb02e6-3497-404c-970e-727e4beaa3c1",
+    "spec": "G6-x20",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, a point $P$ moves along the line segment joining $(2, 4)$ and $(6, 4)$. A fixed point is located at $O(0, 0)$. Find the maximum possible slope of the straight line passing through $O$ and $P$.",
+    "options": null,
+    "answer": "2",
+    "solution": "1. Any point $P$ on the segment joining $(2, 4)$ and $(6, 4)$ has coordinates $(x, 4)$, where $2 \\le x \\le 6$.\n2. The slope of the line passing through the origin $(0, 0)$ and $P(x, 4)$ is $m = \\frac{4 - 0}{x - 0} = \\frac{4}{x}$.\n3. To maximize $m = \\frac{4}{x}$, we must minimize the denominator $x$ over the interval $[2, 6]$, which occurs at $x = 2$.\n4. Thus, the maximum slope is $\\frac{4}{2} = 2$. (Note: If one mistakenly calculates slope as $\\frac{\\Delta x}{\\Delta y} = \\frac{x}{4}$, the maximum would incorrectly be evaluated as $\\frac{6}{4} = 1.5$.)",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "54e8c18b-6f48-4eac-80d9-7909320492dd",
+    "spec": "G6-x19",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A sequence of points $P_1, P_2, P_3, \\dots$ in the $xy$-plane has coordinates defined by $P_n = (2n - 1, 6n + 5)$ for every positive integer $n$. A line $L$ is perpendicular to the line passing through this sequence of points and passes through the point $(9, 2)$. What is the $y$-intercept of line $L$?",
+    "options": [
+      "$5$",
+      "$-25$",
+      "$29$",
+      "$-1$"
+    ],
+    "answer": "$5$",
+    "solution": "1. The points are $P_n = (2n-1, 6n+5)$. For $n=1$, $P_1 = (1, 11)$ and for $n=2$, $P_2 = (3, 17)$.\n2. The slope of the line passing through these points is $m = \\frac{17 - 11}{3 - 1} = \\frac{6}{2} = 3$.\n3. Since line $L$ is perpendicular to this line, its slope is $m_L = -\\frac{1}{m} = -\\frac{1}{3}$.\n4. Line $L$ passes through $(9, 2)$, so its equation is $y - 2 = -\\frac{1}{3}(x - 9)$, which simplifies to $y = -\\frac{1}{3}x + 3 + 2 = -\\frac{1}{3}x + 5$.\n5. Setting $x = 0$ gives the $y$-intercept as $5$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$-25$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "$-1$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "db1e01a4-2bfc-477b-89ee-9c08a68bc933",
+    "spec": "G6-x21",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a straight road runs along the line joining points $P(1, 2)$ and $Q(4, 8)$. A service lane perpendicular to this road passes through the point $R(7, 4)$ and intersects the road at point $S(a, b)$. What is the value of $a$?",
+    "options": [
+      "3",
+      "$\frac{11}{5}$",
+      "$\frac{17}{5}$",
+      "$\frac{21}{5}$"
+    ],
+    "answer": "3",
+    "solution": "1. Find the slope of line $PQ$: $m_1 = \\frac{8 - 2}{4 - 1} = \\frac{6}{3} = 2$.\n2. The line of the service lane is perpendicular to $PQ$, so its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{2}$.\n3. The equation of the service lane passing through $R(7, 4)$ is $y - 4 = -\\frac{1}{2}(x - 7) \\implies 2y - 8 = -x + 7 \\implies x + 2y = 15$.\n4. The equation of line $PQ$ passing through $(1, 2)$ with slope $2$ is $y - 2 = 2(x - 1) \\implies y = 2x$.\n5. Substitute $y = 2x$ into the service lane equation: $x + 2(2x) = 15 \\implies 5x = 15 \\implies x = 3$.\n6. Thus, $a = 3$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$\frac{17}{5}$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "$\frac{21}{5}$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "f3f91b19-2344-4b13-ab21-173936816587",
+    "spec": "G6-x22",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, consider the following two quantities:\n\nQuantity A: The $y$-intercept of the line passing through $(4, 1)$ and perpendicular to the line $2x - y = 5$.\nQuantity B: The $y$-intercept of the line passing through $(1, 5)$ and parallel to the line $x + 2y = 7$.\n\nWhich of the following statements is true?",
+    "options": [
+      "Quantity A is greater than Quantity B",
+      "Quantity B is greater than Quantity A",
+      "Quantity A and Quantity B are equal",
+      "Quantity A is exactly double of Quantity B"
+    ],
+    "answer": "Quantity B is greater than Quantity A",
+    "solution": "1. Find the slope of the given line for Quantity A: $2x - y = 5 \\implies y = 2x - 5$, so its slope is $m_1 = 2$.\n2. The perpendicular line must have slope $m = -\\frac{1}{m_1} = -\\frac{1}{2}$. Passing through $(4, 1)$, its equation is $y - 1 = -\\frac{1}{2}(x - 4) \\implies y = -\\frac{1}{2}x + 3$. Thus, the $y$-intercept is $3$, so $\\text{Quantity A} = 3$.\n3. Find Quantity B: The line $x + 2y = 7$ has slope $-\\frac{1}{2}$. The parallel line through $(1, 5)$ has equation $y - 5 = -\\frac{1}{2}(x - 1) \\implies y = -\\frac{1}{2}x + \\frac{11}{2}$. Thus, the $y$-intercept is $\\frac{11}{2} = 5.5$, so $\\text{Quantity B} = 5.5$.\n4. Comparing the two, Quantity B ($5.5$) is greater than Quantity A ($3$).",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": [
+      {
+        "option": "Quantity A is greater than Quantity B",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      }
+    ]
+  },
+  {
+    "id": "d9efc0a3-ac1f-4949-ab37-0f354373c880",
+    "spec": "G6-x25",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a line $L_1$ passes through the points $(1, -2)$ and $(4, 4)$. A second line $L_2$ is perpendicular to $L_1$ and passes through the point $(6, 1)$. If the $y$-intercept of line $L_2$ is $(0, c)$, what is the value of $c$?",
+    "options": [
+      "4",
+      "-2",
+      "13",
+      "7"
+    ],
+    "answer": "4",
+    "solution": "1. Find the slope of line $L_1$: $m_1 = \\frac{4 - (-2)}{4 - 1} = \\frac{6}{3} = 2$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{2}$.\n3. The equation of line $L_2$ passing through $(6, 1)$ is $y - 1 = -\\frac{1}{2}(x - 6)$, which simplifies to $y = -\\frac{1}{2}x + 4$.\n4. Thus, the $y$-intercept is $(0, 4)$, so $c = 4$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "13",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "7",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "42fbcadc-b635-42f3-814e-b6acbb8cffbf",
+    "spec": "G6-x24",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, line $L_1$ passes through the points $A(1, 2)$ and $B(4, 11)$. A second line, $L_2$, passes through the point $C(3, 1)$ and has a slope that is half the slope of line $L_1$. If the point $(k, 7)$ lies on $L_2$, which of the following is true about $k$?",
+    "options": [
+      "Line $L_2$ has an integer $x$-intercept",
+      "$k$ is a prime number",
+      "$k$ is an even integer",
+      "$k$ is strictly between $35$ and $40$"
+    ],
+    "answer": "$k$ is a prime number",
+    "solution": "1. Find the slope of line $L_1$: $m_1 = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{11 - 2}{4 - 1} = \\frac{9}{3} = 3$.\n2. The slope of $L_2$ is half of $m_1$, so $m_2 = \\frac{3}{2}$.\n3. Since line $L_2$ passes through $C(3, 1)$ and $(k, 7)$, its slope is given by: $m_2 = \\frac{7 - 1}{k - 3} = \\frac{6}{k - 3}$.\n4. Equating the two expressions for $m_2$: $\\frac{6}{k - 3} = \\frac{3}{2} \\implies 3(k - 3) = 12 \\implies k - 3 = 4 \\implies k = 7$.\n5. Since $7$ is a prime number, the statement \"$k$ is a prime number\" must be true.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "$k$ is strictly between $35$ and $40$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "bedf3e12-a917-44b9-89cd-3ed91d709fa8",
+    "spec": "G6-x13",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line $L_1$ passes through the points $A(-1, -2)$ and $B(3, 6)$. A line $L_2$ is perpendicular to $L_1$ and passes through the point $C(6, 7)$. If $L_2$ intersects the coordinate axes at points $P$ and $Q$, and $O$ is the origin, what is the area of the triangle $OPQ$?",
+    "options": [
+      "100",
+      "50",
+      "49",
+      "25"
+    ],
+    "answer": "100",
+    "solution": "1. Slope of line $L_1$ is $m_1 = \\frac{6 - (-2)}{3 - (-1)} = \\frac{8}{4} = 2$.\n2. Since $L_2$ is perpendicular to $L_1$, its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{2}$.\n3. Line $L_2$ passes through $(6, 7)$, so its equation is $y - 7 = -\\frac{1}{2}(x - 6)$, which simplifies to $x + 2y = 20$.\n4. Finding the intercepts of $L_2$:\n- For $x$-intercept (set $y = 0$): $x = 20$, so $P = (20, 0)$.\n- For $y$-intercept (set $x = 0$): $2y = 20 \\implies y = 10$, so $Q = (0, 10)$.\n5. The area of $\\triangle OPQ$ is $\\frac{1}{2} \\times |x\\text{-intercept}| \\times |y\\text{-intercept}| = \\frac{1}{2} \\times 20 \\times 10 = 100$.\n\nHence, the correct answer is 100.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "49",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "25",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "d4dbec6f-8c6a-445b-bc58-84fc482eeb01",
+    "spec": "G5-x25",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone has a base radius of $9\\text{ cm}$ and a slant height of $15\\text{ cm}$. A solid hemisphere has a radius of $6\\text{ cm}$. By what percentage is the volume of the cone greater than the volume of the hemisphere?",
+    "options": [
+      "$125\\%$",
+      "$181.25\\%$",
+      "$200\\%$",
+      "$275\\%$"
+    ],
+    "answer": "$125\\%$",
+    "solution": "1. For the cone, the base radius is $r = 9\\text{ cm}$ and slant height is $l = 15\\text{ cm}$.\n2. The vertical height $h$ of the cone is given by $h = \\sqrt{l^2 - r^2} = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12\\text{ cm}$.\n3. The volume of the cone is $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (9^2)(12) = 324\\pi\\text{ cm}^3$.\n4. For the hemisphere, radius $R = 6\\text{ cm}$. Its volume is $V_{\\text{hemi}} = \\frac{2}{3}\\pi R^3 = \\frac{2}{3}\\pi (6^3) = \\frac{2}{3}\\pi (216) = 144\\pi\\text{ cm}^3$.\n5. The difference in volumes is $V_{\\text{cone}} - V_{\\text{hemi}} = 324\\pi - 144\\pi = 180\\pi\\text{ cm}^3$.\n6. The required percentage is $\\frac{180\\pi}{144\\pi} \\times 100\\% = \\frac{5}{4} \\times 100\\% = 125\\%$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$181.25\\%$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$200\\%$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "6be6e26f-d5c7-40c7-bd92-3a7b45130e94",
+    "spec": "G6-x26",
+    "concept_id": "G6",
+    "type": "TITA",
+    "stem": "In the $xy$-plane, a straight track is represented by the line segment connecting the points $M(-2, 3)$ and $N(6, 7)$. A surveyor standing at $S(11, 20)$ sights a target along a path that is perpendicular to $MN$. This perpendicular path intersects the line segment $MN$ at point $R$, and meets the $x$-axis at point $T(k, 0)$. Find the value of $k$.",
+    "options": null,
+    "answer": "21",
+    "solution": "1. Find the slope of the line segment $MN$: $m_{MN} = \\frac{7 - 3}{6 - (-2)} = \\frac{4}{8} = \\frac{1}{2}$.\n2. The surveyor's path passes through $S(11, 20)$ and is perpendicular to $MN$. Hence, its slope is $m = -\\frac{1}{m_{MN}} = -\\frac{1}{1/2} = -2$.\n(Note: If one mistakenly takes the perpendicular slope as $-m = -\\frac{1}{2}$, they would arrive at $k = 51$.)\n3. The equation of this perpendicular line is: $y - 20 = -2(x - 11) \\implies y = -2x + 42$.\n4. To find the $x$-intercept $T(k, 0)$, set $y = 0$: $0 = -2k + 42 \\implies 2k = 42 \\implies k = 21$.\n5. Therefore, the value of $k$ is 21.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "e23b2a81-dddf-43c6-8a12-b647981efa1e",
+    "spec": "M1-x0",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "A chemical processing plant has a network of storage tanks that are fed by three main inlet pipes: $P_1$, $P_2$, and $P_3$. Every tank in the network is supplied by at least one of these three pipes. It is observed that:\n- Pipe $P_1$ supplies $45$ tanks, Pipe $P_2$ supplies $40$ tanks, and Pipe $P_3$ supplies $35$ tanks.\n- Exactly $16$ tanks are supplied by both $P_1$ and $P_2$, $14$ tanks by both $P_2$ and $P_3$, and $15$ tanks by both $P_1$ and $P_3$.\n- Exactly $8$ tanks are supplied by all three pipes.\n\nWhat is the total number of storage tanks in the network?",
+    "options": [
+      "75",
+      "83",
+      "91",
+      "99"
+    ],
+    "answer": "83",
+    "solution": "1. Let $T$ be the total number of storage tanks in the network. Since every tank is fed by at least one pipe, $T = n(P_1 \\cup P_2 \\cup P_3)$.\n2. By the Principle of Inclusion-Exclusion:\n$n(P_1 \\cup P_2 \\cup P_3) = [n(P_1) + n(P_2) + n(P_3)] - [n(P_1 \\cap P_2) + n(P_2 \\cap P_3) + n(P_1 \\cap P_3)] + n(P_1 \\cap P_2 \\cap P_3)$.\n3. Substitute the given values:\n$T = (45 + 40 + 35) - (16 + 14 + 15) + 8 = 120 - 45 + 8 = 83$.\n\nHence, the correct answer is 83.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_FORGET_TRIPLE",
+    "distractor_misconceptions": [
+      {
+        "option": "75",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      },
+      {
+        "option": "99",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "8a72c0f1-0fdc-4a2d-b866-16bb3ec4f970",
+    "spec": "G5-x26",
+    "concept_id": "G5",
+    "type": "TITA",
+    "stem": "A large solid metallic sphere of radius $R$ is recast without any loss of metal into $n$ identical smaller solid spheres, each of radius $r$, where $n > 1$. The sum of the total surface areas of all the smaller spheres is $300\\%$ greater than the total surface area of the original large sphere. If $R - r = 18\\text{ cm}$, find the radius of the original sphere (in $\\text{cm}$).",
+    "options": null,
+    "answer": "24",
+    "solution": "1. Let $R$ be the radius of the original sphere and $r$ be the radius of each smaller sphere.\n2. By conservation of volume: $\\frac{4}{3}\\pi R^3 = n \\times \\frac{4}{3}\\pi r^3 \\implies n = \\left(\\frac{R}{r}\\right)^3$.\n3. The original total surface area is $A_1 = 4\\pi R^2$. The sum of surface areas of the $n$ smaller spheres is $A_2 = n \\times 4\\pi r^2 = \\left(\\frac{R}{r}\\right)^3 \\times 4\\pi r^2 = 4\\pi R^2 \\times \\frac{R}{r} = A_1 \\times \\frac{R}{r}$.\n4. We are given that $A_2$ is $300\\%$ greater than $A_1$, which means $A_2 = A_1 + 3A_1 = 4A_1$.\n5. Therefore, $\\frac{R}{r} = 4$, which gives $R = 4r$.\n6. We are given $R - r = 18\\text{ cm} \\implies 4r - r = 18 \\implies 3r = 18 \\implies r = 6\\text{ cm}$.\n7. Hence, $R = 4 \\times 6 = 24\\text{ cm}.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G5_VOLUME_SCALES_LINEARLY",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "f9d25765-36a0-4cac-9b65-e7792f52a378",
+    "spec": "G5-x13",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A right circular cone of base radius $15\\text{ cm}$ and slant height $25\\text{ cm}$ is kept resting on its circular base. A cylinder of base radius $r$ and height $h$ is inscribed in this cone such that one of its circular faces lies on the base of the cone. What is the maximum possible curved surface area (in $\\text{cm}^2$) of this inscribed cylinder?",
+    "options": [
+      "$150\\pi$",
+      "$187.5\\pi$",
+      "$200\\pi$",
+      "$250\\pi$"
+    ],
+    "answer": "$150\\pi$",
+    "solution": "1. Find the vertical height $H$ of the cone using the Pythagorean theorem:\n$H = \\sqrt{l^2 - R^2} = \\sqrt{25^2 - 15^2} = \\sqrt{625 - 225} = 20\\text{ cm}$.\n\n2. Let $r$ and $h$ be the radius and height of the inscribed cylinder. By similar triangles:\n$\\frac{H - h}{H} = \\frac{r}{R} \\implies h = H\\left(1 - \\frac{r}{R}\\right) = 20\\left(1 - \\frac{r}{15}\\right) = 20 - \\frac{4}{3}r$.\n\n3. The curved surface area (CSA) of the cylinder is:\n$\\text{CSA} = 2\\pi r h = 2\\pi r\\left(20 - \\frac{4}{3}r\\right) = 40\\pi r - \\frac{8\\pi}{3}r^2$.\n\n4. This quadratic in $r$ reaches its maximum at $r = -\\frac{40\\pi}{2(-8\\pi/3)} = \\frac{40}{16/3} = 7.5\\text{ cm}$.\n\n5. Substitute $r = 7.5\\text{ cm}$:\n$h = 20 - \\frac{4}{3}(7.5) = 20 - 10 = 10\\text{ cm}$.\n$\\text{CSA}_{\\max} = 2\\pi(7.5)(10) = 150\\pi\\text{ cm}^2$.\n\nThe correct answer is $150\\pi$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$187.5\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$250\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$200\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "86a613ab-be7a-4588-8236-e09aba55bd91",
+    "spec": "M1-x4",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "A survey of daily commuters between two suburban towns examined three modes of transport: Local Train ($T$), Metro ($M$), and Shared Cab ($C$). Each commuter surveyed used at least one of these three modes. The survey recorded the following data:\n- $140$ commuters used the Local Train, $125$ used the Metro, and $115$ used a Shared Cab.\n- $55$ commuters used both the Local Train and Metro, $45$ used both the Metro and Shared Cab, and $50$ used both the Local Train and Shared Cab.\n- $25$ commuters used all three modes of transport.\n\nFind the total number of commuters surveyed.",
+    "options": [
+      "230",
+      "255",
+      "380",
+      "180"
+    ],
+    "answer": "255",
+    "solution": "1. Let $T$, $M$, and $C$ denote the sets of commuters using the Local Train, Metro, and Shared Cab, respectively.\n2. By the Principle of Inclusion-Exclusion for three sets:\n$n(T \\cup M \\cup C) = n(T) + n(M) + n(C) - [n(T \\cap M) + n(M \\cap C) + n(T \\cap C)] + n(T \\cap M \\cap C)$\n3. Substitute the given values:\n$n(T \\cup M \\cup C) = (140 + 125 + 115) - (55 + 45 + 50) + 25$\n$n(T \\cup M \\cup C) = 380 - 150 + 25 = 255$\n4. Thus, the total number of commuters surveyed is 255.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_FORGET_TRIPLE",
+    "distractor_misconceptions": [
+      {
+        "option": "230",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      },
+      {
+        "option": "180",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "70bd49ec-aa41-4261-8abd-06cc31a74bcf",
+    "spec": "G6-x10",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "A line $L_1$ has the equation $2x - y = 5$. A line $L_2$ is perpendicular to $L_1$ and passes through the point $(6, 4)$. For any point $(x, y)$ on the line $L_2$ restricted to the region $x \\ge 0$ and $y \\ge 0$, what is the maximum value of $x + y$?",
+    "options": [
+      "14",
+      "20",
+      "7",
+      "10"
+    ],
+    "answer": "14",
+    "solution": "1. The line $L_1$ is given by $y = 2x - 5$, so its slope is $m_1 = 2$.\n2. Since $L_2$ is perpendicular to $L_1$, the slope of $L_2$ is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{2}$.\n3. Line $L_2$ passes through $(6, 4)$, so its equation is $y - 4 = -\\frac{1}{2}(x - 6)$, which simplifies to $x + 2y = 14$, or $x = 14 - 2y$.\n4. For points on $L_2$ with $x \\ge 0$ and $y \\ge 0$, the sum is $S = x + y = (14 - 2y) + y = 14 - y$.\n5. To maximize $S = 14 - y$ subject to $y \\ge 0$ and $x = 14 - 2y \\ge 0$ (so $0 \\le y \\le 7$), we choose the minimum possible value of $y$, which is $y = 0$. At this point, $x = 14$, giving the maximum value of $x + y = 14$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL",
+    "distractor_misconceptions": [
+      {
+        "option": "20",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      }
+    ]
+  },
+  {
+    "id": "8737f167-ef7a-4976-9839-c966129e1ce8",
+    "spec": "G6-x9",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a sequence of points $P_n$ is defined by $P_n = (n, 3n - 1)$ for integers $n \\ge 1$. A line $L$ is perpendicular to the line containing this sequence of points and passes through $P_2$. What is the $y$-intercept of line $L$?",
+    "options": [
+      "$-\\frac{17}{3}$",
+      "$\\frac{17}{3}$",
+      "$11$",
+      "$\\frac{7}{3}$"
+    ],
+    "answer": "$\\frac{17}{3}$",
+    "solution": "1. Find the coordinates of points in the sequence: $P_1 = (1, 2)$ and $P_2 = (2, 5)$.\n2. The slope of the line containing the points is $m_1 = \\frac{5 - 2}{2 - 1} = 3$.\n3. The line $L$ is perpendicular to this line, so its slope is $m_2 = -\\frac{1}{m_1} = -\\frac{1}{3}$.\n4. The line $L$ passes through $P_2(2, 5)$. Its equation is $y - 5 = -\\frac{1}{3}(x - 2)$, which gives $y = -\\frac{1}{3}x + \\frac{2}{3} + 5 = -\\frac{1}{3}x + \\frac{17}{3}$.\n5. Setting $x = 0$, the $y$-intercept is $\\frac{17}{3}$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$11$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      },
+      {
+        "option": "$\\frac{7}{3}$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      }
+    ]
+  },
+  {
+    "id": "73fb5771-e17b-4b95-b5c7-1f49896be82b",
+    "spec": "M1-x5",
+    "concept_id": "M1",
+    "type": "TITA",
+    "stem": "An audit firm reviewed $140$ vendor invoices of a retail firm. Each of these $140$ invoices was flagged for at least one of three compliance errors: Missing Purchase Order ($P$), Tax Mismatch ($T$), and Pricing Variance ($V$). The audit revealed that $72$ invoices had error $P$, $65$ had error $T$, and $58$ had error $V$. Further, $26$ invoices had both errors $P$ and $T$, $22$ had both errors $T$ and $V$, and $20$ had both errors $P$ and $V$. How many invoices had all three compliance errors?",
+    "options": null,
+    "answer": "13",
+    "solution": "1. Let $P$, $T$, and $V$ denote the sets of invoices flagged for Missing Purchase Order, Tax Mismatch, and Pricing Variance, respectively.\n2. We are given:\n$|P \\cup T \\cup V| = 140$\n$|P| = 72$, $|T| = 65$, $|V| = 58$\n$|P \\cap T| = 26$, $|T \\cap V| = 22$, $|P \\cap V| = 20$\n3. Using the Principle of Inclusion-Exclusion:\n$|P \\cup T \\cup V| = (|P| + |T| + |V|) - (|P \\cap T| + |T \\cap V| + |P \\cap V|) + |P \\cap T \\cap V|$\n4. Substitute the known values:\n$140 = (72 + 65 + 58) - (26 + 22 + 20) + |P \\cap T \\cap V|$\n$140 = 195 - 68 + |P \\cap T \\cap V|$\n$140 = 127 + |P \\cap T \\cap V|$\n$|P \\cap T \\cap V| = 140 - 127 = 13$.\n5. Therefore, the number of invoices with all three errors is 13.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "d0d391bc-62e2-4699-9338-cc6c53668ae2",
+    "spec": "M1-x9",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In a sports academy, every one of the $140$ trainees plays at least one of the three formats of cricket: Tests, ODIs, or T20s. It is given that $80$ play Tests, $75$ play ODIs, and $65$ play T20s. Furthermore, $35$ play both Tests and ODIs, $30$ play both ODIs and T20s, and $25$ play both Tests and T20s. How many trainees play all three formats?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "answer": "10",
+    "solution": "1. Let $T, O,$ and $W$ represent the sets of trainees playing Tests, ODIs, and T20s respectively.\n2. By the principle of inclusion-exclusion for three sets:\n$|T \\cup O \\cup W| = |T| + |O| + |W| - (|T \\cap O| + |O \\cap W| + |T \\cap W|) + |T \\cap O \\cap W|$\n3. Substitute the given values:\n$140 = 80 + 75 + 65 - (35 + 30 + 25) + |T \\cap O \\cap W|$\n$140 = 220 - 90 + |T \\cap O \\cap W|$\n$140 = 130 + |T \\cap O \\cap W|$\n4. Solving for the triple intersection:\n$|T \\cap O \\cap W| = 140 - 130 = 10$.\n\nHence, the correct answer is 10.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "25",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "3ecd1b3f-df6c-4cc9-b679-05d66088a3e0",
+    "spec": "G6-x16",
+    "concept_id": "G6",
+    "type": "MCQ",
+    "stem": "In the $xy$-plane, a straight road runs along the line connecting $A(1, 2)$ and $B(3, 8)$. An access pathway is built perpendicular to this road, passing through a point $P(9, 6)$ and meeting the main road at point $Q$. What is the $y$-coordinate of point $Q$?",
+    "options": [
+      "$6.2$",
+      "$6.5$",
+      "$8.0$",
+      "$5.0$"
+    ],
+    "answer": "$8.0$",
+    "solution": "1. Find the slope of the road $AB$: $m = \\frac{8 - 2}{3 - 1} = \\frac{6}{2} = 3$.\n2. The equation of line $AB$ passing through $(1, 2)$ is $y - 2 = 3(x - 1) \\implies y = 3x - 1$, or $3x - y = 1$.\n3. Since the pathway is perpendicular to $AB$, its slope is $m_{\\perp} = -\\frac{1}{3}$.\n4. The equation of the pathway passing through $P(9, 6)$ is $y - 6 = -\\frac{1}{3}(x - 9) \\implies x + 3y = 27$.\n5. Solve the system to find the intersection point $Q$:\nFrom $y = 3x - 1$, substitute into $x + 3y = 27$:\n$x + 3(3x - 1) = 27 \\implies 10x - 3 = 27 \\implies 10x = 30 \\implies x = 3$.\n6. Substitute $x = 3$ to find the $y$-coordinate: $y = 3(3) - 1 = 8$.\nThus, the $y$-coordinate of $Q$ is $8.0$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "G6_SLOPE_INVERTED",
+    "distractor_misconceptions": [
+      {
+        "option": "$6.2$",
+        "misconception_id": "G6_SLOPE_INVERTED"
+      },
+      {
+        "option": "$6.5$",
+        "misconception_id": "G6_PERP_SLOPE_NO_RECIPROCAL"
+      }
+    ]
+  },
+  {
+    "id": "78a6e1e4-a172-4610-9ac8-3cc1ca3e2b85",
+    "spec": "M1-x12",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In an agricultural survey of a village, every farming household cultivates at least one of three crops: Wheat, Mustard, and Gram. A total of $120$ households cultivate Wheat, $110$ cultivate Mustard, and $95$ cultivate Gram. Furthermore, $55$ households cultivate both Wheat and Mustard, $45$ cultivate both Mustard and Gram, and $40$ cultivate both Wheat and Gram. If $25$ households cultivate all three crops, find the total number of farming households in the village.",
+    "options": [
+      "185",
+      "210",
+      "235",
+      "260"
+    ],
+    "answer": "210",
+    "solution": "1. Let $W$, $M$, and $G$ denote the sets of households cultivating Wheat, Mustard, and Gram, respectively.\n2. By the Principle of Inclusion-Exclusion, the total number of households is given by:\n$n(W \\cup M \\cup G) = n(W) + n(M) + n(G) - [n(W \\cap M) + n(M \\cap G) + n(W \\cap G)] + n(W \\cap M \\cap G)$\n3. Substitute the given values:\n$n(W \\cup M \\cup G) = 120 + 110 + 95 - (55 + 45 + 40) + 25$\n$n(W \\cup M \\cup G) = 325 - 140 + 25 = 210$\n4. Hence, there are $210$ farming households in the village.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_FORGET_TRIPLE",
+    "distractor_misconceptions": [
+      {
+        "option": "185",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      },
+      {
+        "option": "260",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "24b72e38-fcbd-4bbe-a264-a072ef190936",
+    "spec": "M1-x10",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "A real estate advisory firm surveyed $200$ prospective home buyers in Bengaluru regarding three key property preferences: High Rental Yield ($R$), Proximity to Metro ($M$), and Gated Community Amenities ($A$). The survey revealed the following:\n- Each respondent preferred at least one of these three features.\n- $28$ respondents preferred both $R$ and $M$.\n- $32$ respondents preferred both $M$ and $A$.\n- $25$ respondents preferred both $R$ and $A$.\n- Exactly $15$ respondents preferred all three features.\n\nHow many respondents preferred exactly two of these three features?",
+    "options": [
+      "40",
+      "55",
+      "70",
+      "85"
+    ],
+    "answer": "40",
+    "solution": "1. Let $R, M, A$ represent the sets of respondents who prefer High Rental Yield, Proximity to Metro, and Gated Community Amenities, respectively.\n2. We are given the pairwise intersections: $n(R \\cap M) = 28$, $n(M \\cap A) = 32$, $n(R \\cap A) = 25$, and the intersection of all three: $n(R \\cap M \\cap A) = 15$.\n3. Each pairwise intersection includes those who prefer all three features. Thus, the number of respondents who prefer strictly two features is given by:\n$\\text{Exactly two} = [n(R \\cap M) - n(R \\cap M \\cap A)] + [n(M \\cap A) - n(R \\cap M \\cap A)] + [n(R \\cap A) - n(R \\cap M \\cap A)]$\n$\\text{Exactly two} = (28 - 15) + (32 - 15) + (25 - 15) = 13 + 17 + 10 = 40$.\nAlternatively, $\\text{Exactly two} = (28 + 32 + 25) - 3 \\times 15 = 85 - 45 = 40$.\n4. Therefore, the correct answer is 40.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_EXACTLY_TWO_PAIRWISE",
+    "distractor_misconceptions": [
+      {
+        "option": "85",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      },
+      {
+        "option": "70",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      }
+    ]
+  },
+  {
+    "id": "692e816a-07f1-4e1c-acee-c62b5a5a25b6",
+    "spec": "G5-x21",
+    "concept_id": "G5",
+    "type": "MCQ",
+    "stem": "A solid right circular cone of base radius $15\\text{ cm}$ and slant height $25\\text{ cm}$ is completely melted and recast into a solid right circular cylinder of the same base radius. Find the total surface area of the cylinder (in $\\text{cm}^2$).",
+    "options": [
+      "$650\\pi$",
+      "$800\\pi$",
+      "$200\\pi$",
+      "$725\\pi$"
+    ],
+    "answer": "$650\\pi$",
+    "solution": "1. For the cone, the base radius is $r = 15\\text{ cm}$ and slant height is $l = 25\\text{ cm}$.\n2. The vertical height of the cone is $h_{\\text{cone}} = \\sqrt{l^2 - r^2} = \\sqrt{25^2 - 15^2} = \\sqrt{625 - 225} = 20\\text{ cm}$.\n3. The volume of the cone is $V = \\frac{1}{3}\\pi r^2 h_{\\text{cone}} = \\frac{1}{3}\\pi (15^2)(20) = 1500\\pi\\text{ cm}^3$.\n4. Since it is recast into a cylinder with the same radius $r = 15\\text{ cm}$, the volume of the cylinder is $V = \\pi r^2 h_{\\text{cyl}} = \\pi (15^2) h_{\\text{cyl}} = 225\\pi h_{\\text{cyl}}$.\n5. Equating the volumes: $225\\pi h_{\\text{cyl}} = 1500\\pi \\implies h_{\\text{cyl}} = \\frac{1500}{225} = \\frac{20}{3}\\text{ cm}$. (Alternatively, $h_{\\text{cyl}} = \\frac{1}{3}h_{\\text{cone}} = \\frac{20}{3}\\text{ cm}$).\n6. The total surface area (TSA) of the cylinder is $2\\pi r(h_{\\text{cyl}} + r) = 2\\pi(15)\\left(\\frac{20}{3} + 15\\right) = 30\\pi\\left(\\frac{65}{3}\\right) = 650\\pi\\text{ cm}^2$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "$800\\pi$",
+        "misconception_id": "G5_SLANT_AS_HEIGHT"
+      },
+      {
+        "option": "$200\\pi$",
+        "misconception_id": "G5_CSA_VS_TSA"
+      }
+    ]
+  },
+  {
+    "id": "824c376c-2e34-4899-9c6e-b2eb5e26d761",
+    "spec": "M1-x2",
+    "concept_id": "M1",
+    "type": "TITA",
+    "stem": "A pastry chef creates $100$ special dessert recipes, each containing at least one of three premium ingredients: Almonds, Berries, and Cocoa. Among these recipes, $54$ use Almonds, $48$ use Berries, and $45$ use Cocoa. Furthermore, $18$ recipes use both Almonds and Berries, $15$ use both Berries and Cocoa, and $16$ use both Cocoa and Almonds. How many of the recipes use exactly two of these three ingredients?",
+    "options": null,
+    "answer": "43",
+    "solution": "1. Let $A$, $B$, and $C$ denote the sets of recipes using Almonds, Berries, and Cocoa, respectively. We are given:\n$n(A \\cup B \\cup C) = 100$\n$n(A) = 54, n(B) = 48, n(C) = 45$\n$n(A \\cap B) = 18, n(B \\cap C) = 15, n(C \\cap A) = 16$\n\n2. Using the principle of inclusion-exclusion:\n$n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - [n(A \\cap B) + n(B \\cap C) + n(C \\cap A)] + n(A \\cap B \\cap C)$\n$100 = 54 + 48 + 45 - (18 + 15 + 16) + n(A \\cap B \\cap C)$\n$100 = 147 - 49 + n(A \\cap B \\cap C)$\n$100 = 98 + n(A \\cap B \\cap C) \\implies n(A \\cap B \\cap C) = 2$.\n\n3. The number of recipes using exactly two ingredients is given by:\n$[n(A \\cap B) - n(A \\cap B \\cap C)] + [n(B \\cap C) - n(A \\cap B \\cap C)] + [n(C \\cap A) - n(A \\cap B \\cap C)]$\n$= [n(A \\cap B) + n(B \\cap C) + n(C \\cap A)] - 3 \\times n(A \\cap B \\cap C)$\n$= 49 - 3(2) = 49 - 6 = 43.\n\nFinal Answer: 43",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_EXACTLY_TWO_PAIRWISE",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "fecb15d2-2034-4e08-b52e-63d92d8a378c",
+    "spec": "M2-x0",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "A college library has a panel of $9$ student volunteers. For organizing an annual book fair, a sub-committee of $3$ volunteers needs to be chosen from this panel. In how many different ways can this sub-committee be formed?",
+    "options": [
+      "504",
+      "84",
+      "252",
+      "168"
+    ],
+    "answer": "84",
+    "solution": "1. The order of selection of volunteers for the sub-committee does not matter, as all members have the same role.\n2. Therefore, this is a combination problem of selecting $3$ students out of $9$, given by $\\binom{9}{3}$.\n3. Calculating $\\binom{9}{3} = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} = 84$.\n4. Thus, the number of different ways to form the sub-committee is 84.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_PERM_FOR_COMB",
+    "distractor_misconceptions": [
+      {
+        "option": "504",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      }
+    ]
+  },
+  {
+    "id": "c09761d6-de46-4b2f-8ebf-296358a94c87",
+    "spec": "M1-x15",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "A logistics firm monitored the fuel efficiency of a fleet of $180$ delivery vans. Drivers adopted up to three mileage-improving practices: Regular Tyre Inflation ($T$), Speed Limiting ($S$), and Route Optimization ($R$). Every van in the fleet implemented at least one of these practices. The survey revealed the following:\n- $105$ vans practiced $T$, $95$ practiced $S$, and $90$ practiced $R$.\n- $42$ vans practiced both $T$ and $S$.\n- $38$ vans practiced both $S$ and $R$.\n- $45$ vans practiced both $T$ and $R$.\n\nHow many vans implemented all three mileage-improving practices?",
+    "options": [
+      "15",
+      "20",
+      "35",
+      "50"
+    ],
+    "answer": "15",
+    "solution": "1. Let $T, S, R$ represent the sets of vans implementing each practice, and let $x$ be the number of vans implementing all three practices, i.e., $|T \\cap S \\cap R| = x$.\n2. Using the Principle of Inclusion-Exclusion for three sets:\n$|T \\cup S \\cup R| = |T| + |S| + |R| - (|T \\cap S| + |S \\cap R| + |T \\cap R|) + |T \\cap S \\cap R|$.\n3. Substitute the given values:\n$180 = 105 + 95 + 90 - (42 + 38 + 45) + x$.\n4. Simplify the terms:\n$180 = 290 - 125 + x$\n$180 = 165 + x$\n$x = 180 - 165 = 15$.\n5. Thus, $15$ vans implemented all three practices.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "50",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "bb0bbc89-01e9-4a08-ba55-648ba317e521",
+    "spec": "M1-x16",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In a municipal ward election, voters could cast approval votes for up to three policy proposals: $A$ (Civic Infrastructure), $B$ (Public Transport), and $C$ (Green Spaces). A total of $320$ registered residents voted, and every voter supported at least one proposal. It was found that $180$ residents voted for $A$, $165$ voted for $B$, and $150$ voted for $C$. Furthermore, the number of voters who supported both $A$ and $B$ was $75$, both $B$ and $C$ was $65$, and both $A$ and $C$ was $70$. How many voters supported all three proposals?",
+    "options": [
+      "35",
+      "20",
+      "40",
+      "25"
+    ],
+    "answer": "35",
+    "solution": "1. Let $n(A) = 180$, $n(B) = 165$, and $n(C) = 150$.\n2. The pairwise intersections are $n(A \\cap B) = 75$, $n(B \\cap C) = 65$, and $n(A \\cap C) = 70$.\n3. Since every voter supported at least one proposal, the total number of voters is the union: $n(A \\cup B \\cup C) = 320$.\n4. By the Principle of Inclusion-Exclusion:\n$n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - [n(A \\cap B) + n(B \\cap C) + n(A \\cap C)] + n(A \\cap B \\cap C)$\n$320 = 180 + 165 + 150 - (75 + 65 + 70) + n(A \\cap B \\cap C)$\n$320 = 495 - 210 + n(A \\cap B \\cap C)$\n$320 = 285 + n(A \\cap B \\cap C)$\n$n(A \\cap B \\cap C) = 320 - 285 = 35$.\n\n5. The number of voters who supported all three proposals is $35$.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_FORGET_TRIPLE",
+    "distractor_misconceptions": [
+      {
+        "option": "20",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "2e9092fc-f6a8-4bfa-b8ae-658edf119e9d",
+    "spec": "M2-x2",
+    "concept_id": "M2",
+    "type": "TITA",
+    "stem": "A logistics company monitors the daily fuel efficiency of a delivery truck over a period of $7$ consecutive days. On each day, the truck is classified into one of three mileage performance categories: High ($H$), Moderate ($M$), or Low ($L$). Over these $7$ days, the truck recorded High efficiency on exactly $3$ days, Moderate efficiency on exactly $2$ days, and Low efficiency on exactly $2$ days. Furthermore, the truck never recorded Low efficiency on two consecutive days. In how many distinct chronological sequences could these daily performance ratings have occurred?",
+    "options": null,
+    "answer": "150",
+    "solution": "1. The 7 days consist of $3$ High ($H$), $2$ Moderate ($M$), and $2$ Low ($L$) ratings.\n2. First, arrange the non-Low ratings, which are $3$ identical $H$'s and $2$ identical $M$'s. The number of distinct arrangements of these $5$ days is $\\frac{5!}{3! \\times 2!} = \\frac{120}{6 \\times 2} = 10$.\n3. Arranging these $5$ days creates $5 + 1 = 6$ potential gaps (including the two ends) where a Low ($L$) rating can be placed so that no two $L$'s are on consecutive days.\n4. Since the $2$ $L$'s are identical, we choose $2$ distinct gaps out of the $6$ available gaps in $\\binom{6}{2} = \\frac{6 \\times 5}{2} = 15$ ways.\n5. Therefore, the total number of distinct chronological sequences is $10 \\times 15 = 150$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_OVERCOUNT_IDENTICAL",
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "b7b89551-2383-4011-8ea4-f9402a5cc4c7",
+    "spec": "M2-x1",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "An investor plans to allocate a surplus fund across fixed deposits of four different banks: Bank A, Bank B, Bank C, and Bank D. She has $7$ identical certificates of ₹$1$ lakh each. She decides that each bank must receive at least one certificate, and Bank A must receive strictly more certificates than Bank B. In how many different ways can the certificates be distributed among the four banks?",
+    "options": [
+      "7",
+      "14",
+      "20",
+      "42"
+    ],
+    "answer": "7",
+    "solution": "1. Let $a, b, c, d$ be the number of certificates allocated to Bank A, Bank B, Bank C, and Bank D respectively. Each certificate is identical and worth ₹$1$ lakh.\n2. We are given $a + b + c + d = 7$, with $a, b, c, d \\ge 1$ and $a > b$.\n3. Let $a' = a - 1, b' = b - 1, c' = c - 1, d' = d - 1$. Then $a' + b' + c' + d' = 3$, where $a', b', c', d'$ are non-negative integers and $a' > b'$.\n4. We analyse cases based on the value of $b'$:\n- If $b' = 0$: then $a'$ can be $1, 2,$ or $3$.\n  - Subcase $a' = 1$: $c' + d' = 3 - (1 + 0) = 2$. Number of non-negative integer solutions is $\\binom{2 + 2 - 1}{2} = \\binom{3}{2} = 3$.\n  - Subcase $a' = 2$: $c' + d' = 3 - (2 + 0) = 1$. Number of solutions is $\\binom{1 + 2 - 1}{1} = \\binom{2}{1} = 2$.\n  - Subcase $a' = 3$: $c' + d' = 3 - (3 + 0) = 0$. Number of solutions is $\\binom{0 + 2 - 1}{0} = \\binom{1}{0} = 1$.\n- If $b' = 1$: since $a' > b'$, we must have $a' \\ge 2$. But $a' + b' \\ge 2 + 1 = 3$, so the only possibility is $a' = 2, b' = 1$, which leaves $c' + d' = 0$. Number of solutions is $1$.\n- If $b' \\ge 2$: then $a' \\ge 3$, so $a' + b' \\ge 5 > 3$, impossible.\n5. Total number of valid distributions = $3 + 2 + 1 + 1 = 7$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "20",
+        "misconception_id": "M2_OVERCOUNT_IDENTICAL"
+      },
+      {
+        "option": "42",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      },
+      {
+        "option": "14",
+        "misconception_id": "M2_OVERCOUNT_IDENTICAL"
+      }
+    ]
+  },
+  {
+    "id": "c4b49da5-f716-4dc2-ac8c-fbdecc9001d1",
+    "spec": "M2-x4",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "In an automated assembly unit, six distinct inspection sensors, labeled $S_1$ through $S_6$, are to be mounted along the circumference of a circular testing carousel. For calibration purposes, sensor $S_1$ and sensor $S_2$ must be mounted directly next to each other. In how many distinct circular configurations can the six sensors be arranged?",
+    "options": [
+      "48",
+      "240",
+      "120",
+      "24"
+    ],
+    "answer": "48",
+    "solution": "1. Treat sensors $S_1$ and $S_2$ as a single unit or block, since they must be adjacent. Along with the remaining $4$ sensors ($S_3, S_4, S_5, S_6$), there are $1 + 4 = 5$ distinct units to be placed in a circle.\n2. The number of ways to arrange $5$ distinct units around a circular carousel is $(5 - 1)! = 4! = 24$.\n3. Within their unit, sensors $S_1$ and $S_2$ can be ordered in $2! = 2$ ways.\n4. Total distinct configurations = $24 \\times 2 = 48$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_CIRCULAR_AS_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "240",
+        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "7ab4376c-d939-4df2-b68c-186a5c3df432",
+    "spec": "M2-x5",
+    "concept_id": "M2",
+    "type": "TITA",
+    "stem": "A chemical processing unit has a primary reservoir connected to $5$ inlet pipes and $4$ outlet pipes. To maintain safe pressure levels, the control system must activate a combination consisting of at least $2$ inlet pipes and at least $1$ outlet pipe. In how many different ways can the operator select the set of pipes to be activated simultaneously?",
+    "options": null,
+    "answer": "390",
+    "solution": "1. Find the number of ways to choose the inlet pipes: There are $5$ distinct inlet pipes, and at least $2$ must be selected. The number of non-empty subsets of size $\\ge 2$ is given by $2^5 - \\binom{5}{0} - \\binom{5}{1} = 32 - 1 - 5 = 26$.\n2. Find the number of ways to choose the outlet pipes: There are $4$ distinct outlet pipes, and at least $1$ must be selected. The number of valid selections is $2^4 - 1 = 16 - 1 = 15$.\n3. Multiply the independent choices of inlets and outlets: $\\text{Total ways} = 26 \\times 15 = 390$.\n4. Therefore, the answer is 390.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "6322eaec-87e4-4cd9-856f-8ede80e1dfe9",
+    "spec": "M1-x1",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In a demographic survey of a municipal ward with $1,000$ households, each household owns at least one of three assets: a Car, a Two-wheeler, or an Air Conditioner (AC). The survey revealed that $450$ households own a Car, $620$ own a Two-wheeler, and $380$ own an AC. Furthermore, the number of households owning both a Car and a Two-wheeler is $210$, both a Two-wheeler and an AC is $160$, and both a Car and an AC is $140$. How many households own all three assets?",
+    "options": [
+      "40",
+      "60",
+      "80",
+      "100"
+    ],
+    "answer": "60",
+    "solution": "1. Let $C$, $T$, and $A$ denote the sets of households owning a Car, a Two-wheeler, and an AC, respectively.\n2. We are given $|C \\cup T \\cup A| = 1000$.\n3. Individual totals are: $|C| = 450$, $|T| = 620$, $|A| = 380$, so $\\sum |C| = 450 + 620 + 380 = 1450$.\n4. Pairwise intersections are: $|C \\cap T| = 210$, $|T \\cap A| = 160$, $|C \\cap A| = 140$, so $\\sum |C \\cap T| = 210 + 160 + 140 = 510$.\n5. By the Principle of Inclusion-Exclusion:\n$|C \\cup T \\cup A| = \\sum |A_i| - \\sum |A_i \\cap A_j| + |C \\cap T \\cap A|$\n$1000 = 1450 - 510 + |C \\cap T \\cap A|$\n$1000 = 940 + |C \\cap T \\cap A|$\n$|C \\cap T \\cap A| = 1000 - 940 = 60$.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "40",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      },
+      {
+        "option": "100",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      }
+    ]
+  },
+  {
+    "id": "714528a7-966a-4d7f-bf05-a5627abe129d",
+    "spec": "M1-x11",
+    "concept_id": "M1",
+    "type": "TITA",
+    "stem": "In a corporate firm of $200$ employees, an annual pay revision evaluated three distinct benefits: a Performance Bonus ($B$), a Travel Allowance ($T$), and a Stock Option Plan ($S$). Every employee received at least one of these three benefits. It is given that $110$ employees received $B$, $95$ received $T$, and $105$ received $S$. Furthermore, $45$ employees received both $B$ and $T$, $40$ received both $T$ and $S$, and $50$ received both $B$ and $S$. Find the number of employees who received exactly two of these benefits.",
+    "options": null,
+    "answer": "60",
+    "solution": "1. Let $N = 200$ be the total number of employees, all receiving at least one benefit: $|B \\cup T \\cup S| = 200$.\n2. Use the principle of inclusion-exclusion to find the number of employees receiving all three benefits, $x$:\n$|B \\cup T \\cup S| = |B| + |T| + |S| - (|B \\cap T| + |T \\cap S| + |B \\cap S|) + |B \\cap T \\cap S|$\n$200 = 110 + 95 + 105 - (45 + 40 + 50) + x$\n$200 = 310 - 135 + x$\n$200 = 175 + x \\implies x = 25$.\n3. The number of employees receiving exactly two benefits is given by:\n$(|B \\cap T| - x) + (|T \\cap S| - x) + (|B \\cap S| - x) = (|B \\cap T| + |T \\cap S| + |B \\cap S|) - 3x$\n$= 135 - 3(25) = 135 - 75 = 60$.\n4. Thus, the required number of employees is 60.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": []
+  },
+  {
+    "id": "18f941c7-6df8-4f68-8843-43dfbea28e9c",
+    "spec": "M1-x7",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "In an annual examination, $180$ students appeared for at least one of three subjects: Physics, Chemistry, and Mathematics. The number of students who passed in Physics, Chemistry, and Mathematics were $110$, $95$, and $100$, respectively. It is known that $45$ students passed in both Physics and Chemistry, $40$ students passed in both Chemistry and Mathematics, and $50$ students passed in both Physics and Mathematics. If every student passed in at least one subject, how many students passed in all three subjects?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "35"
+    ],
+    "answer": "10",
+    "solution": "1. Let $P$, $C$, and $M$ denote the sets of students passing in Physics, Chemistry, and Mathematics, respectively.\n2. We are given $|P \\cup C \\cup M| = 180$, $|P| = 110$, $|C| = 95$, $|M| = 100$, $|P \\cap C| = 45$, $|C \\cap M| = 40$, and $|P \\cap M| = 50$.\n3. By the Principle of Inclusion-Exclusion:\n$|P \\cup C \\cup M| = |P| + |C| + |M| - (|P \\cap C| + |C \\cap M| + |P \\cap M|) + |P \\cap C \\cap M|$.\n4. Substitute the known values:\n$180 = 110 + 95 + 100 - (45 + 40 + 50) + |P \\cap C \\cap M|$\n$180 = 305 - 135 + |P \\cap C \\cap M|$\n$180 = 170 + |P \\cap C \\cap M|$.\n5. Solving for the triple intersection:\n$|P \\cap C \\cap M| = 180 - 170 = 10$.\n\nHence, the correct answer is 10.",
+    "difficulty_elo": 1250,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "35",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      },
+      {
+        "option": "20",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      }
+    ]
+  },
+  {
+    "id": "0ce78d93-9f0b-45cc-a263-62e8f68f1c54",
+    "spec": "M2-x10",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "The accounting team of a boutique firm consists of $5$ financial analysts. During their annual audit review, all $5$ analysts are seated around a circular discussion table. In how many distinct ways can they be arranged around the table?",
+    "options": [
+      "120",
+      "24",
+      "60",
+      "12"
+    ],
+    "answer": "24",
+    "solution": "1. The number of ways to arrange $n$ distinct individuals in a circle where relative positions matter (and rotations are considered equivalent) is given by $(n - 1)!$.\n2. Here, $n = 5$, so the number of distinct arrangements is $(5 - 1)! = 4!$.\n3. $4! = 4 \\times 3 \\times 2 \\times 1 = 24$.\n\nHence, the correct answer is 24.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M2_CIRCULAR_AS_LINEAR",
+    "distractor_misconceptions": [
+      {
+        "option": "120",
+        "misconception_id": "M2_CIRCULAR_AS_LINEAR"
+      }
+    ]
+  },
+  {
+    "id": "3072fc57-44a5-49ad-98dd-ac53001f3764",
+    "spec": "M1-x6",
+    "concept_id": "M1",
+    "type": "MCQ",
+    "stem": "During an annual festive sale at an e-commerce platform, $300$ customers purchased items from at least one of three categories: Electronics ($E$), Fashion ($F$), and Home Goods ($H$). A total of $160$ customers bought Electronics, $140$ bought Fashion, and $130$ bought Home Goods. Furthermore, $60$ customers bought both Electronics and Fashion, $50$ bought both Fashion and Home Goods, and $45$ bought both Electronics and Home Goods. How many customers purchased items from exactly two of these three categories?",
+    "options": [
+      "80",
+      "125",
+      "155",
+      "75"
+    ],
+    "answer": "80",
+    "solution": "1. Let $N = 300$ be the total number of customers who purchased from at least one category.\n2. We are given $|E| = 160$, $|F| = 140$, $|H| = 130$.\n3. Pairwise intersections are $|E \\cap F| = 60$, $|F \\cap H| = 50$, and $|E \\cap H| = 45$.\n4. By the Principle of Inclusion-Exclusion:\n$|E \\cup F \\cup H| = (|E| + |F| + |H|) - (|E \\cap F| + |F \\cap H| + |E \\cap H|) + |E \\cap F \\cap H|$\n$300 = (160 + 140 + 130) - (60 + 50 + 45) + |E \\cap F \\cap H|$\n$300 = 430 - 155 + |E \\cap F \\cap H| = 275 + |E \\cap F \\cap H|$\nSo, $|E \\cap F \\cap H| = 300 - 275 = 25$.\n5. The number of customers who purchased from exactly two categories is given by:\n$(|E \\cap F| + |F \\cap H| + |E \\cap H|) - 3 \\times |E \\cap F \\cap H| = 155 - 3(25) = 155 - 75 = 80$.\n6. The final answer is 80.",
+    "difficulty_elo": 1450,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": "M1_EXACTLY_TWO_PAIRWISE",
+    "distractor_misconceptions": [
+      {
+        "option": "155",
+        "misconception_id": "M1_EXACTLY_TWO_PAIRWISE"
+      },
+      {
+        "option": "125",
+        "misconception_id": "M1_FORGET_TRIPLE"
+      }
+    ]
+  },
+  {
+    "id": "ef6e0bc8-380c-4564-8ffb-34d30a04b1af",
+    "spec": "M2-x9",
+    "concept_id": "M2",
+    "type": "MCQ",
+    "stem": "A passenger train running between two major cities has $8$ intermediate stations. The railway authority needs to print distinct types of journey tickets, each specifying a origin station and a destination station. If journey tickets are required only for travel strictly in the forward direction (i.e., towards the final city), how many distinct types of single-journey tickets must be printed between any two stations on this route?",
+    "options": [
+      "45",
+      "90",
+      "28",
+      "56"
+    ],
+    "answer": "45",
+    "solution": "1. Find the total number of stations on the route: there are $2$ terminal cities and $8$ intermediate stations, making a total of $n = 2 + 8 = 10$ stations.\n2. Since tickets are valid only in the forward direction, choosing any pair of $2$ distinct stations uniquely determines the origin (the earlier station) and the destination (the later station).\n3. The number of distinct single-journey tickets is given by $\\binom{10}{2} = \\frac{10 \\times 9}{2} = 45$.",
+    "difficulty_elo": 1050,
+    "source": "bank",
+    "verified": true,
+    "targets_misconception_id": null,
+    "distractor_misconceptions": [
+      {
+        "option": "90",
+        "misconception_id": "M2_PERM_FOR_COMB"
+      }
+    ]
   }
 ]

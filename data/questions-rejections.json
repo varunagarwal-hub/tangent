@@ -2302,5 +2302,429 @@
   {
     "spec": "G2-x28",
     "reason": "answer mismatch (key says 5, independent solve got 6)"
+  },
+  {
+    "spec": "G3-x2",
+    "reason": "ambiguous (The answer is an irrational number (30 + 6√5), which cannot be typed into a standard TITA numerical box. The question li)"
+  },
+  {
+    "spec": "G2-x39",
+    "reason": "ambiguous (The correct answer for the number of obtuse-angled triangles is 10, which is missing from the options. Option C (15) is )"
+  },
+  {
+    "spec": "G1-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G1-x13",
+    "reason": "ambiguous (Zero options are correct based on the literal wording (yields 112.5°). The question likely has a typo ('supplement of an)"
+  },
+  {
+    "spec": "G1-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x12",
+    "reason": "ambiguous (Contradictory data: The circumcenter of an obtuse triangle (angle B = 110°) must lie outside the triangle, but the probl)"
+  },
+  {
+    "spec": "G3-x7",
+    "reason": "answer mismatch (key says 626, independent solve got 676)"
+  },
+  {
+    "spec": "G2-x14",
+    "reason": "ambiguous (Contradictory data: The height of the taller flagpole (40 m) is greater than the length of the cable connecting its top )"
+  },
+  {
+    "spec": "G2-x14",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x22",
+    "reason": "ambiguous (Contradictory data: The exterior angle of a cyclic quadrilateral is equal to the interior opposite angle (so ∠CBE should)"
+  },
+  {
+    "spec": "G2-x34",
+    "reason": "ambiguous (The correct calculated value for M - N is 8, which does not match any of the provided options. There is likely a typo in)"
+  },
+  {
+    "spec": "G2-x34",
+    "reason": "ambiguous (The correct answer is 8 (U=14, T=6), which is missing from the options. The options likely contain a typo in the questio)"
+  },
+  {
+    "spec": "G2-x34",
+    "reason": "answer mismatch (key says 14, independent solve got 15)"
+  },
+  {
+    "spec": "G3-x21",
+    "reason": "ambiguous (Missing data: The measure of arc BC is not given, so Quantity II (angle ADC) cannot be determined. The question is unsol)"
+  },
+  {
+    "spec": "G3-x21",
+    "reason": "answer mismatch (key says Quantity I is $60^\\circ$ and Quantity II is $120^\\circ$, independent solve got Quantity I is 60^∘ and Quantity II is 120^∘)"
+  },
+  {
+    "spec": "G3-x4",
+    "reason": "answer mismatch (key says 126°, independent solve got 137°)"
+  },
+  {
+    "spec": "G3-x4",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x16",
+    "reason": "answer mismatch (key says 1, independent solve got 0)"
+  },
+  {
+    "spec": "G3-x16",
+    "reason": "answer mismatch (key says $1$, independent solve got 0)"
+  },
+  {
+    "spec": "G3-x18",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 356, independent solve got 484)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 65, independent solve got 17)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 15, independent solve got 5\\sqrt{10})"
+  },
+  {
+    "spec": "G4-x8",
+    "reason": "ambiguous (Contradictory data: The equation yields a fractional number of sides (n_A = 22/3), which is impossible for a polygon. Th)"
+  },
+  {
+    "spec": "G4-x5",
+    "reason": "ambiguous (The given values lead to the quadratic equation n^2 - 5n - 3 = 0, which has no integer solutions. The number of sides mu)"
+  },
+  {
+    "spec": "G2-x23",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G2-x23",
+    "reason": "answer mismatch (key says 14, independent solve got 11.9)"
+  },
+  {
+    "spec": "G3-x17",
+    "reason": "ambiguous (The problem contains contradictory data. The segments AX=4, XB=12, CX=6, and XD=8 intersecting perpendicularly strictly )"
+  },
+  {
+    "spec": "G4-x6",
+    "reason": "answer mismatch (key says 168, independent solve got 120)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "ambiguous (The phrase 'number of possible positions of point P' is mathematically incorrect because for any valid distance OP, ther)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 14, independent solve got 4)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 11, independent solve got 4)"
+  },
+  {
+    "spec": "G3-x1",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x1",
+    "reason": "answer mismatch (key says $P = 38^\\circ$ and $Q = 90^\\circ$, so $Q > P$, independent solve got P = 38^∘ and Q = 90^∘, so Q > P)"
+  },
+  {
+    "spec": "G3-x1",
+    "reason": "ambiguous (The question asks for the reflex angle AOC, which is 220°. With Q = 35°, P = 220° does not match any option. The intende)"
+  },
+  {
+    "spec": "G5-x1",
+    "reason": "answer mismatch (key says $144\\pi$, independent solve got $90\\pi$)"
+  },
+  {
+    "spec": "G3-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G4-x15",
+    "reason": "ambiguous (The phrase '119 more diagonals than' is a typo. Solving the equation exactly as written yields n=60 and 1829 diagonals, )"
+  },
+  {
+    "spec": "G4-x15",
+    "reason": "ambiguous (The correct answer (104) is missing from the options. The option '90' is the number of diagonals of the predecessor poly)"
+  },
+  {
+    "spec": "G3-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G4-x21",
+    "reason": "ambiguous (Multiple correct options. Both n=13 (65 diagonals, exceptional angle 108) and n=14 (77 diagonals, exceptional angle 132))"
+  },
+  {
+    "spec": "G4-x21",
+    "reason": "answer mismatch (key says 20, independent solve got 35)"
+  },
+  {
+    "spec": "G4-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G4-x3",
+    "reason": "answer mismatch (key says 10, independent solve got 12)"
+  },
+  {
+    "spec": "G4-x3",
+    "reason": "answer mismatch (key says 5, independent solve got 4)"
+  },
+  {
+    "spec": "G4-x16",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G4-x13",
+    "reason": "answer mismatch (key says 4, independent solve got 6)"
+  },
+  {
+    "spec": "G4-x13",
+    "reason": "ambiguous (The condition 'D is a multiple of n' is satisfied by exactly 5 polygons (n=3, 5, 9, 15, 45), which is not among the opti)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 729, independent solve got 615.09375)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 189, independent solve got 433.671875)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 124, independent solve got 252.25)"
+  },
+  {
+    "spec": "G3-x13",
+    "reason": "answer mismatch (key says 34$^\ncirc$, independent solve got 30$^\\circ$)"
+  },
+  {
+    "spec": "G3-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "answer mismatch (key says 8, independent solve got 2)"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "answer mismatch (key says 3, independent solve got 2)"
+  },
+  {
+    "spec": "G5-x11",
+    "reason": "answer mismatch (key says 66, independent solve got 651)"
+  },
+  {
+    "spec": "G5-x11",
+    "reason": "ambiguous (The calculated slant height is √420 (approx 20.49), which is an irrational number. TITA questions in CAT strictly requir)"
+  },
+  {
+    "spec": "G5-x11",
+    "reason": "ambiguous (Typo in the question: The slant height of the cone is irrational (sqrt(1096)), making the surface area irrational (1036 )"
+  },
+  {
+    "spec": "G5-x9",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x5",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x12",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G6-x5",
+    "reason": "answer mismatch (key says 14.67, independent solve got 44/3)"
+  },
+  {
+    "spec": "G6-x5",
+    "reason": "answer mismatch (key says 11, independent solve got 12)"
+  },
+  {
+    "spec": "G6-x0",
+    "reason": "ambiguous (The true minimum slope for a real number k is -5/12, which is not among the options. The author likely mistakenly assume)"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "ambiguous (Contradictory data: No integer radius and height can simultaneously satisfy r+h=14 and Volume = Total Surface Area. The )"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "ambiguous (Contradictory data: The problem explicitly states that r and h are positive integers. However, solving r+h=18 and rh=48 )"
+  },
+  {
+    "spec": "G6-x8",
+    "reason": "answer mismatch (key says 10, independent solve got 5.2)"
+  },
+  {
+    "spec": "G6-x8",
+    "reason": "answer mismatch (key says 56, independent solve got 172/3)"
+  },
+  {
+    "spec": "G6-x8",
+    "reason": "answer mismatch (key says 13, independent solve got 20/3)"
+  },
+  {
+    "spec": "G5-x22",
+    "reason": "answer mismatch (key says 360\\pi, independent solve got 1200\\pi)"
+  },
+  {
+    "spec": "G5-x22",
+    "reason": "ambiguous (The options are incorrect for the question asked. The sum of the volumes of the 3 cones is 432π. Option A (1200π) is the)"
+  },
+  {
+    "spec": "G5-x22",
+    "reason": "answer mismatch (key says 288\\pi, independent solve got 432\\pi)"
+  },
+  {
+    "spec": "G6-x19",
+    "reason": "duplicate options"
+  },
+  {
+    "spec": "G5-x17",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G5-x17",
+    "reason": "ambiguous (Data is missing. The height 'h' is completely unconstrained by the problem statement (the condition that the CSA remains)"
+  },
+  {
+    "spec": "G5-x17",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G6-x13",
+    "reason": "answer mismatch (key says 7, independent solve got 15)"
+  },
+  {
+    "spec": "G6-x13",
+    "reason": "ambiguous (The correct area is 90.25, which is not among the options. The author likely made an error by calculating the slope of L)"
+  },
+  {
+    "spec": "G5-x25",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x26",
+    "reason": "ambiguous (1. Typo in dimensions: 32 cm should likely be 36 cm to match the 2:3:4 ratio and yield an integer solution. 2. The wordi)"
+  },
+  {
+    "spec": "G5-x26",
+    "reason": "ambiguous (The value of the reduction factor 'k' is not provided in the question text. The solution assumes k=2 to proceed, but wit)"
+  },
+  {
+    "spec": "G5-x13",
+    "reason": "answer mismatch (key says $160\\sqrt{5}\\pi$, independent solve got 200\\sqrt{3}\\pi)"
+  },
+  {
+    "spec": "G5-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G6-x10",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G6-x9",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G6-x16",
+    "reason": "ambiguous (The exact y-coordinate is 147/17 ≈ 8.647, which correctly rounds to 8.6, not 8.7. Option B (8.7) is the closest but reli)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 7, independent solve got 1)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 51, independent solve got 81)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 66, independent solve got 81)"
+  },
+  {
+    "spec": "G5-x21",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x21",
+    "reason": "ambiguous (The author incorrectly subtracts the volume of a full cylinder (500̀π) from the cone. Because the cone tapers, its top p)"
+  },
+  {
+    "spec": "M1-x2",
+    "reason": "ambiguous (Contradictory data: the number of recipes using all three ingredients evaluates to 24, but the number using Vanilla and )"
+  },
+  {
+    "spec": "M1-x1",
+    "reason": "ambiguous (The mathematically correct answer is 280, which is missing from the options. Option A (310) represents the number of hou)"
+  },
+  {
+    "spec": "M1-x11",
+    "reason": "answer mismatch (key says 25, independent solve got 10)"
+  },
+  {
+    "spec": "M1-x11",
+    "reason": "answer mismatch (key says 15, independent solve got 13)"
+  },
+  {
+    "spec": "M1-x7",
+    "reason": "ambiguous (None of the options are correct. Based on the Principle of Inclusion-Exclusion, the correct answer is 20, but it is miss)"
+  },
+  {
+    "spec": "M1-x7",
+    "reason": "answer mismatch (key says 25, independent solve got 20)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "answer mismatch (key says 16, independent solve got 4)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "answer mismatch (key says 20, independent solve got 75)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M1-x6",
+    "reason": "ambiguous (The correct answer (100) is missing from the options. The option 115 assumes the given intersections are 'exactly two', )"
   }
 ]
