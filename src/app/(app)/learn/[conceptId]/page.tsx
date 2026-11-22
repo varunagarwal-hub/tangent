@@ -87,7 +87,7 @@ async function ConceptCard({ params }: { params: Promise<{ conceptId: string }> 
       </section>
 
       <section aria-labelledby="shortcuts">
-        <h2 id="shortcuts" className="mb-3 text-2xl">Two CAT shortcuts</h2>
+        <h2 id="shortcuts" className="mb-3 text-2xl">CAT shortcuts</h2>
         <ul className="grid gap-3 sm:grid-cols-2">
           {lesson.shortcuts.map((s) => (
             <li key={s.title} className="paper-card p-4">

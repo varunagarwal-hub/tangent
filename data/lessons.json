@@ -507,10 +507,6 @@
    {
     "title": "Speed-Time Inverse Ratio Swap",
     "body": "For constant distance, if speed ratio is a:b, time ratio is immediately b:a. If a person increases speed by 25% (4:5 ratio), time taken drops to 4/5, saving 1/5th of original time."
-   },
-   {
-    "title": "Product-Constancy Time Delay",
-    "body": "If speed changes by a factor of x/(y + x), time changes by x/y for the same distance. For instance, walking at 3/4th normal speed (a 1/4 drop) means taking 1/3 more time."
    }
   ],
   "verified": {
@@ -742,10 +738,6 @@
   ],
   "shortcuts": [
    {
-    "title": "Nested Root Square-Forming Trick",
-    "body": "To simplify $\\sqrt{a \\pm 2\\sqrt{b}}$, find two numbers $x$ and $y$ such that $x + y = a$ and $xy = b$; the root simplifies directly to $\\sqrt{x} \\pm \\sqrt{y}$ (e.g., $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$)."
-   },
-   {
     "title": "Comparing Surds by LCM of Indices",
     "body": "To compare orders like $\\sqrt[3]{4}$ and $\\sqrt[4]{6}$, raise all terms to the LCM of their surd orders ($12$), converting them to $4^4 = 256$ and $6^3 = 216$ to easily identify the larger value."
    }
@@ -806,10 +798,6 @@
    {
     "title": "Cyclic Telescoping Product",
     "body": "When facing terms like $\\log_b a \\cdot \\log_c b \\cdot \\log_d c$, convert all to base 10 using change of base so intermediate terms cancel directly to $\\log_d a$."
-   },
-   {
-    "title": "Symmetric Constant Substitution",
-    "body": "For equations like $a^x = b^y = c^z$, equate them to a dummy variable $k$, express each variable as $\\log_k(\\dots)$, and substitute to eliminate powers instantly."
    }
   ],
   "verified": {
@@ -1101,10 +1089,6 @@
    }
   ],
   "shortcuts": [
-   {
-    "title": "Symmetry and Root Centering",
-    "body": "For any symmetric function like $|x - a| + |x - b|$ or parabolas, the minimum or vertex always occurs at the midpoint $x = (a + b)/2$."
-   },
    {
     "title": "Functional Equation Value Substitution",
     "body": "Instead of solving algebraically for $f(x)$, substitute small strategic values like $x = 0, 1$ or $-1$ to establish recurrence or cycles quickly."
@@ -1402,10 +1386,6 @@
    {
     "title": "Divisibility by 11 and 7",
     "body": "Since $\\pi \\approx 22/7$, final numeric values of curved areas or volumes involving $\\pi$ are usually multiples of 11; test options for 11-divisibility unless $\\pi$ is kept unexpanded."
-   },
-   {
-    "title": "Ratio of Cut Solids",
-    "body": "If a cone is sliced parallel to the base at ratio $1:2$ of height from the vertex, the volumes of top cone and full cone are $1^3 : 2^3 = 1:8$, making the frustum's share 7/8 immediately."
    }
   ],
   "verified": {

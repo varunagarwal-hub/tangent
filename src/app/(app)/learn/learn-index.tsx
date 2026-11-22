@@ -49,11 +49,14 @@ export function LearnIndex({ lessons }: { lessons: Item[] }) {
         <p className="font-hand text-2xl text-redpen">one card per idea</p>
         <h1 className="hand-underline mt-1 text-4xl sm:text-5xl">Concept cards</h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-          The key idea, the formulas, a worked example you reveal one step at a time, the tangents students usually go off on, and two CAT shortcuts.
+          The key idea, the formulas, a worked example you reveal one step at a time, the tangents students usually go off on, and the CAT shortcuts worth knowing.
           Every worked example was re-solved by a second model before it went in.
         </p>
         <Link href="/foundation" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-ink-soft underline-offset-4 hover:text-ink hover:underline">
           Rusty on school maths? Check your foundations <ArrowRight className="size-3.5" />
+        </Link>
+        <Link href="/learn/cards" className="ml-5 mt-3 inline-flex items-center gap-1 text-sm font-medium text-ink-soft underline-offset-4 hover:text-ink hover:underline">
+          Formula flashcards <ArrowRight className="size-3.5" />
         </Link>
       </header>
 

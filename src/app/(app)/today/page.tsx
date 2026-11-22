@@ -14,6 +14,7 @@ import { MyQuestions } from "@/components/tangent/my-questions";
 import { InfoTip } from "@/components/tangent/info-tip";
 import { DailyChecklist } from "@/components/tangent/daily-checklist";
 import { getDailyChecklist } from "@/lib/daily";
+import { flashcardStatus } from "@/lib/flashcards";
 
 export const metadata: Metadata = { title: "Today · Tangent" };
 
@@ -40,7 +41,8 @@ function greeting() {
 async function TodayContent() {
   await connection(); // per-request: reads the clock and the persona cookie
   const studentId = await getStudentId();
-  const [t, cands, daily] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId), getDailyChecklist(studentId)]);
+  const [t, cands, daily, cards] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId), getDailyChecklist(studentId), flashcardStatus(studentId)]);
+  const cardsToday = cards.due + cards.newToday;
   const top = cands[0];
   const firstName = t.name.split(" ")[0];
 
@@ -143,6 +145,13 @@ async function TodayContent() {
               Start reviews <ArrowRight className="size-4" />
             </Link>
           )}
+          <Link href="/learn/cards" className="mt-4 flex items-center justify-between gap-2 border-t border-dashed border-border pt-3 text-sm text-ink-soft hover:text-ink">
+            <span>
+              Formula flashcards: <span className="font-mono font-semibold text-ink">{cardsToday}</span> today
+              {cards.due ? ` (${cards.due} due${cards.newToday ? `, ${cards.newToday} new` : ""})` : cards.newToday ? " (new)" : ""}
+            </span>
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
         </section>
       </div>
 

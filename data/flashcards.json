@@ -1,0 +1,912 @@
+[
+ {
+  "id": "A1-f1",
+  "conceptId": "A1",
+  "kind": "formula",
+  "front": "Percentage Change",
+  "back": "$$\\% \\text{ Change} = \\left( \\frac{\\text{Final} - \\text{Initial}}{\\text{Initial}} \\right) \\times 100$$"
+ },
+ {
+  "id": "A1-f2",
+  "conceptId": "A1",
+  "kind": "formula",
+  "front": "Successive Percentage Change",
+  "back": "$$\\text{Net \\% Change} = a + b + \\frac{ab}{100}$$"
+ },
+ {
+  "id": "A1-f3",
+  "conceptId": "A1",
+  "kind": "formula",
+  "front": "Base Shift Reciprocal",
+  "back": "$$\\text{If } A \\text{ is } +\\frac{1}{n} \\text{ of } B, \\text{ then } B \\text{ is } -\\frac{1}{n+1} \\text{ of } A$$"
+ },
+ {
+  "id": "A1-s1",
+  "conceptId": "A1",
+  "kind": "shortcut",
+  "front": "Fraction to Percentage Ladder",
+  "back": "Memorize standard unit fractions: if expenditure is constant and price rises by 1/4 (25%), consumption must fall by 1/(4+1) = 1/5 (20%)."
+ },
+ {
+  "id": "A1-s2",
+  "conceptId": "A1",
+  "kind": "shortcut",
+  "front": "Product-Constancy Ratio Rule",
+  "back": "For any relation A × B = C, if C increases by factor k_c and A increases by factor k_a, then B must scale directly by factor k_c / k_a."
+ },
+ {
+  "id": "A2-f1",
+  "conceptId": "A2",
+  "kind": "formula",
+  "front": "Bridging Ratios",
+  "back": "$$A:B = a:b,\\; B:C = c:d \\implies A:B:C = ac : bc : bd$$"
+ },
+ {
+  "id": "A2-f2",
+  "conceptId": "A2",
+  "kind": "formula",
+  "front": "Direct & Inverse Variation",
+  "back": "$$y \\propto \\frac{x}{z} \\implies \\frac{y_1 z_1}{x_1} = \\frac{y_2 z_2}{x_2}$$"
+ },
+ {
+  "id": "A2-f3",
+  "conceptId": "A2",
+  "kind": "formula",
+  "front": "Componendo and Dividendo",
+  "back": "$$\\frac{a}{b} = \\frac{c}{d} \\implies \\frac{a+b}{a-b} = \\frac{c+d}{c-d}$$"
+ },
+ {
+  "id": "A2-s1",
+  "conceptId": "A2",
+  "kind": "shortcut",
+  "front": "Cross-Multiplication for Added Constants",
+  "back": "When ratio $a:b$ becomes $c:d$ after adding $k$ to both terms, find $1\\text{ unit} = \\frac{k|c - d|}{|ad - bc|}$. Example: $2:3$ becomes $3:4$ after adding 5, so $1\\text{ unit} = \\frac{5|3 - 4|}{|8 - 9|} = 5$."
+ },
+ {
+  "id": "A2-s2",
+  "conceptId": "A2",
+  "kind": "shortcut",
+  "front": "N-Method for Combining Ratios",
+  "back": "To combine $A:B = a:b$ and $B:C = c:d$, write $A:B:C$ directly as $a\\times c : b\\times c : b\\times d$. Example: $2:3$ and $4:5$ yields $2\\times 4 : 3\\times 4 : 3\\times 5 = 8:12:15$."
+ },
+ {
+  "id": "A3-f1",
+  "conceptId": "A3",
+  "kind": "formula",
+  "front": "Arithmetic Mean",
+  "back": "$$A = \\frac{\\sum x_i}{n}$$"
+ },
+ {
+  "id": "A3-f2",
+  "conceptId": "A3",
+  "kind": "formula",
+  "front": "Weighted Average",
+  "back": "$$A_w = \\frac{n_1 A_1 + n_2 A_2 + \\dots + n_k A_k}{n_1 + n_2 + \\dots + n_k}$$"
+ },
+ {
+  "id": "A3-f3",
+  "conceptId": "A3",
+  "kind": "formula",
+  "front": "Net Deviation Principle",
+  "back": "$$\\sum (x_i - A) = 0$$"
+ },
+ {
+  "id": "A3-s1",
+  "conceptId": "A3",
+  "kind": "shortcut",
+  "front": "Assumed Mean Deviation",
+  "back": "Pick a convenient round number as an assumed mean and sum the signed deviations; dividing this net deviation by $n$ gives the exact correction needed. For instance, for 48, 52, and 56 with base 50: deviations are -2, +2, +6 (net +6), so average is $50 + (6/3) = 52$."
+ },
+ {
+  "id": "A3-s2",
+  "conceptId": "A3",
+  "kind": "shortcut",
+  "front": "Alligation for Group Ratios",
+  "back": "When two groups combine, the ratio of their counts is inversely proportional to the distances of their individual averages from the combined average: $n_1 / n_2 = (A_2 - A_{\\text{mix}}) / (A_{\\text{mix}} - A_1)$."
+ },
+ {
+  "id": "A4-f1",
+  "conceptId": "A4",
+  "kind": "formula",
+  "front": "Selling Price from CP and MP",
+  "back": "$$SP = CP \\times \\left(1 + \\frac{P}{100}\\right) = MP \\times \\left(1 - \\frac{D}{100}\\right)$$"
+ },
+ {
+  "id": "A4-f2",
+  "conceptId": "A4",
+  "kind": "formula",
+  "front": "Relation between Markup, Discount, and Profit",
+  "back": "$$1 + \\frac{P}{100} = \\left(1 + \\frac{M}{100}\\right) \\times \\left(1 - \\frac{D}{100}\\right)$$"
+ },
+ {
+  "id": "A4-f3",
+  "conceptId": "A4",
+  "kind": "formula",
+  "front": "Successive Discounts Formula",
+  "back": "$$D_{\\text{eff}} = d_1 + d_2 - \\frac{d_1 d_2}{100}$$"
+ },
+ {
+  "id": "A4-s1",
+  "conceptId": "A4",
+  "kind": "shortcut",
+  "front": "Equal SP Equal Change",
+  "back": "When two articles have identical SP, one sold at x% profit and the other at x% loss, the transaction always yields a net loss of (x²/100)%. For instance, ±20% gives a net loss of (20²/100)% = 4%."
+ },
+ {
+  "id": "A4-s2",
+  "conceptId": "A4",
+  "kind": "shortcut",
+  "front": "Direct CP to MP Ratio",
+  "back": "Use CP/MP = (100 − D%)/(100 + P%) directly to bypass calculating SP. If a 10% discount yields 26% profit, CP/MP = 90/126 = 5/7 instantly."
+ },
+ {
+  "id": "A5-f1",
+  "conceptId": "A5",
+  "kind": "formula",
+  "front": "Simple Interest & Amount",
+  "back": "$$SI = \\frac{P \\cdot r \\cdot t}{100}, \\quad A = P + SI$$"
+ },
+ {
+  "id": "A5-f2",
+  "conceptId": "A5",
+  "kind": "formula",
+  "front": "Compound Amount (Annual Compounding)",
+  "back": "$$A = P\\left(1 + \\frac{r}{100}\\right)^t$$"
+ },
+ {
+  "id": "A5-f3",
+  "conceptId": "A5",
+  "kind": "formula",
+  "front": "Difference between CI and SI for 2 Years",
+  "back": "$$\\Delta_2 = P\\left(\\frac{r}{100}\\right)^2$$"
+ },
+ {
+  "id": "A5-s1",
+  "conceptId": "A5",
+  "kind": "shortcut",
+  "front": "Rule of 72 for Doubling",
+  "back": "To approximate the time required for an amount to double under CI, compute $72 / r$. For example, at 8% per annum, money doubles in approximately $72 / 8 = 9$ years."
+ },
+ {
+  "id": "A5-s2",
+  "conceptId": "A5",
+  "kind": "shortcut",
+  "front": "Effective Rate for 2-Year CI",
+  "back": "Calculate the net rate for 2 years using $2r + r^2/100$. For example, at 5% per annum, the effective CI rate is $10 + 0.25 = 10.25\\%$, while SI is simply $10\\%$."
+ },
+ {
+  "id": "A6-f1",
+  "conceptId": "A6",
+  "kind": "formula",
+  "front": "Alligation Rule (Ratio of Weights)",
+  "back": "$$\\frac{q_1}{q_2} = \\frac{C_2 - C_m}{C_m - C_1}$$"
+ },
+ {
+  "id": "A6-f2",
+  "conceptId": "A6",
+  "kind": "formula",
+  "front": "Weighted Average Concentration",
+  "back": "$$C_m = \\frac{q_1 C_1 + q_2 C_2}{q_1 + q_2}$$"
+ },
+ {
+  "id": "A6-f3",
+  "conceptId": "A6",
+  "kind": "formula",
+  "front": "Repeated Replacement Formula",
+  "back": "$$Q_{\\text{final}} = Q_{\\text{initial}} \\left(1 - \\frac{x}{V}\\right)^n$$"
+ },
+ {
+  "id": "A6-s1",
+  "conceptId": "A6",
+  "kind": "shortcut",
+  "front": "Distance Balancing on Number Line",
+  "back": "Plot rates on a line: the ratio of quantities is inversely proportional to their distances to the mean. If 20% and 50% mix to 30%, distances are 10 and 20, giving a quantity ratio of 20:10 = 2:1 directly."
+ },
+ {
+  "id": "A6-s2",
+  "conceptId": "A6",
+  "kind": "shortcut",
+  "front": "Net Replacement Fraction",
+  "back": "When a fraction $1/k$ of the volume is repeatedly replaced with water, multiply the pure liquid by $((k-1)/k)^n$. For example, removing 1/4th twice leaves $(3/4)^2 = 9/16$ of original liquid."
+ },
+ {
+  "id": "A7-f1",
+  "conceptId": "A7",
+  "kind": "formula",
+  "front": "Total Work relation",
+  "back": "$$W = \\text{Efficiency} \\times \\text{Time}$$"
+ },
+ {
+  "id": "A7-f2",
+  "conceptId": "A7",
+  "kind": "formula",
+  "front": "Combined Time for Two Workers",
+  "back": "$$T_{AB} = \\frac{A \\times B}{A + B}$$"
+ },
+ {
+  "id": "A7-f3",
+  "conceptId": "A7",
+  "kind": "formula",
+  "front": "Man-Days Equivalence",
+  "back": "$$\\frac{M_1 \\times D_1 \\times H_1}{W_1} = \\frac{M_2 \\times D_2 \\times H_2}{W_2}$$"
+ },
+ {
+  "id": "A7-s1",
+  "conceptId": "A7",
+  "kind": "shortcut",
+  "front": "LCM Work Assumption Trick",
+  "back": "Instead of fractions, set total work to the LCM of given time periods; e.g., if A takes 12 days and B takes 18 days, assume 36 units total so A does 3 u/day and B does 2 u/day."
+ },
+ {
+  "id": "A7-s2",
+  "conceptId": "A7",
+  "kind": "shortcut",
+  "front": "Shift from Completion Time",
+  "back": "If A and B take $t$ days together, but A alone takes $t + a$ days and B alone takes $t + b$ days, then $t = \\sqrt{ab}$; e.g., if extras are 4 and 9 days, $t = \\sqrt{36} = 6$ days."
+ },
+ {
+  "id": "A8-f1",
+  "conceptId": "A8",
+  "kind": "formula",
+  "front": "Average Speed (Equal Distances)",
+  "back": "$$S_{\\text{avg}} = \\frac{2s_1 s_2}{s_1 + s_2}$$"
+ },
+ {
+  "id": "A8-f2",
+  "conceptId": "A8",
+  "kind": "formula",
+  "front": "Relative Speed",
+  "back": "$$S_{\\text{rel}} = |s_1 \\pm s_2| \\quad (+\\text{ for opposite}, -\\text{ for same direction})$$"
+ },
+ {
+  "id": "A8-f3",
+  "conceptId": "A8",
+  "kind": "formula",
+  "front": "Boats and Streams",
+  "back": "$$s_{\\text{boat}} = \\frac{D + U}{2}, \\quad s_{\\text{stream}} = \\frac{D - U}{2}$$"
+ },
+ {
+  "id": "A8-s1",
+  "conceptId": "A8",
+  "kind": "shortcut",
+  "front": "Speed-Time Inverse Ratio Swap",
+  "back": "For constant distance, if speed ratio is a:b, time ratio is immediately b:a. If a person increases speed by 25% (4:5 ratio), time taken drops to 4/5, saving 1/5th of original time."
+ },
+ {
+  "id": "G1-f1",
+  "conceptId": "G1",
+  "kind": "formula",
+  "front": "Linear Pair of Angles",
+  "back": "$$\\angle A + \\angle B = 180^\\circ$$"
+ },
+ {
+  "id": "G1-f2",
+  "conceptId": "G1",
+  "kind": "formula",
+  "front": "Supplementary Angles Sum",
+  "back": "$$\\theta_1 + \\theta_2 = 180^\\circ$$"
+ },
+ {
+  "id": "G1-f3",
+  "conceptId": "G1",
+  "kind": "formula",
+  "front": "Complementary Angles Sum",
+  "back": "$$\\alpha + \\beta = 90^\\circ$$"
+ },
+ {
+  "id": "G1-s1",
+  "conceptId": "G1",
+  "kind": "shortcut",
+  "front": "Arrowhead or Zig-Zag Rule",
+  "back": "For any zig-zag line between two parallel tracks, the sum of left-pointing angles equals the sum of right-pointing angles. E.g., if sharp bends point left at $30^\\circ$ and $40^\\circ$, the single rightward angle between them is $30^\\circ + 40^\\circ = 70^\\circ$."
+ },
+ {
+  "id": "G1-s2",
+  "conceptId": "G1",
+  "kind": "shortcut",
+  "front": "Angle Bisectors of Co-Interior Angles",
+  "back": "The angle bisectors of two co-interior angles between parallel lines always meet at a right angle (90°). Since $2x + 2y = 180^\\circ$, the bisected halves satisfy $x + y = 90^\\circ$, forcing the third angle in the resulting triangle to be $90^\\circ$."
+ },
+ {
+  "id": "G2-f1",
+  "conceptId": "G2",
+  "kind": "formula",
+  "front": "Triangle Inequality",
+  "back": "$$|a - b| < c < a + b$$"
+ },
+ {
+  "id": "G2-f2",
+  "conceptId": "G2",
+  "kind": "formula",
+  "front": "Area via Sine Rule",
+  "back": "$$\\Delta = \\frac{1}{2}ab\\sin C$$"
+ },
+ {
+  "id": "G2-f3",
+  "conceptId": "G2",
+  "kind": "formula",
+  "front": "Heron's Formula",
+  "back": "$$\\Delta = \\sqrt{s(s-a)(s-b)(s-c)}, \\quad s = \\frac{a+b+c}{2}$$"
+ },
+ {
+  "id": "G2-s1",
+  "conceptId": "G2",
+  "kind": "shortcut",
+  "front": "Median Splits Area in Half",
+  "back": "Any median divides a triangle into two triangles of equal area; for instance, if AD is a median of triangle ABC, Area(ABD) = Area(ADC)."
+ },
+ {
+  "id": "G2-s2",
+  "conceptId": "G2",
+  "kind": "shortcut",
+  "front": "Integer Sides from Two Sides",
+  "back": "Given two sides a and b, the number of possible integer values for the third side is always 2 × min(a, b) − 1. For sides 5 and 9, count = 2(5) − 1 = 9."
+ },
+ {
+  "id": "G3-f1",
+  "conceptId": "G3",
+  "kind": "formula",
+  "front": "Inscribed Angle Theorem",
+  "back": "$$\\theta_{\\text{central}} = 2 \\times \\theta_{\\text{circumference}}$$"
+ },
+ {
+  "id": "G3-f2",
+  "conceptId": "G3",
+  "kind": "formula",
+  "front": "Tangent-Radius Perpendicularity",
+  "back": "$$L_{\\text{tangent}} = \\sqrt{d^2 - r^2}$$"
+ },
+ {
+  "id": "G3-f3",
+  "conceptId": "G3",
+  "kind": "formula",
+  "front": "Tangent-Secant Theorem",
+  "back": "$$PT^2 = PA \\times PB$$"
+ },
+ {
+  "id": "G3-s1",
+  "conceptId": "G3",
+  "kind": "shortcut",
+  "front": "Chord Midpoint Right Triangle",
+  "back": "A perpendicular from the centre bisects the chord, instantly giving the Pythagorean triplet r² = d² + (c/2)². For radius 10 and chord 16, distance from centre is √(10² − 8²) = 6."
+ },
+ {
+  "id": "G3-s2",
+  "conceptId": "G3",
+  "kind": "shortcut",
+  "front": "Ptolemy's Theorem for Cyclic Quads",
+  "back": "For cyclic quadrilateral ABCD, product of diagonals equals sum of products of opposite sides: AC × BD = AB × CD + BC × AD."
+ },
+ {
+  "id": "G4-f1",
+  "conceptId": "G4",
+  "kind": "formula",
+  "front": "Number of diagonals in an n-gon",
+  "back": "$$D = \\frac{n(n - 3)}{2}$$"
+ },
+ {
+  "id": "G4-f2",
+  "conceptId": "G4",
+  "kind": "formula",
+  "front": "Sum of interior angles of an n-gon",
+  "back": "$$S_i = (n - 2) \\times 180^\\circ$$"
+ },
+ {
+  "id": "G4-f3",
+  "conceptId": "G4",
+  "kind": "formula",
+  "front": "Area of a rhombus",
+  "back": "$$\\text{Area} = \\frac{1}{2} d_1 d_2 = a^2 \\sin\\theta$$"
+ },
+ {
+  "id": "G4-s1",
+  "conceptId": "G4",
+  "kind": "shortcut",
+  "front": "Exterior angle path for regular polygons",
+  "back": "Never compute side counts via interior angles; directly use n = 360° / (Exterior Angle). E.g., if interior is 150°, exterior is 30°, giving n = 360 / 30 = 12 instantly."
+ },
+ {
+  "id": "G4-s2",
+  "conceptId": "G4",
+  "kind": "shortcut",
+  "front": "Trapezium diagonal-area four-triangle rule",
+  "back": "Diagonals divide a trapezium into four triangles; the non-parallel triangular flanks have equal area √A1·A2 where A1, A2 are areas of top and bottom triangles. E.g., if base triangles have areas 4 and 9, each side triangle has area √(4 × 9) = 6."
+ },
+ {
+  "id": "G5-f1",
+  "conceptId": "G5",
+  "kind": "formula",
+  "front": "Cylinder TSA and Volume",
+  "back": "$$\\text{TSA} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$$"
+ },
+ {
+  "id": "G5-f2",
+  "conceptId": "G5",
+  "kind": "formula",
+  "front": "Cone Slant Height and Volume",
+  "back": "$$l = \\sqrt{r^2 + h^2}, \\quad V = \\frac{1}{3}\\pi r^2 h, \\quad \\text{CSA} = \\pi r l$$"
+ },
+ {
+  "id": "G5-f3",
+  "conceptId": "G5",
+  "kind": "formula",
+  "front": "Sphere Area and Volume",
+  "back": "$$\\text{Area} = 4\\pi r^2, \\quad V = \\frac{4}{3}\\pi r^3$$"
+ },
+ {
+  "id": "G5-s1",
+  "conceptId": "G5",
+  "kind": "shortcut",
+  "front": "Divisibility by 11 and 7",
+  "back": "Since $\\pi \\approx 22/7$, final numeric values of curved areas or volumes involving $\\pi$ are usually multiples of 11; test options for 11-divisibility unless $\\pi$ is kept unexpanded."
+ },
+ {
+  "id": "G6-f1",
+  "conceptId": "G6",
+  "kind": "formula",
+  "front": "Slope of a Line",
+  "back": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$"
+ },
+ {
+  "id": "G6-f2",
+  "conceptId": "G6",
+  "kind": "formula",
+  "front": "Perpendicular Lines Condition",
+  "back": "$$m_1 \\times m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}$$"
+ },
+ {
+  "id": "G6-f3",
+  "conceptId": "G6",
+  "kind": "formula",
+  "front": "Perpendicular Distance from Point to Line",
+  "back": "$$d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$$"
+ },
+ {
+  "id": "G6-s1",
+  "conceptId": "G6",
+  "kind": "shortcut",
+  "front": "Shift Origin for Fast Triangle Area",
+  "back": "Translate one vertex to $(0, 0)$ by subtracting its coordinates from the other two $(x_1, y_1)$ and $(x_2, y_2)$; then $\\text{Area} = \\frac{1}{2}|x_1 y_2 - x_2 y_1|$. For example, vertices $(1,1), (4,5), (2,7)$ shifted by $(-1,-1)$ become $(0,0), (3,4), (1,6)$, giving Area $= \\frac{1}{2}|3(6) - 4(1)| = 7$."
+ },
+ {
+  "id": "G6-s2",
+  "conceptId": "G6",
+  "kind": "shortcut",
+  "front": "Quick Perpendicular Line Equation",
+  "back": "To find a perpendicular line to $Ax + By + C = 0$, swap coefficients and negate one: $Bx - Ay + k = 0$, then plug in the given point to find $k$. For $3x + 4y = 12$, any perpendicular line has the form $4x - 3y = k$."
+ },
+ {
+  "id": "L1-f1",
+  "conceptId": "L1",
+  "kind": "formula",
+  "front": "Product of Powers with Same Base",
+  "back": "$$a^m \\times a^n = a^{m+n}$$"
+ },
+ {
+  "id": "L1-f2",
+  "conceptId": "L1",
+  "kind": "formula",
+  "front": "Fractional Exponent Definition",
+  "back": "$$\\sqrt[n]{a^m} = a^{\\frac{m}{n}}$$"
+ },
+ {
+  "id": "L1-f3",
+  "conceptId": "L1",
+  "kind": "formula",
+  "front": "Power of a Power",
+  "back": "$$(a^m)^n = a^{mn}$$"
+ },
+ {
+  "id": "L1-s2",
+  "conceptId": "L1",
+  "kind": "shortcut",
+  "front": "Comparing Surds by LCM of Indices",
+  "back": "To compare orders like $\\sqrt[3]{4}$ and $\\sqrt[4]{6}$, raise all terms to the LCM of their surd orders ($12$), converting them to $4^4 = 256$ and $6^3 = 216$ to easily identify the larger value."
+ },
+ {
+  "id": "L2-f1",
+  "conceptId": "L2",
+  "kind": "formula",
+  "front": "Product & Quotient Rules",
+  "back": "$$\\log_b(xy) = \\log_b x + \\log_b y, \\quad \\log_b\\left(\\frac{x}{y}\\right) = \\log_b x - \\log_b y$$"
+ },
+ {
+  "id": "L2-f2",
+  "conceptId": "L2",
+  "kind": "formula",
+  "front": "Power Rule",
+  "back": "$$\\log_{b^k}(x^m) = \\frac{m}{k}\\log_b x$$"
+ },
+ {
+  "id": "L2-f3",
+  "conceptId": "L2",
+  "kind": "formula",
+  "front": "Change of Base",
+  "back": "$$\\log_b a = \\frac{\\log_c a}{\\log_c b} = \\frac{1}{\\log_a b}$$"
+ },
+ {
+  "id": "L2-s1",
+  "conceptId": "L2",
+  "kind": "shortcut",
+  "front": "Cyclic Telescoping Product",
+  "back": "When facing terms like $\\log_b a \\cdot \\log_c b \\cdot \\log_d c$, convert all to base 10 using change of base so intermediate terms cancel directly to $\\log_d a$."
+ },
+ {
+  "id": "L3-f1",
+  "conceptId": "L3",
+  "kind": "formula",
+  "front": "Unique Solution Condition",
+  "back": "$$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$$"
+ },
+ {
+  "id": "L3-f2",
+  "conceptId": "L3",
+  "kind": "formula",
+  "front": "No Solution (Parallel Lines)",
+  "back": "$$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$$"
+ },
+ {
+  "id": "L3-f3",
+  "conceptId": "L3",
+  "kind": "formula",
+  "front": "Infinitely Many Solutions (Coincident Lines)",
+  "back": "$$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$$"
+ },
+ {
+  "id": "L3-s1",
+  "conceptId": "L3",
+  "kind": "shortcut",
+  "front": "Target Linear Combination",
+  "back": "Never solve for individual variables if asked for an expression like $p + e + n$; find multipliers $k_1, k_2$ directly such that $k_1(Eq_1) + k_2(Eq_2)$ matches the target coefficients."
+ },
+ {
+  "id": "L3-s2",
+  "conceptId": "L3",
+  "kind": "shortcut",
+  "front": "Diophantine Step Method",
+  "back": "For $ax + by = c$, once you find a base integer solution $(x_0, y_0)$, $x$ steps by $+b$ and $y$ steps by $-a$ (divided by $\\gcd(a,b)$) to quickly count non-negative solutions."
+ },
+ {
+  "id": "L4-f1",
+  "conceptId": "L4",
+  "kind": "formula",
+  "front": "Roots Formula",
+  "back": "$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$"
+ },
+ {
+  "id": "L4-f2",
+  "conceptId": "L4",
+  "kind": "formula",
+  "front": "Relations of Roots",
+  "back": "$$\\alpha + \\beta = -\\frac{b}{a}, \\quad \\alpha\\beta = \\frac{c}{a}$$"
+ },
+ {
+  "id": "L4-f3",
+  "conceptId": "L4",
+  "kind": "formula",
+  "front": "Nature of Roots",
+  "back": "$$\\Delta = b^2 - 4ac \\quad (\\Delta > 0: \\text{real, distinct}; \\ \\Delta = 0: \\text{real, equal}; \\ \\Delta < 0: \\text{complex})$$"
+ },
+ {
+  "id": "L4-s1",
+  "conceptId": "L4",
+  "kind": "shortcut",
+  "front": "Sum of Coefficients is Zero",
+  "back": "If $a + b + c = 0$, then $x = 1$ is always a root and the other root is $c/a$. For $2x^2 - 5x + 3 = 0$, $2 - 5 + 3 = 0$, so roots are $1$ and $3/2$."
+ },
+ {
+  "id": "L4-s2",
+  "conceptId": "L4",
+  "kind": "shortcut",
+  "front": "Vertex Extrema without Calculus",
+  "back": "The quadratic $ax^2 + bx + c$ attains its optimum value at $x = -b/(2a)$, equal to $-(b^2 - 4ac)/(4a)$. For $x^2 - 6x + 11$, the minimum occurs at $x = 3$, giving $3^2 - 18 + 11 = 2$."
+ },
+ {
+  "id": "L5-f1",
+  "conceptId": "L5",
+  "kind": "formula",
+  "front": "Modulus Range (Less Than)",
+  "back": "$$|x - a| \\le k \\iff a - k \\le x \\le a + k$$"
+ },
+ {
+  "id": "L5-f2",
+  "conceptId": "L5",
+  "kind": "formula",
+  "front": "Modulus Range (Greater Than)",
+  "back": "$$|x - a| \\ge k \\iff x \\le a - k \\text{ or } x \\ge a + k$$"
+ },
+ {
+  "id": "L5-f3",
+  "conceptId": "L5",
+  "kind": "formula",
+  "front": "Triangle Inequality",
+  "back": "$$||a| - |b|| \\le |a \\pm b| \\le |a| + |b|$$"
+ },
+ {
+  "id": "L5-s1",
+  "conceptId": "L5",
+  "kind": "shortcut",
+  "front": "Distance Interpretation of Modulus",
+  "back": "Interpret $|x - a| + |x - b|$ as the total distance from $x$ to $a$ and $b$; the minimum value is always $|a - b|$, achieved at any point between $a$ and $b$."
+ },
+ {
+  "id": "L5-s2",
+  "conceptId": "L5",
+  "kind": "shortcut",
+  "front": "Square Instead of Splitting Cases",
+  "back": "For $|A| \\le |B|$, simplify directly to $(A - B)(A + B) \\le 0$ because both sides are non-negative, completely bypassing case analysis."
+ },
+ {
+  "id": "L6-f1",
+  "conceptId": "L6",
+  "kind": "formula",
+  "front": "nth term of an AP",
+  "back": "$$T_n = a + (n - 1)d$$"
+ },
+ {
+  "id": "L6-f2",
+  "conceptId": "L6",
+  "kind": "formula",
+  "front": "Sum of n terms of an AP",
+  "back": "$$S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right) = \\frac{n}{2}(a + l)$$"
+ },
+ {
+  "id": "L6-f3",
+  "conceptId": "L6",
+  "kind": "formula",
+  "front": "nth term of a GP",
+  "back": "$$T_n = a r^{n-1}$$"
+ },
+ {
+  "id": "L6-s1",
+  "conceptId": "L6",
+  "kind": "shortcut",
+  "front": "AP Sum via Middle Term",
+  "back": "For an odd number of terms in an AP, Sum = (Number of terms) × (Middle term). For example, the sum of 5 terms with middle term 14 is simply 5 × 14 = 70."
+ },
+ {
+  "id": "L6-s2",
+  "conceptId": "L6",
+  "kind": "shortcut",
+  "front": "Equidistant Pairing in AP",
+  "back": "The sum of the $k$-th term from the beginning and $k$-th term from the end is always constant and equal to $a + l$. Hence, $T_1 + T_n = T_2 + T_{n-1} = 2 \\times T_{\\text{avg}}$."
+ },
+ {
+  "id": "L7-f1",
+  "conceptId": "L7",
+  "kind": "formula",
+  "front": "Horizontal Shift",
+  "back": "$$y = f(x - h) \\implies \\text{Shift right by } h \\text{ units (if } h > 0\\text{)}$$"
+ },
+ {
+  "id": "L7-f2",
+  "conceptId": "L7",
+  "kind": "formula",
+  "front": "Vertical Shift",
+  "back": "$$y = f(x) + k \\implies \\text{Shift up by } k \\text{ units (if } k > 0\\text{)}$$"
+ },
+ {
+  "id": "L7-f3",
+  "conceptId": "L7",
+  "kind": "formula",
+  "front": "Reflection in Axes",
+  "back": "$$y = f(-x) \\implies \\text{Reflection over } y\\text{-axis}; \\quad y = -f(x) \\implies \\text{Reflection over } x\\text{-axis}$$"
+ },
+ {
+  "id": "L7-s2",
+  "conceptId": "L7",
+  "kind": "shortcut",
+  "front": "Functional Equation Value Substitution",
+  "back": "Instead of solving algebraically for $f(x)$, substitute small strategic values like $x = 0, 1$ or $-1$ to establish recurrence or cycles quickly."
+ },
+ {
+  "id": "M1-f1",
+  "conceptId": "M1",
+  "kind": "formula",
+  "front": "Inclusion-Exclusion Principle (3 Sets)",
+  "back": "$$n(A \\cup B \\cup C) = \\sum n(A) - \\sum n(A \\cap B) + n(A \\cap B \\cap C)$$"
+ },
+ {
+  "id": "M1-f2",
+  "conceptId": "M1",
+  "kind": "formula",
+  "front": "Total Elements via Disjoint Regions",
+  "back": "$$n(A \\cup B \\cup C) = E_1 + E_2 + E_3$$"
+ },
+ {
+  "id": "M1-f3",
+  "conceptId": "M1",
+  "kind": "formula",
+  "front": "Sum of Set Sizes",
+  "back": "$$n(A) + n(B) + n(C) = E_1 + 2E_2 + 3E_3$$"
+ },
+ {
+  "id": "M1-s1",
+  "conceptId": "M1",
+  "kind": "shortcut",
+  "front": "The Net Overlap Difference Formula",
+  "back": "Subtract the total union from the sum of individual sets to directly obtain $E_2 + 2E_3$. For example, if $\\sum n(A) = 150$ and Union = 100, then $E_2 + 2E_3 = 50$ immediately."
+ },
+ {
+  "id": "M1-s2",
+  "conceptId": "M1",
+  "kind": "shortcut",
+  "front": "Bounding Maxima and Minima",
+  "back": "To minimize the intersection of two sets $A$ and $B$, use $\\max(0, n(A) + n(B) - \\text{Total})$. For instance, if 70% drink tea and 80% drink coffee in a group of 100%, at least $70 + 80 - 100 = 50\\%$ drink both."
+ },
+ {
+  "id": "M2-f1",
+  "conceptId": "M2",
+  "kind": "formula",
+  "front": "Combinations (Selection)",
+  "back": "$${}^nC_r = \\frac{n!}{r!(n - r)!}$$"
+ },
+ {
+  "id": "M2-f2",
+  "conceptId": "M2",
+  "kind": "formula",
+  "front": "Permutations with Identical Items",
+  "back": "$$\\frac{n!}{p! \\cdot q! \\cdot r!}$$"
+ },
+ {
+  "id": "M2-f3",
+  "conceptId": "M2",
+  "kind": "formula",
+  "front": "Circular Permutation",
+  "back": "$$(n - 1)!$$"
+ },
+ {
+  "id": "M2-s1",
+  "conceptId": "M2",
+  "kind": "shortcut",
+  "front": "Gap Method for Non-Adjacent Items",
+  "back": "Arrange the unrestricted elements first, then place the restricted elements into the gaps created between them. For instance, seating 3 girls among 4 boys uses the 5 gaps created by the boys: $4! \\times {}^5P_3$."
+ },
+ {
+  "id": "M2-s2",
+  "conceptId": "M2",
+  "kind": "shortcut",
+  "front": "Stars and Bars for Identical Items",
+  "back": "The number of non-negative integer solutions to $x_1 + x_2 + \\dots + x_r = n$ is ${}^{n+r-1}C_{r-1}$. For distributing 10 identical toffees among 3 kids, the ways are ${}^{10+3-1}C_{3-1} = {}^{12}C_2 = 66$."
+ },
+ {
+  "id": "M3-f1",
+  "conceptId": "M3",
+  "kind": "formula",
+  "front": "Addition Rule for Any Two Events",
+  "back": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$"
+ },
+ {
+  "id": "M3-f2",
+  "conceptId": "M3",
+  "kind": "formula",
+  "front": "Conditional Probability",
+  "back": "$$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$"
+ },
+ {
+  "id": "M3-f3",
+  "conceptId": "M3",
+  "kind": "formula",
+  "front": "Independent Events",
+  "back": "$$P(A \\cap B) = P(A) \\times P(B)$$"
+ },
+ {
+  "id": "M3-s1",
+  "conceptId": "M3",
+  "kind": "shortcut",
+  "front": "Complement Rule for At Least",
+  "back": "Whenever a question asks for 'at least one', calculate 1 - P(none). For example, the probability of at least one head in 4 tosses is 1 - (1/2)^4 = 15/16."
+ },
+ {
+  "id": "M3-s2",
+  "conceptId": "M3",
+  "kind": "shortcut",
+  "front": "Symmetry in Sequential Draws",
+  "back": "Without replacement, the unconditional probability of an item appearing on the k-th draw is identical to that on the 1st draw. For 3 white and 7 black balls, P(3rd ball is white) is simply 3/10."
+ },
+ {
+  "id": "N1-f1",
+  "conceptId": "N1",
+  "kind": "formula",
+  "front": "Total Number of Factors",
+  "back": "$$\\text{If } N = p^a q^b r^c, \\text{ then } \\tau(N) = (a+1)(b+1)(c+1)$$"
+ },
+ {
+  "id": "N1-f2",
+  "conceptId": "N1",
+  "kind": "formula",
+  "front": "Sum of Factors",
+  "back": "$$S(N) = \\frac{p^{a+1}-1}{p-1} \\cdot \\frac{q^{b+1}-1}{q-1} \\cdot \\frac{r^{c+1}-1}{r-1}$$"
+ },
+ {
+  "id": "N1-f3",
+  "conceptId": "N1",
+  "kind": "formula",
+  "front": "Divisibility by Coprime Split",
+  "back": "$$N \\equiv 0 \\pmod{a \\times b} \\iff N \\equiv 0 \\pmod a \\text{ and } N \\equiv 0 \\pmod b \\quad [\\gcd(a, b) = 1]$$"
+ },
+ {
+  "id": "N1-s1",
+  "conceptId": "N1",
+  "kind": "shortcut",
+  "front": "Divisibility by 7, 11, 13 Block Rule",
+  "back": "Split the digits into 3-digit groups from right to left and take the alternating sum; if that alternating sum is divisible by 7, 11, or 13, so is the original number (e.g., for 1,048,576: 576 − 048 + 1 = 529)."
+ },
+ {
+  "id": "N1-s2",
+  "conceptId": "N1",
+  "kind": "shortcut",
+  "front": "Number of Prime Divisors vs Factors",
+  "back": "If an integer is a perfect square, its total number of factors is always odd; conversely, if factor count is odd, the number is guaranteed to be a perfect square."
+ },
+ {
+  "id": "N2-f1",
+  "conceptId": "N2",
+  "kind": "formula",
+  "front": "Product Rule (Two Numbers Only)",
+  "back": "$$a \\times b = \\text{HCF}(a, b) \\times \\text{LCM}(a, b)$$"
+ },
+ {
+  "id": "N2-f2",
+  "conceptId": "N2",
+  "kind": "formula",
+  "front": "HCF of Fractions",
+  "back": "$$\\text{HCF}\\left(\\frac{a}{b}, \\frac{c}{d}\\right) = \\frac{\\text{HCF}(a, c)}{\\text{LCM}(b, d)}$$"
+ },
+ {
+  "id": "N2-f3",
+  "conceptId": "N2",
+  "kind": "formula",
+  "front": "LCM of Fractions",
+  "back": "$$\\text{LCM}\\left(\\frac{a}{b}, \\frac{c}{d}\\right) = \\frac{\\text{LCM}(a, c)}{\\text{HCF}(b, d)}$$"
+ },
+ {
+  "id": "N2-s1",
+  "conceptId": "N2",
+  "kind": "shortcut",
+  "front": "HCF Bounds Difference Trick",
+  "back": "The HCF of any set of numbers must divide the difference between any pair; testing factors of the smallest difference quickly reveals the HCF. For example, for 72 and 90, the difference is 18, so HCF must divide 18."
+ },
+ {
+  "id": "N2-s2",
+  "conceptId": "N2",
+  "kind": "shortcut",
+  "front": "Constant Difference Remainder Model",
+  "back": "When divisors d_i leave remainders r_i such that d_i − r_i = k (constant), the answer is always LCM(d_1, d_2, ...) × m − k. For divisors 5 and 6 with remainders 3 and 4 (k = 2), the form is 30m − 2."
+ },
+ {
+  "id": "N3-f1",
+  "conceptId": "N3",
+  "kind": "formula",
+  "front": "Division Algorithm",
+  "back": "$$Dividend = Divisor \\times Quotient + Remainder \\quad (0 \\le R < Divisor)$$"
+ },
+ {
+  "id": "N3-f2",
+  "conceptId": "N3",
+  "kind": "formula",
+  "front": "Remainder Multiplicativity",
+  "back": "$$R(a \\times b / m) = R\\big(R(a/m) \\times R(b/m) \\, / \\, m\\big)$$"
+ },
+ {
+  "id": "N3-f3",
+  "conceptId": "N3",
+  "kind": "formula",
+  "front": "Euler's Totient Theorem",
+  "back": "$$a^{\\phi(n)} \\equiv 1 \\pmod{n} \\quad \\text{if } \\gcd(a, n) = 1$$"
+ },
+ {
+  "id": "N3-s1",
+  "conceptId": "N3",
+  "kind": "shortcut",
+  "front": "Negative Remainder Power Trick",
+  "back": "When the base is 1 less than the divisor, treat the remainder as $-1$. For example, $19^{43} \\div 20$ becomes $(-1)^{43} = -1$, giving a remainder of $20 - 1 = 19$."
+ },
+ {
+  "id": "N3-s2",
+  "conceptId": "N3",
+  "kind": "shortcut",
+  "front": "Factor Cancellation Technique",
+  "back": "Divide out common factors between dividend and divisor to simplify, find the intermediate remainder, and scale back up: for $2^{33} \\div 10$, simplify to $2^{32} \\div 5 \\rightarrow R=1$, then multiply by 2 to get 2."
+ }
+]

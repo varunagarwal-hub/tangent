@@ -164,7 +164,7 @@ export const reviewCards = pgTable(
   "review_cards",
   {
     studentId: uuid("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
-    itemType: text("item_type", { enum: ["concept", "misconception"] }).notNull(),
+    itemType: text("item_type", { enum: ["concept", "misconception", "flashcard"] }).notNull(),
     itemId: text("item_id").notNull(),
     fsrsState: jsonb("fsrs_state").notNull(),
     dueAt: timestamp("due_at", { withTimezone: true }).notNull(),

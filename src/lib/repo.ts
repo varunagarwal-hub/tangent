@@ -412,7 +412,8 @@ export async function dueCards(studentId: string, now = new Date()) {
   return db
     .select()
     .from(s.reviewCards)
-    .where(and(eq(s.reviewCards.studentId, studentId), lte(s.reviewCards.dueAt, now)))
+    // flashcards share the table but have their own queue (/learn/cards); keep them out of practice reviews
+    .where(and(eq(s.reviewCards.studentId, studentId), lte(s.reviewCards.dueAt, now), inArray(s.reviewCards.itemType, ["concept", "misconception"])))
     .orderBy(s.reviewCards.dueAt);
 }
 
