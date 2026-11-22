@@ -12,6 +12,8 @@ import { StatusChip } from "@/components/tangent/status-chip";
 import { PageIntro } from "@/components/tangent/page-intro";
 import { MyQuestions } from "@/components/tangent/my-questions";
 import { InfoTip } from "@/components/tangent/info-tip";
+import { DailyChecklist } from "@/components/tangent/daily-checklist";
+import { getDailyChecklist } from "@/lib/daily";
 
 export const metadata: Metadata = { title: "Today · Tangent" };
 
@@ -38,7 +40,7 @@ function greeting() {
 async function TodayContent() {
   await connection(); // per-request: reads the clock and the persona cookie
   const studentId = await getStudentId();
-  const [t, cands] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId)]);
+  const [t, cands, daily] = await Promise.all([getTodayData(studentId), scoreCandidates(studentId), getDailyChecklist(studentId)]);
   const top = cands[0];
   const firstName = t.name.split(" ")[0];
 
@@ -75,7 +77,7 @@ async function TodayContent() {
           <h1 className="text-4xl sm:text-5xl">{firstName}&apos;s plan for today</h1>
         </div>
         <dl className="flex flex-wrap gap-3">
-          <Stat icon={<Flame className="size-4 text-redpen" />} label="day streak" value={t.streak} />
+          <Stat icon={<Flame className="size-4 text-redpen" />} label="day streak" value={daily.streak} />
           {t.daysToCat != null && <Stat icon={<CalendarClock className="size-4" />} label="days to CAT" value={t.daysToCat} />}
           <Stat icon={<Timer className="size-4" />} label="min today" value={t.dailyMinutes} />
         </dl>
@@ -140,6 +142,8 @@ async function TodayContent() {
           )}
         </section>
       </div>
+
+      <DailyChecklist {...daily} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* mastery by area */}

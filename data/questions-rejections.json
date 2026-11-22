@@ -3286,5 +3286,189 @@
   {
     "spec": "L5-x43",
     "reason": "ambiguous (The function has a vertical asymptote at x = 1. As x approaches 1 from the right, f(x) approaches negative infinity, mea)"
+  },
+  {
+    "spec": "G3-x13",
+    "reason": "answer mismatch (key says $180^\\circ - 4\\theta$, independent solve got 180^\\circ - 2\\theta)"
+  },
+  {
+    "spec": "M1-x14",
+    "reason": "answer mismatch (key says 60, independent solve got 30)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 10, independent solve got 3)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 6, independent solve got 3)"
+  },
+  {
+    "spec": "G3-x26",
+    "reason": "answer mismatch (key says 5, independent solve got 3)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "answer mismatch (key says 16, independent solve got 10.25)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "answer mismatch (key says 13, independent solve got 8.5)"
+  },
+  {
+    "spec": "G6-x11",
+    "reason": "answer mismatch (key says 14, independent solve got 8.5)"
+  },
+  {
+    "spec": "L6-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-x13",
+    "reason": "ambiguous (The system of congruences n ≡ 4 (mod 6) and n ≡ 5 (mod 9) has no solution because they require n ≡ 1 (mod 3) and n ≡ 2 ()"
+  },
+  {
+    "spec": "L6-x13",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G3-x1",
+    "reason": "ambiguous (The mathematically correct sum is 220 degrees, which is missing from the options. The author likely confused the sum of )"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "ambiguous (The question contains a typo in the constant term of the numerator (23 instead of 24). With 23, the true minimum is 2√14)"
+  },
+  {
+    "spec": "L5-x13",
+    "reason": "answer mismatch (key says 5, independent solve got 6)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 3, independent solve got 4)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 7, independent solve got 1)"
+  },
+  {
+    "spec": "G6-x17",
+    "reason": "answer mismatch (key says 52, independent solve got 55)"
+  },
+  {
+    "spec": "G4-x3",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 45, independent solve got 17)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 6, independent solve got 143/24)"
+  },
+  {
+    "spec": "G3-x23",
+    "reason": "answer mismatch (key says 676, independent solve got 406)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 31, independent solve got 15)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 29, independent solve got 26)"
+  },
+  {
+    "spec": "M3-x26",
+    "reason": "answer mismatch (key says 29, independent solve got 15)"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "answer mismatch (key says 8, independent solve got 4)"
+  },
+  {
+    "spec": "G4-x23",
+    "reason": "answer mismatch (key says 2, independent solve got 3)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 54, independent solve got 615.09375)"
+  },
+  {
+    "spec": "G5-x2",
+    "reason": "answer mismatch (key says 270, independent solve got 1282.5)"
+  },
+  {
+    "spec": "M3-x23",
+    "reason": "answer mismatch (key says 43, independent solve got 17)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "answer mismatch (key says 12, independent solve got 17)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "ambiguous (Contradictory data: The system of equations dictates that a = 6 ± 2√3, which contradicts the problem's explicit constrai)"
+  },
+  {
+    "spec": "G6-x23",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "M1-x13",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "M1-x13",
+    "reason": "answer mismatch (key says 15, independent solve got 35)"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "answer mismatch (key says $\\frac{5}{9}$, independent solve got \\frac{1}{2})"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "answer mismatch (key says $\\frac{7}{8}$, independent solve got \\frac{3}{4})"
+  },
+  {
+    "spec": "M3-x16",
+    "reason": "ambiguous (The correct answer is 10/27, which is not present among the given options. Zero options are correct.)"
+  },
+  {
+    "spec": "L6-x43",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-x43",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "L6-x43",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "generator error: [generator] Gemini failed after 1 attempt(s): This operation was aborted"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "verifier unavailable"
+  },
+  {
+    "spec": "G5-x6",
+    "reason": "verifier unavailable"
   }
 ]
